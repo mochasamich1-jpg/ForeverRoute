@@ -361,6 +361,7 @@ def exercise(lua, fire, run):
     features(lua, fire, run)
     paths(lua)
     auto(lua)
+    jump(lua)
 
 
 PATHS = r'''
@@ -485,6 +486,55 @@ return table.concat(out, "\n")
 def auto(lua):
     global FAILED
     res = lua.execute(AUTOQ)
+    for line in str(res).split('\n'):
+        print('  ', line)
+        if line.startswith('FAIL'):
+            FAILED = True
+    chat(lua)
+
+
+JUMP = r"""
+-- a leveled character using the guide for the first time is offered the segment for its level
+local C = __ns.Core
+local out = {}
+local function check(name, ok) out[#out + 1] = (ok and "ok   " or "FAIL ") .. name end
+local prog = ForeverRouteChar.progress[__key]
+local savedTicked, savedCur, savedKey, savedLevel = prog.ticked, prog.current, prog.currentKey, __level
+local shown
+StaticPopupDialogs = {}
+function StaticPopup_Show(name) shown = name end
+local function fresh(level) prog.ticked = {}; prog.jumpAsked = nil; prog.current = 1; prog.currentKey = C.Steps[1].key; __level = level; shown = nil end
+
+fresh(1)
+check("level 1: no offer", C.OfferJump(true) == false and shown == nil)
+local want
+for i, name in ipairs(C.Segments) do if tonumber(name:match("^(%d+)")) <= 23 then want = i end end
+check("segment for level 23 is found from the segment names", C.SegmentForLevel(23) == want and want > 1)
+fresh(23)
+check("level 23, unused guide: the offer is shown", C.OfferJump(true) == true and shown == "FOREVERROUTE_JUMP")
+StaticPopupDialogs.FOREVERROUTE_JUMP.OnAccept()
+local cur = C.Steps[prog.current]
+check("accepting starts in that segment", cur ~= nil and cur.seg == want)
+shown = nil
+check("it is only offered once", C.OfferJump(true) == false and shown == nil)
+fresh(23); prog.ticked = { x = true }
+check("a guide already in use is left alone", C.OfferJump(true) == false and shown == nil)
+fresh(23); StaticPopup_Show = nil
+check("without the popup API it prints the command instead", C.OfferJump(true) == true)
+fresh(40)
+SlashCmdList.FOREVERROUTE("seg auto")
+cur = C.Steps[prog.current]
+check("/fr seg auto jumps to the segment for the level", cur ~= nil and cur.seg == C.SegmentForLevel(40))
+
+prog.ticked, prog.current, prog.currentKey, prog.jumpAsked, __level = savedTicked, savedCur, savedKey, nil, savedLevel
+StaticPopupDialogs = nil
+return table.concat(out, "\n")
+"""
+
+
+def jump(lua):
+    global FAILED
+    res = lua.execute(JUMP)
     for line in str(res).split('\n'):
         print('  ', line)
         if line.startswith('FAIL'):

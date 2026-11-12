@@ -338,6 +338,52 @@ function Core.JumpToSegment(n)
     return false
 end
 
+-- A character that is already leveled when the addon is first used: offer to start at the segment for its level
+-- (segment names begin with their level range, "20-22 Redridge II & Duskwood I").
+function Core.SegmentForLevel(level)
+    local best
+    for i, name in ipairs(Segments) do
+        local from = type(name) == "string" and tonumber(name:match("^(%d+)"))
+        if from and from <= level then best = i end
+    end
+    return best
+end
+
+local jumpOffered = false
+function Core.OfferJump(again)
+    if (jumpOffered and not again) or not char or char.jumpAsked then return false end
+    jumpOffered = true
+    if next(char.ticked) ~= nil then return false end -- the guide is already in use on this character
+    local level = UnitLevel("player") or 1
+    local seg = Core.SegmentForLevel(level)
+    local cur = Steps[char.current or 1]
+    if not seg or seg <= 1 or not cur or cur.seg >= seg then return false end
+    char.jumpAsked = true
+    local name = Segments[seg] or tostring(seg)
+    local function jump()
+        if Core.JumpToSegment(seg) then
+            Core.Print("started at segment " .. seg .. " (" .. name .. "). Quests you already did are skipped. Press Skip on a step for a quest you never took. /fr seg lists the segments if this one does not fit.")
+        end
+    end
+    if StaticPopupDialogs and StaticPopup_Show then
+        StaticPopupDialogs.FOREVERROUTE_JUMP = {
+            text = "Forever Route\n\nYou are level " .. level .. ". Start the guide at segment " .. seg .. ", \"" .. name
+                .. "\"?\n\nQuests you already did are skipped. You can change this later with /fr seg.",
+            button1 = "Start there",
+            button2 = "Start at step 1",
+            OnAccept = jump,
+            timeout = 0,
+            whileDead = true,
+            hideOnEscape = true,
+            preferredIndex = 3,
+        }
+        StaticPopup_Show("FOREVERROUTE_JUMP")
+    else
+        Core.Print("you are level " .. level .. ": type /fr seg " .. seg .. " to start the guide at \"" .. name .. "\".")
+    end
+    return true
+end
+
 -- Optional dungeon runs: off = the quest-only route, on = the same route with dungeon steps added
 function Core.DungeonsOn()
     return saved and saved.opts and saved.opts.dungeons and true or false
@@ -763,6 +809,7 @@ function handlers.PLAYER_ENTERING_WORLD()
         loading = false
         ScanObjectives()
         Core.Refresh()
+        Core.OfferJump()
     end)
 end
 
@@ -1030,11 +1077,12 @@ SlashCmdList.FOREVERROUTE = function(msg)
         end
     elseif cmd == "seg" or cmd == "segment" then
         local n = tonumber(rest)
+        if rest:lower() == "auto" then n = Core.SegmentForLevel(UnitLevel("player") or 1) end
         if n and Core.JumpToSegment(n) then
             Print("jumped to " .. (Segments[n] or n))
         else
             for i, name in ipairs(Segments) do Print(i .. ". " .. name) end
-            Print("use /fr seg <number>")
+            Print("use /fr seg <number>, or /fr seg auto for the one that fits your level")
         end
     elseif cmd == "reset" then
         char.ticked = {}

@@ -20,6 +20,8 @@ The addon picks a guide from your race and class when you log in.
 | Human Mage, Human Warlock, Dwarf Shaman, Skyborne Druid, Skyborne Mage | these combos get their class quests, named trainers and class fight tips |
 | Undead Mage, Orc Shaman | Horde (Trolls get the Orc Shaman guide) |
 
+Already leveled? On first login the addon offers to start at the segment for your level; quests you already did are skipped. `/fr seg auto` does the same at any time.
+
 The guides are quest-only. Optional dungeon runs can be switched on with `/fr dungeons on`.
 
 ## Commands
@@ -28,7 +30,7 @@ The guides are quest-only. Optional dungeon runs can be switched on with `/fr du
 |---|---|
 | `/fr` | show or hide the window |
 | `/fr skip`, `/fr back` | move one step forward or back |
-| `/fr seg [n]` | list the segments, or jump to one |
+| `/fr seg [n]` | list the segments, or jump to one (`/fr seg auto` picks the one for your level) |
 | `/fr route [name]` | list the guides, or switch to one (`/fr route auto` picks from race and class) |
 | `/fr auto` | auto accept and hand in on or off (on by default; hold Shift at an NPC to do it by hand) |
 | `/fr dungeons on\|off\|list` | optional dungeon runs |
