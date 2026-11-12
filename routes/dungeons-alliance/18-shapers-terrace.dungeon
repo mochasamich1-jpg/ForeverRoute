@@ -1,0 +1,12 @@
+# ALLIANCE. New Forever dungeon. Source: foreverchanges.pro/dungeons/shapers-terrace and quest pages (level range is Blizzard's).
+@dungeon Shaper's Terrace
+@levels 58-60
+@window 56-60
+@best 58
+@hub Un'Goro Crater, 45.0, 8.0, 10
+@hub Stormwind City, 50.0, 50.0
+@hub Ironforge, 50.0, 50.0
+@hub Eastern Plaguelands, 81.0, 59.0, 8
+@hub Western Plaguelands, 43.0, 84.0, 8
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater. Two Alliance quests are named for it (Panic at the Digsite, Mapping the Way Forward) but who gives them is not published yet: ask around Marshal's Refuge and take what is offered; the addon logs it so these steps can be filled in.

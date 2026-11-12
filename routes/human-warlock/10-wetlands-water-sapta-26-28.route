@@ -1,0 +1,83 @@
+@segment 26-28 Wetlands II
+@start-level 26
+# Human Warlock. From the Gnome route's segment 09 (class-neutral Alliance path): same quests, order, binds and
+# flights. Changed: every combat hint is written for a warlock of level 26-28 (Voidwalker first, Corruption,
+# Curse of Agony, Immolate, Fear on a second enemy, Drain Life, Health Funnel, Soulstone and Sacrifice for the
+# named fights, Curse of Tongues on casters; Banish comes only at 28 and is not used here). Segment numbers in
+# the texts are this route's (the Gnome's plus one). The end of the segment is the same: from the Angerfang
+# Encampment you walk the Dun Algaz road to Thelsamar and fly to Ironforge. No training stop in this segment.
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 98209 Bloom of the Heavens (1200 XP) is taken; it is handed in on the next Auberdine landing.
+# Carry-in: 57/67/157/181/240/453 (Duskwood and Westfall, segment 11), 275/295/471 (Wetlands, done here),
+# 1026 (Ashenvale, segment 13).
+# Carry-out: 57, 67, 157, 181, 240, 453 (segment 11), 293 + 98190 (Stormwind, segment 11), 472 + 98223 (segment 12),
+# 1026 (segment 13), 98209 (Auberdine, next boat there).
+@carry 57,67,157,161,181,240,275,295,453,471,1026
+@done 277,294,484,98189
+
+# ---------- Menethil Harbor ----------
+S Menethil Harbor @ Wetlands, 10.7, 60.9 | You step off the boat from Auberdine. Bind at the Deepwater Tavern (Innkeeper Helbrek): you hearth back here after the first loop
+A 473 | Valstag Ironjaw, in front of Menethil Keep (10.1,56.9)
+T 473 | Captain Stoutfist, inside Menethil Keep
+A 464 | Captain Stoutfist
+A 98221 @ Wetlands, 9.9, 57.4 | Captain Stoutfist (new in Forever)
+A 98230 | Captain Stoutfist (new in Forever): a walk to Howin Kindfeather, far east along the road
+A 98190 @ Wetlands, 9.9, 57.4 | Captain Stoutfist (new in Forever). The Menethil Statuette goes to Stormwind Keep in the next segment: keep it in your bags
+A 472 | Harlo Barnaby (10.8,55.9). Needs level 25. Just a walk to Dun Modr: you hand it in in segment 12
+A 98208 @ Wetlands, 8.0, 55.9 | Sylessa Duskwhisper (new in Forever), near the tanner. Her flower is in the wreck south of town: you get it after the first loop
+A 288 | First Mate Fitzsimmons, by the docks
+C 288 @ Wetlands, 10.7, 60.9 | Buy a Flagon of Mead from Innkeeper Helbrek in the Deepwater Tavern
+T 288 | First Mate Fitzsimmons
+A 289 | First Mate Fitzsimmons
+
+# ---------- Loop A, part 1: crocolisks and the cursed crew ----------
+C 471 @ Wetlands, 19.0, 25.0 | Leave by the bridge and go north along the coast. Giant Wetlands Crocolisks (25-26) swim in the river mouths at 15-27,19-29, next to the shipwrecks. Kill until you have 6 skins. Fen Creepers (24-25, stealthed in the water at 18-24,27-32) count for Blisters on the Land: kill the ones you meet
+C 289 @ Wetlands, 14.3, 26.9 | The two wrecks on the north coast (13-16,23-31). Cursed Sailors (26-27) are mostly around the southern wreck, Cursed Marines (27-28) around the northern one; First Mate Snellig (29) stands in the southern wreck at 13.8,30.2. They often come in twos: send the Voidwalker at one from as far away as you can, Fear the other (not toward the next group), kill the first with Corruption, Curse of Agony, Immolate and Shadow Bolt, then the second; Drain Life, eat, drink or bandage between pulls. Clear around Snellig first, then fight him at full health with a Soulstone on yourself and the Voidwalker on him
+T 471 @ Wetlands, 8.5, 55.7 | Walk back to Menethil Harbor. James Halloran, the tanner
+A 98072 @ Wetlands, 8.5, 55.8 | James Halloran (new in Forever). The whelps are far to the east; you get them at the end of this loop
+T 289 | First Mate Fitzsimmons
+A 290 | First Mate Fitzsimmons
+
+# ---------- Loop A, part 2: the strongbox, Whelgar's dig, Angerfang ----------
+C 290 @ Wetlands, 15.4, 23.6 | Back north to the far (northern) wreck. Captain Halyndor (30) stands on it at 15.4,23.6 with Marines around him. Pull the Marines away one at a time with the Voidwalker first, then fight Halyndor alone at full health and mana, Soulstone on yourself: Voidwalker first, all three DoTs, Shadow Bolt, Drain Life when he turns on you, and Sacrifice plus the Healthstone if it goes wrong. He is four levels above you, so your spells will sometimes be resisted; walk away and start again if a Marine joins. He drops the Intrepid Strongbox Key
+T 290 | Intrepid's Locked Strongbox, in the same wreck (14.4,24.0)
+A 292 | The same strongbox
+A 299 | Go south-east across the marsh to Whelgar's Excavation Site (stay north of the road until you are past the murloc coast). Prospector Whelgar stands at the camp on the east rim of the dig (38.8,52.4)
+C 295,299 @ Wetlands, 34.0, 48.0 | Down in the dig (31-36,44-52): kill 10 Mottled Scytheclaws and 10 Mottled Razormaws (25-27) and pick up the four tablet fragments. Ados, Modr and Golm are in Ancient Relics (stone tablets), Neru is in a Loose Soil mound; they sit in different spots each time, so check 34.1,49.9 / 35.2,51.5 / 34.2,47.7 / 33.1,46.4 and the north end around 34.3,44.5 and 36.5,42.1. Raptors often come in pairs: send the Voidwalker from far away, fight at the edge of the dig, Fear the second raptor (away from the middle of the dig) and kill one at a time
+T 295 | Ormer Ironbraid, next to Whelgar
+A 296 | Ormer Ironbraid
+C 296 @ Wetlands, 33.3, 51.5 | Sarltooth (29) is at the south-west side of the dig (33.3,51.5). Clear the raptors near him first and fight him at full health. He hits hard for your level: let the Voidwalker take him and give it a moment before you put Corruption, Curse of Agony and Immolate on, keep it alive with Health Funnel, and if he turns on you Fear him and let the DoTs work. Use Drain Life, the Healthstone or a healing potion early rather than late
+T 296 | Ormer Ironbraid
+T 299 | Prospector Whelgar
+C 98221:1 @ Wetlands, 38.6, 46.1 | Go north-east. The first set of Attack Plans lies at the small Dragonmaw post west of the Angerfang Encampment (38.6,46.1). Click it to destroy it. Which of the four plans lies where is not in the data: if this spot is empty, go on and tick it later
+C 464,98221 @ Wetlands, 45.5, 44.5 | Angerfang Encampment (39-52,40-49). Any Dragonmaw drops War Banners (8 needed): Raiders (26-27) and Bonewarders (27, casters: a warlock has no interrupt, so put Curse of Tongues on them and kill them first). The other Attack Plans are at about 45.5,42.6, 45.3,45.5 and 49.4,46.6. Fight at the edges, one tent at a time, Voidwalker first, and do not Fear inside the camp: a feared orc brings friends; the Dragonmaw Battlemaster (rare, 30) walks the middle: avoid him. Leave the catapults for the next loop
+T 98230 @ Wetlands, 49.4, 42.1 | Howin Kindfeather, just north of the encampment beside the road (49.4,42.1)
+A 98246 @ Wetlands, 49.4, 42.1 | Howin Kindfeather (new in Forever). The eggs come from Raptor Ridge in the next loop. If he does not offer it yet, he will after Razormaw Needling in loop B
+C 275 @ Wetlands, 54.5, 41.0 | Finish the 8 Fen Creepers in the water around Rethiel's island (53-55,36-46); they are stealthed until you are close
+T 275 | Rethiel the Greenwarden (56.4,40.4)
+C 98072 @ Wetlands, 61.0, 40.0 | Crimson Whelps (25-26) fly over the Green Belt east of Rethiel (57-70,31-51). Collect 10 Pristine Crimson Scales. Their fire bolt is a cast you cannot interrupt: let the Voidwalker take it, or put Curse of Tongues on the whelp to slow it, and use Drain Life to stay up. Stay north of the orcs in the hills
+A 98223 @ Wetlands, 53.5, 54.5 | Go south-west to the Dragonmaw camp south of the road. The Tattered Spellbook lies on the ground at 53.5,54.5 (new in Forever). Dragonmaw Centurions and Shadowwarders (28-29) stand around it: send the Voidwalker at one at a time, kill the Shadowwarders (casters) first with Curse of Tongues on them (you have no interrupt), and finish your 8 War Banners here if you are short. You keep this quest until segment 12
+H Menethil Harbor | Hearthstone back to Menethil Harbor
+
+# ---------- Menethil Harbor hand-ins ----------
+T 464 | Captain Stoutfist
+A 465 | Captain Stoutfist. Do not take Defeat Nek'rosh later: it is an elite fight
+T 98221 @ Wetlands, 9.9, 57.4 | Captain Stoutfist. Keep Old Habits (98223) and A Friend of the Family (98190) in the log for later segments
+T 98072 @ Wetlands, 8.5, 55.8 | James Halloran
+A 98240 @ Wetlands, 8.5, 55.8 | James Halloran (new in Forever): a crate for Howin Kindfeather
+T 292 | Glorin Steelbrow, at the Deepwater Tavern (10.6,60.6)
+A 293 | Glorin Steelbrow. The eye goes to the Cathedral in Stormwind in the next segment
+C 98208 @ Wetlands, 12.1, 64.2 | The wreck just south of town, across the water from the docks (about 12,64). Bluegill Raiders (28-29) live in and around it; kill them and search the wreck for Nord'el. Whether the flower drops or is picked up is not in the data: loot every murloc and click anything that sparkles. Send the Voidwalker at one murloc at a time. They run at low health and bring friends: do not Fear here, keep Corruption and Curse of Agony on them and finish a runner with Shadow Bolt
+T 98208 @ Wetlands, 8.0, 55.9 | Sylessa Duskwhisper.
+A 98209 @ Wetlands, 8.0, 55.9 | Sylessa Duskwhisper: Bloom of the Heavens. Nord'el goes to Auberdine: you carry it until the next boat there
+
+# ---------- Loop B: Howin Kindfeather and Raptor Ridge ----------
+T 98240 @ Wetlands, 49.4, 42.1 | Follow the road east, past Whelgar's dig, to Howin Kindfeather (49.4,42.1)
+A 98245 @ Wetlands, 49.4, 42.1 | Howin Kindfeather (new in Forever). Take Trying Times (98246) too if he only offers it now
+C 98245,98246 @ Wetlands, 63.0, 30.5 | Raptor Ridge, north-east of Howin (58-72,22-40): Highland Razormaws (27-28) and Elder Razormaws (29) drop the 10 Razormaw Incisors and the 12 Perfect Razormaw Eggs (look for nests on the ground too; the data does not say whether the eggs drop or are picked up). Stay at the south and west edge: the Razormaw Matriarch (rare, 31) is deep inside at 70,29. Raptors often come in pairs: send the Voidwalker from far away, Fear the second raptor (toward the edge, not into the ridge), kill one at a time, and use Health Funnel on the Voidwalker and rest to full between pulls
+T 98245 @ Wetlands, 49.4, 42.1 | Howin Kindfeather
+T 98246 @ Wetlands, 49.4, 42.1 | Howin Kindfeather. Ignore his follow-ups: they are group quests
+T 465 | Cross the road into the Angerfang Encampment and click a Dragonmaw Catapult (47.5,47.0) to hand in. Do not take Defeat Nek'rosh (elite)
+
+# ---------- Dun Algaz -> Thelsamar -> Ironforge ----------
+FLY Ironforge @ Loch Modan, 33.9, 51.0 | From the encampment go back to the road and follow it east and then south through the Dun Algaz tunnels (they start at about 53,70 in the Wetlands) into Loch Modan. Keep on the road south to Thelsamar and fly to Ironforge (Thorgrum Borrelson)
+N Segment done. In the log: 57, 67, 157, 181, 240, 453 (Duskwood/Westfall), 293 and 98190 (Stormwind), 472 and 98223 (segment 12), 1026 (Ashenvale), 98209 (Auberdine) | Your hearthstone stays in Menethil Harbor

@@ -1,0 +1,206 @@
+@segment 58-60 Burning Steppes & the Plaguelands
+@start-level 58
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 6164 Augustus' Receipt Book (1400 XP). It was left out as a Stratholme quest by mistake: the book
+# lies in the Terrordale inn (Eastern Plaguelands 14.0, 24.2 in the Questie data), beside Egan.
+# Carried in from segment 22: Seeping Corruption (3568, the filled Azshara vials), ... and a Batch of Ooze (4294, Un'Goro
+# slime samples) and A Sample of Slime... (4293, Felwood slime samples) for the Undercity chemists, Delivery to Andron Gant
+# (3542, Undercity), the three Plaguelands deliveries from Everlook: The Everlook Report (6029), Duke Nicholas Zverenhoff (6030)
+# and Sister Pamela (5601), and the colossus husks from Cenarion Hold: Regal (8858, Thorium Point) and Zora (8859, Light's Hope).
+@carry 3568,4294,4293,6029,6030,5601,8858,8859,3542
+# No prerequisite from an earlier segment is needed: every chain here starts in this segment or with a carried quest.
+@done
+# Adapted from the Eastern Kingdoms half of undead-mage 19, in its order: Undercity -> Kargath -> Burning Steppes (via
+# Thorium Point and Blackrock Mountain) -> Kargath -> Astral Recall to the Undercity -> the Bulwark and Western Plaguelands
+# -> Eastern Plaguelands -> Undercity -> Western Plaguelands last loop -> Corin's Crossing at 60.
+# Last continent crossing of the route: you arrive on the zeppelin from Orgrimmar with your hearthstone set to Orgrimmar and
+# bind it in the Undercity. Teleports and the Undercity trainer of the undead route are replaced by Astral Recall, flights
+# and an optional Stonard training stop (Haromm is the only shaman trainer in the Eastern Kingdoms).
+# Left out on purpose: elites (5098, 5153, 6025, the Nathanos and Carlin follow-ups), the Scholomance key chain
+# 838/964/5514 (needs elite 5098), 5154/5210/5181 (need elite 5153), 4022 (needs 3481 <- elite 3452), Felnok's 4808
+# (Winterspring), 5142 (exclusive with Sister Pamela), 6026 (crafted parts), 4642 (another Un'Goro trip), 4987 (Thunder
+# Bluff), 4063 and 5282 (dungeons), 4973 (repeatable). Mission Accomplished! is an N step: its ID is
+# swapped between the factions in the data (5237 / 5238).
+# Optional shaman quests: Elemental Mastery (8410) and Spirit Totem (8412) at Bath'rah the Windwatcher are N steps, because
+# 8410 is only an optional pick-up in earlier segments. Skip 8413 (Sunken Temple).
+# Quest XP ends around 59.4 in the full-route estimate (x1.35), a little more with Mission Accomplished!; the last L 60 at
+# Corin's Crossing covers the rest.
+# Coordinate overrides fix auto data that puts Kargath NPCs in "Outland", Balthazad, Vandis and Derrington in the wrong
+# zone, and give the cauldrons, item objects and objective areas.
+
+# ---------- Undercity ----------
+N You arrive at the zeppelin tower outside the Undercity | Walk south into the ruined city and take an elevator down. Your hearthstone and Astral Recall still point at Orgrimmar until you bind at the inn here
+T 3568 | Chemist Cuely, in the Apothecarium
+A 3569 | Chemist Cuely
+T 3569 | Thersa Windsong, right next to him
+A 3570 | Chemist Cuely
+T 3570 | Chemist Cuely, straight away: it has no objectives
+C 4294,4293 @ Undercity, 47.5, 73.3 | Use the Testing Equipment next to Chemist Fuely on your Un'Goro and Felwood slime samples until you have 5 Pure Un'Goro Samples and 5 Corrupted Felwood Samples. The route does not go back to Kalimdor: if one test is still short after all your samples, abandon that quest
+T 4294,4293 | Chemist Fuely. Skip his follow-up (Melding of Influences): it needs another Un'Goro trip
+T 3542 @ Undercity, 54.8, 76.3 | Andron Gant, a few steps from the chemists. Do not take his follow-up: it goes back to Azshara
+A 5961 | Lady Sylvanas Windrunner, in the Royal Quarter
+A 5094 @ Undercity, 63.9, 44.1 | Harbinger Balthazad. Orgrimmar and Thunder Bluff offer the same quest: take only one
+S Undercity | Innkeeper Norman. From now on your hearthstone and Astral Recall bring you back here
+FLY Kargath @ Undercity, 63.2, 48.6 | Michael Garrett, the bat handler by the west elevator. A long flight
+
+# ---------- Burning Steppes (via Kargath) ----------
+A 3821 @ Badlands, 3.4, 48.1 | Thal'trak Proudtusk, Kargath
+A 4061 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania, Kargath
+FLY Thorium Point @ Badlands, 4.0, 44.8 | Gorrik, the Kargath wind rider master
+T 8858 @ Searing Gorge, 38.1, 27.0 | Overseer Oilfist, a short walk north-east of the wind rider master at Thorium Point. Hand him Regal's husk before you ride south
+N Ride south from Thorium Point into Blackrock Mountain, cross it on the chain walkways and leave by the Burning Steppes exit | Stay on the open walkways: the doors inside lead to dungeons
+F Flame Crest @ Burning Steppes, 65.7, 24.2 | Follow the north edge of the Burning Steppes east to Flame Crest. Vahgruk is the wind rider master
+A 4726 | Tinkee Steamboil. She gives you the Draco-Incarcinatrix 900
+A 4296 | Maxwort Uberglint
+C 4296 @ Burning Steppes, 54.1, 40.8 | The Tablet of the Seven in the ruins of Thaurissan, south-west of Flame Crest. Right-click it to copy it
+C 4061 @ Burning Steppes, 63.0, 36.0 | War Reavers south of Flame Crest drop Fractured Elemental Shards; so do the Greater Obsidian Elementals. Keep any Elemental Earth (obsidian elementals) and Elemental Fire (Flamekin) that drops: Elemental Mastery wants one of each
+C 4726 @ Burning Steppes, 59.0, 31.0 | Scalding Broodlings just south-west and east of Flame Crest (around 58-61, 31 and 72-78, 28): zap one with the Draco-Incarcinatrix, kill it and loot the essence it leaves. Black Broodlings further east count too, but elite Black Dragonspawn and Black Wyrmkin (52-54) stand among them (about 81-94, 26-58), and more elites guard the broodlings in the south (about 56-58, 61-64 and 76-78, 62). Stay in the north of the zone, west of about 80
+T 3821 @ Burning Steppes, 79.8, 45.5 | Sha'ni Proudtusk's Remains on Dreadmaul Rock, to the east
+A 3822 @ Burning Steppes, 79.8, 45.5 | Sha'ni Proudtusk
+C 3822 @ Burning Steppes, 79.7, 47.4 | Krom'Grul, in the caves of Dreadmaul Rock. Clear the Firegut ogres at the cave mouth first: Earth Shock the Ogre Mages' casts, and drop a Stoneclaw Totem when a second ogre joins
+T 4726 | Tinkee Steamboil, Flame Crest. Don't take Felnok Steelspring: it goes back to Winterspring
+T 4296 | Maxwort Uberglint
+FLY Kargath @ Burning Steppes, 65.7, 24.2 | Vahgruk, the Flame Crest wind rider master
+T 3822 @ Badlands, 3.4, 48.1 | Thal'trak Proudtusk
+T 4061 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania
+A 4062 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania
+T 4062 @ Badlands, 25.9, 44.9 | Lotwil Veriatus, at his camp east of Kargath. Skip his follow-up (Blackrock Depths)
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Optional, only if you are 58 now and did not learn your level 58 spells in Orgrimmar (most players reach 58 with the Kargath hand-ins): ride back to Gorrik in Kargath and fly to Stonard. Haromm is the only shaman trainer in the Eastern Kingdoms, and he also offers Elemental Mastery if you want it (see the Bath'rah steps near the end)
+
+# ---------- Western Plaguelands: the Bulwark and the farms ----------
+H Undercity | Cast Astral Recall (or use your hearthstone) from Lotwil's camp, or from Stonard if you trained: both bring you to the Undercity now. Both on cooldown? Fly to the Undercity from Kargath or Stonard
+G Tirisfal Glades, 83.1, 68.9 | Ride out of the Undercity and east along the road to the Bulwark at the east edge of Tirisfal Glades
+T 5094 @ Tirisfal Glades, 83.1, 68.9 | High Executor Derrington
+A 5096 @ Tirisfal Glades, 83.1, 68.9 | High Executor Derrington. Before you ride off, take a Flame in a Bottle from the Box of Incendiaries right beside him: you need it to burn the Scarlet command tent
+T 6029 | Argent Officer Garush
+A 5901 | Mickey Levine. The termite mounds are in the Eastern Plaguelands
+A 6004 | Kirsta Deepshadow: ride north-east past the Scarlet camp to her hiding spot near the Northridge Lumber Mill
+C 6004:3,6004:4 @ Western Plaguelands, 52.0, 37.0 | Scarlet Magi and Knights on the road south of Kirsta. Earth Shock the Magi's casts
+C 5096,6004:1,6004:2 @ Western Plaguelands, 40.3, 52.0 | The Scarlet camp between Felstone Field and Dalson's Tears: kill the Medics and Hunters, use the Flame in a Bottle on the command tent and plant the Scourge banner in the camp. Earth Shock the Medics when they heal
+A 5021 | Janice Felstone's ghost, upstairs in the Felstone farmhouse
+T 5021 | Janice's Parcel, in the barn behind the house
+A 5023 @ Western Plaguelands, 38.7, 55.2 | Janice's Parcel. It goes to the Undercity later
+T 5096 @ Tirisfal Glades, 83.1, 68.9 | High Executor Derrington, the Bulwark
+A 5228 @ Tirisfal Glades, 83.1, 68.9 | High Executor Derrington
+T 5228 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+A 5229 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis. Keep the empty bottle she gives you
+C 5229 @ Western Plaguelands, 37.2, 56.8 | Felstone Field: kill Cauldron Lord Bilemaw beside the cauldron for its key
+T 5229 @ Western Plaguelands, 37.2, 56.8 | Use the key on the Scourge Cauldron
+A 5230 @ Western Plaguelands, 37.2, 56.8 | The Scourge Cauldron
+T 5230 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis, the Bulwark
+A 5231 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 5231 @ Western Plaguelands, 46.2, 51.9 | Dalson's Tears: kill Cauldron Lord Malvinious beside the cauldron
+T 5231 @ Western Plaguelands, 46.2, 51.9 | The Scourge Cauldron
+A 5232 @ Western Plaguelands, 46.2, 51.9 | The Scourge Cauldron
+A 5058 @ Western Plaguelands, 47.8, 50.7 | Mrs. Dalson's Diary, upstairs in the Dalson farmhouse
+T 5058 @ Western Plaguelands, 47.8, 50.7 | Read it to the end
+N Kill Wandering Skeletons around the Dalson farm until one drops the Dalson Outhouse Key
+A 5059 @ Western Plaguelands, 48.1, 49.6 | The outhouse behind the farmhouse
+T 5059 @ Western Plaguelands, 48.1, 49.6 | Open it and Farmer Dalson comes out. Kill him for the cabinet key
+A 5060 @ Western Plaguelands, 47.4, 49.6 | The Locked Cabinet in the farmhouse
+T 5060 @ Western Plaguelands, 47.4, 49.6 | Open it
+T 5232 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis, the Bulwark
+A 5233 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 5233 @ Western Plaguelands, 53.0, 65.6 | The Writhing Haunt, south-east: kill Cauldron Lord Razarch beside the cauldron
+T 5233 @ Western Plaguelands, 53.0, 65.6 | The Scourge Cauldron
+A 5234 @ Western Plaguelands, 53.0, 65.6 | The Scourge Cauldron
+A 4984 | Mulgris Deepriver, the troll at the Writhing Haunt
+C 4984 @ Western Plaguelands, 50.0, 68.0 | Diseased Wolves roam the fields around the Writhing Haunt and Andorhal
+T 4984 | Mulgris Deepriver
+A 4985 | Mulgris Deepriver
+A 4971 | Chromie, in the ruined inn at the north-west corner of Andorhal
+C 4971 @ Western Plaguelands, 47.0, 62.5 | Use the Temporal Displacer next to one of Andorhal's silos (the ones on the north-east edge of town are the safest) and kill the Temporal Parasites that appear. Andorhal has elites: Araj the Summoner (61) in the middle of town (about 45, 69), and Skeletal Warlords and Flesh Golems (56-57) on the streets. Pull the normal Scourge out to you and keep clear of the centre
+T 4971 | Chromie
+A 4972 | Chromie
+C 4972 @ Western Plaguelands, 40.0, 67.5 | Small Lockboxes lie in the rubble all over Andorhal; open them for the watches. Start with the ones on the west side near Chromie (38-42, 66-70), look down each street for the elite Warlords and Golems before you go in, and stay away from Araj in the middle
+T 4972 | Chromie. Leave the repeatable version alone
+T 5234 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis, the Bulwark
+A 5235 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 4985 @ Western Plaguelands, 60.0, 48.0 | Diseased Grizzlies roam the fields between Dalson's Tears and Gahrron's Withering
+C 5235 @ Western Plaguelands, 62.5, 58.5 | Gahrron's Withering, east: kill Cauldron Lord Soulwrath beside the cauldron
+T 5235 @ Western Plaguelands, 62.5, 58.5 | The Scourge Cauldron
+A 5236 @ Western Plaguelands, 62.5, 58.5 | The Scourge Cauldron. You hand it in on your last Bulwark visit
+T 4985 | Mulgris Deepriver, the Writhing Haunt. Skip Glyphed Oaken Branch: it goes to Thunder Bluff
+
+# ---------- Eastern Plaguelands: the west and south ----------
+G Eastern Plaguelands, 5.2, 35.6 | Ride east and cross the Thondroril River into the Eastern Plaguelands. Tirion Fordring's hut stands on the east bank of the river, a little to the north
+A 5542,5543,5544 | Tirion Fordring. Kill Plaguebats, Plaguehound Runts and Carrion Grubs whenever you pass them from here on
+T 5961 | Nathanos Blightcaller at the Marris Stead, south-east of Tirion
+A 6022,6042,6133 | Nathanos Blightcaller
+A 6024 @ Eastern Plaguelands, 22.9, 73.0 | A Torn Scroll by the Undercroft crypt, south of the Marris Stead. Infiltrator Hameya is in the far north-east
+T 5601 | Pamela Redpath, in the ruined house in Darrowshire
+A 5149 | Pamela Redpath
+C 5149 @ Eastern Plaguelands, 33.5, 78.5 | The doll's head, left side and right side lie in the houses around Darrowshire. Put them together
+T 5149 | Pamela Redpath
+A 5241,5152 | Pamela Redpath. Marlene is in the Western Plaguelands; you see her near the end of the segment
+
+# ---------- Light's Hope and Corin's Crossing ----------
+G Eastern Plaguelands, 71.0, 50.5 | Ride east along the southern road to Light's Hope Chapel. Plaguehounds and Noxious Plaguebats on the way count
+F Light's Hope Chapel @ Eastern Plaguelands, 70.5, 47.5 | Georgia, the bat handler, just north-west of the chapel
+T 5241 | Carlin Redpath
+A 5211 | Carlin Redpath
+T 6030 | Duke Nicholas Zverenhoff
+T 8859 @ Eastern Plaguelands, 71.9, 48.4 | Lord Maxwell Tyrosus, inside Light's Hope Chapel: hand him Zora's husk
+A 6021 | Caretaker Alen
+A 5281 | Caretaker Alen. You only have to find Egan, who stands outside by the Plaguewood termite mounds you visit anyway. Take just this first part: his follow-up is inside Stratholme
+C 6022 @ Eastern Plaguelands, 52.0, 57.0 | Corin's Crossing, west of Light's Hope. Gather 7 Living Rot within 10 minutes and grind them with Nathanos' Mortar and Pestle. The Gibbering Ghouls here also count for Carlin: each one releases a Darrowshire Spirit when it dies, so talk to the spirit to free it. There are only 8 of them, so you finish the 15 spirits later in Plaguewood. The Scourge here stand in tight groups: Earth Shock the Dark Casters and Vile Tutors, and drop Stoneclaw Totem when a third mob joins
+
+# ---------- Eastern Plaguelands: the north and back west ----------
+C 5544 @ Eastern Plaguelands, 58.5, 25.0 | Carrion Devourers in the north-east toward Northdale; the Carrion Grubs around Corin's Crossing also count. Diseased Flayers stand right next to them (around 57, 31) and release Darrowshire Spirits too
+C 6024 @ Eastern Plaguelands, 62.0, 11.1 | Infiltrator Hameya, a lone troll in the far north. Take his key
+C 6133 @ Eastern Plaguelands, 45.5, 12.5 | Quel'Lithien Lodge, in the north: Rangers, Pathstriders and Woodsmen. The Quel'Thalas Registry is on a table inside the lodge. Pull them one at a time; Earthbind Totem stops the ones that try to run
+C 5542,6042 | Frenzied Plaguehounds in the north (around 52, 23) and the other hounds along the roads; Monstrous Plaguebats in the north (around 48, 35) and Noxious Plaguebats around Light's Hope
+C 5901,5211 @ Eastern Plaguelands, 18.0, 25.0 | Plaguewood, in the north-west: use the Empty Termite Jar on the Large Termite Mounds until you have 100 termites. The Cannibal Ghouls all over Plaguewood release Darrowshire Spirits: free the rest of your 15 here. Elite Ziggurat Protectors (58) guard the ziggurats (about 19, 16; 23, 29; 25, 18; 28, 18) and a Slaughterhouse Protector stands at about 27, 24: work the mounds on the west side (16-22, 19-27) and give them a wide berth
+T 5281 @ Eastern Plaguelands, 11.4, 26.6 | Egan, in Terrordale just west of the termite mounds. Don't take his follow-up (Stratholme)
+A 6164 | Augustus the Touched, in a cave at Terrordale, a few steps from Egan
+C 6164 @ Eastern Plaguelands, 14.0, 24.2 | Augustus' Receipt Book lies in the ruined inn at Terrordale, a short walk north-east of his cave, upstairs. Crypt Fiends and Crypt Walkers (53-56) live in and around it: pull them one at a time
+T 6164 | Augustus the Touched
+C 5543 | Plaguebats fly all over the west and south of the zone
+T 5542,5543,5544 | Tirion Fordring
+A 5742 | Tirion Fordring
+T 5742 | Listen to Tirion
+A 5781 | Tirion Fordring
+C 5781,6021 @ Eastern Plaguelands, 23.5, 74.0 | The Undercroft, south of the Marris Stead: kill Zaeldarr the Outcast inside the crypt for his head. Taelan's Hammer drops from Mercutio Filthgorger, who is not there until you click the Loose Dirt Mound on Tirion Fordring's grave in front of the crypt (23.8, 74.5): he arrives with Crypt Robbers. Drop a Stoneclaw Totem, kill Mercutio first and Healing Wave between kills
+T 6024 @ Eastern Plaguelands, 23.6, 73.8 | Use Hameya's Key on the Mound of Dirt beside the wagon behind the crypt
+T 6022,6042,6133 | Nathanos Blightcaller, Marris Stead. Skip his elite follow-ups
+T 5781 | Tirion Fordring
+A 5845 | Tirion Fordring
+C 5845 @ Eastern Plaguelands, 62.5, 26.8 | Northdale, in the north-east: the Symbol of Lost Honor lies in the hamlet
+T 6021 | Caretaker Alen, Light's Hope Chapel
+T 5211 | Carlin Redpath. Skip his elite follow-up
+
+# ---------- Undercity and the Western Plaguelands, last loop ----------
+H Undercity | Hearthstone, or cast Astral Recall. Both on cooldown? Fly from Georgia at Light's Hope
+T 5023 | Royal Overseer Bauhaus, near the guild registrar
+A 5049 | Royal Overseer Bauhaus
+T 5049 | Jeremiah Payson, the cockroach vendor close by
+A 5050 @ Undercity, 67.6, 44.2 | Jeremiah Payson
+N Saved cloth? Ralston Farnsley in the Magic Quarter takes donations | 60 wool, 60 silk, 60 mageweave and then 60 runecloth (7813, 7814, 7817, 7818). Every hand-in gives experience
+N Optional: Elemental Mastery (8410) and Spirit Totem (8412), about 8,900 XP | Only with Elemental Mastery in your log (from level 50 it comes only from Haromm in Stonard and the Orgrimmar and Thunder Bluff shaman trainers, so take it at the optional Stonard stop if you go there) and one each of Elemental Air, Fire, Earth and Water: buy what you lack at the Auction House here. Not doing it? Skip the three Bath'rah steps
+N Optional: fly to Tarren Mill and ride to Bath'rah the Windwatcher @ Alterac Mountains, 80.5, 66.9 | From Tarren Mill ride east to the river and follow it north to the ruins where he stands. Hand in Elemental Mastery and take Spirit Totem, then go back to the Undercity with your hearthstone or Astral Recall, whichever is ready (or ride back and fly from Tarren Mill)
+G Tirisfal Glades, 83.1, 68.9 | Ride east to the Bulwark
+T 5236 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+N Talk to High Executor Derrington, next to Vandis: accept Mission Accomplished! and hand it straight back (about 9,300 XP) | The quest's ID is mixed up between factions in the data (5237 / 5238), so this is a manual step; the logger records it
+T 5901 | Mickey Levine
+A 5902 | Mickey Levine
+T 5050 | Janice Felstone, Felstone farmhouse
+A 5051 | Janice Felstone
+C 5051 @ Western Plaguelands, 37.5, 57.5 | Jabbering Ghouls on Felstone Field drop the other half of the charm. Put the halves together
+N Optional, with Spirit Totem: 8 Thick Black Claws and 8 Bloodshot Spider Eyes @ Western Plaguelands, 34.0, 61.0 | Diseased Black Bears (claws) and Venom Mist Lurkers (eyes) roam west and south-west of Felstone Field; Carrion Vultures there drop either. Roughly one kill in five drops one
+T 5051 | Janice Felstone
+T 5902 @ Western Plaguelands, 48.3, 32.0 | The Northridge Lumber Mill: set the barrel on the crate in the middle of the mill
+A 6390 @ Western Plaguelands, 48.3, 32.0 | The Termite Barrel
+T 6004 | Kirsta Deepshadow, just north-east of the mill
+A 6023 | Kirsta Deepshadow
+C 6023 | Huntsman Radley (57.8, 36.1, south-east of Kirsta) and Cavalier Durgen (55.2, 23.6, north-east of her)
+T 6023 | Kirsta Deepshadow. Skip the elite follow-up
+T 5845 | Tirion Fordring: ride east across the river to his hut
+A 5846 | Tirion Fordring
+T 5846 | Artist Renfray on the island of Caer Darrow, south of Tirion: swim across. Scholomance is on the island too; don't go in
+T 5152 | Marlene Redpath, in the house on the hill south of Andorhal. Skip her elite follow-up
+T 6390 | Mickey Levine, the Bulwark
+
+# ---------- Finish ----------
+N Optional, with 8 claws and 8 eyes: fly to Tarren Mill and ride back up the river to Bath'rah @ Alterac Mountains, 80.5, 66.9 | Cast Astral Recall (or hearth) from the Bulwark back to the Undercity and fly to Tarren Mill from Michael Garrett. Hand in Spirit Totem and skip Da Voodoo (Sunken Temple)
+FLY Light's Hope Chapel @ Undercity, 63.2, 48.6 | Already 60? Skip this and the next step. Otherwise cast Astral Recall (or hearth) from the Bulwark back to the Undercity and fly from Michael Garrett, or fly from Tarren Mill if you went to Bath'rah
+L 60 @ Eastern Plaguelands, 52.0, 57.0 | Finish at Corin's Crossing, just west of Light's Hope: Gibbering Ghouls, Dark Casters, Vile Tutors and Hate Shriekers in tight groups. Pull one or two at a time, Earth Shock the casters, drop Stoneclaw Totem when a third joins and Healing Wave between pulls
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Learn your level 60 spells from Haromm in Stonard, the only shaman trainer in the Eastern Kingdoms (fly from Light's Hope). Route complete

@@ -1,0 +1,122 @@
+@segment 29-31 Shimmering Flats, Booty Bay & northern Stranglethorn (replaces Excavation Site, Razorfen Kraul, Gnomeregan)
+@start-level 29
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 213 Hostile Takeover (2800 XP) is taken here and done in segment 13 at Foreman Cozzle's camp.
+@carry 513,1146,1130,1086,5062
+@done 1145,1067,4865,509
+
+# --- Thunder Bluff (hand-ins carried from segment 9) ---
+FLY Thunder Bluff | You start in Orgrimmar (Valley of Honor, after Belgrom). Use the Orgrimmar flight master and keep your hearthstone (Freewind Post) for later in Thousand Needles
+T 1086 | Apothecary Zamah, in the Pools of Vision under Spirit Rise
+T 5062 | Magatha Grimtotem on Elder Rise. Do not take Arikara (elite)
+
+# --- Optional: new north-Mulgore camp (Gloomrise) ---
+G Thunder Bluff, 51.1, 31.8 | Optional new camp: take the path north out of the city. If the camp's givers offer nothing (these quests may need the Excavation Site breadcrumb), skip ahead to Melor Stonehoof
+G Mulgore, 40.0, 17.2 | Keep going to the new plateau north of Thunder Bluff
+A 96259 @ Mulgore, 33.5, 22.5 | Muln Earthfury
+A 96241 @ Mulgore, 32.5, 20.6 | Mazu'kon; you get a Toxin Extractor
+A 96260 | Yorn Grimtotem
+C 96259,96241,96260 | Gloomrise burial ground to the north: kill Hatchlings and Soldiers, use the Toxin Extractor on Gnawed Corpses, loot Crystalline Silk from Spinners. Leave Broodmother Valraxx (elite) alone
+T 96260 | Yorn Grimtotem
+T 96241 @ Mulgore, 32.5, 20.6 | Mazu'kon
+T 96259 @ Mulgore, 33.5, 22.5 | Muln Earthfury
+
+# --- Back through Thunder Bluff ---
+T 1130 | Melor Stonehoof, Hunter Rise (south bridge)
+A 1131 | Steelsnap is a lone hyena in Thousand Needles
+FLY Freewind Post | Thunder Bluff flight master, on the central rise
+
+# --- Thousand Needles: Steelsnap, then the Shimmering Flats ---
+C 1131 | Steelsnap stands at the north-west end of the canyon (17.8,19.8). Follow the road west toward Whitereach Post, then head north. Frost Nova and kite it
+H Freewind Post | Saves the long run back east from Steelsnap
+T 1146 | Moktar Krin. From Freewind Post run east down the canyon road onto the Shimmering Flats; he is at their western edge
+A 1147
+A 1104 | Fizzle Brassbolts at the Mirage Raceway (gnome side)
+A 1105 | Wizzle Brassbolts, next to Fizzle. Skip Encrusted Tail Fins (elite)
+A 1110 | Kravel Koalbeard
+A 5762 | Kravel's crate for Hemet Nesingwary in Stranglethorn; keep it until you get there
+A 1176 | Pozzik (goblin side)
+A 1175 | Trackmaster Zherin, east end of the goblin camp
+C 1104,1105,1110,1176,1175 | Loop the flats: scorpids for venom, Sparkleshell Tortoises for shells, vultures and scavengers for bones, the three basilisk types, and loot Rocket Car Rubble piles as you pass
+A 1148 @ Thousand Needles, 67.5, 84.5 | Silithid hive south of Moktar Krin (67,84). Kill silithids until a Cracked Silithid Carapace drops and right-click it at once, so the parts start dropping. If the hive is too hard at your level, skip 1147 and 1148 here, and later skip T 1148, A 1184 and T 1184
+C 1147,1148 | Same hive: 5 Searchers, 5 Hive Drones, 5 Invaders, plus 1 Heart, 5 Talons and 3 Intact Carapaces from any of them. Searchers (32-33) are on the north side, Drones (33-34) in the middle, Invaders (34-35) on the west edge (64,86). Pull one at a time
+T 1147 | Back north to Moktar Krin
+T 1104 | Fizzle Brassbolts
+T 1105 | Wizzle Brassbolts
+A 1106 | Fizzle's letter for Martek in the Badlands; keep it for a later segment
+T 1110 | Kravel Koalbeard
+T 1176 | Pozzik
+A 1178
+T 1175 | Trackmaster Zherin
+L 30 | Kravel's next quest needs level 30. If you are not 30 yet, kill scorpids and basilisks around the race track until you are
+A 1111 | Kravel Koalbeard: his parts order for Ratchet
+
+# --- Gadgetzan flight path, Thunder Bluff, Crossroads, Ratchet ---
+G Tanaris, 51.6, 25.4 | Leave the flats south along the race track into Tanaris; Gadgetzan's flight master is on the north side of town
+F Gadgetzan
+FLY Thunder Bluff
+T 1131 | Melor Stonehoof, Hunter Rise. He offers Frostmaw next: leave it for now
+TRAIN @ Thunder Bluff, 24.5, 15.5 | Spirit Rise mage trainers: learn the level 30 spells (Conjure Water rank 4, Ice Armor and others). The portal trainer beside them should have Teleport: Thunder Bluff at 30
+FLY Crossroads
+T 1148 @ The Barrens, 51.1, 29.6 | Korran
+A 1184 @ The Barrens, 51.1, 29.6 | For Belgrom in Orgrimmar; you hand it in on the way to Stranglethorn
+FLY Ratchet
+T 1178 | Gazlowe
+A 1180 @ The Barrens, 62.7, 36.2 | Gazlowe
+T 1111 | Wharfmaster Dizzywig, on the dock
+A 1112 @ The Barrens, 63.4, 38.5 | Keep Kravel's parts; you take them back to the Shimmering Flats in a later segment
+
+# --- Booty Bay ---
+N Take the boat from the Ratchet dock to Booty Bay
+T 1180 | Wharfmaster Lozgil, on the Booty Bay dock where the boat lands
+A 1181 @ Stranglethorn Vale, 26.3, 73.6 | Wharfmaster Lozgil
+T 1181 @ Stranglethorn Vale, 27.2, 76.9 | Baron Revilgaz, top floor of the inn building
+A 1182 | Keep it; the blueprints are for a later Stranglethorn visit
+F Booty Bay | Gringer, the flight master by the inn
+S Booty Bay | Innkeeper Skindle, in the inn. You hearth back here at the end of this segment
+A 201 | Krazek, in the inn
+A 605 | Crank Fizzlebub, in the inn
+A 189 | Kebok, in the inn.
+A 575 | Drizzlik, in the shop next to the inn
+
+# --- Orgrimmar stop, then Grom'gol and Nesingwary's camp ---
+N Teleport: Orgrimmar | No rune or spell? Run north along the main road from Booty Bay to Grom'gol instead (about 6 minutes) and keep 1184 for the next Orgrimmar visit
+T 1184 | Belgrom Rockmaul, Valley of Honor (east side of the city)
+N Take the zeppelin to Grom'gol from the towers outside Orgrimmar's main gate | Check that the zeppelin master's destination is Grom'gol, not Undercity
+F Grom'gol | Thysta, the wind rider master
+A 581 | Nimboya
+A 596 | Kin'weelay
+N Take any new quests offered at Grom'gol; the logger records them | Forever adds several undocumented quests in Stranglethorn (e.g. naga on the coast west of camp, level 37). Skip any that are red
+C 201 | Follow the road north to Nesingwary's camp (35.7,10.9); arriving completes it
+T 5762 | Hemet Nesingwary
+A 583 | Barnil Stonepot
+T 583 | Hemet Nesingwary
+A 185 | Ajeck Rouack
+A 190 | Sir S. J. Erlgadin
+A 194 | Hemet Nesingwary
+C 185,190,575 | Young tigers and young panthers around the camp, River Crocolisks along the river. They come in pairs: Frost Nova, then Cone of Cold
+T 185 | Ajeck Rouack
+A 186
+T 190 | Sir S. J. Erlgadin
+A 191
+C 186,191 @ Stranglethorn Vale, 29.5, 12.5 | Stranglethorn Tigers and Panthers roam the hills west of the camp (29,12)
+C 194,605 @ Stranglethorn Vale, 25.5, 16.5 | Stranglethorn Raptors and Crystal Spine Basilisks (shards) share the open ground further west (25,16)
+N Optional new quests at the Ruins of Zul'Kunda (24,10), just north of the raptors: zeppelin crash debris and a caged goblin, Zimmix Sputterspark, start NEW level 35 quests that end in Booty Bay. Take them only if the 34-37 trolls there are manageable; the logger records them | The Bloodscalps there also drop the ears, tusks and necklaces you need next
+T 186 | Back east to Ajeck Rouack at Nesingwary's camp. Don't take the next tier yet; you get it on the next Stranglethorn visit
+T 191 | Sir S. J. Erlgadin. Don't take the next tier yet; you get it on the next Stranglethorn visit
+T 194 | Hemet Nesingwary. Don't take the next tier yet; you get it on the next Stranglethorn visit
+C 581,596,189 @ Stranglethorn Vale, 33.5, 15.5 | Head south toward Grom'gol through the Bloodscalp camps: first 33-34,14-17 just south-west of the hunters' camp, then 29-30,19-20. Any Bloodscalp can drop ears, tusks and necklaces. They are 33-34: pull one at a time and kill axe throwers and shamans first
+L 31 @ Stranglethorn Vale, 29.8, 19.5 | Drizzlik's next quest in Booty Bay needs 31. If you are short, keep killing Bloodscalps at the Bal'lal camps (29-30,19-20 and 33-34,15), TUGs' Classic Stranglethorn grind spot, before going on to Grom'gol
+T 581 | Nimboya, Grom'gol
+A 582 | Keep it for your next Stranglethorn visit
+T 596 | Kin'weelay
+
+# --- Booty Bay hand-ins ---
+H Booty Bay | Or fly from Grom'gol if the hearthstone is on cooldown
+T 201 | Krazek
+T 605 | Crank Fizzlebub
+T 189 | Kebok
+A 213 | Kebok: Hostile Takeover (needs level 31). Do not go now: the Venture Co. geologists are 34-36 and the route is at their camp in segment 13. Not offered because you are 30? Press Skip: the later steps for it then pass by themselves
+T 575 | Drizzlik
+A 577 | Keep it; Snapjaw Crocolisks are 35-36, so it waits for a later visit
+N Hand in any Zul'Kunda NEW quests you took (the goblin escort ends at Wharfmaster Lozgil on the dock)
+N Segment done. Next: Teleport: Undercity (or fly to Grom'gol and take the zeppelin to Undercity if you don't have it)

@@ -1,0 +1,132 @@
+@segment 33-35 Desolace
+@start-level 33
+# Not carried in: 1184 (segment 10 hands it in at Orgrimmar), 187/192/195 and 570 (segment 13 takes them
+# in Stranglethorn), 1164 (segment 11 hands it in at Undercity), 701/678/507 (left with their givers).
+@carry 1361,1182,1112,1106,577,582,213
+
+# ---------- Orgrimmar ----------
+N Teleport: Orgrimmar (or fly from Hammerfall to Undercity and take the zeppelin to Orgrimmar if you don't have it)
+N Log check: if Parts of the Swarm (1184) is still in your log, hand it to Belgrom Rockmaul in the Valley of Honor | You only have it if you skipped the Orgrimmar stop in Stranglethorn. If Tiger, Panther or Raptor Mastery (187/192/195) are in your log, abandon them: you take them again at Nesingwary's camp in the next segment, so nothing is lost.
+A 1431 | Craven Drok
+T 1431 | Keldran, on the west side of the city
+A 1432 | Keldran
+TRAIN @ Orgrimmar, 39.2, 86.3 | Darkbriar Lodge in the Valley of Spirits. Only if you did not get your level 32 ranks (Frostbolt rank 6 and the rest) in Undercity last segment: learn them here. Nothing new comes at 33.
+A 1947 @ Orgrimmar, 38.5, 86.1 | Deino, next to the trainers. Stock up on Runes of Teleportation.
+FLY Crossroads
+
+# ---------- The Barrens -> Mulgore -> Desolace ----------
+T 1361 | Regthar Deathgate, a short run west of the Crossroads
+A 1362 @ The Barrens, 45.3, 28.4 | Regthar Deathgate
+N Teleport: Thunder Bluff (or run back to the Crossroads and fly to Thunder Bluff if you don't have it)
+G Thunder Bluff, 51.1, 31.8 | Take the path north out of the city, the same way as to the Gloomrise camp in an earlier segment
+G Mulgore, 40.0, 17.2 | Keep going to the new plateau north of Thunder Bluff, then follow the new path west into Desolace and on to Kormek's Hut. If there is no path into Desolace, go back to the Thunder Bluff flight master, fly to Sun Rock Retreat and take the road south into Desolace to Kormek's Hut.
+
+# ---------- Kormek's Hut, the caravan, Kodo Graveyard ----------
+A 5501 | Bibbly F'utzbuckle at Kormek's Hut
+A 5821 | Cork Gizelton, only if the Gizelton caravan is stopped here. If it is not, skip both caravan quests (5821 and 5943). If Rigger Gizelton offers Gizelton Caravan (5943) here too, take it now.
+C 5821 @ Desolace, 64.0, 50.0 | Walk with the caravan south past Kolkar Village and kill the centaur that attack the kodos.
+A 5943 | Rigger Gizelton. If he had no quest at Kormek's Hut, he offers it when the caravan stops again after the Kolkar leg, before Mannoroc Coven; take it there or skip it. Optional: demons up to level 38 attack on this leg.
+C 5943 @ Desolace, 56.0, 72.0 | Stay with the caravan through Mannoroc Coven and kill the demons that attack the kodos. Frost Nova them off the kodos.
+T 5821,5943 | Smeed Scrabblescrew at Scrabblescrew's Camp
+A 5561 | Smeed Scrabblescrew
+C 5561,5501 @ Desolace, 53.0, 59.5 | Kodo Graveyard: use the Kodo Kombobulator on Aged, Dying or Ancient Kodos and walk each tamed kodo back to Smeed, one at a time. The kodos on the east edge are closest to the camp. Loot Kodo Bones from the bone piles as you go.
+T 5561 | Smeed Scrabblescrew
+
+# ---------- Ghost Walker Post ----------
+T 1362 | Felgur Twocuts
+A 1365 | Felgur Twocuts
+A 1368 | Gurda Wildmane. Gelkis and Magram reputations are exclusive. This route sides with the Gelkis: kill Magram, never Gelkis.
+A 93225 @ Desolace, 56.2, 59.6 | Gurda Wildmane (new in Forever). The quest says any centaur can drop the 5 Carved Centaur Totems, but so far they have only been recorded from the Maraudine in the Valley of Spears. Keep any that drop from Kolkar or Magram.
+T 1432 | Takata Steelblade
+A 1433 @ Desolace, 52.6, 54.4 | Takata Steelblade
+T 1433 @ Desolace, 52.2, 53.4 | Maurin Bonesplitter, next to Takata
+A 1435 | Maurin Bonesplitter. He gives you the Burning Gem.
+A 1434 | Takata Steelblade
+
+# ---------- Kolkar Village, Kormek's Hut, Thunder Axe Fortress ----------
+C 1365 | Kolkar Village, northeast of Ghost Walker Post. Khan Dez'hepah stands at the north end. Kolkar pull in groups, which is good for Blizzard and Frost Nova.
+T 5501 | Bibbly F'utzbuckle at Kormek's Hut
+C 1435 @ Desolace, 54.8, 27.8 | Thunder Axe Fortress, northwest of Kormek's Hut: bring each Burning Blade orc to low health, then use the Burning Gem on it to get an Infused Burning Gem. Used at high health it does nothing. Get 15, and keep the Burning Gem: it goes back to Maurin with them.
+A 1480 @ Desolace, 54.8, 27.8 | The Flayed Demon Skin drops from Burning Blade orcs here. Right-click it to start the quest.
+
+# ---------- Ghost Walker Post ----------
+T 1365 | Felgur Twocuts
+A 1366 | Felgur Twocuts
+T 1435 | Maurin Bonesplitter. Takata now offers Alliance Relations (1436). Leave it for later to save log space.
+T 1480 | Maurin Bonesplitter
+A 1481 | Maurin Bonesplitter
+
+# ---------- Magram Village ----------
+C 1366,93225 @ Desolace, 69.5, 75.0 | Magram Village, southeast of Ghost Walker Post: kill Magram centaur for 15 Centaur Ears, and keep any totems that drop. Polymorph extras and pull away from the huts.
+C 1368 @ Desolace, 69.5, 75.0 | Do not leave Magram Village until you are Friendly with the Gelkis (check the reputation tab). Every Magram kill raises it, and these are the same kills as the grind below. Do not count on Gurda's totem reward to finish it.
+L 34 | Keep killing Magram centaur here (levels 32-36) until you reach 34.
+
+# ---------- Ghost Walker Post -> Gelkis Village ----------
+T 1366 | Felgur Twocuts
+C 93225 @ Desolace, 36.5, 65.5 | Fewer than 5 totems? Kill Maraudine Scouts and Wranglers (36-38) on the south-east edge of the Valley of Spears, on the way from Ghost Walker Post to Gelkis Village. Pull them one at a time. If they are too strong, abandon 93225 and skip its hand-in later.
+T 1368 | Uthek the Wise, at the edge of Gelkis Village in the southwest
+A 1370 | Uthek the Wise. Keep it: you loot the meat at Magram Village at the end of this segment.
+N Take any new quests offered here if you have log space; the logger records them | Forever adds several Gelkis quests at this village (crafted-item turn-ins and more). Skip Ongeku (1373): its shard is in the Swamp of Sorrows.
+
+# ---------- Shadowprey Village ----------
+F Shadowprey Village @ Desolace, 21.6, 74.0 | Flight master in Shadowprey Village
+S Shadowprey Village | Make the inn your home
+A 5381 | Taiga Wisemane. She gives you the Demon Pick.
+A 6142 | Mai'Lahii on the docks
+A 6143 | Drulzegar Skraghook
+A 97265 | Aka'rai (new in Forever)
+
+# ---------- North coast and Ethel Rethor (mainland only) ----------
+A 6161 | Follow the coast north to the shipwreck. Rackmore's Log lies on the beach next to it.
+C 6161:1 @ Desolace, 33.0, 32.0 | Kill Drysnap crabs around the wreck until Rackmore's Silver Key drops. They also drop Soft-shelled Clam Meat.
+A 5741 | Azore Aldamort, at the top of the tower at Ethel Rethor, just northeast of the wreck
+C 6143,6142,6161:2 @ Desolace, 35.0, 22.0 | Slitherblade naga on the shore north of Ethel Rethor, from about 36,28 up to 31,15: 7 Myrmidons, 7 Naga and 5 Sorceresses. Any naga can drop Rackmore's Golden Key and clam meat. Stay on the mainland; Ranazjar Isle comes later. Frost Nova and step back; the casters hit hard.
+
+# ---------- Thunder Axe Fortress and Sargeron ----------
+C 5741 | Burning Blade Seer at the top of the tower in Thunder Axe Fortress. He has the Sceptre of Light.
+C 5381 @ Desolace, 55.0, 26.7 | Use the Demon Pick on the red Hand of Iruxos Crystal inside Thunder Axe Fortress. Kill the Demon Spirit (37) that appears and loot the Demon Box.
+C 1434,1481,97265 @ Desolace, 75.5, 19.5 | Sargeron, the satyr camp in the northeast: 7 each of Hatefury Rogues, Felsworn, Betrayers and Hellcallers, plus 2 each of Tricksters, Hellcallers, Shadowstalkers, Felsworn and Rogues for Aka'rai. Shadowstalkers are stealthed; one drops the Shadowstalker Scalp.
+
+# ---------- Ghost Walker Post ----------
+T 1434 | Takata Steelblade
+T 1481 | Maurin Bonesplitter
+A 1482 | Maurin Bonesplitter
+T 93225 @ Desolace, 56.2, 59.6 | Gurda Wildmane. If she then offers a Totem Tote quest, take Buying Friendship: Gelkis (not the Magram one) and give the tote to the Gelkis Quartermaster when you hand in Stealing Supplies in Gelkis Village at the end of this segment.
+A 5386 | Nataka Longhorn
+
+# ---------- Ethel Rethor and Ranazjar Isle ----------
+T 5741 | Azore Aldamort
+A 6027 | Azore Aldamort. He gives you the Gem of the Serpent.
+T 6161 | Rackmore's Chest on Ranazjar Isle: follow the naga shore north and swim across (needs both keys)
+C 6027,1482 @ Desolace, 30.0, 9.5 | Ranazjar Isle: put the Gem of the Serpent on the Serpent Statue's hand and kill Lord Kragaru (level 38) for the book. Slitherblade Oracles here drop the Oracle Crystal.
+T 6027 | Azore Aldamort
+N Teleport: Thunder Bluff to train (optional; skip it and the training if you don't have the spell) | You train again at 36 in the next segment.
+TRAIN | Thunder Bluff, the mage trainers on Spirit Rise: learn your level 34 spells
+H Shadowprey Village
+
+# ---------- Shadowprey Village ----------
+T 6142 | Mai'Lahii
+T 6143 | Drulzegar Skraghook
+T 97265 @ Desolace, 25.2, 67.2 | Aka'rai
+T 5381 | Taiga Wisemane
+A 5581 | Taiga Wisemane. She gives you the Hand of Iruxos.
+A 5421 | Jinar'Zillen on the docks. This is how you get the Bloodbelly Fish for Catch of the Day.
+C 5421 | Loot the Shellfish Traps on the sea floor under and around the docks. Get 10: each 5 Shellfish buy one fish.
+T 5421 | Jinar'Zillen. Take the quest again and hand in the other 5 Shellfish for the second Bloodbelly Fish.
+
+# ---------- Ghost Walker Post ----------
+T 1482 | Maurin Bonesplitter
+A 1484 | Maurin Bonesplitter
+T 1484 | Takata Steelblade
+A 1436 @ Desolace, 52.6, 54.4 | Takata Steelblade. You hand this in to Keldran in Orgrimmar in the next segment.
+T 5386 | Nataka Longhorn
+
+# ---------- Magram Village, Mannoroc Coven, Gelkis Village ----------
+C 1370 | Magram Village: loot 6 Sacks of Meat by the huts. Kill the Magram that get in the way.
+C 5581 @ Desolace, 53.0, 79.0 | Mannoroc Coven, on the way west: use the Hand of Iruxos at a demon portal and kill the Demon Portal Guardian (38-39) that comes out. Do 6. Clear the Doomwarders around a portal first. Only do this if the Guardians are not red to you (you should be 35 or close to it); otherwise abandon 5581 and skip its hand-in at Shadowprey.
+T 1370 | Uthek the Wise, Gelkis Village. Give the Totem Tote to the Gelkis Quartermaster here if you have it.
+N Shen'dralas check | Shen'dralas is Forever's new area around the Valley of Bones (east of Gelkis Village, south of Magram Village, quests 38-43). Its Gelkis line continues after Ongeku (1373). Note any givers you see as a 37-43 filler; don't start it now.
+
+# ---------- Shadowprey Village ----------
+T 5581 | Taiga Wisemane
+A 5763 | Roon Wildmane. You hand it in to Hemet Nesingwary in Stranglethorn in the next segment.

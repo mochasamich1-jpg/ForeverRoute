@@ -1,0 +1,69 @@
+@segment 29-30 Water & Air Totems, Gloomrise & Shimmering Flats
+@start-level 29
+@carry 96,1130,5062,515
+@done 100,4865,513
+
+# ---------- Crossroads, then the Water Totem near Ratchet ----------
+A 1145 | Korran, next to the Crossroads flight master. Keep his sealed note for your next Orgrimmar visit. Not offered yet (needs 29)? Then fly Freewind Post -> Crossroads at the end of this segment, take it, and fly on to Ratchet
+FLY Ratchet | You start at the Crossroads, hearthed back from the Undercity
+T 96 | Islen Waterseer, on the beach south of Ratchet next to Mahren Skyseer. You get the Water Totem and learn Healing Stream Totem; your other water totems (Mana Spring, Poison Cleansing) now work too
+
+# ---------- Thunder Bluff hand-ins ----------
+FLY Thunder Bluff | Run back to the Ratchet flight master. The flight goes through the Crossroads
+T 1130 | Melor Stonehoof, Hunter Rise (the south mesa)
+A 1131 | Steelsnap is a hyena in the far west of Thousand Needles
+T 5062 | Magatha Grimtotem, Elder Rise (the east mesa). Do not take Arikara (elite)
+
+# ---------- Gloomrise (new camp on the plateau north-west of Thunder Bluff) ----------
+G Thunder Bluff, 51.1, 31.8 | Take the path north out of the city
+G Mulgore, 40.0, 17.2 | Follow it to the new plateau north of Thunder Bluff, then head west to the camp on Skywatcher Plateau
+A 96260 | Yorn Grimtotem
+A 96241 @ Mulgore, 32.5, 20.6 | Mazu'kon, beside Yorn. He gives you a Toxin Extractor
+A 96259 @ Mulgore, 33.5, 22.5 | Muln Earthfury, in the same camp. If someone in the camp offers nothing, skip that quest
+N Optional: this camp takes cloth donations (60 Wool Cloth or 60 Silk Cloth; Oura Stormspinner, 34.2,22.4) for a little extra XP. Skip it if you have no spare cloth
+C 96259,96241,96260 @ Mulgore, 33.4, 10.0 | Gloomrise burial ground, north of the camp: kill Hatchlings and Soldiers, use the Toxin Extractor on Gnawed Corpses, and loot Crystalline Silk from Spinners. Leave Broodmother Valraxx (elite, north end) alone. Fight next to Healing Stream Totem; drop Poison Cleansing Totem if the bites poison you
+T 96260 | Yorn Grimtotem
+T 96241 @ Mulgore, 32.5, 20.6 | Mazu'kon. Skip his Drowned City idol quest (level 40)
+T 96259 @ Mulgore, 33.5, 22.5 | Muln Earthfury. If anyone offers The Broodmother (elite), skip it
+
+# ---------- Freewind Post and Steelsnap ----------
+FLY Freewind Post | Walk back into Thunder Bluff to Tal, the wind rider master on the central mesa
+S Freewind Post | Innkeeper Abeqwa. Your hearth stays here for the rest of this segment
+C 1131 | Steelsnap (level 30) roams the north-west end of the canyon (17.8,19.8). Ghost Wolf west along the road toward Whitereach Post, then north. Pull him away from other hyenas; if one joins, drop Stoneclaw Totem and Earth Shock Steelsnap first
+H Freewind Post | Saves the long run back east. If the hearthstone is still on cooldown, Ghost Wolf back along the road
+
+# ---------- Shimmering Flats ----------
+A 1104 | From Freewind Post follow the canyon road east and down onto the Shimmering Flats to the Mirage Raceway. Fizzle Brassbolts (gnome side)
+A 1105 | Wizzle Brassbolts, next to Fizzle
+A 1110 | Kravel Koalbeard
+A 5762 | Kravel's crate for Hemet Nesingwary in Stranglethorn; keep it until you get there
+A 1176 | Pozzik (goblin side)
+A 1175 | Trackmaster Zherin, east end of the goblin camp
+C 1104,1105,1175:1 @ Thousand Needles, 76.0, 60.0 | North half of the flats first: Scorpid Reavers (31-32) for venom, Sparkleshell Tortoises (30-31) for shells, and Saltstone Basilisks (30-31). Leave the look-alike Sparkleshell Snappers (34-35) alone: they drop shells too but are five levels higher, and most roam the east edge, so take your tortoises on the west side. Also kill Crystalhides (32-33) and Salt Flats Scavengers (bones) and loot every Rocket Car Rubble pile you pass. Basilisks often come in pairs: Stoneclaw Totem holds one, Earthbind Totem stops runners, Healing Wave between pulls
+C 1110,1176,1175 @ Thousand Needles, 78.0, 83.0 | Then the south half, around and below the race track: Saltstone Gazers (34-35, the hardest: pull them one at a time from the edges), the rest of the Crystalhides, Salt Flats Vultures for the remaining bones and the rest of the rubble. Avoid Vile Sting, a rare elite scorpid
+T 1104 | Fizzle Brassbolts. Leave his letter for Martek (Badlands) for a later visit
+T 1105 | Wizzle Brassbolts. Skip his next quest, Encrusted Tail Fins (elite)
+T 1110 | Kravel Koalbeard
+T 1176 | Pozzik
+A 1178 | Pozzik: a message for Gazlowe in Ratchet
+T 1175 | Trackmaster Zherin
+L 30 @ Thousand Needles, 74.0, 60.0 | Only if you are not 30 yet (the step ticks by itself otherwise): Kravel's next quest, Call of Air and Astral Recall all need level 30. Go back to the west side of the north half and kill Saltstone Basilisks and Sparkleshell Tortoises (30-31) and Scorpid Reavers (31-32). Skip the Scorpid Terrors and Snappers (33-35) around the race track. Then come back to Kravel
+A 1111 | Kravel Koalbeard: his parts order for Ratchet
+
+# ---------- Gadgetzan flight path, Thunder Bluff training and Call of Air ----------
+G Tanaris, 51.6, 25.4 | Leave the flats south along the race track into Tanaris; Gadgetzan's flight master is on the north side of town
+F Gadgetzan | Bulkrek Ragefist
+FLY Thunder Bluff
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 30 spells, including Astral Recall (a second hearthstone to your bind point, 15 min cooldown), Windfury Weapon and Reincarnation. The new air totems only work once you have the Air Totem
+A 1532 | Xanis Flameweaver, beside the shaman trainers
+T 1131 | Melor Stonehoof, Hunter Rise. Skip his next quest, Frostmaw: this route does not go after it
+N Cast Astral Recall (back to Freewind Post) | Or fly to Freewind Post from Tal
+T 1532 | Prate Cloudseer sits in a small hut on the mesa north-east of Freewind Post, just south of Dorn Plainstalker (the Test of Faith planks): take the same way up you used for Dorn. You get the Air Totem, so your air totems now work
+
+# ---------- Ratchet, then the boat ----------
+FLY Ratchet | From Nyse at Freewind Post
+T 1178 | Gazlowe, in the middle of Ratchet
+A 1180 @ The Barrens, 62.7, 36.2 | Gazlowe: keep it for Booty Bay
+T 1111 | Wharfmaster Dizzywig, on the dock
+A 1112 @ The Barrens, 63.4, 38.5 | Keep Kravel's parts; you take them back to the Shimmering Flats in a later segment
+N Take the boat from the Ratchet dock to Booty Bay. Keep 515 for Tarren Mill; your hearth stays at Freewind Post

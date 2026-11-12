@@ -1,0 +1,106 @@
+@segment 54-56 Winterspring
+@start-level 54
+# Skyborne Druid segment (adapted from the Dwarf route's Winterspring segment: same quests, same order, same binds).
+# Carried in from segment 22: The New Springs (980) and It's a Secret to Everybody (3908) for Donova Snowden,
+# To Winterspring! (5249) for Wynd Nightchaser and Speak to Salfa (8465).
+@carry 980,3908,5249,8465
+# Prerequisites of the carried quests (3845 -> 3908, 974 -> 980 in segment 21; 8461 -> 8465 in segment 22).
+@done 3845,974,8461
+# Order: Timbermaw Hold -> Salfa and Donova -> the western Winterfall camps (the firewater flask drops there) -> Donova's
+# firewater chain with two short trips back through the tunnel into Felwood -> grind to 55 -> Starfall Village ->
+# Everlook (bind) -> yetis and Winterfall Village with the grind to 56 -> Starfall, Lake Kel'Theril, the wrecked camp
+# and Darkwhisper Gorge in the south -> back west for Donova's last quests and Salfa -> Teleport: Moonglade (train) ->
+# hearth to Everlook.
+# Hearth: Astranaar until Everlook, then Everlook.
+# Changes against the plan, all inside this segment:
+# - The grind is split: L 55 on the level 53-56 furbolgs in the west first, L 56 at Winterfall Village before the
+#   level 56-59 yetis and owlbeasts. Everything east of Starfall is 55-59, too high for a fresh 54.
+# - Threat of the Winterfall (5082) needs Trouble in Winterspring! (6603) from Everlook, so it is done on the way back
+#   west at the end, together with the hand-ins of 4842 and 8464.
+# - The Final Piece (5123) is left out: its log only drops from High Chief Winterfall, an elite.
+# - Are We There, Yeti? part 3 (5163) is not taken: its hand-in needs a flight to Gadgetzan and Un'Goro and a trip back
+#   to Everlook, and the route leaves Winterspring for good at the end of this segment.
+# - Toxic Horrors (5086) can only be taken after Mystery Goo (5085) is handed to Donova: two trips into Felwood, not one.
+# Skipped as planned: 3909 (Feralas), 5121 (elite), 5128 (Felwood), 4808-4810, the Darnassus and Moonglade chains.
+# Druid changes against the Dwarf original:
+# - No class quests were in this segment; nothing removed, @carry / @done unchanged.
+# - All combat hints rewritten for a druid (Bear Form and Bash, Entangling Roots, Abolish Poison, druid heals).
+# - Training: the Dwarf trained 54 and 56 in Ironforge two segments later. There is no druid trainer there, so the
+#   stop moves here: at the very end, standing at Salfa in the far west, cast Teleport: Moonglade, train at Loganaar
+#   and hearth to Everlook. The Hearthstone is not used anywhere else in this segment (the Dwarf's only use was this
+#   same hearth to Everlook), so it is ready, and Everlook is where the next segment starts. The walk from
+#   Winterspring to Moonglade through Timbermaw Hold is not used.
+# - The Dwarf's second-hearthstone option at the end is gone: the Hearthstone only.
+# Carry-out (3): 5245, 6028, 6030.
+
+# ---------- The tunnel exit: Salfa and Donova ----------
+G Winterspring, 27.7, 34.5 | You start at Nafien at level 54, hearthstone set to Astranaar. Walk through Timbermaw Hold and keep right for the Winterspring exit. Never attack the Timbermaw furbolgs inside
+T 8465 | Salfa, at the tunnel exit
+A 8464 | Salfa. Den Watchers live in the camps right here; Shamans and Ursa only in Winterfall Village, far to the east
+T 3908 | Donova Snowden, beside the hot springs a short ride south-east. She offers The Videre Elixir next: skip it, it is a Feralas trip
+T 980 | Donova Snowden
+A 4842 | Donova Snowden. The spot is in the far south of Winterspring: you go there from Everlook
+
+# ---------- Western Winterfall camps: the firewater chain and the grind to 55 ----------
+N Kill Winterfall furbolgs in the camp just south-east of Salfa until one drops an Empty Firewater Flask @ Winterspring, 31.5, 36.3 | The camp spreads over 30-34, 35-37: Pathfinders (53-54), Totemics (54-55) and three Den Watchers (55-56, they count for Salfa). About 1 kill in 10 drops the flask. Pull singles with Wrath or Moonfire, Bear Form when two come, Rejuvenation or Healing Touch between pulls. Salfa buys Winterfall Spirit Beads 5 at a time: loot everything
+A 5083 @ Winterspring, 31.5, 36.3 | Right-click the Empty Firewater Flask. No flask after 30 kills or so? Go on to the grind step below and take it when it drops; without it, skip Donova's chain
+T 5083 | Donova Snowden
+A 5084 | Donova Snowden
+N Go back through Timbermaw Hold to the Felwood side | Short trip number one. Carrying 5 Winterfall Spirit Beads? Hand them to Salfa as you pass
+T 5084 @ Felwood, 60.2, 5.8 | The Deadwood Cauldron in the middle of Felpaw Village, just west of Nafien. Clear the furbolgs around it first
+A 5085 @ Felwood, 60.2, 5.8 | The Deadwood Cauldron
+T 5085 | Back through the tunnel to Donova Snowden
+A 5086 | Donova Snowden
+N Go back through Timbermaw Hold once more | Short trip number two
+C 5086 @ Felwood, 49.7, 25.0 | Irontree Woods, down the road south-west of Felpaw Village: Toxic Horrors (53-54) drop the 3 droplets, nearly every kill. They poison: Abolish Poison
+T 5086 | Back through the tunnel to Donova Snowden
+A 5087 | Donova Snowden. The runners are level 57 and come three at a time: grind first
+L 55 @ Winterspring, 31.5, 36.3 | Quest XP is thin in Winterspring. Grind the two Winterfall camps in the west to 55: the big one south-east of Salfa (30-34, 35-37) and the one east of Donova (39-42, 42-45). Every kill adds Timbermaw reputation, and the Den Watchers count for Salfa (three in the first camp, one in the second). Pull singles from the edge, fight in Cat Form to save mana or with Moonfire and Wrath, Rejuvenation or Healing Touch between pulls
+C 5087 @ Winterspring, 27.9, 34.5 | Three Winterfall Runners (57) come out of the Timbermaw tunnel beside Salfa and walk east along the road toward Winterfall Village. Wait at the exit, or ride the road east until you meet them. They come as a group: Entangling Roots on one, then Bear Form with Demoralizing Roar for the other two, kill them one by one and loot the Winterfall Crate. Going badly? Run back toward Salfa and try again
+T 5087 | Donova Snowden. Skip High Chief Winterfall: he is elite
+
+# ---------- Starfall Village and Everlook ----------
+T 5249 | Ride east along the road to Starfall Village, the night elf lodge on the hill north of Lake Kel'Theril. Wynd Nightchaser is inside
+A 5244 | Wynd Nightchaser
+T 5244 | Jaron Stoneshaper, the dwarf standing next to her
+A 5245 | Jaron gives you his pick. The fragments are in the lake south of here; you collect them after Everlook
+G Winterspring, 61.0, 38.0 | Ride on east to Everlook
+F Everlook @ Winterspring, 62.3, 36.6 | Maethrya, the hippogryph master outside the north gate
+S Everlook @ Winterspring, 61.4, 38.8 | Innkeeper Vizzie, at the inn. Your hearthstone now brings you back here
+A 6603 | Meggi Peppinrocker, near the west gate. It goes to Donova on your way back west
+A 3783 | Umi Rumplesnicker
+A 6604 | Harlo Wigglesworth, next to the inn
+A 6028,6030 | Gregor Greystone, in the inn. Both are deliveries to the Plaguelands, at the very end of the route: keep them
+
+# ---------- East of Everlook: yetis and Winterfall Village ----------
+C 3783 @ Winterspring, 67.4, 42.3 | Ice Thistle Yetis (55-56) on the hills south-east of Everlook drop the 10 Thick Yeti Furs
+C 8464 @ Winterspring, 67.1, 36.8 | Winterfall Village, just east of Everlook: 8 Shamans and 8 Ursa, and whatever Den Watchers Salfa still needs. Only six Shamans live here, so wait for a respawn. Bash the Shamans' heals in Bear Form; the Ursa (57-58) hit hardest, so fight them in Bear Form with Demoralizing Roar up. High Chief Winterfall in the cave at the back (69.6, 38.3) is elite: stay out of it
+L 56 @ Winterspring, 67.1, 36.8 | Stay in Winterfall Village and grind to 56 before the higher yetis and the owlbeasts. Pull at the edge of the camp, Entangling Roots on the second one of a pair or Bear Form for both, Rejuvenation or Healing Touch between pulls. The yetis next door are an easier alternative
+T 3783 | Umi Rumplesnicker, Everlook
+A 977 | Umi Rumplesnicker
+C 977 @ Winterspring, 69.2, 40.8 | Ice Thistle Matriarchs and Patriarchs (56-58) higher up in the Ice Thistle Hills drop the 2 Pristine Yeti Horns. Pull them one at a time
+T 977 | Umi Rumplesnicker. Do not take her third quest: the mechanical yeti has to visit Gadgetzan and Un'Goro and come back here, and you leave Winterspring for good today
+
+# ---------- Lake Kel'Theril and the south ----------
+T 6604 | Ride west to Jaron Stoneshaper, Starfall Village
+A 4861 | Jaron Stoneshaper
+C 5245 @ Winterspring, 53.0, 42.4 | Lake Kel'Theril, south of Starfall. Four Highborne Relic Fragments stick out of the ice (50.9, 41.7; 52.4, 41.5; 53.3, 43.4; 55.1, 43.0): use Jaron's Pick next to each one, then loot it. The Anguished and Suffering Highborne (54-55) around them are ghosts with a mana burn: Bash it in Bear Form. Keep the four fragments for the Plaguelands
+T 4861 @ Winterspring, 59.0, 59.8 | Ride south along the road, past the Mazthoril cave (stay on the road), to Jaron's wrecked camp at the edge of Owl Wing Thicket: the Damaged Crate
+A 4863 @ Winterspring, 59.0, 59.8 | The Damaged Crate
+T 4863 @ Winterspring, 61.4, 60.7 | Jaron's Wagon, a little further east
+A 4864 @ Winterspring, 61.4, 60.7 | Jaron's Wagon
+C 4864 @ Winterspring, 64.8, 60.8 | Pick up Jaron's Supplies from the snow beside the wagon, then kill Crazed, Moontouched and Berserk Owlbeasts (56-59) around the camp and in Owl Wing Thicket just east until one drops the Blue-feathered Amulet. They hit hard and enrage: one at a time in Bear Form, Entangling Roots if a second comes, heal early
+C 4842 @ Winterspring, 59.8, 74.3 | Ride to the far south until the sky turns dark at the mouth of Darkwhisper Gorge. The way runs through Frostwhisper Gorge (around 58-66, 65-73), whose Frostmaul Giants and Preservers are elite, level 59-60: stay mounted, keep to the middle and do not stop. Reaching the mouth of Darkwhisper Gorge is enough; the demons further in are elite too
+T 4864 | Ride back north, through Frostwhisper Gorge the same way, to Jaron Stoneshaper at Starfall Village
+
+# ---------- Back west: Donova and Salfa ----------
+T 6603 | Ride west along the road to Donova Snowden at the hot springs
+A 5082 | Donova Snowden
+T 4842 | Donova Snowden
+C 5082 @ Winterspring, 31.8, 36.5 | The two western Winterfall camps again: 8 Pathfinders, 8 Totemics and 8 Den Watchers. Only four Den Watchers live in the west (three in the camp south-east of Salfa at 30.5, 36.3, one in the camp east of Donova at 41.6, 42.6): kill them, do the Pathfinders and Totemics, and they are back for the second round
+T 5082 | Donova Snowden
+T 8464 | Salfa, at the tunnel exit. Hand him any Winterfall Spirit Beads too, 5 at a time
+N Cast Teleport: Moonglade | Your training trip. You are 56 and the Hearthstone has not been used in this segment, so it is ready to take you back. It drops you in Nighthaven
+TRAIN @ Moonglade, 52.5, 40.6 | Loganaar, in Nighthaven: learn your level 54 and 56 spells and anything older you still miss. The next druid trainer is in Stormwind, two segments away
+H Everlook | Hearthstone: it is your way back from Moonglade
+N Segment done. Next segment flies south from Everlook | Keep Troubled Spirits of Kel'Theril (5245, with the four relic fragments), The Everlook Report (6028) and Duke Nicholas Zverenhoff (6030) in the log: all three are for the Plaguelands. Sell and repair here; your hearthstone is set to Everlook

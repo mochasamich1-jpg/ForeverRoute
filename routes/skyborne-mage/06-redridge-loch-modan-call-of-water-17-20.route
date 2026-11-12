@@ -1,0 +1,168 @@
+@segment 17-20 Redridge I & Loch Modan II
+@start-level 17
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 161 A Dark Threat Looms (1350 XP) is taken and carried to Dun Modr, where the route goes at 30.
+# Skyborne Mage 17-20 (adapted from the skyborne-druid route's segment 06, itself the Dwarf route's segment 05).
+# Carry-in: 65 (to Wiley in Lakeshire), 263 (Stonesplinter troggs), 353 (package for Mountaineer Stormpike),
+# 2039 (Find Bingles).
+# Carry-out: 119 + 121 (Lakeshire, segment 07), 455 (Menethil Harbor, segment 08), 2041 (Stormwind, segment 07).
+# Hearth: Sentinel Hill at the start (not used), Thelsamar from the Loch Modan part on. It is used once, as the
+# very last step, to get from the Dun Algaz tunnel back to Thelsamar.
+# Deviations from the source segment (same quests, same order, same hearth bind, same flight paths):
+#  - Level 18 training in Stormwind is at Jennea Cannon in the Mage Quarter (49.6, 85.8), not in the Park. It
+#    sits between the main gate (back from Goldshire) and the gryphon master, a shorter walk than the Park was.
+#  - Teleports, first chance: the character is about 19 at that Stormwind stop and about 20 at the Ironforge
+#    stop near the end (301/302, 2041). Both stops carry a "level 20 already?" step for the Portal Trainer
+#    (Larimaine Purdue in Stormwind, Milstaff Stormeye in Ironforge, next to Bink the mage trainer, who gets a
+#    TRAIN stop there). A player who is not 20 yet ticks them and learns both teleports at the start of
+#    segment 07, which passes Ironforge AND Stormwind again. Nothing in this segment depends on a teleport.
+#  - The source's level-20 training trip at the very end (a class teleport out of the Dun Algaz tunnel to a
+#    far-away trainer, then the Hearthstone to Thelsamar) is DROPPED, not turned into a mage teleport: at that
+#    point Teleport: Stormwind is not reliably known (it needs level 20 plus a Portal Trainer visit, and the
+#    only Stormwind visit of this segment is at about 19), and a player who was 20 in Ironforge has just trained
+#    with Bink anyway. The final `H Thelsamar` stays: it is the same Hearthstone use as in the source and the
+#    Dwarf route, and segment 07 starts with the gryphon from Thelsamar to Ironforge, where level 20 is
+#    trained (Bink) five minutes later.
+#  - The source's note about a later class quest chain at that last stop is removed with the trip.
+#  - A mage conjures food and water: the "buy food and water" reminder at the Thelsamar inn is gone.
+#  - Combat hints rewritten for a mage of level 18-20 (Frostbolt, Fire Blast, Frost Nova, Polymorph on the
+#    second mob; casters are killed first because there is no interrupt before level 24; Blink, Blizzard,
+#    Evocation and Mana Shield are only assumed from segment 07 on).
+# Inherited from the source (already not in this file): the Dwarf's level-20 water class-quest chain and the
+# walk to Hervdana's falls, the Dwarf's first Ironforge training trip, the L 20 grind step.
+# Left out on purpose: 132 (Wiley's follow-up, a Westfall bounce), 161/274 (A Dark Threat Looms part 3 and 4: the
+# data puts Ashlan Stonesmirk at Dun Modr in the far north of the Wetlands, not at the dam), 278 and
+# 255/256/271/531 (elite), 116 Dry Times (four bought drinks from four towns).
+@carry 65,263,353,2039,97894
+@done 237,1097
+
+# ---------- Stormwind -> Redridge ----------
+A 244 | From the Dwarven District leave Stormwind by the main gate and follow the road east: Goldshire, Eastvale Logging Camp, then the Three Corners crossroads just inside Redridge. Guard Parker walks the road there.
+F Lakeshire @ Redridge Mountains, 25.5, 59.4 | Follow the road north-east to Lakeshire. Ariena Stormfeather, the gryphon master, stands on the south side of the bridge. Redridge Mongrels (15-16) and Great Goretusks sit next to the road: leave them for now.
+T 244 | Deputy Feldon, a few steps from the gryphon master
+A 246 | Deputy Feldon
+A 98407 @ Redridge Mountains, 25.6, 59.9 | Deputy Feldon: Show of Force (new in Forever)
+A 3741 | Shawn, a child standing at the lake by the bridge (24.2, 53.6)
+A 125 | Cross the bridge. Foreman Oslow stands at its north end.
+A 118 | Verner Osgood, close to the bridge on the town side
+A 120 | Magistrate Solomon in the town hall
+A 127 | Dockmaster Baren on the dock in front of the town
+A 129 | Darcy, the waitress in the inn
+T 65 | Wiley the Black, upstairs in the inn. Do not take his follow-up (The Defias Brotherhood, back to Westfall).
+A 92 | Chef Breanna, in the house west of the inn
+
+# ---------- Lake Everstill ----------
+C 3741 | Glinting Mud lies under water along the lake shore on both sides of the bridge (spots between 14 and 33, 51-56). Open the piles until one holds Hilary's Necklace.
+C 125 @ Redridge Mountains, 36.4, 54.7 | Swim east from the bridge. The Sunken Chest with Oslow's Toolbox lies on the lake bottom. Murlocs (17-20) swim around it: kill what comes at you before you dive, and keep the fish they drop (Spotted Sunfish for Selling Fish).
+T 3741 | Hilary, the girl next to Shawn
+T 125 | Foreman Oslow
+A 89 | Foreman Oslow
+
+# ---------- Gnolls north of town ----------
+C 89 @ Redridge Mountains, 24.0, 34.8 | The data lists the gnolls north of Lakeshire as the source of Iron Pikes and Iron Rivets: Redridge Brutes (17-18) in the camps around 24, 35 and Redridge Mystics (18-19) a little further north. Take the path north out of town. Pull one camp member at a time with Frostbolt, kill a Mystic before the gnoll beside it (you cannot interrupt its casts yet), and Polymorph a second gnoll if two come. Do not go deeper than you need: Bashers (19-20) are behind them. Great Goretusks on the way drop snouts for the goulash.
+
+# ---------- Gnolls and beasts south of the lake ----------
+C 246,98407 @ Redridge Mountains, 20.0, 70.0 | Cross the bridge again and work the gnoll camps south and south-west of Lakeshire, toward Three Corners. Kill 10 Redridge Mongrels (15-16) and 6 Redridge Poachers (16-17, mostly in the southern camps around 29, 80), and every Redridge Thrasher (14-15) you see until you have 5 Spiked Collars. Poachers shoot from range: just fight them where they stand. Fire Blast a gnoll that runs at low health. Tarantulas (15-16) and Great Goretusks (16-17) live between the camps: kill them as you go for 5 Crisp Spider Meat and 5 Great Goretusk Snouts (Redridge Goulash).
+T 129 | Guard Parker at Three Corners
+A 130 | Guard Parker
+C 127 @ Redridge Mountains, 43.7, 69.2 | 10 Spotted Sunfish from murlocs. Murloc Shorestrikers (16-17) on the south shore of the lake around 44, 69 are the easiest; Minor Tidecallers and Flesheaters (17-19) live further along the shore and in the water. This is a level 21 quest: pull single murlocs from the edge of a camp, kill a Tidecaller first because it heals, and finish runners with Fire Blast or freeze them with Frost Nova, because they run and bring friends. Keep every Murloc Fin you loot: Dockmaster Baren asks for 8 of them in the next segment. The condors for the goulash are next.
+C 92 @ Redridge Mountains, 47.7, 56.9 | Redridge Goulash: the 5 Tough Condor Meat come from Dire Condors (18-19), which fly over the hills south and east of the lake, close to the murloc shore. Fight them one at a time with full health and mana. If you still miss Crisp Spider Meat or Goretusk Snouts, Tarantulas and Great Goretusks are around Three Corners and all along the road back to Lakeshire.
+
+# ---------- Lakeshire hand-ins ----------
+T 246 | Deputy Feldon
+T 98407 @ Redridge Mountains, 25.6, 59.9 | Deputy Feldon
+T 89 | Foreman Oslow, north end of the bridge
+T 127 | Dockmaster Baren
+T 130 | Martie Jainrose, the herbalist on the west side of town
+A 131 | Martie Jainrose
+T 92 | Chef Breanna
+T 131 | Darcy in the inn
+
+# ---------- Stormwind and Goldshire ----------
+FLY Stormwind | Ariena Stormfeather, south of the bridge
+T 120 | From the gryphon master walk through the Trade District to the Valley of Heroes, the bridge inside the main gate. General Marcus Jonathan sits on his horse there.
+A 121 | General Marcus Jonathan. Keep it: you are back in Lakeshire in the next segment.
+T 118 | Walk out of the gate and down the road to Goldshire (two minutes). Smith Argus works in the smithy.
+A 119 | Smith Argus. Keep the Crate of Horseshoes for the next segment.
+TRAIN @ Stormwind City, 49.6, 85.8 | Walk back into Stormwind. Jennea Cannon, in the Wizard's Sanctum in the Mage Quarter, south-west of the Trade District: learn your level 18 spells (Remove Lesser Curse and the new ranks). If she offers a mage quest you have not seen yet, take it.
+N Level 20 already? Learn Teleport: Stormwind @ Stormwind City, 50.4, 86.0 | Larimaine Purdue, the Portal Trainer, stands beside the mage trainers and teaches Teleport: Stormwind from level 20. Every cast uses up a Rune of Teleportation: buy 5-10 from a reagent vendor. Not 20 yet (the likely case here)? Tick this step: the route passes her again at the start of the next segment.
+FLY Thelsamar | Dungar Longdrink, the gryphon master in the Trade District. If he does not offer Thelsamar, take the Deeprun Tram from the Dwarven District to Ironforge and fly from Gryth Thurden there.
+S Thelsamar | Innkeeper Hearthstove in the Stoutlager Inn. Sell and repair here.
+
+# ---------- Loch Modan: the southern troggs ----------
+A 436 | Jern Hornhelm in Thelsamar (37.2, 47.4)
+C 263 @ Loch Modan, 33.0, 80.0 | Follow the road south past the Valley of Kings tower and turn east into the Stonesplinter Valley. Kill what is still missing of 10 Stonesplinter Shamans and 10 Bonesnappers (15-16). Kill a Stonesplinter Shaman before the Bonesnapper beside it (you cannot interrupt its casts yet) and Polymorph the Bonesnapper meanwhile.
+T 263 | Mountaineer Wallbang in the southern guard tower
+A 217 | Captain Rugelfuss, in the same tower
+A 86585 | Back in the Stonesplinter Valley: the body of Mountaineer Ylva lies at 31.7, 86.4 (new in Forever)
+C 86585 | Use the Banner of Ironforge next to the body. The trogg Headsplitter comes for it: kill him. Clear the troggs around the spot first so nothing joins the fight.
+C 217 | Grawmug (17) and his guards Gnasher and Brawler (16) stand together in the cave at the very back of the valley (34.8, 90.5). Clear the cave on the way in. Then start at full health and mana: Polymorph Grawmug, kill the two guards one after the other with Frost Nova keeping them off you, and Grawmug last. If it goes wrong, Frost Nova and run out of the cave, drink and try again.
+T 217 | Captain Rugelfuss
+T 86585 | Captain Rugelfuss
+
+# ---------- The north: Stormpike and the dam ----------
+T 353 | Run the road north through Thelsamar to the northern guard tower. Mountaineer Stormpike is in the tower (24.8, 18.4).
+A 250 | Chief Engineer Hinderweir VII, in the middle of the Stonewrought Dam at the north end of the loch
+T 250 | Walk east along the dam and down the eastern ramp. The Suspicious Barrel stands at 56.1, 13.2 with two Dark Iron Sappers (17) next to it: kill them one after the other.
+A 199 | From the Suspicious Barrel
+T 199 | Back to Chief Engineer Hinderweir.
+A 161 | Chief Engineer Hinderweir: A Dark Threat Looms. The powder goes to Dun Modr in the north of the Wetlands. Do not go now: the route is there at level 30, keep it in your log until then
+
+# ---------- East shore and the Farstrider Lodge ----------
+T 2039 | Go back down the eastern ramp and follow the east shore of the loch south. Bingles Blastenheimer stands by his broken flying machine. Stay on the shore: the Mo'grosh ogres in the hills north-east of the loch are elite.
+A 2038 | Bingles Blastenheimer. You collect his tools after the lodge.
+A 385 | Keep south-east to the Farstrider Lodge. Marek Ironheart is inside.
+A 86758 @ Loch Modan, 81.8, 61.6 | Marek Ironheart: Twisting the Knife (new in Forever)
+A 257 | Daryl the Youngling, in the lodge. This starts a 15 minute timer.
+C 257 | Kill 6 Mountain Buzzards (15-16). They fly over the hills right outside the lodge, south and west of it.
+T 257 | Daryl the Youngling
+A 258 | Daryl the Youngling. A 12 minute timer: no detours.
+C 258 | Kill 5 Elder Mountain Boars (16-17). They roam north-west of the lodge, on the slopes toward Bingles (around 66, 40). Run straight there, kill five and run straight back.
+T 258 | Daryl the Youngling
+C 385,86758 @ Loch Modan, 61.9, 44.7 | Go back to the east shore. Loch Crocolisks (14-15) lie along the shore and in the shallows from Bingles north: kill them for 5 Crocolisk Meat and 6 Crocolisk Skins. Daggerfang, the crocolisk for Marek's knife, hunts along the same shore (seen between 59 and 66, 34-55). Polymorph a second crocolisk if two come. Do not touch the Large Loch Crocolisk (22 elite).
+C 2038 @ Loch Modan, 51.0, 25.0 | Swim out to the islands in the north of the loch. Three toolbuckets hold the Wrench (48.7, 30.1), the Screwdriver (48.4, 20.5) and the Hammer (51.8, 24.1); the Blastencapper lies at 54.2, 26.6. Crocolisks swim between the islands.
+T 2038 | Back to Bingles Blastenheimer on the east shore
+T 385 | Marek Ironheart at the Farstrider Lodge
+T 86758 @ Loch Modan, 81.8, 61.6 | Marek Ironheart
+
+# ---------- Ironband's Excavation Site ----------
+T 436 | The dig is south-west of the lodge. Magmar Fellhew stands in the camp above it.
+A 297 | Magmar Fellhew
+A 298 | Prospector Ironband, next to him. Just a letter for Thelsamar.
+A 86613 @ Loch Modan, 70.2, 64.5 | Excavation Tools (new in Forever). The quest starts from the Excavation Tools you pick up inside the dig; the data has no exact spots. Look for tool sets on the ground while you kill troggs, and pick up six. If you find none, press Skip here and on its hand-in.
+C 297,86613 @ Loch Modan, 70.2, 64.5 | Go down into the dig. Stonesplinter Geomancers (17-18), Diggers (18-19) and Berserk Troggs (19-20) drop the 8 Carved Stone Idols. The Geomancers cast fire spells and you cannot interrupt them yet: kill them first, pull from the edge and Polymorph a second trogg. Collect the six tool sets while you are down there.
+T 297 | Magmar Fellhew
+T 86613 @ Loch Modan, 65.9, 65.6 | Prospector Ironband
+
+# ---------- West shore and Thelsamar ----------
+A 86614 | Walk west along the south end of the loch and up its west shore. The Discarded Fishing Toolbox lies on the shore at 48.8, 54.0 (new in Forever).
+T 86614 | Khara Deepwater, the fishing trainer on the shore north-east of Thelsamar (40.4, 39.4)
+T 298 | Jern Hornhelm in Thelsamar
+A 301 | Jern Hornhelm
+
+# ---------- Ironforge: Prospector Stormpike and Gnoarn ----------
+FLY Ironforge | Thorgrum Borrelson in Thelsamar
+T 301 | Prospector Stormpike in the Hall of Explorers
+A 302 @ Ironforge, 74.6, 11.7 | Prospector Stormpike
+TRAIN @ Ironforge, 27.3, 8.3 | Bink, the mage trainer in the Hall of Mysteries (the Mystic Ward, west along the outer ring from the Hall of Explorers): learn everything up to your level. Level 20 brings Blink, Blizzard, Evocation and Mana Shield. Still 19 with nothing new to learn? Tick this step and skip the walk: you are back here at the start of the next segment.
+N Level 20 already? Learn Teleport: Ironforge @ Ironforge, 25.5, 7.1 | Milstaff Stormeye, the Portal Trainer, stands beside Bink and teaches Teleport: Ironforge from level 20. Every cast uses up a Rune of Teleportation: buy 5-10 from a reagent vendor. Not 20 yet? Tick this step: the next segment starts in Ironforge.
+A 2041 | Gnoarn the gnome (ForeverChanges shows him at 62.2, 29.2; Questie has him in Tinker Town at 69.2, 50.6). A letter for Stormwind, handed in in the next segment.
+
+# ---------- Loch Modan: the shipment ----------
+FLY Thelsamar | Gryth Thurden
+T 302 | Jern Hornhelm
+A 273 | Jern Hornhelm
+A 468 | Mountaineer Kadrell walks the road through Thelsamar (needs level 19)
+T 273 | Huldar waits on the road south of the loch (52.2, 69.3), on the way to the dig
+A 454 | Huldar
+T 454 | Miran, next to him
+A 309 | Miran. This starts an escort to the excavation site.
+C 309 @ Loch Modan, 52.2, 69.4 | Walk with Miran. Dark Iron dwarves ambush the cart on the way: you cannot tank for him, so kill them fast, one at a time: Polymorph a second one and Frost Nova any that go for Miran. Miran must survive.
+T 309 | Prospector Ironband at the excavation camp
+
+# ---------- Dun Algaz ----------
+T 468 | Walk back around the south end of the loch, through Thelsamar and up the road north. Mountaineer Rockgar guards the Dun Algaz tunnel in the north-west corner of Loch Modan (25.4, 10.4)
+A 455 | Mountaineer Rockgar
+C 455 | Follow the road into the Dun Algaz tunnels. Dragonmaw Scouts (19-20) and Grunts (20-21) stand along the road and in the side camps: kill 8 Scouts and 6 Grunts, as far as you get without going out into the Wetlands. They hit hard for your level: one at a time from full range, Frost Nova when they reach you and step back, Fire Blast the ones that run, eat and drink between pulls. Whatever is missing you can finish in segment 08.
+
+# ---------- Back to Thelsamar ----------
+H Thelsamar | Hearthstone back to the inn when you have had enough of the Dragonmaw. It has not been used in this segment, so it is ready. Sell and repair: the next segment starts with the gryphon to Ironforge (mage trainer and Portal Trainer).

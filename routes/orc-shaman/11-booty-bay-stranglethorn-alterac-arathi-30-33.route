@@ -1,0 +1,149 @@
+@segment 30-33 Booty Bay, Stranglethorn I, Alterac & Arathi
+@start-level 30
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 213 Hostile Takeover (2800 XP) is taken here and done in segment 15 at Foreman Cozzle's camp.
+# Carry-out: 1361 (Regthar, Barrens), 1182 and 577/582 (later Stranglethorn visits), 1112 (Shimmering Flats),
+# 1164 (Genavie Callow, start of segment 12), 1145 (Belgrom, Orgrimmar in segment 12).
+# 701/678 stay with Tor'gan and Drum Fel, 507 with Krusk, 186/191/194's next tiers with Nesingwary's hunters.
+@carry 1180,1112,5762,1145,515
+@done 498
+
+# ---------- Booty Bay ----------
+T 1180 | Wharfmaster Lozgil, on the dock where the boat from Ratchet lands
+A 1181 @ Stranglethorn Vale, 26.3, 73.6 | Wharfmaster Lozgil
+T 1181 @ Stranglethorn Vale, 27.2, 76.9 | Baron Revilgaz, top floor of the inn building
+A 1182 | Keep it; the blueprints are for a later Stranglethorn visit
+F Booty Bay @ Stranglethorn Vale, 26.9, 77.1 | Gringer, the wind rider master by the inn
+S Booty Bay | Innkeeper Skindle. Your hearthstone still points at Freewind Post, which is no use on this continent; you hearth back here at the end of the jungle loop
+A 201 | Krazek, in the inn
+A 605 | Crank Fizzlebub, in the inn
+A 189 | Kebok, in the inn
+A 575 | Drizzlik, in the shop next to the inn
+
+# ---------- Grom'gol and Nesingwary's camp ----------
+F Grom'gol @ Stranglethorn Vale, 32.5, 29.4 | Leave Booty Bay by the tunnel and follow the main road north in Ghost Wolf (about 5 minutes) to Grom'gol Base Camp. Do not leave the road: the jungle beside it is level 37-44 (gorillas near Booty Bay, then stealthed Shadowmaw Panthers, Jungle Stalkers and Cold Eye Basilisks), and Tethis, an elite raptor (43), prowls beside the road just north of the arena (28-32,43-45). Thysta, the wind rider master, is in the camp
+A 581 | Nimboya
+A 596 | Kin'weelay
+N Take any new quest a Grom'gol NPC offers that is not red; the logger records it | Forever adds a few undocumented Stranglethorn quests. Commander Aggro'gosh and Far Seer Mok'thardin only have quests from level 33: leave them
+C 201 | Keep following the road north to Nesingwary's camp (35.7,10.9); arriving there completes it
+T 5762 | Hemet Nesingwary
+A 583 | Barnil Stonepot
+T 583 | Hemet Nesingwary
+A 185 | Ajeck Rouack
+A 190 | Sir S. J. Erlgadin
+A 194 | Hemet Nesingwary
+C 185,190,575 | Young tigers around and west of the camp, young panthers to the east, River Crocolisks along the river beside the camp. Cats often come in pairs: drop a Stoneclaw Totem to hold the second one, or Frost Shock it while you finish the first. The few Stone Maw Basilisks (31-32) just north of the camp (31-37,2-8) drop Singing Crystal Shards for Crank's quest: kill them while you are here
+T 185 | Ajeck Rouack
+A 186
+T 190 | Sir S. J. Erlgadin
+A 191
+C 186,191 @ Stranglethorn Vale, 29.5, 12.5 | Panthers roam the hills west of the camp (28-31,9-17), with only 7 Stranglethorn Tigers among them. If the tigers run out before you have 10, wait for respawns while you kill panthers, or finish them east of the camp (43-48,11-18): stay in the middle there, between the Kurzen camp to the north and the Venture Co. camp to the south
+C 194,605 @ Stranglethorn Vale, 25.5, 16.5 | Stranglethorn Raptors (33-34) and Crystal Spine Basilisks (34-35) share the open ground further west (24-27,15-18); the basilisks drop the rest of the Singing Crystal Shards. At about 30 they are 3-5 levels above you: pull one at a time from the edge with Stoneclaw Totem down, and rest to full after each fight. Raptors run in pairs too: Earthbind Totem slows the second, Healing Wave between pulls
+N Optional new quests at the Ruins of Zul'Kunda (24,10), just north of the raptors: zeppelin crash debris and a caged goblin, Zimmix Sputterspark, start NEW level 35 quests that end in Booty Bay. Take them only if the 34-37 trolls there are manageable; the logger records them | Every Bloodscalp there also drops the ears, tusks and necklaces you need next
+T 186 | Back east to Ajeck Rouack at Nesingwary's camp. Do not take the next tier yet; you get it on the next Stranglethorn visit
+T 191 | Sir S. J. Erlgadin. Leave the next tier for the next Stranglethorn visit
+T 194 | Hemet Nesingwary. Leave the next tier for the next Stranglethorn visit
+C 581,596,189 @ Stranglethorn Vale, 33.5, 15.5 | Head back south toward Grom'gol through the Bloodscalp camps: first 31-34,12-17 just south-west of the hunters' camp, then 29-31,17-21. Any Bloodscalp can drop ears, tusks and necklaces. Kill the axe throwers first and Earth Shock the shamans' heals and bolts
+L 31 @ Stranglethorn Vale, 29.8, 19.5 | Drizzlik's next quest in Booty Bay needs 31. If you are short, keep killing Bloodscalps at these camps (33-34) before going on to Grom'gol
+T 581 | Nimboya, Grom'gol
+A 582 | Keep it for your next Stranglethorn visit
+T 596 | Kin'weelay
+
+# ---------- Booty Bay hand-ins ----------
+H Booty Bay | Hearthstone, or cast Astral Recall. If both are on cooldown, fly from Grom'gol
+T 201 | Krazek
+T 605 | Crank Fizzlebub
+T 189 | Kebok.
+A 213 | Kebok: Hostile Takeover (needs level 31). Do not go now: the Venture Co. geologists are 34-36 and the route is at their camp at level 39 (segment 15). Not offered? Press Skip: the later steps for it then pass by themselves
+T 575 | Drizzlik
+A 577 | Keep it; Snapjaw Crocolisks are 35-36, so it waits for a later visit
+N Hand in any Zul'Kunda NEW quests you took (the goblin escort ends at Wharfmaster Lozgil on the dock)
+
+# ---------- Grom'gol zeppelin to the Undercity ----------
+FLY Grom'gol | Gringer, Booty Bay
+N Take the zeppelin to the Undercity from the tower at Grom'gol's west edge | Nez'raz on the platform runs the Undercity zeppelin; the other one goes to Orgrimmar. It lands at the tower outside the Undercity in Tirisfal: walk into the city and down the elevator
+A 1164 | Genavie Callow, beside the bat handler near the west elevator. The Dabyrie heads come from Arathi; you hand them in at the start of the next segment
+N Elixir of Agony (515) needs a troll's blood potion. If it is not in your bags yet, buy the one your quest log names at the Undercity Auction House now | Forever's page lists a Lesser Troll's Blood Elixir, the old text a Strong Troll's Blood Potion. If none is for sale, skip the two Hillsbrad coast steps and abandon 515
+FLY Tarren Mill | Bat handler Michael Garrett, next to Genavie Callow
+
+# ---------- Tarren Mill ----------
+S Tarren Mill | Bind at the Tarren Mill inn (Innkeeper Shay). You hearth back here after the coast run
+A 556 | Keeper Bel'varil
+A 544 | Magus Wordeen Voidglare
+A 93680 @ Hillsbrad Foothills, 61.6, 20.9 | Magus Wordeen Voidglare (new in Forever). Ignore his later Blood in the Streets: it leads into the City of Dalaran instance
+A 552 | Novice Thaivand
+A 533 | Krusk. Leave his Regthar Deathgate for your last visit here; Tallow's Hammer May Fall also waits until you are back from the coast
+
+# ---------- Alterac, first loop ----------
+C 533 @ Alterac Mountains, 58.3, 68.0 | The Syndicate camp just north of Tarren Mill. Kill Syndicate Footpads and Thieves until a Syndicate Missive drops. Skip Henchman Valik: his quest needs Southshore Stout from the Alliance town. If a Singed Note drops, keep it: it starts Strahnbrad Mystery at the end of this segment
+C 552 @ Hillsbrad Foothills, 44.5, 30.0 | Head south-west to the yeti cave in the hills west of Tarren Mill. Kill Cave and Ferocious Yetis until Helcular's Rod drops
+C 544,556,93680 @ Alterac Mountains, 19.5, 84.5 | Go west to the Lordamere Internment Camp, south of the Dalaran dome. Kill Ricter, Alina, Dermot and Kegan Darkmar for the four Bloodstone pieces; every Dalaran mob here drops Worn Stone Tokens. Search the camp for the Grimy Key (new quest, no map data yet). Most of them are casters: Earth Shock their spells and drop a Stoneclaw Totem when two pull together
+T 533 | Krusk. He offers Gol'dir (503) next: leave it until you come back from Arathi
+T 544 | Magus Wordeen Voidglare
+A 545 | Magus Wordeen Voidglare
+T 93680 @ Hillsbrad Foothills, 61.6, 20.9 | Magus Wordeen Voidglare. No key yet? Leave this step for now: search the Lordamere camp again when you kill the Dalaran Summoners just north of it on the next loop, and hand the key in with Dalaran Patrols after you hearth back
+T 556 | Keeper Bel'varil
+A 557 | Keeper Bel'varil
+T 552 | Novice Thaivand
+A 553 | Novice Thaivand
+
+# ---------- Alterac, second loop and the Hillsbrad coast ----------
+C 553:1,553:2 @ Hillsbrad Foothills, 44.0, 27.4 | Back in the same yeti cave: with the rod in your bags, click the Flame of Azel and the Flame of Veraz deeper inside
+C 553:3 @ Alterac Mountains, 37.5, 66.2 | Go north to the yeti cave in Alterac and click the Flame of Uzel. Giant Yetis (33-34) guard it: pull them one at a time. Do not wander north of the cave: the ruins just above it (35-41,49-60) are full of elite Crushridge Warmongers and Enforcers (38-40)
+C 557,545:2 @ Alterac Mountains, 21.0, 58.5 | Head due west from the cave to the edge of the Dalaran crater, staying south of that ogre camp: kill Elemental Slaves for Bracers of Earth Binding and the Dalaran Patrols count
+C 545:1 @ Alterac Mountains, 16.0, 76.0 | Kill 6 Dalaran Summoners south of the dome. Earth Shock interrupts them; when a summoner and its elemental come together, Stoneclaw Totem holds the elemental. Still no Grimy Key (93680)? Search the Lordamere camp just south of them (17-22,82-88) again
+C 515:3 @ Hillsbrad Foothills, 41.2, 69.0 | Head south-east across Hillsbrad to the coast. Torn Fin Oracles and Tidehunters drop Torn Fin Eyes; Earth Shock the Oracles' heals
+T 553 | Helcular's Grave is in the Southshore graveyard on the north-east side of town. Alliance guards patrol: come in from the hills, click the grave, leave in Ghost Wolf
+C 515:2 @ Hillsbrad Foothills, 57.4, 69.5 | Daggerspine Shorehunters and Sirens along the Eastern Strand drop Daggerspine Scales
+H Tarren Mill | Hearthstone, or cast Astral Recall
+T 545 | Magus Wordeen Voidglare. Hand in Key to the City (93680) too if you found the key on this loop
+T 557 | Keeper Bel'varil
+T 515 | Apothecary Lydon. Do not take 517 (elite)
+A 676 | Tallow, standing next to Lydon
+
+# ---------- Into Arathi ----------
+C 676 | Take the road east out of Tarren Mill into Arathi Highlands. Kill Boulderfist Ogres and Enforcers at Boulder'gor, south of the road on the west side of Arathi. They hit hard: pull one at a time, Stoneclaw Totem if a second wanders in, Healing Wave between fights
+C 1164 | Follow the road east to Dabyrie's Farmstead, staying clear of Refuge Pointe (Alliance) in the middle of the zone. Kill Fardel, Marcel and Kenata Dabyrie for their heads. Pull the farm guards one at a time
+F Hammerfall @ Arathi Highlands, 73.0, 32.6 | Urda, the wind rider master in Hammerfall
+S Hammerfall | Bind at the Hammerfall inn
+T 676 | Drum Fel
+A 677 | Drum Fel
+A 655 | Gor'mul
+T 655 | Tor'gan
+A 672,671 | Tor'gan
+A 97539 | Doctor Gregory Victor (new in Forever), at the infirmary
+
+# ---------- South-east Arathi ----------
+C 672 | Highland Striders roam the hills all around Hammerfall; they drop Highland Raptor Eyes
+C 97539 @ Arathi Highlands, 66.0, 50.0 | Plains Creepers (spiders, 32-33) drop Surgical Spidersilk. Try the ones south of Hammerfall first, but Forever's quest page has only recorded drops in west and central Arathi (16-42,26-76). If 6-8 kills here give no silk, stop: collect it on the run west instead (around 38-42,43-61, Northfold Manor and Boulder'gor)
+C 677 | Witherbark Village in the south-east: Axe Throwers, Witch Doctors and Headhunters. Earth Shock the Witch Doctors' casts and fight at the edge of the village so you only pull one at a time
+A 92707 @ Arathi Highlands, 69.0, 81.0 | New in Forever. Kill the goliath in its den south of Witherbark Village; its Goliath's Wristguards start the quest. Witherbark Shadow Hunters (35-36) and Headhunters stand around the den, and Zalas Witherbark (a level 40 rare) can walk through: pull them one at a time from the edge, and skip the goliath if its level shows a skull or it is elite
+T 672 | Tor'gan
+A 674 | Tor'gan
+T 674 | Gor'mul
+A 675 | Gor'mul
+T 675 | Tor'gan. He now offers Guile of the Raptor (701): leave it. Highland Fleshstalkers are level 36-37, and you come back to Hammerfall at 37
+T 677 | Drum Fel. Leave the second Call to Arms (678) for your next Hammerfall visit too: its Brutes and Magi are level 35-37
+T 92707 @ Arathi Highlands, 74.2, 33.9 | Drum Fel
+T 97539 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor. Silk not done yet? Skip this step and Ward Restocking (92519); you hand the silk in when you hearth back here at the end
+A 92519 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor should offer Ward Restocking now (new in Forever). Skip the Go'shek step if he does not
+
+# ---------- West Arathi and a grind ----------
+C 92519 @ Arathi Highlands, 60.1, 59.3 | Go'shek Farm, south-west of Hammerfall. Pick up the case of Packaged Tonics in Apothecary Jorell's shack
+C 671 @ Arathi Highlands, 32.0, 28.5 | Go north-west to Northfold Manor. The Syndicate Highwaymen, Mercenaries and Pathstalkers drop Bloodstone Amulets. You hand them in when you hearth back to Hammerfall at the end. Still short of Surgical Spidersilk? Kill the Plains Creepers you pass on the way
+L 33 @ Arathi Highlands, 33.5, 46.5 | Quest XP runs short here, and Strahnbrad (next) is level 34-37. Grind the Boulderfist Ogres and Enforcers (32-34) at Boulder'gor, just south of Northfold Manor, until you are 33. The Syndicate at Northfold Manor (30-33) are an easier but slower fallback
+
+# ---------- Strahnbrad (Alterac) ----------
+A 1361,503 @ Hillsbrad Foothills, 63.2, 20.7 | Run west in Ghost Wolf along the road through Thoradin's Wall into Hillsbrad to Tarren Mill (closer than going back to Hammerfall to fly). Krusk: keep Regthar Deathgate for the Barrens (next segment); Gol'dir is done in Strahnbrad now
+C 503 @ Alterac Mountains, 63.1, 43.4 | Take the road north out of Tarren Mill to Strahnbrad. Kill Jailor Borhuin (level 37) for the Rusted Iron Key. Syndicate Spies, Wizards and Argus Shadow Mages (34-36) fill the town: clear his surroundings first, Earth Shock the casters, then pull him alone at full mana with Stoneclaw Totem down and Healing Wave when he gets you low. If he is still too strong, abandon 503 and skip ahead to the hearth step (Perenolde, 507, then drops out later too)
+T 503 | Free Gol'dir from his cell
+A 506 @ Alterac Mountains, 60.0, 43.7 | Gol'dir
+A 95534 @ Alterac Mountains, 61.0, 44.5 | New in Forever. A Singed Note drops from the Syndicate in and around Strahnbrad (also at the camp north of Tarren Mill). Right-click it to start the quest. No note by the time the town is cleared? Skip the 95534 steps
+C 95534 @ Alterac Mountains, 61.3, 44.4 | Go to the old bellows by the smithy (about 61.3,44.4) and clear the Syndicate around them. Stand next to them out of combat and click them; something fiery may come to life, so kill it. If nothing happens within 2-3 minutes, abandon 95534 and skip its steps. The logger records what you saw
+T 506 | Krusk in Tarren Mill. He then offers Lord Aliden Perenolde (507): leave it. Perenolde is level 41; take it from Krusk when you come back for him at 39-40
+T 95534 @ Hillsbrad Foothills, 62.3, 20.4 | Report your findings in Tarren Mill. The turn-in NPC is not known yet; try High Executor Darthalia first, then the other quest givers
+
+# ---------- Back to Hammerfall ----------
+H Hammerfall | Hearthstone or Astral Recall. Or fly from Tarren Mill if both are on cooldown
+T 671 | Tor'gan. If you finished Silky Sutures (97539) only on the run west, hand it in to Doctor Gregory Victor now and do not take Ward Restocking
+T 92519 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor
+N Segment done. Keep Regthar Deathgate (1361) and To Steal From Thieves (1164) in the log. Next: fly from Hammerfall to the Undercity for Genavie Callow, then the zeppelin to Orgrimmar, where you train 32 | Your hearthstone stays at Hammerfall. There is no shaman trainer on this trip; your next one is in Orgrimmar

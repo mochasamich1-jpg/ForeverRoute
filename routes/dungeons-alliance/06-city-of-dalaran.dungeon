@@ -1,0 +1,13 @@
+# ALLIANCE. New Forever dungeon. Sources: level range (Blizzard's), how to get in and quests =
+# foreverchanges.pro/dungeons/city-of-dalaran and its quest pages; entrance = Questie dungeons.lua.
+@dungeon City of Dalaran
+@levels 28-33
+@window 28-36
+@best 31
+@hub Hillsbrad Foothills, 50.0, 57.0, 8
+@entrance Alterac Mountains, 8.5, 59.2
+A 92489 @ Stormwind City, 37.6, 81.6 | High Sorcerer Andromath. Kill the Arcanic Enigma inside.
+A 92456 @ Stormwind City, 31.5, 63.0 | Shylamiir. A Fel Infused Blossom from inside.
+RUN | To get in you first need the Dalaran Sewer Key: Emissary Jacques in Southshore gives An Alarming Request, which sends you to the Image of Archmage Modera by Lordamere Lake (Silverpine Forest 68.4, 45.2). She gives Heart of Disruption and Starving Arcane, and with them the key. The way in is through the sewers on the north side of the city, then a portal at the end of a long pipe. One player with the key lets the whole group in. Many enemies here are immune to Arcane damage.
+T 92489 @ Stormwind City, 48.8, 88.1
+T 92456 @ Stormwind City, 31.5, 63.0

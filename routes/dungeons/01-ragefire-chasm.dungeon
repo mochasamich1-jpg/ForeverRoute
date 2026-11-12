@@ -1,0 +1,19 @@
+# Sources: level range and quest givers = foreverchanges.pro/dungeon-quests (2026-11-09); entrance = Questie
+# (QuestieDB/support/Forever/Zones/dungeons.lua); prerequisites = Questie quest data.
+@dungeon Ragefire Chasm
+@levels 13-18
+@window 13-19
+@best 16
+@hub Orgrimmar, 52.6, 49.0
+@entrance Orgrimmar, 52.6, 49.0
+A 5725 @ Undercity, 56.3, 92.2 | Varimathras in the Royal Quarter. Two books from the last two bosses of Ragefire Chasm.
+A 5722 @ Thunder Bluff, 70.1, 29.5 | Rahauro on Elder Rise. A corpse inside Ragefire Chasm holds the satchel.
+A 5723 @ Thunder Bluff, 70.1, 29.5 | Rahauro on Elder Rise. Kill 8 Ragefire Troggs and 8 Ragefire Shaman.
+A 5728 @ Orgrimmar, 31.7, 37.8 | Thrall in Grommash Hold. Only offered after the two earlier Hidden Enemies steps.
+A 5761 @ Orgrimmar, 49.5, 50.6 | Neeru Fireblade in the Cleft of Shadow. Kill Taragaman the Hungerer and bring his heart.
+RUN | The entrance is in Orgrimmar, in the Cleft of Shadow. Inside: the corpse of Maur Grimtotem gives the follow-up quest Returning the Lost Satchel.
+T 5728 @ Orgrimmar, 31.7, 37.8
+T 5761 @ Orgrimmar, 49.5, 50.6
+T 5725 @ Undercity, 56.3, 92.2
+T 5723 @ Thunder Bluff, 70.1, 29.5
+T 5724 @ Thunder Bluff, 70.1, 29.5 | Returning the Lost Satchel, from the corpse inside the dungeon.

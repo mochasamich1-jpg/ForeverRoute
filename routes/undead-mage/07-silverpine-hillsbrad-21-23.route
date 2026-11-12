@@ -1,0 +1,80 @@
+@segment 21-23 Sepulcher & Hillsbrad (Tarren Mill I) (replaces Shadowfang Keep)
+@start-level 21
+@carry 1065,3301,264,530,95981,742,1195,1068,1095,874,868,1130,3923
+@done 479,441,880,1064
+# The log peaks at 19 quests (first Tarren Mill visit), so one slot stays free.
+
+# ---------- Thunder Bluff -> Undercity -> the Sepulcher ----------
+N Teleport: Undercity (or fly to Orgrimmar and take the zeppelin to Tirisfal if you don't have it) | You start in Thunder Bluff. If you still lack the teleport, ask Birgitte Cranston, the portal trainer on Spirit Rise (22.5, 16.9), before you leave. Keep a few Runes of Teleportation in your bags.
+FLY The Sepulcher | Bat handler Michael Garrett, by the west elevator in the Undercity (63, 48). If you came by zeppelin, first learn Teleport: Undercity and Teleport: Orgrimmar from Lexington Mortaim, the portal trainer in the Magic Quarter (84.2, 15.6).
+T 3301 | Mura Runetotem, beside the inn
+T 264 | Click Yuriv's Tombstone in the Sepulcher graveyard to place Clarice's Pendant
+A 98299 | Dalar Dawnweaver (new in Forever)
+A 516,480 | Shadow Priest Allister. Ignore Hadrec's Deathstalkers in Shadowfang and Tabitha's A Frightened Request: both are dungeon quests.
+A 493 | Apothecary Renferrel
+
+# ---------- Southern Silverpine ----------
+C 98299,530 | Run south on the road past Pyrewood to the Greymane Wall. Kill Sickly and Haggard Refugees. Valdred Moray (level 21) stands with them at about 44.7, 84.7; loot his hands.
+C 516 | Follow the road east to Beren's Peril, the cave just north of the road (around 59, 72). Kill 6 Ravenclaw Drudgers and 6 Ravenclaw Guardians and work your way to the back. Kill any Dalaran Wizards and Watchers on the road for Watching the Roads.
+A 95884 @ Silverpine Forest, 59.4, 71.6 | A Note Scrap drops from the undead in the cave. Right-click it to start the quest.
+T 95884 | The Offering Stone is in the deepest part of the cave
+A 95883 @ Silverpine Forest, 58.0, 69.8 | From the Offering Stone
+C 95883 | Kill the undead in the cave until you loot a Tortured Soul
+T 95883 @ Silverpine Forest, 58.0, 69.8 | Back at the Offering Stone
+A 95885 | OPTIONAL elite. Only if you are at full health and mana. Skip the next two steps if you do not want to fight it.
+C 95885 | Use the Tortured Soul at the stone. An elite ghost spawns; it is undead, so Polymorph does not work. Mana Shield, then Frost Nova and kite it with Frostbolt.
+T 95885
+C 480 | Walk north-east to Ambermill. Archmage Ataeric (level 22) is at 63.4, 64.3; a rare Dalaran Spellscribe may be standing next to him. Pull the guards around him first, then loot Ataeric's Staff.
+C 95981 | Finish the 8 Dalaran Wizards and 8 Dalaran Watchers on the roads south and east of Ambermill, on your way out toward Hillsbrad
+
+# ---------- Into Hillsbrad ----------
+A 494 | Take the road east out of Silverpine into Hillsbrad. Deathstalker Lesh camps beside the road.
+F Tarren Mill @ Hillsbrad Foothills, 60.1, 18.6 | Run north-east to Tarren Mill and stay well clear of Southshore (Alliance town). Talk to Zarise for the flight path.
+T 493,1065 | Apothecary Lydon, a few steps east of Zarise
+A 1066,496,501 | Apothecary Lydon
+T 494 | High Executor Darthalia
+A 527 | High Executor Darthalia
+A 549 | WANTED poster right next to Darthalia
+A 498 | Krusk, a few steps further east
+
+# ---------- Durnholde Keep ----------
+C 498,549,1066 | Durnholde Keep is south-east of Tarren Mill. Free Drull (75.3, 41.5) and Tog'thar (79.8, 39.7) by clicking their ball and chains. Kill Syndicate Rogues and Watchmen. Syndicate Shadow Mages drop the Vials of Innocent Blood.
+C 496 @ Hillsbrad Foothills, 64.5, 33.5 | Gray Bears drop the tongues and Forest Moss Creepers drop the ichor. Both roam the hills between Durnholde and Tarren Mill.
+T 498 | Krusk
+T 549 | High Executor Darthalia
+T 1066 | Apothecary Lydon
+A 1067 @ Hillsbrad Foothills, 61.4, 19.1 | Apothecary Lydon. Keep it for Thunder Bluff (next segment)
+T 496
+A 499
+T 499 | Umpi, standing next to Lydon
+
+# ---------- Sepulcher and Undercity turn-ins ----------
+FLY The Sepulcher | From Zarise in Tarren Mill (the flight goes through the Undercity)
+T 516,95981,480 | Shadow Priest Allister
+T 98299 | Dalar Dawnweaver
+FLY Undercity | Bat handler Karos Razok
+T 530 | Raleigh Andrean in the Trade Quarter
+TRAIN | Undercity Magic Quarter: learn your level 22 spells. If you still lack Teleport: Undercity or Teleport: Orgrimmar, learn them from Lexington Mortaim, the portal trainer (84.2, 15.6), and buy Runes of Teleportation from Hannah Akeley, the reagent seller next to him (82.8, 15.8). The next segment needs them.
+FLY Tarren Mill | Bat handler Michael Garrett
+
+# ---------- Hillsbrad Fields, first visit ----------
+C 501 | Starving Mountain Lions (level 23-24) roam the hills west of Tarren Mill on the way to the fields
+C 527 | Hillsbrad Fields (around 33, 40): Farmhands and Farmers. Farmer Ray is at 33.2, 34.8 and Farmer Getz at 36.7, 39.4.
+T 501 | Apothecary Lydon
+A 502
+T 527 | High Executor Darthalia
+A 528 | High Executor Darthalia
+A 546 | Deathguard Samsa. Skulls drop from every Hillsbrad human; you finish them in segment 9.
+A 567 | Dangerous! poster near the inn. You finish it in segment 9.
+
+# ---------- Hillsbrad Fields, second visit ----------
+T 502 | Feed the elixir to Stanley, the dog at Farmer Ray's farm at the north end of the fields. He turns hostile after drinking it; kill him or run.
+C 528,567:2,567:4 | Kill 15 Hillsbrad Peasants in the fields. Citizen Wilkes (level 25) walks the north edge of the farms around 32.6, 39.8 (a Footman stands close by; pull them apart), and Farmer Kalaba (level 25) works the field at 35.9, 46.6. Kill both for Dangerous!. Leave Clerk Horrace for segment 9: he is in the town hall next to Magistrate Burnside (level 30).
+T 528 | Walk back to Tarren Mill: High Executor Darthalia
+A 529 | High Executor Darthalia
+A 98094 @ Hillsbrad Foothills, 62.3, 20.4 | High Executor Darthalia (new in Forever). Keep it for the next Tarren Mill visit.
+
+# ---------- Hillsbrad Fields, third visit ----------
+L 23 @ Hillsbrad Foothills, 34.5, 44.0 | Walk back to the fields. Quest XP runs short here: kill Farmers, Farmhands and Peasants (level 23-25) until level 23. Their skulls count toward Souvenirs of Death.
+C 529 @ Hillsbrad Foothills, 32.0, 45.0 | The smithy in the middle of the fields: kill 4 Hillsbrad Apprentice Blacksmiths first, then Blacksmith Verringtan (level 26) at full mana, alone: Frost Nova and kite him. The Shipment of Iron crate sits by the forge (32.0, 45.5). If Verringtan is too strong, leave the quest for segment 9, which comes back here.
+H Crossroads | Your hearthstone is still set to the Crossroads. Keep Battle of Hillsbrad in your log; you hand it in on the next Tarren Mill visit.

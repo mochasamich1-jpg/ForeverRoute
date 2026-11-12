@@ -1,0 +1,134 @@
+@segment 39-40 Badlands, Alterac, Arathi II & Level 40
+@start-level 39
+# Night Elf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 15: same quests, order, binds and flights. It had no class quests.
+# Changed: both Ironforge training stops are generic (no trainer name, no arrow); fight hints are class-neutral; the
+# second-hearthstone step after Faldir's Cove is now the Hearthstone itself (last used after the Alterac round, hours
+# earlier), with the Refuge Pointe gryphon as the fallback; the mount stop is the Night Elf one (see the last block).
+# Carried in (segment 15's carry-out): 707 Ironband Wants You! (Loch Modan), 1106 Martek the Exiled (Badlands), 525 Further Mysteries
+# (Southshore). 209 (Booty Bay), 212 (Stormwind), 1111 and 1178 (Ratchet) ride along.
+@carry 209,212,525,707,1106,1111,1178
+# Prerequisites handed in by earlier segments: 514 -> 525, 510 -> 512 Noble Deaths, 690 -> 691 Worth Its Weight in Gold,
+# 189 -> 209, 1176 -> 1178.
+@done 189,510,514,690,1176
+# Hearth: Booty Bay at the start (do not use it), Southshore from the Southshore stop on.
+# Trainer: Ironforge at 38 (first stop) and at 40 (last stop). Mount: at the very end, at level 40.
+# Carry-out (6): 669 Sunken Treasure (Fleet Master Seahorn, Booty Bay) and 1137 News for Fizzle (Shimmering Flats, next segment),
+# plus 209, 212, 1111, 1178.
+# Corrected against the plan from the item data: Ryedol's Lucky Pick drops from the Shadowforge dwarves (not the Camp Kosh ogres),
+# the Supply Crate stands in Camp Kosh (not Angor Fortress), Scrap Metal drops from Dustbelcher ogres (not the dwarves).
+# Skipped on purpose: 704 and the other Uldaman quests, the elite 705/706/717/735/762, 713/714, 732, 504 and 652 (elite),
+# 694 and later (elite), 670/667 (Booty Bay round trip).
+
+# ---------- Ironforge and Thelsamar ----------
+TRAIN | Ironforge: visit your class trainer and learn your level 38 skills (Military Ward: warriors, hunters; Forlorn Cavern: rogues, warlocks; Mystic Ward: mages, priests). Count your gold: at level 40, at the end of this segment, you pay for Apprentice Riding.
+FLY Thelsamar @ Ironforge, 55.5, 47.7 | Gryth Thurden, the Ironforge gryphon master
+A 2500 | Ghak Healtouch, the alchemist in Thelsamar
+T 707 | Prospector Ironband, at Ironband's Excavation Site in the south-east of Loch Modan
+A 738 @ Loch Modan, 65.9, 65.6 | Prospector Ironband
+
+# ---------- Badlands ----------
+N Walk south into the Badlands @ Badlands, 53.8, 43.3 | The pass leaves Loch Modan at its south end (Classic geography, not re-checked) and comes out in the north of the Badlands. Head south to the two dwarves camped in the open south of Hammertoe's Dig Site. On the way, start on Ghak's list: Crag Coyotes (35-36) for fangs and Starving Buzzards (35-37) for gizzards.
+A 718 | Sigrun Ironhew
+A 719 | Prospector Ryedol, next to him
+C 719 @ Badlands, 53.4, 32.5 | Ryedol's Lucky Pick drops from the Shadowforge dwarves (Tunnelers and Darkweavers, 35-37) at Hammertoe's Dig Site, a short way north. The Darkweavers are casters: kill them first, interrupt or stun their casts if your class can.
+C 718 @ Badlands, 66.9, 23.5 | The Supply Crate stands in Camp Kosh, the ogre camp in the north-east. The Dustbelcher Warriors and Mystics there are 36-37: clear your way to the crate and loot it.
+T 718 | Sigrun Ironhew
+A 733 | Sigrun Ironhew. Scrap Metal drops from every Dustbelcher ogre: you meet them in the south and south-west on the round below.
+T 719 | Prospector Ryedol
+T 1106 | Martek the Exiled, at the small racing camp in the Valley of Fangs, south-west of the dwarves
+A 1108 | Martek the Exiled
+A 703 | Rigglefuzz, the goblin next to Martek
+A 710 | Lotwil Veriatus, at his camp in the west of the Badlands. Kargath, further west, is a Horde outpost: stay clear of it.
+C 710 @ Badlands, 18.8, 43.0 | 10 Small Stone Shards from the Lesser Rock Elementals (37-39) on the slopes west of Lotwil's camp. Rock Elemental Shards for Ghak drop from the same elementals.
+T 710 | Lotwil Veriatus
+A 711 | Lotwil Veriatus
+C 711 @ Badlands, 30.0, 62.0 | 3 Large Stone Slabs from Rock Elementals (39-40), which roam the plain south and south-east of Lotwil. Giant Buzzards (39-41) and Elder Crag Coyotes (38-40) share the area: wings, gizzards and fangs.
+T 711 | Lotwil Veriatus
+A 712 | Lotwil Veriatus
+C 712 @ Badlands, 8.3, 82.8 | 5 Bracers of Rock Binding from Greater Rock Elementals (42-44) in the far south-west corner. They are 3-4 levels above you, so spells are often resisted and they hit hard: one at a time, full health before each pull, and walk away early when a fight goes badly. The Dustbelcher ogres camped just north of them (40-43) drop Scrap Metal. If the elementals are too much, abandon this part and skip its hand-in.
+T 712 | Lotwil Veriatus
+T 738 | The Battered Dwarven Skeleton at Agmond's End, in the south of the Badlands. Walk east along the south side; Dustbelcher Ogres and Brutes (38-40) on the way drop Scrap Metal.
+A 739 | The Battered Dwarven Skeleton
+C 739,1108 @ Badlands, 50.4, 68.3 | The trogg camp right behind the skeleton: kill 12 Stonevault Bonesnappers (39-40) and Murdaloc (42), who walks among them. Bonesnappers and Stonevault Shamans drop the 10 Indurium Flakes. Clear the troggs near Murdaloc first, then fight him alone at full health. The Stonevault spellcasters among them heal: kill them first, interrupt or stun the heal if your class can.
+C 703,2500 @ Badlands, 54.5, 62.9 | Finish the animal parts around Agmond's End: 4 Buzzard Wings and 5 Buzzard Gizzards (Buzzards, 37-39), 10 Crag Coyote Fangs (Feral Crag Coyotes, 37-38) and 5 Rock Elemental Shards (any rock elemental).
+T 1108 | Martek the Exiled
+A 1137 @ Badlands, 42.2, 52.7 | Martek the Exiled. News for Fizzle at the Mirage Raceway: keep it for the next segment.
+T 703 | Rigglefuzz
+C 733 @ Badlands, 66.2, 23.3 | Still short of 7 Scrap Metal? The Dustbelcher Warriors and Mystics at Camp Kosh in the north-east are the easy source. Otherwise go straight to Sigrun.
+T 733 | Sigrun Ironhew
+T 739 | Prospector Ironband: back north over the pass into Loch Modan. Do not take the follow-up (Uldaman).
+T 2500 | Ghak Healtouch in Thelsamar
+
+# ---------- Southshore and the Alterac Mountains ----------
+FLY Ironforge @ Loch Modan, 33.9, 51.0 | Thorgrum Borrelson in Thelsamar. In Ironforge fly straight on to Southshore.
+FLY Southshore @ Ironforge, 55.5, 47.7 | Gryth Thurden
+S Southshore @ Hillsbrad Foothills, 51.2, 58.9 | Innkeeper Anderson
+T 525 | Magistrate Henry Maleb, in the town hall
+A 537 | Magistrate Henry Maleb
+A 512 | Magistrate Henry Maleb
+A 500 | Marshal Redpath, outside by the barracks
+A 659 | Phin Odelic, in the inn building
+C 512 @ Alterac Mountains, 60.9, 44.1 | Walk north into the Alterac Mountains. Syndicate Spies and Wizards (34-36) at Sofera's Naze and Corrahn's Dagger, the two camps in the south-east, drop Alterac Signet Rings; you need 7. Kill the Wizards first; interrupt or stun their casts if your class can.
+C 537:1 @ Alterac Mountains, 57.9, 35.1 | 4 Argus Shadow Mages (35-36): around Strahnbrad, the ruined town north of the camps. The Syndicate Sentries and Saboteurs there drop rings too.
+C 537 @ Alterac Mountains, 39.2, 14.3 | Nagaz (40) is in the house at Dandred's Fold, in the north-west of the zone. Follow the road west and north around the ruined city. Syndicate Assassins and Enforcers (38-40) guard the farm: pull them away from the house one at a time, then fight Nagaz alone; he casts shadow spells, interrupt or stun them if your class can. Take his head.
+C 500 @ Alterac Mountains, 50.0, 45.0 | 9 Dirty Knucklebones from Crushridge Ogres and Brutes (34-36) in the outer parts of the Ruins of Alterac, on the way back south. Stay out of the city centre and the western slope: those ogres are elite.
+H Southshore | Hearthstone
+T 500 | Marshal Redpath. Do not take Crushridge Warmongers (elite).
+T 512 | Magistrate Henry Maleb
+T 537 | Magistrate Henry Maleb
+
+# ---------- Arathi Highlands ----------
+N Walk east into the Arathi Highlands @ Arathi Highlands, 46.2, 47.8 | Take the road east out of Hillsbrad, through the gap in Thoradin's Wall, and on to Refuge Pointe in the middle of Arathi.
+A 691 | Apprentice Kryten at Refuge Pointe
+T 659 | Quae, on the hill above the Go'Shek Farm, east of Refuge Pointe. She and Kinelory stand there in stealth-coloured gear, easy to miss.
+A 658 | Quae
+C 658 @ Arathi Highlands, 52.5, 61.5 | The Forsaken Courier walks the road between Go'Shek Farm and the south-west with four bodyguards (all about 35). They are well below you, but five at once still hurts: start at full health (send your pet first, if you have one), kill the courier first and loot her Sealed Folder. You can walk away as soon as you have it.
+T 658 | Quae
+A 657 @ Arathi Highlands, 60.2, 53.8 | Quae
+T 657 @ Arathi Highlands, 60.2, 53.9 | Kinelory, beside her
+A 660 @ Arathi Highlands, 60.2, 53.9 | Kinelory
+C 660 @ Arathi Highlands, 60.2, 53.9 | Escort Kinelory down into the Go'Shek Farm and back. She fights well; kill what attacks her (Forsaken, about 33-36) and stay with her until she is back with Quae.
+T 660 @ Arathi Highlands, 60.2, 53.8 | Quae
+A 661 @ Arathi Highlands, 60.2, 53.8 | Quae. Goes to Phin Odelic in Southshore at the end of the Arathi round.
+A 642 | The Shards of Myzrael, a crystal on the hillside north of the farm
+C 642 @ Arathi Highlands, 80.0, 36.0 | 12 Motes of Myzrael from the Drywhisker kobolds (35-38) in Drywhisker Gorge, in the north-east corner
+T 642 | The Iridescent Shards, the big crystal at the back of the Drywhisker cave
+A 651 | The Iridescent Shards
+C 651:2 @ Arathi Highlands, 66.7, 29.7 | Cresting Key: click the Stone of East Binding, the standing stone in the middle of the Circle of East Binding, and loot the key. Cresting Exiles (water elementals, 38-39) guard the circle: clear the ones near the stone; frost spells do nothing to them.
+C 691 @ Arathi Highlands, 66.6, 70.0 | Witherbark Village, in the south-east. 10 Witherbark Tusks from any troll, 4 Medicine Pouches from the Witch Doctors, and the Shadow Hunter Knife from a Witherbark Shadow Hunter (35-36) in the cave at the south end (68, 80). All of it is below your level.
+C 651:3 @ Arathi Highlands, 52.0, 50.7 | Thundering Key: loot it from the Stone of Outer Binding in the Circle of Outer Binding, just east of Refuge Pointe. Thundering Exiles (air elementals, 38-39) guard it; nature spells do nothing to them, use other spells or your weapon.
+T 691 | Apprentice Kryten at Refuge Pointe
+A 693 | Skuerto, a few steps from Kryten
+C 693 @ Arathi Highlands, 54.8, 81.9 | Kor'gresh Coldrage (39) is in the cave at the back of Boulderfist Hall, the ogre mound in the south. The Boulderfist Brutes and Magi on the way are 35-37. Kor'gresh throws frost: interrupt or stun his casts if your class can, and use Escape Artist if he roots you. Loot Trelane's Wand of Invocation.
+T 693 | Skuerto at Refuge Pointe. Stop here: the next part is elite.
+C 651:1 @ Arathi Highlands, 25.5, 30.1 | Burning Key: loot it from the Stone of West Binding in the Circle of West Binding, in the north-west. Burning Exiles (fire elementals, 38-39) guard it: frost spells work well, fire spells do nothing.
+T 651 | The Stone of Inner Binding, in the small circle south of the road and east of Stromgarde. Stop here: the next part (Breaking the Keystone) is elite.
+
+# ---------- Faldir's Cove ----------
+A 663 | Lolo the Lookout. Faldir's Cove is on the south coast: the path down starts south of the Inner Binding circle, west of the Thandol Span, and winds down the cliff to the beach.
+T 663 | Shakes O'Breen, the captain on the beach
+A 662 | First Mate Nilzlix
+A 664 | Captain Steelgut
+A 665 | Professor Phizzlethorpe
+C 665 @ Arathi Highlands, 33.9, 80.5 | Escort the professor up to the cave above the cove and back. Daggerspine naga ambush him at the cave: keep them on you (you may not be able to heal him) and kill them one by one. Stay close to him the whole way.
+T 665 | Doctor Draxlegauge, beside the professor
+A 666 | Doctor Draxlegauge. He gives you the Goggles of Gem Hunting.
+C 664,662,666 @ Arathi Highlands, 22.0, 87.0 | Swim west along the coast to the two shipwrecks. Put on the goggles: they show the Calcified Elven Gems on the sea bed around the wrecks, collect 10. The Maiden's Folly (23.1, 84.8) and the Spirit of Silverpine (20.5, 85.4) each hold one chart and one log. Kill 10 Daggerspine Raiders (38-39) and 3 Sorceresses (39-40) between the wrecks: kill the Sorceresses first (interrupt or stun their casts if your class can), and surface for air between fights. Put your own helm back on afterwards.
+T 662 | First Mate Nilzlix
+T 664 | Captain Steelgut
+T 666 | Doctor Draxlegauge
+A 668 | Doctor Draxlegauge
+T 668 | Shakes O'Breen
+A 669 | Shakes O'Breen. A sample gem for Fleet Master Seahorn in Booty Bay: keep it for a later Stranglethorn trip.
+L 40 @ Arathi Highlands, 22.0, 87.0 | Not 40 yet? Stay with the Daggerspine naga at the wrecks until you are: the mount needs level 40, and the trainer is not on the route again for a long time.
+H Southshore | Hearthstone: you last used it after the Alterac round, so it is ready. If it is not, walk up to Refuge Pointe and fly to Southshore
+T 661 | Phin Odelic, in the Southshore inn building
+
+# ---------- Ironforge at 40, then Darnassus for the nightsaber ----------
+FLY Ironforge @ Hillsbrad Foothills, 49.3, 52.3 | Darla Harris, the Southshore gryphon master
+TRAIN | Ironforge: visit your class trainer and learn your level 40 skills. Druids have no trainer in Ironforge: train in Darnassus, two steps on. Sell, repair and bank here.
+FLY Menethil Harbor @ Ironforge, 55.5, 47.7 | Gryth Thurden
+N Take the boat from Menethil Harbor to Auberdine, then the boat to Rut'theran Village | Two boats: in Menethil the Auberdine boat leaves from the northern pier (the other one goes to Theramore). In Auberdine walk to the other arm of the same dock for the Teldrassil boat. Step through the pink portal in Rut'theran Village to Darnassus.
+N Mount at level 40: Jartsam in the Cenarion Enclave @ Darnassus, 38.7, 15.8 | The Cenarion Enclave is in the north-west of Darnassus. Jartsam teaches nightsaber riding and Lelanai beside him (38.3, 15.4) has the sabers. The other Alliance races get a free first mount from a new Forever quest once they have trained (Learning to Ride, Your First ...): ask both of them for quests. The price of the training is not published: bring all your gold (about 100 in Classic). Druids: your trainers are in this same enclave. Put the saber on your action bar: from here on the route says "ride".
+FLY Theramore @ Teldrassil, 58.4, 94.0 | Back through the portal to Rut'theran Village: Vesprystus, the hippogryph master. A very long flight (Auberdine, Astranaar, Ratchet). Not checked: if he does not offer Theramore, take the boats back instead (Rut'theran -> Auberdine -> Menethil Harbor -> Theramore).
+N You are in Theramore | You keep 1137 (Fizzle, Mirage Raceway), 1111 and 1178 (Ratchet), 669 and 209 (Booty Bay), 212 (Stormwind). Your hearthstone stays in Southshore until Gadgetzan.

@@ -1,0 +1,15 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Sunken Temple
+@levels 50-60
+@window 48-57
+@best 51
+@hub Blasted Lands, 65.0, 22.0, 8
+@hub Swamp of Sorrows, 50.0, 50.0, 25
+@hub Stormwind City, 50.0, 50.0
+@entrance Swamp of Sorrows, 69.9, 53.5
+A 1446 @ The Hinterlands, 33.8, 75.2 | The Atal'ai Exile at Shadra'Alor. Bring the head of Jammal'an the Prophet.
+A 3528 @ Tanaris, 67.0, 22.4 | Yeh'kinya in Steamwheedle Port, after The Ancient Egg. Fill the egg at the Avatar of Hakkar event inside.
+RUN | The temple is in the lake in the middle of the Swamp of Sorrows: swim down through the sunken doorway and follow the halls to the portal. Brohann Caskbelly in Stormwind gives Into The Temple of Atal'Hakkar (10 Atal'ai Tablets), after Rhapsody's Tale from the Hinterlands.
+T 1446 @ The Hinterlands, 33.8, 75.2
+T 3528 @ Tanaris, 67.0, 22.4

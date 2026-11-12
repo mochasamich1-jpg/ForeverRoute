@@ -1,0 +1,169 @@
+@segment 28-30 Westfall, Duskwood II & Redridge III
+@start-level 28
+# Night Elf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 10: same quests, order, binds and flights, minus the
+# class quests. Removed: the Westfall pond stop (94502, 94503, 94505); Moonbrook now leads straight to Raven Hill.
+# The trainer stop is generic, all combat hints are class-neutral, and travel is on foot (no travel form).
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 90 Seasoned Wolf Kabobs (2000 XP; the flanks drop from the ravagers on the south road walk).
+# Carry-in: 57/67/157/181/240/453 (Duskwood, Westfall), 293 + 98190 (Stormwind),
+# 472 + 98223 (segment 12), 1026 (Ashenvale, segment 13).
+# Carry-out: 270 (Menethil), 472 (Dun Modr), 690 (Refuge Pointe), 1248 (Menethil), 98219 (Southshore),
+# 98223 (Menethil), all for segment 12, and 1026 (segment 13).
+@carry 57,67,157,161,181,240,293,453,472,1026,98190,98209,98223
+@done 56,66,124,154,177,266,292,96139,98189
+
+# ---------- Ironforge and Stormwind ----------
+TRAIN | Ironforge: visit your class trainer and learn your level 26 and 28 skills. Warriors and hunters: Military Ward (south-east). Rogues and warlocks: Forlorn Cavern (north). Mages and priests: Mystic Ward (north-west)
+N Take the Deeprun Tram from Tinker Town to Stormwind | It arrives in the Dwarven District
+T 98190 @ Stormwind City, 80.0, 38.5 | Highlord Bolvar Fordragon in the throne room of Stormwind Keep (new in Forever)
+A 98191 | Highlord Bolvar Fordragon
+T 293 | Archbishop Benedictus, at the back of the Cathedral of Light
+T 98191 | Lord Grayson Shadowbreaker, in the Cathedral (48.5,50.1)
+A 98219 | Lord Grayson Shadowbreaker (new in Forever). A letter job for Southshore: keep it until segment 12
+A 1274 | Thomas, the altar boy in the Cathedral
+T 1274 | Bishop DeLavey, back in Stormwind Keep (80.2,44.1)
+A 1241 | Bishop DeLavey
+T 1241 | Jorgen, near the main gate at the Valley of Heroes (76.3,85.1)
+A 1242 | Jorgen
+T 1242 | Elling Trias, in the cheese shop in the Trade District (66.0,74.1)
+A 1243 | Elling Trias. The note goes to Watcher Backus in Darkshire
+FLY Sentinel Hill @ Stormwind City, 71.0, 72.5 | Dungar Longdrink, Trade District
+
+# ---------- Westfall: the schoolhouse ----------
+T 67 | Go south-west to Moonbrook. The Old Footlocker is inside the schoolhouse (41.5,66.7). Defias (level 15-20) are no danger now
+A 68 @ Westfall, 41.5, 66.7 | The same footlocker
+
+# ---------- Duskwood: Raven Hill ----------
+T 240 | Go east over the river into Duskwood; Raven Hill is right behind the bridge. Jitters is in Raven Hill village (18.4,56.4)
+T 453 | Jitters
+A 268 | Jitters
+N Watch for two new ghosts all over Duskwood: Ira Valor (in the woods) and Merrick Valor (on the roads) | New in Forever. Kill them when you see them: one drops Ira's Dagger, the other Merrick's Bow. Each item starts a quest (right-click it). Their exact spots are not in the data. No ghost found? Then skip the steps for 96137 / 96138 / 98447 in this segment
+C 57 @ Duskwood, 20.0, 45.0 | The graveyard just north of Jitters (14-24,40-48): kill 15 Skeletal Fiends and 15 Skeletal Horrors (23-25). They are below your level: two at a time is fine
+T 268 | Sven Yorgen, at his camp on the far west side (7.8,34.1)
+A 323 | Sven Yorgen
+C 323 @ Duskwood, 16.2, 35.3 | The northern part of the cemetery, around the crypts and the big mausoleum (13-20,27-41): 15 Skeletal Raiders (27-28), 3 Skeletal Healers (26-27), 3 Skeletal Warders (28-29). Kill the Healers first; interrupt or stun their heals and the Warders' bolts if your class can. Stay outside the crypts: Morbent Fel's house and the crypt depths are elite territory
+A 225 | A Weathered Grave, at the north edge of the cemetery (17.7,29.1). Needs level 28
+T 323 | Back to Sven Yorgen
+A 269 | Sven Yorgen. For Stormwind, later in this segment
+T 157 | Abercrombie, the hermit in the shack north-east of the cemetery (28.1,31.5). The ghouls around his hill (24-29) attack on sight: go around the east side
+A 158 | Abercrombie
+
+# ---------- Darkshire, first visit ----------
+S Darkshire @ Duskwood, 73.9, 44.4 | Follow the main road east to Darkshire, a long walk (ravagers and spiders on the road are grey to green). Bind at the Scarlet Raven Tavern (Innkeeper Trelayne)
+A 90 | Chef Grual, in the same tavern: Seasoned Wolf Kabobs. He already has the herbs: he only needs 10 Lean Wolf Flanks
+T 158 | Tavernkeep Smitts, in the tavern
+A 156 | Tavernkeep Smitts
+T 68 | Clerk Daltry, in the town hall
+A 69 | Clerk Daltry. For Goldshire, later in this segment
+T 57 | Commander Althea Ebonlocke, in front of the town hall
+A 58 | Commander Althea Ebonlocke. The Plague Spreaders are back at Raven Hill: last loop of this segment
+T 225 | Sirra Von'Indi, in the town hall
+A 227 | Sirra Von'Indi
+T 227 | Commander Althea Ebonlocke. Do not take Mor'Ladim (228): he is elite
+T 1243 | Watcher Backus, on the road at the north-east edge of town (74.8,44.2)
+A 1244 | Watcher Backus. The Defias Docket is in the west of Duskwood: you get it on the loop below
+A 173 | Calor, at the south-east edge of town (75.8,47.6)
+C 173 @ Duskwood, 63.5, 50.0 | Brightwood Grove, west of Darkshire: kill 6 Nightbane Shadow Weavers (27-28, casters: interrupt or stun their Shadow Bolts if your class can). Worgen stand close together: pull one at a time from the edge and fight at full health
+T 173 | Calor
+A 221 | Calor
+C 221 @ Duskwood, 64.0, 58.0 | 12 Nightbane Dark Runners (28-29), a little further south in the same woods (60-68,39-78). They are fast melee and you cannot outrun them: one at a time, and eat or bandage between pulls
+T 221 | Calor
+A 222 | Calor. Vile Fangs and Tainted Ones are 29-31: they wait for the last loop
+C 156 @ Duskwood, 80.3, 59.3 | Tranquil Gardens Cemetery, south-east of Darkshire: Skeletal Horrors (79-82,56-62) drop the 8 Rot Blossoms. Stay out of the chapel
+T 156 | Tavernkeep Smitts
+A 159 | Tavernkeep Smitts: Zombie Juice for Abercrombie
+
+# ---------- West loop: Defias camp, Abercrombie, Vul'Gol ----------
+A 96137 @ Duskwood, 60.0, 60.0 | Ira's Dagger (new in Forever, drops from the ghost of Ira Valor; the arrow is only a guess). Tick or skip this when it applies
+A 96138 @ Duskwood, 60.0, 60.0 | Merrick's Bow (new in Forever, drops from the ghost of Merrick Valor; the arrow is only a guess). Tick or skip this when it applies
+C 96137 @ Duskwood, 52.0, 68.0 | Only with Ira's Dagger. Take the south road west out of Darkshire. Young Black Ravagers (23-24) run beside it all the way (46-61,59-77); the 7 Black Ravagers (24-25) are fewer: they roam north of Darkshire and Brightwood (49-70,26-63), so kill any you saw on the worgen steps or pick them up when you are back
+C 90 @ Duskwood, 52.0, 66.0 | 10 Lean Wolf Flanks: Young Black Ravagers (23-24) beside the south road and Black Ravagers (24-25) drop them, the same wolves as the dagger quest. No dagger? Kill them anyway on this walk. They are grey to green: quick kills
+C 1244 @ Duskwood, 23.9, 72.1 | Follow the south road to the Defias camp in the south-west (20-33,71-78). The Defias Docket is in the Defias Strongbox at 23.9,72.1. Night Runners, Night Blades and Enchanters (24-27) are easy now
+T 159 | North through Raven Hill to Abercrombie's shack (28.1,31.5)
+A 133 | Abercrombie
+C 133 @ Duskwood, 23.5, 34.0 | Ghouls in the eastern half of the cemetery below his hill (18-27,26-39): Flesh Eaters, Rotted Ones, Bone Chewers, Brain Eaters and Plague Spreaders all drop Ghoul Ribs (7 needed). Some of them give you a disease: cure it if your class can, otherwise bandage and eat
+T 133 | Abercrombie
+A 134 | Abercrombie
+C 134 @ Duskwood, 33.4, 76.3 | Go back south to the Vul'Gol Ogre Mound (32-40,67-84). Abercrombie's Crate stands at 33.4,76.3. Ogres here are 25-30: pull singles from the edge
+C 96138 @ Duskwood, 35.0, 73.5 | Only with Merrick's Bow: 8 Splinter Fist Warriors (29-30, at 32-37,69-80) and all 4 Splinter Fist Taskmasters (27-28, at 34-40,68-75). Warriors hit hard: one at a time, at full health, and rest after each. Leave the south end of the mound alone for now: Zzarc'Vul (33) is for the last loop
+T 1244 | Follow the south road back east to Darkshire. Watcher Backus
+T 90 | Chef Grual, in the Scarlet Raven Tavern
+A 1245 @ Duskwood, 74.8, 44.2 | Watcher Backus
+T 96137 | Sirra Von'Indi, town hall (only if you did Ira's Dagger)
+T 96138 | Sirra Von'Indi (only if you did Merrick's Bow)
+A 98447 @ Duskwood, 72.6, 47.5 | Sirra Von'Indi (new in Forever). Its text says it follows the two weapon quests; if she does not offer it, skip its steps. If you only finish the weapons on the last loop, take it then and decide whether one more Raven Hill trip is worth 2200 XP
+FLY Stormwind @ Duskwood, 77.5, 44.3 | Felicia Maline, Darkshire
+
+# ---------- Stormwind and Goldshire ----------
+T 69 | Leave Stormwind by the main gate and run to Goldshire (2 minutes). Innkeeper Farley in the Lion's Pride Inn
+A 70 @ Elwynn Forest, 43.8, 65.8 | Innkeeper Farley. Then open the chest upstairs in the inn for Stalvan's Undelivered Letter
+T 1245 | Back into Stormwind. Elling Trias, in the cheese shop
+A 1246 | Elling Trias
+T 1246 | Dashel Stonefist, in Old Town (74.3,59.2)
+A 1447 | Dashel Stonefist
+C 1447 @ Stormwind City, 74.3, 59.2 | He attacks with two Old Town Thugs (Dashel is level 26). Ignore the thugs and beat Dashel down: the fight ends when he gives up
+T 1447 | Dashel Stonefist
+A 1247 | Dashel Stonefist
+T 1247 | Elling Trias
+A 1248 | Elling Trias. For Mikhail in Menethil Harbor (segment 12)
+T 269 | Bishop Farthing, in the Cathedral of Light
+A 270 @ Stormwind City, 49.9, 46.0 | Bishop Farthing. For Menethil Harbor (segment 12)
+T 70 | Caretaker Folsom, in the Canal District (42.5,72.4)
+A 72 @ Stormwind City, 42.5, 72.4 | Caretaker Folsom
+T 72 @ Stormwind City, 42.5, 72.0 | The Sealed Crate next to him
+A 74 @ Stormwind City, 42.5, 72.0 | The same crate
+T 74 | Leave by the main gate, through Goldshire and east along the road to the Eastvale Logging Camp. Marshal Haggard is at Elwynn 84.6,69.4
+A 75 | Marshal Haggard
+C 75 @ Elwynn Forest, 85.7, 69.6 | The chest upstairs in his house holds the Faded Journal Page
+T 75 | Marshal Haggard
+A 78 @ Elwynn Forest, 84.6, 69.4 | Marshal Haggard. For Tavernkeep Smitts in Darkshire
+
+# ---------- Redridge III ----------
+A 128 | Follow the road east over Three Corners to Lakeshire. Guard Howe stands at the south end of the bridge (26.4,57.9)
+A 126 | Verner Osgood, Lakeshire (25.9,47.3)
+A 180 | The wanted poster in Lakeshire (21.7,46.4)
+C 126 @ Redridge Mountains, 22.6, 21.4 | Go north out of Lakeshire into the canyons. Yowler (25) stands in the gnoll camp at 22.6,21.4. Everything here is grey or green to you
+C 128 @ Redridge Mountains, 24.5, 12.0 | Further north, the Blackrock camp (21-31,6-17): kill 15 Blackrock Champions (24-25)
+A 219 | Corporal Keeshan, held in the same camp (23.3,12.6). Clear the orcs around him first, then accept: it is an escort
+C 219 @ Redridge Mountains, 26.0, 30.0 | Walk with Keeshan back to Lakeshire. He fights everything on the way: keep the attackers on you (you may not be able to heal him) and do not run ahead
+T 219 | Marshal Marris, Lakeshire
+T 126 | Verner Osgood
+T 128 | Guard Howe, at the bridge
+C 180 @ Redridge Mountains, 75.1, 37.1 | Lieutenant Fangore (26) is far east in Galardell Valley, in the Shadowhide camp at 75.1,37.1. Take the road east past Stonewatch, a long walk. Gnolls stand with him: pull the outer ones away first if you can, then kill him
+T 180 | Magistrate Solomon, Lakeshire (24.9,44.5)
+FLY Darkshire @ Redridge Mountains, 25.5, 59.4 | Ariena Stormfeather, Lakeshire
+
+# ---------- Darkshire: Stalvan's trail and the last loop ----------
+T 78 | Tavernkeep Smitts
+A 79 | Tavernkeep Smitts
+T 79 | Commander Althea Ebonlocke
+A 80 | Commander Althea Ebonlocke
+T 80 | Clerk Daltry
+A 97 | Clerk Daltry
+T 97 | Commander Althea Ebonlocke
+A 98 | Commander Althea Ebonlocke. Stalvan is level 32: he is the very last fight of this segment
+C 222 @ Duskwood, 69.0, 76.0 | South of Darkshire (61-74,67-84): 8 Nightbane Vile Fangs (29-30) and 8 Nightbane Tainted Ones (30-31). Work in from the north edge, one at a time; if a second one comes, back off toward the road and fight there. Rest to full between pulls
+C 181 @ Duskwood, 37.0, 81.5 | South road west to the Vul'Gol Ogre Mound. Zzarc'Vul (33) is at the south end of the mound (36-38,80-84) with Splinter Fist Enslavers (30-31). Clear the way in one ogre at a time, wait until he stands apart from the others, then fight him at full health with every cooldown and potion you have (if you have a pet, send it first). He is 3 levels above you. Loot the Ogre's Monocle. If he kills you twice, drop the quest. Finish Merrick's Bow here if it is still open
+C 98447 @ Duskwood, 17.4, 54.0 | Only if Sirra gave you the second Valor Family quest. Go to Raven Hill village (17.4,54.0, near Jitters) with the dagger and the bow in your bags until "Raven Hill investigated" ticks. What appears there is not in the data: be ready for a fight
+C 58 @ Duskwood, 22.8, 33.2 | North into the cemetery: 20 Plague Spreaders (27-28) around the eastern mausoleum and the graves below Abercrombie's hill (16-26,28-37). They give you a disease: cure it if your class can, otherwise bandage and eat
+T 134 | Abercrombie
+A 160 | Abercrombie
+H Darkshire | Hearthstone to Darkshire
+T 160 | Lord Ello Ebonlocke, the mayor, in the town hall
+A 251 | Lord Ello Ebonlocke
+T 251 | Sirra Von'Indi
+A 401 | Sirra Von'Indi. Wait a few seconds beside her
+T 401 | Sirra Von'Indi
+A 252 | Sirra Von'Indi
+T 252 | Lord Ello Ebonlocke. Do not take Bride of the Embalmer (253): elite
+T 98447 @ Duskwood, 72.6, 47.5 | Sirra Von'Indi (if you did it). Hand in any weapon quest that is still open as well
+T 58 | Commander Althea Ebonlocke
+T 222 | Calor
+A 223 | Calor
+T 223 | Jonathan Carevin, close to Calor (75.3,49.0)
+T 181 | Viktori Prism'Antras, east of town (79.8,48.0)
+C 98 @ Duskwood, 77.3, 36.2 | Stalvan Mistmantle (32) is in the cottage north of Darkshire at 77.3,36.2. Fetid Corpses (29-30) stand around it: kill the ones near the door first. Then rest to full, pull him out to the cleared ground in front of the door and use every cooldown and potion you have; interrupt or stun his casts if your class can. He drops the Mistmantle Family Ring. Too strong? Abandon the quest and move on
+T 98 | Madame Eva, in her house (75.8,45.3)
+FLY Stormwind @ Duskwood, 77.5, 44.3 | Felicia Maline, Darkshire
+A 690 | Archmage Malin, in front of the mage tower in the Mage Quarter (50.5,87.5). Needs level 30: you should be 30 now. It sends you to Refuge Pointe in Arathi (segment 12)
+N Take the Deeprun Tram from the Dwarven District to Ironforge
+N Segment done. In the log: 270, 1248 and 98223 (Menethil), 472 (Dun Modr), 690 (Refuge Pointe), 98219 (Southshore), 1026 (Ashenvale) | Your hearthstone stays in Darkshire until Southshore

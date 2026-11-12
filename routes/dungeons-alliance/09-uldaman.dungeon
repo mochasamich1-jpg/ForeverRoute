@@ -1,0 +1,21 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrances = Questie.
+@dungeon Uldaman
+@levels 41-51
+@window 39-49
+@best 43
+@hub Badlands, 53.0, 43.0, 12
+@hub Loch Modan, 34.0, 50.0, 8
+@hub Ironforge, 50.0, 50.0
+@entrance Badlands, 44.6, 12.1
+A 1360 @ Ironforge, 74.2, 9.4 | Krom Stoutarm in the Hall of Explorers. His chest is in the North Common Hall, before the dungeon portal.
+A 17 @ Loch Modan, 37.1, 49.4 | Ghak Healtouch in Thelsamar, after his Badlands Reagent Run. 12 Magenta Fungus Caps from inside.
+A 721 @ Badlands, 53.4, 43.4 | Prospector Ryedol, after you bring him the Crumpled Map. Find Hammertoe Grez in the tunnels before the portal.
+A 2418 @ Badlands, 42.4, 52.9 | Rigglefuzz. Power Stones drop from the Shadowforge dwarves in and around Uldaman.
+A 709 @ Badlands, 51.4, 76.9 | Theldurin the Lost. The Tablet of Ryun'eh is in the tunnels before the dungeon portal.
+RUN | The main entrance is the dig site in the north of the Badlands; a back entrance is further east (Badlands 65.2, 43.5). Before the portal, Hammertoe Grez continues A Sign of Hope into Amulet of Secrets, and Prospector Ironband's Agmond's Fate (Loch Modan) wants urns from the dig. Inside: the three lost dwarves, the Shattered Necklace chain (Talvash del Kissel in Ironforge) and, after the last boss, The Platinum Discs for High Explorer Magellas in Ironforge.
+T 2418 @ Badlands, 42.4, 52.9
+T 709 @ Badlands, 51.4, 76.9
+T 17 @ Loch Modan, 37.1, 49.4
+T 1360 @ Ironforge, 74.2, 9.4
+T 2279 @ Ironforge, 62.3, 24.1 | The Platinum Discs: High Explorer Magellas in the Hall of Explorers.

@@ -1,0 +1,160 @@
+@segment 26-29 Southern Barrens, Thousand Needles & Tarren Mill II
+@start-level 26
+@carry 1086,1195,5881,874,868,1130,529,546,567,98094,97538
+@done 5052,913,528
+
+# ---------- Ratchet coast: Mahren Skyseer ----------
+FLY Ratchet | You start at the Crossroads after the Nether-lace turn-in
+T 874 | Mahren Skyseer stands on the shore a short run south of Ratchet
+A 873
+C 873 | Isha Awak is a big threshadon (level 27) swimming off this coast to the south, around 63,54. Pull it toward the shallows and fight it there
+T 873
+
+# ---------- Thunder Bluff: The Sacred Flame ----------
+FLY Thunder Bluff | The flight routes through the Crossroads
+T 1195 | Zangen Stonehoof, on the central mesa of Thunder Bluff
+T 97538 @ Thunder Bluff, 53.9, 47.3 | Tah Winterhoof, a few steps from Zangen on the same central rise. Hand in the 30 Mirkweed Pods from Mirkfallon Lake
+A 1196 | Keep the Filled Etched Phial for Freewind Post. Leave 1086 and 1130 in your log for later
+
+# ---------- Camp Taurajo ----------
+FLY Camp Taurajo
+A 893 | Tatternack Steelforge, at the forge
+A 879 | Mangletooth, the quilboar in the cage
+A 884 @ The Barrens, 47.0, 61.0 | Optional: Owatanka, a named thunderhawk, flies around Camp Taurajo. Its Tailspike starts this quest. Skip if you don't see it
+A 883 @ The Barrens, 47.2, 51.6 | Optional: Lakota'mani, a named grey kodo, wanders just north of Camp Taurajo. Its Hoof starts this quest. Skip if you don't see it
+
+# ---------- Field of Giants, Bael Modan, Blackthorn Ridge ----------
+C 868 | Field of Giants south of Camp Taurajo: loot eggs from the Silithid Mounds and kill the silithid around them
+A 98093 @ The Barrens, 47.9, 77.6 | Sulhasa is stuck up a tree beside the road south of the silithid field, with lizards and hyenas all around her
+A 885 @ The Barrens, 44.8, 78.9 | Optional: Washte Pawne, a named wind serpent, flies over the Field of Giants. Its Feather starts this quest. Skip if you don't see it
+A 843 | Gann Stonespire, at his camp north of Bael Modan
+C 843 | Bael Modan dig site: kill Bael'dun Excavators and Foremen. Prospector Khazgorm in the pit drops the journal. Kill Stormhide and Hecklefang Stalkers for Field to Clear on every trip
+T 843
+A 846
+A 857 | Feegly the Exiled, at the east edge of Bael Modan
+C 846,857 | Bael'dun Keep: soldiers, riflemen and officers drop the Nitroglycerin, Wood Pulp and Sodium Nitrate. The Tear of the Moons is in General Twinbraid's Strongbox inside the keep (49.1,84.2). General Twinbraid himself (level 30) stands right beside it: clear the soldiers around him first, then Polymorph him, loot the box and walk away (or kill him at full mana with Frost Nova + Frostbolt)
+T 857
+T 846
+A 849
+C 849 | Click the Bael Modan Flying Machine at the dig site to destroy it
+T 849
+C 893,879 | Blackthorn Ridge, west of Gann: Razormane Pathfinders/Stalkers drop the Backstabber, Seers the Wand, Warfrenzy the Shield. Kuz is at 45,80, Nak at 44,83, Lok Orcbane at 40,80
+C 98093 | Finish the 7 Stormhide and 7 Hecklefang Stalkers if you still need them
+T 98093 @ The Barrens, 47.9, 77.6 | Back to Sulhasa in her tree
+
+# ---------- Camp Taurajo turn-ins ----------
+T 893
+A 1153
+T 879
+A 906 | Keep Lok's Skull for Thork at the Crossroads (later)
+T 884 | Only if you found Owatanka
+T 883 | Only if you found Lakota'mani
+T 885 | Only if you found Washte Pawne
+
+# ---------- Into Thousand Needles ----------
+N Run south down the road past Bael Modan to the Great Lift at the south edge of the Barrens (between Razorfen Kraul and Razorfen Downs) and ride it down
+T 5881 | Grish Longrunner, at the bottom of the lift
+A 4542 | Brave Moonhorn, next to him
+T 4542 | Follow the road southeast to Freewind Post. Cliffwatcher Longhorn
+A 4841
+A 5147 | Wanted poster next to Cliffwatcher Longhorn
+A 4821 | Hagar Lightninghoof
+A 4767 | Elu
+T 1196 | Rau Cliffrunner
+A 1197
+F Freewind Post
+S Freewind Post | Keep this hearth for the next part of the route
+A 1149 | Dorn Plainstalker, on the mesa northeast of Freewind Post
+C 1149 @ Thousand Needles, 53.9, 41.6 | Walk off the end of the plank beside Dorn. You are caught before you land
+T 1149 | Skip the next test (Test of Endurance, elite)
+
+# ---------- Splithoof Crag loop ----------
+C 4841 | Galak centaurs on the canyon floor north of Freewind. They come in packs: Frost Nova, then Cone of Cold
+A 4881 @ Thousand Needles, 39.4, 33.1 | Optional: the Galak Messenger walks the road near Splithoof Crag. His Assassination Note starts this quest. Don't hunt long for him
+C 1197 | Splithoof Hold (42,31.5): use the phial on the Ancient Brazier, then loot the Cloven Hoof from it. Clear the guards first
+C 4821 | The Alien Egg sits on the canyon floor south and west of Freewind; it spawns at one of three spots (around 56,50 / 52,55 / 38,56)
+T 1197
+T 4841
+A 5064
+T 4821
+A 4865
+A 98069 @ Thousand Needles, 46.2, 51.5 | Jandia, Freewind Post (needs level 27)
+A 98070 @ Thousand Needles, 46.2, 51.5 | Also given at Freewind Post; look near Jandia (needs level 27)
+
+# ---------- Screeching Canyon, Highperch, Whitereach Post ----------
+C 98070,98069 | Screeching Canyon west of Freewind: kill Screeching Harpies, Roguefeathers and Windcallers. The Stolen Freewind Supplies lie at the foot of the cliff and in the cave at the top
+C 4767 | Highperch: loot Highperch Wyvern Eggs from the nests; the wyverns attack in pairs
+C 1153 @ Thousand Needles, 12.2, 18.0 | Gravelsnout Diggers and Surveyors (kobolds) dig in the canyon north of Highperch (around 12,14-22); they drop the Unrefined Ore Sample. A few more wander east of Freewind (around 64,48)
+A 4770 | Pao'ka Swiftmountain, at Highperch
+C 4770 @ Thousand Needles, 17.9, 40.6 | Escort Pao'ka to Whitereach Post. You get attacked on the way; redo it if he dies
+T 4770 | Motega Firemane, Whitereach Post
+T 4865
+A 5062
+T 4881 | Only if you found the Galak Messenger. Kanati Greycloud
+A 4966 | Only if you did Assassination Plot (4881). Otherwise skip this and the next two steps
+C 4966 @ Thousand Needles, 21.2, 32.1 | Only if you did Assassination Plot (4881). Centaurs attack Kanati; kill them. Redo it if he dies
+T 4966 | Only if you did Assassination Plot (4881)
+
+# ---------- Darkcloud Pinnacle ----------
+C 5062 | Incendia Agave plants grow along the canyon east of Whitereach, at the foot of Darkcloud Pinnacle
+C 5064 | Darkcloud Pinnacle: the three Secret Notes are in Document Chests in the Grimtotem camps around its base (about 32,33 / 34,40 / 39,41.5)
+C 5147 | Arnak Grimtotem is at the top of Darkcloud Pinnacle
+A 4904 | Lakota Windsong, at the top of the pinnacle next to Arnak
+C 4904 @ Thousand Needles, 38.0, 26.4 | Escort Lakota back toward Freewind Post. Grimtotem ambush on the way; redo it if she dies
+T 4904 | Thalia Amberhide, Freewind Post
+T 98069 @ Thousand Needles, 46.2, 51.5 | Jandia
+T 98070 @ Thousand Needles, 46.2, 51.5
+T 5064
+T 5147
+T 4767 | Keep Sacred Fire (5062) for Magatha in Thunder Bluff later
+
+# ---------- Back through the Barrens ----------
+FLY Camp Taurajo
+T 1153
+FLY The Crossroads
+T 906 | Thork
+T 868 | Korran. His next quest, The Swarm Grows, needs level 29, so you come back for it after Hillsbrad. If you are already 29, take it now, Teleport to Orgrimmar for Belgrom (Valley of Honor), then go on; the later steps for it tick themselves
+N Teleport to Undercity (or fly to Orgrimmar and take the zeppelin if you don't have it)
+TRAIN | Undercity Magic Quarter, learn level 28 spells (if you are not 28 yet, train on the Orgrimmar stop at the end instead)
+FLY Tarren Mill
+
+# ---------- Tarren Mill: south and east ----------
+A 509 | Apothecary Lydon
+T 98094 @ Hillsbrad Foothills, 64.0, 53.8 | Deathstalker Masoj, on the high ground straight south of Tarren Mill, above Nethander Stead
+A 98095 @ Hillsbrad Foothills, 64.0, 53.8
+C 509 | Mudsnout Blossoms grow around Nethander Stead, just south of Masoj
+C 98095:3 | Southern vial: on the hills bordering Dun Garok to the southeast. Look for a crushed empty vial and place the new one there
+C 98095:2 | Northern vial: on the plateau overlooking Durnholde Keep, on the way back north. Look for the crushed vial
+T 509
+A 513 | Keep this for Faranell in the Undercity (later)
+
+# ---------- Hillsbrad Fields ----------
+C 529 | Hillsbrad Fields: Blacksmith Verringtan and his apprentices at the smithy; the Shipment of Iron crate is by the forge. Every human here can drop a skull for Souvenirs of Death
+C 567:2 @ Hillsbrad Foothills, 32.6, 39.8 | Citizen Wilkes walks the north side of the town
+C 567:4 @ Hillsbrad Foothills, 35.9, 46.6 | Farmer Kalaba works the fields east of the town (already done if you killed her on the last visit)
+T 529
+A 532
+C 532 | Town hall: kill Magistrate Burnside (level 30) and the councilmen, destroy the Proclamation and take the Town Registry, both inside
+C 567:1 @ Hillsbrad Foothills, 29.5, 42.4 | Clerk Horrace Whitesteed is in the town hall
+T 532
+A 539 | Skip the next part (541) later; it is elite
+
+# ---------- Azurelode Mine and the Headland ----------
+C 98095:1 | Western vial: on the ridge of the Headland above Hillsbrad Fields, toward the mine. Look for the crushed vial; run past the hill lions without fighting
+C 539 | Azurelode Mine: Foreman Bonds and 10 Hillsbrad Miners
+C 567:3 @ Hillsbrad Foothills, 31.1, 58.6 | Miner Hackett, deep in the mine
+C 546 @ Hillsbrad Foothills, 29.9, 55.5 | Finish the 30 skulls on the miners if you still need them
+T 546 | Deathguard Samsa, Tarren Mill
+T 539
+T 567
+T 98095 @ Hillsbrad Foothills, 64.0, 53.8 | Deathstalker Masoj, south of Tarren Mill
+L 29 @ Hillsbrad Foothills, 63.8, 62.0 | If you are not 29 yet, kill Mudsnout Gnolls and Shamans (level 26-28) at Nethander Stead just south of Masoj. The Swarm Grows at the Crossroads needs 29
+
+# ---------- The Swarm Grows ----------
+N Teleport to Orgrimmar (or fly to the Undercity and take the zeppelin if you don't have it)
+FLY The Crossroads
+A 1145 | Korran (needs level 29)
+N Teleport to Orgrimmar (or fly back if you are out of runes)
+T 1145 | Belgrom Rockmaul, Valley of Honor
+A 1146 | Keep this for Moktar Krin in Thousand Needles (next part). Your hearth is still Freewind Post
+TRAIN | Orgrimmar, Cleft of Shadow mage trainers: learn your level 28 spells if you skipped them in the Undercity

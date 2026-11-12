@@ -1,0 +1,11 @@
+# New Forever dungeon. Source: foreverchanges.pro/dungeons/shapers-terrace (level range is Blizzard's). The page lists
+# 3 Horde quests, takeable from level 55, without their givers.
+@dungeon Shaper's Terrace
+@levels 58-60
+@window 56-60
+@best 58
+@hub Un'Goro Crater, 45.0, 8.0, 10
+@hub Orgrimmar, 50.0, 50.0
+@hub Undercity, 66.0, 44.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater. It has 3 Horde quests (from level 55), but who gives them is not published yet: ask around Marshal's Refuge and take what is offered; the addon logs it so these steps can be filled in.

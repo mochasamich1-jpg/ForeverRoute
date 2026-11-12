@@ -1,0 +1,63 @@
+@segment 47-50 Stranglethorn III & Booty Bay
+@start-level 47
+# Human, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 19: same quests, order, binds and flights. It had no class
+# quests. Changed: combat hints are class-neutral, and the return to Booty Bay after the north loop is the Hearthstone
+# only (the Dwarf route offered a second hearthstone spell as an alternative; the Hearthstone was not used earlier in this segment).
+# Carried in (segment 19's carry-out): 2767, 648 and 836 (the three robot escorts), 669 Sunken Treasure and
+# 209 Skullsplitter Tusks (tusks still to collect), all for Booty Bay; 4450 Ledger from Tanaris (Gadgetzan, segment 21).
+@carry 209,648,669,836,2767,4450
+# Done in segment 15: 599 unlocks The Bloodsail Buccaneers (604), 607 unlocks Voodoo Dues, 595 unlocks Up to Snuff and
+# Keep An Eye Out. The rest are the prerequisites of the carried quests: 189 -> 209, 668 -> 669, 351 -> 648, 485 -> 836,
+# 2766 -> 2767, 4449 -> 4450.
+@done 599,607,595,189,668,351,485,2766,4449
+# Order: Nethergarde -> Booty Bay (hearth) -> north loop (naga, gorillas, Unbagwa, Zanzil's ruins, Skullsplitter tusks) ->
+# Booty Bay -> Wild Shore -> Booty Bay -> bottle, Jaguero Isle, the three ships and the level 50 grind -> Booty Bay -> Ratchet boat.
+# Carried out (1): 4450 Ledger from Tanaris.
+
+# ---------- Booty Bay ----------
+FLY Booty Bay | Alexandra Constantine, the Nethergarde Keep gryphon master. The flight goes by Darkshire.
+S Booty Bay | Innkeeper Skindle (27.0, 77.3)
+T 2767,648,836 | Oglethorpe Obnoticus, the gnome engineer (28.4, 76.3). Hand in each robot you rescued.
+A 3721 | Oglethorpe Obnoticus offers An OOX of Your Own only if you rescued all three robots. Missed one? Skip this step and the next.
+T 3721 | Oglethorpe Obnoticus
+T 669 | Fleet Master Seahorn (27.2, 77.0). Leave the second Sunken Treasure.
+A 604 | Fleet Master Seahorn
+A 609 | "Sea Wolf" MacKinley (27.8, 77.1)
+A 621 | Crank Fizzlebub, next to the innkeeper (27.1, 77.2)
+A 617 | Privateer Bloads (26.8, 76.4)
+A 587 | Deeg (26.9, 77.3)
+A 576 | Dizzy One-Eye (28.6, 75.9)
+A 348 | Fin Fizracket, lying sick (27.6, 76.7)
+
+# ---------- North loop ----------
+C 617 @ Stranglethorn Vale, 26.2, 62.0 | Leave Booty Bay through the tunnel and ride north-west to the coast. Naga Explorers (43-44) on the beach and in the shallows (24-28, 59-65) drop the 10 Bundles of Akiris Reed, about 1 in 3.
+N Get a Gorilla Fang from the Elder Mistvale Gorillas @ Stranglethorn Vale, 32.9, 64.6 | Mistvale Valley, just east of the naga beach. Elder Mistvale Gorillas (40-41) and Silverback Patriarchs (42-43) drop it. You need one for the witch doctor.
+C 348 @ Stranglethorn Vale, 35.3, 60.4 | Witch Doctor Unbagwa stands in a small cave at the north end of the valley (35.3, 60.4). Give him the Gorilla Fang: he summons three gorillas, one after another. The last, Mokk the Savage (44), drops the Heart of Mokk. Rest to full before you talk to him: the three come without a break, so eat or bandage the moment one dies if you get the chance.
+C 609:3 @ Stranglethorn Vale, 40.0, 58.2 | Ride east to the Ruins of Aboraz. Chucky "Ten Thumbs" (43-44) stands in the ruins and drops Chucky's Huge Ring.
+C 621 @ Stranglethorn Vale, 38.2, 56.0 | Zanzil's Zombies, Hunters, Witch Doctors and Naga (43-44) in and around the Ruins of Aboraz drop the 12 Zanzil's Mixture, about 1 in 3. They stand close together: pull one at a time from as far away as you can, and kill the Witch Doctors first (interrupt or stun their casts if your class can).
+C 609:1 @ Stranglethorn Vale, 35.3, 51.3 | Ride north-west to the Ruins of Jubuwal. Maury "Club Foot" Wilkins drops Maury's Clubbed Foot.
+C 609:2 @ Stranglethorn Vale, 34.9, 51.8 | Jon-Jon the Crow stands next to him and drops Jon-Jon's Golden Spyglass. Fight the two one at a time; the zombies around them also drop mixture.
+C 209 @ Stranglethorn Vale, 45.6, 40.0 | Ride north-east to the Skullsplitter troll ruins east of the road (42-48, 33-44). Every Skullsplitter troll drops tusks, about 1 in 5: you need 18. They are level 39-44 and pay little experience now: if you would rather not ride there, abandon Skullsplitter Tusks and skip its hand-in.
+H Booty Bay | Use your Hearthstone: it saves the long ride back south.
+T 209 | Kebok (27.0, 77.1)
+T 617 | Privateer Bloads. Leave the second Akiris by the Bundle.
+T 609 | "Sea Wolf" MacKinley. His next quest, Cracking Maury's Foot, is elite: leave it.
+T 621 | Crank Fizzlebub
+T 348 | Fin Fizracket
+
+# ---------- Wild Shore ----------
+C 604 @ Stranglethorn Vale, 27.3, 82.8 | The Bloodsail camp on the Wild Shore, the beach south of Booty Bay. Kill 10 Bloodsail Swashbucklers (41-43); the Bloodsail Charts and the Bloodsail Orders are papers lying in the camp (27.2, 82.7 and 27.7, 83.1). Every pirate can drop Snuff for Deeg and Dizzy's Eye: loot them all. Kill the Bloodsail Warlocks first; interrupt or stun their casts if your class can.
+T 604 | Back in Booty Bay: Fleet Master Seahorn
+A 608 | Fleet Master Seahorn
+
+# ---------- The bottle, the ships and the level 50 grind ----------
+A 594 @ Stranglethorn Vale, 32.8, 78.7 | Leave through the tunnel and go down to the beach east of Booty Bay. Open a Half-Buried Bottle on the sand (they lie all along this coast) and right-click the Carefully Folded Note inside.
+T 594 | Swim south-east to Jaguero Isle: Princess Poobah (38.5, 80.6). Skymane Gorillas (50) roam the isle and King Mukla (51 elite) is at its south end: go straight to her. Her next quest is elite: leave it.
+C 608 @ Stranglethorn Vale, 30.9, 89.0 | Swim west to the three Bloodsail ships anchored off the Wild Shore. Captain Stillwater (45-46) is on the eastern ship (32.9, 88.2), Captain Keelhaul (46-47) on the western one (29.3, 88.3), Fleet Master Firallon (48) on the southern one (30.6, 90.6). In Classic each captain stands in his ship's cabin with one or two guards: clear the deck first, pull the guards out one at a time and start every captain at full health. If two come, kill the weaker one first; back off the ship and eat or bandage if it goes badly.
+C 587,576 @ Stranglethorn Vale, 30.9, 89.0 | The ship crews drop the rest of the 15 Snuff and Dizzy's Eye.
+L 50 @ Stranglethorn Vale, 30.9, 89.0 | The second big grind of the route. Stay on the three ships (Bloodsail Sea Dogs, Elder Magi and deckhands, 43-48; they respawn fast) until level 50. For a change of scene: Zanzil's undead at the Ruins of Aboraz (38, 56). Mobs here are turning green, so it is slow: you can also stop early and finish this level on the Dunemaul ogres in Tanaris (46-48) or in Un'Goro Crater at the start of the next segment, where Bungle in the Jungle needs level 50.
+T 608 | Back in Booty Bay: Fleet Master Seahorn
+T 587 | Deeg
+T 576 | Dizzy One-Eye
+N No Mithril Casing yet? Look for one before you sail | You need it for A-Me 01 in Un'Goro Crater. Booty Bay and Gadgetzan had auction houses in Classic; an engineer can make one.
+N Take the boat from the Booty Bay dock to Ratchet | Your hearthstone stays set to Booty Bay until Gadgetzan. Keep 4450 Ledger from Tanaris.

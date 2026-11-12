@@ -1,0 +1,136 @@
+@segment 5-10 Tirisfal Glades (Brill)
+@start-level 5
+@carry 383,8,96656
+@done 382
+# Undead Mage 5-10. Follows TUGs' 6-10 Tirisfal order with these changes:
+# the Agamand Mills and gnoll loops are merged into one trip (Maggot Eye is left for the
+# end of the segment, when you have Frost Nova), the east is split so you reach level 10
+# before the single Undercity visit (Speak with Anastasia), A New Plague 368/369/492 is
+# added for extra XP, and Hadric Harlson's two Argent Dawn quests are done on the UC trip.
+# Carry-out: 445 (Silverpine), 357 and 1882 (both turned in on the UC trip in segment 3).
+
+# --- Road to Brill (pumpkins first) ---
+A 365 | Deathguard Simmer stands by the road just east of the Deathknell exit
+C 365 | Solliden Farmstead, north-west of the road: loot 10 pumpkins from the field. Kill what attacks you for XP
+A 5481 | Gordo the abomination, wandering by the road east of Simmer
+C 5481 | Gloom Weed grows beside the road between Gordo and Brill
+T 96656 @ Tirisfal Glades, 57.2, 55.4 | Eleanor Shackleton's campfire, just south of the road before Brill. Only hand this in for now; her other quests come after the western loop
+
+# --- Brill, first visit ---
+A 404 | Deathguard Dillinger at the Brill graveyard gate
+A 86784 | Deathguard Bartholomew, next to Dillinger
+T 5481 | Junior Apothecary Holland, inside the graveyard
+A 5482
+T 365 | Apothecary Johaan, in the house south of the main road
+A 407
+T 383 | Executor Zygand in the middle of town
+A 427,99141,99134 @ Tirisfal Glades, 60.6, 51.8 | Zygand also gives the two new Forever quests Patience and Discipline
+C 99141:1 @ Tirisfal Glades, 58.2, 51.5 | Talk to Deathguard Dillinger at the graveyard gate for his report
+C 99134 | Punish 5 Deathguards around Brill. Any Deathguard on the quest's list counts (Dillinger, Bartholomew, Burgess and the others in town)
+T 99134 @ Tirisfal Glades, 60.6, 51.8 | Back to Executor Zygand
+T 8 | Innkeeper Renee in the Gallows' End Tavern
+S Brill | Make the Gallows' End Tavern your home
+T 407 | Take the stairs down to the tavern cellar and give the Laced Pumpkin to the captured Scarlet Zealot
+N Learn First Aid from Nurse Neela in the tavern. From now on, turn every Linen Cloth into Linen Bandages; you need First Aid 20 for a later camping quest
+L 6 @ Tirisfal Glades, 53.5, 51.5 | Not level 6 yet? Kill Rotting Dead and Ravaged Corpses in the fields just south-west of Brill (their Putrid Claws count for A Putrid Task) until you are, then come back to train and take A New Plague
+TRAIN | Cain Firesong, upstairs in the tavern: learn your level 6 spells (Conjure Food, Fire Blast)
+A 367 | Back at Apothecary Johaan (needs level 6)
+N Take any new quests offered in Brill that this guide does not list (for example Carolai Anise's Shadowvale elixir; Shadowvale is far to the south-west, off this route). The logger records them. Abandon them later if your log fills up
+
+# --- Western loop ---
+C 404,86784 @ Tirisfal Glades, 52.5, 54.5 | Fields south-west of Brill: kill Rotting Dead and Ravaged Corpses for Putrid Claws, and pick up Dry Branches from the ground in the fields and hills along the road
+C 99141:3 @ Tirisfal Glades, 43.1, 54.7 | Find Gordo by the road west of Brill and get his report. Kill Darkhounds around here for their blood
+C 427 | Crusader's Outpost, west of Solliden Farmstead: kill 10 Scarlet Warriors. Loot the Linen Cloth they drop
+A 99144 | Bareth Dawnstone is held inside Crusader's Outpost
+C 99144 @ Tirisfal Glades, 32.0, 46.3 | Escort Bareth out of the outpost. Clear the warriors near him first; more attack during the walk
+C 367 | Finish the Darkhound Blood on the way back east: Darkhounds roam north of Solliden and around Gordo
+
+# --- Brill, second visit ---
+T 86784 @ Tirisfal Glades, 57.2, 55.4 | Eleanor Shackleton's campfire again
+A 96607 @ Tirisfal Glades, 57.2, 55.4
+C 96607 @ Tirisfal Glades, 57.2, 55.4 | Sit (/sit) next to Eleanor's campfire until you get the Boosted Rest buff
+T 96607 @ Tirisfal Glades, 57.2, 55.4
+A 96658,97955 @ Tirisfal Glades, 57.2, 55.4 | Take only the Cooking and First Aid Camping 101 quests (plus your own professions if you have any)
+T 404 | Deathguard Dillinger
+A 426
+T 367 | Apothecary Johaan
+A 368
+T 99144 | Shari Stilwell, near Johaan
+T 427 | Executor Zygand
+A 370
+A 374 | Deathguard Burgess, beside Zygand
+A 358 | Magistrate Sevren in the town hall
+T 96658 @ Tirisfal Glades, 61.8, 51.5 | Learn Cooking from William Pickman outside the tavern, then hand the quest in to him
+A 362,354 | Coleman Farthing in the tavern
+A 375 | Gretchen Dedmar in the tavern
+N Buy 1 Coarse Thread from Abigail Shiel (trade supplies, by the tavern) for The Chill of Death. Sell your junk: the next loop collects many quest items
+
+# --- South, Agamand Mills and the gnolls (one loop, then hearth) ---
+C 375 @ Tirisfal Glades, 55.0, 61.0 | Kill duskbats on the way south for 5 Duskbat Pelts. Greater and Vampiric Duskbats both drop them; if you are short, more fly east of the gnoll camp later in this loop
+C 370 | Scarlet camp south of the road: kill Captain Perrine, 3 Scarlet Zealots and 3 Scarlet Missionaries. Their Scarlet Insignia Rings count for Proof of Demise
+C 362,426 | Agamand Mills, far to the north: kill Devlin Agamand at the mill and collect Notched Ribs and Blackened Skulls from the skeletons
+A 361 @ Tirisfal Glades, 46.8, 34.7 | A Letter to Yvette drops from the Agamand skeletons. Right-click it to start the quest; keep killing skeletons if it has not dropped yet
+C 354 | Kill Nissa (in the mills), Thurman (west houses) and Gregor (north, near the crypt) Agamand for their remains
+C 5482,358 | East of the mills: pick Doom Weed and kill Rot Hide gnolls for Embalming Ichor and the kill counts. Leave Maggot Eye (level 11, north end of the camp) alone for now: you come back for him at level 10
+C 368 | Vile Fin murlocs on the shore just north of the gnolls: 5 Vile Fin Scales
+H Brill
+
+# --- Brill, third visit ---
+T 362,354 | Coleman Farthing in the tavern
+A 355
+T 361 | Yvette Farthing, next to Coleman
+T 375 | Gretchen Dedmar
+N Make Linen Bandages until First Aid is 20
+T 97955 @ Tirisfal Glades, 61.8, 52.8 | Nurse Neela in the tavern
+TRAIN | Cain Firesong, upstairs: learn your level 8 spells (Polymorph, Arcane Missiles)
+T 355 | Magistrate Sevren. Skip The Family Crypt (level 13)
+T 358
+A 359,405
+T 370 | Executor Zygand
+A 371
+T 426 | Deathguard Dillinger
+T 5482 | Junior Apothecary Holland
+A 99142
+T 368 | Apothecary Johaan
+A 369
+
+# --- East, first trip (Balnir and the Scarlet Watch Post) ---
+C 99141:2 @ Tirisfal Glades, 65.5, 60.3 | Waystation camp south-east of Brill, on the road to the Undercity: talk to Deathguard Kristof for his report
+T 359 | Deathguard Linnea at the same camp
+A 360,356
+C 356,99142 | Balnir Farmstead, east: kill Bleeding Horrors and Wandering Spirits and pick Tomb Weed in the farm fields. Snapdragons grow here too; you cannot pick them yet
+C 371,374 | Scarlet Watch Post just north of Balnir: kill Captain Vachon and 5 Scarlet Friars, and finish the 10 Scarlet Insignia Rings
+C 369 | Vicious Night Web Spiders in the woods east of the watch post: 4 venom samples
+T 356 | Deathguard Linnea at the waystation camp, on your way back west to Brill
+
+# --- Brill, fourth visit (you should reach level 10 here) ---
+T 360 | Magistrate Sevren
+T 371,99141 @ Tirisfal Glades, 60.6, 51.8 | Executor Zygand. Do not take the next Scarlet quest (level 12)
+A 398 | The Wanted poster next to Zygand. You kill Maggot Eye at the end of this segment, once you have Frost Nova
+T 374 | Deathguard Burgess
+T 99142 | Junior Apothecary Holland
+T 369 | Apothecary Johaan
+A 492
+T 492 | Tavern cellar: give Johaan's drink to the Captured Mountaineer
+L 10 @ Tirisfal Glades, 70.5, 52.0 | Not level 10 after these turn-ins? Kill duskbats and darkhounds in the woods east of Brill until you are; the Vampiric Duskbats out toward Brightwater Lake give the most XP. The next three steps need level 10
+TRAIN | Cain Firesong, upstairs: learn your level 10 spells (Frost Nova, Frost Armor rank 2, Conjure Water rank 2)
+A 1881 @ Tirisfal Glades, 62.0, 52.5 | Cain Firesong (needs level 10)
+A 96895 | Deathguard Terrence, at the south edge of Brill (needs level 10)
+
+# --- East, second trip (Undercity, Hadric's cultists, Balnir, Gunther's island, Maggot Eye) ---
+T 96895 | Hadric Harlson at the waystation camp south-east of Brill
+A 96897,96898 @ Tirisfal Glades, 65.9, 61.0 | Hadric now offers two new Argent Dawn quests, The Cult of the Damned and Remnants of War (level 13). You do them right after the Undercity
+N Shelene Rhobart, next to Hadric, may offer the new Forever quest Hides for the Forsaken. It is not on this route: take it so the logger records it, and abandon it if you will not do it
+G Tirisfal Glades, 60.5, 66.5 | Walk south-west into the Ruins of Lordaeron and enter the Undercity through the throne room at the back. Ride an elevator down and follow the signs to the Magic Quarter
+T 405 | Bethor Iceshard in the Magic Quarter
+A 357
+T 1881 | Anastasia Hartwell, also in the Magic Quarter
+A 1882 | Keep this quest: you hand it in on the next Undercity visit (segment 3)
+C 96897,96898 @ Tirisfal Glades, 68.0, 64.8 | Leave the Undercity and go to the cultist camp just south-east of Hadric: kill 8 Dark Neophytes and 8 Dark Enforcers and collect 12 Necrotic Crystal Fragments in the same camp. Pull one cultist at a time. If they are 3 or more levels above you, abandon both quests: you pass this camp again at the end of the next segment and can take them then
+T 96897,96898 @ Tirisfal Glades, 65.9, 61.0 | Back to Hadric. Skip his next quest, Bandarion Keep: it sends you far to the west
+C 1882 | Go east to Balnir Farmstead: pick a Balnir Snapdragon
+C 357 | Gunther's Retreat, the small island in Brightwater Lake north-west of Balnir: swim over and take the Lich's Spellbook from Gunther's bookshelf. Gunther is friendly. Keep the quest for Bethor (segment 3)
+C 398 @ Tirisfal Glades, 58.7, 30.8 | Swim to the north-west shore and go to Garren's Haunt, the gnoll camp north of Brill. Maggot Eye (level 11) stands at its north end: clear the gnolls around him, open with Frostbolt from max range, and Frost Nova him and step back if he reaches you
+T 398 | Walk south to Brill: Executor Zygand
+A 445 | Apothecary Johaan
+N Done in Tirisfal for now. Next segment: leave Brill on the road south toward the Undercity and branch west into Silverpine Forest

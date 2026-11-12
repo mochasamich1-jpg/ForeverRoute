@@ -1,0 +1,20 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quests = ForeverChanges quest list (research/digest) and Questie; entrances = Questie.
+@dungeon Uldaman
+@levels 41-51
+@window 39-48
+@best 43
+@hub Badlands, 4.0, 47.0, 6
+@entrance Badlands, 44.6, 12.1
+A 2283 @ Orgrimmar, 59.5, 36.6 | Dran Droffers in the Drag. The necklace is in a chest in the dig site before the dungeon portal. Needs level 37.
+A 2342 @ Undercity, 62.3, 48.6 | Patrick Garrett in the Trade Quarter. His family chest is in the South Common Hall, before the dungeon portal.
+A 2418 @ Badlands, 42.4, 52.9 | Rigglefuzz. Power Stones drop from the Shadowforge dwarves in and around Uldaman.
+A 709 @ Badlands, 51.4, 76.9 | Theldurin the Lost. The Tablet of Ryun'eh is in the tunnels before the dungeon portal.
+A 2202 @ Badlands, 2.4, 46.1 | Jarkal Mossmeld in Kargath, after his Badlands Reagent Run. Magenta Fungus Caps grow inside.
+RUN | The main entrance is the dig site in the north of the Badlands; a back entrance is further east (Badlands 65.2, 43.5). Inside: the Necklace Recovery chain continues (a paladin's remains, then gems from three bosses, with trips back to Jarkal in Kargath), and the Discs of Norgannon after the last boss give The Platinum Discs.
+T 2418 @ Badlands, 42.4, 52.9
+T 709 @ Badlands, 51.4, 76.9
+T 2202 @ Badlands, 2.4, 46.1
+T 2283 @ Orgrimmar, 59.5, 36.6
+T 2342 @ Undercity, 62.3, 48.6
+T 2280 @ Thunder Bluff, 34.4, 46.9 | The Platinum Discs: Sage Truthseeker.

@@ -1,0 +1,68 @@
+@segment 1-6 Coldridge Valley
+@start-level 1
+@carry          # none: this is the first segment
+@done           # none: this is the first segment
+# Gnome, any class. From the Dwarf route's segment 01: same quests, order, binds and flights, minus
+# the class quests.
+# Removed: Archaic Rune 98581, Call of Earth 94373 / 94374 / 94375, the pendant farming in the troll camps
+# and the walk up to the Spirit Stone (it was there only for 94374 / 94375).
+# Changed: the three TRAIN stops at Anvilmar are generic (no trainer name, no coordinates). The level 1
+# class letter quests are not listed. Combat hints are class-neutral.
+# Hearthstone: bound to Anvilmar from the start; used once, for the timed mornbrew run.
+# Deviation from the plan (allowed by its risks note): The Stolen Journal 218 is done BEFORE the
+# Anvilmar run, as TUGs does, because level 4 (3364) is only reached with its XP.
+# Grund Drokda is a new Forever NPC that is not in Questie: his position is the ForeverChanges pin.
+# Skipped: 5841 Welcome! (gift voucher, no XP: mentioned as an option in the first step).
+# Carry-out: 420 Senir's Observations, 2160 Supplies to Tannok, 96628 The Adventurer (all handed in
+# at Kharanos in segment 2).
+
+# --- Anvilmar: Sten and Balir ---
+A 179 | Sten Stoutarm stands right in front of you when you log in. Got a Coldridge Valley Gift Voucher in your bags? Hand it to Yori Crackhelm a few steps south-east for a small gift (no XP)
+C 179 | Ragged Young Wolves and Ragged Timber Wolves roam the snow all around Anvilmar; most of them drop meat. Fight one at a time
+T 179 | Sten Stoutarm
+A 233 | Sten: a stack of letters for Talin Keeneye
+A 170 | Balir Frosthammer, next to Sten
+TRAIN | Anvilmar: visit your class trainer inside the hall (in the mountainside just north of Sten) and learn everything you can afford
+
+# --- West side of the valley ---
+C 170 | Rockjaw Troggs and Burly Rockjaw Troggs stand in small camps across the valley floor west and south-west of Anvilmar. Kill 6 of each on the way west to Talin Keeneye; any you still miss can be finished around Grelin's camp. Eat or bandage when you drop below half health
+T 233 | Talin Keeneye, at his camp on the west side of the valley
+A 234,183 | Talin gives both
+C 183 | Small Crag Boars are all around Talin's camp. Kill 12
+T 183 | Talin Keeneye
+T 234 | Grelin Whitebeard, at the camp in the south-west of the valley
+A 182
+C 182 | Frostmane Troll Whelps stand in the small camps south and south-west of Grelin. Kill 14. They throw things from range, so run up to them instead of waiting
+T 182 | Grelin Whitebeard
+A 218
+C 218 @ Dun Morogh, 30.5, 80.2 | The Frostmane cave opens in the south of the valley, east of the whelp camps. Grik'nir the Cold (level 5) stands at the very back. Kill the trolls near him first, fight him at full health and loot the journal from him
+T 218 | Back to Grelin Whitebeard
+A 282 | Keep it: Mountaineer Thalos is at the tunnel out of the valley, the last stop of this segment
+L 4 @ Dun Morogh, 22.5, 78.5 | Not level 4 yet? Kill a few more troll whelps or troggs near the camp: the next quest needs level 4
+
+# --- Anvilmar ---
+A 3364 | Nori Pridedrift, next to Grelin (needs level 4). The mornbrew goes cold in 5 minutes
+H Anvilmar | Use the hearthstone right away: it drops you inside Anvilmar. On cooldown? Run north-east without fighting, 5 minutes is enough
+T 3364 | Durnan Furcutter, inside Anvilmar
+A 3365
+T 170 | Balir Frosthammer, just outside the entrance next to Sten. Still short of troggs? They stand right south of Anvilmar: finish them first
+TRAIN | Anvilmar: visit your class trainer for your level 4 skills. Sell grey items at the vendors inside
+A 3361 | Felix Whindlebolt, the gnome inside Anvilmar
+A 97277 @ Dun Morogh, 28.6, 67.5 | Grund Drokda, standing next to Felix
+
+# --- Gozwin's camp, then back through the troll camps ---
+C 97277 @ Dun Morogh, 27.4, 63.0 | Grund and Gozwin's camp is in the hills north-west of Anvilmar. Pick up Gozwin's Mechanic's Log at the camp and kill the Snow Leopard Prowler there. Fight it at full health
+C 3361:1 @ Dun Morogh, 20.9, 76.1 | Back down to the south-west: Felix's Box stands in the troll camp west of Grelin
+C 3361:2 @ Dun Morogh, 22.8, 80.0 | Felix's Chest is in the next troll camp to the south
+C 3361:3 @ Dun Morogh, 26.3, 79.3 | Felix's Bucket of Bolts is in the troll camp further east, near the mouth of the troll cave
+T 3365 | Nori Pridedrift, at Grelin's camp
+
+# --- Anvilmar: hand in ---
+T 3361 | Felix Whindlebolt, inside Anvilmar
+T 97277 @ Dun Morogh, 28.6, 67.5 | Grund Drokda
+TRAIN | Anvilmar: if you are level 6, visit your class trainer for your level 6 skills. Not 6 yet? Train in Kharanos next segment instead
+
+# --- Out of the valley ---
+T 282 | Mountaineer Thalos, at the tunnel entrance on the east side of the valley
+A 420,96628 | Thalos gives both. Keep them: Senir Whitebeard and Eric Brighthammer are at Kharanos
+A 2160 | Hands Springsprocket, the gnome a few steps from Thalos. Then go through the tunnel (Coldridge Pass) and follow the road north-east to Kharanos

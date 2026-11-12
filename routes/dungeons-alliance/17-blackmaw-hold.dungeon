@@ -1,0 +1,12 @@
+# ALLIANCE. New Forever dungeon. Source: foreverchanges.pro/dungeons/blackmaw-hold and quest pages (level range is Blizzard's).
+@dungeon Blackmaw Hold
+@levels 55-60
+@window 53-60
+@best 56
+@hub Azshara, 12.0, 77.0, 12
+@hub Winterspring, 61.0, 38.0, 8
+@hub Felwood, 62.0, 24.0, 8
+@hub Stormwind City, 50.0, 50.0
+@hub Ironforge, 50.0, 50.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is a furbolg city behind the big gate in Azshara. Quests named for it: The Twin Bears (Lorekeeper Nok), Get to the Roots of It (Mathrengyl Bearwalker in Darnassus), Claws That Rend, Tusks that Gore (Ogtinc in Azshara) and Blackmaw Pouches (Ekkal at the Ruins of Eldarath in Azshara); positions are not published yet. Take what is offered: the addon logs it so these steps can be filled in.

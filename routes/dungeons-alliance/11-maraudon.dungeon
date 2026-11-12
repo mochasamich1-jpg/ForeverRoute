@@ -1,0 +1,20 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Maraudon
+@levels 46-55
+@window 45-53
+@best 48
+@hub Desolace, 65.0, 10.0, 8
+@hub Dustwallow Marsh, 66.0, 49.0, 8
+@hub Tanaris, 51.6, 27.0, 5
+@entrance Desolace, 29.1, 62.5
+A 7070 @ Dustwallow Marsh, 66.4, 49.3 | Archmage Tervosh in Theramore. Shadowshard Fragments drop from the rumblers on the purple side, before the dungeon portal.
+A 7041 @ Desolace, 68.5, 8.9 | Talendria at Nijel's Point. Fill the vial at the orange pool inside, then use it on the Vylestem Vines.
+A 7065 @ Desolace, 63.8, 10.7 | Keeper Marandis at Nijel's Point. Kill Princess Theradras, the last boss. Needs level 45.
+A 7028 @ Desolace, 62.2, 39.6 | Willow, east of the Kodo Graveyard. 15 Theradric Crystal Carvings from the enemies inside.
+A 7067 @ Desolace, 50.4, 86.7 | The Centaur Pariah, in the far south of Desolace. Long: five named centaur spirits and a gem.
+RUN | Maraudon is in the west of Desolace; fly to Nijel's Point and ride south-west. Inside the outer caves, before the portals, Cavindra gives Legends of Maraudon.
+T 7041 @ Desolace, 68.5, 8.9
+T 7065 @ Desolace, 63.8, 10.7
+T 7028 @ Desolace, 62.2, 39.6
+T 7070 @ Dustwallow Marsh, 66.4, 49.3

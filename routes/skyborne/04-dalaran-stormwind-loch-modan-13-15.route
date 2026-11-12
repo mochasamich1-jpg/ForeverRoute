@@ -1,0 +1,68 @@
+@segment 13-15 Dalaran, Stormwind & Loch Modan I
+@start-level 13
+@carry 94946
+@done 93089
+# Skyborne, any class. From the Skyborne Mage route's segment 04: same quests, order, bind and flight paths.
+# Changed 2026-11-12 for the any-class route:
+#  - Removed 2039 Find Bingles (Gnoarn, Ironforge): segment 05 takes it there, as on every any-class route.
+#  - The Stormwind TRAIN step is generic: it lists where each class trains in Stormwind (research/json/baked_npcs.json)
+#    and has no arrow. The note about one class's Stormwind quests is gone.
+#  - Fight hints are class-neutral (Stonesplinter Skullthumpers and Seers, the Silver Stream Mine).
+# The bridge from Zephras Isle onto the shared Alliance path:
+# Skycutter to Dalaran -> Skyborne Portal to Stormwind (Bolvar) -> Stormwind (bind, flight path, class trainer)
+# -> Deeprun Tram ->
+# Ironforge (flight path) -> on foot through east Dun Morogh and the South Gate Pass -> Loch Modan:
+# Valley of Kings, Stonesplinter Valley, Thelsamar (flight path), north Loch (Stormpike, Silver Stream Mine).
+# The Loch Modan part is the Dwarf Shaman route's first Loch Modan visit without its dwarf-only and shaman
+# quests (413/414 from Dun Morogh, the 6387 gryphon chain, Call of Fire). It ends in Thelsamar: the next
+# segment starts with the gryphon to Ironforge, exactly like the Dwarf route.
+# Not taken: 93963 Exploring the Alliance (Bolvar) and 98021 Journey to Sentinel Hill (Bolvar; segment 05 takes it).
+# The hearthstone is bound in Stormwind and not used in this segment.
+# Hand-off into segment 05: level 14, standing in Thelsamar, flight paths Stormwind, Ironforge and Thelsamar,
+# 1339 and 237 handed in.
+# Carry-out: 263 (Stonesplinter Shamans and Bonesnappers, next Loch visit), 1338 Stormpike's Order
+# (Stormwind, next segment). Nothing else.
+
+# --- Dalaran ---
+T 94946 @ Alterac Mountains, 12.4, 56.3 | Danaaris Stargale meets you where the skycutter lands in Dalaran
+A 94947 @ Alterac Mountains, 12.4, 56.3 | Danaaris Stargale
+N Take the Skyborne Portal to Stormwind | The Kirin Tor keep it open next to Danaaris. Do not wander out of Dalaran: the land around it is level 30+
+
+# --- Stormwind ---
+T 94947 @ Stormwind City, 80.0, 38.5 | Highlord Bolvar Fordragon, in the throne room of Stormwind Keep. Leave his other quests for the next segment
+S Stormwind @ Stormwind City, 60.5, 75.2 | Make the inn in the Trade District your home (the Gilded Rose)
+F Stormwind @ Stormwind City, 71.0, 72.5 | Dungar Longdrink, the gryphon master, a few steps from the inn in the Trade District
+TRAIN | Stormwind: visit your class trainer and learn your level 12 skills (and 14 if you are 14). Warriors: the Command Center in Old Town (80.2, 61.3). Rogues: SI:7 in Old Town (77.4, 65.3). Hunters: the Dwarven District (67.4, 36.3). Priests and paladins: the Cathedral of Light (49.5, 44.6 and 48.4, 50.2). Druids: the Park (35.8, 67.4). Mages: the Wizard's Sanctum in the Mage Quarter (49.6, 85.8). Warlocks: the cellar of the Slaughtered Lamb in the Mage Quarter (39.2, 85.0). Sell, repair and buy food here
+
+# --- Tram to Ironforge and the walk to Loch Modan ---
+N Take the Deeprun Tram to Ironforge @ Stormwind City, 66.0, 34.0 | The tram entrance is in the Dwarven District, in the north-east of Stormwind. Leave the rat quest on the far platform for the next segment: it runs the other way
+F Ironforge @ Ironforge, 55.5, 47.7 | Gryth Thurden, the gryphon master in the centre of the city
+N Walk to Loch Modan @ Dun Morogh, 86.0, 51.0 | Leave Ironforge by the main gate, follow the road east through Dun Morogh past Gol'Bolar Quarry, take the right (southern) branch to South Gate Outpost and go through the South Gate Pass tunnels
+
+# --- Loch Modan: Valley of Kings ---
+A 224 | Mountaineer Cobbleflint is at the guard tower in the Valley of Kings, just past the last tunnel
+A 267 | Captain Rugelfuss, inside the tower
+C 224 @ Loch Modan, 30.8, 68.2 | Stonesplinter Valley, the trogg hills east of the tower: kill 10 Stonesplinter Troggs and 10 Stonesplinter Scouts (11-12). Every trogg can drop a Trogg Stone Tooth
+C 267 @ Loch Modan, 30.8, 70.0 | Finish 8 Trogg Stone Teeth on any troggs on the way back to the tower
+T 224 | Mountaineer Cobbleflint, at the southern guard tower
+T 267 | Captain Rugelfuss
+A 237 | Mountaineer Gravelgaw, a little south of the tower
+C 237 @ Loch Modan, 33.0, 76.0 | Kill 10 Stonesplinter Skullthumpers and 10 Stonesplinter Seers (13-14) in the hills further south. One at a time, at full health. The Seers heal themselves: kill them fast and interrupt or stun the heal if your class can
+T 237 | Mountaineer Gravelgaw
+A 263 | Mountaineer Wallbang, at the tower. Keep it: the Shamans and Bonesnappers are level 15-16, for your next Loch Modan visit
+
+# --- Thelsamar ---
+A 416,1339 | Follow the road north-east to Thelsamar: Mountaineer Kadrell patrols the main street
+A 418 | Vidra Hearthstove, in the inn (Stoutlager Inn). Do NOT bind here: your hearthstone stays in Stormwind
+F Thelsamar | Thorgrum Borrelson, the gryphon master on the south side of town
+N Grenhild Darktalon in Thelsamar offers Snowbound (a jar of snow from the South Gate Pass to the north shore). Skip it: it does not fit this loop
+
+# --- North Loch Modan ---
+C 418 @ Loch Modan, 31.5, 39.0 | On the way north kill Elder Black Bears (Bear Meat), Mountain Boars (Boar Intestines) and Forest Lurkers (Spider Ichor) beside the road: 3 of each item
+T 1339 | Mountaineer Stormpike, at the top of the northern guard tower (Algaz Station), in the north-west corner of the zone
+A 307,1338 | Stormpike gives both. Keep Stormpike's Order: it goes to Stormwind next segment
+C 307,416 @ Loch Modan, 35.5, 24.3 | Silver Stream Mine, the kobold cave east of the tower. Open 4 Miners' League Crates inside for the Miners' Gear and cut 12 Tunnel Rat Ears from any kobold. The Geomancers cast fire: kill them first, and back out toward the entrance if two kobolds come
+T 307 | Back west to Mountaineer Stormpike
+C 418 @ Loch Modan, 33.0, 31.5 | Finish the sausage meats on the walk back south to Thelsamar
+T 416 | Mountaineer Kadrell, in Thelsamar
+T 418 | Vidra Hearthstove, in the inn. Sell and repair: the next segment starts with the gryphon from Thelsamar to Ironforge

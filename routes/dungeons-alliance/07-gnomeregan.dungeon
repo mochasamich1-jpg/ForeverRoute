@@ -1,0 +1,18 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); givers = foreverchanges.pro/dungeon-quests; entrance and prerequisites = Questie.
+@dungeon Gnomeregan
+@levels 29-38
+@window 28-36
+@best 31
+@hub Ironforge, 50.0, 50.0
+@hub Dun Morogh, 46.0, 52.0, 8
+@entrance Dun Morogh, 24.3, 39.8
+A 2928 @ Stormwind City, 55.5, 12.5 | Shoni the Shilent. 24 Robo-mechanical Guts from the robots inside.
+A 2924 @ Ironforge, 67.9, 46.1 | Klockmort Spannerspan in Tinker Town. 12 Essential Artificials from the Artificial Extrapolators inside.
+A 2930 @ Ironforge, 69.8, 48.1 | Master Mechanic Castpipe in Tinker Town. A Prismatic Punch Card: it takes a chain of punch-card machines through the dungeon. Needs level 25.
+A 2929 @ Ironforge, 68.8, 49.0 | High Tinker Mekkatorque in Tinker Town. Kill Mekgineer Thermaplugg, the last boss. Needs level 25.
+RUN | The entrance is in the west of Dun Morogh, past Brewnall Village: take the lift down and go through the workshop tunnels to the portal. More quests need a small lead-in first: Tinkmaster Overspark in Tinker Town (Save Techbot's Brain!, after a pointer from Brother Sarno in Stormwind) and Ozzie Togglevolt in Kharanos (Gnogaine, after a pointer from Gnoarn in Tinker Town). Inside: Kernobee gives an escort quest that ends with Scooty in Booty Bay.
+T 2924 @ Ironforge, 67.9, 46.1
+T 2930 @ Ironforge, 69.8, 48.1
+T 2929 @ Ironforge, 68.8, 49.0
+T 2928 @ Stormwind City, 55.5, 12.5

@@ -1,0 +1,12 @@
+# ALLIANCE. Sources: wing level ranges = foreverchanges.pro/dungeons (Classic group-finder ranges, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Scarlet Monastery
+@levels 30-46
+@window 33-42
+@best 37
+@hub Hillsbrad Foothills, 50.0, 57.0, 8
+@hub Ironforge, 50.0, 50.0
+@entrance Tirisfal Glades, 82.6, 33.8
+A 1050 @ Ironforge, 75.0, 12.5 | Librarian Mae Paledust in the Hall of Explorers. Mythology of the Titans is in the Library wing.
+RUN | The monastery is in the north-east corner of Tirisfal Glades, deep in Horde land: from Southshore ride north through Alterac and the Western Plaguelands, or west along the north shore of Lordamere Lake. Four wings, each its own run: Graveyard (30-38), Library (33-41), Armory (36-44) and Cathedral (38-46). Raleigh the Devout in Southshore gives In the Name of the Light (the four wing bosses), but only after a letter from Brother Anton at Nijel's Point in Desolace. Magus Olvek (Alterac Mountains 9.8, 63.0, by Dalaran) gives Past Due, a book from the monastery.
+T 1050 @ Ironforge, 75.0, 12.5

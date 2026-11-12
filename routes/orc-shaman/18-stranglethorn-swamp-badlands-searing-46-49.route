@@ -1,0 +1,149 @@
+@segment 46-49 Stranglethorn III, Swamp of Sorrows II, Badlands II & Searing Gorge
+@start-level 46
+# Carried in from segment 17: 648 and 2767 (Oglethorpe) and 2874 (MacKinley) for Booty Bay, 584 and 598 (Grom'gol, from segment 15),
+# 698 (flanks done, Tok'Kar), 712 (Lotwil, Badlands), plus 864 (Undercity), 650 and 2641 (Hinterlands) and 32 (Orgrimmar) kept for segment 19.
+# Order: Booty Bay -> cove, naga and Mistvale gorillas -> Booty Bay -> Bloodsail camp -> fly Grom'gol -> Zul'Kunda and Nesingwary -> Grom'gol
+# -> Skullsplitter ruins -> Grom'gol -> Venture Co. camp, Crystalvein Mine, Zanzil's camp, Jungle Stalkers -> Grom'gol -> Nesingwary
+# -> hearth Booty Bay -> pirate ships -> fly Stonard (bind, train) -> Cortello's bridge -> Misty Reed Post -> Stonard -> fly Kargath
+# -> Camp Boff -> Lotwil -> Kargath -> trail into Searing Gorge -> Thorium Point. Hearth ends bound to Stonard.
+# 584 must be handed in before 585/586 can be taken, so Zul'Kunda and Grom'gol come before the Skullsplitter ruins, and 572/196 are
+# accepted before the Jungle Stalkers are killed.
+# Skipped: 613 and 591 (elite), 197 (Tethis, elite), 571 (rare gorilla sinew), 793 (elite), 3452 (elite), 7701 (Maltorius, elite),
+# 4450 (Tanaris ledger), 625 (Dustwallow), 713-716/734-778 (Auction House parts). 3721 waits for the Hinterlands robot (segment 19).
+@carry 864,648,2767,650,32,2641,712,584,598,698,2874
+@done 189,605,570,195
+
+# ---------- Booty Bay ----------
+T 648,2767 | Off the boat, walk up to Oglethorpe Obnoticus. His next quest, An OOX of Your Own, only opens once the third robot (Hinterlands, next segment) is home
+A 595 | First Mate Crazz, next to Oglethorpe
+A 348 | Fin Fizracket
+T 2874 | "Sea Wolf" MacKinley
+A 606 | "Sea Wolf" MacKinley
+A 600,621 | Crank Fizzlebub, in the inn
+A 209 | Kebok, in the inn
+S Booty Bay @ Stranglethorn Vale, 27.0, 77.3 | Innkeeper Skindle. Your hearthstone still points at Gadgetzan; you hearth back here from Nesingwary's camp
+A 617 | Privateer Bloads
+N Keep 15 Silk Cloth in your bags from now on: an outhouse quest at the end of this segment needs it | The pirates and trolls here drop plenty. Short? Booty Bay has an Auction House
+
+# ---------- North of Booty Bay: the cove, the naga and the gorillas ----------
+T 595 | Take the road north out of Booty Bay to the pirate cove. The Bloodsail Correspondence lies in the camp, guarded by Bloodsail Raiders and Mages (39-41)
+A 597 | From the same papers
+C 617 | Naga Explorers (43-44) walk the beach north of the cove; about 1 in 3 drops Akiris Reed. Earth Shock their casts
+A 349 | Witch Doctor Unbagwa, inland to the east among the gorillas of Mistvale Valley
+C 606,349 | Elder Mistvale Gorillas around Unbagwa: you need 5 Mistvale Giblets (about 1 in 3 drops one) and 10 Gorilla Fangs (about half)
+T 349 | Hand Unbagwa the fangs. He calls waves of gorillas and then Mokk the Savage (44): stay next to him, put Stoneclaw Totem and Magma Totem down for each wave and Healing Wave between them
+C 348 @ Stranglethorn Vale, 35.3, 60.4 | Loot the Heart of Mokk
+T 606 | Back to Booty Bay: "Shaky" Phillipe on the dock
+A 607
+T 597 | First Mate Crazz
+A 599
+T 599 | Fleet Master Seahorn
+A 604
+T 607 | "Sea Wolf" MacKinley
+A 609 | Keep it for central Stranglethorn
+T 617 | Privateer Bloads
+T 348 | Fin Fizracket
+A 587 | Deeg
+A 576 | Dizzy One-Eye
+
+# ---------- Bloodsail camp south of Booty Bay ----------
+C 604,587 @ Stranglethorn Vale, 29.0, 82.4 | The Bloodsail camp on the shore just south of Booty Bay: kill 10 Swashbucklers and pick up the Bloodsail Charts and Orders lying in the camp. Snuff drops from any Bloodsail pirate. Dizzy's Eye (576) drops only rarely from any Bloodsail, including the ship crews you fight later, so loot everything. One group at a time; Earth Shock the Warlocks' Shadow Bolts
+T 604 | Fleet Master Seahorn
+A 608 | Keep it for the end of the jungle loop
+T 587 | Deeg
+
+# ---------- Grom'gol, Zul'Kunda and Nesingwary ----------
+FLY Grom'gol | Gringer, Booty Bay's wind rider master
+A 572 | Far Seer Mok'thardin. The Jungle Stalkers for it come later in this segment
+C 584 | 584 is already in your log. Ride north-west to the Ruins of Zul'Kunda: Gan'zulah (41) and Nezzliok the Dire (40) stand inside the ruins among Bloodscalp trolls. Clear around each one first, then kill them for their heads
+A 196 @ Stranglethorn Vale, 35.7, 10.8 | Hemet Nesingwary, a short ride east of Zul'Kunda at the hunters' camp
+T 584 | Back south to Grom'gol: the Bubbling Cauldron in the middle of the camp
+A 585,586 | Both come from the cauldron
+
+# ---------- The Skullsplitter ruins ----------
+C 585 | Ride east to the Skullsplitter ruins and click the trophy skull piles at Ziata'jai (42, 36), Balia'mah (46, 32) and Zul'Mamwe (48, 40)
+C 586,209,598 | Skullsplitter Hunters, Headhunters and Berserkers (41-44) hold Zul'Mamwe, the south-east ruin; Ana'thek the Cruel (45) walks there and drops the armour. Tusks and necklaces drop from every Skullsplitter, but slowly: the Warriors, Axe Throwers and Mystics (39-40) in the other two ruins die fastest. Earth Shock the Witch Doctors' and Mystics' heals
+T 585,586 | Ride back west to Grom'gol: the Bubbling Cauldron
+A 588 | The cauldron again
+T 598,588 | Kin'weelay
+A 589
+
+# ---------- Central Stranglethorn: Venture Co., basilisks, Zanzil and the Jungle Stalkers ----------
+C 600,589 @ Stranglethorn Vale, 42.5, 45.5 | Ride back east, past the ruins, to the Venture Co. camp at the Crystalvein Mine. Strip Miners, Tinkerers and Surveyors (40-42) drop Singing Blue Crystals on most kills. Ironjaw Basilisks (43-44) in and around the mine, just south of the camp, drop the Pulsing Blue Shards
+C 621,609 | Ride south-west to Zanzil's camp (37-40, 52-59). His trolls, zombies and naga (43-44) drop Zanzil's Mixture on about 1 in 3 kills, and Chucky "Ten Thumbs" (43, at 40, 58) has the ring: Zanzil himself (46) stands beside him, so pull Chucky away first. Maury "Club Foot" Wilkins and Jon-Jon the Crow (43-44) stand together at the ruins on the north-west edge (35, 51): kill both. Earth Shock the Witch Doctors
+C 572,196 @ Stranglethorn Vale, 28.5, 46.0 | Jungle Stalkers (40-41), the raptors in the jungle west of Maury's ruins toward the coast. Kill 10 for Hemet; about 1 in 4 drops a feather for Mok'thardin, so keep going until you have 10. They come in pairs: Stoneclaw Totem holds the second one
+T 589 | Ride north to Grom'gol: Kin'weelay. Skip the next part (The Mind's Eye, elite)
+T 572 | Far Seer Mok'thardin. Skip his next quest (571): its Aged Gorilla Sinew is a rare drop
+T 196 @ Stranglethorn Vale, 35.7, 10.8 | Ride north to Hemet Nesingwary. Skip the next part (Tethis, elite)
+H Booty Bay | Hearthstone, or cast Astral Recall. Both on cooldown? Ride back to Grom'gol and fly
+
+# ---------- Booty Bay and the pirate ships ----------
+T 609 | "Sea Wolf" MacKinley. Skip the next part (613, elite)
+T 600,621 | Crank Fizzlebub
+T 209 | Kebok
+C 608,576 | The three Bloodsail ships lie at anchor off the coast south of Booty Bay. Swim out and clear the deckhands and sea dogs (43-45) near each captain one pull at a time, then kill Captain Stillwater (45-46, east ship), Captain Keelhaul (46-47, west ship) and Fleet Master Firallon (48, south ship). Still no Dizzy's Eye? Any ship crew can drop it. Stoneclaw Totem for adds, Healing Wave when low
+A 624 @ Stranglethorn Vale, 29.2, 88.6 | Optional, before you swim back: Cortello's Riddle, a scroll lying on one of the ship decks. Loot it and right-click it. You hand it in under a bridge in the Swamp of Sorrows right after you reach Stonard; skip both steps if you did not find it
+T 608 | Fleet Master Seahorn
+T 576 | Dizzy One-Eye, a few steps from Seahorn
+
+# ---------- Stonard and Cortello's bridge ----------
+FLY Stonard | Gringer (via Grom'gol)
+S Stonard @ Swamp of Sorrows, 45.2, 56.7 | Innkeeper Karakul. Your hearthstone stays here into the next segment
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Haromm in Stonard, the only shaman trainer in the Eastern Kingdoms. Learn your level 46 spells, and 48 if you have it
+A 1430 @ Swamp of Sorrows, 44.7, 57.2 | Dar in Stonard
+T 624 @ Swamp of Sorrows, 22.9, 48.2 | Optional: ride west along the road to the bridge at the west end of the swamp. A Soggy Scroll lies underneath it, in the water. Skip its next riddle (Dustwallow Marsh)
+
+# ---------- Misty Reed Post ----------
+T 698 @ Swamp of Sorrows, 81.3, 81.0 | Ride back east past Stonard to the coast, then south along the beach to Tok'Kar at Misty Reed Post. Kill every Monstrous Crawler (43-44) you pass: their legs for Fresh Meat (1430) drop only rarely
+A 699 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+C 699 @ Swamp of Sorrows, 78.0, 97.5 | Sawtooth Snappers in the shallows along the south coast, south of the camp: claws drop on most kills. Two more crawlers walk this shore. Short of snappers? More of them live along the east coast
+T 699 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+A 1422 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+T 1422 @ Swamp of Sorrows, 83.8, 80.4 | Katar, a few steps away
+A 1426 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1426 | The few Marsh Murlocs are on the beach just south of the camp, and Inkspewers line the whole south and east coast. Most Flesheaters are on the beach west of the camp around 63, 86, the same beach you use for Continued Threat. Pull them away from the groups; Earthbind Totem slows any that follow
+T 1426 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+A 1427 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+T 1427 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+A 1428 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1428 | Inkspewers, Flesheaters and Oracles further west along the southern beach. Kill the Oracles first and Earth Shock their heals
+T 1428 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1430 @ Swamp of Sorrows, 93.5, 45.0 | Still short of crawler legs? Ride north along the east beach: most Monstrous Crawlers walk there. If the legs still will not drop, give up on 1430 rather than camp the beach
+H Stonard | Hearthstone, or cast Astral Recall
+T 1430 @ Swamp of Sorrows, 44.7, 57.2 | Dar
+
+# ---------- Badlands: Lotwil's bracers and Broken Alliances ----------
+FLY Kargath | Breyk, Stonard's wind rider master
+A 782 @ Badlands, 2.9, 45.6 | Gorn in Kargath
+C 712 @ Badlands, 4.1, 79.6 | Ride south to the far south-west corner of the Badlands: Greater Rock Elementals (42-44) drop Bracers of Rock Binding on most kills. The Dustbelcher ogre camp (Camp Boff) sits between this group and a second one to the south-east, so pull from the edges and do not drift into the ogres. Kill Boss Tho'grun (next step) if he walks past
+C 782 @ Badlands, 12.6, 75.5 | Boss Tho'grun (41-42, not elite) starts at Camp Boff and walks a long loop east along the southern road and back. Catch him on the road, away from the Maulers and Shamans in the camp, and loot the Sign of the Earth
+T 712 @ Badlands, 25.9, 44.9 | Lotwil Veriatus at his camp in western Badlands. His and Lucien Tosselwrench's other quests need Auction House parts: skip them
+T 782 @ Badlands, 2.9, 45.6 | Gorn, back in Kargath. Skip the next part (793, elite)
+
+# ---------- Searing Gorge ----------
+N Take the trail that starts just north of Kargath and climbs into Searing Gorge, then cross the gorge north-west to the Cauldron
+A 3441 | Kalaran Windblade, at the north-west edge of the Cauldron
+T 3441 | Listen to his story
+A 3442
+F Thorium Point @ Searing Gorge, 34.8, 30.8 | Grisha, the Horde wind rider master at Thorium Point, a short ride north-west
+A 7728,7729 | The Wanted board at Thorium Point. Skip WANTED: Overseer Maltorius (elite)
+A 7723,7724,7727 | Hansel Heavyhands
+A 7722 | Master Smith Burninate
+C 3442,7723 @ Searing Gorge, 42.0, 50.0 | Heavy War Golems (47-49) walk around the Cauldron and drop Golem Oil: kill 20. Blazing, Inferno and Magma Elementals in and around the Cauldron drop Hearts of Flame (Magma Elementals can drop both). Fire spells and fire totems do little to the elementals: use Frost Shock, Earth Shock and melee
+T 3442 | Back to Kalaran Windblade
+A 3443
+C 7729,3443,7728:1 | Dark Iron Taskmasters and Slavers on the Cauldron floor. Any Dark Iron dwarf can drop a Thorium Plated Dagger. The Smithing Tuyere drops from the Dark Iron Steamsmiths at the forges on the west side of the Cauldron (40, 49). Keep the Grimesilt Outhouse Key if one drops
+C 7727,7722 | The Slag Pit is a tunnel that leads down from the Cauldron floor. Incendosaurs fill its lava pools: kill your 20 first. The Secret Plans: Fiery Flux lie on the ground at 40.5, 35.7, right beside Overseer Maltorius (elite 50) and his two elite Dark Iron Sentries (48). Do not try to clear them: come in from the side away from them, click the plans and walk straight back up the tunnel, with an Earthbind Totem behind you if one turns
+C 7724 @ Searing Gorge, 28.0, 44.0 | Spiders first, on the west plateau south-west of Thorium Point: almost all Greater Lava Spiders (47-49) live there and in its lava pools, from 27, 38 south to 22-31, 66-78. Work south through them until you have killed 20. Still short? A few more roam south of the towers at 40, 69 and 44, 68
+C 7728:2 @ Searing Gorge, 33.2, 53.5 | Now the sentry towers south of the Cauldron, west to east (33, 54; 36, 61; 43, 63; 50-54, 56-59): Dark Iron Lookouts there drop the Lookout's Spyglass. An elite Dark Iron Sentry (48) guards each tower: pull the Lookouts away from it with Lightning Bolt (the group at 53, 59 stands furthest from its Sentry). The east tower is a short ride from the outhouse, your next stop
+A 4449 @ Searing Gorge, 65.6, 62.2 | Ride east from the last tower to the Wooden Outhouse at the Grimesilt Dig Site and talk to it. Leave Ledger from Tanaris alone afterwards: its items are in Dustwallow and the Swamp of Sorrows
+C 4449 @ Searing Gorge, 63.3, 60.5 | Five Dark Iron Geologists dig right next to the outhouse; the other three work at 69, 33, far to the north. Kill the five here, then wait a few minutes for them to come back rather than riding north. Dark Iron Watchmen stand among them. You also need 15 Silk Cloth
+T 4449 @ Searing Gorge, 65.6, 62.2 | The outhouse
+A 4451 @ Searing Gorge, 65.6, 62.2 | Right-click the Grimesilt Outhouse Key. No key yet? Any Dark Iron Taskmaster, Slaver or Lookout can drop it: the nearest stand at 58, 42, north-west of the dig site. Skip this pair if it will not drop
+T 4451 @ Searing Gorge, 65.6, 62.2 | Use the key on the outhouse door
+T 3443 | Ride back north-west to Kalaran Windblade. Skip The Flame's Casing (elite)
+T 7729,7728 | Taskmaster Scrange, Thorium Point
+T 7723,7724,7727 | Hansel Heavyhands
+T 7722 | Master Smith Burninate
+L 49 @ Searing Gorge, 31.0, 45.0 | Quest XP runs short here, so grind to 49 before the next segment. Kill the level 47-49 mobs: Greater Lava Spiders on the west plateau (27-32, 37-50), and Heavy War Golems and Dark Iron Taskmasters along the west rim of the Cauldron (34-38, 41-48). The level 45-46 Slavers give less XP. Skip the elite Dark Iron Sentries at the towers (34, 54 is the closest) and beside Maltorius
+N Ride back to Thorium Point: the next segment starts at Grisha with a flight to the Undercity | Keep 864 (Undercity), 650 and 2641 (Hinterlands) and 32 (Orgrimmar). Your hearthstone is set to Stonard

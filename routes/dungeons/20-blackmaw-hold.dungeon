@@ -1,0 +1,10 @@
+# New Forever dungeon. Source: foreverchanges.pro/dungeons/blackmaw-hold (level range is Blizzard's). The page lists
+# 5 Horde quests, takeable from level 45-55, without their givers.
+@dungeon Blackmaw Hold
+@levels 55-60
+@window 53-60
+@best 56
+@hub Azshara, 22.0, 52.0, 12
+@hub Orgrimmar, 50.0, 50.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is a furbolg city behind the big gate in Azshara. It has 5 Horde quests, but who gives them is not published yet: ask around Valormok and take what is offered; the addon logs it so these steps can be filled in.

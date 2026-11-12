@@ -1,0 +1,86 @@
+@segment 16-18 Undercity & Silverpine second pass (replaces Ragefire Chasm + Ruins of Lordaeron)
+@start-level 16
+@carry 1959,1061,6324,423,530,95981,450,851,855,3301
+@done 357,422,438,482
+
+# The log starts with 9 quests: segment 4 hands in all its finished Barrens quests and leaves the
+# rest of the Barrens work (881, 867, 3281, 865, 1069) to be taken in segment 6. 851, 855, 1061,
+# 530, 95981 and 3301 (Mura Runetotem, handed in at the start of segment 7) are carried out.
+# Gathering Materials is taken after the Gunther trip, Ambermill Investigations on the second
+# Sepulcher visit and Rot Hide Origins on the last one, each right before it is worked.
+# Skipped on purpose: 92401 A Frightened Request (Ruins of Lordaeron dungeon), 99 Arugal's Folly
+# (elite, Pyrewood at night) and 98298 Arugal's Folly (Worgen Bits), which follows 99 in its chain.
+# 98299 Stop the Spread (Dalar) is left for segment 7.
+
+# ---------- Zeppelin to Tirisfal ----------
+N Ride the zeppelin from the Orgrimmar tower to Tirisfal Glades | You start at the zeppelin tower outside Orgrimmar with Report to Anastasia in your log. Take the Undercity zeppelin, not the Grom'gol one. If you skipped Hadric Harlson's two Argent Dawn quests in segment 3, his camp is just east of the Tirisfal tower (65.9, 61.0); your log has room for both.
+N Walk south into the Ruins of Lordaeron and take an elevator down into the Undercity
+
+# ---------- Undercity ----------
+T 1959 | Anastasia Hartwell, in the Magic Quarter
+A 1960 | Anastasia Hartwell
+C 1960:2,1960:3 @ Undercity, 85.1, 10.0 | Don't leave without these: click the Chest of Containment Coffers and the Cantation of Manifestation (a book) on the ground right behind Anastasia. Nothing happens at the shop without them.
+A 366 @ Undercity, 84.1, 17.4 | Bethor Iceshard, a few steps from Anastasia
+C 1960:1 @ Undercity, 52.8, 75.0 | Algernon's shop in the Apothecarium. Read the Cantation there to make the invisible Rift Spawns appear. Fight one until it stops fighting back, then use the Chest of Containment Coffers next to it and loot the Filled Containment Coffer. Do this 3 times.
+T 1960 | Back to Anastasia Hartwell. Do not take her next quest (Gathering Materials) yet: you take it when you come back from Gunther.
+
+# ---------- Gunther's island (Tirisfal) ----------
+T 366 | Leave the Undercity and go north past Brill. Swim out to Gunther Arcanus on the island of Gunther's Retreat.
+A 409 | Gunther Arcanus
+C 409 @ Tirisfal Glades, 66.6, 44.9 | You need one free quest-log slot here: the Crate of Candles and Lillith's Dinner Table each open a small quest that you accept and hand in on the spot. Click the Crate of Candles next to Gunther (Candles of Beckoning) for a Candle of Beckoning. Swim to the ruined house on the shore south-west of the island and click Lillith's Dinner Table (The Dormant Shade): Lillith Nefara (level 12) appears. Kill her.
+T 409 | Gunther Arcanus
+A 411 | Gunther Arcanus
+T 411 | Back into the Undercity: Bethor Iceshard in the Magic Quarter
+A 1961 @ Undercity, 85.1, 10.0 | Anastasia Hartwell, a few steps from Bethor. Needs 10 Linen Cloth and 6 Dalaran Mana Gems. Stop making Linen Bandages until this is handed in; the Dalaran humans in Silverpine drop more linen.
+TRAIN | The mage trainers stand next to Bethor in the Magic Quarter: learn your level 16 spells (Flamestrike) if you have not yet
+FLY The Sepulcher | Bat handler Michael Garrett in the Trade Quarter
+
+# ---------- The Sepulcher, first visit ----------
+T 6324 | Deathguard Podrig. Skip Tabitha Heartweaver's A Frightened Request: it is done inside the Ruins of Lordaeron dungeon. Keep Mura Runetotem in your log: the route hands it in at the start of segment 7.
+A 443 | High Executor Hadrec. Leave Shadow Priest Allister's Ambermill Investigations for your next visit, right before you go to Ambermill.
+C 423 @ Silverpine Forest, 41.5, 27.5 | Moonrage Gluttons (Glutton Shackles) and Moonrage Darksouls (Darksoul Shackles) roam the woods just north of the Sepulcher. If you are short on Darksouls, more stand by the lake shore at 58-60, 41-42, a short way south of the Decrepit Ferry. Do not go back to the Sepulcher yet.
+
+# ---------- Fenris Isle ----------
+C 443 @ Silverpine Forest, 67.0, 31.0 | Run east to the Decrepit Ferry on the lake shore (58, 35) and swim across to Fenris Isle. Rot Hide Brutes and Plague Weavers on the southern half of the isle drop the ichor. The Savages and Raging Rot Hides around Fenris Keep at the north end (65-66, 23-25) are level 18-19, so pull them one at a time.
+A 460 @ Silverpine Forest, 66.0, 27.0 | Every rot hide can drop A Talking Head (rare). If you loot it, right-click it to start this quest. If it never drops, skip the Resting in Pieces, Hidden Niche and Wand to Bethor steps (not Rot Hide Origins).
+T 460 | The Shallow Grave near the stable on the east side of Fenris Keep
+A 461 | From the Shallow Grave
+T 461 | The Dusty Shelf in the south-west tower of the keep. Thule Ravenclaw (level 24 elite) stands inside the keep at 65.7, 23.7, and the Rot Hide Bruiser (level 22 rare) at 64.7, 23.1. Clear the Savages at the door one at a time, loot the shelf and leave. Do not pull either of them.
+A 491 | From the Dusty Shelf. Keep the Woven Wand for Bethor.
+
+# ---------- The Sepulcher, second visit ----------
+T 443 | Swim back west to the ferry and return to the Sepulcher: Apothecary Renferrel. Do not take Rot Hide Origins yet: you take it on your last visit, right before you fly to the Undercity.
+T 423 | Dalar Dawnweaver
+A 424 | Dalar Dawnweaver. If she also offers Stop the Spread (new in Forever), leave it: it is for a later segment.
+A 479 | Shadow Priest Allister
+
+# ---------- Grimson and Ambermill ----------
+C 424 | Head east to Grimson the Pale (level 15) near the lake shore, a short way south of the Decrepit Ferry. He stands with a pack of Moonrage worgen: pull the worgen around him first, then loot his head.
+C 479,1961 @ Silverpine Forest, 59.5, 64.5 | Ambermill, to the south. Work the west and south side of the village (58-61, 62-67): Dalaran Protectors and Mages drop the pendants, and they and every other Dalaran human drop mana gems and linen. Stay away from the tower at the east end (63, 64): Archmage Ataeric (22), a Dalaran Spellscribe (21) and the Conjurors and Warders (16-18) stand there; Ataeric is for a later quest. Dalaran Wizards (19-20) and Watchers (18-19) hold the east side and the road south of the village: leave them for now (they are for Watching the Roads, which you finish at 21). Flamestrike and Arcane Explosion work well on the Protector and Mage packs; Frost Nova casters that reach melee range.
+L 17 @ Silverpine Forest, 59.5, 65.0 | If you are not 17 yet, keep pulling the Dalaran Protector and Mage packs on the west side of Ambermill (Flamestrike + Arcane Explosion). They also drop more linen and mana gems.
+
+# ---------- Optional: Pyrewood Village ----------
+C 450 @ Silverpine Forest, 43.0, 73.2 | OPTIONAL (1,350 XP), daytime only. From Ambermill go south-west to Pyrewood Village. Berard's Bookshelf is inside the inn, the big building at the WEST end of the village: come in from the west side so you only meet one or two guards, and loot the journal. The villagers are level 13-15 elites: Polymorph one, Frost Nova and kite the other. Between 9 in the evening and 9 in the morning (server time) they are worgen and hit much harder: then press Skip and skip the hand-in below too
+
+# ---------- The Sepulcher, third visit ----------
+T 424 | Dalar Dawnweaver. Skip her other quests: Pyrewood Shackles (Arugal's Folly) is elite and Stop the Spread is for a later segment.
+T 479 | Shadow Priest Allister. Leave The Weaver for a later visit. If Watching the Roads is not in your log, take it from him now (your log has room).
+T 450 | Apothecary Renferrel, only if you looted Berard's Journal (otherwise press Skip). Do not take the next part: its Hardened Tumor is a 5% drop from the lake murlocs
+A 444 | Apothecary Renferrel
+FLY Undercity | Karos Razok, the bat handler at the Sepulcher. You land in the Trade Quarter: if you are still short of 10 Linen Cloth, buy the rest at the auction house there before you walk to the Magic Quarter.
+
+# ---------- Undercity turn-ins ----------
+T 444 | Bethor Iceshard in the Magic Quarter
+T 491 | Only if you found A Talking Head on Fenris Isle: give Bethor the Woven Wand. Otherwise skip this step.
+A 446 @ Undercity, 84.1, 17.4 | Bethor Iceshard
+T 1961 @ Undercity, 70.8, 30.7 | Josef Gregorian, the tailor in the Magic Quarter
+A 1962 | Josef Gregorian
+T 1962 | Josef Gregorian. Put on the Lesser Spellfire Robes.
+TRAIN | Only if you are already 18: learn your level 18 spells next to Bethor. Most players are about 17 here; then skip this step. There is no mage trainer on the next segment's path, so you learn the level 18 spells together with the level 20 spells in Thunder Bluff at its end.
+FLY The Sepulcher | Michael Garrett in the Trade Quarter
+
+# ---------- Sepulcher, then back to the Barrens ----------
+T 446 | Apothecary Renferrel
+A 448 | Apothecary Renferrel
+T 448 | High Executor Hadrec. Skip Assault on Fenris Isle (elite) and Deathstalkers in Shadowfang (dungeon).
+H Crossroads | Your hearthstone is still set to the Crossroads; the next segment starts there.

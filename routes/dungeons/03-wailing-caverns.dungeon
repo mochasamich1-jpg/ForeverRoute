@@ -1,0 +1,25 @@
+# Sources: level range and quest givers = foreverchanges.pro/dungeon-quests; entrance and prerequisites = Questie.
+@dungeon Wailing Caverns
+@levels 17-24
+@window 16-24
+@best 19
+@hub The Barrens, 46.0, 36.5, 5
+@hub The Barrens, 52.0, 30.0, 4
+@entrance The Barrens, 46.0, 36.5
+A 959 @ The Barrens, 63.1, 37.6 | Crane Operator Bigglefuzz in Ratchet. The bottle is on Mad Magglish, a goblin in the cave before the dungeon portal.
+A 1491 @ The Barrens, 62.4, 37.6 | Mebok Mizzyrix in Ratchet, after his Raptor Horns quest. Wailing Essence drops from the ectoplasms in and around the dungeon.
+A 1489 @ The Barrens, 52.3, 31.9 | Tonga Runetotem at the Crossroads. First step towards Leaders of the Fang.
+>T 1489 @ Thunder Bluff, 78.6, 28.6
+>A 1490 @ Thunder Bluff, 78.6, 28.6
+>T 1490 @ Thunder Bluff, 75.6, 31.6
+>A 914 @ Thunder Bluff, 75.6, 31.6 | Nara Wildmane on Elder Rise. The four gems drop from the four Fang leaders in the dungeon.
+A 962 @ Thunder Bluff, 22.8, 20.9 | Apothecary Zamah in the Pools of Vision under Spirit Rise. Serpentbloom grows inside and around the caverns.
+A 1486 @ The Barrens, 46.0, 35.7 | Nalpak, in the small cave above the dungeon entrance (walk up the hill over the skull-shaped cave mouth).
+A 1487 @ The Barrens, 46.0, 35.7 | Ebru, next to Nalpak.
+RUN | The entrance is the skull-shaped cave at the oasis south-west of the Crossroads; the portal is at the back of the cave. Nalpak and Ebru, in the small cave above the entrance, give Deviate Hides and Deviate Eradication. Leaders of the Fang needs a short chain first: Tonga Runetotem at the Crossroads sends you to Hamuul Runetotem and then Nara Wildmane in Thunder Bluff. Inside: the last boss, Mutanus the Devourer, drops a Glowing Shard that starts a quest (show it to Sputtervalve in Ratchet, then take it to Falla Sagewind on top of the hill above the cave).
+T 1486 @ The Barrens, 46.0, 35.7
+T 1487 @ The Barrens, 46.0, 35.7
+T 959 @ The Barrens, 63.1, 37.6
+T 1491 @ The Barrens, 62.4, 37.6
+T 962 @ Thunder Bluff, 22.8, 20.9
+T 914 @ Thunder Bluff, 75.6, 31.6

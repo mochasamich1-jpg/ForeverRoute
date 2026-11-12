@@ -1,0 +1,14 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quest givers = foreverchanges.pro/dungeon-quests; entrance = Questie.
+@dungeon Shadowfang Keep
+@levels 22-30
+@window 21-28
+@best 23
+@hub Silverpine Forest, 43.4, 40.9, 6
+@entrance Silverpine Forest, 44.8, 67.8
+A 1013 @ Undercity, 53.7, 54.5 | Keeper Bel'dugur in the Apothecarium. The Book of Ur is on a bookshelf near the end of the keep.
+A 1098 @ Silverpine Forest, 43.4, 40.9 | High Executor Hadrec at the Sepulcher. It ends inside the keep, at Deathstalker Vincent.
+A 1014 @ Silverpine Forest, 44.2, 39.8 | Dalar Dawnweaver at the Sepulcher. Kill Arugal, the last boss.
+RUN | The keep is in the south of Silverpine, on the hill above Pyrewood Village: follow the road south from the Sepulcher. Hand Deathstalkers in Shadowfang in to Deathstalker Vincent inside.
+T 1014 @ Silverpine Forest, 44.2, 39.8
+T 1013 @ Undercity, 53.7, 54.5

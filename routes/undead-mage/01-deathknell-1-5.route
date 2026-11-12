@@ -1,0 +1,51 @@
+@segment 1-5 Deathknell
+@start-level 1
+@carry          # none: this is the first segment
+@done           # none: this is the first segment
+
+# --- Wake up in the crypt, first kills ---
+A 363 | Undertaker Mordo is next to you in the crypt when you wake up
+T 363 | Walk north out of the crypt to Shadow Priest Sarvis in the chapel. Kill the Duskbats and Young Scavengers on the way for XP (they do not count for any quest yet)
+A 364
+C 364 | Mindless Zombies and Wretched Zombies shamble around the houses north and east of the chapel
+T 364
+A 3098,3901 @ Tirisfal Glades, 30.8, 66.2 | Sarvis gives both. Right-click the Glyphic Scroll in your bags to read it
+T 3098 @ Tirisfal Glades, 30.9, 66.1 | Isabella, the mage trainer, stands inside the chapel
+TRAIN | Isabella in the chapel: learn every spell she offers (Arcane Intellect), then buff yourself
+A 376 | Novice Elreth, also in the chapel (needs level 2; the zombies get you there)
+
+# --- Skeletons, paws and wings together ---
+C 3901,376 | Rattlecage Skeletons stand among the ruined houses northeast of the chapel. Scavengers (paws) and Duskbats (wings) roam the fields all around the village; the parts do not drop every time, so kill every one you pass
+T 3901
+T 376
+TRAIN | Isabella: at level 4 learn Frostbolt and Conjure Water. From now on make your own water instead of buying it. Not 4 yet? The guide reminds you after the mine
+G Tirisfal Glades, 32.4, 66.2 | Sell grey items to Blacksmith Rand by the chapel
+A 380 | Executor Arren, just outside the chapel
+A 3902 | Deathguard Saltain, near the chapel
+
+# --- Boxes and the spider mine ---
+C 3902 | Scavenged Goods are the stacks of boxes beside the ruined houses on the north and east side of Deathknell. Grab them as you head out of the village
+C 380 | Night Web's Hollow is the old mine northwest of Deathknell. Young Night Web Spiders sit outside and around the entrance, Night Web Spiders are further inside
+T 3902
+T 380
+A 381
+TRAIN | Isabella in the chapel: if you skipped it earlier, learn Frostbolt and Conjure Water now (level 4)
+A 6395 | Novice Elreth in the chapel (needs level 3)
+
+# --- Scarlet camp east of Deathknell, Samuel Fipps ---
+C 381 | Scarlet Converts and Initiates hold the tents east of Deathknell. Armbands are a high drop chance; pull one at a time and open with Frostbolt
+G Tirisfal Glades, 36.7, 61.6 | Samuel Fipps (level 5) stands at the burnt-out camp just north of the Scarlet tents. Kill him and loot Samuel's Remains
+C 6395 | Back in Deathknell, right-click Marla's Grave (front row of the graveyard beside the chapel) with Samuel's Remains in your bags
+T 6395 | Reward is a profession book. Pelt Collecting for Beginners (Skinning) is the gold-earner for the level-40 mount; Mining for Dummies and Wild Harvest are the other options
+N Skinning (only if you took Pelt Collecting for Beginners): right-click the book to learn Skinning. If it does not teach it, TUGs has you learn it from a new Forever profession NPC in Deathknell (not in our NPC data; look around the chapel). Buy a Skinning Knife there if it sells one, otherwise from Abigail Shiel (Trade Supplies, Brill 61.0, 52.4), and skin every beast after that. Skinning 20 unlocks Camping 101: Skinning (Eleanor Shackleton near Brill)
+T 381 | Executor Arren, just outside the chapel
+A 382
+C 382 | Meven Korgal (level 5) stands in the same camp with Scarlets close by (the arrow points at him). Clear the ones around him first, then kill him and loot the Scarlet Crusade Documents
+T 382
+A 383,96656 | Executor Arren gives both. Keep them: 383 and 96656 are turned in at Brill in the next segment
+TRAIN | Isabella: if you are already level 6, learn your new spells now (Fireball rank 2, Fire Blast, Conjure Food). Otherwise skip this; you train in Brill
+G Tirisfal Glades, 32.3, 65.4 | Sell greys to Joshua Kien (General Supplies) before you leave. Keep all Linen Cloth: you turn it into bandages in Brill
+
+# --- Leave toward Brill ---
+L 5 | Not level 5 yet? Kill Ragged Scavengers and Mangy Duskbats along the road north-east toward Calvin Montague (Gordo's Task in Brill needs level 5)
+A 8 | Calvin Montague stands by the road out of Deathknell toward Brill. Keep the letter: it goes to Innkeeper Renee in Brill. Your hearthstone is still set to Deathknell; you bind it in Brill next

@@ -1,0 +1,414 @@
+@segment 53-60 Felwood, Winterspring, Burning Steppes, Plaguelands & Silithus
+@start-level 53
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 6164 Augustus' Receipt Book (1400 XP, Terrordale, beside Egan; the book's spot is in the Questie data).
+# Segment 18's carry-out: Linken's Sword, The New Springs, Marvon's Workshop and Fuely's Felwood slime quest (4293).
+# Segment 18 finishes the Seeping Corruption chain (3568 -> 3569 -> 3570) and hands in ... and a Batch of Ooze (4294) at its
+# Undercity stop after Azshara, so neither is carried. 4294 is listed as done because Melding of Influences (4642) needs it.
+@carry 3908,980,4147,4293
+@done 3845,974,4145,4294
+# Order: Felwood (south) -> north Felwood -> Timbermaw Hold -> Winterspring (west to Everlook) ->
+# Thunder Bluff / Ratchet / Gadgetzan / Un'Goro -> hearth Everlook -> Felwood again -> Moonglade -> Winterspring again ->
+# Undercity -> Burning Steppes -> Western Plaguelands -> Eastern Plaguelands -> Undercity / Western Plaguelands north ->
+# Orgrimmar / Thunder Bluff -> Un'Goro -> Silithus -> Moonglade -> Undercity.
+# Left out on purpose: elites (5156, 5121, 4023, 5098, 5153, 3962, 6025, 6041, 6135, 6136, 6148), The Videre Elixir and the
+# rest of Linken's chain (needs a Feralas trip for the elixir and ends in elite 3962), the Scholomance key chain 838/964/5514/5802
+# (needs elite 5098), 5154/5210/5181 (need elite 5153), 4022 (needs 3481, which needs elite 3452), Felnok's 4808-4810
+# (Winterspring is finished before the Burning Steppes), Wild Guardians part 3 (4721, one more Winterspring round trip),
+# Lorax's Tale (5126, needs 55 when you pass him), Volcanic Activity (4502, only handed in at Ratchet) and Rabine's
+# Shards of the Felvine (5526, Dire Maul). Mission Accomplished! after the last cauldron is an N step: its ID is swapped
+# between the factions in the data (5237 / 5238).
+# Quest XP covers a bit over half of 53-60, so the L steps carry the rest (about 4 levels of grinding in all).
+# Coordinate overrides fix auto data that puts Kargath NPCs in "Outland", Vandis/Derrington in the wrong zone, and FC pins
+# filed under the wrong zone (Islen, Jessica Redpath, the Deadwood Cauldron, Sprinkle, Quixxil).
+
+# ---------- Felwood: Emerald Sanctuary ----------
+FLY Splintertree Post | You start at Valormok, level 53, with your hearthstone set to Orgrimmar. Kroum is the wind rider master
+G Felwood, 50.9, 85.0 | Ride west from Splintertree to the main road and follow it north into Felwood. The Emerald Sanctuary is the first camp past the border
+A 8460 | Grazle, beside the road just south of the Emerald Sanctuary. If he offers a Timbermaw Ally that asks for 5 of each furbolg instead (Forever lists a new 6131), take that one; the logger records it
+A 5155 | Greta Mosshoof, Emerald Sanctuary
+A 4102 | Maybess Riverbreeze, on the west side of the camp
+C 8460 @ Felwood, 47.5, 91.0 | Deadwood Village, west of the road just south of the camp: Warriors, Pathfinders and Gardeners. Each kill also raises Timbermaw reputation, which you need for the tunnel later. Leave Overlord Ror (the big one at the south end) until you have his quest from Bloodvenom Post
+T 8460 | Grazle
+A 8462 | Grazle. Nafien waits at the north end of Felwood
+
+# ---------- Jaedenar and Bloodvenom Post ----------
+N Kill the slimes you pass from now on | Cursed Oozes (41, 71) and Tainted Oozes (42, 47) sit beside the road. Collect 15-20 Felwood Slime Samples for Chemist Fuely's test in the Undercity (4293): not every sample tests as corrupted, you need 5 that do, and the route does not come back to Felwood after the Undercity. They stack, so spares cost nothing
+C 5155 @ Felwood, 38.0, 61.0 | Jaedenar, west of the road: the hounds, guardsmen, adepts and cultists near the entrance. Don't go deep yet
+F Bloodvenom Post @ Felwood, 34.4, 53.8 | Brakkar, the wind rider master, a little further north
+A 4505 | Winna Hazzard
+A 4521 | Trull Failbane. His owlbeasts are in Winterspring
+A 6162 | Dreka'Sur. Overlord Ror is in Deadwood Village; you pass it again soon
+C 4505 @ Felwood, 32.3, 66.5 | The corrupted moonwell at the Ruins of Constellas, south-west of Jaedenar. Use Winna's flask at the well; Jadefire satyrs guard it
+T 4505 | Back to Winna Hazzard, Bloodvenom Post
+A 4506 | She hands you a kitten
+C 4506 @ Felwood, 32.3, 66.5 | Same moonwell at the Ruins of Constellas. Release the kitten at the well, wait until it has changed, then take it back
+T 4506 | Winna Hazzard. Click the cat at her feet to finish
+T 5155 | Ride back south along the road to Greta Mosshoof, Emerald Sanctuary
+A 5157 | Greta gives you an Empty Canteen
+C 5157 @ Felwood, 35.2, 59.8 | The moon well in the middle of Jaedenar. Clear a path to it and fill the canteen
+T 5157 | Back to Greta Mosshoof
+A 5158 | Islen Waterseer is on the Barrens coast; you see her later in this segment
+C 6162 @ Felwood, 48.2, 94.3 | Overlord Ror, at the south end of Deadwood Village, just south of the camp. Take his claw
+T 6162 | Dreka'Sur, Bloodvenom Post, as you ride north
+
+# ---------- North Felwood ----------
+G Felwood, 42.0, 47.0 | Ride north past Bloodvenom Post on the main road. The Tainted Oozes here count for the slime samples
+C 4102 @ Felwood, 57.5, 22.0 | Irontree Cavern, north-east of Irontree Woods: Warpwood Moss Flayers and Shredders drop Blood Amber. Dessecus (rare elite) walks the cave, so stay near the mouth
+T 8462 | Nafien, outside Timbermaw Hold at the far north end of the road
+A 8461 | Nafien
+C 8461 @ Felwood, 61.5, 8.0 | Felpaw Village, just west of Nafien: Den Watchers, Avengers and Shamans. Frost Nova, then Blizzard
+T 8461 | Nafien
+A 8465 | Nafien
+L 54 @ Felwood, 61.5, 8.0 | Quest XP is far behind in this segment. Grind Felpaw Village to 54: the Deadwood furbolgs stand in packs and every kill adds Timbermaw reputation as well. Keep every Runecloth they drop and don't vendor it: Meilosh inside Timbermaw Hold wants 30 for a quest later
+N Open the Reputation tab and check Timbermaw Hold before going in | It must be Unfriendly or better, or the furbolgs inside attack you. Still Hostile? Kill more Deadwood furbolgs here until it changes. Got Deadwood Headdress Feathers? Nafien takes them 5 at a time (Feathers for Nafien, repeatable, about 550 XP and Timbermaw reputation each); bring later sets on your next tunnel passes
+N Keep any Deadwood or Winterfall Ritual Totem that drops (8470 / 8471) | Deadwood and Winterfall furbolgs drop them rarely. Once Timbermaw Hold is Neutral, right-click the totem and hand it to Kernda inside the Hold (Felwood 65.5, 3.5) on one of your tunnel trips
+
+# ---------- Winterspring: the west ----------
+G Winterspring, 27.7, 34.5 | Go through Timbermaw Hold and take the Winterspring exit. Never attack the Timbermaw furbolgs inside
+T 8465 | Salfa, at the tunnel exit
+A 8464 | Salfa. Winterfall Shaman and Ursa live in Winterfall Village in the east, next to Everlook
+T 3908 | Donova Snowden, beside the hot springs to the south-east. She offers The Videre Elixir next: skip it, it needs a long Feralas trip and the chain ends in an elite quest
+T 980 | Donova Snowden
+A 4842 | Donova Snowden. You check the far south of Winterspring later on this pass
+N Kill the Winterfall furbolgs in the camp east of Donova (around 41, 44) until one drops an Empty Firewater Flask | Pathfinders, Totemics and Den Watchers all drop it. Right-click the flask
+A 5083 @ Winterspring, 41.0, 44.0 | The Empty Firewater Flask
+T 5083 | Donova Snowden
+A 5084 | Keep it: the cauldron is in Felwood and you pass it on your second visit
+
+# ---------- Winterspring: the far south and Everlook ----------
+C 4521:2 @ Winterspring, 46.5, 44.0 | Ragged Owlbeasts in the woods east of the hot springs
+C 4842 @ Winterspring, 59.8, 74.3 | Ride to the far south until the sky turns dark at Darkwhisper Gorge. Reaching the mouth of the gorge is enough; the demons further in are elite
+G Winterspring, 60.4, 36.4 | Ride north to Everlook
+F Everlook | Yugrek, the wind rider master
+S Everlook | Innkeeper Vizzie. You hearth back here later
+A 6603 | Meggi Peppinrocker. It goes to Donova on your next pass
+A 3783 | Umi Rumplesnicker
+C 8464 @ Winterspring, 67.0, 37.0 | Winterfall Village, just east of Everlook: Shaman, Den Watchers and Ursa. High Chief Winterfall in the big cave is elite: stay out of it
+L 56 @ Winterspring, 67.0, 37.0 | Stay in Winterfall Village and grind to 56 before the yetis: the furbolg packs are ideal for Frost Nova and Blizzard. Being 56 also lets you take Rabine's Silithus quest in Moonglade later, and it shortens the grind before the Plaguelands
+C 3783 @ Winterspring, 67.5, 44.0 | Ice Thistle Yetis on the hills south-east of the village drop Thick Yeti Furs
+T 3783 | Umi Rumplesnicker, Everlook
+A 977
+C 977 @ Winterspring, 69.0, 41.0 | Ice Thistle Matriarchs and Patriarchs (level 56-58) higher up in the Ice Thistle Hills. Pull them one at a time
+T 977 | Umi Rumplesnicker
+A 5163 | Umi gives you her Mechanical Yeti
+C 5163:1 | Legacki, in Everlook. Use the yeti next to her
+C 4521:1 @ Winterspring, 58.5, 31.0 | Raging Owlbeasts around Starfall Village, just north-west of Everlook
+
+# ---------- Thunder Bluff, Ratchet, Gadgetzan, Un'Goro ----------
+N Teleport: Thunder Bluff (or fly there from Everlook if you don't have it)
+TRAIN | Thunder Bluff, Spirit Rise: learn your level 54 and 56 spells
+A 1000 | Bluff Runner Windstrider, on the central rise
+T 1000 | Arch Druid Hamuul Runetotem, Elder Rise
+A 1123 | Arch Druid Hamuul Runetotem. Rabine Saturna is in Moonglade; you go there on your next Felwood trip
+N Still carrying Morrowgrain Research (3786) from last segment? | Hand 10 Morrowgrain to Bashana Runetotem on Elder Rise now
+FLY Ratchet
+T 4147 | Liv Rizzlefix. Skip her follow-ups
+T 5158 @ The Barrens, 65.8, 43.8 | Islen Waterseer, on the coast a short ride south of Ratchet
+A 5159 @ The Barrens, 65.8, 43.8 | Islen Waterseer. The purified water goes back to Greta in Felwood
+FLY Gadgetzan
+C 5163:2 @ Tanaris, 51.1, 26.9 | Sprinkle, in Gadgetzan. Use the yeti next to her
+FLY Marshal's Refuge
+C 5163:3 @ Un'Goro Crater, 43.7, 9.4 | Quixxil, in Marshal's Refuge
+N Still carrying ... and a Batch of Ooze (4294) from last segment? Kill oozes here until you have 15-20 Un'Goro Slime Samples | Skip this if you handed it in last segment. Any Un'Goro ooze drops them. Closest: Primal Oozes just south of Marshal's Refuge (around 46, 24) and Glutinous Oozes to the south-west (around 35, 30); Muculent Oozes sit east of the camp (62-74, 25-35). Not every sample tests as pure and you need 5 that do. They stack
+H Everlook
+T 5163 | Umi Rumplesnicker
+
+# ---------- Felwood again: Shadow Hold ----------
+FLY Bloodvenom Post
+T 4521 | Trull Failbane
+A 4741 | Trull Failbane. The Moontouched Owlbeasts are in northern Winterspring
+T 5159 | Ride south to Greta Mosshoof, Emerald Sanctuary
+A 5165 | Greta Mosshoof
+T 4102 | Maybess Riverbreeze. Skip her salve quests
+C 5165 @ Felwood, 36.6, 54.5 | Shadow Hold, the cave at the back of Jaedenar. Use the Purified Moon Well Water on the four braziers inside: two near the entrance, two further up
+N Kill the Jaedenar Enforcers, Darkweavers, Warlocks and Legionnaires in the upper part of Shadow Hold until one drops the Blood Red Key | Right-click the key
+A 5202 @ Felwood, 38.5, 47.5 | The Blood Red Key
+T 5202 | Captured Arko'narin, in a cell inside Shadow Hold
+A 5203 | Captured Arko'narin. She is weak until she gets her gear back
+C 5203 @ Felwood, 36.2, 55.5 | Escort her to her equipment and then out of Shadow Hold. Kill whatever comes at her
+T 5203 | Jessir Moonbow, Emerald Sanctuary
+A 5204 | Jessir Moonbow
+T 5165 | Greta Mosshoof
+A 5242 | Greta Mosshoof
+C 5204 @ Felwood, 38.3, 50.5 | Back in Shadow Hold: kill the succubus Rakaiah
+T 5204 | The Remains of Trey Lightforge, next to where Rakaiah stood
+A 5385 | The Remains of Trey Lightforge
+C 5242 @ Felwood, 38.8, 46.8 | The top of Shadow Hold: Moora, Salia and Shadow Lord Fel'dan. Pull the guards away first; take Fel'dan's head
+T 5385 | Jessir Moonbow, Emerald Sanctuary
+T 5242 | Greta Mosshoof
+
+# ---------- North Felwood, Moonglade, Winterspring again ----------
+G Felwood, 60.2, 5.8 | Ride north up the road to Felpaw Village
+T 5084 | The Deadwood Cauldron in the middle of Felpaw Village
+A 5085 @ Felwood, 60.2, 5.8 | The Deadwood Cauldron
+N Go into Timbermaw Hold | Neutral with Timbermaw and carrying a Ritual Totem? Hand it to Kernda in the main hall on the way (8470 / 8471). Nafien at the entrance still takes Deadwood Headdress Feathers 5 at a time
+A 6031 @ Felwood, 65.7, 2.8 | Meilosh, in the main hall of Timbermaw Hold beside Kernda. Needs Friendly with Timbermaw (the Felpaw and Winterfall grinds should have got you there) and 30 Runecloth. Not Friendly yet or short of cloth? Take it on a later tunnel pass
+T 6031 | Meilosh
+N Take the branch of Timbermaw Hold that leads to Moonglade
+T 1123 | Rabine Saturna, in Nighthaven
+A 1124 | Keep Rabine's Letter: Layo Starstrike is in Silithus, at the end of the segment
+A 5527 | Rabine Saturna. The reliquary is in Southwind Village in Silithus, where Layo's quests send you anyway
+F Moonglade | Faustron, the Horde flight master by the lake. You fly back here at the end of the segment
+N Go back into Timbermaw Hold and take the Winterspring exit
+T 8464 | Salfa. From now on Salfa also takes Winterfall Spirit Beads 5 at a time (Beads for Salfa, repeatable, about 575 XP and Timbermaw reputation each): the Winterfall furbolgs drop them, so hand in each set as you pass by
+T 5085 | Donova Snowden
+A 5086 | Donova Snowden
+T 6603 | Donova Snowden
+A 5082 | Donova Snowden
+T 4842 | Donova Snowden
+C 5082:1,5082:3 @ Winterspring, 41.0, 44.0 | The Winterfall camp east of Donova: Pathfinders and Totemics (the camp near Salfa has more of both). Kill the one Den Watcher here too (1 of 8). Only 4 Den Watchers stand in the west, so you clear both camps twice for the 8
+N Go back through Timbermaw Hold into Felwood for the Toxic Horrors | On the way, kill the three Winterfall Den Watchers at the camp just south-east of Salfa (around 30.5, 36): 4 of 8
+C 5086 @ Felwood, 49.3, 25.0 | Irontree Woods, south-west of Felpaw Village: Toxic Horrors drop the droplets
+N Go back through Timbermaw Hold to Winterspring | Neutral with Timbermaw and carrying a Ritual Totem? Hand it to Kernda inside the Hold now (8470 / 8471). Didn't get Meilosh's Runecloth quest earlier? Try again now
+N Kill the 3 Den Watchers at the camp just south-east of Salfa (30.5, 36.3) again: they have respawned since you passed | That makes 7 of 8. Spare beads? Salfa is right there
+C 5082:2 @ Winterspring, 41.6, 42.6 | The 8th is the lone Den Watcher at the east camp, which has respawned too. Donova is a short ride back west
+T 5082,5086 | Donova Snowden
+A 5087 | Donova Snowden
+C 5087 @ Winterspring, 28.0, 34.5 | Winterfall Runners leave the Timbermaw tunnel and walk east toward Winterfall Village. Kill them for the Winterfall Crate
+T 5087 | Donova Snowden. Skip High Chief Winterfall (elite)
+C 4741 @ Winterspring, 63.5, 17.0 | Moontouched Owlbeasts in the north, past Starfall Village. If a Blue-feathered Necklace drops, keep it (don't farm for it)
+L 57 @ Winterspring, 67.0, 37.0 | Still behind. Grind Winterfall Village to 57 before you leave Kalimdor; the Plaguelands quests are level 55-60
+G Winterspring, 60.4, 36.4 | Everlook
+A 6029,6030 | Gregor Greystone. Both are deliveries to the Plaguelands
+A 5601 @ Winterspring, 61.3, 39.0 | Jessica Redpath. Also for the Plaguelands
+FLY Bloodvenom Post
+T 4741 | Trull Failbane. Skip Wild Guardians part 3; it sends you back to Winterspring
+N Got a Blue-feathered Necklace? | Right-click it and hand it to Trull (Guarding Secrets, 4882), then take his follow-up (4883) for Nara Wildmane in Thunder Bluff near the end of the segment
+
+# ---------- Undercity ----------
+N Teleport: Undercity (or fly to Orgrimmar and take the zeppelin if you don't have it)
+C 4293 @ Undercity, 47.5, 73.3 | Apothecarium: use the Testing Equipment next to Chemist Fuely on your Felwood slime samples until you have 5 Corrupted Felwood Samples. Still carrying ... and a Batch of Ooze (4294)? Test the Un'Goro samples too and hand it in with this one
+T 4293 | Chemist Fuely
+A 4642 | Chemist Fuely gives you an Encased Corrupt Ooze. You release it in Un'Goro near the end of the segment
+A 5961 | Lady Sylvanas Windrunner, Royal Quarter
+A 5094 @ Undercity, 63.9, 44.1 | Harbinger Balthazad
+S Undercity | Innkeeper Norman
+
+# ---------- Burning Steppes (via Kargath) ----------
+FLY Kargath | Michael Garrett, the Undercity bat handler
+A 3821 @ Badlands, 3.4, 48.1 | Thal'trak Proudtusk, Kargath
+A 4061 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania, Kargath
+FLY Thorium Point
+N Ride south from Thorium Point into Blackrock Mountain, cross it on the chain walkways and leave by the Burning Steppes exit | Stay on the open walkways: the doors inside lead to dungeons
+F Flame Crest @ Burning Steppes, 65.6, 24.2 | Follow the north edge of the Burning Steppes east to Flame Crest. Vahgruk is the wind rider master
+A 4726 | Tinkee Steamboil. She gives you the Draco-Incarcinatrix 900
+A 4296 | Maxwort Uberglint
+C 4296 @ Burning Steppes, 54.1, 40.8 | The Tablet of the Seven in the ruins of Thaurissan, south-west of Flame Crest. Right-click it to copy it
+C 4061 @ Burning Steppes, 63.0, 36.0 | War Reavers south of Flame Crest drop Fractured Elemental Shards; so do the obsidian elementals
+C 4726 @ Burning Steppes, 59.0, 31.0 | Scalding Broodlings south of Flame Crest (Black Broodlings in the east also count): zap one with the Draco-Incarcinatrix, kill it and loot the essence it leaves
+T 3821 @ Burning Steppes, 79.8, 45.5 | Sha'ni Proudtusk's Remains on Dreadmaul Rock, to the east
+A 3822 @ Burning Steppes, 79.8, 45.5 | Sha'ni Proudtusk
+C 3822 @ Burning Steppes, 79.7, 47.4 | Krom'Grul, in the caves of Dreadmaul Rock. Clear the ogres at the cave mouth first
+T 4726 | Tinkee Steamboil, Flame Crest. Don't take Felnok Steelspring: it goes back to Winterspring
+T 4296 | Maxwort Uberglint
+FLY Kargath
+T 3822 @ Badlands, 3.4, 48.1 | Thal'trak Proudtusk
+T 4061 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania
+A 4062 @ Badlands, 3.0, 47.8 | Hierophant Theodora Mulvadania
+T 4062 @ Badlands, 25.9, 44.9 | Lotwil Veriatus, at his camp east of Kargath. Skip his follow-up
+
+# ---------- Western Plaguelands: the Bulwark and the farms ----------
+N Teleport: Undercity (or fly there from Kargath)
+G Tirisfal Glades, 83.1, 68.9 | Ride out of the Undercity and east along the road to the Bulwark at the east edge of Tirisfal Glades
+T 5094 | High Executor Derrington
+A 5096 | High Executor Derrington
+T 6029 | Argent Officer Garush
+A 5901 | Mickey Levine. The termite mounds are in the Eastern Plaguelands
+A 6004 | Kirsta Deepshadow: ride north-east past the Scarlet camp to her hiding spot near the Northridge Lumber Mill
+C 6004:3,6004:4 @ Western Plaguelands, 52.0, 37.0 | Scarlet Magi and Knights on the road south of Kirsta
+C 5096,6004:1,6004:2 @ Western Plaguelands, 40.3, 52.0 | The Scarlet camp between Felstone Field and Dalson's Tears: kill the Medics and Hunters, burn the command tent and plant the Scourge banner
+A 5021 | Janice Felstone's ghost, upstairs in the Felstone farmhouse
+T 5021 | Janice's Parcel, in the barn behind the house
+A 5023 @ Western Plaguelands, 38.7, 55.2 | Janice's Parcel. It goes to the Undercity later
+T 5096 | High Executor Derrington, the Bulwark
+A 5228 @ Tirisfal Glades, 83.1, 68.9 | High Executor Derrington
+T 5228 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+A 5229 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis. Keep the empty bottle she gives you
+C 5229 @ Western Plaguelands, 37.2, 56.8 | Felstone Field: kill Cauldron Lord Bilemaw beside the cauldron for its key
+T 5229 | Use the key on the Scourge Cauldron
+A 5230 @ Western Plaguelands, 37.2, 56.8 | The Scourge Cauldron
+T 5230 | Shadow Priestess Vandis, the Bulwark
+A 5231 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 5231 @ Western Plaguelands, 46.2, 51.9 | Dalson's Tears: kill Cauldron Lord Malvinious beside the cauldron
+T 5231 | The Scourge Cauldron
+A 5232 @ Western Plaguelands, 46.2, 51.9 | The Scourge Cauldron
+A 5058 | Mrs. Dalson's Diary, upstairs in the Dalson farmhouse
+T 5058 | Read it to the end
+N Kill Wandering Skeletons around the Dalson farm until one drops the Dalson Outhouse Key
+A 5059 | The outhouse behind the farmhouse
+T 5059 | Open it and Farmer Dalson comes out. Kill him for the cabinet key
+A 5060 | The Locked Cabinet in the farmhouse
+T 5060 | Open it
+T 5232 | Shadow Priestess Vandis, the Bulwark
+A 5233 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 5233 @ Western Plaguelands, 53.0, 65.6 | The Writhing Haunt, south-east: kill Cauldron Lord Razarch beside the cauldron
+T 5233 | The Scourge Cauldron
+A 5234 @ Western Plaguelands, 53.0, 65.6 | The Scourge Cauldron
+A 4984 | Mulgris Deepriver, the troll at the Writhing Haunt
+C 4984 @ Western Plaguelands, 50.0, 68.0 | Diseased Wolves roam the fields around the Writhing Haunt and Andorhal
+T 4984 | Mulgris Deepriver
+A 4985 | Mulgris Deepriver
+A 4971 | Chromie, in the ruined inn at the north-west corner of Andorhal
+C 4971 @ Western Plaguelands, 44.0, 66.0 | Use the Temporal Displacer next to one of Andorhal's silos and kill the Temporal Parasites that appear
+T 4971 | Chromie
+A 4972 | Chromie
+C 4972 @ Western Plaguelands, 42.4, 68.8 | Small Lockboxes lie in the rubble all over Andorhal; open them for the watches
+T 4972 | Chromie. Leave the repeatable version alone
+T 5234 | Shadow Priestess Vandis, the Bulwark
+A 5235 @ Tirisfal Glades, 83.0, 71.9 | Shadow Priestess Vandis
+C 4985 @ Western Plaguelands, 60.0, 48.0 | Diseased Grizzlies roam the fields between Dalson's Tears and Gahrron's Withering
+C 5235 @ Western Plaguelands, 62.5, 58.5 | Gahrron's Withering, east: kill Cauldron Lord Soulwrath beside the cauldron
+T 5235 | The Scourge Cauldron
+A 5236 @ Western Plaguelands, 62.5, 58.5 | The Scourge Cauldron. You hand it in on your last Bulwark visit
+T 4985 | Mulgris Deepriver, the Writhing Haunt
+A 4987 | Mulgris Deepriver. The branch goes to Nara Wildmane in Thunder Bluff near the end of the segment
+
+# ---------- Eastern Plaguelands: the west and south ----------
+G Eastern Plaguelands, 5.2, 35.6 | Ride east and cross the Thondroril River into the Eastern Plaguelands. Tirion Fordring's hut stands on the east bank of the river, a little to the north
+A 5542,5543,5544 | Tirion Fordring. Kill Plaguebats, Plaguehound Runts and Carrion Grubs whenever you pass them from here on
+T 5961 | Nathanos Blightcaller at the Marris Stead, south-east of Tirion
+A 6022,6042,6133 | Nathanos Blightcaller
+A 6024 @ Eastern Plaguelands, 22.9, 73.0 | A Torn Scroll by the Undercroft crypt, south of the Marris Stead. Infiltrator Hameya is in the far north-east
+T 5601 | Pamela Redpath, in the ruined house in Darrowshire
+A 5149 | Pamela Redpath
+C 5149 @ Eastern Plaguelands, 33.5, 78.5 | The doll's head, left side and right side lie in the houses around Darrowshire. Put them together
+T 5149 | Pamela Redpath
+A 5241,5152 | Pamela Redpath. Marlene is in the Western Plaguelands; you see her near the end of the segment
+
+# ---------- Light's Hope and Corin's Crossing ----------
+G Eastern Plaguelands, 71.0, 50.5 | Ride east along the southern road to Light's Hope Chapel. Plaguehounds and Noxious Plaguebats on the way count
+F Light's Hope Chapel @ Eastern Plaguelands, 70.5, 47.5 | Georgia, the bat handler, just north-west of the chapel
+T 5241 | Carlin Redpath
+A 5211 | Carlin Redpath
+T 6030 | Duke Nicholas Zverenhoff
+A 6021 | Caretaker Alen
+A 5281 | Caretaker Alen. You only have to find Egan, who stands outside by the Plaguewood termite mounds you visit anyway. Take just this first part: his follow-up is inside Stratholme
+C 6022 @ Eastern Plaguelands, 52.0, 57.0 | Corin's Crossing, west of Light's Hope. Gather 7 Living Rot within 10 minutes and grind them with Nathanos' Mortar and Pestle. The Gibbering Ghouls here also count for Carlin: each one releases a Darrowshire Spirit when it dies, so talk to the spirit to free it. There are only 8 of them, so you finish the 15 spirits later in Plaguewood
+L 58 @ Eastern Plaguelands, 52.0, 57.0 | Grind Corin's Crossing to 58, TUGs' grind spot here: ghouls, Dark Casters and Plaguehounds in tight groups (Frost Nova, then Blizzard). Keep freeing the spirits the respawned Gibbering Ghouls leave. The north of the zone is level 58-60
+
+# ---------- Eastern Plaguelands: the north and back west ----------
+C 5544 @ Eastern Plaguelands, 58.5, 25.0 | Carrion Devourers in the north-east toward Northdale; the Carrion Grubs around Corin's Crossing also count. Diseased Flayers stand right next to them (around 57, 31) and release Darrowshire Spirits too
+C 6024 @ Eastern Plaguelands, 62.0, 11.1 | Infiltrator Hameya, a lone troll in the far north. Take his key
+C 6133 @ Eastern Plaguelands, 45.5, 12.5 | Quel'Lithien Lodge, in the north: Rangers, Pathstriders and Woodsmen. The Quel'Thalas Registry is on a table inside the lodge
+C 5542,6042 | Frenzied Plaguehounds in the north (around 52, 23) and the other hounds along the roads; Monstrous Plaguebats in the north (around 48, 35) and Noxious Plaguebats around Light's Hope
+C 5901,5211 @ Eastern Plaguelands, 18.0, 25.0 | Plaguewood, in the north-west: use the Empty Termite Jar on the Large Termite Mounds until you have 100 termites. The Cannibal Ghouls all over Plaguewood release Darrowshire Spirits: free the rest of your 15 here
+T 5281 @ Eastern Plaguelands, 11.4, 26.6 | Egan, in Terrordale just west of the termite mounds. Don't take his follow-up (Stratholme)
+A 6164 | Augustus the Touched, in a cave at Terrordale, a few steps from Egan
+C 6164 @ Eastern Plaguelands, 14.0, 24.2 | Augustus' Receipt Book lies in the ruined inn at Terrordale, a short walk north-east of his cave, upstairs. Crypt Fiends and Crypt Walkers (53-56) live in and around it: pull them one at a time
+T 6164 | Augustus the Touched
+C 5543 | Plaguebats fly all over the west and south of the zone
+T 5542,5543,5544 | Tirion Fordring
+A 5742 | Tirion Fordring
+T 5742 | Listen to Tirion
+A 5781 | Tirion Fordring
+C 5781,6021 @ Eastern Plaguelands, 23.5, 74.0 | The Undercroft, south of the Marris Stead: kill Mercutio Filthgorger for Taelan's Hammer and Zaeldarr the Outcast for his head. Both have company; pull carefully
+T 6024 @ Eastern Plaguelands, 23.6, 73.8 | Use Hameya's Key on the Mound of Dirt beside the wagon behind the crypt
+T 6022,6042,6133 | Nathanos Blightcaller, Marris Stead. Skip his elite follow-ups
+T 5781 | Tirion Fordring
+A 5845 | Tirion Fordring
+C 5845 @ Eastern Plaguelands, 62.5, 26.8 | Northdale, in the north-east: the Symbol of Lost Honor lies in the hamlet
+T 6021 | Caretaker Alen, Light's Hope Chapel
+T 5211 | Carlin Redpath. Skip his elite follow-up
+
+# ---------- Undercity and the Western Plaguelands, last loop ----------
+H Undercity | Hearthstone on cooldown? Fly from Light's Hope
+T 5023 | Royal Overseer Bauhaus, near the guild registrar
+A 5049 | Royal Overseer Bauhaus
+T 5049 | Jeremiah Payson, the cockroach vendor close by
+A 5050 @ Undercity, 67.6, 44.2 | Jeremiah Payson
+TRAIN | Undercity Magic Quarter: learn your level 58 spells
+G Tirisfal Glades, 83.1, 68.9 | Ride east to the Bulwark
+T 5236 | Shadow Priestess Vandis
+N Talk to High Executor Derrington, next to Vandis: accept Mission Accomplished! and hand it straight back (about 9,300 XP) | The quest's ID is mixed up between factions in the data (5237 / 5238), so this is a manual step; the logger records it
+T 5901 | Mickey Levine
+A 5902 | Mickey Levine
+T 5050 | Janice Felstone, Felstone farmhouse
+A 5051 | Janice Felstone
+C 5051 @ Western Plaguelands, 37.5, 57.5 | Jabbering Ghouls on Felstone Field drop the other half of the charm. Put the halves together
+T 5051 | Janice Felstone
+T 5902 @ Western Plaguelands, 48.3, 32.0 | The Northridge Lumber Mill: set the barrel on the crate in the middle of the mill
+A 6390 @ Western Plaguelands, 48.3, 32.0 | The Termite Barrel
+T 6004 | Kirsta Deepshadow, just north-east of the mill
+A 6023 | Kirsta Deepshadow
+C 6023 | Huntsman Radley (57.8, 36.1, south-east of Kirsta) and Cavalier Durgen (55.2, 23.6, north-east of her)
+T 6023 | Kirsta Deepshadow. Skip the elite follow-up
+T 5845 | Tirion Fordring: ride east across the river to his hut
+A 5846 | Tirion Fordring
+T 5846 | Artist Renfray on the island of Caer Darrow, south of Tirion: swim across. Scholomance is on the island too; don't go in
+T 5152 | Marlene Redpath, in the house on the hill south of Andorhal. Skip her elite follow-up
+T 6390 | Mickey Levine, the Bulwark
+
+# ---------- Orgrimmar, Thunder Bluff, Un'Goro ----------
+N Teleport: Orgrimmar (or take the zeppelin from the Undercity if you don't have it)
+A 8276 | Cenarion Emissary Blackhoof, in the Valley of Strength by the main gate
+N Saved cloth? Orgrimmar takes cloth donations | Rashona Straglash and Vehena each take 60 wool, 60 silk, 60 mageweave and then 60 runecloth (7826, 7827, 7831, 7824 and 7833-7836). Every hand-in gives experience
+N Teleport: Thunder Bluff (or fly there if you don't have it)
+T 4987 | Nara Wildmane, Elder Rise
+N Carrying Guarding Secrets (4883)? Hand it to Nara Wildmane as well | Rumstag Proudstrider also takes cloth donations here (7820-7823)
+FLY Marshal's Refuge
+C 4642 @ Un'Goro Crater, 47.0, 25.0 | Primal Oozes just south of Marshal's Refuge (also at 52, 18 and 39, 17). Open the Encased Corrupt Ooze next to one; the two merge into a Gargantuan Ooze. Kill it and loot the Merged Ooze Sample
+N Ride to the north-west corner of Un'Goro and follow the ridge path west into Silithus | It comes out at Valor's Rest, the graveyard in the north-east of Silithus
+
+# ---------- Silithus: Valor's Rest and Southwind ----------
+T 1124 | Layo Starstrike, Valor's Rest
+A 1125 | Layo Starstrike
+C 1125 @ Silithus, 62.0, 55.0 | Southwind Village, south-west of Valor's Rest: Tortured Druids and Tortured Sentinels
+C 5527 @ Silithus, 63.2, 55.4 | The Dusty Reliquary, in a ruined house in Southwind Village. Open it for Rabine's reliquary
+T 1125 | Layo Starstrike
+A 1126 | Layo Starstrike
+C 1126 @ Silithus, 61.5, 53.5 | Climb the tower in Southwind Village and disturb the hive at the top; kill the Hive'Ashi Ambusher that attacks for the Encrusted Silithid Object
+T 1126 | Layo Starstrike
+A 6844 | Layo Starstrike. Umber is in Moonglade, at the very end of the segment
+
+# ---------- Silithus: Cenarion Hold ----------
+G Silithus, 48.8, 36.6 | Ride west to Cenarion Hold
+F Cenarion Hold | The Horde wind rider master
+T 8276 | Windcaller Proudhorn
+A 8280 | Windcaller Proudhorn
+A 8277 | Beetix Ficklespragg
+A 8284 | Geologist Larksbane
+A 8318 | Bor Wildmane
+A 8859 | Colossus Researcher Sophia, inside Cenarion Hold. Her husk goes to Light's Hope Chapel, where the route ends if you are short of 60. Nestor and Eazel next to her offer husks for Booty Bay (8857) and Thorium Point (8858), about 10,000 XP each: take them only if you plan to fly there at the end
+A 9416 @ Silithus, 49.0, 36.7 | Scout Bloodfist, in Cenarion Hold. General Kirika is south of the Hold; you pass the camp later
+C 8277:1 @ Silithus, 68.0, 32.0 | Stonelash Scorpids east of Cenarion Hold
+C 8280,8277:2 @ Silithus, 55.0, 18.0 | Swing north: Dredge Strikers and Sand Skitterers in the sands north of Cenarion Hold
+C 8284 @ Silithus, 24.0, 11.0 | Then west to the Twilight Base Camp in the north-west: Twilight Tablet Fragments lie on the ground around the camp, and Whirling Invaders drop them too
+T 8280 | Windcaller Proudhorn, Cenarion Hold
+A 8281 | Windcaller Proudhorn
+T 8284 | Geologist Larksbane
+A 8285 | Geologist Larksbane
+T 8277 | Beetix Ficklespragg
+A 8278 | Beetix Ficklespragg
+T 8285 | Hermit Ortell, in his hut in the south-east
+A 8279 | Hermit Ortell
+C 8278,8279,8281,8318 @ Silithus, 30.0, 60.0 | The west and south-west, as one loop. Twilight Keepers carry the Lexicon chapters: Havunth (around 41, 42), Mayna (26, 37) and Exeter (16, 86). Dredge Crushers and Stonelash Pincers roam the west, Stonelash Flayers and Rock Stalkers the south-west. Every Twilight cultist can drop Encrypted Twilight Texts: collect 10 for Bor. They stop dropping at 10; keep them, Ortell's next quest takes them first
+T 8278 | Beetix Ficklespragg, Cenarion Hold
+T 8281 | Windcaller Proudhorn
+A 8282 | Noggle Ficklespragg. Don't hand Bor his texts yet
+T 9416 @ Silithus, 50.8, 69.5 | General Kirika, at the Horde camp due south of Cenarion Hold, on the way to the southern mountains
+A 9422 @ Silithus, 50.8, 69.5 | General Kirika. Note where the Silithyst Extractor stands in the camp
+C 8282 @ Silithus, 44.6, 91.4 | Noggle's Satchel lies in the southern mountains, among the Stonelash Flayers
+T 8279 | Hermit Ortell
+A 8323 | Hermit Ortell
+T 8323 | Hand him the 10 Encrypted Twilight Texts you collected. Bor's quest drops back to 0 of 10; you refill it on the way back
+A 8287 | Hermit Ortell
+C 9422 @ Silithus, 64.0, 70.9 | Click the Silithyst on the geyser beside Ortell's hut (another geyser is at 60.6, 63.0) and walk it west to the Silithyst Extractor in Kirika's camp. Mounting drops it, and carrying it flags you for PvP. No Silithyst on either geyser? Skip this and the next step
+T 9422 @ Silithus, 50.8, 69.5 | General Kirika
+C 8318 @ Silithus, 39.0, 43.5 | The Twilight Post around Twilight Keeper Havunth, south-west of Cenarion Hold: Twilight Avengers, Geolords and Stonecallers. Collect 10 more Encrypted Twilight Texts for Bor
+T 8282 | Noggle Ficklespragg, Cenarion Hold
+T 8287 | Commander Mar'alith. Skip his elite follow-up
+T 8318 | Bor Wildmane
+
+# ---------- Moonglade and the Undercity ----------
+N Teleport: Orgrimmar, then fly to Moonglade | Already 60? Stop here: the route is done. No flight to Moonglade offered? Fly to Bloodvenom Post and ride north through Timbermaw Hold
+T 6844 | Umber, in Nighthaven
+A 6845 | Umber
+T 6845,5527 | Rabine Saturna. Skip her follow-up (Shards of the Felvine is in Dire Maul)
+A 1185 | Umber
+T 1185 | Umber
+N Teleport: Undercity
+T 4642 | Chemist Fuely, Apothecarium
+N Saved cloth? Ralston Farnsley in the Undercity takes donations too (7813, 7814, 7817, 7818)
+T 8859 @ Eastern Plaguelands, 71.9, 48.4 | Not 60 yet? Fly from the Undercity to Light's Hope Chapel and hand Zora's husk to Lord Maxwell Tyrosus
+L 60 @ Eastern Plaguelands, 52.0, 57.0 | Finish at Corin's Crossing, just west of Light's Hope. Rather fly than grind? If you took Nestor's and Eazel's husks, Overseer Oilfist at Thorium Point (Searing Gorge flight path) takes 8858 and Oglethorpe Obnoticus in Booty Bay takes 8857, about 10,000 XP each
+TRAIN | Learn your level 60 spells at any mage trainer. Route complete

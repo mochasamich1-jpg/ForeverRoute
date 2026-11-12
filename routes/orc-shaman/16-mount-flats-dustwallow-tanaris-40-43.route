@@ -1,0 +1,119 @@
+@segment 40-43 Wolf Mount, Shimmering Flats III, Dustwallow II & Tanaris
+@start-level 40
+# Carried in (segment 15's carry-out): 1137 News for Fizzle, 1183 Goblin Sponsorship and 1117 Rumors for Kravel (Mirage Raceway),
+# 243 Into the Field (Gadgetzan), 1261 Marg Speaks (Brackenwall), 2872 Stoley's Debt (Steamwheedle Port).
+# 712 (Lotwil), 584 and 598 (Grom'gol) and 698 (Tok'Kar) ride along until the Eastern Kingdoms trip in segment 18.
+@carry 1137,712,243,1183,1261,584,598,698,1117,2872
+# Prerequisites of the carried quests handed in here: 1108 -> 1137, 1182 -> 1183, 1116 -> 1117, 1240 -> 1261, 238 -> 243.
+@done 1108,1182,1116,1240,238
+# Adapted from undead-mage 16 (Shimmering Flats, Dustwallow, Tanaris). Dropped: 1953 Return to the Marsh (mage),
+# the Undercity Zinge errands (done in segment 14) and the mage's spell travel. Travel: zeppelin into Orgrimmar, then flights,
+# hearthstone and Astral Recall. Hearth: Booty Bay at the start, Gadgetzan from the first Gadgetzan stop on.
+# Trainers: Orgrimmar at 40 (first stop), Thunder Bluff at 42 (with the Deadmire hand-in).
+# Carry-out (10): 864 (Zinge, Undercity), 648 and 2874 (Booty Bay), 1262 (Zor, Orgrimmar), 3520 (Feralas screechers),
+# 2981 (Rok Orhan, Camp Mojache), 712, 584, 598, 698.
+# Skipped on purpose: 1118 Back to Booty Bay (a log slot for little XP), the elite 1166/1172/1173 and Zul'Farrak 2864.
+
+# ---------- Orgrimmar: wolf mount and level 40 training ----------
+N You arrive at the zeppelin tower outside Orgrimmar @ Durotar, 50.8, 13.5 | Go in through the main gate. Your hearthstone still points at Booty Bay: leave it alone until you bind in Gadgetzan.
+N Learn Wolf Riding and buy a wolf @ Orgrimmar, 69.4, 13.1 | Valley of Honor, the north-east part of the city. Kildar teaches Wolf Riding and Ogunaro Wolfrunner (69.4, 12.2), right next to him, sells the wolves: about 90-100 gold for both. Short of gold? Buy them on the Orgrimmar stop of the next segment and keep using Ghost Wolf until then.
+A 2981 @ Orgrimmar, 75.2, 34.2 | Belgrom Rockmaul, at the south end of the Valley of Honor. It only sends you to Rok Orhan at Camp Mojache, early in the next segment
+TRAIN @ Orgrimmar, 38.8, 36.4 | Valley of Wisdom: learn your level 40 spells, and any level 38 ones you did not get from Haromm in Stonard
+FLY Thunder Bluff @ Orgrimmar, 45.1, 63.9 | Doras, on the tower in the Valley of Strength
+A 1205 | Melor Stonehoof on Hunter Rise (the south mesa). Deadmire is a crocolisk in Dustwallow Marsh; you bring the tooth back here later in this segment, when you come to train.
+FLY Gadgetzan | Tal, the wind rider master on the central mesa
+S Gadgetzan | Innkeeper Fizzgrimble at the inn
+T 243 | Chief Engineer Bilgewhizzle, in the middle of town
+A 379 | Chief Engineer Bilgewhizzle. Keep it for the Wastewander camps later.
+
+# ---------- Shimmering Flats ----------
+T 1117 | Ride north out of Gadgetzan into Thousand Needles to the Mirage Raceway. Kravel Koalbeard is on the gnome side of the track. Skip Back to Booty Bay, which he offers next: a log slot for very little XP.
+T 1137 | Fizzle Brassbolts, also on the gnome side
+T 1183 | Pozzik, on the goblin side of the track
+A 1186 | Pozzik
+T 1186 | Razzeric, right next to Pozzik
+A 1187 | Razzeric. The booster is in a crashed zeppelin in Dustwallow Marsh.
+A 1190 | Pozzik
+N Ask Zamek for his distraction @ Thousand Needles, 79.8, 77.0 | Zamek stands on the goblin side. Take Zamek's Distraction; while his explosion goes off, run straight to Rizzle's tent on the gnome side.
+T 1190 | Click Rizzle's Unguarded Plans in the tent while Rizzle is away
+A 1194 | From the same plans
+T 1194 | Pozzik
+
+# ---------- Dustwallow Marsh ----------
+FLY Brackenwall Village | Ride back south to Gadgetzan and fly from Bulkrek Ragefist
+A 1168 @ Dustwallow Marsh, 37.4, 31.4 | Tharg
+A 1169 @ Dustwallow Marsh, 37.1, 33.1 | Draz'Zilb. Skip Overlord Mok'Morokk's Concern (elite).
+C 1205 @ Dustwallow Marsh, 48.8, 56.8 | Ride south down the road past Tabetha's hut. Deadmire (45) is a crocolisk in the water just east of the hut. He hits hard: pull him onto the shore, drop Stoneskin Totem, keep Lightning Shield up and Healing Wave once you fall below half. At 40-41 he is 4-5 levels above you: if your shocks keep missing or he takes half your health in a few hits, drop Earthbind Totem and leave, abandon Deadmire and skip its hand-in at Melor later in this segment.
+C 1187 @ Dustwallow Marsh, 54.1, 56.5 | The crashed zeppelin is a short way further east. Loot the Gizmorium Shipping Crate inside the wreck.
+C 1261 @ Dustwallow Marsh, 55.8, 63.0 | Marg's Jeweled Pendant: ride south-east from the wreck to the shore. Muckshell crab-men (39-43: Clackers, Pincers, Scrabblers) walk the beach around 54-57, 61-65. Each has about a 5% chance to drop it, so expect roughly 20 kills.
+C 1168,1169 | Ride west along the south of the marsh into the Wyrmbog. Firemane Scouts and Ash Tails (41-43) are in the north-west part (around 42, 67); Firemane Scalebanes (43-44) and the Searing Hatchlings and Whelps are further south-east (around 47, 74). The tongues and hearts drop from the hatchlings and whelps. Single pulls: Earth Shock the Flamecallers' casts and drop Stoneclaw Totem if a second dragonkin joins. Stay away from the big Onyxia's Lair cave entrance.
+T 1261 @ Dustwallow Marsh, 35.2, 30.7 | Back in Brackenwall: Nazeer Bloodpike
+A 1262 | Nazeer Bloodpike. Keep it for Zor Lonetree in Orgrimmar (next segment).
+T 1168 @ Dustwallow Marsh, 37.4, 31.4 | Tharg
+T 1169 @ Dustwallow Marsh, 37.1, 33.1 | Draz'Zilb
+A 1170 | Draz'Zilb
+T 1170 | Overlord Mok'Morokk
+A 1171 | Overlord Mok'Morokk
+T 1171 | Draz'Zilb. Skip the next part, The Brood of Onyxia (elite).
+
+# ---------- Shimmering Flats again ----------
+H Gadgetzan | Hearthstone, or Astral Recall if it is on cooldown
+T 1187 | Ride north to the Mirage Raceway: Razzeric
+A 1188 | Razzeric
+T 1188 | Ride back to Gadgetzan: Shreev at the Gizmorium
+A 1189 @ Tanaris, 51.0, 27.2 | Shreev
+T 1189 | One more short ride north to Razzeric at the Raceway, then back to Gadgetzan
+
+# ---------- Wastewander camps ----------
+A 1690 | Chief Engineer Bilgewhizzle in Gadgetzan
+A 1707 | Spigot Operator Luglunket, next to Bilgewhizzle
+A 2781 | The Wanted poster in Gadgetzan
+C 1690,1707,379 @ Tanaris, 62.5, 29.0 | The Wastewander Bandits and Thieves (40-42) camp east of Gadgetzan (around 59-65, 23-33). Any Wastewander can drop a Water Pouch; you need 10 in all (5 for each quest). Pull them one or two at a time; Stoneclaw Totem soaks the second one.
+L 41 @ Tanaris, 62.5, 29.0 | Quest XP runs short in this segment, so most of the grinding happens in these two camps. Keep clearing the Bandits and Thieves here until level 41, then ride back to Gadgetzan for the hand-ins before the harder south camp. Loot every kill: the OOX-17/TN Distress Beacon (it starts a quest later in this segment) is a rare drop from almost any Tanaris mob, Wastewanders included, and the coin helps if you still owe the wolf.
+T 1690 | Chief Engineer Bilgewhizzle
+A 1691 | Chief Engineer Bilgewhizzle
+T 1707 | Spigot Operator Luglunket
+T 379 | Chief Engineer Bilgewhizzle. He gives you the Model 4711-FTZ Power Source. Do NOT right-click it yet: it starts a two-hour timer, so you use it after the level 43 grind.
+C 1691 @ Tanaris, 61.8, 37.5 | The second Wastewander camp is south of the first (around 59-66, 33-41): Shadow Mages (41-43), Rogues (43-44) and Assassins (44-45). Earth Shock the Shadow Mages' casts. Leave Caliph Scorpidsting (46), in the middle of the camp, for after the grind.
+L 43 @ Tanaris, 61.8, 37.0 | The long grind of this segment: keep killing the Shadow Mages, Rogues and Assassins in the south camp until level 43. Marvon's quest and the OOX robot later on both need 43. The camp respawns quickly, so work in a loop, keep looting for the beacon and top up with Healing Wave between pulls.
+C 2781 @ Tanaris, 61.8, 38.2 | Now kill Caliph Scorpidsting (46) in the middle of the camp and take his head: clear his guards first, then fight him at full health and mana with Stoneskin Totem down. Drop Stoneclaw Totem if a guard respawns into the fight.
+A 654 @ Tanaris, 58.5, 35.0 | Now right-click the power source at the west edge of the camp. From here you have two hours to collect the samples and hand the kit in, so go straight on.
+C 654 @ Tanaris, 55.0, 33.0 | Keep the Field Testing Kit in your bags. On the ride back west to Gadgetzan, kill Glasshide Basilisks, Starving Blisterpaws (the hyenas here) and Scorpid Hunters or Tail Lashers; all three roam the flats between the camp and town (about 48-60, 25-40). Loot each one for its sample. Not every sample passes the kit's test, so expect more than 8 kills of each.
+T 1691,2781 | Chief Engineer Bilgewhizzle
+T 654 | Chief Engineer Bilgewhizzle
+A 864 @ Tanaris, 52.5, 28.5 | Chief Engineer Bilgewhizzle. Keep it for Apothecary Zinge in the Undercity (a later segment).
+
+# ---------- Thunder Bluff: level 42 training ----------
+FLY Thunder Bluff | Bulkrek Ragefist, the Gadgetzan wind rider master
+T 1205 | Melor Stonehoof on Hunter Rise
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 42 spells
+N Cast Astral Recall (back to Gadgetzan) | Or use the hearthstone. If both are on cooldown, fly back to Gadgetzan.
+
+# ---------- Western and central Tanaris ----------
+A 992 | Senior Surveyor Fizzledowser
+C 992 @ Tanaris, 39.0, 29.3 | Ride west to Sandsorrow Watch. Use the Untapped Dowsing Widget beside the small pool just south of the Sandfury troll huts. The Sandfury trolls are elite (42-44) and stand just east and north-east of the pool, with two rare elites further north. Swing round and come in from the south-west, use the widget at the pool's west edge and leave at once.
+T 992 | Back in Gadgetzan: Senior Surveyor Fizzledowser
+A 82 | Senior Surveyor Fizzledowser
+C 82 | The Noxious Lair is south-west of Gadgetzan (around 33, 44). The bugs are level 47-50, well above you: pull single Tunnelers and Workers from the outer edge (they drop the parts about half the time; Wasps rarely), keep Stoneskin Totem down and Healing Wave between pulls. Do not go deep inside.
+A 3161 | Ride east to Marvon Rivetseeker, who camps by the Broken Pillar in central Tanaris (52.7, 45.9). This one needs level 43.
+C 3161 | Put on the Gahz'ridian Detector (head slot) and ride through the desert south-west of Marvon (around 40-48, 60-72); it shows the buried Gahz'ridian mounds. Click a mound to dig up the ornaments. This area is above your level: basilisks, scorpids, hyenas and rocs of 45-49, and Dunemaul ogres (45-48) in small groups among the mounds, with their compound at the north-west end (around 41, 57). Ride from mound to mound without stopping for fights, dig and move on, and keep Stoneclaw Totem ready for an add. Swap your own helm back on afterwards.
+T 3161 | Marvon Rivetseeker
+A 351 @ Tanaris, 60.2, 64.7 | Right-click the OOX-17/TN Distress Beacon. Almost every Tanaris mob can drop it, but rarely (about 1 kill in 100 or fewer), so after the long Wastewander grind and the sample kills you most likely have it already. No beacon yet? Kill the Blisterpaw Hyenas, Glasshide Gazers, Scorpid Tail Lashers and Fire Rocs (43-46) on the ride south-east from Marvon for a while. Still nothing after a fair try? Press Skip on this step and the next three: the next segment's Tanaris block passes the robot again if the beacon drops later.
+T 351 | Homing Robot OOX-17/TN, at the edge of the Gaping Chasm (60.2, 64.7)
+A 648 | Homing Robot OOX-17/TN
+C 648 @ Tanaris, 67.0, 24.0 | Escort the robot north to Steamwheedle Port. Ambushers come out of the sand in small groups (Wastewander Scofflaws 45, Scorpid Duneburrowers 46-47): drop Stoneclaw Totem to pull them off the robot, Earth Shock and kill them fast, and save your Healing Waves for yourself. If the robot dies, abandon the failed quest, wait for the robot to reappear at the Gaping Chasm and take the quest from it again.
+
+# ---------- Steamwheedle Port and Lost Rigger Cove ----------
+T 2872 | Stoley in Steamwheedle Port
+A 2873 | Stoley
+A 2875 | The Wanted poster in Steamwheedle Port
+A 8366 | Security Chief Bilgewhizzle
+A 8365 | Haughty Modiste
+A 3520 | Yeh'kinya, beside the Haughty Modiste. Keep it for the next segment: the vale screechers live in Feral Scar Vale in Feralas.
+C 2873,2875,8365,8366 @ Tanaris, 73.5, 46.5 | Lost Rigger Cove, the walled pirate town south down the coast. Stoley's Shipment is the Stolen Cargo near the docks (72.2, 46.8); Andre Firebeard (45) stands at 73.4, 47.1. Every Southsea pirate (44-45) can drop a hat, but only about 1 kill in 10 does, so you stay well past the 40 Shakedown kills (good XP). Pull small groups from the edge of the walls: Stoneclaw Totem for the second pirate, Earthbind Totem for runners. Open every Pirate's Footlocker the pirates drop: if one holds a Ship Schedule, right-click it to start Ship Schedules and hand it to the Security Chief along with the others.
+T 2873 | Stoley
+A 2874 | Stoley. Keep it for "Sea Wolf" MacKinley in Booty Bay (a later segment).
+T 2875,8366 | Security Chief Bilgewhizzle (and Ship Schedules, if you found one)
+T 8365 | Haughty Modiste
+T 82 | Ride back west along the road to Gadgetzan (or use the hearthstone or Astral Recall): Alchemist Pestlezugg
+N Keep these for later segments: 864 Return to Apothecary Zinge (Undercity), 648 Rescue OOX-17/TN and 2874 Deliver to MacKinley (Booty Bay), 1262 Report to Zor (Orgrimmar), 3520 Screecher Spirits (Feralas), 2981 A Threat in Feralas (Camp Mojache), plus 712, 584, 598 and 698 for the Eastern Kingdoms | Your hearthstone stays set to Gadgetzan. The next segment starts here with the flight to Freewind Post.

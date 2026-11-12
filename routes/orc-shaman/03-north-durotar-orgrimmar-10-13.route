@@ -1,0 +1,95 @@
+@segment 10-13 Northern Durotar, Orgrimmar & Call of Fire
+@start-level 10
+@carry 831,806,99051
+@done 823,830,99049
+
+# Orc Shaman 10-13. New segment (no Undead Mage equivalent): the north Durotar chains TUGs skips,
+# the NEW Orgrimmar Yelmak chain and the first half of Call of Fire. No zeppelin trip to Tirisfal.
+# Hearth stays bound at Razor Hill for the whole segment (bound in segment 2).
+# Carry-out to segment 4: 842 (Crossroads), 924 (completed at the altar, hand in at Far Watch),
+# 1525 (Reagent Pouch looted here, Fire Tar drops in the Barrens).
+# Chain orders kept: 2983 -> 1524 -> 1525; 834 -> 835; 97281 -> 97282; 812 + 813 (Kor'ghan) -> 812;
+# 806 -> 828 -> 827 -> 829 -> 809 -> 924; 5726 -> 5727. Skipped: 99052 (elite sea giant),
+# 5728/5761 (Ragefire Chasm), 93739/95350/98024 (written for the Zephras race).
+
+# ---------------------------------------------------------------- Razor Hill
+TRAIN @ Durotar, 54.4, 42.6 | Swart: learn your level 10 spells (Flame Shock, Strength of Earth Totem, Flametongue Weapon)
+A 2983 | Also from Swart. Take only this Call of Fire: the copies in Orgrimmar, Thunder Bluff and Mulgore are the same quest and you can only do one
+A 840 | Takrin Pathseeker, by the road on the west side of Razor Hill
+A 816 | Misha Tor'kren, at the lone farmstead north-west of Razor Hill. Kron's Amulet drops from the crocolisks along the Southfury River, which you walk along next
+
+# ---------------------------------------------------------------- West: Far Watch, Kranal Fiss, Telf Joolam
+T 840 | Head south-west back to the road and follow it west over the Southfury River bridge. Kargal Battlescar stands in Far Watch Post on the Barrens side
+A 842 | Keep it: you hand it in at the Crossroads at the start of the next segment
+T 2983 | Kranal Fiss, about 600 yards west of Far Watch along the road
+A 1524 | He hands you the Torch of the Dormant Flame for Telf Joolam
+T 1524 | Cross the bridge back into Durotar and follow the river south on its east bank, killing every Dreadmaw Crocolisk you pass (Kron's Amulet). Shortly before the river reaches the sea, a hidden trail climbs the cliffs on your left to the Shrine of the Dormant Flame. Telf Joolam waits at the top
+A 1525 | Keep it. The Reagent Pouch drops from Burning Blade Cultists in Dustwind Cave later in this segment; the Fire Tar drops from Razormane casters in the Barrens in the next one
+
+# ---------------------------------------------------------------- North along the river to Misha
+C 816 @ Durotar, 34.6, 50.0 | Go back down the trail and follow the river north, killing the crocs on the bank until Kron's Amulet drops (about 1 in 10 crocs). Healing Wave between pulls, they bite hard at your level
+T 816 | Misha Tor'kren. If the amulet still has not dropped, kill more crocs on the bank due west of her farm; give up and abandon the quest if it takes too long
+
+# ---------------------------------------------------------------- Harpies, Drygulch Ravine, Dustwind Cave, naga coast
+A 834 | Rezlak, a goblin camped west of Drygulch Ravine, north-east of Misha's farm
+C 834 | Pick up 5 Stolen Supply Sacks lying on the ground among the harpies south and south-east of Rezlak (47-51, 22-34). Kill the Dustwind harpies as you go: one of them can drop a Dull Storm Orb that starts a quest
+T 834 | Rezlak
+A 835
+C 835 | Drygulch Ravine, just east: kill 12 Dustwind Savages and 8 Dustwind Storm Witches. Earth Shock the Storm Witches' lightning casts and keep Lightning Shield up
+A 97281 @ Durotar, 52.0, 22.5 | No Dull Storm Orb yet? Keep killing harpies in the ravine until one drops, then right-click it to start A Simmering Storm
+C 1525:2 @ Durotar, 52.4, 25.5 | Dustwind Cave, above the southern part of the ravine: kill Burning Blade Cultists inside until one drops a Reagent Pouch. They are casters standing close together: pull them one at a time, Earth Shock their casts, Stoneclaw Totem if two come at once
+C 99051 @ Durotar, 59.0, 25.5 | Go east to the coast: kill the naga scouts in their camps along the beach (56-60, 22-31) for 9 Naga Spinefins. A sea giant (elite, its own quest) walks the coast further north: stay away from it
+T 835,97281 | Back west to Rezlak
+A 97282 @ Durotar, 46.4, 22.9 | Keep it for after Orgrimmar: the thunder lizards live next to Fizzle's camp
+A 812 | Rhinag, north-west on the way to Orgrimmar. He needs an antidote that Kor'ghan in Orgrimmar makes
+
+# ---------------------------------------------------------------- Orgrimmar, first visit
+A 97246 | Go north into Orgrimmar through the main gate. Thatog stands in the Valley of Strength. Orcs start the game knowing the Orgrimmar flight path, so there is no need to visit the wind rider master
+T 97246 | Borstan, the meat vendor at his firepit in the Drag
+A 97249 | Migi's lunch: you deliver it behind Grommash Hold a bit later
+A 813 | Kor'ghan, in the Cleft of Shadow (the sunken tunnel west of the Drag). He makes Rhinag's antidote from Venomtail Poison Sacs
+A 97242 @ Orgrimmar, 56.1, 34.4 | Kor'geld, in Yelmak's Alchemy and Potions at the north end of the Drag
+C 97242 @ Orgrimmar, 69.0, 30.5 | Valley of Honor, east: pick 2 Cattails and 4 Speargrass growing along the water. Blacksmiths and leatherworkers only: Ug'thok at the forge here and Kamari in the Drag offer Thunder Ridge quests that also need Rough Grinding Stones / Cured Light Hides; skip them otherwise
+T 97242 @ Orgrimmar, 56.1, 34.4 | Kor'geld
+A 97275 | Yelmak, in the same shop
+T 97275 | Whuut, a few steps away in the shop
+T 831 | Nazgrel, next to Thrall inside Grommash Hold in the Valley of Wisdom
+A 5726 | Thrall. The Lieutenant's Insignia drops from Burning Blade Fanatics and Apprentices
+T 97249 | Migi plays with his friends behind Grommash Hold
+A 97326 | Thra, one of Migi's friends
+C 97326 @ Orgrimmar, 42.5, 32.5 | Pick up 8 Smooth Boulders lying on the ground around the Valley of Wisdom
+T 97326
+
+# ---------------------------------------------------------------- North-west Durotar: Thunder Ridge
+C 806 @ Durotar, 42.1, 26.7 | Leave by the main gate and go south to Thunder Ridge. Fizzle Darkstorm (12, goblin warlock) sits in the Burning Blade camp with Fanatics and Apprentices around him: pull those one at a time first (they can drop the Lieutenant's Insignia), then fight Fizzle at full health. Earth Shock his Shadow Bolts
+C 97282,813 | Kill Thunder Lizards and Lightning Hides in the gorge around Fizzle's camp for 5 Charged Thunder Lizard Organs, and Venomtail Scorpids (all over north-west Durotar, many near Rhinag) for 4 Venomtail Poison Sacs. Bonus: if Halikor's Hoof drops from a huge lizard, its quest goes to Kamari in the Drag
+T 97282 @ Durotar, 46.4, 22.9 | Rezlak
+H Razor Hill | Hearth back to Razor Hill
+
+# ---------------------------------------------------------------- Razor Hill, Margoz and Skull Rock
+T 806 | Orgnil Soulscar
+A 828
+T 99051 | Also Orgnil. Do not take the sea giant quest he offers next (elite)
+TRAIN @ Durotar, 54.4, 42.6 | Swart, on the east side of town: if you are level 12 now, learn your level 12 spells (Healing Wave rank 3, Purge, Ancestral Spirit) before Skull Rock, where Gazz'uz is level 14. Not 12 yet? Skip this; you train in Orgrimmar later in this segment
+T 828 | Margoz, at his camp north of Razor Hill, south of Skull Rock
+A 827
+C 827,5726 @ Durotar, 53.0, 9.5 | Skull Rock, the cave north of Margoz just east of Orgrimmar's gate: kill Burning Blade Fanatics and Apprentices for 6 Searing Collars. They also drop the Lieutenant's Insignia if you do not have it yet
+A 832 @ Durotar, 51.9, 9.5 | Gazz'uz (14, warlock with a voidwalker) at the back of the cave. Rest to full first, drop Stoneclaw Totem to hold the voidwalker, kill Gazz'uz and Earth Shock his casts. His Eye of Burning Shadow starts this quest
+T 827 | Margoz
+A 829
+
+# ---------------------------------------------------------------- Orgrimmar, second visit
+T 5726 | Into Orgrimmar: Thrall in Grommash Hold. If Halikor's Hoof dropped at Thunder Ridge, hand it to Kamari in the Drag (63.1, 44.9) on the way
+A 5727
+C 5727 @ Orgrimmar, 49.5, 50.6 | Neeru Fireblade in the Cleft of Shadow: show him the insignia and go through his dialogue
+T 832,829 @ Orgrimmar, 49.5, 50.6 | Neeru Fireblade, same visit. Do not take his Slaying the Beast: it is a Ragefire Chasm quest
+A 809
+T 813 | Kor'ghan, a few steps away in the Cleft: you get the Venomtail Antidote
+T 5727 | Back to Thrall. Do not take the next Hidden Enemies: it leads into Ragefire Chasm
+TRAIN @ Orgrimmar, 38.8, 36.4 | Kardris Dreamseeker, Valley of Wisdom next to Grommash Hold: learn your level 12 spells if you did not at Swart
+
+# ---------------------------------------------------------------- To Far Watch and Dreadmist Peak
+T 812 | Out through the main gate and south-west to Rhinag with the antidote
+T 809 | Follow the road south and take the western fork over the Southfury River bridge to Far Watch Post: Ak'Zeloth
+A 924
+C 924 @ The Barrens, 48.0, 19.1 | Take a Flawed Power Stone from Ak'Zeloth's table and go straight to Dreadmist Peak, no detours: it burns out after a while. Follow the road west past Kranal Fiss and turn north where it forks; the peak is on your left. Climb it from the north side and use the stone at the Altar of Fire on top. The Burning Blade on the slope will chase you: kill them fast or drop Earthbind Totem and keep going. Then walk south to the Crossroads (next segment)

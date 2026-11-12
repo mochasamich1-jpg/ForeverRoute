@@ -1,0 +1,173 @@
+@segment 54-57 Felwood, Winterspring & Moonglade
+@start-level 54
+# Carried in from segment 20: Linken's Sword (3908) and The New Springs (980) for Donova, Marvon's Workshop (4147) and
+# Volcanic Activity (4502) for Ratchet, and Seeping Corruption (3568), ... and a Batch of Ooze (4294), A Sample of Slime (4293)
+# and Delivery to Andron Gant (3542), which are handed in in the Undercity at the start of segment 23.
+@carry 3908,980,4147,3568,4294,4293,3542,4502
+# Prerequisites of the carried quests (3845 -> 3908, 974 -> 980, 4145 -> 4147, 3517 -> 3542).
+@done 3845,974,4145,3517
+# Kalimdor half of undead segment 19, in its order: Felwood (south) -> north Felwood -> Timbermaw Hold -> Winterspring
+# (west to Everlook) -> Thunder Bluff / Ratchet / Gadgetzan / Un'Goro -> hearth Everlook -> Felwood again -> Moonglade ->
+# Winterspring again -> Everlook -> Bloodvenom Post. Hearth: Orgrimmar until Everlook, then Everlook (segment 22 rebinds).
+# Left out on purpose (as in undead 19): elites 5156, 5121 and 3962; The Videre Elixir and the rest of Linken's chain (a
+# Feralas trip that ends in elite 3962); Felnok's 4808-4810 (the Burning Steppes come after Winterspring); Wild Guardians
+# part 3 (4721, one more Winterspring round trip); Lorax's Tale (5126); Shards of the Felvine (5526, Dire Maul).
+# Not tracked: Guarding Secrets (4882/4883, only if the necklace drops). A Reliquary of Purity (5527) is taken here and carried:
+# segment 22 opens the reliquary and hands it to Rabine. Carry-out (9): 3568, 4294, 4293, 3542, 1124, 5527, 6029, 6030, 5601.
+
+# ---------- Felwood: Emerald Sanctuary ----------
+FLY Splintertree Post | You start at Valormok at level 54, hearthstone set to Orgrimmar. Kroum is the Valormok wind rider master
+G Felwood, 50.9, 85.0 | Ride west from Splintertree to the main road and follow it north into Felwood. The Emerald Sanctuary is the first camp past the border
+A 8460 | Grazle, beside the road just south of the Emerald Sanctuary. If he offers a Timbermaw Ally that asks for 5 of each furbolg instead (Forever lists a new 6131), take that one; the logger records it
+A 5155 | Greta Mosshoof, Emerald Sanctuary
+A 4102 | Maybess Riverbreeze, on the west side of the camp
+C 8460 @ Felwood, 47.5, 91.0 | Deadwood Village, west of the road just south of the camp: Warriors, Pathfinders and Gardeners. Every kill also raises Timbermaw reputation, which you need for the tunnel later. Leave Overlord Ror (the big one at the south end) until you have his quest from Bloodvenom Post
+T 8460 | Grazle
+A 8462 | Grazle. Nafien waits at the north end of Felwood
+
+# ---------- Jaedenar and Bloodvenom Post ----------
+N Kill the slimes you pass from now on | Cursed Oozes (41, 71) and Tainted Oozes (42, 47) sit beside the road. Collect 15-20 Felwood Slime Samples for Chemist Fuely's quest (4293): you test them in the Undercity in the last segment. Not every sample tests as corrupted and you need 5 that do. The route does not come back to Felwood after this segment. They stack, so spares cost nothing
+C 5155 @ Felwood, 38.0, 61.0 | Jaedenar, west of the road: the hounds, guardsmen, adepts and cultists near the entrance. Don't go deep yet. Earth Shock the Adepts and Cultists when they start casting
+F Bloodvenom Post @ Felwood, 34.4, 53.8 | Brakkar, the wind rider master, a little further north
+A 4505 | Winna Hazzard
+A 4521 | Trull Failbane. His owlbeasts are in Winterspring
+A 6162 | Dreka'Sur. Overlord Ror is in Deadwood Village; you pass it again soon
+C 4505 @ Felwood, 32.3, 66.5 | The corrupted moonwell at the Ruins of Constellas, south-west of Jaedenar. Use Winna's flask at the well; Jadefire satyrs guard it, so clear the ones next to the well first
+T 4505 | Back to Winna Hazzard, Bloodvenom Post
+A 4506 | She hands you a kitten
+C 4506 @ Felwood, 32.3, 66.5 | Same moonwell at the Ruins of Constellas. Release the kitten at the well, wait until it has changed, then take it back
+T 4506 | Winna Hazzard. Click the cat at her feet to finish
+T 5155 | Ride back south along the road to Greta Mosshoof, Emerald Sanctuary
+A 5157 | Greta gives you an Empty Canteen
+C 5157 @ Felwood, 35.2, 59.8 | The moon well in the middle of Jaedenar. Clear a path to it and fill the canteen
+T 5157 | Back to Greta Mosshoof
+A 5158 | Islen Waterseer is on the Barrens coast; you see her later in this segment
+C 6162 @ Felwood, 48.2, 94.3 | Overlord Ror, at the south end of Deadwood Village, just south of the camp. He hits hard: kill the furbolgs around him first, drop Stoneclaw Totem when you pull him and keep a Healing Wave ready. Take his claw
+T 6162 | Dreka'Sur, Bloodvenom Post, as you ride north
+
+# ---------- North Felwood ----------
+G Felwood, 42.0, 47.0 | Ride north past Bloodvenom Post on the main road. The Tainted Oozes here count for the slime samples. Next comes Shatter Scar Vale, the crater field just north-east (around 40-46, 37-44): the Infernal Bodyguards and Sentries in it are elite, so go around it rather than following the next arrow straight across
+C 4102 @ Felwood, 56.5, 18.0 | Irontree Cavern, north-east of Irontree Woods. On the way, go around Shatter Scar Vale (elite infernals) instead of crossing it. Warpwood Moss Flayers and Shredders drop the 15 Blood Amber. Dessecus, a rare elite, spawns at the south-east end (around 58, 22): if he is up, fight the flayers and shredders in the north-west part and leave him alone
+T 8462 | Nafien, outside Timbermaw Hold at the far north end of the road
+A 8461 | Nafien
+C 8461 @ Felwood, 61.5, 8.0 | Felpaw Village, just west of Nafien: Den Watchers, Avengers and Shamans. Earth Shock the Shamans when they heal; if two furbolgs come at once, drop Stoneclaw Totem and kill them one by one
+T 8461 | Nafien
+A 8465 | Nafien
+L 55 @ Felwood, 61.5, 8.0 | Quest XP is far behind in this segment. Grind Felpaw Village to 55; every kill adds Timbermaw reputation as well. The furbolgs stand close together: pull from the edge of the village one at a time, Earth Shock the Shamans' heals, drop Stoneclaw Totem if a second one joins and Healing Wave between pulls. Keep every Runecloth they drop and don't vendor it: Meilosh inside Timbermaw Hold wants 30 for a quest later
+N Open the Reputation tab and check Timbermaw Hold before going in | It must be Unfriendly or better, or the furbolgs inside attack you. Still Hostile? Kill more Deadwood furbolgs here until it changes. Got Deadwood Headdress Feathers? Nafien takes them 5 at a time (Feathers for Nafien, repeatable, about 550 XP and Timbermaw reputation each); bring later sets on your next tunnel passes
+N Keep any Deadwood or Winterfall Ritual Totem that drops (8470 / 8471) | Deadwood and Winterfall furbolgs drop them rarely. Once Timbermaw Hold is Neutral, right-click the totem and hand it to Kernda inside the Hold (Felwood 65.5, 3.5) on one of your tunnel trips
+
+# ---------- Winterspring: the west ----------
+G Winterspring, 27.7, 34.5 | Ride through Timbermaw Hold and take the Winterspring exit. Never attack the Timbermaw furbolgs inside
+T 8465 | Salfa, at the tunnel exit
+A 8464 | Salfa. Winterfall Shaman and Ursa live in Winterfall Village in the east, next to Everlook
+T 3908 | Donova Snowden, beside the hot springs to the south-east. She offers The Videre Elixir next: skip it, it needs a long Feralas trip and the chain ends in an elite quest
+T 980 | Donova Snowden
+A 4842 | Donova Snowden. You check the far south of Winterspring later on this pass
+N Kill the Winterfall furbolgs in the camp east of Donova (around 41, 44) until one drops an Empty Firewater Flask | Pathfinders, Totemics and Den Watchers all drop it. Right-click the flask
+A 5083 @ Winterspring, 41.0, 44.0 | The Empty Firewater Flask
+T 5083 | Donova Snowden
+A 5084 | Keep it: the cauldron is in Felwood and you pass it on your second visit
+
+# ---------- Winterspring: the far south and Everlook ----------
+C 4521:2 @ Winterspring, 46.5, 44.0 | Ragged Owlbeasts in the woods east of the hot springs
+C 4842 @ Winterspring, 59.8, 74.3 | Ride to the far south until the sky turns dark at Darkwhisper Gorge. The way runs through Frostwhisper Gorge (around 58-66, 65-73), whose Frostmaul Giants and Preservers are elite, level 59-60: stay mounted, keep to the middle and don't stop to fight; if one turns on you, keep riding, your mount outruns it. Reaching the mouth of Darkwhisper Gorge is enough; the demons further in are elite too
+G Winterspring, 60.4, 36.4 | Ride north to Everlook, back through Frostwhisper Gorge the same way: mounted, without stopping
+F Everlook @ Winterspring, 60.5, 36.3 | Yugrek, the wind rider master
+S Everlook @ Winterspring, 61.4, 38.8 | Innkeeper Vizzie, at the inn. Your hearthstone and Astral Recall now bring you back here
+A 6603 | Meggi Peppinrocker. It goes to Donova on your next pass
+A 3783 | Umi Rumplesnicker
+A 6606 | Harlo Wigglesworth, in Everlook near the inn (Horde only in Forever)
+T 6606 | Witch Doctor Mau'ari, a few steps east. Skip her follow-up, Luck Be With You: it is an elite quest in Frostwhisper Gorge
+C 8464 @ Winterspring, 67.0, 37.0 | Winterfall Village, just east of Everlook: Shaman, Den Watchers and Ursa. Earth Shock the Shaman's heals; the Ursa hit hardest, so fight them with Stoneclaw Totem down. High Chief Winterfall in the big cave is elite: stay out of it
+L 56 @ Winterspring, 67.0, 37.0 | Stay in Winterfall Village and grind to 56 before the yetis. Pull at the edge of the camp, Searing Totem plus Stoneclaw Totem for pairs, Healing Wave between pulls. Being 56 also lets you train new ranks in Thunder Bluff next and shortens the grind at the end of the segment
+C 3783 @ Winterspring, 67.5, 44.0 | Ice Thistle Yetis on the hills south-east of the village drop Thick Yeti Furs
+T 3783 | Umi Rumplesnicker, Everlook
+A 977
+C 977 @ Winterspring, 69.0, 41.0 | Ice Thistle Matriarchs and Patriarchs (level 56-58) higher up in the Ice Thistle Hills. Pull them one at a time; Stoneclaw Totem if a second one walks in
+T 977 | Umi Rumplesnicker
+A 5163 | Umi gives you her Mechanical Yeti
+C 5163:1 | Legacki, in Everlook. Use the yeti next to her
+C 4521:1 @ Winterspring, 58.5, 31.0 | Raging Owlbeasts around Starfall Village, just north-west of Everlook
+
+# ---------- Thunder Bluff, Ratchet, Gadgetzan, Un'Goro ----------
+FLY Thunder Bluff @ Winterspring, 60.5, 36.3 | Yugrek, Everlook. A long flight through several wind rider posts: you do not change, stay on until it lands in Thunder Bluff
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 56 spells, and the level 54 ones if you skipped them
+A 1000 | Bluff Runner Windstrider, on the central mesa near the inn
+T 1000 | Arch Druid Hamuul Runetotem, Elder Rise
+A 1123 | Arch Druid Hamuul Runetotem. Rabine Saturna is in Moonglade; you go there on your next Felwood trip
+N Still carrying Morrowgrain Research (3786) from last segment? | Hand 10 Morrowgrain to Bashana Runetotem on Elder Rise now
+FLY Ratchet @ Thunder Bluff, 47.0, 49.8 | Tal, the wind rider master on the central mesa
+T 4147,4502 | Liv Rizzlefix. Skip her follow-ups
+T 5158 @ The Barrens, 65.8, 43.8 | Islen Waterseer, on the coast a short ride south of Ratchet
+A 5159 @ The Barrens, 65.8, 43.8 | Islen Waterseer. The purified water goes back to Greta in Felwood
+FLY Gadgetzan
+C 5163:2 @ Tanaris, 51.1, 26.9 | Sprinkle, in Gadgetzan. Use the yeti next to her
+FLY Marshal's Refuge
+C 5163:3 @ Un'Goro Crater, 43.7, 9.4 | Quixxil, in Marshal's Refuge
+N Fewer than 15 Un'Goro Slime Samples for ... and a Batch of Ooze (4294)? Kill oozes here now | Primal Oozes just south of Marshal's Refuge (around 46, 24) and Glutinous Oozes to the south-west (around 35, 30); Muculent Oozes sit east of the camp (62-74, 25-35). Not every sample tests as pure and you need 5 that do. The next segment passes Marshal's Refuge once more on the way to Silithus, but collecting them now saves a stop there. They stack
+H Everlook | Hearthstone, or cast Astral Recall
+T 5163 | Umi Rumplesnicker
+
+# ---------- Felwood again: Shadow Hold ----------
+FLY Bloodvenom Post | Yugrek, Everlook
+T 4521 | Trull Failbane
+A 4741 | Trull Failbane. The Moontouched Owlbeasts are in northern Winterspring
+T 5159 | Ride south to Greta Mosshoof, Emerald Sanctuary
+A 5165 | Greta Mosshoof
+T 4102 | Maybess Riverbreeze. Skip her salve quests
+C 5165 @ Felwood, 36.6, 54.5 | Shadow Hold, the cave at the back of Jaedenar. Use the Purified Moon Well Water on the four braziers inside: two near the entrance, two further up
+N Kill the Jaedenar Darkweavers, Warlocks, Legionnaires and Enforcers along the brazier path until one drops the Blood Red Key | It may already have dropped while you doused the braziers: check your bags. They stand all through the lower half of Shadow Hold, around the braziers and Arko'narin's cell. Earth Shock the Darkweavers and Warlocks when they cast; Grounding Totem soaks up a spell. Still no key? Work a little higher, but stay below the succubus Rakaiah (38.3, 50.5) and Shadow Lord Fel'dan's room (38.8, 46.8): they only count once you have their quests, and you come back for both later
+A 5202 @ Felwood, 37.5, 54.0 | Right-click the Blood Red Key
+T 5202 | Captured Arko'narin, in a cell inside Shadow Hold
+A 5203 | Captured Arko'narin. She is weak until she gets her gear back
+C 5203 @ Felwood, 36.2, 55.5 | Escort her to her equipment and then out of Shadow Hold. Kill whatever comes at her; drop Stoneclaw Totem to pull extra attackers off her
+T 5203 | Jessir Moonbow, Emerald Sanctuary
+A 5204 | Jessir Moonbow
+T 5165 | Greta Mosshoof
+A 5242 | Greta Mosshoof
+C 5204 @ Felwood, 38.3, 50.5 | Back in Shadow Hold: kill the succubus Rakaiah
+T 5204 | The Remains of Trey Lightforge, next to where Rakaiah stood
+A 5385 | The Remains of Trey Lightforge
+C 5242 @ Felwood, 38.8, 46.8 | The top of Shadow Hold: Moora, Salia and Shadow Lord Fel'dan. Pull the guards away first and Earth Shock their casts; take Fel'dan's head. Lord Banehollow (elite, 59) is in the chamber past Fel'dan (around 36, 44): don't go further
+T 5385 | Jessir Moonbow, Emerald Sanctuary
+T 5242 | Greta Mosshoof
+
+# ---------- North Felwood, Moonglade, Winterspring again ----------
+G Felwood, 60.2, 5.8 | Ride north up the road to Felpaw Village
+T 5084 | The Deadwood Cauldron in the middle of Felpaw Village
+A 5085 @ Felwood, 60.2, 5.8 | The Deadwood Cauldron
+N Go into Timbermaw Hold | Neutral with Timbermaw and carrying a Ritual Totem? Hand it to Kernda in the main hall on the way (8470 / 8471). Nafien at the entrance still takes Deadwood Headdress Feathers 5 at a time
+A 6031 @ Felwood, 65.7, 2.8 | Meilosh, in the main hall of Timbermaw Hold beside Kernda. Needs Friendly with Timbermaw (the Felpaw and Winterfall grinds should have got you there) and 30 Runecloth. Not Friendly yet or short of cloth? Take it on a later tunnel pass
+T 6031 | Meilosh
+N Take the branch of Timbermaw Hold that leads to Moonglade
+T 1123 | Rabine Saturna, in Nighthaven
+A 1124 | Keep Rabine's Letter: Layo Starstrike is in Silithus, in the next segment
+A 5527 | Rabine Saturna, same visit (needs 56). The Dusty Reliquary is in Southwind Village in Silithus, where Layo's quests send you next segment, and that segment flies back here at its end
+F Moonglade @ Moonglade, 32.1, 66.6 | Faustron, the Horde wind rider master by the lake south-west of Nighthaven
+N Go back into Timbermaw Hold and take the Winterspring exit
+T 8464 | Salfa. From now on Salfa also takes Winterfall Spirit Beads 5 at a time (Beads for Salfa, repeatable, about 575 XP and Timbermaw reputation each): the Winterfall furbolgs drop them, so hand in each set as you pass by
+T 5085 | Donova Snowden
+A 5086 | Donova Snowden
+T 6603 | Donova Snowden
+A 5082 | Donova Snowden
+T 4842 | Donova Snowden
+C 5082:1,5082:3 @ Winterspring, 41.0, 44.0 | The Winterfall camp east of Donova: Pathfinders and Totemics (the camp near Salfa has more of both). Kill the one Den Watcher here too (1 of 8). Only 4 Den Watchers stand in the west, so you clear both camps twice for the 8. Kill the Totemics' totems first
+N Go back through Timbermaw Hold into Felwood for the Toxic Horrors | On the way, kill the three Winterfall Den Watchers at the camp just south-east of Salfa (around 30.5, 36): 4 of 8
+C 5086 @ Felwood, 49.3, 25.0 | Irontree Woods, south-west of Felpaw Village: Toxic Horrors drop the droplets
+N Go back through Timbermaw Hold to Winterspring | Neutral with Timbermaw and carrying a Ritual Totem? Hand it to Kernda inside the Hold now (8470 / 8471). Didn't get Meilosh's Runecloth quest earlier? Try again now
+N Kill the 3 Den Watchers at the camp just south-east of Salfa (30.5, 36.3) again: they have respawned since you passed | That makes 7 of 8. Spare beads? Salfa is right there
+C 5082:2 @ Winterspring, 41.6, 42.6 | The 8th is the lone Den Watcher at the east camp, which has respawned too. Donova is a short ride back west
+T 5082,5086 | Donova Snowden
+A 5087 | Donova Snowden
+C 5087 @ Winterspring, 28.0, 34.5 | Winterfall Runners leave the Timbermaw tunnel and walk east toward Winterfall Village. Kill them for the Winterfall Crate; Earthbind Totem keeps them from running on
+T 5087 | Donova Snowden. Skip High Chief Winterfall (elite)
+C 4741 @ Winterspring, 63.5, 17.0 | Moontouched Owlbeasts (57-58) in the north, past Starfall Village. Ursius, an elite bear, stands at the south edge of their area (around 64, 24): hunt the owlbeasts north of him and swing wide of him when you ride south to Winterfall Village afterwards. Pull one at a time, Healing Wave between pulls. If a Blue-feathered Necklace drops, keep it (don't farm for it)
+L 57 @ Winterspring, 67.0, 37.0 | Still behind. Grind Winterfall Village to 57 before you leave: Silithus in the next segment is level 55-60
+G Winterspring, 60.4, 36.4 | Everlook
+A 6029,6030 | Gregor Greystone. Both are deliveries to the Plaguelands, at the end of the route: keep them
+A 5601 @ Winterspring, 61.3, 39.0 | Jessica Redpath. Also for the Plaguelands
+FLY Bloodvenom Post | Yugrek, Everlook
+T 4741 | Trull Failbane. Skip Wild Guardians part 3; it sends you back to Winterspring
+N Got a Blue-feathered Necklace? | Right-click it and hand it to Trull (Guarding Secrets, 4882). Skip his follow-up: it goes to Nara Wildmane in Thunder Bluff, which the route does not visit again
+N Segment done. Next segment flies from Bloodvenom Post to Orgrimmar | Keep 3568, 4294, 4293, 3542, 1124, 5527, 6029, 6030 and 5601 in the log. Your hearthstone is set to Everlook

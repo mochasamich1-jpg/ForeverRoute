@@ -1,0 +1,16 @@
+# Sources: wing level ranges = foreverchanges.pro/dungeons (Classic group-finder ranges, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Scarlet Monastery
+@levels 30-46
+@window 33-41
+@best 36
+@hub Undercity, 66.0, 44.0
+@entrance Tirisfal Glades, 82.6, 33.8
+A 1049 @ Thunder Bluff, 34.4, 46.9 | Sage Truthseeker. The Compendium of the Fallen is in the Library wing. Not offered to Undead.
+A 1113 @ Undercity, 48.8, 69.3 | Master Apothecary Faranell. 20 Hearts of Zeal from any Scarlet enemies in the monastery.
+A 1048 @ Undercity, 56.2, 92.2 | Varimathras in the Royal Quarter. Kill Houndmaster Loksey (Library), Herod (Armory), and Mograine and Whitemane (Cathedral). Needs level 33.
+RUN | The monastery is in the north-east corner of Tirisfal Glades; from Undercity ride east past Brill and north at the Bulwark road. It has four wings, each its own run: Graveyard (30-38), Library (33-41), Armory (36-44) and Cathedral (38-46). Inside the Graveyard wing, Vorrel Sengutz gives Vorrel's Revenge (the ring drops in the Graveyard wing; hand in to Monika Sengutz in Tarren Mill).
+T 1048 @ Undercity, 56.2, 92.2
+T 1113 @ Undercity, 48.8, 69.3
+T 1049 @ Thunder Bluff, 34.4, 46.9
+T 1051 @ Hillsbrad Foothills, 62.7, 18.9 | Vorrel's Revenge: Monika Sengutz in the Tarren Mill inn.

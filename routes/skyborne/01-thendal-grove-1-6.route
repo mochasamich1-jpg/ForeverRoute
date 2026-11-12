@@ -1,0 +1,73 @@
+@segment 1-6 Thendal Grove
+@start-level 1
+# Skyborne, any class. From the Skyborne Mage route's segment 01: same quests, order and hearth, minus the class quest.
+# Changed 2026-11-12 for the any-class route:
+#  - Removed 92481 A Student of the Arcane (class quest: class mask 128 in the baked Questie data). In its place one N step
+#    tells every class to take its own first quest from Rorian (needs level 2) to its trainer; class quests are not routed.
+#  - The three TRAIN steps are generic: they name Thendal Grove and list the class trainers the data has there
+#    (research/json/baked_npcs.json, Alliance or both-faction spawns only). No arrow: it would be wrong for most classes.
+#    The data has no priest, paladin or warlock trainer on Zephras Isle, and its shaman trainers there are Horde-only.
+#  - Fight hints are class-neutral (the Cirrusfly Queen, Urs'anah, Malduko Cloudcrush).
+# Alliance ("High Order") Skyborne 1-6. Thendal Grove is the northern tip of Zephras Isle.
+# Order follows TUGs' Skyborne file, in our own words. TUGs' Alliance file lists the Horde-side racial quest
+# (The Gift of Skysight); ForeverChanges gives the Alliance side Reading the Leylines (92597) instead, used here.
+# The Zephras quest positions come from the ForeverChanges quest pages.
+# Steps without an arrow (windstones, the leyline, the tower jump) have no published position: follow the text.
+# Carry-out: 92472 The Next Step, 96638 The Adventurer (both handed in at Shen'dar Village, next segment).
+
+# --- First steps in the village ---
+A 92460 | Ailee Farheart stands in front of you when you arrive
+T 92460 | Rorian the Dayseeker, a few steps west
+A 92461 | Rorian the Dayseeker
+A 92462 | Elatrell Featherlight, on the south-east side of the village
+C 92461 | Juvenile Vuldren wander the grove just east and south-east of the village: kill 8
+C 92462 | Pesky Cirrusflies fly a little further south-east: kill 8
+T 92462 | Elatrell Featherlight
+A 92463 | Elatrell Featherlight. The queen comes after the next two small quests
+A 94414 | Halaan Hawk-Eye, at the watchtower on the east side of the village
+C 94414 @ Zephras Isle, 43.8, 24.1 | Talk to Halaan again and ask to borrow his sight: watch until the pylon objective ticks
+T 94414 | Halaan Hawk-Eye
+A 92474 | Myriaal Mistwake, next to Halaan
+C 92474 @ Zephras Isle, 43.7, 24.1 | Climb to the top of the watchtower, jump off the ledge and press your Walk on Air racial while falling. It is in your spellbook: put it on your bars now, it saves you from every long drop on this island
+C 92463 | The Cirrusfly Queen is deeper in the cirrusfly woods, south-east of the village. She is level 3: kill the cirrusflies around her first, then start the fight at full health
+T 92463 | Elatrell Featherlight
+T 92474 | Rorian the Dayseeker
+T 92461 | Rorian the Dayseeker
+A 92464 | Rorian the Dayseeker
+N Rorian the Dayseeker also offers your class's first quest (needs level 2): a letter or token to carry to your class trainer here in the village | Your class has its own quests. This guide is not class-specific and does not list them: take them from your trainer and fit them in where they suit you; the logger records what you take
+TRAIN | Thendal Grove: visit your class trainer, learn everything offered, and come back at levels 4 and 6 while you are still in the grove. Trainers here: mages Dorii Brightwhisper (41.6, 23.7, the building just behind Rorian), druids Xyton Silverwind (41.7, 23.3), hunters Tai'ree Farsight (42.5, 23.8), warriors Blademaster Ren (43.7, 24.1), rogues Akeri Duskblade (43.7, 24.4). If your class has no trainer here, train in Stormwind
+A 92597 | Falorne Fallwind, on the south side of the village: your racial quest
+A 93552 @ Zephras Isle, 43.3, 24.0 | Dalia the Collector. Raw Windstones lie all over the grove: pick up every one you pass from now on, you need 15
+
+# --- The standing stones and the cult ---
+T 92464 | Follow the path north-east to Yala Windwatcher
+A 92465 | Yala Windwatcher
+C 92597 | The leyline is at the standing stones north-east of the village, close to Yala. Stand next to it and use Read Leyline (spellbook)
+C 92465 | Just north of Yala: kill 7 Al'Aketh Converts and 6 Roiling Winds
+T 92465 | Yala Windwatcher
+A 92469 | Yala Windwatcher
+T 92469 | Back to Rorian the Dayseeker in the village
+A 92471 | Rorian the Dayseeker (needs level 4)
+T 92471 | Aetheen of the Gales, a few steps east of Rorian
+T 92597 | Falorne Fallwind
+TRAIN | Thendal Grove: your class trainer again for your level 4 skills (the same trainers as before: mages and druids on the west side of the village, hunters in the middle, warriors and rogues on the east side)
+A 92470 | Aetheen of the Gales
+A 92473 | Valreaa Valewind, at the south end of the village
+
+# --- The ursera den ---
+C 92473 | Scrawny Ursera roam the slope south-west of the village: collect 6 claws
+C 92470 | Further west is the ursera den: kill 8 Ursera Scavengers, then the den mother Urs'anah at the back and loot her head. Clear the Scavengers near her first so she comes alone, and eat to full before you pull her
+C 93552 | Finish the 15 Windstone Clusters on the way back; the stones are scattered through the whole grove
+H Thendal Grove | Your hearthstone is still bound here. On cooldown? It is a short walk back east
+T 92470 | Aetheen of the Gales
+A 92472 | Aetheen of the Gales: your ticket to the next village
+A 96638 | Aetheen of the Gales (needs level 4): the camping quest line. Raan Wildwind is near Shen'dar Village
+T 93552 @ Zephras Isle, 43.3, 24.0 | Dalia the Collector
+T 92473 | Valreaa Valewind
+TRAIN | Thendal Grove: your class trainer for your level 6 skills if you are 6 already. Sell and repair: the next village, Shen'dar, has trainers too
+
+# --- South out of the grove ---
+A 92544 | Take the road south-west out of the village to Hanaa Nightwind
+C 92544 | The cult camp is just south-west of Hanaa: kill 6 Al'Aketh Brutes, 4 Al'Aketh Neophytes and their leader Malduko Cloudcrush. Pull the edge of the camp first, one at a time; Malduko hits hard, so clear the cultists around him, then fight him at full health and walk away if a second one joins
+T 92544 | Hanaa Nightwind
+L 6 | Not 6 yet? Kill ursera and cultists around Hanaa until you are: the Shen'dar Highlands quests are level 6-8

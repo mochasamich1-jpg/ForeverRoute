@@ -1,0 +1,98 @@
+@segment 37-39 Alterac, Faldir's Cove, Badlands & Swamp of Sorrows I
+@start-level 37
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 93663 Lost in Transit (2750 XP, Dar in Stonard -> Magtoor at the Harborage, both already stops).
+# Where the shipment lies is not published; the step repeats the quest text.
+# Carried in: segment 13's carry-out. Not carried: 1164 (segment 11 accepts and hands it in at Undercity),
+# 1436 (segment 13 hands it in at Orgrimmar), 701/678 (segment 11 leaves them with Tor'gan and Drum Fel: taken at
+# Hammerfall below) and 507 (segment 15 takes it from Krusk).
+@carry 1183,1116,1106,1261,598,584
+@done 675,677,1115,1182,1240,1435,506,582,596
+# Overrides below fix auto data that puts Badlands NPCs in "Outland", Swamp NPCs in "Zephras Isle",
+# Martek's 1137 in Thousand Needles and Anastasia in "Mage".
+# Carry-out (11 quests): 1418 (T at Kargath, then 1420 back to Stonard), 698 (T at Tok'Kar), 669, 712, 1116, 584 and 598
+# go to segment 15; 1137, 1183, 1953 and 1261 go on to segment 16.
+
+# ---------- Undercity ----------
+N Coming back from the Riverglades detour at 41 or higher? | Do this segment anyway. Most of its quests are level 38-40 and give full XP until you are 5 levels above them; only the level 35-37 ones (663, 701/847, 710, 1389, 1418) start to lose some at 41-43. The next segments also need the Kargath flight path and quests 669, 712 and 1137 from here, and 710 is what unlocks 711/712.
+N Teleport to Undercity (or take the zeppelin from Grom'gol if you don't have it) | Start saving gold now: riding and a horse at 40 cost roughly 90-100g.
+A 1953 @ Undercity, 85.1, 10.0 | Anastasia Hartwell, a mage trainer in the Magic Quarter. It is handed in to Tabetha in Dustwallow Marsh later (segment 16).
+TRAIN | Undercity Magic Quarter: learn your level 36 ranks (Blizzard, Fireball, Mana Shield) if you did not get them in Orgrimmar, and buy Runes of Teleportation.
+FLY Hammerfall @ Undercity, 63.2, 48.6 | Bat handler Michael Garrett. (Melor's Frostmaw, 1136, is not part of this route.)
+
+# ---------- Hammerfall (Arathi Highlands) ----------
+A 701 | Tor'gan. He offered it after Raising Spirits in segment 11.
+A 678 | Drum Fel. The second Call to Arms, left with him in segment 11.
+C 701,678 @ Arathi Highlands, 52.0, 75.0 | Boulderfist Hall, south-west of Hammerfall. Highland Fleshstalker raptors roam the hills around it (hearts drop about one time in three); the Brutes and Magi are in and around the ogre cave.
+T 701 | Tor'gan
+A 702 | Tor'gan
+T 702 | Gor'mul
+A 847 | Gor'mul
+T 847 | Back to Tor'gan
+T 678 | Drum Fel. Skip the follow-ups 679 and 680: both are elite.
+
+# ---------- Faldir's Cove (south-west Arathi) ----------
+A 663 | Lolo the Lookout at Faldir's Cove. These quests are level 40: Frost Nova and Polymorph help a lot against the naga.
+T 663 | Shakes O'Breen
+A 662,664,665 | First Mate Nilzlix, Captain Steelgut and Professor Phizzlethorpe, all in the camp
+C 665 @ Arathi Highlands, 33.9, 80.5 | Escort the professor to the nearby sea cave and back. Expect attacks on the way: stay close and keep him alive.
+T 665 | Doctor Draxlegauge
+A 666 | Doctor Draxlegauge. Equip the Goggles of Gem Hunting to see the calcified gems on the sea floor.
+C 662,664,666 @ Arathi Highlands, 21.5, 86.0 | West of the cove. The charts and logs are inside the two wrecks (Maiden's Folly and Spirit of Silverpine), the gems lie on the sea floor around them, the Daggerspine Raiders and Sorceresses are on the reef and shore. Undead breathe far longer underwater, so no potion is needed. Pull the naga one at a time.
+T 662 | Nilzlix
+T 664 | Steelgut
+T 666 | Draxlegauge, return the goggles
+A 668 | Draxlegauge
+T 668 | Shakes O'Breen
+A 669 | Shakes O'Breen. Keep the gem for Fleet Master Seahorn in Booty Bay (segment 15).
+
+# ---------- Run to the Badlands ----------
+G Arathi Highlands, 48.5, 87.5 | Head east to Thandol Span, the great bridge at the south edge of Arathi. Dark Iron dwarves stand on it.
+G Wetlands, 54.2, 70.3 | Cross the bridge into the Wetlands, keep clear of Dun Modr and follow the road south to the Dun Algaz pass.
+G Loch Modan, 18.5, 85.0 | Go through Dun Algaz into Loch Modan. The Alliance mountaineers at the gates are level 30. Head south down the west side of the zone, keeping Thelsamar well to your left (east), to the pass into the Badlands. Mountaineer Pebblebitty (44) stands at the pass: run past him.
+
+# ---------- Badlands ----------
+T 1106 @ Badlands, 42.2, 52.7 | Martek the Exiled, south along the road from the pass. Shadowforge dwarves dig near the pass: don't stray.
+A 1108 @ Badlands, 42.2, 52.7 | Martek
+A 703 @ Badlands, 42.4, 52.9 | Rigglefuzz, next to Martek. Skip Pearl Diving (705, elite-flagged).
+A 710 @ Badlands, 25.9, 44.9 | Lotwil Veriatus, west along the road
+F Kargath @ Badlands, 4.0, 44.8 | Gorrik, at the west edge of the Badlands
+A 2258,1419 @ Badlands, 2.4, 46.1 | Jarkal Mossmeld and Neeka Bloodscar. Gorn's Broken Alliances (782) needs level 40: leave it.
+C 710,2258:3 @ Badlands, 18.8, 43.0 | Lesser rock elementals between Kargath and Lotwil's camp. Rock elemental shards drop from them too.
+T 710 @ Badlands, 25.9, 44.9 | Lotwil
+A 711 @ Badlands, 25.9, 44.9 | Lotwil
+C 1419,2258,703 @ Badlands, 26.0, 62.0 | South of Lotwil's camp: Elder Crag Coyotes for the jawbones and fangs, Giant Buzzards for the gizzards and wings.
+C 711 @ Badlands, 41.0, 79.0 | Rock Elementals (39-40) in the rocky hills just south-west of the Stonevault trogg camp. You need 3 slabs and nearly every kill drops one. They hit hard but have no ranged attack: Frostbolt, Frost Nova, step back.
+C 1108 @ Badlands, 50.5, 68.0 | Stonevault trogg camp. Only the Stonevault Bonesnappers and Shamans here drop the indurium flakes (about 60%). Still short of jawbones, fangs, gizzards or wings? The Feral Crag Coyotes and Buzzards around this camp drop those.
+T 1108 @ Badlands, 42.2, 52.7 | Martek
+A 1137 @ Badlands, 42.2, 52.7 | Martek. This goes to Fizzle on the Shimmering Flats (segment 16).
+T 703 @ Badlands, 42.4, 52.9 | Rigglefuzz
+T 711 @ Badlands, 25.9, 44.9 | Lotwil
+A 712 @ Badlands, 25.9, 44.9 | Lotwil. Greater rock elementals (42-44, far south-west) drop the bracers: kill them only if you are comfortable, segment 15 finishes this.
+T 2258 @ Badlands, 2.4, 46.1 | Jarkal. Do not take Uldaman Reagent Run (2202): it is a dungeon quest.
+T 1419 @ Badlands, 6.5, 47.2 | Neeka Bloodscar
+L 39 @ Badlands, 18.0, 44.0 | Quest XP runs out here. Grind the lesser rock elementals between Kargath and Lotwil's camp, or the Rock Elementals (39-40) on the hill north-east of Kargath at 14,34 (TUGs' elemental grind). The Stonevault troggs drop coins and cloth if you would rather save for the mount.
+
+# ---------- Train, then on to the Swamp of Sorrows ----------
+N Teleport to Undercity | No rune or no Teleport yet? Hearth to Grom'gol now, skip the training and train at 40 in the next segment.
+TRAIN | Undercity Magic Quarter: learn your level 38 spells and restock Runes of Teleportation.
+H Grom'gol Base Camp | Your hearthstone is still set to Grom'gol. If you bound at Rog'mar on the Riverglades detour, take the zeppelin to Grom'gol from the tower outside Undercity instead.
+N Run from Grom'gol to the Swamp of Sorrows | North out of Grom'gol into Duskwood, then east along the road. Go round Darkshire (Alliance guards), take the road east through Deadwind Pass and follow it into the swamp.
+C 1116 @ Swamp of Sorrows, 14.0, 61.0 | Dreaming and adolescent whelps in the misty valley at the west end of the swamp, by the road. If the dust drops slowly, segment 15 can finish it on the dragonkin east of Stonard.
+F Stonard @ Swamp of Sorrows, 46.1, 54.8 | Breyk
+A 1418 @ Swamp of Sorrows, 47.7, 55.2 | Helgrum the Swift, next to the flight master. Keep it: you fly to Kargath at the start of the next segment, where Neeka takes it.
+S Stonard @ Swamp of Sorrows, 45.2, 56.7 | Innkeeper Karakul
+A 698 | Dar
+A 93663 @ Swamp of Sorrows, 44.7, 57.2 | Dar: Lost in Transit (new in Forever, needs level 30). Her courier never reached the Harborage
+C 93663 @ Swamp of Sorrows, 36.0, 44.0 | Find the Courier's Shipment. The quest only says "check near the waters along the road": follow the road from Stonard north-west toward the Harborage and look at every pool and stream bank beside it (the arrow is a guess at the middle of that road). Crocolisks may guard it
+N Take any other new quests offered in Stonard; the logger records them
+A 1389 @ Swamp of Sorrows, 26.0, 31.4 | Magtoor at the Harborage, the draenei village in the north-west
+T 93663 @ Swamp of Sorrows, 26.0, 31.4 | Magtoor: Dar's shipment. Not found on the way? Press Skip and look again on your way back to Stonard
+N Take any new quests offered at the Harborage; the logger records them @ Swamp of Sorrows, 26.0, 31.4 | Several new Forever quests here are done at Fallow Sanctuary with the crystals (killing Lost Ones, a stolen lure on the banks east of here). Hand them in when you come back. Skip The Visiting Mage (93464): it sends you to a mage in Desolace, which this route does not revisit.
+C 1389 @ Swamp of Sorrows, 62.4, 22.7 | Fallow Sanctuary, east of the Harborage: the crystals sit among the Lost Ones' huts and campfires. Kill sawtooth crocolisks for 698 on the way.
+A 1393 | Galen Goodward, just north-east of the crystals. Accepting starts the escort.
+C 1393 @ Swamp of Sorrows, 65.5, 18.2 | Keep Galen alive until he says he is safe.
+T 1393 | Galen's strongbox at his camp, north of Stonard
+A 1392 @ Swamp of Sorrows, 55.7, 34.4 | Kill Noboru the Cudgel (39). He wanders the area roughly between here and 42,36. His cudgel starts the quest.
+C 698 @ Swamp of Sorrows, 56.0, 40.0 | Finish the sawtooth flanks from the crocolisks along the water. Keep them: Tok'Kar on the south-east coast takes them in the next segment, when you ride that coast at 40.
+T 1389,1392 @ Swamp of Sorrows, 26.0, 31.4 | Magtoor. Hand in any new Harborage quests too.
+G Swamp of Sorrows, 46.0, 54.6 | Back to Stonard, where segment 15 starts.

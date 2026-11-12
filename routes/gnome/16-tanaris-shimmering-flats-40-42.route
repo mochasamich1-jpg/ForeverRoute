@@ -1,0 +1,67 @@
+@segment 40-42 Tanaris I & Shimmering Flats II
+@start-level 40
+# Gnome, any class. From the Dwarf route's segment 16: same quests, order, binds and flights. It had no class
+# quests; changed: combat hints are class-neutral, and the hearth back from the pirate cove is the Hearthstone only
+# (the Dwarf route offered its class's second recall spell as an alternative; the stone is bound in Gadgetzan earlier in this segment and not used before).
+# Carried in (segment 15's carry-out): 1111 Wharfmaster Dizzywig and 1178 Goblin Sponsorship (Ratchet), 1137 News for Fizzle
+# (Mirage Raceway). 209 and 669 (Booty Bay) and 212 (Stormwind) ride along until the next Eastern Kingdoms block.
+@carry 209,212,669,1111,1137,1178
+# Prerequisites of the carried quests, handed in by earlier segments: 189 -> 209, 668 -> 669, 1108 -> 1137, 1176 -> 1178.
+@done 189,668,1108,1176
+# Hearth: Southshore at the start (do not use it), Gadgetzan from the Gadgetzan stop on. No training stop on this side of the sea.
+# Carry-out (5): 82 Noxious Lair Investigation and 3520 Screecher Spirits (both done in the next segment), plus 209, 212, 669.
+# Not taken on purpose: 1180 (Gazlowe's follow-up to Booty Bay), 1115 The Rumormonger (Booty Bay), Stoley's chain 2872-2874,
+# the Pozzik chain 1183-1189, Zul'Farrak quests.
+# The level 42 grind stands at the end of the Tanaris part, not at the Mirage Raceway as in the plan: the animals on the flats
+# are 30-35 and worth almost nothing at 41.
+
+# ---------- Theramore -> Ratchet -> Gadgetzan ----------
+FLY Ratchet @ Dustwallow Marsh, 67.5, 51.3 | You arrive on the Theramore dock. Baldruc, the gryphon master, is in the south-east of town.
+T 1111 | Wharfmaster Dizzywig, on the Ratchet dock
+A 1112 @ The Barrens, 63.4, 38.5 | Wharfmaster Dizzywig
+T 1178 | Gazlowe, upstairs in the big building in the middle of Ratchet. Do not take his follow-up: it sends you to Booty Bay.
+FLY Gadgetzan @ The Barrens, 63.1, 37.2 | Bragok, the Ratchet flight master
+S Gadgetzan @ Tanaris, 52.5, 27.9 | Innkeeper Fizzgrimble at the inn
+A 2781 | The Wanted Poster in Gadgetzan, a few steps west of the inn
+A 2875 @ Tanaris, 51.8, 27.0 | The same Wanted Poster
+A 1690 | Chief Engineer Bilgewhizzle, in the middle of town
+A 1707 | Spigot Operator Luglunket, next to him
+A 992 | Senior Surveyor Fizzledowser, in the west of town
+
+# ---------- Sandsorrow Watch and the first Wastewander camp ----------
+C 992 @ Tanaris, 39.0, 29.3 | Ride west to Sandsorrow Watch and use the Untapped Dowsing Widget at the small pool beside the troll huts. The Sandfury trolls around it are elite (42-44): come in from the south-west, use the widget at the near edge of the pool and ride off at once. A bug may jump you when you tap the water: just ride away from it.
+T 992 | Senior Surveyor Fizzledowser in Gadgetzan
+A 82 | Senior Surveyor Fizzledowser. Keep it: the Noxious Lair bugs are 47-50 and belong to the next segment.
+C 1690,1707 @ Tanaris, 62.7, 29.3 | The Wastewander camps east of Gadgetzan: kill 10 Bandits (41-42) and 10 Thieves (40-41). Every Wastewander can drop a Water Pouch; you need 5. Pull one or two at a time and fight at full health. They run at low health: finish them fast or slow them if you can, a runner brings friends.
+T 1690 | Chief Engineer Bilgewhizzle
+A 1691 | Chief Engineer Bilgewhizzle
+T 1707 | Spigot Operator Luglunket
+
+# ---------- Second Wastewander camp, Steamwheedle Port, Lost Rigger Cove ----------
+C 1691 @ Tanaris, 62.0, 37.3 | The southern Wastewander camps, south of the first ones: 10 Shadow Mages (41-43), 8 Rogues (43-44) and 6 Assassins (44-45). They are above you: pull from the edge, one at a time, and kill the Shadow Mages first (interrupt or stun their casts if your class can). Eat, drink or bandage between pulls. Rogues and Assassins sit in stealth, so keep your back to cleared ground.
+C 2781 @ Tanaris, 61.8, 38.2 | Caliph Scorpidsting (46) stands in the middle of the southern camp and walks around with two guards. Leave him for the end of the camp, when you have a level more on you. Rest to full, pull the group from as far away as you can and back off so the three string out; kill the guards first, then the Caliph. If he is too much alone, wait for other players or come back for him after the pirates.
+A 8366 | Security Chief Bilgewhizzle at Steamwheedle Port, the goblin harbour on the coast north-east of the camps
+A 8365 | Haughty Modiste, in the north of the port
+A 3520 | Yeh'kinya, the troll next to her. Keep it: the screechers are in Feralas, next segment.
+C 8366,8365,2875 @ Tanaris, 73.5, 46.5 | Lost Rigger Cove, the walled pirate town down the coast south of the port. Kill 10 each of Southsea Pirates, Freebooters, Dock Workers and Swashbucklers (all 44-45); Andre Firebeard (45) stands by the fire near the docks (73.4, 47.1). The 20 Pirate Hats drop from any of them, but not often, so you stay well past the 40 kills: good, every kill here shortens the grind at the end. Pull from the gap in the wall, never more than two, and finish runners fast or slow them if you can. Dock Workers are on the piers, Swashbucklers on the ships.
+A 2876 @ Tanaris, 73.5, 46.5 | Only if you find a Ship Schedule at the cove (a rare find from the pirates and their footlockers): right-click it to start Ship Schedules. No schedule: press Skip here and on its hand-in.
+T 8366 | Security Chief Bilgewhizzle at Steamwheedle Port
+T 2875 | Security Chief Bilgewhizzle
+T 2876 | Security Chief Bilgewhizzle (only if you had the Ship Schedule)
+T 8365 | Haughty Modiste
+H Gadgetzan | Use your hearthstone
+T 1691 | Chief Engineer Bilgewhizzle
+T 2781 | Chief Engineer Bilgewhizzle
+L 42 @ Tanaris, 62.0, 37.3 | The grind of this segment: half a level or more by the estimate, less for every extra pirate you killed for hats. Best spots: the southern Wastewander camp (41-45, fast respawn, close to Gadgetzan) or back at Lost Rigger Cove if the hats kept you there anyway. Stay until 42 or close to it: the Mirage Raceway hand-ins that follow add about a tenth of a level, and Feralas, next, wants 42. Sell and repair in Gadgetzan before you leave.
+
+# ---------- Shimmering Flats ----------
+T 1137 | Ride north out of Tanaris to the Mirage Raceway. Fizzle Brassbolts, on the gnome side.
+T 1112 | Kravel Koalbeard
+A 1114 | Kravel Koalbeard
+T 1114 | Fizzle Brassbolts. Do not take Kravel's next one, The Rumormonger: it goes to Booty Bay.
+A 1190 | Pozzik, on the goblin side of the track
+N Ask Zamek for his diversion @ Thousand Needles, 79.8, 77.0 | Zamek stands on the goblin side. Tell him to start: while his explosion draws Rizzle away, run straight over to the gnome side.
+T 1190 | Rizzle's Unguarded Plans, on the gnome side: click them while Rizzle is away
+A 1194 | Rizzle's Unguarded Plans
+T 1194 | Pozzik
+N Next: ride west through Thousand Needles to Feralas | You keep 82 (Noxious Lair, Tanaris), 3520 (screechers, Feralas), 209 and 669 (Booty Bay), 212 (Stormwind). Your hearthstone stays in Gadgetzan.

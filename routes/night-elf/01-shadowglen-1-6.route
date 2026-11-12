@@ -1,0 +1,74 @@
+@segment 1-6 Shadowglen
+@start-level 1
+@carry          # none: this is the first segment
+@done           # none: this is the first segment
+# Night Elf, any class. New file (not derived from another route).
+# Shadowglen, the starting valley in the north-east of Teldrassil: the animals around Aldrassil, the grell
+# on the west edge, Iverron and the spider cave in the north, the moonwell, then out of the valley south
+# toward Dolanaar. Three trips out from Aldrassil; every trip ends with hand-ins and a trainer visit.
+# Order reference: TUGs' Shadowglen file (without its deliberate deaths; all text is written new).
+# Class-neutral: the level 1 class "sigil" quests (3116-3120) are not listed, one note says so. TRAIN steps
+# list the five class trainers the data has in Aldrassil. Combat hints work for every class.
+# Positions from the baked Questie data: Tarindrella 57.8, 45.2; Gnarlpine Totems 54-56, 37-46;
+# Moonpetal Lilies around the pond 56.5-58.9, 35.6-39.7; Webwood Eggs 56.8, 26.5; Githyiss the Vile 56.6, 26.3;
+# Shadowglen moonwell 60.0, 33.0; Lost Journal 59.1, 39.5.
+# Unverified in Forever: 97979 The Goddess Provides (Shanda; in the baked Questie data, but not in the data the
+# validator reads, so it is an N step and gives no estimated XP); where
+# exactly the mouth of Shadowthread Cave is (the arrow points at Iverron, who stands beside it).
+# Hearthstone: bound in Shadowglen from the start. Not used: every walk here is under two minutes.
+# Skipped on purpose: 3116-3120 (class quests), 5842 Welcome! (gift voucher, no XP: mentioned in the first step).
+# Carry-out: 928 Crown of the Earth (Corithras Moonrage, Dolanaar), 96630 The Adventurer (Lyreena Duskblade,
+# near Dolanaar), 2159 Dolanaar Delivery (Innkeeper Keldamyr). All handed in at the start of segment 2.
+
+# --- Aldrassil: the first kills ---
+A 456 | Conservator Ilthalaine stands right in front of you when you log in. Got a Shadowglen Gift Voucher in your bags? Hand it to Orenthil Whisperwind next to him for a small gift (no XP)
+C 456 | Young Nightsabers and Young Thistle Boars walk all around the clearing: kill 7 cats and 4 boars. One at a time
+T 456 | Conservator Ilthalaine
+A 457 | Ilthalaine again
+N Ilthalaine now also offers a quest with your class name on it (a sigil for your class trainer) | Your class has its own quests, starting with this one: take them from Ilthalaine and your trainer and fit them in as you go. This guide is not class-specific and does not list them; the logger records what you take
+A 458 | Melithar Staghelm, a few steps north-east of Ilthalaine
+A 4495 | Dirania Silvershine, on the east side of the clearing (needs level 2: you are 2 after the first quest)
+T 458 | Tarindrella, the dryad south-west of Ilthalaine
+A 459,97977 | Tarindrella gives both
+N Shanda, inside Aldrassil (the great tree in the middle of the valley), offers The Goddess Provides @ Teldrassil, 59.2, 40.4 | A Night Elf quest for every class: take it, cast Elune's Light and Shadowmeld once each from your spellbook (both are racials) and hand it in to her at once. It is not in this guide's quest data, so tick this step by hand
+TRAIN | Aldrassil: your class trainer, if you have 10 copper. Druids: Mardant Strongoak (58.6, 40.3), hunters: Ayanna Everstride (58.7, 40.5), priests: Shanda (59.2, 40.4), warriors: Alyissia (59.6, 38.4), rogues: Frahun Shadewhisper (59.6, 38.7). They stand in the rooms of the tree, on different floors: follow the ramp
+
+# --- Trip 1: north, then down the west edge ---
+C 457 @ Teldrassil, 60.5, 35.5 | North of Aldrassil: kill 7 Mangy Nightsabers (more of them toward the north-east) and 7 Thistle Boars
+T 4495 @ Teldrassil, 54.6, 33.0 | Iverron lies beside the mouth of Shadowthread Cave, in the north-west corner of the valley. The spiders around him are level 3-4: walk around them for now
+A 3519 | Iverron
+C 459,97977 @ Teldrassil, 55.2, 40.5 | Go south along the west edge of the valley. Grellkin and Grell (2-4) stand here in groups: kill them for 8 Fel Moss. The 4 Gnarlpine Totems are small objects on the ground in the old furbolg camps among them: click them. Grellkin throw fire from range: run up to them, and pull from the edge of a group
+T 459,97977 | Tarindrella, south-west of the clearing
+T 457 | Conservator Ilthalaine
+T 3519 | Dirania Silvershine
+A 3521 | Dirania. Three things to collect: mushrooms, lilies and one spider ichor
+A 916 | Gilshalan Windwalker, at the foot of Aldrassil on its west side (needs level 3)
+TRAIN | Aldrassil: your class trainer for your level 4 skills (not 4 yet? Come in again after the next trip). Sell at the vendors in the tree
+
+# --- Trip 2: the pond and the spiders ---
+C 3521:2 @ Teldrassil, 57.8, 37.5 | 4 Moonpetal Lilies: white flowers on the shore of the pond north-west of Aldrassil
+C 3521:1 @ Teldrassil, 56.5, 34.5 | 7 Hyacinth Mushrooms: purple mushrooms at the foot of the trees all over the valley; pick up every one you pass on the way north
+C 916,3521:3 @ Teldrassil, 56.0, 31.5 | Webwood Spiders (3-4) around the cave mouth near Iverron: 10 Webwood Venom Sacs and 1 Webwood Ichor. Stay outside the cave for now. Their poison is weak: eat when you are below half health
+T 916 | Gilshalan Windwalker, at Aldrassil
+A 917 | Gilshalan
+T 3521 | Dirania Silvershine, east of the tree
+A 3522 | Dirania. It is timed, but the time is generous: go straight back to Iverron
+TRAIN | Aldrassil: you pass the tree anyway. If you are 4 and have not trained yet, do it now, quickly
+
+# --- Trip 3: Iverron and Shadowthread Cave ---
+T 3522 @ Teldrassil, 54.6, 33.0 | Iverron, beside the cave mouth
+C 917 @ Teldrassil, 56.8, 26.5 | Shadowthread Cave. Keep to the main tunnel, north and uphill, to the big chamber at the very back: the Webwood Eggs lie there. Githyiss the Vile (level 5) guards them: clear the small spiders near her first, fight her alone at full health, then loot an egg
+A 97236 | Githyiss drops the Fang of Githyiss: right-click it in your bags to start this quest
+T 917 | Walk back out and south to Gilshalan Windwalker at Aldrassil
+T 97236 @ Teldrassil, 57.8, 41.6 | Gilshalan takes the fang too
+A 920 | Gilshalan
+T 920 | Tenaron Stormgrip, at the very top of Aldrassil: take the ramp that winds up around the outside of the tree
+A 921 | Tenaron
+C 921 @ Teldrassil, 60.0, 33.0 | Fill the Crystal Phial at the moonwell north of Aldrassil: stand at the water and use the phial from your bags
+T 921 | Back up the ramp to Tenaron Stormgrip
+A 928 | Tenaron. Keep it: Corithras Moonrage is in Dolanaar
+A 96630 @ Teldrassil, 59.1, 39.5 | The Lost Journal, a book lying next to Tenaron (it only appears once his phial quest is handed in, and needs level 4)
+TRAIN | Aldrassil: your class trainer on the way down, for everything up to your level. Sell and buy food: the next stop is Dolanaar
+
+# --- Out of the valley ---
+A 2159 | Porthannius, on the road at the south end of Shadowglen. Then follow the road south toward Dolanaar

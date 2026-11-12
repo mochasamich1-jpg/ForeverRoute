@@ -1,0 +1,59 @@
+@segment 1-6 Valley of Trials
+@start-level 1
+@carry          # none: this is the first segment
+@done           # none: this is the first segment
+# Orc Shaman, Valley of Trials. Follows the TUGs Valley of Trials order with only the shaman lines.
+# Hearthstone: bound to the Valley of Trials from the start (used once, after the cave).
+# Carry-out: 805 Report to Sen'jin Village and 96652 The Adventurer (both handed in next segment).
+
+# --- Start: Kaltunk and Gornek ---
+A 4641 | Kaltunk stands right in front of you when you log in. Got a Valley of Trials Gift Voucher in your bags? Hand it to Magga beside the Den for a small gift (no XP)
+T 4641 | Gornek is inside the Den, the big building just to the west
+A 788,97279 | Gornek gives both
+C 788,97279 | Mottled Boars roam the open ground north of the Den. Abandoned Training Weapons lie on the ground in the same area: pick up six while you hunt. Open each fight with Lightning Bolt, then melee
+A 790 | Hana'zua lies wounded at the north-west edge of the boar field
+C 790 | Sarkoth is a large scorpid (level 4) up on the plateau south of Hana'zua, the high ground north-west of the Den (he is not down at the foot of the hills). Pull him on his own with Lightning Bolt and cast Healing Wave if you drop below half health
+T 790 | Back to Hana'zua
+A 804
+
+# --- Den: first round of turn-ins ---
+T 804,788 | Gornek in the Den
+A 3089,789 | Gornek gives both
+N Optional, for wolf-mount money later: TUGs has you learn Skinning here from a new Forever profession trainer near the Den, who also sells the Skinning Knife (not in our NPC data, so look around). If you take it, skin every beast you kill from now on
+T 97279 | Kzan Thornslash, the weaponsmith on the west side of the Den
+T 3089 | Shikrik, the shaman trainer, a few steps south of Gornek
+TRAIN | Shikrik: learn every spell he offers (Rockbiter Weapon if you do not have it yet) and keep Rockbiter on your weapon from now on
+A 792 | Zureetha Fargaze, next to Shikrik
+A 4402 | Galgar, beside the vendors just north of the Den
+A 5441 | Foreman Thazz'ril, east of the Den (needs level 3). He gives you the Foreman's Blackjack
+
+# --- One loop north through the valley ---
+C 5441,4402,789 | Work your way north: Lazy Peons nap under the trees along the valley sides (use the Blackjack on them only while they are asleep), Cactus Apples sit at the foot of the cactuses, and Scorpid Workers crawl everywhere. Any tails still missing can be finished on the walk back
+C 792 | Vile Familiars (small imps) gather at the north end of the valley in front of the Burning Blade Coven cave. Fight them one or two at a time; do not enter the cave yet
+
+# --- Den: second round ---
+T 4402 | Galgar, north of the Den
+T 789 | Gornek in the Den
+T 792 | Zureetha Fargaze
+A 794
+TRAIN | Shikrik: learn Earth Shock (level 4). It interrupts spellcasting: save it for casters. Sell grey items to Duokna (General Goods) by the Den while you are here
+A 1516 | Canaga Earthcaller, next to Shikrik (needs level 4)
+T 5441 | Foreman Thazz'ril, east of the Den
+A 6394
+
+# --- Burning Blade Coven ---
+C 1516,6394,794 | The cave at the north end of the valley, behind the Vile Familiars. Felstalkers roam around and inside the cave and drop the hooves often. Inside, Thazz'ril's Pick glows on the ground in the chamber with the waterfalls; Yarrog Baneshadow (level 5) waits at the far end with the Medallion. Clear the imps around him first; if he starts casting, interrupt with Earth Shock, and heal between fights
+H Valley of Trials | Hearth back to the Den
+
+# --- Den: hand in, then Spirit Rock ---
+T 6394 | Foreman Thazz'ril, a few steps east of where the hearth drops you. Hand the pick in now so its XP counts before you train at the end of this segment
+T 794 | Zureetha Fargaze, at the Den
+A 805 | Keep it: Master Gadrin in Sen'jin Village takes it next segment
+A 96652 @ Durotar, 42.8, 69.1 | Click the Lost Journal lying near Zureetha to take the quest (needs level 4). Keep it: it goes to Brakk outside Razor Hill next segment
+T 1516 | Canaga Earthcaller
+A 1517 | Canaga hands you an Earth Sapta
+G Durotar, 41.4, 73.5 | The Hidden Path starts in the rocks south-west of the Den. Follow it to Spirit Rock
+T 1517 | At Spirit Rock, drink the Earth Sapta from your bags and the Minor Manifestation of Earth appears. Lost the sapta? Canaga gives you a new one
+A 1518 | The Manifestation gives you a Rough Quartz
+T 1518 | Back to Canaga Earthcaller. You get the Earth Totem (keep it in your bags: every earth totem needs it) and learn Stoneskin Totem
+TRAIN | Shikrik: if you are level 6, learn Earthbind Totem and Healing Wave rank 2. Not 6 yet? Learn them from Swart in Razor Hill next segment instead. Then follow the road east out of the valley toward Sen'jin Village

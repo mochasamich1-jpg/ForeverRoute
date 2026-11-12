@@ -1,0 +1,82 @@
+@segment 6-9 Shen'dar Highlands
+@start-level 6
+@carry 92472,96638
+@done 92470,92471
+# Skyborne Druid 6-9. Shen'dar Village sits in the middle of the west half of Zephras Isle.
+# Alliance (High Order) versions of the village quests, from ForeverChanges: 93461 Welcome to Shen'dar Village,
+# 92596 The High Order and 94413 A Magical Affront (Rathiril Sunlance). TUGs' Alliance file lists the Horde
+# versions (92514, 92595, 94411); if Aonda or Rathiril offer something else, take what they offer.
+# Changed 2026-11-11 after the first play-through: loop 1's quests are handed in when the route passes back through
+# the village on the way to the bandits (before, everything waited for the hearth after loop 2), and the class trainer
+# in the village is a real stop (trainer names and positions are in the current Questie data; the old export had none).
+# 93318 WANTED: Vulgara the Insatiable: flagged elite, but she is level 8 and was soloed at level 7 on the druid.
+# Skipped: 97971 Camping 101: Skinning (needs Skinning 20).
+# Carry-out: 92701 To Valanaar, 93948 Deliver the Signet (both handed in at Valanaar, next segment).
+
+# --- The campsite and the village ---
+T 96638 | Follow the road south to Raan Wildwind's campsite, just west of Shen'dar Village
+A 96101 | Raan Wildwind
+C 96101 @ Zephras Isle, 41.7, 44.8 | Sit down next to Raan's campfire (type /sit) and wait for the Boosted Rest buff
+T 96101 | Raan Wildwind
+A 96646 | Raan Wildwind. He also offers Camping 101: Skinning: only take it if you want Skinning
+T 92472 | Constable Aonda, in the main lodge of Shen'dar Village
+A 93461 | Constable Aonda
+C 93461:1 @ Zephras Isle, 45.0, 46.3 | Rathiril Sunlance, the High Order elder, just around the corner inside the lodge
+A 92596 | Rathiril Sunlance
+C 92596 | Sit down and listen to him until the objective ticks
+T 92596 | Rathiril Sunlance
+A 94413 | Rathiril Sunlance
+C 93461:2 @ Zephras Isle, 43.0, 43.2 | Coriella Calmbreeze, the innkeeper
+S Shen'dar Village | Make the inn your home: Coriella Calmbreeze
+T 93461 | Constable Aonda
+A 92517 | Constable Aonda
+A 93319,92516 | Teeri Wellwind, west of the lodge
+A 92515 | Indari Sunseam, next to her
+A 93951 | Taleen Shimmerthread, next to them
+T 96646 | Zerril Softbreeze, the cook, on the west side of the village: he teaches Cooking
+A 92553 | Zerril Softbreeze
+A 93318 @ Zephras Isle, 43.4, 45.8 | The wanted poster in the village: WANTED: Vulgara the Insatiable. She is flagged elite but is level 8 and on your way round loop 1
+
+# --- Loop 1: west and south-west ---
+C 94413 | Windshaper Novice Seers stand in the hills just west of the village: kill 6. They cast: Moonfire them and finish in melee
+C 92515 | Prideclaws (the big cats) roam the same western hills: collect 10 pelts
+C 92516,93951,92553 | South-west of the village are the hippogryph nesting grounds: kill 8 Hippogryph Youths, 6 Protectors and the Matriarch, and pick up 8 Hippogryph Down feathers from the ground around the nests. Striders in the same fields drop Strider Meat (8) and the nests and striders give Small Eggs (3)
+C 93318 @ Zephras Isle, 42.7, 52.8 | Vulgara the Insatiable (8, elite) sits on a hilltop just north of the nesting grounds, south-west of the village. Fight her last on this loop, when you are 7: full health and mana, Bear Form if you have it, and step back to heal with Rejuvenation and Healing Touch. Too strong? Press Skip and come back after the bandits
+
+# --- Back through the village: hand in loop 1 ---
+T 92516 | Walk back north-east into Shen'dar Village: Teeri Wellwind, west of the lodge
+T 92515 | Indari Sunseam, next to her
+T 93951 | Taleen Shimmerthread, next to them
+T 92553 | Zerril Softbreeze, the cook, on the west side of the village
+T 94413 | Rathiril Sunlance, in the lodge
+T 93318 @ Zephras Isle, 45.2, 45.2 | Danarii Bellowveil, beside the constable in the lodge: Vulgara's head
+TRAIN @ Zephras Isle, 45.2, 44.2 | Naeluna Swiftmend, the druid trainer, in the village: learn your level 6 spells (and 8 if you are 8 already)
+N Sell and repair in the village | Your bags are full of pelts, feathers and meat leftovers. The bandits are next
+
+# --- Loop 2: the bandit cave ---
+C 92517,93319 | Leave the village to the north-east: Highlands Bandits camp around a waterfall. Kill 10 and loot 10 Pilfered Windstones from them. Their leader "Badwind" Bennic is in the cave behind the waterfall: clear the bandits near him first
+H Shen'dar Village | Or walk back south-west; it is not far
+T 92517 | Constable Aonda
+T 93319 | Teeri Wellwind
+
+# --- The cult at Falaath Village ---
+A 93036 | Constable Aonda (needs level 5)
+T 93036 | Sania Silverstream, the cult "missionary" in the village
+A 92529 | Sania Silverstream. She marks you with the Mark of Akir: while you have it the cultists leave you alone. Lost it? Talk to her again
+T 92529 | Follow the road south to Missionary Jasaan, at the entrance of Falaath Village
+A 92528 | Missionary Jasaan
+C 92528 @ Zephras Isle, 48.8, 53.9 | Keep the mark on and go into Falaath Village: climb to the upper floor of the building the arrow points at, where Skypriest Aanders is talking with another cultist, and listen until the objective ticks (spot confirmed in play). Do not attack anyone yet
+T 92528 | Back north to Constable Aonda
+A 92550,93926 | Constable Aonda
+A 92551 | Danarii Bellowveil, next to the constable
+T 93926 | Peacekeeper Vaaniel lies at the western watchtower, south-west of Falaath Village
+A 93927 | From the dead peacekeeper
+C 93927:1 @ Zephras Isle, 42.3, 62.1 | The Bloody Note lies on the ground right beside the dead peacekeeper (a yellow sheet of paper): click it to pick it up and read it (spot confirmed in play)
+C 93927 @ Zephras Isle, 41.0, 64.3 | Then kill Skypriest Aanders just south of the tower and loot Raani's Lucky Feather and the Shadowsong Family Signet
+C 92550,92551 | Falaath Village, east of the tower: kill 6 Al'Aketh Stormcallers and 4 Living Lightning, take Commander Cyclas's head, and open 10 Stolen Shen'dar Supplies crates around the ruins. The Stormcallers cast lightning: stay in melee range and heal with Rejuvenation between pulls
+T 92550 | Constable Aonda
+T 92551 | Danarii Bellowveil
+T 93927 | Constable Aonda
+A 92701,93948 | Constable Aonda: a report and the signet, both for Valanaar
+TRAIN @ Zephras Isle, 45.2, 44.2 | Naeluna Swiftmend, the druid trainer in Shen'dar Village: learn your level 8 spells. The next druid trainer is Lotheluum Starbreeze in Valanaar
+N Sell and repair, then take the road south-east toward Valanaar. It is a long walk: the next segment starts on that road

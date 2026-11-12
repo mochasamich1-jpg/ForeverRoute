@@ -1,0 +1,11 @@
+# ALLIANCE. New Forever dungeon. Source: foreverchanges.pro/dungeons/kroldok-stronghold and quest pages (level range is
+# Blizzard's; position read from the game files by that site; the exact way in was not known).
+@dungeon Krol'dok Stronghold
+@levels 40-45
+@window 39-47
+@best 42
+@hub Badlands, 53.0, 43.0, 12
+@hub Loch Modan, 34.0, 50.0, 8
+@hub Ironforge, 50.0, 50.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is in the Riverglades, the new zone east of the Badlands: a fortress on a hill at about 48.6, 26.3 on the Riverglades map. Alliance players fly to Farholde Keep. Quest givers listed for it: Sergeant Riftan (Riverglades 30.6, 49.1: Lingering Essence, Twilight Mementos), and Ashe Amberhall and Commander Demar Brant in Farholde Keep (Riverglades 66.7, 81.0: Curios of Curiosity, Tome of Twilight, Eye of Mugg). Take what they offer: the addon logs it so these steps can be filled in.

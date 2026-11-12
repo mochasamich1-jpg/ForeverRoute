@@ -1,0 +1,97 @@
+@segment 6-10 Sen'jin Village & Razor Hill
+@start-level 6
+@carry 805,96652
+@done 794
+# Orc Shaman 6-10. Order follows TUGs' 6-9 Durotar file (its Hunter/Priest lines dropped):
+# Sen'jin hub -> Razor Hill hub (bind) -> Tiragarde Keep -> hearth -> coast, Kolkar Crag and the
+# Echo Isles from Sen'jin -> hearth -> the Razormane Grounds, then Heglan last (99048 needs level 9).
+# Skipped: 785 A Strategic Alliance (no giver in the data; Lar's 786 does not need it),
+# 96873 A Pain in the Neck (needs Enchanting), 96876 Ukor's Lost Pack (random drop),
+# the profession Camping 101 quests other than Cooking (they need skill 20 in that profession),
+# 99052 (the sea giant, elite).
+# Carry-out: 831 (Nazgrel, Orgrimmar), 806 (Fizzle, Thunder Ridge) and 99051 (naga, north coast),
+# all done in segment 3.
+
+# --- Sen'jin Village ---
+A 2161 | Ukor, a peon resting by the road on the way to Sen'jin. Carry his burden to the innkeeper in Razor Hill
+A 786 | Lar Prowltusk, on the western edge of Sen'jin Village
+A 817,96821 | Vel'rin Fang, at the north side of the village
+A 818,97225 | Master Vornal, beside Master Gadrin in the middle of the village
+T 805 | Master Gadrin
+A 808,823,826 | Master Gadrin. Pa'zula nearby has a quest that needs Enchanting (disenchanting pendants): skip it unless you are an enchanter
+A 97223 @ Durotar, 55.2, 75.5 | Xar'Ti, the raptor trainer at the pens on the south-west side of the village
+
+# --- North to Razor Hill ---
+C 96821 | Ridgeshade Creepers and Lurkers (spiders) live along the road north to Razor Hill (50-53, 48-65). Kill 6 of each as you walk. The Echo Isles quests come later
+T 96652 @ Durotar, 52.1, 47.3 | Brakk, at his campfire just south of Razor Hill
+A 96604 @ Durotar, 52.1, 47.3 | Brakk
+C 96604 @ Durotar, 52.1, 47.3 | Stand next to Brakk's campfire and type /sit until you get the Boosted Rest buff
+T 96604 @ Durotar, 52.1, 47.3
+A 96655 @ Durotar, 52.1, 47.3 | Brakk also offers Camping 101 quests for other professions. Take those only for a profession you already have; each needs skill 20 in it
+
+# --- Razor Hill, first visit ---
+T 823 | Orgnil Soulscar, in the middle of town
+A 806 | Keep this one: Fizzle is at Thunder Ridge, which the next segment visits
+T 96821 | Gar'Thok, next to Orgnil
+A 784,837 | Gar'Thok. Encroachment (the quilboars west of town) is done at the end of this segment
+A 815 | Cook Torka, a few steps north-west of Gar'Thok
+A 96825 @ Durotar, 51.2, 42.5 | Cook Torka. The prickly pears are for the end of the segment too
+T 96655 @ Durotar, 51.2, 42.5 | Learn Cooking from Cook Torka first (talk to her and train it), then hand the quest in
+S Razor Hill | Make the inn your home: talk to Innkeeper Grosk
+T 2161 | Innkeeper Grosk
+A 791 | Furl Scornbrow, at the top of the watchtower on the north-west side of town
+TRAIN @ Durotar, 54.4, 42.6 | Swart, the shaman trainer on the east side of town: learn your level 6 spells (Earthbind Totem, Healing Wave rank 2) if you did not at Shikrik
+A 96822 @ Durotar, 54.0, 42.7 | Turroc, standing near Swart on the east side of Razor Hill
+
+# --- Tiragarde Keep ---
+C 96822 @ Durotar, 57.5, 54.5 | Tiragarde Keep, south-east of Razor Hill: the Raider's Battleaxe, Bow and Shield lie on the ground among the ruined huts and walls around the keep. Search the outskirts before going inside
+C 784:1,784:2,791 @ Durotar, 58.5, 56.5 | Kill 10 Kul Tiras Sailors and 8 Marines in and around the keep; they drop the 8 Canvas Scraps. They stand in twos and threes: pull with Lightning Bolt to a doorway, drop Earthbind Totem if one runs, and Healing Wave between pulls
+C 784:3 @ Durotar, 59.7, 58.3 | Lieutenant Benedict (level 8) is on the top floor of the keep. Clear the stairs first, then fight him alone. Loot Benedict's Key from him
+A 830 @ Durotar, 59.3, 57.6 | Open Benedict's Chest on the same top floor with the key. The Aged Envelope inside starts The Admiral's Orders
+H Razor Hill | If the hearthstone is still on cooldown, just walk back north-west: Razor Hill is close
+
+# --- Razor Hill, second visit ---
+T 784,830 | Gar'Thok
+A 825,831 | Keep The Admiral's Orders (831) for Nazgrel in Orgrimmar, next segment
+T 791 | Furl Scornbrow, top of the watchtower
+T 96822 @ Durotar, 54.0, 42.7 | Turroc. If you are already level 8, train at Swart next to him now (the level 8 spells are listed on the third visit)
+
+# --- The coast south to Sen'jin ---
+C 825,818 @ Durotar, 62.5, 50.0 | The Gnomish Toolboxes lie in the sunken wreckage in the shallow water off the coast east of Razor Hill and Tiragarde Keep (61-65, 42-61). Swim out, loot 3, and come up for air between them. This stretch of coast is also full of Makrura (crab-men) and Pygmy Surf Crawlers: kill them here for 4 Intact Makrura Eyes and 8 Crawler Mucus, because the beach further south has only a few
+T 818 | Walk south along the shore to Master Vornal in Sen'jin Village
+
+# --- Kolkar Crag ---
+C 786 @ Durotar, 48.0, 79.0 | Kolkar Crag, the centaur valley just west of Sen'jin: burn the three Attack Plans (east end ~49.8,81.3, middle ~47.7,77.3, west end ~46.2,78.9). If a centaur runs at low health, Earthbind Totem slows it. Warlord Kolkanis (9) is a rare that is not always up: if you meet him, fight him alone
+A 99123 @ Durotar, 46.3, 78.6 | Pal'juh is hiding at the west end of the crag, near the third Attack Plan
+C 99123 @ Durotar, 46.3, 78.6 | Escort Pal'juh out of the crag. Clear the centaurs near her first, then stay close and kill whatever attacks her. If she dies, wait for her to come back and take the quest again
+T 786 | Lar Prowltusk, west side of Sen'jin
+T 99123 | Master Vornal
+
+# --- Echo Isles ---
+C 97223 @ Durotar, 68.5, 71.5 | Swim east from the Sen'jin beach to the northern Echo Isle. Kill the Durotar Tigers and Taillasher raptors (6-8) around the Bloodtalon Matriarch one at a time, loot the Taillasher Egg nests on the ground and keep any Tiger Furs. Then pull her alone at full health and mana: she hits harder than the other raptors, so drop Stoneskin Totem and keep Healing Wave ready. Loot her eggs. These kills should make you level 8 before the trolls
+C 808,826,97225 @ Durotar, 67.2, 85.5 | Swim south to the largest of the Echo Isles. Kill 8 Voodoo Trolls and 8 Hexed Trolls and pick up 8 Forgotten Loa Idols lying around the island. Zalazane (10) and Minshina's skull are in the circle of power at the south end (67.5, 87.8). The trolls stand in groups: pull one at a time, Earth Shock the Voodoo Trolls' casts, Stoneskin Totem when two attack. Clear the trolls around Zalazane, then fight him at full health and mana. Kill the tigers on this island too
+C 815,817 @ Durotar, 60.3, 81.5 | On the swim back west to Sen'jin, finish the 3 Taillasher Eggs and 4 Durotar Tiger Furs on the west side of the isles (tigers and egg nests at 59-61, 78-91). Only about one tiger in three drops a fur
+T 97223 @ Durotar, 55.2, 75.5 | Swim back west to Sen'jin: Xar'Ti at the raptor pens
+T 808,826,97225 | Master Gadrin
+T 817 | Vel'rin Fang
+H Razor Hill
+
+# --- Razor Hill, third visit ---
+T 825 | Gar'Thok
+T 815 | Cook Torka
+TRAIN @ Durotar, 54.4, 42.6 | Swart: learn your level 8 spells (Stoneclaw Totem, Lightning Shield and new ranks of Lightning Bolt, Earth Shock and Rockbiter Weapon) if you have not yet
+
+# --- Razormane Grounds ---
+C 837:1,837:2 @ Durotar, 47.5, 48.8 | West of Razor Hill: kill 4 Razormane Quilboars and 4 Razormane Scouts on the plain just south-west of town
+C 96825,837 @ Durotar, 43.0, 39.0 | Razormane Grounds, the quilboar camps in the hills to the north-west: kill 4 Dustrunners (8-9) and 4 Battleguards (9-10) and pick 8 Prickly Pear Fruit from the cactuses there. Battleguards hit hard: Stoneclaw Totem if two come, Healing Wave between pulls. Still level 8 when you are done? Kill a few more quilboars: Orgnil's next quest needs level 9
+T 96825 @ Durotar, 51.2, 42.5 | Cook Torka, on the west side of Razor Hill
+T 837 | Gar'Thok
+
+# --- Heglan Shadeeye ---
+A 99048 | Orgnil Soulscar, next to Gar'Thok (needs level 9). Skip the sea giant quest he offers later: it is elite
+T 99048 @ Durotar, 58.6, 45.6 | Heglan Shadeeye's wrecked hut is east of Razor Hill, just north of Tiragarde Keep
+A 99049 @ Durotar, 58.6, 45.6
+C 99049 @ Durotar, 58.6, 45.6 | Search the wrecked camp around Heglan's hut for the Orcish Dagger, the Banner Scrap and the Broken Bone Trident; they lie on the ground close by
+T 99049 | Back to Orgnil Soulscar in Razor Hill
+A 99051 | Keep this one: the naga scouts are on the north coast, which the next segment visits
+L 10 @ Durotar, 43.0, 39.0 | Not level 10 yet? Go back to the Razormane Grounds and kill quilboars until you are. The next segment starts with Call of Fire and Conscript of the Horde, which both need level 10

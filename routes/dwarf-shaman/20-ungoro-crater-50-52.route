@@ -1,0 +1,105 @@
+@segment 50-52 Tanaris III & Un'Goro Crater
+@start-level 50
+# Carried in (segment 19's carry-out): 4450 Ledger from Tanaris (ledger, leg shafts and flameberge collected in segment 18;
+# the Overdue Package is picked up in Dustwallow Marsh at the start of this segment).
+@carry 4450
+# 4449 Caught! (segment 18) is the prerequisite of 4450.
+@done 4449
+# Order: Ratchet -> Theramore (crate) -> Gadgetzan (hearth) -> Un'Goro east entrance (Torwa, raft) -> Marshal's Refuge ->
+# Fungal Rock loop -> ring 1 (east, Torwa, Slithering Scar, south-west, centre) -> Refuge -> ring 2 (pylons, U'cha,
+# Lar'korwi, Krakle, Ringo) -> Refuge.
+# Carried out (4): 980 The New Springs and 3908 It's a Secret to Everybody (Winterspring, segment 22), 4496 Bungle in the
+# Jungle and 4504 Super Sticky (Gadgetzan, start of segment 21).
+
+# ---------- Ratchet -> Dustwallow Marsh -> Gadgetzan ----------
+FLY Theramore | You arrive at Ratchet by boat. Bragok, the Ratchet flight master (The Barrens 63.1, 37.2). This detour is for the last item on Goodsteel's ledger.
+C 4450:3 @ Dustwallow Marsh, 54.1, 55.9 | Ride west out of Theramore into the marsh to the Damaged Crate (54.1, 55.9) and take the Overdue Package from it. Then ride back to Theramore.
+FLY Gadgetzan | Baldruc, the Theramore gryphon master (67.5, 51.3)
+S Gadgetzan | Innkeeper Fizzgrimble
+T 4450 | Krinkle Goodsteel, the blacksmith (51.5, 28.8). He wants the ledger, 20 Solid Crystal Leg Shafts, the Overdue Package and Goodsteel's Balanced Flameberge. Missing one? Abandon the quest and skip this step.
+A 4496 | Alchemist Pestlezugg. Needs level 50: if you left Stranglethorn at 49, take it on your next Gadgetzan stop instead (it is handed in there in segment 21 anyway).
+A 4504 | Tran'rek
+N Ride south-west across Tanaris and down the ramp into Un'Goro Crater @ Un'Goro Crater, 71.6, 76.0 | In Classic the ramp is in the west wall of Tanaris, past Thistleshrub Valley; it comes out in the south-east of the crater. Torwa Pathfinder, a tauren, stands at the bottom. Devilsaurs (54-56 elite) walk the whole crater: look around before every pull and keep well away from them.
+
+# ---------- The east entrance: Torwa and the raft ----------
+A 4290,4289 | Torwa Pathfinder
+A 3844 | A Wrecked Raft at the edge of the pond west of Torwa (63.0, 68.6)
+T 3844 | A Small Pack, in the water of the same pond (63.1, 69.1)
+A 3845 | From the pack
+C 4290 @ Un'Goro Crater, 68.7, 56.7 | Ride north along the east wall to the Fresh Threshadon Carcass and take a piece. Ravasaur Hunters and Venomhide Ravasaurs (49-51) hunt around it; Stoneform clears the Venomhide poison.
+T 4290 | Back to Torwa Pathfinder
+A 4291 | Torwa Pathfinder
+C 4291 @ Un'Goro Crater, 63.1, 72.4 | West of Torwa, among the Ravasaurs (48-50), lie nests of ravasaur eggs. Walk up to a nest: a Lar'korwi Mate (49-50) attacks. Two mates, two Ravasaur Pheromone Glands. The data has no nest positions: look for the egg piles between Torwa and the raft pond.
+T 4291 | Torwa Pathfinder
+A 4292 | Torwa Pathfinder. Lar'korwi is level 56: you summon him on your last round, after the grind.
+N Ride north along the east wall of the crater to Marshal's Refuge @ Un'Goro Crater, 45.2, 5.8 | The camp lies at the very north end of the crater. Loot everything on the way: any crater mob can drop A Mangled Journal (it starts a quest for Williden Marshal), and Power Crystals (red, blue, yellow, green) grow on the ground all over the crater. Pick up every crystal you pass: you will need 7 of each.
+
+# ---------- Marshal's Refuge ----------
+F Marshal's Refuge @ Un'Goro Crater, 45.2, 5.8 | Gryfe
+T 3845 | Linken (44.7, 8.1)
+A 3908 | Linken. The sword goes to Donova Snowden in Winterspring (segment 22).
+A 3881 | Williden Marshal
+A 3883 | Hol'anyee Marshal
+A 3882 | Spark Nilminer
+A 4492 | Spraggle Frock
+A 4501 | The Beware of Pterrordax poster next to him (43.5, 8.4)
+A 4141 | Muigin (42.9, 9.6)
+A 4503 | Shizzle (44.2, 11.6)
+A 4284 | J.D. Collie, at the north end of the camp (41.9, 2.7)
+A 4243 | Karna Remtravel, at the south edge of the camp (46.4, 13.4)
+
+# ---------- Fungal Rock loop ----------
+C 4504 @ Un'Goro Crater, 56.0, 29.5 | The Lakkari Tar Pits, south-east of the Refuge. Tar Beasts and Tar Creepers (50-52) in the eastern pits drop the 12 Super Sticky Tar, about 1 in 3. The Tar Lurkers and Tar Lords (52-54) in the western pits drop it too, but leave them for later.
+T 4243 | Ride north-east to Fungal Rock, the gorilla cave in the north-east corner. A-Me 01, a broken robot ape, stands inside (67.7, 16.8). Un'Goro Gorillas, Stompers and Thunderers (50-53) fill the cave: pull one at a time.
+A 4244 | A-Me 01
+T 4244 | A-Me 01: hand over the Mithril Casing. No casing? Skip this step and the escort; you can still do the pelts.
+C 4289 @ Un'Goro Crater, 66.1, 16.1 | 2 pelts each from Un'Goro Gorillas, Stompers and Thunderers, in and around the cave. Do this before the escort so the way out is clear. U'cha (55), the named ape deeper in (68.1, 12.6), is for later.
+A 4245 | A-Me 01
+C 4245 @ Un'Goro Crater, 46.4, 13.4 | Escort A-Me 01 out of the cave and west to Karna Remtravel. Stay off your ram and out of Ghost Wolf; gorillas attack on the way out. Stoneclaw Totem pulls them off her.
+T 4245 | Karna Remtravel
+
+# ---------- Ring 1: east, Torwa, Slithering Scar, south-west, centre ----------
+C 4141 @ Un'Goro Crater, 68.0, 35.0 | Ride down the east side. Bloodpetal Lashers and Threshers (48-50) here drop the 15 Bloodpetals, about 4 in 5.
+C 3881:1 @ Un'Goro Crater, 68.5, 36.5 | The Crate of Foodstuffs stands in the wrecked camp among the bloodpetals (68.5, 36.5).
+T 4289 | Ride on south to Torwa Pathfinder
+A 4301 | Torwa Pathfinder. U'cha is level 55: last round.
+C 4496 @ Un'Goro Crater, 48.5, 81.0 | Ride west along the south wall to the Slithering Scar, the silithid hive. Gorishi Wasps, Workers and Reavers (51-53) drop the Gorishi Scent Gland (about 1 in 12) and more than half of them drop Un'Goro Soil; the soil also comes from the dirt piles on the ground all over the crater. You need 1 gland and 5 soil.
+C 3883 @ Un'Goro Crater, 48.7, 85.3 | Go down into the hive to a hatchery chamber, where larval sacs hang from the ceiling (48.7, 85.3), and use the Unused Scraping Vial there. Clear as you go, keep Stoneclaw Totem ready for adds in the tunnels, and do not run past bugs.
+C 3881:2 @ Un'Goro Crater, 38.5, 66.1 | Ride north-west to the second wrecked camp and take the Research Equipment (38.5, 66.1).
+C 3882 @ Un'Goro Crater, 33.3, 73.2 | 8 Dinosaur Bones: bone piles on the ground in the south-west corner (around 33, 73). Stegodons and Diemetradons drop them too, but the Stegodons are 52-55: pick up the piles instead.
+C 4284 @ Un'Goro Crater, 53.0, 48.0 | Ride north-east to Fire Plume Ridge, the volcano in the middle. Power Crystals grow in clusters all around its foot (45-60, 37-58): circle it until you have 7 red, 7 blue, 7 yellow and 7 green.
+C 4503 @ Un'Goro Crater, 52.2, 59.7 | Around the south foot of the ridge: Diemetradons (51-52) drop the 8 Webbed Diemetradon Scales and Pterrordax (50-52) the 8 Webbed Pterrordax Scales, about 1 in 5 each. Every Pterrordax also counts for the poster (10 needed). This is slow: it is a good part of your grind towards 52. Keep Frost Shock for a Pterrordax that flies off at low health.
+N Ride north to Marshal's Refuge @ Un'Goro Crater, 45.2, 5.8 | About 3 minutes on your ram, up the middle of the crater past the tar pits.
+T 3881 | Williden Marshal
+A 3884 @ Un'Goro Crater, 44.0, 7.1 | If A Mangled Journal has dropped, right-click it now. No journal? Skip this step and the next.
+T 3884 | Williden Marshal
+T 3883 | Hol'anyee Marshal
+T 3882 | Spark Nilminer
+T 4141 | Muigin. Leave his next quest: it sends you to Feralas.
+T 4503 | Shizzle
+T 4284 | J.D. Collie
+A 4285,4287,4288 | J.D. Collie
+
+# ---------- Ring 2: pylons, U'cha, Lar'korwi, Krakle, Ringo ----------
+C 4285 @ Un'Goro Crater, 56.5, 12.5 | The Northern Crystal Pylon, east of the Refuge (56.5, 12.5). Walk up to it and click it.
+L 52 @ Un'Goro Crater, 66.1, 16.1 | Short of 52? Stay on the gorillas in and around Fungal Rock (50-53) until level 52; the Tar Lurkers and Tar Lords of the western tar pits (52-54) on the way here also pay well. The targets that follow are level 55-56.
+C 4301 @ Un'Goro Crater, 68.1, 12.6 | U'cha (55), deep in Fungal Rock. Clear the gorillas near him first, start with full health and mana, put Stoneclaw Totem down, and keep Frost Shock on him so you can step back and heal. If he is too strong, abandon The Mighty U'cha.
+C 4287 @ Un'Goro Crater, 77.2, 50.0 | Ride south along the east wall to the Eastern Crystal Pylon (77.2, 50.0). Click it.
+C 4292 @ Un'Goro Crater, 77.2, 50.0 | Lar'korwi (56). Torwa describes the spot as a small trail into the mountains north of his camp, strewn with huge bones; in Classic that is the ledge right by the Eastern Pylon. Use Torwa's Pouch there: place the meat, then rub the mixture on it. Fight him with Stoneclaw Totem down, kite with Frost Shock and heal early. If he is too strong, abandon the quest.
+T 4301 | Ride south to Torwa Pathfinder
+T 4292 | Torwa Pathfinder
+C 4288 @ Un'Goro Crater, 23.9, 59.2 | Ride west along the south wall, then up the west side to the Western Crystal Pylon (23.9, 59.2). Click it.
+A 974 | Krakle, the goblin at the hot springs north-east of the pylon (30.9, 50.4). Needs level 51.
+C 4501 @ Un'Goro Crater, 31.6, 48.6 | 15 Frenzied Pterrordax (51-54) fly around the hot springs and the west side of the crater. Finish the 10 Pterrordax south of Fire Plume Ridge (52, 61) if you still need them.
+C 974 @ Un'Goro Crater, 49.7, 45.6 | Ride east up onto Fire Plume Ridge. Right-click Krakle's Thermometer at each hot spot until one reads as the hottest; the data lists spots at 49.7, 45.6 / 54.0, 47.6 / 53.9, 55.2 / 48.1, 53.3 / 45.5, 48.5. Fire elementals guard the ridge: Flame Shock does nothing to them, use Earth Shock and Frost Shock.
+T 974 | Back down west to Krakle
+A 980 | Krakle. It goes to Donova Snowden in Winterspring (segment 22).
+T 4492 | Ride back up Fire Plume Ridge to Ringo (51.9, 49.8)
+A 4491 | Ringo. 25-minute timer.
+C 4491 @ Un'Goro Crater, 43.6, 8.5 | Lead Ringo north to Marshal's Refuge. When he faints, use Spraggle's Canteen on him and he gets up again. Stay off your ram and out of Ghost Wolf, keep clear of the tar pits, and kill whatever comes near.
+T 4491 | Spraggle Frock
+T 4501 | Spraggle Frock
+T 4285,4287,4288 | J.D. Collie
+A 4321 | J.D. Collie
+T 4321 | J.D. Collie, a moment later
+N You are done in the crater | The next segment starts here with the flight to Gadgetzan (Gryfe, 45.2, 5.8). Keep 4496 and 4504 for Gadgetzan, 3908 and 980 for Winterspring.

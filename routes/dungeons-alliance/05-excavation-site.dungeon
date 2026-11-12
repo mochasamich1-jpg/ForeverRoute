@@ -1,0 +1,16 @@
+# ALLIANCE. New Forever dungeon. Sources: level range (Blizzard's), givers and hand-ins = foreverchanges.pro/dungeon-quests
+# and its quest pages; entrance = Questie dungeons.lua. Not in the Questie quest data.
+@dungeon Excavation Site: Wetlands
+@levels 26-31
+@window 25-33
+@best 28
+@hub Wetlands, 10.0, 58.0, 8
+@entrance Wetlands, 47.8, 56.2
+A 95772 @ Redridge Mountains, 25.8, 46.5 | Dorin Songblade in Lakeshire. Look for his brother Daewyn in the Excavation Site.
+A 95737 @ Ashenvale, 34.9, 48.5 | Llana in Astranaar. It only sends you to Caitlin Grassman in Menethil Harbor.
+A 95646 @ Wetlands, 56.2, 40.5 | Rethiel the Greenwarden. The root core of a Highland Horror inside.
+A 95647 @ Wetlands, 11.9, 58.8 | Caitlin Grassman in Menethil Harbor. Find out what happened to her husband Ardin inside.
+RUN | It is in the Wetlands, in the hills above Whelgar's Excavation. Inside: Ardin Grassman's trail leads to Heartwoven (back to Caitlin), the body of a dwarf starts Fallen in the Fen (back to Dorin Songblade in Lakeshire), and the last boss drops a Titan Relic that starts Lost Relic Carry for Prospector Whelgar (Wetlands 38.8, 52.3), who then sends it on to Ironforge.
+T 95809 @ Wetlands, 11.9, 58.8 | Heartwoven: Caitlin Grassman.
+T 95646 @ Wetlands, 56.2, 40.5
+T 95795 @ Redridge Mountains, 25.7, 46.7 | Fallen in the Fen: Dorin Songblade.

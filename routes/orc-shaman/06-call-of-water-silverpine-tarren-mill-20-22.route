@@ -1,0 +1,96 @@
+@segment 20-22 Call of Water I, Silverpine & Tarren Mill
+@start-level 20
+@carry 1529,1065,3301,264,742,1195,1068,1095,874,3923
+@done 880,913,1064,3922
+# First Eastern Kingdoms trip. The log peaks at 13 quests in Tarren Mill.
+# Left out on purpose: 79007/79192 (the burned note's hand-in is listed in Westfall), 95885 (elite),
+# 530 and 480 (their prerequisite chains 437-441 and 477-479 are level 14-16 Silverpine quests this route
+# never did; any Horde race could take them), 3924 (skipped) and 873 (taken in segment 8).
+# Hearth: Crossroads at the start, Camp Taurajo from the Taurajo stop on.
+
+# ---------- Ratchet: Islen Waterseer ----------
+FLY Ratchet | From Sun Rock Retreat, where the last segment ended (or from Thunder Bluff). From now on use Ghost Wolf for every long run outdoors.
+T 1529 | Islen Waterseer, in the fishing hut on the beach south of Ratchet. Follow the shore south from the flight master.
+A 1530 | Islen Waterseer
+T 874 | Mahren Skyseer, in the same hut. Do not take Isha Awak yet: you come back for it in a later segment.
+
+# ---------- Camp Taurajo and Brine ----------
+FLY Camp Taurajo | Walk back up the shore to the Ratchet flight master
+S Camp Taurajo | Innkeeper Byula. At the end of this segment your hearthstone brings you back here, close to Brine.
+T 1530 | Run south from Camp Taurajo (Ghost Wolf) to Brine's hut (43.4, 77.4) in the Southern Barrens. On the way, keep clear of the silithid hives in the Field of Giants.
+A 1535 | Brine
+C 1535 @ The Barrens, 44.3, 76.8 | Walk to the pond just north-east of her hut and use the Empty Brown Waterskin at the water. Greater Thunderhawks, Stormhide thunder lizards and Hecklefang Stalkers (22-24) roam around it, and the Razormane camp just west of the hut has level 22-26 quilboars: stay away from the camp and Frost Shock anything that chases you.
+T 1535 | Brine
+A 1536 | Brine. Keep the Empty Red Waterskin: you fill it at the well in Tarren Mill.
+
+# ---------- Orgrimmar and the zeppelin ----------
+FLY Orgrimmar | Run back north to Camp Taurajo (Ghost Wolf) and fly from there
+T 3923 | Rilli Greasygob in the Valley of Honor (76.5, 24.4). Skip her follow-up, Samophlange Manual.
+N Leave Orgrimmar by the main gate and take the zeppelin to the Undercity @ Durotar, 50.8, 13.5 | Frezza's platform, on the tower just outside the gate. Do not board the Grom'gol zeppelin on the other platform. It lands at the tower in Tirisfal Glades.
+
+# ---------- Undercity -> Silverpine ----------
+F Undercity @ Undercity, 63.3, 48.6 | From the Tirisfal tower walk south into the Ruins of Lordaeron and take the elevator down into the Undercity. Michael Garrett, the bat handler, stands by the west elevator. You need this flight path so that flights from Tarren Mill can reach the Sepulcher.
+N Walk to the Sepulcher | Go back up to the ruins and take the road west into Silverpine Forest (it enters the zone in its north-east corner). Follow it south (Ghost Wolf) to the Sepulcher, the crypt hill west of the road about halfway down the zone.
+F The Sepulcher @ Silverpine Forest, 45.6, 42.6 | Karos Razok, the bat handler just east of the crypts
+T 3301 | Mura Runetotem, beside the inn
+T 264 | Click Yuriv's Tombstone in the Sepulcher graveyard to place Clarice's Pendant
+A 98299 | Dalar Dawnweaver (new in Forever)
+A 516 | Shadow Priest Allister. Ignore his low-level Border Crossings, and skip the Shadowfang Keep quests in the Sepulcher (dungeon).
+A 95981 @ Silverpine Forest, 44.1, 41.0 | Shadow Priest Allister: Watching the Roads (new). It follows his Dalaran pendant chain, which you have not done, so he may not offer it. If he does not, press Skip here and on its two later steps.
+A 493 | Apothecary Renferrel
+
+# ---------- Southern Silverpine ----------
+C 98299 | Run south on the road past Pyrewood to the Greymane Wall. Kill 5 Sickly and 5 Haggard Refugees (18-20) in the camp below the wall.
+C 516 | Follow the road east to Beren's Peril, the cave just north of the road (around 59, 72). Kill 6 Ravenclaw Drudgers and 6 Ravenclaw Guardians (19-21) and work your way to the back. Pull one at a time; if two come, drop Stoneclaw Totem, and Healing Wave between pulls.
+A 95884 @ Silverpine Forest, 59.4, 71.6 | A Note Scrap drops from the undead in the cave. Right-click it to start the quest.
+T 95884 | The Offering Stone is in the deepest part of the cave
+A 95883 @ Silverpine Forest, 58.0, 69.8 | From the Offering Stone
+C 95883 | Kill the undead in the cave until you loot a Tortured Soul
+T 95883 @ Silverpine Forest, 58.0, 69.8 | Back at the Offering Stone. Do not take The Offering of Blood from the stone: it summons an elite ghost.
+C 95981 | Only if you have Watching the Roads (otherwise press Skip): kill 8 Dalaran Wizards and 8 Dalaran Watchers (18-20) on the roads south and east of Ambermill, on your way east toward Hillsbrad. Earth Shock the Wizards' casts.
+
+# ---------- Into Hillsbrad ----------
+A 494 | Take the road east out of Silverpine into the Hillsbrad Foothills. Deathstalker Lesh camps beside the road.
+F Tarren Mill @ Hillsbrad Foothills, 60.1, 18.6 | Keep east on the road through the Hillsbrad Fields. Hillsbrad Footmen (25-26) patrol the farms right beside the road, with farmers (22-25) around them: stay in Ghost Wolf, keep moving and do not stop to fight here at 20. Past the fields, take the road north-east up to Tarren Mill and stay well clear of Southshore, the Alliance town further south-east. Talk to Zarise for the flight path.
+C 1536 @ Hillsbrad Foothills, 62.2, 20.8 | Use the Empty Red Waterskin at the Spring Well in the middle of town
+T 493,1065 | Apothecary Lydon, a few steps east of Zarise
+A 1066,496 | Apothecary Lydon. His Elixir of Pain needs level 21: you take it when you are back from Durnholde.
+T 494 | High Executor Darthalia
+A 527 | High Executor Darthalia
+A 549 | WANTED poster right next to Darthalia
+A 498 | Krusk, a few steps further east
+
+# ---------- Durnholde Keep ----------
+C 498,549,1066 | Durnholde Keep is south-east of Tarren Mill. Kill Syndicate Rogues and Watchmen outside the walls and in the courtyard; Syndicate Shadow Mages drop the Vials of Innocent Blood: Earth Shock their Shadow Bolts. Rogues stealth, so look around before each pull. The prisoners' chains are locked: Jailor Eston (79.6, 41.8) drops the Dull Iron Key and Jailor Marlgen (79.5, 40.6) the Burnished Gold Key. Both are level 24 and stand inside the keep: clear around them, pull each one alone and drop Stoneclaw Totem if an add joins. With both keys, click the ball and chain at Drull (75.3, 41.5) and at Tog'thar (79.8, 39.7) to free them.
+C 496 @ Hillsbrad Foothills, 64.5, 33.5 | Gray Bears drop the tongues and Forest Moss Creepers drop the ichor. Both roam the hills between Durnholde and Tarren Mill.
+T 498 | Krusk
+T 549 | High Executor Darthalia
+T 1066,496 | Apothecary Lydon
+A 1067,499 @ Hillsbrad Foothills, 61.4, 19.1 | Apothecary Lydon. Keep Return to Thunder Bluff for the next segment.
+T 499 | Umpi, standing next to Lydon
+A 501 @ Hillsbrad Foothills, 61.4, 19.1 | Apothecary Lydon: Elixir of Pain (needs level 21). Still 20? Kill Gray Bears on the hills south of town until you ding, then come back for it.
+
+# ---------- Hillsbrad Fields, first trip ----------
+C 501 | Starving Mountain Lions (23-24) roam the hills west and south-west of Tarren Mill, on the way to the fields
+C 527 | Hillsbrad Fields (around 34, 40): kill Farmhands and Farmers. Farmer Ray is at 33.2, 34.8 and Farmer Getz at 36.7, 39.4. Footmen patrol the farms: pull one at a time and drop Earthbind Totem so runners do not bring friends.
+T 501 | Back in Tarren Mill: Apothecary Lydon
+A 502 | Apothecary Lydon
+T 527 | High Executor Darthalia
+A 528 | High Executor Darthalia
+A 546 | Deathguard Samsa. Every Hillsbrad human drops skulls; you finish this on the next Tarren Mill trip.
+A 567 | Dangerous! poster near the inn. You get two of the four names now and the rest on the next Tarren Mill trip.
+
+# ---------- Hillsbrad Fields, second trip ----------
+T 502 | Feed the elixir to Stanley, the dog at Farmer Ray's farm at the north end of the fields. In Classic he then turns into a hostile Enraged Stanley (24); players report that Forever removed this, so he will probably stay friendly. If he does attack, kill him.
+C 528,567:2,567:4 | Kill 15 Hillsbrad Peasants in the fields. Citizen Wilkes (25) walks the north edge of the farms around 32.6, 39.8 with a Footman close by: pull them apart. Farmer Kalaba (25) works the field at 35.9, 46.6. Leave Clerk Horrace (town hall) and Miner Hackett for the next trip.
+L 22 @ Hillsbrad Foothills, 34.5, 44.0 | Only if you are not 22 yet (the step ticks by itself otherwise): keep killing Peasants, Farmers and Farmhands (22-25) in the fields, but do not grind all the way. Stop when your XP bar at level 21 reads about 20,400 / 25,200 (18,850 if you have Watching the Roads) and press Skip: Battle of Hillsbrad, Beren's Peril and Stop the Spread (and Watching the Roads), handed in next, cover the rest. Their skulls count toward Souvenirs of Death.
+T 528 | Walk back to Tarren Mill: High Executor Darthalia
+A 529 | High Executor Darthalia. Keep it: Blacksmith Verringtan (26) is done on the next Tarren Mill trip.
+A 98094 @ Hillsbrad Foothills, 62.3, 20.4 | High Executor Darthalia (new in Forever). Keep it for the next Tarren Mill trip.
+
+# ---------- Sepulcher hand-ins, then back to Kalimdor ----------
+FLY The Sepulcher | Zarise. The flight goes through the Undercity.
+T 516 | Shadow Priest Allister
+T 95981 @ Silverpine Forest, 44.1, 41.0 | Shadow Priest Allister (press Skip if you never had Watching the Roads)
+T 98299 | Dalar Dawnweaver
+H Camp Taurajo | Back to Kalimdor. Keep the Filled Red Waterskin: Brine is next.

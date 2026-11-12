@@ -1,0 +1,13 @@
+# ALLIANCE. New Forever dungeon. Sources: level range (Blizzard's) and quest givers = foreverchanges.pro/dungeon-quests
+# and its quest pages; entrance = Questie dungeons.lua (Ironforge 27.6, 47.8). Not in the Questie quest data.
+@dungeon Hall of Thanes
+@levels 13-18
+@window 13-20
+@best 15
+@hub Ironforge, 50.0, 50.0
+@entrance Ironforge, 27.6, 47.8
+A 96394 @ Ironforge, 33.1, 47.9 | Afadra Dunwall. Kill 15 Enraged Apparitions and 10 Tormented Souls and put the spirit of Anvilmar to rest.
+A 96403 @ Ironforge, 32.4, 44.8 | Thom Filch. Collect 8 Dwarven Heirlooms inside.
+RUN | The entrance is beneath Old Ironforge. Inside: the Ghostly Attendant gives An Ancient Grudge, and a stone tablet behind the vault door of the last room (easy to walk past on the way to the exit lever) starts The Treaty of Understanding for King Magni. Earthseer Farsen (Dun Morogh 64.9, 58.4) gives Old Ironforge Incursion, but only after the Underground Map quest from a Dark Iron Map item.
+T 96394 @ Ironforge, 33.3, 47.7
+T 96403 @ Ironforge, 32.4, 44.9

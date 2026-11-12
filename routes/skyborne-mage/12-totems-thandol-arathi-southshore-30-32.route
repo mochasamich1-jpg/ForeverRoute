@@ -1,0 +1,130 @@
+@segment 30-32 Thandol Span, Arathi I & Southshore
+@start-level 30
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 98463 Talk of the Town (Southshore -> Booty Bay) and 1302 James Hyal (Menethil -> Theramore;
+# it replaces the 280 XP Theramore version 1282 with 700 XP).
+# Skyborne Mage 30-32. Same quests, order, hearth bind (Southshore) and flights as segment 12 of the Skyborne Druid route.
+# Carry-in: 472 (Dun Modr), 690 (Refuge Pointe), 98219 (Southshore), 270 + 1248 + 98223 (Menethil),
+# 1026 (Ashenvale, segment 13).
+# Carry-out: 525 (Southshore, segment 16), 563 (Stormwind, segment 15), 1026 (Ashenvale), 1179 (Shimmering Flats),
+# 1264 (Theramore), 1453 (Desolace), and 1947 Journey to the Marsh (Tabetha, Dustwallow Marsh, segment 14).
+# Changes from the druid source:
+# - Level 30 training is at Jennea Cannon in the Wizard's Sanctum, where segment 11 ends, not in the Park.
+# - NEW: the mage class quest 1947 Journey to the Marsh is taken from Jennea Cannon (needs level 30). It is only
+#   carried here and in segment 13: Tabetha's hut is in Dustwallow Marsh (segment 14).
+# - The Ironforge visit (six quest steps) now starts in the Hall of Mysteries: learn Teleport: Ironforge from
+#   Milstaff Stormeye (first Ironforge visit of these files at 20+) and train at Bink if you are 32. The druid
+#   source had no trainer there. If you are not 32 yet, segment 13 trains on a Teleport: Stormwind trip.
+# - A mage has no faster way to walk: every long run is on foot, the swim under the Thandol Span is a plain swim.
+# - The Hearthstone (Southshore) is offered once as an option, Alterac camps -> Southshore; nothing later in this
+#   segment needs it, and segment 13 first uses it hours later. No mage teleport is cast in this segment.
+# - All fight hints rewritten for a mage.
+@carry 161,270,472,690,1026,1248,98209,98219,98223
+@done 269,1247,98191
+
+# ---------- Stormwind: training, shopping ----------
+TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum (the mage tower in the Mage Quarter), right behind Archmage Malin. Learn your level 30 spells: Ice Armor is one of them. Not 30 yet? Train what you can; the next trainer is Bink in Ironforge, later in this segment
+A 1947 @ Stormwind City, 49.6, 85.8 | Jennea Cannon. Journey to the Marsh, the level 30 mage quest (needs level 30). It goes to Tabetha in Dustwallow Marsh: you carry it until segment 14. Not offered because you are 29? Skip it; you can take it from her on a later Stormwind visit
+N Buy Runes of Teleportation from a reagent vendor: have 5-10 with you | Segment 13 uses two for training trips to Stormwind
+N Auction House (Trade District): buy 1 Hillman's Cloak and 1 Bolt of Woolen Cloth for Bartolo's Yeti Fur Cloak (565) | The cloak is made by leatherworkers and not sold by vendors. None for sale at a fair price? Then do not take 565 in Southshore and skip its steps
+FLY Thelsamar @ Stormwind City, 71.0, 72.5 | Dungar Longdrink, Trade District
+
+# ---------- Dun Modr and the Thandol Span ----------
+T 472 | From Thelsamar take the road north past the northern guard tower into the Dun Algaz tunnels and through into the Wetlands, then follow the road north all the way (a long walk) to Dun Modr. Longbraid the Grim and his dwarves stand outside the town on the west side (49.8,18.3). Dark Iron dwarves hold the town itself: stay out. Do not take his follow-ups (elite)
+T 161 @ Wetlands, 50.0, 18.2 | Ashlan Stonesmirk, the explosives expert among the dwarves at Dun Modr: the powder from the Stonewrought Dam. Do not take his follow-ups: they lead to an elite fight on the Thandol Span
+A 637 @ Arathi Highlands, 44.3, 92.9 | Before you climb the Thandol Span: go down to the water under the broken western span and swim to the dwarf corpse on the bottom (Arathi map 44.3,92.9). Loot the Waterlogged Envelope and right-click it to start the quest. Then swim back to the Wetlands shore and walk up to the bridge
+A 647 | Foggy MacKreel sits on the stub of the broken western span, at the south (Wetlands) end of the Thandol Span (Arathi map 43.2,92.6). Needs level 28. His moonshine goes to Southshore
+N Cross the Thandol Span north into the Arathi Highlands | Dark Iron dwarves (28-30) stand on the bridge: fight them one at a time (Polymorph a second one), or Frost Nova them and run past
+
+# ---------- Arathi Highlands ----------
+F Refuge Pointe @ Arathi Highlands, 45.7, 46.1 | Follow the road north, then east, to Refuge Pointe in the middle of the zone. Cedrik Prose is the gryphon master
+T 690 | Skuerto, Refuge Pointe
+A 681 | Captain Nials, Refuge Pointe. Needs level 30
+C 681 @ Arathi Highlands, 32.3, 28.7 | North-west from Refuge Pointe across the hills to Northfold Manor (29-35,24-33): 10 Syndicate Highwaymen (30-31, stealthed around the fields) and 6 Syndicate Mercenaries (31-32, at the buildings). Polymorph the second one when two come, Fire Blast the ones that run
+T 681 | Back to Captain Nials at Refuge Pointe. Leave the other Refuge Pointe quests: you come back to Arathi in segment 16
+N Follow the road west through Thoradin's Wall into the Hillsbrad Foothills and on to Southshore | About 8 minutes on foot. Stay on the road past Durnholde Keep; Tarren Mill, north of the road, is a Horde town
+
+# ---------- Southshore ----------
+F Southshore @ Hillsbrad Foothills, 49.3, 52.3 | Darla Harris, the gryphon master north of the town
+S Southshore @ Hillsbrad Foothills, 51.2, 58.9 | Innkeeper Anderson
+A 98463 @ Hillsbrad Foothills, 51.6, 58.6 | Barkeep Kelly, in the same inn (needs level 28): Talk of the Town. Only a message for the barkeep in Booty Bay; you carry it until the route gets there
+T 647 | Brewmeister Bilger, in the inn
+A 98071 | Brewmeister Bilger (new in Forever)
+T 98219 @ Hillsbrad Foothills, 51.5, 58.4 | Lieutenant Farren Orinelle, in the inn
+A 536 | Lieutenant Farren Orinelle
+A 555 | Chef Jessen, in the inn
+A 564 | Darren Malvew (52.4,56.0). Needs level 30
+A 565 | Bartolo Ginsetti (49.4,55.5). Only if you have the Hillman's Cloak and the Bolt of Woolen Cloth
+N Buy Soothing Spices (555) and Fine Thread (565) from Micha Yance, the trade goods vendor (48.9, 55.0)
+A 505 | Magistrate Henry Maleb, in the town hall (48.1,59.1)
+A 98059 @ Hillsbrad Foothills, 46.5, 50.1 | Captain McManus (new in Forever), north-west of town (46.5,50.1)
+
+# ---------- Loop 1: Western Strand ----------
+C 536 @ Hillsbrad Foothills, 42.3, 68.4 | The coast south-west of Southshore (36-49,63-73): 10 Torn Fin Tidehunters (31-32) and 10 Torn Fin Oracles (30-31). Kill the Oracles first: Counterspell stops a heal or a cast; murlocs run for help, so Frost Nova runners or finish them with Fire Blast. Pull from the land side, never in the water
+T 536 | Lieutenant Farren Orinelle
+A 559 | Lieutenant Farren Orinelle
+
+# ---------- Loop 2: murloc heads, Hillsbrad Fields, the yeti cave ----------
+C 559 @ Hillsbrad Foothills, 30.0, 70.0 | Back to the Western Strand. Every Torn Fin murloc drops Murloc Heads (10 needed); the Muckdwellers and Coastrunners further west (20-35,64-76) are only 28-30
+C 98059 @ Hillsbrad Foothills, 29.7, 41.6 | North to Hillsbrad Fields. The town hall is the big building where the Hillsbrad Councilmen and Magistrate Burnside stand (about 29.7,41.6). Put the Sealed Company Request on the bookkeeping table inside. In Classic these farmers are friendly to the Alliance; if Forever made them hostile, go in and out fast. Horde players quest here
+C 565 @ Hillsbrad Foothills, 44.5, 30.0 | Only if you took 565. The yeti cave in the hills north-east of Hillsbrad Fields (42-47,25-34): Cave Yetis (30-31) and Ferocious Yetis (31-32) drop Yeti Fur, about one in three. 10 needed. Pull singles at the cave mouth with Frostbolt; if a second one comes, Frost Nova both and step back
+T 559 | Back to Southshore. Lieutenant Farren Orinelle
+A 560 | Lieutenant Farren Orinelle
+T 560 | Marshal Redpath (49.5,58.7)
+A 561 | Marshal Redpath
+T 561 | Lieutenant Farren Orinelle
+A 562 | Lieutenant Farren Orinelle
+T 98059 @ Hillsbrad Foothills, 46.5, 50.1 | Captain McManus
+T 565 | Bartolo Ginsetti (with the cloak, the wool bolt, Fine Thread and 10 Yeti Fur)
+
+# ---------- Loop 3: Eastern Strand and Dun Garok ----------
+C 562 @ Hillsbrad Foothills, 56.9, 69.2 | The coast south-east of Southshore (52-62,61-82): 10 Daggerspine Shorehunters (30-31) and 10 Daggerspine Sirens (31-32). Sirens cast: kill them first, Counterspell stops a cast. Shorehunters throw nets: fight them on land
+C 98071 @ Hillsbrad Foothills, 71.3, 78.5 | Further south-east along the coast to Dun Garok, the dwarven fort (about 71,79). The dwarves are Alliance. Leave the Fallrook Varietal at the fireplace at the bottom of the fort and take a Sack of Homebrew Hops. The exact spot is not in the data
+T 562 | Lieutenant Farren Orinelle, Southshore
+A 563 | Lieutenant Farren Orinelle. The report goes to Stormwind Keep: you carry it until segment 15
+T 98071 | Brewmeister Bilger
+
+# ---------- Loop 4: turtles and the Syndicate in Alterac ----------
+C 555 @ Hillsbrad Foothills, 63.5, 40.0 | Snapjaws (turtles, 30-31) swim in the river north-east of Southshore (56-69,14-57); start where the river meets the road east of town and work upstream until you have 10 Turtle Meat
+C 505,564 @ Alterac Mountains, 55.0, 72.0 | Cross west into the hills north of Southshore, which are the south edge of the Alterac Mountains. Sofera's Naze (the Syndicate camp at 58,68) and Corrahn's Dagger (48,82) hold the Syndicate Footpads (32-33) and Thieves (33-34): 12 and 8. Thieves are stealthed and stun: keep Ice Armor up, and Frost Nova and step back as soon as you can act. Mountain Lions (32-33) and Hulking Mountain Lions (33-34) roam the slopes around and between both camps: 8 and 10. Polymorph a second lion. Eat and drink to full after each pull; they are 2-3 levels above you
+A 510 | Syndicate Documents on the table in the camp: Sofera's Naze (Alterac 58.3,67.9) or Corrahn's Dagger (Alterac 47.9,82.2). Both camps have a copy
+A 511 | The same documents. Needs level 30
+T 510 | Back to Southshore: walk down the hill, or use the Hearthstone (nothing else in this segment needs it). Magistrate Henry Maleb. Leave his next quest: Alterac comes back in segment 16
+T 505 | Magistrate Henry Maleb
+T 511 | Loremaster Dibbs (50.6,57.1)
+A 514 @ Hillsbrad Foothills, 50.6, 57.1 | Loremaster Dibbs. For Ironforge
+T 555 | Chef Jessen
+T 564 | Darren Malvew
+FLY Ironforge @ Hillsbrad Foothills, 49.3, 52.3 | Darla Harris
+
+# ---------- Ironforge ----------
+N Learn Teleport: Ironforge @ Ironforge, 25.5, 7.1 | From the gryphon master go north-west to the Hall of Mysteries. Milstaff Stormeye, the Portal Trainer, teaches it from level 20 (Classic level, not re-checked). Know it already? Tick this. Each cast needs a Rune of Teleportation
+TRAIN @ Ironforge, 27.3, 8.3 | Bink, the mage trainer in the same hall. Learn your level 32 spells if you are 32. Not 32 yet? Tick this: you train on a Teleport: Stormwind trip in segment 13
+T 514 | Follow the ring east to the Hall of Explorers. Prospector Stormpike
+A 525 @ Ironforge, 74.6, 11.7 | Prospector Stormpike. It goes back to Southshore: keep it until segment 16
+A 1453 @ Ironforge, 70.0, 21.3 | Roetten Stonehammer, Reclaimers Inc., in the Hall of Explorers. For Desolace (segment 13)
+T 637 @ Ironforge, 63.5, 67.3 | Sara Balloo (Questie: 63.5,67.3; the ForeverChanges pins for old Ironforge quests use another map scale and are not used here)
+A 683 @ Ironforge, 63.5, 67.3 | Sara Balloo
+T 683 @ Ironforge, 39.1, 56.2 | King Magni Bronzebeard, in the High Seat
+A 686 @ Ironforge, 39.1, 56.2 | King Magni Bronzebeard
+T 686 @ Ironforge, 39.0, 88.0 | Grand Mason Marblesten (39.0,88.0). Do not take the next step: it needs Alterac Granite
+A 1179 @ Ironforge, 72.7, 94.0 | Pilot Longbeard (Questie puts him at 72.7,94.0; the ForeverChanges page says the Hall of Arms). The crate goes to the Shimmering Flats in segment 14
+N Before you leave: repair, buy food and water, bank what you do not need | Check your Runes of Teleportation (reagent vendor): have at least 4 for segment 13. Start saving gold now: riding training and a mount at 40 are expensive
+FLY Menethil Harbor @ Ironforge, 55.5, 47.7 | Gryth Thurden
+
+# ---------- Menethil Harbor ----------
+T 98223 | Captain Stoutfist, Menethil Keep
+A 1302 @ Wetlands, 10.8, 60.4 | Vincent Hyal, in the Deepwater Tavern (needs level 30): James Hyal. A message for the clerk in Theramore; you carry it until the route gets there
+T 270 | Glorin Steelbrow, in the Deepwater Tavern
+A 321 @ Wetlands, 10.6, 60.6 | Glorin Steelbrow
+T 321 @ Wetlands, 12.1, 64.2 | The Waterlogged Chest in the wreck of the Flying Osprey, south of the docks (12.1,64.2)
+A 324 @ Wetlands, 12.1, 64.2 | The same chest
+C 324 @ Wetlands, 13.0, 65.5 | Bluegill Raiders (28-29) around the wreck and on the shore south of it drop the 5 Lightforge Ingots. They are green to you now
+T 324 @ Wetlands, 10.6, 60.6 | Glorin Steelbrow. Do not take Blessed Arm (322)
+T 1248 | Mikhail, at the bar in the Deepwater Tavern
+A 1249 | Mikhail. Read the next step before you accept
+C 1249 @ Wetlands, 10.5, 60.3 | Tapoke "Slim" Jahn (34) sits near Mikhail (10.5,60.3). When you accept he tries to leave and fights. Be at full health and mana with Ice Armor up before you accept, then Frost Nova him, step back and cast Frostbolt and Fire Blast until he gives up; Mana Shield if he hurts. Do not Polymorph him: it heals him. If he gets away, abandon and take the quest again
+T 1249 | Mikhail
+A 1250 @ Wetlands, 10.5, 60.3 | Tapoke "Slim" Jahn, once he has given up
+T 1250 @ Wetlands, 10.6, 60.8 | Mikhail
+A 1264 @ Wetlands, 10.6, 60.8 | Mikhail. For Commander Samaul in Theramore (segment 14)
+N Take the boat from Menethil Harbor to Auberdine | Segment done. In the log: 525, 563, 1026, 1179, 1264, 1453, and 1947 for Tabetha. Your hearthstone stays in Southshore until Astranaar

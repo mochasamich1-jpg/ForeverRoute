@@ -1,0 +1,101 @@
+@segment 57-58 Silithus
+@start-level 57
+# Carried in from segment 21: Seeping Corruption (3568), ... and a Batch of Ooze (4294), A Sample of Slime... (4293) and
+# Delivery to Andron Gant (3542) for the Undercity, Wasteland (1124, Rabine's letter for Layo Starstrike), A Reliquary of
+# Purity (5527, for Rabine at the end of this segment) and the three Plaguelands deliveries from Everlook (6029, 6030, 5601).
+# All but 1124 and 5527 go on to segment 23, together with the two colossus husks (8858, 8859) taken here.
+@carry 3568,4294,4293,1124,6029,6030,5601,5527,3542
+# Rabine Saturna (1123) was handed in in Moonglade in segment 21; it is the prerequisite of the carried Wasteland (1124).
+# 3517 (segment 20) is the prerequisite of the carried Delivery to Andron Gant (3542).
+@done 1123,3517
+# Adapted from the Orgrimmar, Un'Goro, Silithus and Moonglade blocks at the end of undead-mage 19, with shaman travel:
+# Bloodvenom Post -> fly Orgrimmar (bind) -> fly Marshal's Refuge -> ride into Silithus at Valor's Rest -> Southwind ->
+# Cenarion Hold -> hearth Orgrimmar -> fly Moonglade -> Astral Recall to Orgrimmar -> zeppelin to the Undercity.
+# Hearth: Everlook at the start, Orgrimmar from the first stop on (segment 23 rebinds in the Undercity).
+# Left out on purpose: elites (8283 Deathclasp, Mar'alith's 8304/8306, the Bronzebeard camp and Aurel Goldleaf chains,
+# the war effort briefings), 8320/8321 (need 60), the repeatable text turn-ins 8319/8324, 5526 (Dire Maul) and 4642 (the
+# plan skips it), and Nestor's colossus husk (8857, it goes to Booty Bay). The Regal and Zora husks (8858, 8859) are
+# carried into segment 23, which hands them in at Thorium Point and Light's Hope Chapel.
+# Silithus is full of elite silithids: Hive'Ashi north-west of Cenarion Hold (about 38-51, 12-32) plus a pack on the
+# open sand just south-east of it (about 48-56, 40-54), Hive'Zora in the west (about 20-37, 45-72) and Hive'Regal in the
+# south (about 48-67, 70-99). The steps ride around them.
+# Quest XP ends a little short of 58; segment 23 starts with that in mind.
+
+# ---------- Bloodvenom Post -> Orgrimmar ----------
+FLY Orgrimmar | Brakkar, the Bloodvenom Post wind rider master. You start at level 57 with your hearthstone set to Everlook
+A 8276 | Cenarion Emissary Blackhoof, in the Valley of Strength close to the foot of the wind rider tower
+S Orgrimmar | Innkeeper Gryshka, Valley of Strength. From now on your hearthstone and Astral Recall bring you back here, next to the zeppelin
+FLY Marshal's Refuge | Doras, on the wind rider tower
+N Ride to the north-west corner of Un'Goro and take the ridge path west into Silithus | It comes out at Valor's Rest, the graveyard in the north-east of Silithus. Short of Un'Goro Slime Samples for ... and a Batch of Ooze (4294)? Primal Oozes just south of Marshal's Refuge drop them
+
+# ---------- Silithus: Valor's Rest and Southwind ----------
+T 1124 | Layo Starstrike, Valor's Rest
+A 1125 | Layo Starstrike
+C 1125 @ Silithus, 62.0, 55.0 | Southwind Village, south-west of Valor's Rest: Tortured Druids and Tortured Sentinels drift through the ruins. Earth Shock the druids when they start a cast
+C 5527 @ Silithus, 63.2, 55.4 | Open the Dusty Reliquary in a ruined house in Southwind Village
+T 1125 | Layo Starstrike
+A 1126 | Layo Starstrike
+C 1126 @ Silithus, 60.4, 52.6 | Climb the tower in the west part of Southwind Village and disturb the silithid hive at the top. Hive'Ashi Ambushers jump you: drop Stoneclaw Totem first, keep Healing Wave ready, and loot the Encrusted Silithid Object
+T 1126 | Layo Starstrike
+A 6844 | Layo Starstrike. Umber is in Moonglade; you go there at the end of the segment
+
+# ---------- Silithus: Cenarion Hold ----------
+G Silithus, 48.8, 36.6 | Ride north out of Southwind before you turn west to Cenarion Hold: an elite Hive'Ashi pack sits on the sand south-east of the Hold (around 53, 47)
+F Cenarion Hold | Runk Windtamer, the Horde wind rider master
+T 8276 | Windcaller Proudhorn
+A 8280 | Windcaller Proudhorn. If he does not offer it after Taking Back Silithus, skip it and Stepping Up Security (8281)
+A 8277 | Beetix Ficklespragg
+A 8284 | Geologist Larksbane
+A 8318 | Bor Wildmane
+A 9416 @ Silithus, 49.0, 36.7 | Scout Bloodfist. General Kirika is south of the Hold; you pass the camp later
+A 8858,8859 | Colossus Researchers Eazel and Sophia, inside the Hold, each hand you a husk. Eazel's (Regal) goes to Overseer Oilfist at Thorium Point, Sophia's (Zora) to Lord Maxwell Tyrosus at Light's Hope Chapel: the next segment stops at both, about 10,000 XP each. Skip Nestor's husk: it goes to Booty Bay
+C 8277,8280 @ Silithus, 61.0, 28.0 | East and north-east of the Hold: Stonelash Scorpids, Sand Skitterers and Dredge Strikers share the open sand. Stay east of Hive'Ashi, the big hive north-west of the Hold: its silithids are elite
+C 8284 @ Silithus, 24.0, 12.0 | Ride back past the Hold, go round the south and west sides of Hive'Ashi and north to the Twilight Base Camp in the north-west: Twilight Tablet Fragments lie on the ground around the camp. Leave the three Whirling Invaders (around 28, 27) alone: they rarely drop a fragment and The Windreaver, a level 60 elite elemental, starts beside them. He patrols the east and south sides of the camp, which you cross on the way in: spot him and let him pass, and skip the lone fragment at the south end (about 20, 22). Keep any Elemental Air the Dust Stormers drop if you want Elemental Mastery
+T 8280 | Windcaller Proudhorn, Cenarion Hold
+A 8281 | Windcaller Proudhorn
+T 8284 | Geologist Larksbane
+A 8285 | Geologist Larksbane
+T 8277 | Beetix Ficklespragg
+A 8278 | Beetix Ficklespragg
+
+# ---------- Silithus: Ortell and the western loop ----------
+T 8285 | Hermit Ortell, in his hut in the south-east. Ride east first and then south past Southwind, so the elite silithids south-east of the Hold stay on your right. Below Southwind, kill the Stonelash Pincers and Dredge Crushers you pass: Beetix wants 3 Pincer stingers and Proudhorn 20 Crushers
+A 8279 | Hermit Ortell
+C 8278:2 @ Silithus, 60.0, 62.0 | Leave the hut to the north-west: Hive'Regal starts just south-west of it. Finish the 3 Stonelash Pincer stingers on the sand here, and keep killing every Dredge Crusher you meet
+C 8278:1,8278:3 @ Silithus, 38.0, 78.0 | Ride west along the north edge of Hive'Regal, then south-west into the foothills below Hive'Zora: Stonelash Flayers and Rock Stalkers
+C 8279:2 @ Silithus, 16.1, 86.4 | Keep west along the foothills to Twilight Keeper Exeter's camp in the far south-west. Pull the cultists one or two at a time, Earth Shock the Geolords and Stonecallers when they cast, and drop Stoneclaw Totem if more come. Every Twilight cultist can drop Encrypted Twilight Texts: collect 10 for Bor
+G Silithus, 42.0, 55.0 | Ride back east along the foothills, then north between Hive'Zora and the Hold. Dredge Crushers and Stonelash Pincers roam this strip
+C 8279:1 @ Silithus, 26.4, 36.6 | Twilight Keeper Mayna's camp, north of Hive'Zora. An elite Twilight Prophet can walk the west side of the zone: let him pass
+C 8279:3,8281,8318 @ Silithus, 40.9, 42.2 | Twilight Keeper Havunth at the Twilight Post, just south-west of the Hold. Finish the 20 Dredge Crushers on the sand around both camps, and the 10 Encrypted Twilight Texts. Keep the texts: Ortell's next quest takes them first
+T 8278 | Beetix Ficklespragg, Cenarion Hold
+T 8281 | Windcaller Proudhorn
+A 8282 | Noggle Ficklespragg. Don't hand Bor his texts yet
+
+# ---------- Silithus: the south and Ortell again ----------
+T 9416 @ Silithus, 50.8, 69.5 | General Kirika, at the Horde camp south of the Hold. Elite Hive'Ashi silithids roam the sand right below the Hold: pass them on their west side
+A 9422 @ Silithus, 50.8, 69.5 | General Kirika. Note where the Silithyst Extractor stands in the camp
+C 8282 @ Silithus, 44.6, 91.4 | Hive'Regal's elites start just south of the camp, so ride due west to about 45, 71 before you turn south to the mountains. Noggle's Satchel lies on the ground among the Stonelash Flayers. Deathclasp, a level 59 elite scorpid, rests less than 30 yards south-east of it: come in from the north-west, grab the satchel and leave. If she comes for you, drop Earthbind Totem and run north
+T 8279 | Hermit Ortell. Ride back north the same way, then east past Kirika's camp, keeping north of Hive'Regal
+A 8323 | Hermit Ortell
+T 8323 | Give him the 10 Encrypted Twilight Texts. Bor's quest drops back to 0 of 10; you refill it on the way back
+A 8287 | Hermit Ortell
+C 9422 @ Silithus, 60.6, 63.0 | Ride north-west from Ortell's hut to the Silithyst geyser at 60.6, 63.0, click the Silithyst and walk it south-west to the Silithyst Extractor in Kirika's camp: that line stays well north of Hive'Regal. Empty? Try the geyser at 59.3, 58.8 next. Use the one beside the hut (64.0, 70.9) only as a last resort, and from it walk north-west to about 58, 66 before you turn west: Hive'Regal elites stand just south of the straight line. Go on foot, without mount or Ghost Wolf: mounting drops it, and carrying it flags you for PvP. No Silithyst on any of them? Skip this and the next step
+T 9422 @ Silithus, 50.8, 69.5 | General Kirika
+C 8318 @ Silithus, 39.0, 43.5 | Ride north-west to the Twilight Post around Havunth's spot: Twilight Avengers, Geolords and Stonecallers. Collect 10 more Encrypted Twilight Texts for Bor, Earth Shocking the casters
+T 8282 | Noggle Ficklespragg, Cenarion Hold
+T 8287 | Commander Mar'alith. Skip his elite follow-up
+T 8318 | Bor Wildmane
+
+# ---------- Moonglade and Orgrimmar ----------
+H Orgrimmar | Hearthstone from Cenarion Hold. Save Astral Recall for the way back from Moonglade
+FLY Moonglade | Doras, on the Orgrimmar wind rider tower. You land at Faustron, by the lake south-west of Nighthaven. The Moonglade quests below are worth about 20,000 XP
+T 6844 | Umber, in Nighthaven
+A 6845 | Umber
+T 6845 | Rabine Saturna
+T 5527 | Rabine Saturna, same visit. Skip her follow-up: Shards of the Felvine is in Dire Maul
+A 1185 | Umber
+T 1185 | Umber
+N Cast Astral Recall (back to Orgrimmar) | It is off cooldown, since you used the hearthstone to leave Silithus
+N Saved cloth? Orgrimmar takes cloth donations | Rashona Straglash (63.6, 51.2) and Vehena in the Valley of Spirits (37.7, 87.9) each take 60 wool, 60 silk, 60 mageweave and then 60 runecloth (7826, 7827, 7831, 7824 and 7833-7836). Every hand-in gives experience, which may bring 58 before you train
+TRAIN @ Orgrimmar, 38.8, 36.4 | Valley of Wisdom: learn your level 58 spells if you have reached 58. Not 58 yet? Skip it; Haromm in Stonard is an optional stop next segment. The trainers also offer Elemental Mastery (8410) if you want it for the end of the route
+N Take the zeppelin to the Undercity @ Durotar, 50.8, 13.5 | Leave by the main gate; the zeppelin tower is just outside. Board the zeppelin to Tirisfal Glades (Undercity), not the one to Grom'gol. Keep 3568, 4294, 4293, 3542, 6029, 6030, 5601, 8858 and 8859 in the log; your hearthstone stays on Orgrimmar until you bind in the Undercity

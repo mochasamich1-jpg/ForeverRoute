@@ -1,0 +1,20 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); givers and Forever positions = foreverchanges.pro/dungeon-quests; prerequisites = Questie. Stormwind's
+# map changed in Forever: the arrow points at Warden Thelwater, who stands at the Stockade door.
+@dungeon The Stockade
+@levels 24-32
+@window 23-31
+@best 26
+@hub Stormwind City, 50.0, 50.0
+@entrance Stormwind City, 41.1, 58.1
+A 386 @ Redridge Mountains, 26.3, 46.6 | Guard Berton in Lakeshire. The head of Targorr the Dread.
+A 377 @ Duskwood, 71.9, 47.8 | Councilman Millstipe in Darkshire. The hand of Dextren Ward.
+A 378 @ Wetlands, 49.7, 18.2 | Motley Garmason at Dun Modr, after The Dark Iron War. The head of Kam Deepfury.
+A 388 @ Stormwind City, 73.4, 50.7 | Nikova Raskol. 10 Red Wool Bandanas from the Defias inside.
+A 387 @ Stormwind City, 41.1, 58.1 | Warden Thelwater, at the Stockade door. Kill 10 Defias Prisoners, 8 Convicts and 8 Insurgents.
+RUN | The Stockade is in Stormwind; Warden Thelwater stands at its door. He also gives The Stockade Riots (Bazil Thredd's head), but only at the end of the long Defias chain that starts with The Unsent Letter from the Deadmines.
+T 387 @ Stormwind City, 41.1, 58.1
+T 388 @ Stormwind City, 73.4, 50.7
+T 386 @ Redridge Mountains, 26.3, 46.6
+T 377 @ Duskwood, 71.9, 47.8
+T 378 @ Wetlands, 49.7, 18.2

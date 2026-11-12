@@ -1,0 +1,20 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Maraudon
+@levels 46-55
+@window 45-52
+@best 48
+@hub Desolace, 24.0, 70.0, 8
+@hub Feralas, 75.0, 44.0, 6
+@hub Orgrimmar, 50.0, 50.0
+@hub Thunder Bluff, 50.0, 50.0
+@entrance Desolace, 29.1, 62.5
+A 7068 @ Orgrimmar, 39.2, 86.3 | Uthel'nay in the Valley of Spirits. Shadowshard Fragments drop from the rumblers on the purple side, before the dungeon portal.
+A 7029 @ Desolace, 23.2, 70.3 | Vark Battlescar in Shadowprey Village. Fill the vial at the orange pool inside, then use it on the Vylestem Vines.
+A 7064 @ Desolace, 26.9, 77.7 | Selendra, just outside Shadowprey Village. Kill Princess Theradras, the last boss. Needs level 45.
+A 7028 @ Desolace, 62.2, 39.6 | Willow, east of the Kodo Graveyard. 15 Theradric Crystal Carvings from the enemies inside.
+A 7067 @ Desolace, 50.4, 86.7 | The Centaur Pariah, in the far south of Desolace. Long: five named centaur spirits and a gem.
+RUN | Maraudon is in the west of Desolace, north of Shadowprey Village (fly there from Orgrimmar, Thunder Bluff or Camp Mojache). Inside the outer caves, before the portals, Cavindra gives Legends of Maraudon.
+T 7029 @ Desolace, 23.2, 70.3
+T 7064 @ Desolace, 26.9, 77.7
+T 7068 @ Orgrimmar, 39.2, 86.3

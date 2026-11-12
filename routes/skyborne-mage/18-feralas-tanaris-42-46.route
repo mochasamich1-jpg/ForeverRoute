@@ -1,0 +1,160 @@
+@segment 42-46 Feralas & Tanaris II
+@start-level 42
+# Carried in (segment 17's carry-out): 82 Noxious Lair Investigation (parts still to collect, handed in at Gadgetzan here),
+# 3520 Screecher Spirits (Feralas spirits, back to Yeh'kinya here), 209 Skullsplitter Tusks and 669 Sunken Treasure
+# (Booty Bay, segment 20), 212 A Meal Served Cold (Stormwind, segment 19).
+@carry 82,209,212,669,3520
+# Prerequisites of the carried quests: 992 -> 82, 189 -> 209, 668 -> 669.
+@done 992,189,668
+# Skyborne Mage segment: same quests, order and hearth binds as the Skyborne Druid source (its segment 18).
+# Order: Thalanaar -> Moonweavers -> Feathermoon (hearth) -> mainland loop + the level 44 grind -> Stormwind (train) ->
+# Feathermoon -> east loop (Woodpaw, Writhing Deep, Rage Scar + the level 45 grind, robot) -> Feathermoon -> north coast ->
+# Thalanaar -> Gadgetzan (hearth) -> Tanaris II -> Stormwind (train) -> Gadgetzan -> Teleport: Ironforge.
+# Deviations from the druid source:
+# - The source had no class quests in this file; no quest removed, @carry / @done unchanged.
+# - All combat hints rewritten for a mage (Frostbolt, Frost Nova, Polymorph, Counterspell as the interrupt, food and water).
+#   Escorts: a mage cannot tank, so the hints say Frost Nova / Polymorph the attackers and kill them fast. Swims are plain
+#   swims; a mage cannot remove poison (bandage, eat).
+# - Training trip 1 (Ruins of Isildien, after the level 44 grind): Teleport: Stormwind, Jennea Cannon (level 42 + 44),
+#   Hearthstone to Feathermoon. The Hearthstone is ready: its last use was in Tanaris in the previous segment, before
+#   the level 42 grind.
+# - Training trip 2 (Steamwheedle Port, after the OOX-17 escort, level 46): Teleport: Stormwind, Jennea Cannon, Hearthstone
+#   to Gadgetzan, in place of the ride back. The Hearthstone was last used at level 44 in Feralas, a level and a half of
+#   play earlier, and is bound in Gadgetzan.
+# - Last leg: the source flew Gadgetzan -> Theramore and took the boat to Menethil Harbor, only to fly on to Ironforge at the
+#   start of the next segment. Now it is one cast of Teleport: Ironforge from Gadgetzan (no quest, flight-path pickup
+#   or tram quest is skipped: Theramore and Menethil are known flight points with nothing to do there). The old way is
+#   given as the fallback in the step.
+# - Runes of Teleportation used in this file: three.
+# Carried out (5): 209, 669 (Booty Bay), 212 (Stormwind), 648 and 2767 (robot escorts, Booty Bay).
+
+# ---------- Thousand Needles -> Thalanaar -> the Moonweavers ----------
+N Ride west from the Mirage Raceway, up out of the Shimmering Flats and along the floor of Thousand Needles to Thalanaar @ Feralas, 89.5, 45.9 | Stay on the canyon floor: Freewind Post on the mesa above is a Horde town. The road leaves the canyon at its west end; Thalanaar is the small night elf camp right at the Feralas border.
+F Thalanaar @ Feralas, 89.5, 45.9 | Thyssiana, the hippogryph master
+N Ride west on the Feralas road to the Moonweavers' hill @ Feralas, 65.9, 45.6 | About 5 minutes on your mount. The road passes just south of Camp Mojache, a Horde town: stay on the road and keep riding. Kindal and Jer'kai Moonweaver stand on a hill at the south-west edge of the Grimtotem compound.
+A 2969 | Kindal Moonweaver. First kill the Grimtotems that stand near the sprite darter pen, then take the quest: it has a 6-minute timer and starts as soon as you accept.
+C 2969 @ Feralas, 67.9, 43.5 | Kindal walks with you into the camp. Open the pen with the Bamboo Cage Key, then kill the Grimtotems that rush in: at least 6 sprite darters and Kindal must live. You cannot hold them on you, so stop them: Frost Nova as they arrive, Polymorph one, and kill the rest fast (Cone of Cold and Arcane Explosion when they bunch up); Counterspell the Shamans' heals. If it fails, take the quest again; if it keeps failing, skip it and Doling Justice.
+T 2969 | Kindal Moonweaver, back on the hill
+A 2970 | Jer'kai Moonweaver, next to her
+C 2970 | The Grimtotem compound below the hill: 12 Naturalists, 10 Raiders, 6 Shamans (41-44). Pull from the edge of the camp, Polymorph a second one, Counterspell the Shamans' heals, eat and drink between pulls.
+T 2970 | Jer'kai Moonweaver. He offers a second Doling Justice that goes to Darnassus: leave it.
+
+# ---------- Feathermoon Stronghold ----------
+N Ride west along the road to the dock on the Forgotten Coast and take the boat to Feathermoon Stronghold @ Feralas, 44.8, 43.4 | The road ends at the coast; the dock is where the gnome Zorbin Fandazzle stands. The boat crosses to Sardor Isle in about a minute.
+F Feathermoon Stronghold @ Feralas, 30.2, 43.3 | Fyldren Moonfeather
+S Feathermoon Stronghold | Innkeeper Shyria (31.0, 43.5)
+A 2866 | Shandris Feathermoon, in the main building
+A 4124 | Latronicus Moonspear, next to her
+A 2982 | Angelas Moonbreeze
+T 4124 | Ginro Hearthkindle
+A 4125 | Ginro Hearthkindle
+A 2821 | Pratt McGrubben, near the hippogryph master
+T 2866 | Ride south-west on the isle to the Ruins of Solarsal and click the Solarsal Gazebo (26.3, 52.3). Hatecrest naga (41-43) stand around it.
+A 2867 | From the gazebo
+T 2867 | Back in the stronghold: Shandris Feathermoon
+A 3130 | Shandris Feathermoon
+T 3130 | Latronicus Moonspear
+A 2869 | Latronicus Moonspear
+C 2869 @ Feralas, 28.5, 53.8 | Back at the Ruins of Solarsal: Hatecrest Warriors, Screamers, Sirens and Wave Riders drop the 10 scales. Counterspell a Screamer or Siren when it casts.
+T 2869 | Latronicus Moonspear
+A 2870 | Latronicus Moonspear. Lord Shalzaru is level 47: you kill him after the level 44 grind, on your next visit.
+
+# ---------- Mainland loop and the level 45 grind ----------
+N Take the boat back to the mainland dock @ Feralas, 44.8, 43.4 | Keep any OOX-22/FE Distress Beacon that drops from here on: almost every Feralas mob can drop it (about 1 in 100), and you use it on the east loop.
+T 4125 @ Feralas, 45.4, 65.0 | Ride south along the Forgotten Coast to the Wrecked Row Boat on the beach.
+A 4127 | From the boat
+C 2821 @ Feralas, 53.5, 57.5 | Ride east into Feral Scar Vale. Feral Scar Yetis, Enraged and Hulking Feral Scars (43-46) drop the 10 Thick Yeti Hides.
+C 3520 @ Feralas, 55.0, 52.0 | Screecher Spirits: Rogue Vale Screechers (44-46) roam north and west of the vale (48-61, 47-59), Vale Screechers (41-43) the slopes east of it (57-60, 55-62). Kill one, use Yeh'kinya's Bramble on the corpse, then click the spirit that appears. You need three.
+C 2982 @ Feralas, 60.0, 64.0 | Ride south-east to the Ruins of Isildien. Gordunni Brutes stand at the north edge (60, 55), Warlocks and Shaman deeper in (59-61, 64-68): 8 of each. Pull the casters out of sight of the next group and Counterspell their casts; Polymorph a second ogre that joins.
+L 44 @ Feralas, 60.0, 62.0 | The big grind of the route starts here. Stay on the Gordunni ogres of the Ruins of Isildien (42-46) and the Feral Scar yetis in the vale just west (43-46) until level 44. Everything left in Feralas is level 44-50: Lord Shalzaru, the Zukk'ash hive, the Rage Scar yetis, the coast giants. Keep looting: the robot beacon drops here too.
+N Cast Teleport: Stormwind | Training trip (one Rune of Teleportation). Your Hearthstone is ready (last used in Tanaris) and bound in Feathermoon Stronghold, where you go next anyway. No rune? Skip this step and the next and just use the Hearthstone.
+TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum in the Mage Quarter: learn your level 42 and 44 spells. Restock Runes of Teleportation at a reagent vendor: you need two more in this segment.
+H Feathermoon Stronghold | Hearthstone, straight from Stormwind
+T 4127 | Ginro Hearthkindle
+A 4129 | Ginro Hearthkindle
+T 4129 | Quintis Jonespyre, in the next building (32.4, 43.8)
+A 4130 | Quintis Jonespyre
+T 4130 | Ginro Hearthkindle
+A 4131 | Ginro Hearthkindle
+T 2821 | Pratt McGrubben
+A 7733 | Pratt McGrubben
+T 2982 | Angelas Moonbreeze
+C 2870 @ Feralas, 28.5, 70.5 | Swim south from Sardor Isle to the Isle of Dread. Lord Shalzaru (47) is in the naga cave on its shore; Hatecrest Serpent Guards, Sorceresses and Myrmidons (43-45) stand on the way in. Clear to him and fight him alone: Frostbolt, Frost Nova and step back when he reaches you, Counterspell his casts. Stay on the shore: in Classic the high ground of this isle belongs to elite chimaeroks.
+T 2870 | Back in the stronghold: Latronicus Moonspear
+A 2871 | Latronicus Moonspear
+T 2871 | Vestia Moonspear (30.1, 45.1)
+
+# ---------- East loop: Woodpaw, Writhing Deep, Rage Scar, robot ----------
+N Take the boat to the mainland and ride east along the road to the Woodpaw Hills @ Feralas, 73.3, 56.3 | A long ride: follow the road east past the Twin Colossals turn-off, then leave it south-east before Camp Mojache (Horde).
+T 4131 | Large Leather Backpacks in the big Woodpaw gnoll camp (73.3, 56.3). Woodpaw Mystics, Reavers and Alphas (42-44) guard it.
+A 4135 | From the backpacks. You also get an Undelivered Parcel.
+A 4281 @ Feralas, 73.3, 56.3 | Right-click the Undelivered Parcel in your bags to start Thalanaar Delivery. You hand it in when you leave Feralas.
+T 4135 | Ride south into the Writhing Deep, the silithid hive. The Zukk'ash Pod hangs at the bottom of the hive (72.1, 63.7). Zukk'ash bugs are 44-46: kill your way down, do not run past them.
+A 4265 | From the pod: Raschal is freed. You report it to Ginro later.
+C 7733 @ Feralas, 53.4, 31.7 | Ride back north-west to the road, west along it, then north to Rage Scar Hold. Rage Scar Yetis, Ferocious and Elder Rage Scars (46-49) drop the 10 hides. Pull one at a time from as far as you can; Frost Nova and step back when it reaches you, Polymorph a second one that joins.
+L 45 @ Feralas, 53.4, 31.7 | Second half of the grind: stay on the Rage Scar yetis until level 45. They are 2-4 levels above you and pay well; if they hurt too much, ride back to the Gordunni ogres at the Ruins of Isildien (60, 62) instead. Zorbin's and Rockbiter's quests need level 44-45.
+A 2766 @ Feralas, 53.4, 55.7 | Ride south to Feral Scar Vale. Right-click the OOX-22/FE Distress Beacon: the robot is in a small cave at the edge of the vale. No beacon yet? Kill the yetis and screechers around the cave until one drops; if you give up, skip these four robot steps (the Booty Bay hand-ins for it in segment 20 then drop out too).
+T 2766 | Homing Robot OOX-22/FE
+A 2767 | Homing Robot OOX-22/FE
+C 2767 @ Feralas, 45.0, 43.5 | Escort the robot west to the dock on the Forgotten Coast. Stay off your mount and walk beside it. Ambushers jump it on the way: you cannot pull them onto yourself, so Frost Nova them, Polymorph one and kill the others fast. You hand it in at Booty Bay in segment 20.
+N Take the boat to Feathermoon Stronghold @ Feralas, 44.8, 43.4 | You are at the dock already.
+T 4265 | Ginro Hearthkindle
+A 4266 | Ginro Hearthkindle
+T 4266 | Shandris Feathermoon. She offers Rise of the Silithid (to Darnassus): leave it.
+T 7733 | Pratt McGrubben
+N Lord Shalzaru still alive? Kill him now and hand in to Latronicus and Vestia Moonspear | Only if you skipped him earlier.
+
+# ---------- North coast: Zorbin, Rockbiter and Shay ----------
+N Take the boat back to the mainland dock @ Feralas, 44.8, 43.4
+A 7003,7721 | Zorbin Fandazzle at the dock
+A 2844 | Ride north along the coast to Rockbiter, the friendly giant at the foot of the Twin Colossals (42.4, 22.0). On the way, zap any giant you pass with Zorbin's Ultra-Shrinker and kill the small version: Land Walkers and Cliff Giants walk around Rockbiter's camp.
+T 2844 | Shay Leafrunner, further north at the edge of the Northspring harpy nests (38.2, 10.3)
+A 2845 | Shay Leafrunner. 15-minute timer.
+C 2845 @ Feralas, 42.4, 22.0 | Take Shay's Bell from the chest next to her, then walk back south to Rockbiter. She wanders off every minute or so: ring the bell and she runs back. Stay off your mount and kill anything that comes near her; the Northspring harpies (48-50) are close at the start.
+T 2845 | Rockbiter
+C 7003,7721 @ Feralas, 43.5, 49.0 | Back down the coast, south of the dock. Sea Elementals and Sea Sprays (47-49) drop the 10 cores. For the 15 residues, zap Shore, Wave and Deep Striders with the Ultra-Shrinker, then kill the small zapped giant. The giants are elite: never fight one that is not zapped.
+T 7003,7721 | Zorbin Fandazzle. Skip his repeat versions.
+N Take the boat to Feathermoon Stronghold @ Feralas, 30.2, 43.3 | You are at the dock. Keep the Hearthstone for the training trip in Tanaris.
+FLY Thalanaar | Fyldren Moonfeather
+T 4281 | Falfindel Waywarder (89.6, 46.6)
+FLY Gadgetzan | Thyssiana
+
+# ---------- Tanaris II ----------
+S Gadgetzan | Innkeeper Fizzgrimble. Your hearthstone stays here into the next segment.
+A 5863 | Andi Lynn
+A 2605 | Marin Noggenfogger
+A 3362 | Tran'rek
+C 82 @ Tanaris, 33.5, 44.5 | Ride west to the Noxious Lair. Centipaar bugs (47-50) drop the 5 insect parts; Workers, Tunnelers and Sandreavers drop them most often. Fight at the mouth of the hive, one at a time, and keep them off you with Frost Nova: you cannot remove their poison, so bandage and eat between pulls.
+T 82 | Back in Gadgetzan: Alchemist Pestlezugg
+A 10 | Senior Surveyor Fizzledowser
+A 3161 | Ride south out of Gadgetzan to Marvon Rivetseeker, alone at a small camp in the desert (52.7, 45.9)
+C 3161 @ Tanaris, 47.5, 65.0 | Ride south-west to the Eastmoon Ruins. Keep the Gahz'ridian Detector running: it shows the buried ornaments on your minimap. You need 30; the Southmoon Ruins (40, 73) hold more. Dunemaul ogres camp in both ruins.
+L 46 @ Tanaris, 40.7, 58.0 | The Dunemaul Compound, just north-west. Thistleshrub Valley and the two escorts after it are level 48-50, so kill Dunemaul Brutes and Enforcers (46-48) here until level 46; they count for The Dunemaul Compound. The ogres stand in twos and threes: Polymorph the second one, Frost Nova a third and step back, Counterspell the Ogre Mages' and Warlocks' casts, eat and drink between pulls.
+C 5863 @ Tanaris, 41.5, 57.8 | Finish the 10 Dunemaul Brutes and 10 Enforcers, then kill Gor'marok the Ravager (49) in the compound. Clear the ogres around him first and fight him on his own: open with Frostbolt from as far as you can, Frost Nova and step back each time he reaches you.
+C 2605,3362 @ Tanaris, 29.3, 65.5 | Thistleshrub Valley, the cactus garden south-west of the compound. Thistleshrub Dew Collectors drop the gland (about 1 in 10); 8 Gnarled Thistleshrubs and 8 Rootshapers (48-50) are the kill targets. Pull them one at a time.
+A 1560 | Tooga the turtle sits at the south end of the valley (31.8, 74.1). Accept it only when the rest of the valley is done: 30-minute timer.
+T 3161 | Lead Tooga north-east across the desert. Marvon Rivetseeker (52.7, 45.9) is right on your line to Torta: hand in Gahz'ridian as you pass. Tooga follows you: stay off your mount, keep him close and kill anything that attacks him.
+C 1560 @ Tanaris, 66.6, 25.7 | Go on north-east to Torta, on the beach just south of Steamwheedle Port. No detours and no extra pulls.
+T 1560 | Torta
+T 3520 | Yeh'kinya in Steamwheedle Port, just north of Torta. Skip his next quest, The Prophecy of Mosh'aru: it needs Zul'Farrak.
+C 10 @ Tanaris, 56.0, 71.2 | Ride south along the coast to the Gaping Chasm. Scrimshank's Surveying Gear lies deep inside the silithid hive. Hazzali bugs are 47-50: clear your way in, one or two at a time; when adds come in the tunnels, Frost Nova, step back and use Cone of Cold or Arcane Explosion on the pack. Drink before every pull down there.
+A 351 @ Tanaris, 60.2, 64.7 | Right-click the OOX-17/TN Distress Beacon if one has dropped (any Tanaris mob, about 1 in 100): the robot sits just north-east of the Gaping Chasm. No beacon? Skip these four robot steps; Oglethorpe's hand-in for it in Booty Bay (segment 20) then drops out too.
+T 351 | Homing Robot OOX-17/TN
+A 648 | Homing Robot OOX-17/TN
+C 648 @ Tanaris, 67.0, 23.0 | Escort the robot north to Steamwheedle Port. Stay off your mount and walk beside it; when ambushers jump it, Frost Nova them, Polymorph one and kill the others fast. You hand it in at Booty Bay in segment 20.
+N Cast Teleport: Stormwind | Training trip in place of the ride back (one Rune of Teleportation). Your Hearthstone is ready (last used at level 44 in Feralas) and bound in Gadgetzan. Skipped the robot? Cast it right at the Gaping Chasm. No rune? Skip this step and the next and just use the Hearthstone.
+TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum in the Mage Quarter: learn your level 46 spells. Leave with 5 or more Runes of Teleportation (reagent vendor): the next one goes in a few minutes.
+H Gadgetzan | Hearthstone, straight from Stormwind
+T 10 | Senior Surveyor Fizzledowser, in the west of Gadgetzan
+A 110 | Senior Surveyor Fizzledowser
+T 110 | Alchemist Pestlezugg
+A 113 | Alchemist Pestlezugg
+T 113 | Senior Surveyor Fizzledowser. He offers Rise of the Silithid (to Darnassus): leave it.
+T 5863 | Andi Lynn
+T 3362 | Tran'rek
+T 2605 | Marin Noggenfogger
+A 2606 | Marin Noggenfogger
+T 2606 | Sprinkle, a few steps away. Leave her next quest: its herb grows in the Hinterlands.
+
+# ---------- Gadgetzan -> Ironforge ----------
+N Cast Teleport: Ironforge | Sell and repair in Gadgetzan first. One Rune of Teleportation takes you straight to where the next segment starts. Your hearthstone stays set to Gadgetzan. If you cannot teleport: fly to Theramore with Bera Stonehammer, the Gadgetzan gryphon master (51.0, 29.3), take the boat from the Theramore dock to Menethil Harbor and fly to Ironforge from there. Keep these for later: 648 and 2767 (robots), 209 and 669 (all Booty Bay, segment 20) and 212 (Stormwind, next segment).

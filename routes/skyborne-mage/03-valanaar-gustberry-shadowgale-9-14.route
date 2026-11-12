@@ -1,0 +1,156 @@
+@segment 9-14 Valanaar, Gustberry Lowlands, Shadowgale Forest & the Shrine of Akir
+@start-level 9
+@carry 92701,93948
+@done 92550,93927
+# Skyborne Mage 9-13. Valanaar is the town in the south-east of Zephras Isle. Loops out of it:
+#  1 west: the Missing Scholar, the Windfield Orchard chain (hearth back)
+#  2 west again: the Shriekling Matriarch is done on loop 1; standing stones, crabs at Windsong Lake
+#  3 north-east: the eastern watchtower
+#  4 north-west: the turncoat and the assassins (hearth back)
+#  5 north: Shadowgale Forest (TUGs marks it optional; we do it for the XP), then the Shrine of Akir,
+# Mage quest on this island: 93791 Speak with Belann (Anathamaas Aetherwind, level 10) -> Belann Windwood ->
+# 93797 Boughs in the Wind (a Wind-Infused Bough from the wind shrine south of Falaath Village; reward: a wand).
+# The shrine's exact spot is not published: the step's arrow is approximate. Positions from the ForeverChanges pages.
+# Left out: 93318 (elite), 93459 (repeatable ears), 94898 / 94901 / 94902 (disabled or placeholder quests),
+# 92640 Desperate Times is flagged elite in the digest but is a talk-to-NPCs quest: kept.
+# Carry-out: 94946 The Magical City of Dalaran (handed in on arrival in Dalaran, next segment).
+
+# --- Arriving in Valanaar ---
+A 93317 | Nyalah Brightfire, on the west side of Valanaar as you come in
+S Valanaar @ Zephras Isle, 62.2, 72.6 | Make the inn your home
+A 92679 | Alvarion Windfield, by the inn
+C 92679:2 @ Zephras Isle, 62.1, 73.3 | Stay and listen to Alvarion's story until it ticks
+A 94484 | Lotheluum Starbreeze, the druid in the middle of town (needs level 8)
+TRAIN @ Zephras Isle, 65.9, 80.5 | Anathamaas Aetherwind, the mage trainer in the High Order lodge at the south end of town: learn your level 8 spells (Polymorph, Arcane Missiles). If he does not train, skip this: the next trainer is in Stormwind
+A 94896,94897 | Ealaane Nimbuswalker, among the refugees east of Lotheluum (needs level 8)
+T 93948 | Talaanis Shadowsong, in the big hall at the east end of town
+T 92701 | Valennia Stormfist, next to her
+A 92699,93949 | Valennia Stormfist
+T 92699 | Elaadrin Evengale, in the High Order lodge at the south end of town
+A 92709 | Elaadrin Evengale (needs level 7)
+C 92709 @ Zephras Isle, 66.6, 79.9 | Listen to Elaadrin until it ticks
+T 92709 | Elaadrin Evengale
+A 92727 | Dondallion Whisperwind, in the same lodge
+A 92741 | Iaadaria Bitterwind, in the same lodge (needs level 8). The talons come from Shadowgale Forest, much later
+C 93949 @ Zephras Isle, 64.0, 75.5 | Skyhoppers jump around the fields in and around Valanaar: kill them until 8 were Enchanted ones. Only some of them count
+
+# --- Loop 1: the scholar and the Windfield Orchard ---
+T 92727 | Take the road west out of town. A Bloodstained Satchel lies beside the road on the way to the lake
+A 92849 | From the satchel
+C 92849 | Fillion Flamebreeze is in the hills north-west of the satchel. Pick him up and carry him out: walk around the shrieklings, a fight makes you drop him
+T 92849 | Fillion Flamebreeze, where you put him down
+A 92850 | Fillion Flamebreeze
+C 92850 | The Shriekling Den is right there, just north: kill the Shriekling Matriarch at the back and loot her head
+C 92679 | Go on south-west to the Windfield Orchard and find Aamelia Windfield at the farmhouse
+T 92679 | Aamelia Windfield
+A 92682,92684,92683 | Aamelia Windfield
+A 92698 | A Malfunctioning Cyclone Construct lies in the field north-east of the farmhouse: click it
+C 92682 | In the orchard around the farmhouse: pick 10 Ripe Stormapples under the trees and kill 5 Hungry Bandits
+C 92684 | Ornery Galestriders walk the fields east of the orchard: collect 7 tenderloins
+C 92683 @ Zephras Isle, 49.8, 80.1 | Use the Flutterfly Swatter (in your bags) on the giant Flutterflies in the outer fields until you have 5 Flutterfly Dust. Some turn and fight
+T 92698,92684,92683,92682 | Aamelia Windfield
+A 92685 | Aamelia Windfield
+C 92685 | The bandit camp is in the hills just north of the orchard: Highwayman Bandits drop the Blood-Stained Bandit Masks, 7 needed
+T 92685 | Aamelia Windfield
+A 92693 | Aamelia Windfield
+C 92693 | Tell Aamelia you are ready and follow her. Help her kill the bandit leader and his men: let her take the hits, stand back and cast, Frost Nova if they come for you
+T 92693 | Aamelia Windfield
+A 92703 | Aamelia Windfield
+H Valanaar | Saves the long walk back east
+T 92703 | Alvarion Windfield, by the inn
+T 93949 | Valennia Stormfist
+T 92850 | Dondallion Whisperwind, in the High Order lodge
+A 99260 | Fillion Flamebreeze, now back in the lodge
+T 99260 | Elaadrin Evengale
+A 92840 | Elaadrin Evengale: Catching Wind. His other two quests only open when this one is handed in
+
+# --- Your spell focus (mage quest, needs level 10) ---
+A 93791 @ Zephras Isle, 65.9, 80.5 | Anathamaas Aetherwind, in the High Order lodge: your level 10 mage quest. Not 10 yet? Do the next loop first and take it when you come back
+T 93791 @ Zephras Isle, 62.9, 77.4 | Belann Windwood, the wand maker on the west side of town
+A 93797 @ Zephras Isle, 62.9, 77.4 | Belann Windwood
+TRAIN @ Zephras Isle, 65.9, 80.5 | Anathamaas Aetherwind: level 10 spells (Frost Nova, Frost Armor rank 2)
+
+# --- Loop 2: standing stones and crabs ---
+C 92840 | West along the road again, then up to the Overlook Standing Stones above the lake: use the Index Esoteria (in your bags) on 6 Windstone Formations
+C 93797 @ Zephras Isle, 48.5, 60.5 | A Wind-Infused Bough: a large fallen branch near the wind shrine just south of Falaath Village, north of the lake. The arrow is only approximate (the spot is not published): look for the shrine and the branch on the ground. Only if you took the quest
+C 93317 | Windsong Crawlers live in and around Windsong Lake, just below the stones: collect 6 pieces of meat
+N Run back east to Valanaar (your hearthstone is on cooldown)
+T 93317 | Nyalah Brightfire
+T 92840 | Elaadrin Evengale
+A 92834,92860 | Elaadrin Evengale: Avenged Tenfold (the charms, finished on the later loops) and In Service of Zephras. Both need Catching Wind handed in first (per the Questie data)
+T 92860 | Valennia Stormfist
+A 93320 | Valennia Stormfist
+T 93797 @ Zephras Isle, 62.9, 77.3 | Belann Windwood: you get your first wand. Equip it
+
+# --- Loop 3: the eastern watchtower ---
+T 93320 | Follow the road north-east out of town to Yorana Windyreed at the eastern watchtower
+A 92642,92645 | Yorana Windyreed
+C 92642,92645,92834 | The cult attacks just west of the tower: kill 4 Al'Aketh Healers and 8 Al'Aketh Brawlers, then Commander Belguilos. Kill the Healers first. Loot every cultist: they drop the Al'Aketh Windstone Charms for Avenged Tenfold
+T 92642,92645 | Yorana Windyreed
+A 92880 | Yorana Windyreed
+T 92880 | Back to Valennia Stormfist in Valanaar
+A 92881 | Valennia Stormfist
+T 92881 | Talaanis Shadowsong
+A 92643 | Talaanis Shadowsong
+
+# --- Loop 4: the turncoat and the assassins ---
+A 98512 | Leave town north-west, into the highlands. Fendaal Windstone hides beside the path
+C 92643 | The secluded house is just north-west of Fendaal: go in and find the turncoat
+T 92643 | The Dead Cultist on the floor
+A 92644 | From the body
+C 98512 | Al'Aketh Assassins sneak around the house and the path: kill 10. They are stealthed, so walk slowly; when one opens on you, Frost Nova, step back and burn it down
+T 98512 | Fendaal Windstone
+H Valanaar | Should be ready again. If not, walk back south-east
+T 92644 | Talaanis Shadowsong
+A 94568 | Talaanis Shadowsong
+C 94568 @ Zephras Isle, 66.2, 76.5 | Talk to her and watch the conversation until it ticks
+T 94568 | Talaanis Shadowsong
+A 92640 | Talaanis Shadowsong
+C 92640 | Talk to Valennia Stormfist, then recruit the Windshapers and the High Order: their leaders stand in the two lodges in town
+T 92640 | Valennia Stormfist
+A 93065 | Valennia Stormfist
+T 93065 @ Zephras Isle, 61.2, 70.9 | Valennia waits on the road just north-west of town
+A 92947 @ Zephras Isle, 61.2, 70.9 | Valennia Stormfist. The Shrine of Akir comes after Shadowgale Forest
+
+# --- Loop 5a: Shadowgale Forest ---
+A 93159 | Go north past the shrine road into Shadowgale Forest. The Strange Hermit lives on its west side
+C 93159 | Talk to him until the objective ticks
+T 93159 | The Strange Hermit
+A 93160,93172 | The Strange Hermit
+T 94484 | Elegael Thornpaw, at the druid camp in the north-east of the forest
+A 94485,94486,94487 | Elegael Thornpaw
+A 93165 | Vayn Moongaze, a little north-east of Elegael
+C 94486,92741,93160,94485 | Work through the forest around the camp: Shadowgale Shrieklings drop the feathers (20) and the talons for Iaadaria (8). Pick up Shadowgale Acorns from the forest floor (8) and Lady's Tear Moss from the base of the trees (8)
+C 94487,93165 | Al'Aketh Footsoldiers and Stormchasers camp east of Elegael: 10 Bloodied Heirlooms and the Cultist's Ears. Ears also drop at the Shrine of Akir, so do not farm them here
+T 94485,94486,94487 | Elegael Thornpaw
+A 94488,94489 | Elegael Thornpaw
+C 94488 | Commander Haalien stands in the cult camp north-east of Elegael. Kill him and loot his head
+A 94490 | He also drops a Ripped Missive: right-click it to start this quest
+C 94489 | The Nightfang Den is the cave north of the camp: use the poultice on 7 injured druids, kill the turned druids named in the quest and find Jorel Windsinger at the back. Pull one at a time, Polymorph a second one if two come, and drink between fights
+T 94488,94489,94490 | Elegael Thornpaw
+A 94491 | Elegael Thornpaw
+C 94897,94896 | The ruins of Ban'aethal are in the north of the forest, west of the den: pick up 8 Abandoned Belongings and find Resaan's Heirloom
+C 93172 | Wind Hollows drift around the ruins: destroy 10
+T 93160,93172 | Back south-west to the Strange Hermit
+T 93165 | Only if you already have all the ears: Vayn Moongaze. Otherwise finish them at the shrine and skip this hand-in (it is a long way back)
+
+# --- Loop 5b: the Shrine of Akir ---
+C 92947,92834 | South to the Shrine of Akir: kill 7 Al'Aketh Guardians, 7 Spiritcallers and 7 Blademasters on the way in. Finish the 10 Windstone Charms here
+T 92947 | Hyusaa Quickbreeze, at the shrine entrance
+A 93958 | Hyusaa Quickbreeze
+T 93958 | Valennia Stormfist, inside the inner sanctum
+A 93835 | Valennia Stormfist
+C 93835 @ Zephras Isle, 65.2, 50.4 | Take the portal in the sanctum up to the Rohashi Spires and join the fight against High Priestess Lorthuna. Stay alive and let the leaders do the damage
+H Valanaar | Or walk south down the road
+T 93835 | Elaadrin Evengale
+T 92834 | Elaadrin Evengale
+A 94369 | Elaadrin Evengale
+T 94369 | Talaanis Shadowsong
+A 93089 | Talaanis Shadowsong
+T 94491 | Lotheluum Starbreeze
+TRAIN @ Zephras Isle, 65.9, 80.5 | Anathamaas Aetherwind: level 12 spells if you are 12 (Slow Fall, Dampen Magic, new ranks). Otherwise you train in Stormwind
+T 94896,94897 | Ealaane Nimbuswalker
+T 92741 | Iaadaria Bitterwind, in the High Order lodge
+T 93089 | Elaadrin Evengale
+A 94946 | Elaadrin Evengale
+N Sell, repair and empty your bags in Valanaar. Then board the skycutter ship at the dock just outside the High Order lodge: it takes you to Dalaran

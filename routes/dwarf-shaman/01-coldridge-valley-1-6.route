@@ -1,0 +1,75 @@
+@segment 1-6 Coldridge Valley
+@start-level 1
+@carry          # none: this is the first segment
+@done           # none: this is the first segment
+# Dwarf Shaman, Coldridge Valley. TUGs' 1-6 Coldridge Valley order with only the shaman lines, plus the
+# new shaman quests (Archaic Rune 98581, Call of Earth 94373 -> 94374 -> 94375 = Earth Totem).
+# Hearthstone: bound to Anvilmar from the start; used once, for the timed mornbrew run.
+# Deviation from the plan (allowed by its risks note): The Stolen Journal 218 is done BEFORE the
+# Anvilmar run, as TUGs does, because level 4 (3364, 94373) is only reached with its XP. The pendants
+# for 94373 are then collected on the pass through the troll camps for Felix's items (3361).
+# Teo Hammerstorm, Grund Drokda and the Spirit Stone are new Forever NPCs that are not in Questie:
+# their positions are the ForeverChanges pins.
+# Skipped: 5841 Welcome! (gift voucher, no XP: mentioned as an option in the first step).
+# Carry-out: 420 Senir's Observations, 2160 Supplies to Tannok, 96628 The Adventurer (all handed in
+# at Kharanos in segment 2).
+
+# --- Anvilmar: Sten and Balir ---
+A 179 | Sten Stoutarm stands right in front of you when you log in. Got a Coldridge Valley Gift Voucher in your bags? Hand it to Yori Crackhelm a few steps south-east for a small gift (no XP)
+C 179 | Ragged Young Wolves and Ragged Timber Wolves roam the snow all around Anvilmar; most of them drop meat. Open each fight with Lightning Bolt, then melee
+T 179 | Sten Stoutarm
+A 233,98581 | Sten gives both: a stack of letters and the Archaic Rune (shaman only)
+A 170 | Balir Frosthammer, next to Sten
+T 98581 @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm, the shaman trainer, inside Anvilmar (the hall in the mountainside just north of Sten)
+TRAIN @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm: learn every spell he offers and keep Rockbiter Weapon on your weapon from now on
+
+# --- West side of the valley ---
+C 170 | Rockjaw Troggs and Burly Rockjaw Troggs stand in small camps across the valley floor west and south-west of Anvilmar. Kill 6 of each on the way west to Talin Keeneye; any you still miss can be finished around Grelin's camp. Healing Wave when you drop below half health
+T 233 | Talin Keeneye, at his camp on the west side of the valley
+A 234,183 | Talin gives both
+C 183 | Small Crag Boars are all around Talin's camp. Kill 12
+T 183 | Talin Keeneye
+T 234 | Grelin Whitebeard, at the camp in the south-west of the valley
+A 182
+C 182 | Frostmane Troll Whelps stand in the small camps south and south-west of Grelin. Kill 14. They throw things from range, so run up to them instead of waiting
+T 182 | Grelin Whitebeard
+A 218
+C 218 @ Dun Morogh, 30.5, 80.2 | The Frostmane cave opens in the south of the valley, east of the whelp camps. Grik'nir the Cold (level 5) stands at the very back. Kill the trolls near him first, fight him at full health and loot the journal from him
+T 218 | Back to Grelin Whitebeard
+A 282 | Keep it: Mountaineer Thalos is at the tunnel out of the valley, the last stop of this segment
+L 4 @ Dun Morogh, 22.5, 78.5 | Not level 4 yet? Kill a few more troll whelps or troggs near the camp: the next quest and your first class quest need level 4
+
+# --- Anvilmar ---
+A 3364 | Nori Pridedrift, next to Grelin (needs level 4). The mornbrew goes cold in 5 minutes
+H Anvilmar | Use the hearthstone right away: it drops you inside Anvilmar. On cooldown? Run north-east without fighting, 5 minutes is enough
+T 3364 | Durnan Furcutter, inside Anvilmar
+A 3365
+T 170 | Balir Frosthammer, just outside the entrance next to Sten. Still short of troggs? They stand right south of Anvilmar: finish them first
+TRAIN @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm: learn Earth Shock (level 4). It interrupts spellcasting: save it for casters. Sell grey items at the vendors inside
+A 94373 @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm (needs level 4): Call of Earth
+A 3361 | Felix Whindlebolt, the gnome inside Anvilmar
+A 97277 @ Dun Morogh, 28.6, 67.5 | Grund Drokda, standing next to Felix
+
+# --- Gozwin's camp, then back through the troll camps ---
+C 97277 @ Dun Morogh, 27.4, 63.0 | Grund and Gozwin's camp is in the hills north-west of Anvilmar. Pick up Gozwin's Mechanic's Log at the camp and kill the Snow Leopard Prowler there. Pull it with Lightning Bolt at full health
+C 3361:1 @ Dun Morogh, 20.9, 76.1 | Back down to the south-west: Felix's Box stands in the troll camp west of Grelin. From here on kill every Frostmane troll you pass: they drop the Bear Pendants for Call of Earth
+C 3361:2 @ Dun Morogh, 22.8, 80.0 | Felix's Chest is in the next troll camp to the south
+C 3361:3 @ Dun Morogh, 26.3, 79.3 | Felix's Bucket of Bolts is in the troll camp further east, near the mouth of the troll cave
+C 94373 @ Dun Morogh, 26.5, 79.5 | You need 2 Bear Pendants from the Frostmane trolls (they only drop while you have Call of Earth). Not enough yet? Keep killing whelps in these camps or the trolls just inside the cave
+T 3365 | Nori Pridedrift, at Grelin's camp
+
+# --- Anvilmar: hand in, then the Spirit Stone ---
+T 3361 | Felix Whindlebolt, inside Anvilmar
+T 97277 @ Dun Morogh, 28.6, 67.5 | Grund Drokda
+T 94373 @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm
+A 94374 @ Dun Morogh, 28.8, 66.2 | Teo hands you an Earth Sapta
+C 94374 @ Dun Morogh, 25.0, 61.9 | The Spirit Stone is up in the hills north-west of Anvilmar, past Gozwin's camp: follow the hidden path up the slope. Drink the Earth Sapta from your bags at the stone and the Minor Manifestation of Earth appears. Lost the sapta? Teo gives you a new one
+T 94374 @ Dun Morogh, 25.0, 61.9 | Talk to the Minor Manifestation of Earth
+A 94375 @ Dun Morogh, 25.0, 61.9 | The Manifestation gives you a Rough Quartz
+T 94375 @ Dun Morogh, 28.8, 66.2 | Back to Teo Hammerstorm. You get the Earth Totem (keep it in your bags: every earth totem needs it) and learn Stoneskin Totem
+TRAIN @ Dun Morogh, 28.8, 66.2 | Teo Hammerstorm: if you are level 6, learn Earthbind Totem and Healing Wave rank 2. Not 6 yet? Learn them from Ingrid Dunwald in Kharanos next segment instead
+
+# --- Out of the valley ---
+T 282 | Mountaineer Thalos, at the tunnel entrance on the east side of the valley
+A 420,96628 | Thalos gives both. Keep them: Senir Whitebeard and Eric Brighthammer are at Kharanos
+A 2160 | Hands Springsprocket, the gnome a few steps from Thalos. Then go through the tunnel (Coldridge Pass) and follow the road north-east to Kharanos

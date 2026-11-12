@@ -1,0 +1,130 @@
+@segment 35-37 Dustwallow Marsh, Mage's Wand & Stranglethorn II
+@start-level 35
+# Not carried: 187/192/195 and 570 (segment 10 leaves them for this Stranglethorn visit), 1164 (segment 11
+# hands it in at Undercity) and 701/678/507 (segment 11 leaves them with Tor'gan, Drum Fel and Krusk).
+@carry 1947,1436,5763,1182,1112,1106,577,582,213
+@done 1111,1181,575,581,596,186,191,194
+
+# ---------- Shadowprey Village -> Dustwallow Marsh ----------
+N Buy 3 Soothing Spices before you leave Shadowprey @ Desolace, 23.1, 71.6 | Lah'Mawhani (trade supplies) sells them; Wulan the cook at 26.2,69.6 does too. They are for Jarl's quest in Dustwallow, so you can hand it in on the spot.
+FLY Camp Taurajo
+G Dustwallow Marsh, 29.7, 47.8 | Follow the road east out of Camp Taurajo into Dustwallow Marsh to the burned-out Shady Rest Inn.
+A 1251 | Pull the black shield off the inn's chimney
+A 1268 | Click the hoofprints in the mud beside the inn
+A 1269 | Pick up the badge in the inn's rubble
+A 1177 | Mudcrush Durtfeet, the ogre on the road north to Brackenwall
+G Dustwallow Marsh, 35.6, 31.8 | Brackenwall Village
+F Brackenwall Village
+T 1251 | Krog
+A 1321
+T 1321 | Do'gol, next to Krog
+A 1322 | Do'gol. The venom sacs drop from the Darkmist spiders you kill for Jarl later, so leave this for now.
+T 1268,1269 | Krog
+A 1201 | Nazeer Bloodpike
+
+# ---------- Reethe and the infiltrators ----------
+A 1273 | Ogron, south-east of the village
+C 1273 @ Dustwallow Marsh, 42.6, 38.1 | Follow Ogron to Reethe's hideout and kill the Theramore men who ambush you. Keep Ogron alive.
+C 1201 | The infiltrators are stealthed. They prowl the grass east and north-east of Brackenwall; Frost Nova them when they open up.
+T 1201
+A 1202
+T 1273 | Krog
+
+# ---------- Tabetha, Theramore docks, Jarl, Darkmist Cavern ----------
+T 1947 | Tabetha's hut, south-east, just north of the Stonemaul Ruins
+A 1949 @ Dustwallow Marsh, 46.1, 57.1 | Tabetha
+C 1202 @ Dustwallow Marsh, 71.5, 51.2 | The Captain's Footlocker sits underwater beside the Theramore docks. Swim to it instead of walking the pier: the guards there are far above your level.
+A 1218 | "Swamp Eye" Jarl at Swamplight Manor, north-west of Theramore
+T 1218 | Hand over the 3 Soothing Spices from Shadowprey
+A 1206
+A 1238 | The Loose Dirt mound just outside the manor
+C 1206,1322 @ Dustwallow Marsh, 31.5, 21.5 | Darkmist Cavern, north-west of Brackenwall. Darkmist Spiders and Recluses (35-37) in and around the cave drop both the eyes and the venom sacs. The Silkspinners deeper inside are 38-39: pull them one at a time.
+T 1238 | Nazeer Bloodpike, Brackenwall
+T 1202
+T 1322 | Do'gol
+A 1323
+T 1323 | Krog
+A 1276 | Krog. Keep it for Thunder Bluff later in this segment.
+
+# ---------- Second Jarl run, north coast, Stinky ----------
+T 1206 | Back to Jarl. Skip Jarl Needs a Blade (it needs a crafted Moonsteel Broadsword).
+A 1239 | Dig at the Loose Dirt again
+C 1177 | Mirefin murlocs along the north coast drop the heads
+A 1270 | "Stinky" Ignatz, north-west of Swamplight Manor
+C 1270 @ Dustwallow Marsh, 46.9, 17.5 | Escort Stinky on his short loop through the bog while he picks bogbean leaves; kill whatever jumps him
+T 1177 | Mudcrush Durtfeet, on the road just south of Brackenwall
+T 1239 | Nazeer Bloodpike, Brackenwall
+A 1240 | Keep the head for Grom'gol
+
+# ---------- Ratchet and the Shimmering Flats ----------
+FLY Ratchet
+T 1270 | Mebok Mizzyrix
+FLY Gadgetzan
+G Thousand Needles, 78.0, 77.0 | Run north out of Gadgetzan to the Mirage Raceway on the Shimmering Flats
+T 1112 | Kravel Koalbeard
+A 1114
+T 1114 | Fizzle Brassbolts, a few steps away
+A 1115 | Kravel
+T 1949 | Magus Tirth
+A 1950
+C 1950 @ Thousand Needles, 79.6, 75.6 | "Plucky" Johnson is the chicken by the huts just east of Tirth. Target him and type /chicken; he turns back into a human. Talk to him for the phrase.
+T 1950 | Do not take Rituals of Power: the book is in the Scarlet Monastery library (dungeon), so the Mage's Wand chain stops here.
+
+# ---------- Thunder Bluff, Orgrimmar, zeppelin ----------
+N Teleport to Thunder Bluff (or fly there from Gadgetzan if you don't have it)
+T 1276 | Mosarn
+N Teleport to Orgrimmar (or fly there from Thunder Bluff)
+T 1436 | Keldran, on the west side of the city. Hand it in now: at 45 it would be worth almost nothing.
+TRAIN | Only if you are already 36: Orgrimmar mage trainers in the Valley of Spirits (Blizzard, Fireball, Mana Shield, Fire Ward, Dampen Magic). Mages learn nothing new at 35, so if you are still 35, skip this: the next segment trains in Undercity right after its first Teleport.
+N Take the zeppelin to Grom'gol from the towers just outside Orgrimmar's front gate
+
+# ---------- Grom'gol ----------
+S Grom'gol Base Camp
+T 1240 | Kin'weelay
+A 1261 @ Stranglethorn Vale, 32.2, 27.6 | Click the Bubbling Cauldron beside Kin'weelay. Keep it for a later Dustwallow visit: the Jeweled Pendant drops from the Muckshell crabs there.
+A 598 | Kin'weelay. Keep it for later: the Skullsplitter trolls are level 40+.
+A 568 | Commander Aggro'gosh
+A 570 | Far Seer Mok'thardin. It needs level 33, so this is your first chance to take it.
+N Take any new quests offered in Grom'gol; the logger records them | Forever adds new quests here (one is a naga quest for the coast west of the camp). Take them only if they are at your level and you have log room.
+
+# ---------- Nesingwary's camp and the jungle south-east of it ----------
+T 5763 | Hemet Nesingwary. Follow the road north from Grom'gol to the hunters' camp.
+A 187 | Ajeck Rouack
+A 192 | Sir S. J. Erlgadin
+A 195 | Hemet Nesingwary
+C 187 @ Stranglethorn Vale, 34.0, 18.5 | Elder Stranglethorn Tigers on the slopes just south of the camp
+T 187 | Ajeck Rouack
+A 188 | Ajeck Rouack
+C 188 @ Stranglethorn Vale, 32.2, 17.4 | Sin'Dall, a named tigress (37) on the hill south-west of the camp
+C 568,195 @ Stranglethorn Vale, 35.0, 23.0 | Lashtail Raptors in the jungle south of Sin'Dall's hill, between the camp and Grom'gol. 15 for Aggro'gosh, 10 for Hemet: the same kills count for both.
+C 577 @ Stranglethorn Vale, 40.0, 22.0 | Snapjaw Crocolisks in and around Lake Nazferiti, east of the raptors
+C 1182 @ Stranglethorn Vale, 42.6, 18.4 | Kill Foreman Cozzle at the Venture Co. camp on the lake's north-east shore for his key, then open Cozzle's Footlocker in his house (43.3, 20.3)
+C 213 @ Stranglethorn Vale, 42.6, 18.4 | Hostile Takeover: the Venture Co. Geologists (34-36) in the same camp and along the north shore of the lake carry Tumbled Crystals, about one in two. You need 8
+C 192,570 @ Stranglethorn Vale, 44.0, 28.0 | Shadowmaw Panthers and Stranglethorn Tigresses in the jungle south-east of the lake. The panthers drop the claws, a tigress drops the fang. Both are 37-38: pull one at a time.
+T 188 | Back north to Ajeck Rouack at Nesingwary's camp
+T 192 | Sir S. J. Erlgadin. Skip the next part (Bhag'thera, elite).
+T 195 | Hemet. Leave the next part (Jungle Stalkers, level 41) for later.
+
+# ---------- Zul'Kunda, then back to Grom'gol ----------
+N Ruins of Zul'Kunda: Forever adds quests here (crash debris east of the ruins, and a caged goblin, Zimmix Sputterspark, inside). Take them if offered and do them with the headhunters; they turn in at Booty Bay. The logger records them.
+C 582 @ Stranglethorn Vale, 23.0, 10.0 | Bloodscalp Headhunters around the Ruins of Zul'Kunda, west of Nesingwary's camp near the coast, drop the heads
+T 568 | Commander Aggro'gosh, back south in Grom'gol
+A 569
+T 570 | Far Seer Mok'thardin. Don't take the next part yet (level 41).
+T 582 | Nimboya
+A 584 | Keep it for later (named troll bosses, level 40+)
+C 569 @ Stranglethorn Vale, 37.0, 31.0 | Mosh'Ogg Brutes and Witch Doctors at the small ogre camp just east of Grom'gol
+T 569 | Commander Aggro'gosh
+
+# ---------- Booty Bay turn-ins ----------
+FLY Booty Bay
+T 1182 | Baron Revilgaz, top floor of the inn
+T 213 | Kebok, in the inn downstairs: the 8 Tumbled Crystals
+A 1183 @ Stranglethorn Vale, 27.2, 76.9 | Keep the blueprints for Pozzik on the Shimmering Flats
+T 577 | Drizzlik. Skip Excelsior (elite crocolisk).
+T 1115 | Krazek
+A 1116 | Keep it for the Swamp of Sorrows
+N Hand in any Zul'Kunda quests you picked up and take any new quests offered in Booty Bay if they fit your level and log; the logger records them
+H Grom'gol Base Camp
+N Optional Riverglades detour (Rog'mar) fits here | Main line does not need it. You arrive with only 6 quests in the log (1183, 1116, 1106, 1261, 598, 584). Bind at Rog'mar, use Teleport: Orgrimmar/Undercity for training and turn-ins, and the Brill trip for your mount at 40. Stay while its quests are no more than 2-3 levels above you and leave at about 41-43. If Rog'mar is on Kalimdor, Teleport: Thunder Bluff from here and walk in, then come back with Teleport: Undercity to start the next segment; if it is near Hillsbrad or Arathi, enter it from Tarren Mill or Hammerfall at the start of the next segment instead. Coming back at 41+? The first step of the next segment says how to handle its lower quests.
+L 37 | If you skipped the detour and are not 37 yet: grind the Bloodscalp trolls around Zul'Kunda (TUGs' troll area, level 34-37), or the Lashtail Raptors and Mosh'Ogg ogres just east of Grom'gol. Pull two or three and Blizzard them.

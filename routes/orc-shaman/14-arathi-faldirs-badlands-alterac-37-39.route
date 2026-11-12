@@ -1,0 +1,98 @@
+@segment 37-39 Arathi II, Faldir's Cove, Badlands & Alterac Uplands
+@start-level 37
+# Carried in (segment 13's carry-out): 1240 The Troll Witchdoctor (Grom'gol), 1115 The Rumormonger (Krazek, Booty Bay),
+# 5763 Hunting in Stranglethorn (Nesingwary), 1182 Goblin Sponsorship (Booty Bay), 1106 Martek the Exiled (handed in here),
+# 577 Some Assembly Required and 582 Headhunting (Stranglethorn).
+@carry 1240,1115,5763,1182,1106,577,582,213
+# 675 unlocks Guile of the Raptor (701) and 677 the second Call to Arms (678), both turned in at Hammerfall in segment 11;
+# 506 Blackmoore's Legacy (segment 11, Strahnbrad) unlocks Lord Aliden Perenolde (507).
+@done 675,677,506
+# Adapted from undead-mage 14 (Hammerfall, Faldir's Cove, Badlands), 15 (Alterac Uplands) and 16 (Zinge errands).
+# Order: Undercity -> fly Hammerfall -> Boulderfist Hall -> Faldir's Cove -> on foot over Thandol Span, Wetlands and Loch Modan
+# -> Badlands (F Kargath, L 39) -> fly Tarren Mill -> Alterac Uplands -> fly Undercity -> zeppelin to Grom'gol.
+# No shaman trainer on this trip: the next one is Haromm in Stonard (segment 15, train 38/40 there).
+# The hearthstone stays bound at Shadowprey Village the whole time; segment 15 rebinds in Booty Bay.
+# Overrides below fix auto data that puts Badlands NPCs in "Outland", Elysa's 508 in Hillsbrad and Zinge's 243 in Tanaris.
+# Carry-out (11): 1240, 1115, 5763, 1182, 577, 582, 669 (Booty Bay, seg 15), 1420 (Helgrum, Stonard, seg 15),
+# 1137 (Fizzle, seg 16), 712 (Lotwil, seg 18) and 243 (Gadgetzan, seg 16).
+# Skipped on purpose: 679/680 and 705 (elite), 2202 (Uldaman), 782 (needs 40; seg 18), 1418 (seg 15 leaves it),
+# 670/667 (back to Faldir's Cove), the Myzrael chain 642/651 (Fozruk, a level 42 elite, walks through its stone circles).
+
+# ---------- Undercity ----------
+N You arrive at the zeppelin tower outside the Undercity | Your hearthstone stays set to Shadowprey Village for this whole trip: do not use it or Astral Recall until a later segment says so. Keep saving gold for Wolf Riding and a wolf at 40 (roughly 90-100g).
+N Optional: get ready for the dives at Faldir's Cove | Some of those quests are underwater and an orc runs out of breath fast. If you have Water Breathing, carry a few Shiny Fish Scales for it (reagent vendors sell them, and the naga at the cove drop them). An Elixir of Water Breathing from the Auction House works too. Without either, just surface for air between dives.
+FLY Hammerfall @ Undercity, 63.2, 48.6 | Walk south from the tower into the ruined city and ride an elevator down. Bat handler Michael Garrett stands by the west elevator.
+
+# ---------- Hammerfall (Arathi Highlands) ----------
+A 701 | Tor'gan. He offered it after Raising Spirits in segment 11.
+A 678 | Drum Fel. The second Call to Arms, left with him in segment 11.
+C 701,678 @ Arathi Highlands, 52.0, 75.0 | Boulderfist Hall, south-west of Hammerfall. Highland Fleshstalker raptors (36-37) roam the hills around it; a heart drops about one kill in three. The Brutes and Magi (35-37) are in and around the ogre cave: Earth Shock the Magi's casts and drop Stoneclaw Totem if a second ogre joins.
+T 701 | Tor'gan
+A 702 | Tor'gan
+T 702 | Gor'mul
+A 847 | Gor'mul
+T 847 | Back to Tor'gan
+T 678 | Drum Fel. Skip the follow-ups 679 and 680: both are elite.
+
+# ---------- Faldir's Cove (south-west Arathi) ----------
+A 663 | Ghost Wolf south-west across Arathi to Faldir's Cove on the coast; Lolo the Lookout stands at the camp. These quests are level 40.
+T 663 | Shakes O'Breen
+A 662,664,665 | First Mate Nilzlix, Captain Steelgut and Professor Phizzlethorpe, all in the camp
+C 665 @ Arathi Highlands, 33.9, 80.5 | Escort the professor to the cave up the hill and back. Vengeful Surge water elementals (40) ambush you at the cave: drop Stoneclaw Totem, kill them one at a time and throw him a Healing Wave if he gets low.
+T 665 | Doctor Draxlegauge
+A 666 | Doctor Draxlegauge. He lends you the Goggles of Gem Hunting: they are not worn. Right-click them in your bags to make the calcified gems on the sea floor visible, and use them again if the gems disappear.
+C 662,664,666 @ Arathi Highlands, 21.5, 86.0 | West of the cove. The charts and logs are inside the two wrecks (Maiden's Folly and Spirit of Silverpine), the gems lie on the sea floor around them, and the Daggerspine Raiders and Sorceresses (38-40) are on the reef and shore. Watch your breath bar and surface between dives, or cast Water Breathing. Pull the naga one at a time and Earth Shock the Sorceresses' casts.
+T 662 | Nilzlix
+T 664 | Steelgut
+T 666 | Draxlegauge, return the goggles
+A 668 | Draxlegauge
+T 668 | Shakes O'Breen
+A 669 | Shakes O'Breen. Keep the gem for Fleet Master Seahorn in Booty Bay (segment 15).
+
+# ---------- Run to the Badlands ----------
+G Arathi Highlands, 48.5, 87.5 | Ghost Wolf east to Thandol Span, the great bridge at the south edge of Arathi. Dark Iron dwarves stand on it: keep moving.
+G Wetlands, 54.2, 70.3 | Cross the bridge into the Wetlands, keep clear of the Dark Iron fort of Dun Modr just past the bridge and follow the road south to the Dun Algaz pass.
+G Loch Modan, 18.5, 85.0 | Go through Dun Algaz into Loch Modan. The Alliance mountaineers at the gates are level 30. Head south down the west side of the zone, keeping Thelsamar well to your left (east), to the pass into the Badlands. Mountaineer Pebblebitty (44) stands at the pass: run past him.
+
+# ---------- Badlands ----------
+T 1106 @ Badlands, 42.2, 52.7 | Martek the Exiled, south along the road from the pass. Shadowforge dwarves dig near the pass: don't stray.
+A 1108 @ Badlands, 42.2, 52.7 | Martek
+A 703 @ Badlands, 42.4, 52.9 | Rigglefuzz, next to Martek. Skip Pearl Diving (705, elite-flagged).
+A 710 @ Badlands, 25.9, 44.9 | Lotwil Veriatus, west along the road
+F Kargath @ Badlands, 4.0, 44.8 | Gorrik, the wind rider master at the west edge of the Badlands
+A 2258,1419 @ Badlands, 2.4, 46.1 | Jarkal Mossmeld and Neeka Bloodscar. Gorn's Broken Alliances (782) needs level 40: leave it.
+C 710,2258:3 @ Badlands, 18.8, 43.0 | Lesser rock elementals (37-39) between Kargath and Lotwil's camp. Rock Elemental Shards drop from them too.
+T 710 @ Badlands, 25.9, 44.9 | Lotwil
+A 711 @ Badlands, 25.9, 44.9 | Lotwil
+C 1419,2258,703 @ Badlands, 18.0, 60.0 | South-west of Lotwil's camp. Giant Buzzards (39-41) circle here, around 16,60, and a few more around 12,70. They drop the wings, but only about 1 in 5 drops a gizzard, so kill every buzzard you see and check back for respawns. Elder Crag Coyotes (38-40) on the same hills drop the jawbones and fangs (4 kills in 5 give each). 30 jawbones take a while: finish them on the coyotes further east and south-east, on your way to the Rock Elementals at 41,79.
+C 711 @ Badlands, 41.0, 79.0 | Rock Elementals (39-40) in the rocky hills just south-west of the Stonevault trogg camp. You need 3 slabs and nearly every kill drops one. They hit hard but have no ranged attack: fight one at a time with Stoneskin Totem down and Lightning Shield up, and Healing Wave between pulls.
+C 1108 @ Badlands, 50.5, 68.0 | Stonevault trogg camp. Only the Stonevault Bonesnappers and Shamans here drop the indurium flakes (about 60%); Earth Shock the Shamans' casts. Still short of jawbones, fangs or wings? The Feral Crag Coyotes and Buzzards around this camp drop those (these Buzzards rarely drop a gizzard).
+T 1108 @ Badlands, 42.2, 52.7 | Martek
+A 1137 @ Badlands, 42.2, 52.7 | Martek. Keep it for Fizzle on the Shimmering Flats (segment 16).
+T 703 @ Badlands, 42.4, 52.9 | Rigglefuzz
+T 711 @ Badlands, 25.9, 44.9 | Lotwil
+A 712 @ Badlands, 25.9, 44.9 | Lotwil. Keep it: the Greater Rock Elementals (42-44, far south-west) that drop the bracers wait for your second Badlands visit (segment 18).
+T 2258 @ Badlands, 2.4, 46.1 | Jarkal. Do not take Uldaman Reagent Run (2202): it is a dungeon quest.
+T 1419 @ Badlands, 6.5, 47.2 | Neeka Bloodscar
+A 1420 @ Badlands, 6.5, 47.2 | Neeka Bloodscar: her report for Helgrum the Swift, who stands by the wind rider master in Stonard. Keep it for segment 15. If she does not offer it, skip this step.
+L 39 @ Badlands, 14.5, 35.0 | Quest XP runs out here, and the Alterac quests next are level 40-42 with level 38-41 mobs. Grind the Rock Elementals (39-40) on the slopes north-east of Kargath; if they are thin, a bigger group sits in the south around 41,79, and the lesser rock elementals line the road east to Lotwil's camp. Stoneskin Totem, Lightning Shield, Healing Wave between pulls. The Stonevault troggs drop coins and cloth if you would rather save for the wolf.
+
+# ---------- Tarren Mill and the Alterac Uplands ----------
+FLY Tarren Mill @ Badlands, 4.0, 44.8 | Gorrik in Kargath
+A 566 | The WANTED poster in Tarren Mill
+A 507 @ Hillsbrad Foothills, 63.2, 20.7 | Krusk. He only offers it if you freed Gol'dir and handed in Blackmoore's Legacy (506) in segment 11. If he has nothing for you, skip the 507 and 508 steps below.
+C 566 | Ghost Wolf north out of Tarren Mill on the road past Strahnbrad, then up to the Uplands at the north edge of Alterac. Baron Vardus (40) stands among Syndicate Sentries (36-37): pull the sentries off him one at a time, then kill him and take his head. Keep away from the elite Crushridge ogres in the middle of the zone.
+C 507 | Perenolde's manor lies west of the Uplands, on the shore of Lordamere Lake. Lord Aliden Perenolde (41) is inside, with Syndicate Assassins and Enforcers (38-40) around the manor. Clear them one pull at a time, drop Stoneclaw Totem if two come, Earthbind any runner, and fight him at full health and mana.
+T 507 | Talk to Elysa, who stands right next to him
+A 508 @ Alterac Mountains, 39.3, 14.3 | Elysa gives you Taretha's pendant
+T 508 | Back in Tarren Mill: Krusk
+T 566 | High Executor Darthalia, beside the poster
+
+# ---------- Undercity, then the zeppelin to Grom'gol ----------
+FLY Undercity @ Hillsbrad Foothills, 60.1, 18.6 | Zarise, Tarren Mill's bat handler
+A 232 | Apothecary Zinge in the Apothecarium. These errands need level 38.
+T 232 | Alessandro Luca
+A 238 | Alessandro Luca
+T 238 | Back to Apothecary Zinge
+A 243 @ Undercity, 50.1, 68.0 | Apothecary Zinge. Keep it: you hand it in at Gadgetzan (segment 16).
+N Take the zeppelin to Grom'gol @ Tirisfal Glades, 61.8, 59.2 | Leave the Undercity and climb the zeppelin tower again. Two zeppelins stop there: Hin Denburg's goes to Grom'gol in Stranglethorn, the other one to Orgrimmar. Segment 15 starts at Grom'gol.

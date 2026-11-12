@@ -1,0 +1,21 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance (Blackrock Mountain) = Questie.
+@dungeon Blackrock Depths
+@levels 52-60
+@window 51-59
+@best 55
+@hub Burning Steppes, 84.5, 68.5, 8
+@hub Searing Gorge, 38.0, 30.0, 8
+@entrance Searing Gorge, 34.8, 85.3
+A 4324 @ Tanaris, 67.0, 24.0 | Yorba Screwspigot in Steamwheedle Port. It sends you to Yuka in the Burning Steppes.
+>T 4324 @ Burning Steppes, 66.1, 21.9
+>A 4136 @ Burning Steppes, 66.1, 21.9 | Ribbly Screwspigot is in the Grim Guzzler bar.
+A 4123 @ Burning Steppes, 65.2, 23.9 | Maxwort Uberglint at Flame Crest. The Heart of the Mountain is in the vault. Needs level 50.
+A 4286 @ Burning Steppes, 84.6, 68.7 | Oralius at Morgan's Vigil. 20 Dark Iron Fanny Packs from the dwarves inside. Needs level 50.
+A 4263 @ Burning Steppes, 85.4, 70.1 | Jalinda Sprig at Morgan's Vigil, after Overmaster Pyron. Kill Lord Incendius inside.
+A 4241 @ Burning Steppes, 84.7, 69.0 | Marshal Maxwell at Morgan's Vigil, after The True Masters. Find Marshal Windsor in the prison cells; this starts the long chain towards Onyxia.
+RUN | Blackrock Depths is inside Blackrock Mountain, between the Searing Gorge and the Burning Steppes: go in, take the chain down to the lowest ring and follow the tunnel to the portal. It is long; most groups do it in parts. Ragnar Thunderbrew in Kharanos also wants the Lost Thunderbrew Recipe (Hurley Blackbreath in the bar), after a pointer from Enohar Thunderbrew at Nethergarde Keep.
+T 4286 @ Burning Steppes, 84.6, 68.7
+T 4263 @ Burning Steppes, 85.4, 70.1
+T 4123 @ Burning Steppes, 65.2, 23.9
+T 4136 @ Burning Steppes, 66.1, 21.9

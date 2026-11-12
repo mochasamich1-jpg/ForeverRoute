@@ -1,0 +1,23 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); quests = ForeverChanges quest list (research/digest) and Questie; entrance = Questie.
+@dungeon Zul'Farrak
+@levels 44-54
+@window 43-51
+@best 46
+@hub Tanaris, 51.6, 27.0, 5
+@entrance Tanaris, 38.7, 20.1
+A 2864 @ Stranglethorn Vale, 26.9, 77.2 | Krazek in Booty Bay. It sends you to Tran'rek in Gadgetzan.
+>T 2864 @ Tanaris, 51.6, 26.8
+>A 2865 @ Tanaris, 51.6, 26.8 | 5 Uncracked Scarab Shells from the scarabs inside.
+A 2846 @ Dustwallow Marsh, 46.1, 57.1 | Tabetha, in her hut in the marsh. The Tiara of the Deep drops from Hydromancer Velratha.
+A 2770 @ Thousand Needles, 78.1, 77.1 | Wizzle Brassbolts at the Mirage Raceway. Gahz'rilla is summoned with the Mallet of Zul'Farrak, which takes its own trip to the Hinterlands; skip this one if your group does not have the mallet.
+A 3527 @ Tanaris, 67.0, 22.4 | Yeh'kinya in Steamwheedle Port, after Screecher Spirits. The two tablets drop from Theka the Martyr and Hydromancer Velratha.
+A 3042 @ Tanaris, 51.4, 28.8 | Trenton Lighthammer in Gadgetzan. 20 Vials of Troll Temper from the trolls inside.
+A 2768 @ Tanaris, 52.5, 28.5 | Chief Engineer Bilgewhizzle in Gadgetzan. The rod drops from Sergeant Bly after the stairs fight.
+RUN | The entrance is in the north-west corner of Tanaris, a short ride from Gadgetzan. Thadius Grimshade at Nethergarde Keep also has Nekrum's Medallion for it, after a feather from the gryphon master at Aerie Peak.
+T 2865 @ Tanaris, 51.6, 26.8
+T 3042 @ Tanaris, 51.4, 28.8
+T 2768 @ Tanaris, 52.5, 28.5
+T 3527 @ Tanaris, 67.0, 22.4
+T 2770 @ Thousand Needles, 78.1, 77.1
+T 2846 @ Dustwallow Marsh, 46.1, 57.1

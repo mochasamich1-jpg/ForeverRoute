@@ -1,0 +1,136 @@
+@segment 43-46 Feralas & Tanaris II
+@start-level 43
+# Carried in (segment 16's carry-out): 864 Return to Apothecary Zinge (Undercity), 648 Rescue OOX-17/TN and
+# 2874 Deliver to MacKinley (Booty Bay), 1262 Report to Zor (Orgrimmar, handed in here), 3520 Screecher Spirits
+# (Feralas spirits, back to Yeh'kinya here), 2981 A Threat in Feralas (Rok Orhan, handed in here), 712 (Badlands),
+# 584 and 598 (Grom'gol), 698 (Swamp of Sorrows).
+@carry 864,648,1262,3520,712,584,598,698,2874,2981
+# 82 Noxious Lair Investigation (segment 16) unlocks The Scrimshank Redemption (10). The rest are the prerequisites
+# of the carried quests: 351 -> 648, 654 -> 864, 1261 -> 1262, 2873 -> 2874, 711 -> 712, 582 -> 584, 596 -> 598.
+@done 82,351,654,1261,2873,711,582,596
+# Adapted from undead-mage 17 (its Kalimdor parts: Feralas I, Orgrimmar, Feralas II, Tanaris II). The Hinterlands, Undercity and
+# Blasted Lands parts move to segment 19; the Muisek chain is optional (N steps only). Order: Gadgetzan -> Freewind -> Camp Mojache ->
+# Feralas I -> Orgrimmar -> hearth Camp Mojache -> Feralas II -> Gadgetzan -> Tanaris II -> Ratchet boat.
+# Hearth: Camp Mojache while in Feralas, Gadgetzan again from the Tanaris block on (segment 18 starts with it there).
+# Carried out (11): 864, 648, 2767, 650, 32, 2641, 712, 584, 598, 698, 2874.
+
+# ---------- Gadgetzan -> Camp Mojache ----------
+A 2741 @ Tanaris, 52.4, 27.0 | You start in Gadgetzan. Before you fly, click the Super Egg-O-Matic machine next to Andi Lynn, a few steps south-east of the wind rider master, and take its quest. Its Hippogryph Egg lies in nests in southern Feralas, and the nests can only be looted while this quest is in your log.
+FLY Freewind Post | Take the wind rider to Freewind Post in Thousand Needles.
+N Ride west out of Freewind Post on the road into Feralas; it leads to Camp Mojache | About 5 minutes on your wolf. The camp sits on the hills in eastern Feralas.
+F Camp Mojache @ Feralas, 75.4, 44.3 | Shyn, the wind rider master
+S Camp Mojache | Innkeeper Greul. You hearth back here from Orgrimmar later in this segment.
+A 2862 | Hadoken Swiftstrider
+A 2822 | Jangdor Swiftstrider
+A 2973 | Krueg Skullsplitter
+T 2981 | Rok Orhan
+A 2975 | Rok Orhan
+A 2987 | Orwin Gizzmick
+A 3121 | Witch Doctor Uzer'i. You hand the shrunken head in at Orgrimmar later in this segment.
+N Keep any OOX-22/FE Distress Beacon that drops in Feralas | Almost every Feralas mob can drop it. It starts Find OOX-22/FE!, which you do on your second Feralas loop.
+
+# ---------- Feralas I: first loop ----------
+C 2862,2973 @ Feralas, 70.0, 47.0 | The hills just west and south-west of Camp Mojache. Woodpaw Mongrels, Trappers and Brutes drop the manes; Sprite Darters flit over the same slopes and drop the wings.
+C 2975,2987 @ Feralas, 76.5, 31.0 | Ride north to the Gordunni Outpost. Kill Gordunni Ogres, Ogre Mages and Brutes; click the Gordunni Dirt Mounds around the huts for the cobalt. Earth Shock the Ogre Mages when they start a cast, and drop Stoneclaw Totem when a second ogre joins.
+A 2978 @ Feralas, 74.5, 27.9 | A Gordunni Scroll lies on the ground in the outpost (also at 75.1, 29.7 and 80.5, 34.3). Pick it up and read it.
+T 2862 | Back in Camp Mojache: Hadoken Swiftstrider. Leave his next quest, Alpha Strike, for now: it has a one-hour timer, so you take it after the horns.
+T 2973 | Krueg Skullsplitter
+A 2974 | Krueg Skullsplitter
+T 2975,2978 | Rok Orhan
+A 2980,2979 | Rok Orhan
+T 2987 | Orwin Gizzmick
+
+# ---------- Feralas I: Grimtotem and Woodpaw ----------
+C 2974 @ Feralas, 68.0, 42.0 | The Grimtotem Compound in the hills just west of the camp: Grimtotem Raiders, Naturalists and Shamans drop the horns. Interrupt the Shamans' heals with Earth Shock.
+T 2974 | Back in Camp Mojache, a short ride east: Krueg Skullsplitter
+A 2976 | Krueg Skullsplitter. He gives you a crate of horns for Belgrom Rockmaul; you hand it in on the Orgrimmar stop below.
+A 2863 | Hadoken Swiftstrider. The one-hour timer starts now: ride straight south to the Woodpaw camps.
+C 2863 @ Feralas, 70.4, 54.7 | The big Woodpaw camps south of Camp Mojache. Woodpaw Alphas walk among the Mystics and Reavers: pull from the edge, Stoneclaw Totem for the extra gnoll, Healing Wave between pulls.
+T 2863 | Back in Camp Mojache: Hadoken Swiftstrider
+A 2902 | Hadoken Swiftstrider
+
+# ---------- Feralas I: the south ----------
+T 2902 | The Woodpaw Battle Map lies in the gnoll camp at 71.6, 55.9
+A 2903 | From the same map
+C 2980,2979 @ Feralas, 60.5, 66.0 | Ride south-west to the Ruins of Isildien. Gordunni Maulers stand at the north edge; Shaman and Warlocks fill the ruins. The Gordunni Orb drops from the Gordunni Mage-Lords (45-46) in the southern part (around 60, 70). Most of them are casters: Earth Shock the cast, and pull them out of sight of the next group.
+C 2741 @ Feralas, 57.3, 77.4 | A short ride south of the ruins: take a Hippogryph Egg from one of the nests at the south end of the Frayfeather Highlands. Frayfeather Patriarchs (46-47) and Skystormers (45-46) walk around the nests: pull them away one at a time, with Stoneclaw Totem down. The egg goes into the machine in Gadgetzan at the end of this segment.
+C 3520 @ Feralas, 57.5, 57.0 | Screecher Spirits, on the way north-west: Vale Screechers walk the slopes between the ruins and Feral Scar Vale (57-60, 55-62), and Rogue Vale Screechers roam around the vale and north of it (48-56, 47-59). Kill one, use Yeh'kinya's Bramble on the corpse, then click the spirit that appears. You need three.
+C 2822 @ Feralas, 53.5, 57.0 | Ride west to Feral Scar Vale. Feral Scar Yetis and their Enraged and Hulking kin drop the Thick Yeti Hides.
+T 2903 | Back in Camp Mojache: Hadoken Swiftstrider
+A 7730,7731 | Hadoken Swiftstrider
+T 2980,2979 | Rok Orhan
+A 3002 | Rok Orhan. The orb goes to Uthel'nay in Orgrimmar, on the Orgrimmar stop below.
+T 2822 | Jangdor Swiftstrider. Leave his next quest, Improved Quality, until you are back from Orgrimmar.
+C 7730,7731 @ Feralas, 75.5, 63.0 | The Writhing Deep, the silithid hive south of the Woodpaw camps. Every Zukk'ash bug drops carapaces. Stinglasher (47) is a big wasp that flies around the east side of the hive (around 77, 62): fight it alone, with Stoneclaw Totem down and Healing Wave ready.
+L 45 @ Feralas, 75.5, 63.0 | Quest XP runs short here. Keep killing Zukk'ash Workers, Wasps and Tunnelers in the hive until level 45. The next Feralas loop and Tanaris have level 47-50 mobs.
+T 7730,7731 | Hadoken Swiftstrider
+A 7732 | Hadoken Swiftstrider. The report goes to Zilzibin Drumlore in Orgrimmar, on the stop below.
+
+# ---------- Orgrimmar ----------
+FLY Orgrimmar | Shyn, the Camp Mojache wind rider master. Your hearthstone stays set to Camp Mojache.
+T 3121 | Neeru Fireblade in the Cleft of Shadow, the dark tunnel off the Valley of Strength
+A 3122 @ Orgrimmar, 49.5, 50.6 | Neeru Fireblade
+T 7732 | Zilzibin Drumlore in the Drag (56.3, 46.7)
+A 649 | Dran Droffers, further north in the Drag
+T 649 | Malton Droffers, right next to him
+A 650 | Malton Droffers. You hand it in to Gilveradin Sunchaser in the Hinterlands (segment 19).
+T 2976 | Belgrom Rockmaul in the Valley of Honor. He also offers Betrayed: leave it.
+N No wolf yet? Learn Wolf Riding from Kildar and buy a wolf from Ogunaro Wolfrunner next to him @ Orgrimmar, 69.4, 13.1 | North end of the Valley of Honor. Skip this if you bought them at 40.
+T 1262 | Zor Lonetree in the Valley of Wisdom
+A 7541 | Zor Lonetree then offers Service to the Horde: it has no objectives
+T 7541 | Zor Lonetree. Pick either ring
+TRAIN @ Orgrimmar, 38.8, 36.4 | Valley of Wisdom shaman trainers: learn your level 44 spells. Your level 46 ranks wait for Haromm in Stonard (next segment).
+T 3002 | Uthel'nay in the Darkbriar Lodge, Valley of Spirits (39.2, 86.3)
+H Camp Mojache
+
+# ---------- Feralas II ----------
+T 3122 | Witch Doctor Uzer'i
+N Optional: Uzer'i now offers Testing the Vessel | Take it only if you plan the Camp Mojache detour in segment 20: its wildkin are in the Hinterlands (segment 19) and the rest of his chain waits until then. Skip it if your quest log is nearly full.
+A 3063 | Talo Thornhoof. Skip Dark Heart (elite) and The Strength of Corruption (Felwood).
+A 7734 | Jangdor Swiftstrider
+A 2766 @ Feralas, 53.4, 55.7 | Ride west. Right-click the OOX-22/FE Distress Beacon: the robot is in a small cave at the edge of Feral Scar Vale. No beacon yet? Kill the Feral Scar yetis around the cave and the Vale Screechers on the slopes east of it until one drops: this robot pair and An OOX of Your Own (segment 19) are worth about 16,000 XP together.
+T 2766 | Homing Robot OOX-22/FE
+A 2767 | Homing Robot OOX-22/FE
+C 2767 @ Feralas, 45.0, 43.0 | Escort the robot west to the dock on the Forgotten Coast. Ambushers jump it on the way: Stoneclaw Totem pulls them off the robot, then kill them fast.
+A 7003,7721 | Zorbin Fandazzle at the dock (44.8, 43.4)
+C 7003,7721 @ Feralas, 42.5, 49.0 | Along the coast: Sea Elementals and Sea Sprays drop the cores. Zap the Shore, Wave and Deep Striders (elite giants) with Zorbin's Ultra-Shrinker first, then kill the small zapped giants for the residue. Never fight a giant that is not zapped.
+T 7003,7721 | Zorbin Fandazzle. Skip his repeat versions.
+C 3063 @ Feralas, 39.5, 13.5 | Ride north up the coast to the Northspring harpy nests. Kill 4 of each kind (48-50). Windcallers cast: Earth Shock them. Slayers hit hard: pull one at a time and heal between pulls. At 45 they are 3-5 levels above you: if one fight costs most of your health and mana, abandon Vengeance on the Northspring and skip its hand-in at Talo.
+C 7734 @ Feralas, 53.5, 31.5 | Ride east to Rage Scar Hold. Rage Scar Yetis drop the hides. If a Perfect Yeti Hide drops, right-click it and hand it to Jangdor too.
+N Cast Astral Recall (back to Camp Mojache) | Or use your hearthstone if Astral Recall is on cooldown.
+T 3063 | Talo Thornhoof
+T 7734 | Jangdor Swiftstrider
+FLY Gadgetzan | Shyn, the wind rider master
+
+# ---------- Tanaris II ----------
+S Gadgetzan | Innkeeper Fizzgrimble. Your hearthstone stays here into the next segment.
+T 2741 @ Tanaris, 52.4, 27.0 | Put the Hippogryph Egg in the Super Egg-O-Matic, next to Andi Lynn, a few steps from the wind rider master: do it now, before you ride out again
+A 10 | Senior Surveyor Fizzledowser
+A 5863 | Andi Lynn
+A 2605 | Marin Noggenfogger
+A 3362 | Tran'rek
+C 10 @ Tanaris, 56.0, 71.2 | Ride south to the Gaping Chasm. Scrimshank's Surveying Gear lies inside the silithid hive; clear the bugs at the entrance as you go in.
+N No OOX-17/TN robot in the last segment? If its Distress Beacon has dropped since, do the robot now @ Tanaris, 60.2, 64.7 | It sits at the edge of the Gaping Chasm, a short ride north-east of Scrimshank's gear. Right-click the beacon, hand it to the robot, take Rescue OOX-17/TN! and escort it north to Steamwheedle Port: stay off your mount and out of Ghost Wolf, and drop Stoneclaw Totem when ambushers jump it. Then ride back south-west to the Dunemaul Compound. Still no beacon? Skip it: Oglethorpe's hand-in for it in Booty Bay (next segment) then drops out too.
+L 46 @ Tanaris, 40.0, 54.0 | Ride west to the Dunemaul Compound. Thistleshrub Valley and the Tooga escort after it are level 48-50, so kill Dunemaul Brutes and Enforcers (46-48) here until level 46; they count for The Dunemaul Compound. The ogres stand in twos and threes: Stoneclaw Totem for the second one, Earth Shock the Ogre Mages and Warlocks, Healing Wave between pulls.
+C 5863 @ Tanaris, 41.5, 57.8 | Finish the 10 Dunemaul Brutes and 10 Enforcers, then kill Gor'marok the Ravager (49), who stands near the south-east side of the compound. Clear the ogres around him first and fight him on his own, with Stoneclaw Totem down.
+C 2605,3362 @ Tanaris, 29.3, 65.5 | Thistleshrub Valley, the cactus garden south-west of the compound. Thistleshrub Dew Collectors drop the gland; Gnarled Thistleshrubs and Rootshapers (48-50) are the kill targets. Pull them one at a time.
+A 1560 | Tooga the turtle sits at the south end of the valley (31.8, 74.1). Accept it only when the rest of the valley is done.
+C 1560 @ Tanaris, 66.6, 25.7 | 30-minute timer: go straight to Torta, with no detours and no extra pulls. Lead Tooga north-east across the desert to his wife Torta, just south of Steamwheedle Port. He follows you: stay out of Ghost Wolf and off your mount, keep him close, kill anything that attacks him and heal him with Healing Wave if he gets low.
+T 1560 | Torta
+T 3520 | Yeh'kinya in Steamwheedle Port, just north of Torta. Skip his next quest, The Prophecy of Mosh'aru: it needs Zul'Farrak.
+T 10 | Back in Gadgetzan (ride west along the road): Senior Surveyor Fizzledowser
+A 110 | Senior Surveyor Fizzledowser
+T 110 | Alchemist Pestlezugg
+A 113 | Alchemist Pestlezugg
+T 113 | Senior Surveyor Fizzledowser
+A 32 | Senior Surveyor Fizzledowser. You hand the report in at Orgrimmar in segment 20.
+T 5863 | Andi Lynn
+T 3362 | Tran'rek
+T 2605 | Marin Noggenfogger
+A 2606 | Marin Noggenfogger
+T 2606 | Sprinkle, a few steps away
+A 2641 | Sprinkle. The Violet Tragan grows under water in a small Hinterlands lake (segment 19).
+
+# ---------- Ratchet -> Booty Bay ----------
+FLY Ratchet | Bulkrek Ragefist, the Gadgetzan wind rider master
+N Take the boat from the Ratchet dock to Booty Bay | Your hearthstone stays set to Gadgetzan. Keep these for later: 648, 2767 and 2874 (Booty Bay), 712 (Badlands), 584 and 598 (Grom'gol), 698 (Swamp of Sorrows), 864 (Undercity), 650 and 2641 (Hinterlands), 32 (Orgrimmar).

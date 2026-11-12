@@ -1,0 +1,131 @@
+@segment 52-54 Azshara & Felwood
+@start-level 52
+# Skyborne Mage segment. Same quests, order, binds and flights as the source-route segment this was copied from,
+# plus the level 50 mage chain in Azshara. Deviations:
+# - All combat hints rewritten for a mage (Counterspell as the interrupt, Polymorph on a second humanoid, Frost Nova and
+#   step back, eat and drink between pulls; the mage cannot heal the Shadow Hold escort).
+# - Mage class chain added to the Azshara part, the way the Horde mage route (undead-mage segment 18) does it: 8250
+#   Magecraft (taken in Stormwind at the end of segment 20) is handed in to Sanath Lim-yo on the ride from Loh'atu to
+#   Kim'jael; 8251 Magic Dust is collected in the Thalassian Base Camp together with 3601; 8252 The Siren's Coral in the
+#   Ruins of Eldarath together with 5534. It stops before 8253 Destroy Morphaz (Sunken Temple). Cost: two extra rides
+#   from the east of Azshara back to Sanath's camp (after Kim'jael, and after the ruins), so 5534 is now handed in
+#   after 8252. A character without Magecraft in the log skips the marked steps; nothing else depends on them.
+# - New Forever quest 3381 A Meeting with the Master (2 Undamaged Hippogryph Feathers for Sanath) is an `N` step, as in
+#   the Horde mage route: take it if he offers it.
+# - The source file's training trip after Kim'jael is now Teleport: Stormwind (one Rune of Teleportation) -> Jennea
+#   Cannon (level 52 spells) -> Hearthstone to Astranaar. The Hearthstone is ready: its last use was at the end of
+#   segment 20 in Booty Bay, before all of Un'Goro. It is its only use in this segment. Not training? Just hearth.
+# - Magecraft missed in segment 20 (still 49 there, or the trip skipped): Elsharin offers it on this segment's Stormwind
+#   trip, but that is AFTER Azshara. It is then an optional `N` only; no second Azshara visit is built.
+# Carried in from segment 21: The New Springs (980) and It's a Secret to Everybody (3908) for Donova Snowden in
+# Winterspring (segment 23), Bungle in the Jungle (4496) and Super Sticky (4504) for Gadgetzan (first stop here),
+# Magecraft (8250) for Sanath Lim-yo in Azshara.
+@carry 980,3908,4496,4504,8250
+# Prerequisites of the carried quests, handed in in segment 21 (3845 -> 3908, 974 -> 980).
+@done 3845,974
+# Order: Marshal's Refuge -> fly Gadgetzan (hand-ins) -> fly Astranaar (bind) -> ride to Talrendis Point -> Azshara
+# (Loh'atu, Sanath and Xylem, Kim'jael, Sanath, Ruins of Eldarath, Sanath, Kim'jael) -> Stormwind to train -> hearth Astranaar -> ride north into Felwood -> Emerald Sanctuary and three loops out of it
+# (Deadwood Village / Jadefire Glen / Ruins of Constellas / Jaedenar; Shadow Hold; Shadow Hold again and the north) ->
+# back to the Sanctuary for the hand-ins -> north to Nafien, Felpaw Village and the grind -> Timbermaw Hold.
+# Hearth: Gadgetzan at the start, Astranaar from the second stop on (segment 23 rebinds in Everlook).
+# Left out on purpose: Felbound Ancients (4441) and Purified! (4442): 4441 wants water from the Temple of the Moon in
+# Darnassus, which this route never visits, so the Flute of Xavaric line stops after 939. Also skipped as planned:
+# 5158 (Barrens leg), 4261, the salve and cleansing quests, 6031 (runecloth), the Deadwood feather and Felwood item turn-ins.
+# Added: a short L 53 next to the Emerald Sanctuary, because To Winterspring! (5249) needs level 53 there.
+# Carry-out (4): 980, 3908, 5249, 8465.
+
+# ---------- Gadgetzan and Astranaar ----------
+FLY Gadgetzan @ Un'Goro Crater, 45.2, 5.8 | You start at Marshal's Refuge at level 52, hearthstone set to Gadgetzan. Gryfe is the gryphon master
+T 4496 | Alchemist Pestlezugg, Gadgetzan
+T 4504 | Tran'rek, a few steps away
+FLY Astranaar @ Tanaris, 51.0, 29.3 | Bera Stonehammer, the Gadgetzan gryphon master. A long flight north
+S Astranaar @ Ashenvale, 37.0, 49.2 | Innkeeper Kimlya, in the inn. You hearth back here from the far end of Azshara
+
+# ---------- Azshara: Loh'atu ----------
+G Azshara, 11.9, 77.6 | Ride east along the main road through Ashenvale to its end and on into Azshara. Past Raynewood the road runs by Splintertree Post and the Warsong camps (Horde): stay on the road and keep moving. Talrendis Point is on the right just after the border
+F Talrendis Point @ Azshara, 11.9, 77.6 | Jarrodenus, the hippogryph master
+A 5535,5536 | Loh'atu, a few steps from the hippogryph master
+C 5535 @ Azshara, 16.3, 70.0 | Shadowsong Shrine, the ruins north-east of Loh'atu: Highborne Apparitions and Lichlings. They are level 45-47 and easy; kill the Lichlings fast with Fireball and Fire Blast before their frost bolts add up, or Counterspell them
+C 5536 @ Azshara, 20.1, 61.8 | The Haldarr satyr camp, further north-east: 6 Satyrs, 2 Tricksters and 2 Felsworn. Counterspell the Felsworn when they cast
+T 5535,5536 | Back to Loh'atu, Talrendis Point
+
+# ---------- Azshara: Sanath Lim-yo and Archmage Xylem (mage quest) ----------
+T 8250 @ Azshara, 28.1, 50.1 | Follow the road north from Talrendis Point. Sanath Lim-yo camps at the foot of the cliffs (28.1, 50.1), just east of Valormok, the Horde camp: keep clear of its guards. Handing Magecraft in teleports you up to Archmage Xylem's tower. No Magecraft in the log? Skip this step and the next three, and every later step marked "Magecraft chain"
+A 8251 @ Azshara, 29.2, 40.2 | Magecraft chain. Archmage Xylem, at the top of the tower
+N Talk to Nyrill at the tower to be sent back down to Sanath's camp @ Azshara, 26.5, 46.3 | Magecraft chain
+N Back at Sanath's camp: if he offers A Meeting with the Master, take it; the logger records it @ Azshara, 28.1, 50.1 | Magecraft chain. New in Forever: he wants 2 Undamaged Hippogryph Feathers before he sends you up again. Thunderhead Hippogryphs around his camp and Valormok (15-21, 49-66), Stagwings and the Skystormers around the blood elf camp (47-64, 14-38) drop them. If he does not offer it, his repeatable Meeting with the Master sends you up whenever you ask, and Nyrill's Return Trip brings you down
+
+# ---------- Azshara: Kim'jael ----------
+A 3601 | Kim'jael, far to the north-east: follow the road east across Azshara, past the Ruins of Eldarath, and up the hill north of the ruins. A long ride
+C 3601 @ Azshara, 58.0, 29.1 | The Thalassian Base Camp, on the bluff south-east of Kim'jael. Open the Kim'jael's Equipment crates on the ground until you have the compass, scope, stuffed chicken and wizzlegoober; each crate holds one random part, so it takes a few. The Blood Elf Surveyors and Reclaimers (51-53) cast: pull them one at a time with Frostbolt, Polymorph a second one, and Counterspell a long cast
+C 8251 @ Azshara, 58.0, 29.1 | Magecraft chain. The same Blood Elf Reclaimers and Surveyors drop the Glittering Dust: stay until you have 10. If Sanath asked for feathers, also kill the Thunderhead Skystormers and Stagwings around the camp until 2 Undamaged Hippogryph Feathers drop
+T 3601 | Kim'jael
+A 5534 | Kim'jael
+T 8251 @ Azshara, 29.2, 40.2 | Magecraft chain. Ride back west to Sanath (28.1, 50.1). Give him the 2 feathers if he asked for them, then ask him to send you up: Archmage Xylem
+A 8252 @ Azshara, 29.2, 40.2 | Magecraft chain. Archmage Xylem
+N Talk to Nyrill to be sent back down @ Azshara, 26.5, 46.3 | Magecraft chain
+C 5534 @ Azshara, 45.5, 52.0 | The Ruins of Eldarath, east of Sanath's camp (south of Kim'jael, if you skipped the mage steps). Kill Spitelash Sirens and Myrmidons on the east side, near the shore, until one drops Some Rune (about 1 in 12). They stand in pairs: Polymorph the Myrmidon, kill the Siren first, and Frost Nova the Myrmidon when it wakes
+C 8252 @ Azshara, 45.5, 52.0 | Magecraft chain. The Spitelash Sirens here also drop the Enchanted Coral: you need 6. The Warriors, Screamers and Serpent Guards in the west half of the ruins drop neither coral nor rune
+T 8252 @ Azshara, 29.2, 40.2 | Magecraft chain. Ride back west to Sanath and up the tower once more: Archmage Xylem. Stop here: his next quest, Destroy Morphaz, is in the Sunken Temple
+N Talk to Nyrill to be sent back down @ Azshara, 26.5, 46.3 | Magecraft chain. Kim'jael still wants his rune
+T 5534 | Ride north-east to Kim'jael
+N Cast Teleport: Stormwind | A training trip that costs one Rune of Teleportation, since you are about to hearth anyway. Your Hearthstone must be ready (you last used it in Booty Bay). On cooldown? Skip this step and the next two and wait for it
+TRAIN @ Stormwind City, 49.6, 85.8 | Stormwind, Wizard's Sanctum in the Mage Quarter: Jennea Cannon (49.6, 85.8). Learn your level 52 spells, and 48-50 if you skipped the trip from Booty Bay. Restock Runes of Teleportation
+N Optional: no Magecraft yet? Elsharin, beside the mage trainers, offers it now @ Stormwind City, 48.2, 87.2 | Only if you could not take it in segment 20. Its Azshara part (Sanath Lim-yo, then Magic Dust and The Siren's Coral for Archmage Xylem) is behind you, and this route does not go back there: take it only if you want to ride out to Azshara again on your own. Otherwise leave it
+H Astranaar | Hearthstone. It saves the whole ride back across Azshara
+
+# ---------- Felwood: Emerald Sanctuary ----------
+G Felwood, 50.9, 85.0 | Ride east out of Astranaar on the main road, take the fork north after Raynewood Retreat and follow that road up into Felwood. The Emerald Sanctuary is the first camp past the border
+A 8460 | Grazle, the furbolg beside the road just south of the Emerald Sanctuary
+A 4101 | Arathandris Silversky, east of the road a little south of the camp. Her Warpwood elementals are in the far north: you do them later
+A 5155 | Greta Mosshoof, Emerald Sanctuary
+A 4421 | Eridan Bluewind, Emerald Sanctuary
+
+# ---------- Loop 1: Deadwood Village, Jadefire Glen, Ruins of Constellas, Jaedenar ----------
+C 8460 @ Felwood, 48.1, 90.9 | Deadwood Village, west of the road just south of the camp: 6 Warriors, 6 Pathfinders and 6 Gardeners. Only a few Pathfinders stand here, so kill them first when you see one. Every kill also raises Timbermaw reputation, which you need for the tunnel at the end of the segment
+T 8460 | Grazle
+A 8462 | Grazle. Nafien waits at the north end of Felwood
+C 4421:1 @ Felwood, 41.3, 85.3 | Jadefire Glen, west of the Sanctuary: kill the 11 Jadefire Felsworn here. Counterspell their casts, or Frost Nova one and burn it down
+C 4421 @ Felwood, 36.0, 67.3 | Ride north to the Ruins of Constellas, west of the road: 9 Jadefire Shadowstalkers and 9 Rogues. Both stealth, so expect to be jumped: keep Ice Armor up and your health high, and when one opens on you Frost Nova, step back and kill it. Xavathras (54) stands at the west end of the ruins (32.2, 67.1): clear the satyrs next to him first
+C 5155 @ Felwood, 37.3, 60.8 | Jaedenar, just north of the ruins: 4 Hounds, 4 Guardians, 6 Adepts and 6 Cultists on the path up to the cave. Stay outside Shadow Hold for now. Pull the Adepts and Cultists one at a time with Frostbolt and Polymorph a second one
+T 4421 | Ride back south to Eridan Bluewind, Emerald Sanctuary
+A 4906 | Eridan Bluewind. The second satyr camp is in the far north
+T 5155 | Greta Mosshoof
+A 5157 | Greta gives you an Empty Canteen
+
+# ---------- Loop 2: Jaedenar and Shadow Hold ----------
+C 5157 @ Felwood, 35.2, 59.8 | The corrupted moon well in the middle of Jaedenar. Clear the cultists around it and use the canteen at the well
+N Go into Shadow Hold, the cave at the top of Jaedenar, and kill Jaedenar Darkweavers, Warlocks and Enforcers until one drops a Blood Red Key @ Felwood, 37.5, 54.0 | A rare drop (about 1 in 30), so this is also part of the grind this segment needs. Stay in the first rooms and the first spiral down. When two come, Polymorph one and Frost Nova the other; Counterspell a Darkweaver's or Warlock's cast, and back out to the entrance when a third mob joins. No key after 40 kills or so? Skip the next seven steps
+A 5202 @ Felwood, 37.5, 54.0 | Right-click the Blood Red Key
+T 5202 | Captured Arko'narin, in a cage on the first level down inside Shadow Hold
+A 5203 | Captured Arko'narin. Eat and drink to full before you accept: she starts walking at once
+C 5203 @ Felwood, 36.2, 55.5 | Escort her to her equipment and then out of Shadow Hold. Demons attack her on the way; she fights well once she has her gear. You cannot heal her: hit whatever attacks her at once, Frost Nova it and kill it fast
+T 5157 | Ride back south to Greta Mosshoof, Emerald Sanctuary. Skip her follow-up: it goes to the Barrens
+T 5203 | Jessir Moonbow, Emerald Sanctuary
+A 5204 | Jessir Moonbow
+
+# ---------- Loop 3: Shadow Hold again, then the north ----------
+C 5204 @ Felwood, 38.3, 50.5 | Back into Shadow Hold, deeper this time: kill the succubus Rakaiah (56). Clear the mobs near her first, Counterspell her casts, and Frost Nova and step back when she closes in. If the way down turns out too crowded for you, abandon this quest and skip the next two steps
+T 5204 | The Remains of Trey Lightforge, next to where Rakaiah stood
+A 5385 | The Remains of Trey Lightforge
+G Felwood, 42.0, 47.0 | Leave Jaedenar and ride north on the main road past Bloodvenom Falls. Next comes Shatter Scar Vale, the crater field north-east of here (around 40-46, 37-44): its infernals are elite in Classic, so follow the road around it instead of cutting across
+C 4906 @ Felwood, 41.8, 18.6 | Jadefire Run, west of the road in the north: 8 Hellcallers, 8 Betrayers and 8 Tricksters. Loot every satyr: you also need 5 Jadefire Felbind in a moment. Xavaric (55) stands at the back of the camp (39.1, 22.4). When two come, Frost Nova them, step back and kill one at a time; Counterspell a Hellcaller's cast
+A 939 @ Felwood, 39.1, 22.4 | Xavaric drops the Flute of Xavaric: right-click it. Stay until you have 5 Jadefire Felbind from the satyrs here (about 1 in 4 drops one)
+C 4101 @ Felwood, 56.8, 18.9 | Irontree Cavern, across the road to the north-east: Warpwood Moss Flayers and Shredders drop the 15 Blood Amber, nearly every kill. Dessecus, a rare elemental, can be up at the south-east end (around 58, 22): leave him unless you feel strong
+F Talonbranch Glade @ Felwood, 62.5, 24.2 | Mishellena, the hippogryph master, just east of Irontree Cavern. You will not need it today, but it links Felwood for later
+T 5385 | Ride all the way back south to Jessir Moonbow, Emerald Sanctuary (go around Shatter Scar Vale again)
+T 4906 | Eridan Bluewind
+T 939 | Eridan Bluewind. Do not take Felbound Ancients: it sends you to Darnassus
+T 4101 | Arathandris Silversky, south of the camp. Skip her salve quests
+L 53 @ Felwood, 48.1, 90.9 | Ivy Leafrunner's quest needs level 53 and you should be a few kills short at most. Already 53? Skip this. Otherwise kill Deadwood furbolgs in the village next to Grazle until you are (Timbermaw reputation as well)
+A 5249 | Ivy Leafrunner, Emerald Sanctuary. Wynd Nightchaser is in Winterspring (next segment)
+
+# ---------- North Felwood: Nafien and Felpaw Village ----------
+T 8462 | Ride north the whole length of Felwood to Nafien, the furbolg outside Timbermaw Hold at the end of the road
+A 8461 | Nafien
+C 8461 @ Felwood, 62.1, 8.9 | Felpaw Village, just west of Nafien: 6 Den Watchers, 6 Avengers and 6 Shamans. Counterspell the Shamans when they heal; if two furbolgs come at once, Polymorph one and kill them one by one
+T 8461 | Nafien
+A 8465 | Nafien. Salfa stands at the Winterspring end of the tunnel
+L 54 @ Felwood, 62.1, 8.9 | Quest XP runs short here. Grind Felpaw Village to 54: every kill adds Timbermaw reputation as well. Pull from the edge of the village one at a time with Frostbolt, Counterspell the Shamans' heals, Polymorph a second one if it joins, and eat and drink between pulls. Tired of furbolgs? The Irontree Stompers and Toxic Horrors in Irontree Woods to the south-west (around 50, 24) are the same level
+N Open the Reputation tab and check Timbermaw Hold before you go in | It must be Unfriendly or better, or the furbolgs inside attack you. Still Hostile? Kill more Deadwood furbolgs until it changes. Got Deadwood Headdress Feathers? Nafien takes them 5 at a time for reputation
+N Segment done. Next segment walks through Timbermaw Hold into Winterspring @ Felwood, 64.8, 8.1 | Keep The New Springs (980), It's a Secret to Everybody (3908), To Winterspring! (5249) and Speak to Salfa (8465) in the log. Your hearthstone is set to Astranaar. Never attack the Timbermaw furbolgs inside the tunnel

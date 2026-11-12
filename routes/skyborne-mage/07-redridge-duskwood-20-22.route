@@ -1,0 +1,140 @@
+@segment 20-22 Redridge II & Duskwood I
+@start-level 20
+# Skyborne Mage 20-22 (adapted from the skyborne-druid route's segment 07, itself the Dwarf route's segment 06).
+# Carry-in: 119 + 121 (Lakeshire), 455 (Algaz Gauntlet, Menethil in segment 08), 2041 (Shoni in Stormwind).
+# Carry-out: 57, 67, 157, 181, 240, 453 (Duskwood and Westfall, segment 11), 455 (segment 08).
+# Hearth: Thelsamar for the whole segment. It is your way back north at the end, so do not rebind. It was last
+# used at the end of segment 06 and is used once here, as the last step.
+# Deviations from the source segment (same quests, same order, same hearth bind, same flight paths):
+#  - TELEPORTS ARE LEARNED HERE. The segment opens in Ironforge and then Stormwind, at level 20-21:
+#    Ironforge: TRAIN at Bink (level 20 spells) and `N Learn Teleport: Ironforge` at Milstaff Stormeye beside
+#    him (both may already be done from the end of segment 06: then they are just ticked).
+#    Stormwind: `N Learn Teleport: Stormwind` at Larimaine Purdue in the Mage Quarter, between Shoni in the
+#    Dwarven District and the gryphon master in the Trade District. This is the step later segments rely on.
+#    Both steps remind the player to carry Runes of Teleportation and say what to do if still 19.
+#  - The opening flight Thelsamar -> Ironforge may be replaced by Teleport: Ironforge if it was learned at the
+#    end of segment 06 (the step text says so); nothing is skipped by that.
+#  - New at the end: a level 22 training trip, `N Cast Teleport: Stormwind` / TRAIN at Jennea Cannon /
+#    `H Thelsamar`. The source had no training stop in this segment; for the mage the trip costs one rune and
+#    two minutes in front of a Hearthstone use that happens anyway (Darkshire -> Thelsamar). The Hearthstone
+#    is ready: it was last used at the end of segment 06. A player without the teleport ticks the two steps
+#    and hearths from Darkshire as before.
+#  - The Dwarf's waterskin step at Stonewatch Falls is already gone in the source, with the walk to the far
+#    end of Galardell Valley. The gnoll pendants are still done at the valley mouth.
+#  - Combat hints rewritten for a mage of level 20-23 (Frostbolt from full range, Frost Nova + Blink to get
+#    distance again, Polymorph on beasts and humanoids only, Mana Shield, Evocation, Fire Ward; no interrupt
+#    before Counterspell at 24, so casters die first). A mage cannot cure poison or disease.
+# Left out on purpose: 2040 (Deadmines), 126 / 128 / 219 / 180 (level 25-26, segment 11), 19 / 115 / 169 / 248 / 249 (elite),
+# 94 (leads to the elite 248), 143-146 and 132 (Westfall bounces).
+@carry 119,121,161,455,2041,97894
+@done 118,120,125,468
+
+# ---------- Ironforge and Stormwind on the way ----------
+FLY Ironforge | Thorgrum Borrelson in Thelsamar. If you already learned Teleport: Ironforge at the end of the last segment, cast it instead.
+TRAIN @ Ironforge, 27.3, 8.3 | Bink, the mage trainer in the Hall of Mysteries (the Mystic Ward, in the north-west of the city): learn your level 20 spells. Blink, Blizzard, Evocation and Mana Shield are the important ones; the hints from here on use them. Trained here at the end of the last segment? Tick the step.
+N Learn Teleport: Ironforge @ Ironforge, 25.5, 7.1 | Milstaff Stormeye, the Portal Trainer, beside Bink: he teaches Teleport: Ironforge from level 20. Every teleport uses up a Rune of Teleportation: buy 5-10 from a reagent vendor before you leave the city. Already learned? Tick the step. Still 19? Tick it too and learn it on your next Ironforge visit.
+N Look for a Bronze Tube in Ironforge | Viktori in Darkshire needs one Bronze Tube for Look to the Stars. Engineers make it: check the auction house, and ask Gearcutter Cogspinner, the engineering supplier in Tinker Town (67.8, 42.5), on your way to the tram. Not verified: the quest data only lists drops from machines and a vendor in Thousand Needles, so a city supplier stocking one is Classic knowledge. Without a tube you skip the Look to the Stars steps later.
+N Take the Deeprun Tram to Stormwind | The tram station is in Tinker Town.
+T 2041 | Shoni the Shilent, in the Dwarven District a few steps from the tram exit. Do not take her follow-up (Deadmines). Billibub Cogspinner, the engineering supplier, stands close by (62.4, 29.9): ask him for a Bronze Tube too, and try the Stormwind auction house.
+N Learn Teleport: Stormwind @ Stormwind City, 50.4, 86.0 | Go south-west through the city to the Wizard's Sanctum, the tower in the Mage Quarter. Larimaine Purdue, the Portal Trainer, stands beside the mage trainers and teaches Teleport: Stormwind from level 20. Do not skip this walk: later segments use this teleport to come back and train. Keep 5-10 Runes of Teleportation in your bags. Already learned? Tick the step. Still 19? Tick it and learn it on your next Stormwind visit (Jennea Cannon next to her teaches whatever spells you are missing).
+FLY Lakeshire | Dungar Longdrink, the gryphon master in the Trade District, east of the Mage Quarter
+
+# ---------- Lakeshire ----------
+T 119 | Cross the bridge. Verner Osgood, on the town side.
+A 122,124 | Verner Osgood
+A 98386 | Foreman Oslow at the north end of the bridge: Alther's Mill (new in Forever)
+A 20 | Marshal Marris, a few steps east of the bridge
+A 98387 @ Redridge Mountains, 28.3, 48.8 | Marshal Marris: Blackrock Blockade (new in Forever)
+T 121 | Magistrate Solomon in the town hall
+A 91 | Bailiff Conacher, in the town hall too
+A 150 | Dockmaster Baren on the dock (needs level 20)
+A 34 | Martie Jainrose, the herbalist on the west side of town. Bellygrub is level 24: you kill him last, after the big loop.
+
+# ---------- Loop around Lake Everstill ----------
+C 124 @ Redridge Mountains, 24.1, 32.0 | Take the path north out of Lakeshire. Kill 10 Redridge Brutes (17-18, the first camps around 24, 35) and 8 Redridge Mystics (18-19, further up around 24, 29). Kill a Mystic before the Brute beside it (no interrupt before level 24) and Polymorph the Brute meanwhile. Do not chase Yowler deeper in the hills: that quest is for a later segment.
+C 98386 | Go back down and follow the north shore of the lake east to Alther's Mill. Kill 12 Greater Tarantulas (19-20) and destroy 6 Tarantula Eggs around the mill. They poison and a mage cannot cure it: eat or bandage after the fights. Leave Chatter, the rare elite spider that walks here, alone.
+C 91 @ Redridge Mountains, 69.0, 50.2 | Keep east into Galardell Valley. Shadowhide gnolls drop the 10 Shadowhide Pendants. Stay at the mouth of the valley, where Rabid Shadowhide Gnolls (21-22) and Shadowhide Gnolls (22-23) stand around 69, 50; the Brutes, Warriors, Slayers and Darkweavers deeper in are 23-26. They are above your level: pull one at a time from full range with Frostbolt, Polymorph a second gnoll as soon as it comes, Frost Nova and Blink away when one reaches you, and drink to full before each pull.
+C 20,98387 @ Redridge Mountains, 58.0, 62.0 | Turn back at the valley mouth and go south. Blackrock Grunts (19-20) and Outrunners (20-21) camp on the slopes south-east of the lake, below Stonewatch Keep; Renegades (21-22) are mixed in. They drop the 10 Battleworn Axes. The 8 Stolen Weapons and 10 Blackrock Supplies are in the same camps (new quest: the giver says "south-east below Stonewatch Keep" and the data has no exact spots, so look for things to click in the camps and loot every orc). Stay out of Stonewatch Keep itself: the Scouts, Sentries and Shadowcasters there are elite. Frost Nova stops an orc from running for help; Polymorph a second orc.
+C 150 @ Redridge Mountains, 47.3, 60.9 | Follow the lake shore back west. Murlocs along the south-east shore (Flesheaters, Tidecallers, Scouts, 18-20) drop the Murloc Fins: you need 8, counting the ones you already carry.
+C 122 @ Redridge Mountains, 38.6, 67.4 | Black Dragon Whelps (17-18) fly over the hills south of the lake, between the murloc shore and Lakeshire. Kill them until you have 6 Underbelly Whelp Scales. They cast fireballs: Polymorph does not work on dragonkin, so pull one at a time, put Fire Ward up if you learned it, and eat after each fight.
+
+# ---------- Lakeshire hand-ins and Bellygrub ----------
+T 20 | Back in Lakeshire: Marshal Marris. Do not take the follow-up, Tharil'zun (elite).
+T 98387 @ Redridge Mountains, 28.3, 48.8 | Marshal Marris
+T 98386 @ Redridge Mountains, 27.1, 48.6 | Foreman Oslow
+T 122,124 | Verner Osgood. Do not take Howling in the Hills yet.
+T 150 | Dockmaster Baren
+T 91 | Bailiff Conacher in the town hall
+C 34 | Bellygrub (24), a big boar, roots around in the fields west of Lakeshire, past Martie's garden (10.6, 49.3). Fight him with full health and mana: Frostbolt from full range as he comes, Frost Nova when he reaches you, Blink away and keep casting, and again when Frost Nova is ready. Mana Shield takes the hits in between. Polymorph works on him (he is a beast) if you need a moment to bandage, but he heals up while he is a sheep. If he gets you low, run back toward the town guards.
+T 34 | Martie Jainrose
+
+# ---------- Into Duskwood ----------
+F Darkshire @ Duskwood, 77.5, 44.3 | Take the road south-west to Three Corners and from there the road south into Duskwood. It leads straight to Darkshire. Stay on the road. Felicia Maline, the gryphon master, stands on the east side of town.
+A 163,164,165 | Elaine Carevin, at the south end of town
+A 56 | Commander Althea Ebonlocke, in front of the town hall
+A 96139 @ Duskwood, 72.6, 47.5 | Sirra Von'Indi in the town hall: The Valor Family (new in Forever)
+A 101 | Madame Eva, in the house on the north side of the square. You collect her parts over the whole Duskwood trip.
+A 174 | Viktori Prism'Antras, in the house at the east end of town. Only with a Bronze Tube in your bags. Without one press Skip here and on every Look to the Stars step that follows in this segment.
+T 174 | Viktori Prism'Antras: hand over the Bronze Tube
+A 175 | Viktori Prism'Antras
+T 175 | Blind Mary lives in the lone house south of Darkshire (82.0, 59.1)
+A 177 | Blind Mary. The Insane Ghoul is level 26: you fight him at the end of the segment, when you are back at her house.
+C 56 | Tranquil Gardens Cemetery is just south of Mary's house. Kill 8 Skeletal Warriors (21-22) and 6 Skeletal Mages (22-23). Kill a Skeletal Mage before the Warrior beside it (no interrupt before level 24); Polymorph does not work on undead, so use Frost Nova to keep the Warrior off you. Loot everything: they drop Skeleton Fingers for Madame Eva (you need 10). Keep away from the chapel for now, the Insane Ghoul is inside.
+
+# ---------- The south road and Raven Hill ----------
+A 245 | Take the road west along the south side of Duskwood. Watcher Dodds stands on it, about halfway (45.1, 67.0). From here on kill the spiders you pass: Pygmy Venom Web Spiders (18-19) count for him, and every spider can drop Vials of Spider Venom for Madame Eva (5) and Gooey Spider Legs. Keep 6 Gooey Spider Legs for a later quest. A mage cannot cure their poison: eat after the fights. You hand this in when you pass Dodds again.
+T 163 | Jitters hides in Raven Hill, the dead village in the west (18.4, 56.4)
+A 5 | Jitters
+C 96139 @ Duskwood, 18.4, 56.4 | Search Raven Hill for the Raven Hill Tome. New quest: the data has no exact spot, only "search Raven Hill". Look inside the ruined houses and around the village for a book you can click.
+T 164 | Sven Yorgen camps on the western edge of Duskwood, north-west of Raven Hill (7.8, 34.1)
+A 95 | Sven Yorgen
+A 226 | Lars, at the same camp
+
+# ---------- Sven's farm ----------
+T 95 | Sven's farm is in the south of the zone, south of Watcher Dodds. Go back along the south road and click the Mound of loose dirt behind the tree stump at the farm (49.9, 77.7). Zzarc'Vul's ogres (around 37, 81, west of the farm) are far above your level: keep away from their mound.
+A 230 | From the mound
+C 245 | Finish the 15 Pygmy Venom Web Spiders (18-19) in the woods around the farm and along the south road.
+T 245 | Watcher Dodds, back on the road north-west of the farm
+
+# ---------- Wolves, the hermit and the cemetery ----------
+C 226 @ Duskwood, 30.0, 28.0 | Cut north-west through the woods toward the north side of Raven Hill Cemetery. Kill 12 Starving Dire Wolves (19-20) and 8 Rabid Dire Wolves (20-21): both roam the northern half of western Duskwood.
+T 165 | Abercrombie the hermit lives in the shack north of Raven Hill Cemetery (28.1, 31.5)
+A 148 | Abercrombie
+C 101 @ Duskwood, 23.8, 37.1 | Finish Madame Eva's list. The 10 Ghoul Fangs drop from the ghouls at the east edge of Raven Hill Cemetery, south-west of the shack: Flesh Eaters (24-25) and Rotted Ones (25-26). They are well above you: pull single ghouls out to the edge with Frostbolt from full range, Frost Nova them when they reach you, Blink away and keep casting, put Mana Shield up when one stays on you (Polymorph does not work on undead), and do not go deeper in, where Plague Spreaders and Brain Eaters (27-29) wait. You have no cure for their disease: let it run out before the next pull. Skeleton Fingers also drop from Skeletal Horrors (23-24) around Raven Hill, the venom from any spider. If the fangs are too hard at your level, leave the list open: the route is back here in segment 11.
+T 230 | Back to Sven Yorgen at his camp
+A 262 | Sven Yorgen
+T 226 | Lars
+
+# ---------- Darkshire ----------
+T 96139 @ Duskwood, 72.6, 47.5 | Follow the road east across the whole zone to Darkshire. Sirra Von'Indi in the town hall.
+T 56 | Commander Althea Ebonlocke
+A 57 | Commander Althea Ebonlocke. Level 24-25 skeletons at Raven Hill: kept for segment 11.
+T 148,262 | Madame Eva
+A 149,265 | Madame Eva
+T 101 | Madame Eva, if you have 10 fangs, 10 fingers and 5 venom vials. If not, press Skip and hand it in on the next Duskwood trip.
+T 5 | Chef Grual in the tavern
+A 93 | Chef Grual
+C 93 | 6 Gooey Spider Legs. You should have them from the spiders on the south road; if not, more spiders sit beside the road west of town.
+T 93 | Chef Grual
+A 240 | Chef Grual. The crab cakes go back to Jitters in segment 11.
+T 265 | Clerk Daltry in the town hall
+A 266 | Clerk Daltry
+T 266 | Tavernkeep Smitts in the tavern
+A 453 | Tavernkeep Smitts. Keep it for segment 11.
+
+# ---------- Blind Mary and the Insane Ghoul ----------
+T 149 | Blind Mary, in the house south of town
+A 154 | Blind Mary
+C 177 | Press Skip if you never had a Bronze Tube. The Insane Ghoul (26) stands in the chapel of Tranquil Gardens Cemetery (80.9, 72.0). Kill the skeletons near the chapel first so the fight stays one on one. He is several levels above you and your spells will often be resisted: start at full health and mana, open with Frostbolt from full range, Frost Nova when he reaches you, Blink away and keep casting, and Fire Blast while you move. Mana Shield when he is on you and Frost Nova is not ready; Evocation while he is frozen if you run dry. Polymorph does not work on undead. He drops Mary's Looking Glass.
+T 154 | Back in Darkshire: Madame Eva
+A 157 | Madame Eva. The thread goes to Abercrombie in segment 11.
+T 177 | Viktori Prism'Antras
+A 181 | Viktori Prism'Antras. The ogre Zzarc'Vul is level 33: kept for segment 11.
+A 66 | Madame Eva: The Legend of Stalvan (needs level 22)
+T 66 | Clerk Daltry in the town hall
+A 67 | Clerk Daltry. It sends you to Moonbrook in Westfall: kept for segment 11.
+
+# ---------- Level 22 training by teleport, then north ----------
+N Cast Teleport: Stormwind | Only if you learned it at the start of this segment and carry a Rune of Teleportation. Your Hearthstone has not been used in this segment, so it is ready to take you on to Thelsamar afterwards. No teleport? Tick this step and the next one and use the Hearthstone right here in Darkshire.
+TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum in the Mage Quarter (the teleport should drop you inside the tower): learn your level 22 spells. Buy more Runes of Teleportation from a reagent vendor if you are down to a few.
+H Thelsamar | Hearthstone to Thelsamar. Next stop: the Wetlands.

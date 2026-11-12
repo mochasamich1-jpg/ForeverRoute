@@ -1,0 +1,97 @@
+@segment 35-37 Dustwallow Marsh, Shimmering Flats II & the Silithid Swarm
+@start-level 35
+# Carried in from segment 12. 1112 waits for Kravel on the Shimmering Flats, 1146 for Moktar Krin and 1436 for
+# Keldran in Orgrimmar; 5763, 1182, 577 and 582 go on to Stranglethorn (segment 15).
+@carry 1436,5763,1182,1112,577,582,1146,213
+# Prerequisites of the carried quests (1111 -> 1112, 1181 -> 1182, 575 -> 577, 581 -> 582, 1145 -> 1146, 1435 -> 1436).
+@done 1111,1181,575,581,1145,1435
+# Hearth and Astral Recall stay bound to Shadowprey Village all segment (rebound in Booty Bay in segment 15), so
+# every hop here is a flight. Carry-out (7): 1240 (Grom'gol), 1115 (Booty Bay), 1106 (Badlands, segment 14),
+# 5763, 1182, 577, 582.
+
+# ---------- Shadowprey Village -> Dustwallow Marsh ----------
+N Have 3 Soothing Spices in your bags before you leave @ Desolace, 23.1, 71.6 | They are for Jarl's quest in Dustwallow, so you can hand it in on the spot. Missed them at the end of the last segment? Lah'Mawhani (trade supplies) sells them here; Wulan the cook at 26.2,69.6 does too.
+FLY Thunder Bluff | Thalon, the Shadowprey wind rider master (21.6,74.1). A short stop to train on the way to Dustwallow.
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 34 spells. You last trained at 32, and the next trainer stop is at the end of this segment.
+FLY Camp Taurajo | Tal, the wind rider master on the central mesa
+G Dustwallow Marsh, 29.7, 47.8 | In Ghost Wolf, follow the road east out of Camp Taurajo into Dustwallow Marsh to the burned-out Shady Rest Inn.
+A 1251 | Pull the black shield off the inn's chimney
+A 1268 | Click the hoofprints in the mud beside the inn
+A 1269 | Pick up the badge in the inn's rubble
+A 1177 | Mudcrush Durtfeet, the big ogre beside the road a little south of Brackenwall Village
+G Dustwallow Marsh, 35.6, 31.8 | Brackenwall Village, north up the road
+F Brackenwall Village | Shardi, the wind rider master
+T 1251,1268,1269 | Krog
+A 1321 | Krog
+T 1321 | Do'gol, next to Krog
+A 1322 | Do'gol. The venom sacs drop from the Darkmist spiders you kill for Jarl later, so leave this for now.
+A 1201 | Nazeer Bloodpike
+
+# ---------- Reethe and the infiltrators ----------
+A 1273 | Ogron, south-east of the village
+C 1273 @ Dustwallow Marsh, 42.6, 38.1 | Follow Ogron to Reethe's hideout. Theramore men ambush you there: drop Stoneclaw Totem to pull them off Ogron, kill them one by one and heal Ogron with Healing Wave if he gets low.
+C 1201 | The Theramore Infiltrators (35-36) are stealthed and prowl the grass east and north-east of Brackenwall. Keep Lightning Shield up so they hurt themselves when they open on you.
+T 1201
+A 1202
+T 1273 | Krog
+
+# ---------- Theramore docks, Jarl, Darkmist Cavern ----------
+G Dustwallow Marsh, 64.6, 39.1 | Ghost Wolf east across the marsh to the coast north of Theramore and get into the sea here. Stay out of the long lake south-east of Brackenwall (Murk Threshers, 41-43), keep well north of Sentry Point (the tower at 60,41, guards 38) and never take the bridge into Theramore (guards 53-57). Mudrock turtles (37-38) walk this shore: slip past them.
+G Dustwallow Marsh, 72.0, 45.5 | Swim east, well out from the shore, until you are past the north-east corner of Theramore. Do not cut across the town.
+C 1202 @ Dustwallow Marsh, 71.5, 51.2 | Swim south to the Captain's Footlocker on the sea floor beside the Theramore docks and loot the documents. Stay off the pier and the beach (guards 53-57). Young Murk Threshers (40-41) circle the footlocker, one almost on top of it: do not fight them at your level, wait until it swims clear and keep your distance from the others.
+G Dustwallow Marsh, 72.0, 45.5 | Swim back north the way you came before you turn toward Jarl, so you stay clear of the town.
+A 1218 | "Swamp Eye" Jarl at Swamplight Manor, north-west of Theramore
+T 1218 | Hand over the 3 Soothing Spices
+A 1206
+A 1238 | The Loose Dirt mound just outside the manor
+G Dustwallow Marsh, 47.0, 21.0 | Head west past the north side of North Point Tower (46,24). About twenty Theramore Sentries (35-36) stand packed around the tower, so do not go near it.
+C 1206,1322 @ Dustwallow Marsh, 31.5, 21.5 | Darkmist Cavern, north-west of Brackenwall. Every Darkmist spider in and around the cave can drop both the eyes and the venom sacs. Most are Spiders and Recluses (35-37), but Silkspinners (38-39) are mixed in everywhere, the outer edge too: pull one at a time and use Healing Wave between pulls. Leave the Darkmist Widow (40, rare) at 31,20 alone. These spiders give more XP than the silithids where this segment's grind is, so extra kills here are never wasted.
+L 36 @ Dustwallow Marsh, 31.5, 21.5 | Not 36 yet? Keep killing Darkmist Spiders and Recluses (35-37) here before you leave: they give about a fifth more XP per kill than the level 32-35 silithids at the Swarm hive, where the rest of this segment's grind waits. Leave the Silkspinners (38-39) alone if they are too much for you
+T 1238,1202 | Nazeer Bloodpike, Brackenwall
+T 1322 | Do'gol
+A 1323
+T 1323 | Krog
+A 1276 | Krog. Keep it for Mosarn in Thunder Bluff later in this segment.
+
+# ---------- Second Jarl run, north coast, Stinky ----------
+T 1206 | Back to Jarl. Skip Jarl Needs a Blade (it needs a crafted Moonsteel Broadsword).
+A 1239 | Dig at the Loose Dirt again
+C 1177 @ Dustwallow Marsh, 59.5, 11.5 | Mirefin murlocs on the north coast, north-east of Jarl, drop the heads. They run when hurt: Earthbind Totem or Frost Shock keeps them from bringing friends.
+A 1270 | "Stinky" Ignatz, north-west of Swamplight Manor
+C 1270 @ Dustwallow Marsh, 46.9, 17.5 | Escort Stinky on his short loop through the bog while he picks bogbean leaves; kill whatever jumps him and keep him healed.
+T 1177 | Mudcrush Durtfeet, on the road just south of Brackenwall
+T 1239 | Nazeer Bloodpike, Brackenwall
+A 1240 | Keep the head for Kin'weelay in Grom'gol (Stranglethorn, a later segment)
+
+# ---------- Ratchet and the Shimmering Flats ----------
+FLY Ratchet | Shardi, the Brackenwall wind rider master
+T 1270 | Mebok Mizzyrix
+FLY Gadgetzan
+G Thousand Needles, 78.0, 77.0 | Ghost Wolf north out of Gadgetzan to the Mirage Raceway on the Shimmering Flats
+T 1112 | Kravel Koalbeard
+A 1114
+T 1114 | Fizzle Brassbolts, a few steps away
+A 1115 | Kravel. Keep it for Krazek in Booty Bay.
+A 1106 | Fizzle. Keep the letter for Martek the Exiled in the Badlands (next segment).
+
+# ---------- The Swarm (silithid hive) ----------
+T 1146 | Moktar Krin, north-west across the flats at their western edge, where the canyon road from Freewind Post comes down
+A 1147
+A 1148 @ Thousand Needles, 67.7, 82.5 | Silithid hive south of Moktar Krin. Kill silithids until a Cracked Silithid Carapace drops and right-click it at once, so the parts start dropping.
+C 1147,1148 @ Thousand Needles, 68.5, 85.5 | Same hive: 5 Searchers, 5 Hive Drones, 5 Invaders, plus 1 Heart, 5 Talons and 3 Intact Carapaces from any of them. Searchers (32-33) are on the north and east edge, Drones (33-34) fill the middle, Invaders (34-35) hold the west edge (64,86). They stand in groups: pull from the edge, drop Stoneclaw Totem when two come, Earthbind any that run. The Silithid Ravager (37, rare) walks the north side: fight it only when it is alone.
+L 37 @ Thousand Needles, 68.5, 85.5 | Not 37 yet? Keep killing silithids here; the Invaders (34-35) on the west edge give the most XP. The five turn-ins still ahead add about 11k XP, so you can stop that far short of 37.
+T 1147 | Back north to Moktar Krin
+
+# ---------- Thunder Bluff, Crossroads, Orgrimmar ----------
+G Thousand Needles, 45.1, 49.1 | Ghost Wolf west up the canyon road to Freewind Post (wind rider master Nyse)
+FLY Thunder Bluff
+T 1276 | Mosarn
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 36 spells (and any level 34 ones you skipped at the start of this segment)
+FLY Crossroads
+T 1148 @ The Barrens, 51.1, 29.6 | Korran
+A 1184 @ The Barrens, 51.1, 29.6 | Korran. For Belgrom in Orgrimmar.
+FLY Orgrimmar
+T 1184 | Belgrom Rockmaul, Valley of Honor (east side of the city)
+T 1436 | Keldran, on the west side of the city
+N Start saving gold for your mount | At 40 (first step of segment 16) you learn Wolf Riding from Kildar and buy a wolf from Ogunaro in the Valley of Honor: roughly 90-100 gold at Classic prices. Keep about that much from here on; sell greys and skip pricey upgrades.
+N Take the zeppelin to the Undercity @ Durotar, 50.8, 13.5 | Leave by the main gate; the zeppelin tower is just outside. Board the zeppelin to Tirisfal Glades (Undercity), not the one to Grom'gol. Your hearthstone stays on Shadowprey Village.

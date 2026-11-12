@@ -1,0 +1,15 @@
+# New Forever dungeon. Sources: level range (Blizzard's), how to get in and quests = foreverchanges.pro/dungeons/city-of-dalaran
+# and its quest pages; entrance = Questie dungeons.lua (Alterac Mountains 8.5, 59.2). Not in the Questie quest data.
+@dungeon City of Dalaran
+@levels 28-33
+@window 29-36
+@best 33
+@hub Hillsbrad Foothills, 62.0, 20.0, 6
+@entrance Alterac Mountains, 8.5, 59.2
+A 96988 @ Undercity, 46.6, 74.4 | Doctor Martin Felben in the Apothecarium. 6 Cracked Sentry Cores from the Fragmented Sentries; a run has only 12 to 15 of them and cores are not shared.
+A 96986 @ Hillsbrad Foothills, 62.5, 20.6 | Melisara in Tarren Mill. Kill Atrexis the Grave Knight.
+A 92434 +545 @ Hillsbrad Foothills, 61.6, 20.8 | Magus Wordeen Voidglare in Tarren Mill, after Dalaran Patrols and Key to the City. It leads you through the sewers on the north side of Dalaran to the Image of Archmage Modera.
+RUN | You get in through Dalaran's sewers, on the north side of the city by Lordamere Lake, then a portal at the end of a long pipe. The Image of Archmage Modera there ends Blood in the Streets, gives Heart of Disruption and turns your Grimy Key into the Dalaran Sewer Key. One player with the key lets the whole group in. Rexxie Copperclutch at the sewer entrance gives Opportunistic Education (a book on the back wall past the portal room). Many enemies here are immune to Arcane damage.
+T 96986 @ Hillsbrad Foothills, 62.5, 20.6
+T 96984 @ Hillsbrad Foothills, 61.6, 20.8 | Heart of Disruption: bring the Arcane Mote to Magus Wordeen Voidglare.
+T 96988 @ Undercity, 46.6, 74.4

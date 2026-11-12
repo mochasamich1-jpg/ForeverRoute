@@ -1,0 +1,91 @@
+@segment 9-11 East Elwynn: Jasperlode Mine, Eastvale & Stone Cairn Lake
+@start-level 9
+@carry 35,61,76,99131
+@done 62,40,99130
+# Human, any class. From the Human Warlock route's segment 03: same quests, same order, same hearth. Changed:
+#  - Out: 1685 Gakin's Summons, the warlock's level 10 quest taken at the end (the Human Mage file takes 1860
+#    there). In its place one N step at the level 10 training stop says that your trainer has a quest for you.
+#  - The closing TRAIN step is generic (trainer list: see segment 02) and all combat hints work for every class.
+#  - The `L 10` step before the last training stop stays, now for the level 10 skills and the class quest.
+# Goldshire -> the fishermen -> road east -> Tower of Azora -> Jasperlode Mine -> Tower of
+# Azora -> Guard Thomas at the bridge -> Eastvale Logging Camp -> prowlers, bears and wood around the camp ->
+# north up the river: the lost guards, Stone Cairn Lake (murlocs, Defias wizards, gnolls) -> Jasperlode Mine
+# again for the tools -> Tower of Azora -> Guard Thomas -> Eastvale -> the river south of the bridge ->
+# hearth to Goldshire.
+# Why the mine comes first and twice: its kobolds (7-9) are the lowest enemies out here, so it is the first
+# stop; the second Delicate Instruments quest (wizards at the lake) only opens when the first (geomancers in the
+# mine) is handed in at the tower, and Good Steel (tools from the mine) is only given at Eastvale. The second
+# visit is on the straight line from the lake back to the tower.
+# New Forever quests placed from the ForeverChanges pages: 91723 / 91724 Delicate Instruments (Hamish
+# Bergwort, Tower of Azora 65.0, 69.8), 91725 Stolen Enchanting Supplies (Blixie Fitzwink), 91732 Good Steel
+# (Hagar Lowe), 91733 Downstream (Ormin Pelford).
+# NOT published (the steps say what the quest text says, and the logger will show the real spots): where the
+# Mining Tools lie in the mine, which gnoll camps hold the Enchanting Supplies, where the three Waterlogged
+# items washed up.
+# Left out: 91777 Rare Books and 91740 Croaky's Head (elite), 88 Princess Must Die!, 59 Cloth and Leather
+# Armor (a walk back to Eastvale for 210 XP), 123 / 147 The Collector (starts from a rare gnoll drop: the gnoll
+# step in segment 04 says what to do if it drops), 91753 (Enchanting).
+# Hearthstone: bound in Goldshire, used once at the end.
+# Carry-out: 61 Shipment to Stormwind, 239 Westbrook Garrison Needs Help! (both segment 04).
+
+# --- Out of Goldshire ---
+T 99131 | Jason Mathers, the fisherman on the west shore of Crystal Lake
+N Follow the road east from Goldshire to the Tower of Azora @ Elwynn Forest, 63.3, 72.7 | About four minutes. The tower stands on a hill south of the road; the gnome Blixie stands at the foot of the hill, beside the road
+
+# --- Tower of Azora and the Jasperlode Mine ---
+A 91725 | Blixie Fitzwink. The gnoll camps are at Stone Cairn Lake: later in this segment
+A 91723 @ Elwynn Forest, 65.0, 69.8 | Hamish Bergwort, in the Tower of Azora
+C 76 | Go north across the road and up the valley to the Jasperlode Mine. Walk in until "Scout through the Jasperlode Mine" ticks
+C 91723 @ Elwynn Forest, 61.4, 53.0 | Kill 8 Kobold Geomancers (7-8) in and in front of the mine. They cast fire, so kill them fast and interrupt or stun their casts if your class can. Pull one at a time and fight where no other kobolds stand near. Mine Spiders (8-9) hang further in: leave the deep tunnels alone
+T 91723 @ Elwynn Forest, 65.0, 69.8 | Hamish Bergwort, back in the Tower of Azora
+A 91724 @ Elwynn Forest, 65.0, 69.8 | Hamish Bergwort: the second Delicate Instruments (Defias Rogue Wizards at Stone Cairn Lake)
+
+# --- The bridge and Eastvale ---
+T 35 | Follow the road east to the bridge: Guard Thomas
+A 37 | Guard Thomas
+A 52 | Guard Thomas
+A 46 | Guard Thomas
+A 91733 | Ormin Pelford, at the tipped wagon just past the bridge
+A 5545 | Supervisor Raelen, at the Eastvale Logging Camp, north-east of the bridge
+A 91732 | Hagar Lowe, at the camp
+A 83 | Sara Timberlain, in the house on the south side of the camp. The Red Linen Bandanas drop from the Defias wizards you kill at the lake
+N Sell and repair at the camp | Rallic Finn sells bows and repairs. Horses are sold here too: this is where you come for your mount at level 40
+
+# --- Around the camp ---
+C 5545 | Bundles of Wood lie at the foot of the trees all round the logging camp, mostly north of it: pick up 8
+C 52 @ Elwynn Forest, 80.5, 66.7 | Kill 8 Prowlers (9-10; around the camp and north of it) and 5 Young Forest Bears (8-9; in the woods south of the road, back toward the tower). Finish the bears later on the walk back if you are short
+T 5545 | Supervisor Raelen, at the logging camp: hand the wood in now, you are standing next to him and do not come back for a while
+
+# --- North up the river: Stone Cairn Lake ---
+T 37 | Follow the east bank of the river north. A half-eaten body lies on the ground
+A 45 | From the body
+T 45 | Rolf's corpse lies in the middle of the murloc camp on the east shore of Stone Cairn Lake. Murloc Foragers and Lurkers (9-10) stand close together and run for help: pull the outer ones back one at a time and finish each fast when it turns to run (slow or stun it if your class can). Never chase a runner into the camp
+A 71 | From the corpse
+C 46 @ Elwynn Forest, 78.0, 57.0 | Kill murlocs around the camp until you have 8 Torn Murloc Fins
+C 91724 @ Elwynn Forest, 74.0, 50.0 | North and north-west of the murloc camp, around the north-east shore: kill 6 Defias Rogue Wizards (9-10). They cast frost spells that slow you: fight one at a time, get on top of it or out-range it quickly, and interrupt its casts if your class can. If two come, walk away and pull again. Keep every Red Linen Bandana
+C 83 @ Elwynn Forest, 74.0, 50.0 | Keep killing wizards until you have 6 Red Linen Bandanas
+C 91725 @ Elwynn Forest, 70.0, 46.0 | Collect 5 Stolen Enchanting Supplies from the gnoll camps around the lake. Their exact spots are not published: the Riverpaw camps are on the north and west shores. Look for crates or sacks in the camps
+C 91732 @ Elwynn Forest, 61.0, 50.5 | West from the lake to the Jasperlode Mine: pick up 4 Mining Tools inside. Their spots are not published (the quest says "in the depths"): go in as far as you safely can, one kobold or spider at a time. If the tools are only among the spiders at the very back and that is too much, press Skip here and on the hand-in
+T 91724 @ Elwynn Forest, 65.0, 69.8 | South to the Tower of Azora: Hamish Bergwort
+T 91725 | Blixie Fitzwink, at the foot of the hill
+C 52 @ Elwynn Forest, 66.0, 75.0 | Finish the 5 Young Forest Bears in the woods south of the road on the way east
+
+# --- Hand-ins in the east ---
+T 71 | Guard Thomas, at the bridge
+A 39 | Guard Thomas
+T 52 | Guard Thomas
+T 46 | Guard Thomas
+T 91732 | Hagar Lowe
+T 83 | Sara Timberlain
+C 91733 @ Elwynn Forest, 78.0, 73.0 | Downstream: the Waterlogged Axe, Saw and Toolbox washed down the river south of the bridge, toward the murloc huts where the stream forks. Their spots are not published. Per TUGs the saw and the toolbox can be picked up without a fight, and the axe is guarded by two murlocs: fight them at full health, the weaker one first, and step back to the road if a third comes
+T 91733 | Ormin Pelford, by the wagon at the bridge
+H Goldshire | Hearthstone to the inn
+
+# --- Goldshire ---
+T 76 | Marshal Dughan
+A 239 | Marshal Dughan. Westbrook Garrison is in the west: next segment
+T 39 | Marshal Dughan. Do not take Cloth and Leather Armor: it only sends you back to Eastvale
+L 10 @ Elwynn Forest, 46.0, 70.0 | Not 10 yet? Kill Defias Bandits and boars south of Goldshire until you are: level 10 brings new skills and, for most classes, a class quest
+TRAIN | Goldshire: your class trainer for the level 10 skills (mage, priest, rogue and warlock trainers in the Lion's Pride Inn, warrior, paladin and hunter trainers at the smithy)
+N Your trainer has a quest for you at level 10; it is worth doing | This guide is not class-specific and does not list class quests: take it and fit it in where it suits you; the logger records what you take. The next segment goes to Stormwind first, then west Elwynn, then by tram to Ironforge and on to Loch Modan
+N Sell, repair and make bandages | Buy food and drink. The next segment goes to Stormwind, round the west of Elwynn, and then by tram to Ironforge and on foot to Loch Modan

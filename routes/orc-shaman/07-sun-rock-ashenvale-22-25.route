@@ -1,0 +1,129 @@
+@segment 22-25 Sun Rock, Windshear & Ashenvale
+@start-level 22
+@carry 1536,1067,529,546,567,98094,742,1195,1068,1095
+@done 1535,1066,1094,1062
+
+# Starts at Camp Taurajo, hearthed back from the Sepulcher with the Filled Red Waterskin.
+# Order: Brine, then Thunder Bluff (training, Zamah, Tah), then the Crossroads and the level 22-25
+# Stonetalon quests (Malaka'jin, Windshear, Mirkfallon Lake, Stonetalon Peak), then all of Ashenvale,
+# then back to Sun Rock at about level 24.5 for the Charred Vale and Gerenzo. The hearth stays at
+# Camp Taurajo the whole time. Use Ghost Wolf for every long run outdoors.
+
+# --- Brine and Thunder Bluff ---
+T 1536 | Run south from Camp Taurajo down the road to Brine's hut (Ghost Wolf). Hand in the Filled Red Waterskin
+A 1534 | Brine. Keep the Empty Blue Waterskin: you fill it at the Ruins of Stardust in western Ashenvale later in this segment and bring it back to her next segment
+G The Barrens, 44.5, 59.2 | Run back north to Camp Taurajo's wind rider master
+FLY Thunder Bluff
+A 97538 @ Thunder Bluff, 54.5, 47.4 | New Forever quest. Tah Winterhoof stands on the central rise, a short walk east of the wind rider master. The pods come from Mirkfallon Lake in Stonetalon. Keep the quest: you hand the pods in on your next Thunder Bluff visit
+T 1067 | Apothecary Zamah, in the Pools of Vision under Spirit Rise (the west mesa)
+A 1086 | Keep the Toxic Fogger. You use it at the goblins' sky port in Windshear Crag at the end of this segment and hand the quest in to Zamah next segment
+TRAIN @ Thunder Bluff, 22.8, 21.1 | The shaman trainers stand right next to Zamah: learn your level 22 spells
+FLY Crossroads | From Tal, back on the central rise
+
+# --- Crossroads, then on foot to Malaka'jin and Windshear Crag ---
+A 868 | Korran, at the Crossroads. Keep it: the Silithid Eggs come from the Field of Giants south of Camp Taurajo next segment
+G The Barrens, 35.3, 27.9 | Run west along the road to the Stonetalon border, where Seereth Stonebreak stands. Shredding Machines is not done yet: you come back past him on the way to Ashenvale
+A 1058 | Witch Doctor Jin'Zil, in the small cave at Malaka'jin just past the border. The parts come from Stonetalon Peak, which you visit soon
+A 1090 | Follow the road north into Windshear Crag. Piznik stands at a mine entrance on the east side of the logging camp
+C 1090 @ Stonetalon Mountains, 71.9, 60.0 | Piznik mines for about a minute. Stay next to him and kill the Venture Co. goblins that run at him (a Searing Totem beside him helps), then talk to him for the ore
+T 1090
+A 1092
+C 1068:1 @ Stonetalon Mountains, 64.1, 46.4 | XT:4 is a goblin shredder (level 23) working the north end of the logging area, by Cragpool Lake. Gerenzo (level 27) stands on the heights just north of it: leave him alone for now
+C 1068:2 @ Stonetalon Mountains, 64.1, 56.6 | XT:9, the second shredder (level 23), works the logging area further south
+T 1095,1092 | Ziz Fizziks stands under the cliff at the south-west edge of Windshear Crag. He then offers Gerenzo Wrenchwhistle: do not take it yet. You come back for it after Ashenvale, about two levels higher
+
+# --- Sun Rock, Mirkfallon Lake and Stonetalon Peak (mobs 22-25) ---
+A 6301 | Walk west to Sun Rock Retreat. Tammra Windfield, in the middle of the camp
+A 1087 | Braelyn Firehand, on the west side of Sun Rock Retreat. Leave the Charred Vale quests (mobs up to level 27) until you come back after Ashenvale
+C 6301,97538 | Walk north to Mirkfallon Lake. Gaea Seeds lie on the ground around the lake shore. Mirkweed plants grow in the shallow water of the lake; loot 30 Mirkweed Pods from them
+C 1087,1058 | Keep going north to Stonetalon Peak (mobs level 22-25). The Sons and Daughters of Cenarius and the Cenarion Botanists camp south of the Alliance outpost at the Peak (stay away from its guards); Earth Shock the Botanists' heals. Sap Beasts (sap), Twilight Runner cats (whiskers), Antlered and Great Coursers (30 eyes, roughly two per deer) and the small Fey Dragons (one scale) all roam the Peak. You do not need the druids and dryads further west (level 25-27)
+T 6301 | Walk back south to Sun Rock Retreat. Finish any missing Gaea Seeds or Mirkweed Pods at the lake on the way. Tammra then offers New Life: take it when you come back
+T 1087 | Braelyn then offers Ordanus (level 29). Keeper Ordanus sits at the top of Raynewood Retreat in Ashenvale, among level 25-27 druids. Skip it
+
+# --- Back through Windshear to Malaka'jin and the Barrens ---
+T 1058 | Walk east into Windshear Crag and follow the road south to Jin'Zil's cave at Malaka'jin
+A 6542 | Darn Talongrip, in the Malaka'jin camp beside Jin'Zil's cave. It sends you to Kadrak, who is on your way north
+T 1068 | Seereth Stonebreak, just across the border in the Barrens
+
+# --- North through the Barrens into Ashenvale ---
+G The Barrens, 48.1, 5.4 | Run north-east across the Dry Hills to Mor'shan Rampart, the Horde gate at the north end of the Barrens
+T 6542 | Kadrak, on the Mor'shan watch tower
+A 6543 | Kadrak. Right-click the Bundle of Reports for three Warsong Reports. Three Warsong messengers in Ashenvale each take one: talk to each of them, accept his short quest and hand it straight back to get his update
+A 6544 | Follow the road north into Ashenvale. Torek and his raiders wait just west of the road, south of Splintertree Post
+C 6544 @ Ashenvale, 68.3, 75.3 | Tell Torek you are ready; he charges west into Silverwing Outpost. At the end Duriel Moonfire and four elves jump you inside the building. They have little health: drop Stoneclaw Totem to pull some of them off you, Earth Shock Duriel's spells and heal yourself with Healing Wave if you drop low
+A 6503 | Kuray'bin waits by the road a little further north
+C 6543:1 @ Ashenvale, 71.0, 68.4 | The Warsong Scout stands next to Kuray'bin: give him the first report
+C 6503 | Ashenvale Outrunners are stealthed night elf scouts in the woods on both sides of the road around Kuray'bin and Torek. Walk the slopes; they show themselves when they attack. Sharptalon, a level 31 hippogryph, stands on the slope east of the road (around 75, 70) among some Outrunners: hunt the Outrunners away from him
+T 6503
+F Splintertree Post | Vhulgra, the wind rider master. Do not bind here: your hearth stays at Camp Taurajo
+T 6544 | Ertog Ragetusk
+T 742 | Senani Thunderheart
+A 6383
+T 6383 | This opens the Ashenvale Hunt. Sharptalon (level 31, south of the post) is for much later; skip him
+L 23 @ Ashenvale, 72.0, 74.0 | Only if you are not level 23 yet (the step ticks by itself otherwise): Mastok's quest and the Befouled Element both need 23. Kill a few more Ashenvale Outrunners in the woods along the road south of the post (stay away from Sharptalon at 75, 70), then come back
+A 25 | Mastok Wrilehiss. Also skip: The Lost Pages (Gurda Ragescar, level 30, the pages are random drops) and Warsong Supplies (needs a crate from Booty Bay and an engineering gun). Pixel's Satyr Horns can wait until you come back
+
+# --- West loop: Mystral Lake, Ursangous, Va'xug, Ruins of Stardust, Zoram'gar, Thistlefur ---
+C 25 | Mystral Lake is south-west of Splintertree. Kill the Befouled Water Elementals around the lake and walk onto the gazebo on the lake (48.9, 69.6) to scout it. Keep away from Silverwind Refuge, the Alliance camp by the lake
+A 1918 @ Ashenvale, 45.9, 70.6 | Tideress (level 27) is a named water elemental near the small island in the west of the lake. Her Befouled Water Globe starts this quest. Clear the elementals around her first and fight her at full mana with Stoneclaw Totem down
+A 23 @ Ashenvale, 39.8, 65.2 | Ursangous (level 25, a druid in bear form) patrols the woods west of Mystral Lake. His paw starts this quest. A huge elite treant also patrols here: keep your distance
+A 98251 @ Ashenvale, 40.4, 61.5 | New Forever quest. Va'xug Firefure, a lost warlock, sits in a ravine just north of Ursangous
+C 98251 @ Ashenvale, 39.7, 65.4 | Shadowhorn Stags and Ashenvale Bears roam all around the ravine
+T 98251 @ Ashenvale, 40.4, 61.5
+A 98252 @ Ashenvale, 40.4, 61.5
+C 98252 @ Ashenvale, 38.6, 58.3 | Va'xug's Eye of Kilrogg follows you: lead it out of the ravine to the main road within four minutes. If the channel breaks, go back to her and try again
+T 98252 @ Ashenvale, 38.6, 58.3 | Hand it in to the Eye of Kilrogg itself, at the road
+C 1534 @ Ashenvale, 33.55, 67.47 | Call of Water. Astranaar (Alliance town, level 40 guards) is north up this road: go the other way. Head south-west from the road to the Ruins of Stardust, a small lake west of Ursangous's woods. Wade to the fountain in the middle of the lake and use the Empty Blue Waterskin there. Keep the Filled Blue Waterskin for Brine
+G Ashenvale, 30.0, 57.0 | Now head north-north-west, keeping Astranaar (around 36, 50) well to your right
+G Ashenvale, 12.2, 33.8 | Turn north-west and cross the forest to Zoram'gar Outpost on the coast. Keep clear of the night elves at around 22, 53 (on your left) and of Maestra's Post (Alliance, around 27, 36, on your right)
+F Zoram'gar Outpost | Andruk, the wind rider master
+C 6543:2 @ Ashenvale, 12.2, 34.2 | The Warsong Runner is in the outpost: give him the second report
+A 6442 | Marukai
+A 6462 | Mitsuwa
+A 216 | Karang Amakkar. Skip Vorsha the Lasher (Muglash) and King of the Foulweald: both are elite
+C 6442 @ Ashenvale, 10.5, 27.5 | Wrathtail naga (level 18-21) line the Zoram Strand. The nearest start just north of the outpost; if they run thin, follow the shore further north. Every kind drops heads. Earth Shock the Sea Witches' and Sorceresses' casts
+T 6442
+G Ashenvale, 24.0, 30.0 | Leave Zoram'gar heading east, bearing a little north. Maestra's Post (Alliance, around 27, 37) sits right on the straight line to Thistlefur and has a level 42 night elf: pass well north of it
+C 216 | Thistlefur Village is the furbolg village further east. Kill the Avengers and Shamans in and around the village. Earth Shock the Shamans when they cast, and pull one at a time
+C 6462 | Thistlefur Hold is the cave at the east end of the village. Troll Chests sit along its tunnels; each holds a Troll Charm
+A 6482 | Ruul Snowhoof is a captive tauren deep inside Thistlefur Hold
+C 6482 @ Ashenvale, 41.5, 34.5 | Escort Ruul out of the cave. Furbolgs ambush you on the way: drop Stoneclaw Totem next to him so they turn on it, and keep them off him. Afterwards you only need to talk to his sister in Splintertree. Keep 216 and 6462: you hand them in on a later flight back to Zoram'gar
+
+# --- East across Ashenvale to Splintertree, then the Warsong Outrider, Night Run and Shadumbra ---
+G Ashenvale, 59.8, 55.0 | Run south-east across the middle of Ashenvale. Astranaar (around 36, 50) stays to your south-west, and the worgen (level 29-32, around 50, 39) stay north of your path. The Laughing Sisters (dryads, 24-25) roam the woods below Raynewood Retreat: kill them until one drops an Etched Phial (for The Sacred Flame). Do not go up into Raynewood Retreat (around 62, 51): groups of druids guard it. Shadumbra (level 28 panther) patrols these same woods; her head starts Shadumbra's Head. Take her on now only if you are already level 24 (at 23 she is red and your shocks miss a lot): full health and mana, Stoneclaw Totem down, heal early. Otherwise keep clear of her: you get a second chance after Night Run
+G Ashenvale, 56.5, 61.0 | Phial in hand, head south-west first, around the guarded moonwell (59, 59-60): its level 40 night elf sentinels stand right on the straight line south. Leave the Laughing Sisters next to it alone
+C 1195 @ Ashenvale, 60.2, 72.9 | Now walk south-south-east, cross the main road and use the Etched Phial at the moonwell on the west bank of the Falfarren River. Keep the Filled Etched Phial for Thunder Bluff next segment
+G Ashenvale, 69.7, 71.7 | Walk east to the Horde road, passing north of Silverwing Outpost, then follow it north to Splintertree Post
+T 6482 | Yama Snowhoof
+T 23 | Senani Thunderheart. If you already have Shadumbra's Head, hand it in too
+T 25,1918 | Mastok Wrilehiss
+A 824 | The globe goes to Je'neu at Zoram'gar; you fly there once Ashenvale is done
+A 6441 | Pixel
+C 6543:3 @ Ashenvale, 81.8, 53.5 | Follow the road east out of Splintertree toward Azshara. The Warsong Outrider waits by the road: give him the last report
+C 6441 @ Ashenvale, 67.5, 54.5 | Come back west to Night Run, the satyr valley north-west of Splintertree. Every Felmusk satyr (level 25-27) can drop horns. The Felsworn cast: Earth Shock them. Pull one at a time; Rogues and Shadowstalkers come out of stealth
+A 24 @ Ashenvale, 57.5, 56.0 | Shadumbra, second chance (the step ticks by itself if her head is already in your log or handed in). She patrols the woods about 600 yards west of Night Run, just south of Raynewood Retreat. Fight her only at level 24 or higher: full health and mana, Stoneclaw Totem down, Flame Shock, heal early. Still 23? Press Skip here and on her turn-in. Do not pull her toward the sentinels' moonwell (59, 60)
+T 6441 | Back east to Pixel in Splintertree
+T 24 | Senani Thunderheart (press Skip if you left Shadumbra)
+G The Barrens, 48.1, 5.4 | Follow the road south out of Ashenvale to Mor'shan Rampart
+T 6543 | Kadrak
+G Ashenvale, 73.2, 61.6 | Run back north to Splintertree Post's wind rider master
+FLY Zoram'gar Outpost
+T 824,216,6462 | Je'neu Sancrea, Karang Amakkar and Mitsuwa, all in the outpost
+
+# --- Back to Sun Rock: the Charred Vale, Gerenzo and the sky port ---
+FLY Sun Rock Retreat | A long flight with stops on the way
+A 6381 | Tammra Windfield, in the middle of Sun Rock Retreat
+A 6282,86576 | Maggran Earthbinder gives both. 86576 Bloodfury Trinkets is new in Forever; its sunstones go to Mor'rogal, who stands next to Tsunaman
+A 6393 | Tsunaman, on the hill at the south end of Sun Rock Retreat
+C 6381,6282,86576,6393 | The Charred Vale is the burnt valley west and south-west of Sun Rock. Plant the seeds in the Gaea Dirt Mounds on the valley floor. Kill all four kinds of Bloodfury harpy: Harpies and Ambushers (level 23-24), Slayers and Roguefeathers (25-26); Glittering Sunstones drop from them. Storm Witches (26-27) hit hard: pull them one at a time and Earth Shock their casts. Incendrites drop from the fire elementals: Rogue Flame Spirits (23-24) on the way in, Burning Ravagers (24-25) and Burning Destroyers (26-27) deeper in the vale; Frost Shock the Destroyers and fight them one at a time. Leave Bloodfury Ripper (elite) alone
+T 6393 | Back to Sun Rock: Tsunaman, on the south hill
+T 86576 @ Stonetalon Mountains, 47.2, 64.0 | Mor'rogal, next to Tsunaman
+T 6282 | Maggran then offers Bloodfury Bloodline (elite). Skip it
+A 5881 | Maggran's letter goes to Grish Longrunner at the Great Lift next segment. Keep it
+T 6381 | Tammra Windfield
+L 25 @ Stonetalon Mountains, 33.0, 67.0 | Only if you are not level 25 yet (the step ticks by itself otherwise): walk back west into the Charred Vale and kill Bloodfury harpies and fire elementals (23-27) until 25. Gerenzo is level 27, so the extra level helps
+A 1096 | Walk east to Ziz Fizziks, under the cliff at the south-west edge of Windshear Crag
+C 1086 @ Stonetalon Mountains, 66.5, 45.5 | Walk north through Windshear Crag. The sky port is the goblins' landing pad with a parked flying machine, just east of where XT:4 worked: use the Toxic Fogger there, then leave
+C 1096 | Gerenzo Wrenchwhistle (level 27) watches the site from high above Cragpool Lake, a little north-west of the pad, next to the big water wheel; follow the path up. Clear the goblins around him first, then pull him alone at full health and mana: Stoneclaw Totem and Searing Totem down, Flame Shock, Earth Shock if he casts, Healing Wave below half health. Loot his Mechanical Arm
+T 1096 | Back south to Ziz Fizziks
+H Camp Taurajo | Next segment starts here

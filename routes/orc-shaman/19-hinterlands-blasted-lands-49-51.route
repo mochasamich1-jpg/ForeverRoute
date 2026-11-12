@@ -1,0 +1,98 @@
+@segment 49-51 The Hinterlands & Blasted Lands
+@start-level 49
+# Carried in (segment 18's carry-out): 864 Return to Apothecary Zinge (Undercity), 650 Ripple Recovery (Gilveradin, Hinterlands),
+# 32 Rise of the Silithid (Orgrimmar, segment 20) and 2641 Sprinkle's Secret Ingredient (Violet Tragan here, Gadgetzan in segment 20).
+@carry 864,650,32,2641
+# 648 and 2767 (OOX robots, handed in to Oglethorpe in segment 18) unlock An OOX of Your Own (3721) together with 836 from this segment.
+@done 648,2767
+# Adapted from undead-mage 17 (Undercity, Tarren Mill, the Hinterlands, Stonard and the Blasted Lands) and 18 (Oran and the
+# Apothecarium chemists). No teleports: Thorium Point -> Undercity by wind rider, Tarren Mill -> Hinterlands on the road,
+# Revantusk -> Undercity by wind rider, hearth to Stonard, Stonard -> Booty Bay by wind rider, boat to Ratchet.
+# Hearthstone and Astral Recall stay bound to Stonard (segment 18) all segment; segment 20 rebinds in Gadgetzan.
+# The chemists' quests (3568, 4294, 4293) are taken on the second Undercity stop so they do not fill the log in the Hinterlands.
+# Carry-out (6): 81 (Dran Droffers, Orgrimmar), 32 (Zilzibin, Orgrimmar), 2641 (Sprinkle, Gadgetzan), 3568 (Azshara vials),
+# 4294 (Un'Goro slime) and 4293 (Felwood slime); the last two go back to Chemist Fuely in segment 23.
+# Skipped on purpose: 7842 (scattered gryphons), the Revantusk elite quests (7816, 7845-7850, 7861, 7862), 2933/2934 (extra
+# Tarren Mill trips, chain ends in elite 2935), 2623 (level 55), 4642 (another Un'Goro trip), 2521/2522 (rare sphere).
+
+# ---------- Undercity ----------
+FLY Undercity @ Searing Gorge, 34.8, 30.8 | You start at Thorium Point. Grisha, the wind rider master. It is a long flight that passes through Kargath: you do not change, stay on the wind rider until it lands in the Undercity. Your hearthstone stays set to Stonard.
+T 864 | Apothecary Zinge in the Apothecarium
+A 2995 | Oran Snakewrithe in the Magic Quarter. She wants three elf documents burned at Quel'Danil Lodge in the Hinterlands.
+FLY Tarren Mill @ Undercity, 63.2, 48.6 | Michael Garrett, the bat handler by the west elevator
+N Ride east out of Tarren Mill on the road into the Hinterlands | Go around Aerie Peak, the Wildhammer dwarf town at the west end of the zone: its guards attack Horde on sight.
+
+# ---------- The Hinterlands: west, then east to Revantusk ----------
+T 650 | Gilveradin Sunchaser camps just south-west of Quel'Danil Lodge (26.7, 48.6). Leave the Venom Bottles in the Witherbark village to the south: that chain needs two extra Tarren Mill trips and ends in an elite quest.
+A 77 | Gilveradin Sunchaser. Leave Quel'Danil Lodge, the elf lodge just north-east, alone for now: you clear it once Revantusk's Message to the Wildhammer is in your log.
+N Optional: only if you took Testing the Vessel in Feralas (segment 17) | Vicious and Primitive Owlbeasts roam the hills on both sides of the road east (around 35-46, 43-56). Kill 10 and use the Muisek Vessel on each corpse. Not in your log? Ignore them and ride on.
+C 77 @ The Hinterlands, 57.0, 41.5 | Follow the road east to Skulk Rock. Loot the Horde Supply Crates around the old Horde camp there. Green Sludges and Jade Oozes guard them. Only six crates stand there: four more sit west of Skulk Rock at the head of the river (45.5-47.5, 38-41), next to a broken robot. Keep an OOX-09/HL Distress Beacon if one drops.
+F Revantusk Village @ The Hinterlands, 81.7, 81.8 | Keep following the road south-east to Revantusk Village on the coast. Gorkas, the wind rider master
+A 7828,7829,7830 | Huntsman Markhor
+A 7839 | Smith Slagtree
+A 7840 | Lard
+A 7841 | Otho Moji'ko. Skip the Revantusk elite quests (Gammerita, Separation Anxiety, Dark Vessels, Kidnapped Elder Torntusk, the Call to Arms board).
+A 7844 | Mystic Yayo'jin
+A 7815 | Katoom the Angler
+
+# ---------- The Hinterlands: big loop ----------
+C 7828:1,7829,7830 @ The Hinterlands, 60.0, 50.0 | Ride north-west into the central wilds. Silvermane Stalkers, Savage Owlbeasts and the Razorbeak Skylords (one circles near 54, 49, another near 64, 52) all live here. Stalkers come out of stealth on you: drop Stoneclaw Totem if a second beast joins and Healing Wave between pulls.
+C 7844:2 @ The Hinterlands, 47.5, 66.0 | Ride south-west to the Altar of Zul. Kill 15 Vilebranch Soothsayers around it (Earth Shock their casts), and every Vilebranch Scalper you see, again as they respawn: Yayo'jin wants 30 Scalpers and only about 8 live here. You finish them at Agol'watha (53, 40) and Shaol'watha (70, 48) later on the loop, so do not wait here for Scalpers. Stay off the top of the altar (48.7, 68.3): the Keepers there are level 50 elites.
+C 2641 @ The Hinterlands, 40.6, 59.7 | The small lake just west of the Altar. Swim to the bottom and pick a Violet Tragan mushroom.
+C 7828:2 @ The Hinterlands, 43.0, 54.0 | Silvermane Howlers roam the hills around the lake.
+C 7841,2995 @ The Hinterlands, 31.5, 47.5 | Back at Quel'Danil Lodge: kill 15 of each kind of Highvale elf and burn the three Highvale documents, the Records (32.0, 46.8), the Notes (29.6, 48.7) and the Report (28.6, 46.0). The elves respawn while you work. Marksmen shoot from range: pull them round a corner so they come to you, and keep Stoneclaw Totem ready for the second elf. This is a PvP quest: the Highvale elves side with the Alliance and attacking them flags you for PvP, so watch for Alliance players from Aerie Peak.
+A 2742 | Rin'ji is held inside the lodge (30.7, 46.9). Accept once the lodge is cleared: he starts walking out straight away.
+C 2742 @ The Hinterlands, 30.7, 46.9 | Escort Rin'ji out of the lodge. Elves jump him on the way: drop Stoneclaw Totem beside him to pull them off and throw him a Healing Wave if he gets low. If he dies, abandon the quest and take it again from him in the lodge. His secret is far to the east; you pick it up later.
+T 77 | Gilveradin Sunchaser
+A 81 @ The Hinterlands, 26.7, 48.6 | Gilveradin Sunchaser. You hand the barrel in at Orgrimmar in the next segment.
+C 7839 @ The Hinterlands, 53.4, 38.7 | Ride back east. Slagtree's Lost Tools lie at one of five Vilebranch spots. Check the two near the robot first: Agol'watha (53.4, 38.7) and Skulk Rock (57.4, 42.5). Kill the four Vilebranch Scalpers and two Soothsayers at Agol'watha for Yayo'jin while you are there.
+A 485 @ The Hinterlands, 49.4, 37.7 | Right-click the OOX-09/HL Distress Beacon. The robot lies at the head of the river just west of Agol'watha. No beacon yet? Kill the oozes at Skulk Rock (57, 42) and the Vilebranch at Agol'watha (53, 39) until one drops: Find OOX-09, Rescue OOX-09 and An OOX of Your Own are worth about 17,000 XP together.
+T 485 | Homing Robot OOX-09/HL
+A 836 | Homing Robot OOX-09/HL
+C 836 @ The Hinterlands, 84.0, 58.0 | Escort the robot east to the shore below the Overlook Cliffs. Kill the ambushers quickly; Stoneclaw Totem pulls them off the robot. If it dies, abandon the quest and take it again from the robot at its start spot.
+C 7840 @ The Hinterlands, 84.5, 41.2 | Ride north along the coast to Lard's island, just offshore. Click Lard's Picnic Basket; the Vilebranch Kidnappers that show up carry the lunch. They come in a group: drop Stoneclaw Totem first and Earthbind Totem if one runs.
+C 7839 @ The Hinterlands, 71.0, 48.7 | Tools not found yet? Check the three Shaol'watha spots on your way back south: 66.4, 44.8; 71.0, 48.7; 72.5, 52.9.
+C 7844 @ The Hinterlands, 70.5, 48.0 | Finish Cannibalistic Cousins at Shaol'watha: most of the Vilebranch Scalpers stand around its two temples (66, 44 and 71, 48), with a few Soothsayers. Still short of 30 Scalpers? Wait here for respawns: there are no more between here and Revantusk.
+T 2742 @ The Hinterlands, 86.3, 59.0 | Ride south-east to the Overlook Cliffs. Rin'ji's Secret is a tablet on the cliff top.
+A 2782 | Take the tablet. You hand it to Oran Snakewrithe in the Undercity.
+C 7815 @ The Hinterlands, 81.0, 62.0 | Saltwater Snapjaws crawl along this whole coast. Kill them along the shore, then follow it south to Revantusk. Gammerita, a big elite turtle, walks the same shore: leave her alone.
+T 7828,7829,7830 | Back in Revantusk: Huntsman Markhor
+T 7839 | Smith Slagtree
+T 7840 | Lard
+T 7841 | Otho Moji'ko. Skip Another Message to the Wildhammer: the gryphons it needs are too spread out.
+T 7844 | Mystic Yayo'jin
+T 7815 | Katoom the Angler
+
+# ---------- Undercity again ----------
+FLY Undercity @ The Hinterlands, 81.7, 81.8 | Gorkas, the wind rider master. Keep the Violet Tragan for Sprinkle in Gadgetzan (next segment).
+T 2782,2995 | Oran Snakewrithe in the Magic Quarter
+A 8273 | Oran Snakewrithe
+T 8273 | Oran Snakewrithe
+A 3568 | Chemist Cuely in the Apothecarium. You fill the vials at the Ruins of Eldarath in Azshara in the next segment.
+A 4294,4293 | Chemist Fuely, right next to Cuely. Un'Goro slimes come in the next segment, Felwood slimes later; you test the samples at his equipment and hand both in on a later Undercity visit. Skip his follow-up Melding of Influences when it comes.
+H Stonard | Hearthstone, or cast Astral Recall: both take you to Stonard.
+
+# ---------- Stonard and the Blasted Lands ----------
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Haromm in Stonard: learn any level 48 spells you are still missing. Your level 50 spells come when you are back here after the Blasted Lands.
+A 2784 @ Swamp of Sorrows, 34.3, 66.1 | Ride south-west out of Stonard to the Fallen Hero of the Horde, a ghost standing by the road that leads south into the Blasted Lands
+T 2784 @ Swamp of Sorrows, 34.3, 66.1 | Listen to his whole story
+A 2621 @ Swamp of Sorrows, 34.3, 66.1 | Fallen Hero of the Horde. You hand it in at Stonard at the end.
+A 2581,2583,2585 @ Blasted Lands, 50.5, 14.2 | Follow the road south into the Blasted Lands. Bloodmage Drazial stands just inside the pass.
+A 2601,2603 @ Blasted Lands, 50.6, 14.3 | Bloodmage Lynnore, next to him
+C 2581,2583,2585,2601,2603 @ Blasted Lands, 55.0, 30.0 | You need 5 Snickerfang Jowls, 6 Blasted Boar Lungs, 6 Scorpok Pincers, 11 Basilisk Brains and 14 Vulture Gizzards in all. North plain (around 50, 22): Starving Snickerfangs and Scorpok Stingers. North-east (around 60, 30): Ashmane Boars, Redstone Basilisks and Black Slayer vultures. Only five boars and five basilisks live there, so also kill the Redstone Crystalhides just south of them (around 60, 40), which drop Basilisk Brains too, and the Helboars (around 60, 45), which drop Boar Lungs too. Both are level 51-53 and hit a little harder. Centre (around 52, 40): Bonepicker vultures and Snickerfang Hyenas. Vultures and hyenas often come two at a time: Stoneclaw Totem holds one, Healing Wave between pulls.
+N If an Imperfect Draenethyst Fragment dropped, take it to Kum'isha the Collector @ Blasted Lands, 52.0, 35.6 | He stands in the centre of the Blasted Lands and gives Everything Counts In Large Amounts (5650 XP) for it. Do not farm for one.
+T 2581,2583,2585 @ Blasted Lands, 50.5, 14.2 | Bloodmage Drazial
+T 2601,2603 @ Blasted Lands, 50.6, 14.3 | Bloodmage Lynnore
+L 51 @ Blasted Lands, 52.0, 28.0 | Quest XP runs short here: grind to 51, the next segment's Un'Goro mobs are 50-55. Best XP: Scorpok Stingers (50-51) on the north plain (46-57, 14-24), and Snickerfang Hyenas and Bonepickers (49-50) in the centre around 53, 38. The Starving Snickerfangs (45-46) give much less. Stay north of the Felhounds (54-55, around 60, 55): they drain mana.
+N Cast Astral Recall (back to Stonard) | Or ride back north through the pass and the Swamp.
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Haromm: learn your level 50 spells. He also offers Elemental Mastery at 50: leave it for now; the next segment tells you when to take it.
+T 2621 @ Swamp of Sorrows, 47.8, 54.9 | Dispatch Commander Ruag in Stonard
+A 2622 @ Swamp of Sorrows, 47.8, 54.9 | Dispatch Commander Ruag
+T 2622 @ Swamp of Sorrows, 45.0, 57.4 | Bengor, also in Stonard. Skip his next quest, The Swamp Talker (level 55).
+
+# ---------- Booty Bay, then the boat to Ratchet ----------
+FLY Booty Bay @ Swamp of Sorrows, 46.1, 54.8 | Breyk, the wind rider master in Stonard
+T 836 | Oglethorpe Obnoticus in Booty Bay
+A 3721 | Oglethorpe Obnoticus. Only offered once all three OOX robots are home; otherwise skip this step and the next.
+T 3721 | Oglethorpe Obnoticus. It has no objectives; the reward is a Mechanical Chicken pet.
+N Take the boat from the Booty Bay dock to Ratchet | Keep 81 and 32 for Orgrimmar, 2641 for Gadgetzan, and the three chemist quests for later. Your hearthstone stays set to Stonard until the next segment rebinds it in Gadgetzan.

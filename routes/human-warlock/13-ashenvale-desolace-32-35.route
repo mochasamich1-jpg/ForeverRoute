@@ -1,0 +1,172 @@
+@segment 32-35 Ashenvale II & Desolace
+@start-level 32
+# Human Warlock. From the Gnome route's segment 12 (class-neutral Alliance path): same quests, order, binds and
+# flights. It has no trainer stop and no class quests. Changed: every combat hint is written for a level 32-35
+# warlock (Voidwalker first, DoTs, Fear on the second enemy, Drain Life, Health Funnel, Curse of Tongues on
+# casters, Banish on a second satyr / demon / treant, Soulstone before the hard fights); the root and escort
+# hints no longer name a gnome racial or speak of "your class".
+# Travel as in the Gnome file: from Shael'dryn's moonwell to Astranaar is a walk west along the road (the
+# Hearthstone is needed 20-30 minutes later, after the furbolg camp). The three returns to Nijel's Point use the
+# Hearthstone: each loop between them takes over an hour, and each step says to walk if it is not ready.
+# Carry-in: 1026 (Shael'dryn), 1453 (Kreldig Ungor, Nijel's Point), 525 (Southshore, segment 16), 563 (Stormwind, segment 15),
+# 1179 (Shimmering Flats, segment 14), 1264 (Theramore, segment 14).
+# Carry-out: 525, 563, 1179, 1264 untouched, plus 1457 and 1467 (both for Roetten Stonehammer in Ironforge, segment 15).
+@carry 525,563,1026,1179,1264,1302,1453,98209,98463
+@done 1024,1034
+
+# ---------- Astranaar and the Shrine of Aessina ----------
+T 98209 @ Darkshore, 37.4, 40.1 | Thundris Windweaver, the elder in the building at the north end of Auberdine: hand him Nord'el
+FLY Astranaar @ Darkshore, 36.3, 45.6 | Caylais Moonfeather, on the Auberdine dock where the boat lands
+S Astranaar @ Ashenvale, 37.0, 49.2 | Innkeeper Kimlya. You hearth back here twice in this segment
+A 1035 | Pelturas Whitemoon, Astranaar (37.4,51.8)
+A 4581 | Shindrell Swiftfire, Astranaar (34.7,48.8)
+A 1022 | Take the road west to the Shrine of Aessina (22,53). Sentinel Melyria Frostshadow. The quest text says Forest Song, but Questie and ForeverChanges both place her here
+A 1021 | Illiyana, the dryad next to her
+A 86757 @ Ashenvale, 49.4, 67.0 | Back east through Astranaar, then south-east to Silverwind Refuge on Mystral Lake. Shandrina (new in Forever). The orcs for it are in the far south-east: you kill them on the loop below
+
+# ---------- East loop: Howling Vale, the treants, Shael'dryn ----------
+C 1022 @ Ashenvale, 50.5, 39.1 | Go north across the road into the Howling Vale. The Tome of Mel'Thandris stands in the ruined shrine at 50.5,39.1; the way in is through the short cave at 53.0,37.6. Worgen (27-30) stand close together: send the Voidwalker at singles and do not Fear in the vale (a feared worgen brings the others); leave the rare if one is up. Click the tome
+C 1026 @ Ashenvale, 56.5, 36.5 | East of the vale, along the road to Felwood: Withered Ancients (26-27, at 54-59,33-42) and Crazed Ancients (27-28, at 57-62,31-45) drop the Wooden Key. They are elementals: if two come, Banish one and kill the other. Then open the Worn Chest in the small glade west of the road at 54.4,35.4 for the Iron Shaft
+T 1026 | Shael'dryn, the dryad at the moonwell beside the main road (53.5,46.2)
+A 1027 | Shael'dryn. The last rod piece is at Dor'danil in the south-east: you pick it up later on this loop
+
+# ---------- Xavian and Forest Song ----------
+T 1021 | Follow the main road east. Anilia lies at the edge of the Xavian satyr camp, north of the road (78.3,44.8). Kill the one or two satyrs next to her (satyrs are demons: Banish the second one while the Voidwalker holds the first); the rest of the camp comes later
+A 1031 | Anilia
+T 4581 | Kayneth Stillwind at Forest Song, at the east end of the road (85.2,44.7)
+A 1011 | Kayneth Stillwind
+A 98417 | Maseara Autumnmoon, Forest Song (new in Forever)
+C 98417 @ Ashenvale, 81.0, 50.0 | Satyrnaar, the satyr camp south-west of Forest Song (about 80-82,48-52). Find the Vine-Wrapped Scroll: the data does not say whether it drops from the satyrs (28-30) or lies in the camp, so kill and look around. Hellcallers cast and you have no interrupt: put Curse of Tongues on them and kill them first. Satyrs are demons: Banish a second one instead of using Fear inside the camp
+T 98417 | Maseara Autumnmoon
+A 98418 | Maseara Autumnmoon
+C 98418,1031 @ Ashenvale, 78.4, 45.4 | Xavian (77-80,42-48): 5 Xavian Rogues, 5 Felsworn, 5 Betrayers and 5 Hellcallers (28-30). There are only 2 Betrayer spawns: wait for them to come back. Geltharis (32) stands at the north end at 78.0,42.4: clear around him, rest to full, then fight him alone: Voidwalker first, Curse of Tongues on him to slow his casts, Corruption, Immolate, Drain Life. Banish a satyr that joins in. He drops the Branch of Cenarius
+T 98418 @ Ashenvale, 86.3, 45.8 | Maseara Autumnmoon at Forest Song. The ForeverChanges page also shows a hand-in at Satyrnaar (81.0,50.2): if she is not at Forest Song, look there
+
+# ---------- Dor'danil, Fallen Sky Lake, the orcs ----------
+C 1011 @ Ashenvale, 75.3, 72.0 | South from Forest Song, past the Warsong lumber camp (stay west of it). The Forsaken camp is outside the Dor'danil Barrow Den; the Bottles of Disease stand on the ground at 75.3,72.0. Forsaken here are 28-30 and stealthed in part: walk in at full health with the Voidwalker beside you, and Fear a second one away from the camp
+C 1027 @ Ashenvale, 76.0, 73.5 | The Rusty Chest with the Iron Pommel is at Dor'danil too. Its spot is not in the data: check in front of and just inside the barrow den entrance and along the hill behind the Forsaken camp
+C 86757 @ Ashenvale, 70.0, 79.0 | Warsong orcs (scouts and grunts, about 28-30) drop Jagged Orcish Swords (6) and Curved Orcish Daggers (4). ForeverChanges saw the drops south-west of Dor'danil toward Fallen Sky Lake (65-75,75-85) and around the lumber camp south of Forest Song (85-90,50-65). Camps are Horde-flagged: send the Voidwalker at stragglers at the edges, and do not Fear toward a camp
+C 1035 @ Ashenvale, 66.7, 82.2 | Fallen Sky Lake: the Shadethicket Oracle (30) stands on the island in the middle (66.7,82.2). Bark Rippers and Stone Movers around it are 25-27. He drops the Fallen Moonstone
+T 1011 | Back north to Kayneth Stillwind at Forest Song (finish the orc weapons at the lumber camp on the way if you are short)
+A 1012 | Kayneth Stillwind
+C 1012 @ Ashenvale, 76.8, 73.6 | Back to the Dor'danil Barrow Den, this time inside: Taneel Darkwood (77.2,74.0), Uthil Mooncall (78.0,72.7) and Mavoris Cloudsbreak (75.1,74.2), all level 32, with Severed druids (28-30) between them. Clear each room first. They cast heals and roots and you have no interrupt: keep Curse of Tongues on the druid to slow the heals, all DoTs up, and the Voidwalker on him. Roots only hold your feet: keep casting. Do not Fear inside the den
+T 1012 | Kayneth Stillwind
+F Talrendis Point @ Azshara, 11.9, 77.6 | Follow the road east from Forest Song over the bridge into Azshara. Talrendis Point is right behind the border; Jarrodenus is the hippogryph master
+FLY Astranaar | Jarrodenus
+
+# ---------- Astranaar, Shael'dryn, the Shrine ----------
+T 1035 | Pelturas Whitemoon
+T 1027 | Run east along the road to Shael'dryn at the moonwell (53.5,46.2)
+A 1028 | Shael'dryn
+T 1028 | The Hidden Shrine, in the woods just south-east of the moonwell (56.4,49.2)
+A 1055 | The Hidden Shrine
+T 1055 | Shael'dryn
+A 1029 | Shael'dryn
+T 1029 | Walk back west along the main road to Astranaar (about 5 minutes; keep the Hearthstone for the end of the furbolg run). Raene Wolfrunner (36.6,49.6)
+A 1030 | Raene Wolfrunner. You now carry Dartol's Rod of Transformation
+T 1022 | West to the Shrine of Aessina. Sentinel Melyria Frostshadow. Do not take Velinde Starsong: it sends you to Darnassus
+T 1031 | Illiyana. Do not take Satyr Slaying!: you are done with the satyrs
+
+# ---------- Silverwind Refuge and the Bloodtooth furbolgs ----------
+T 86757 @ Ashenvale, 49.4, 67.0 | Back east and south to Silverwind Refuge. Shandrina
+T 1030 | Krolg, the friendly furbolg on the south shore of Mystral Lake (50.8,75.1). Use Dartol's Rod of Transformation before you talk to him: he only speaks to furbolgs
+A 1045 | Krolg (still transformed)
+C 1045 @ Ashenvale, 54.8, 78.1 | The Bloodtooth camp just south-east of Krolg (54-56,75-80): 4 Bloodtooth Guards (27-28) and Ran Bloodtooth (30, at the back, 54.8,79.6). Easy at your level with the Voidwalker in front; taking damage ends the furbolg form
+T 1045 | Krolg (use the rod again)
+A 1046 | Krolg
+H Astranaar | Hearthstone to Astranaar
+T 1046 | Raene Wolfrunner
+N Repair, buy food and water. Then go to Desolace on foot | South out of Astranaar to the Talondeep Path (the tunnel at Ashenvale 42.3,71.0). It comes out in Windshear Crag in the Stonetalon Mountains. Follow the road west and then south-west past Sun Rock Retreat (Horde: stay on the far side of the lake) into the Charred Vale, and leave it by the pass at its south end into Desolace. A long walk, 15 minutes or more. Charred Vale mobs are 26-30
+
+# ---------- Nijel's Point ----------
+F Nijel's Point @ Desolace, 64.7, 10.5 | Nijel's Point is in the hills in the north-east of Desolace; the path up starts from the road east of the Thunder Axe Fortress. Baritanas Skyriver is the hippogryph master
+S Nijel's Point @ Desolace, 66.3, 6.5 | Innkeeper Lyshaerya
+T 1453 | Kreldig Ungor
+A 1458,1454 | Kreldig Ungor
+A 1387 | Corporal Melkins
+A 1382 | Captain Pentigast
+A 93224 @ Desolace, 66.6, 11.0 | Captain Pentigast (new in Forever): 5 Carved Centaur Totems from centaurs of any clan
+A 1437 | Vahlarriel Demonslayer
+
+# ---------- Loop 1: the Malem wagon and Sargeron ----------
+T 1437 | The Malem Chest in the wrecked wagon west of Nijel's Point, by the road (56.5,17.8)
+A 1465 | The same chest
+T 1465 | Back up to Vahlarriel Demonslayer
+A 1438 | Vahlarriel Demonslayer
+A 97284 @ Desolace, 66.4, 11.8 | Vahlarriel Demonslayer (new in Forever). The data has no giver for it; its text fits this moment. If she does not offer it yet, take it after the escort and skip its steps until then
+C 1458 @ Desolace, 75.5, 19.5 | Sargeron, the satyr ruins east of Nijel's Point (71-81,9-30). Any Hatefury satyr (31-33) drops claws and horns: 10 each. Rogues and Shadowstalkers are stealthed, Hellcallers and Felsworn cast: kill the casters first with Curse of Tongues on them (you have no interrupt). Keep the Voidwalker close so it takes a stealthed satyr off you. Work along the outer edge of the ruins so only one comes at a time; satyrs are demons, so Banish a second one and finish the first in peace. Kill the Scorpashi Snappers you pass from now on and keep their venom
+T 1458 | Kreldig Ungor
+A 1459 | Kreldig Ungor: 7 Scorpashi Venom and 3 Aged Kodo Hides
+
+# ---------- Loop 2: Ethel Rethor, the coast, Thunder Axe Fortress ----------
+C 1459 @ Desolace, 56.0, 22.0 | On the way west: Scorpashi Snappers (30-31) are all over the north of the zone; Aged Kodos (34-35) walk along the main road south of Thunder Axe (45-59,19-83). A kodo is a long fight at 33: start at full health and mana, with nothing else close by, let the Voidwalker hold it, keep all three DoTs up, Health Funnel the Voidwalker and Drain Life when the kodo turns on you; rest after each one. Drain Soul the last hit when you are short of Soul Shards. Hides do not always drop
+A 5741 | Azore Aldamort, in the tower at Ethel Rethor on the west coast (38.9,27.2)
+A 6161 | Rackmore's Log, on the beach at the shipwreck just south-west of the tower (36.1,30.4)
+T 1454 | Karnitol's Chest, in the same wreck (36.1,30.5)
+A 1455 | Karnitol's Chest
+C 6161:1 @ Desolace, 30.0, 33.0 | Rackmore's Silver Key: Drysnap Crawlers and Pincers (33-35), the makrura on the beach and in the shallows south of the wreck (18-35,28-84)
+C 6161:2 @ Desolace, 37.0, 23.0 | Rackmore's Golden Key: any Slitherblade naga. The Nagas and Sorceresses at the ruins just north of the tower (33-42,19-28) are 32-33. Sorceresses cast: Curse of Tongues on them and kill them first; Fear a second naga along the beach, away from the ruins
+C 97284,5741 @ Desolace, 55.0, 27.0 | East to Thunder Axe Fortress (52-58,21-33). Kill 4 each of Burning Blade Augurs, Reavers, Adepts and Felsworn (30-32). The Sceptre of Light is carried by the Burning Blade Seer on top of one of the watchtowers: fight your way up the ramp. Casters everywhere and you have no interrupt: Curse of Tongues on each, and step back behind a wall or the doorway so they have to walk to you and the Voidwalker. Never Fear inside the fortress and never fight three
+T 1438 | Dalinda Malem, held inside the fortress (54.9,26.1)
+A 1439 | Dalinda Malem
+C 1439 @ Desolace, 53.0, 29.1 | Tyranis Malem (36) is at 53.0,29.1, in the south-west part of the fortress. He is 2-3 levels above you and casts: clear the room, rest to full, put a Soulstone on yourself and make a Healthstone. Then Voidwalker first, Curse of Tongues on him (you have no interrupt), Corruption, Immolate and Drain Life; Health Funnel the Voidwalker, and use its Sacrifice shield, the Healthstone and a potion when he turns on you. He drops Tyranis' Pendant. If he is too strong, come back after the coast loop
+T 1439 | Dalinda Malem
+A 1440 | Dalinda Malem. Clear the way to the gate first: it is an escort
+C 1440 @ Desolace, 56.5, 28.5 | Walk Dalinda out of the fortress. Stay in front of her, let the Voidwalker hold the attackers and DoT each one (you cannot heal her); it ends at the gate
+T 1440 | Back up to Nijel's Point. Vahlarriel Demonslayer
+T 97284 @ Desolace, 66.4, 11.8 | Vahlarriel Demonslayer
+T 1455 | Kreldig Ungor
+A 1456 | Kreldig Ungor
+T 1459 | Kreldig Ungor (if the venom and hides are done; otherwise on your next visit)
+A 1466 | Kreldig Ungor. Mannoroc Coven demons are 37-40: this is the last thing you do in Desolace
+
+# ---------- Loop 3: Azore, Ranazjar Isle ----------
+T 5741 | Back west to Azore Aldamort at Ethel Rethor
+A 6027 | Azore Aldamort. He gives you the Gem of the Serpent
+C 1456 @ Desolace, 30.5, 11.0 | Swim north-west to Ranazjar Isle (28-35,6-17); Unending Breath if you dive. Karnitol's Satchel drops from Slitherblade Tidehunters (36-37) and Sea Witches (35-36), about one in five. They are 2-4 levels above you: one at a time, on land, at full health, Voidwalker first; Curse of Tongues on the witches to slow their casts, Fear a second naga along the shore, and expect some resists. Get the Golden Key here if you still need it
+C 6027 @ Desolace, 28.5, 7.0 | Put the Gem of the Serpent in the hand of the Serpent Statue on the isle (its exact spot is not in the data; it is the large naga statue). Lord Kragaru (38) appears: he is 4-5 levels above you. Clear the area first, rest to full, put a Soulstone on yourself and make a Healthstone. Send the Voidwalker first and give it a few seconds, then Curse of Agony, Corruption, Immolate and Drain Life; Health Funnel the Voidwalker, and keep its Sacrifice shield, the Healthstone and a potion for when he turns on you. Many spells will be resisted at this level gap. He drops the Book of the Ancients. Too strong? Abandon 6027
+T 6161 | Rackmore's Chest on the isle (30.0,8.7): it needs both keys
+T 6027 | Azore Aldamort
+H Nijel's Point | Hearthstone (last used in Ashenvale, so it is ready). Not ready? Walk the road east past Thunder Axe and up the path
+T 1456 | Kreldig Ungor
+A 1457 | Kreldig Ungor. The satchel goes to Roetten Stonehammer in Ironforge: you keep it until segment 15
+A 261 | Brother Anton (66.5,7.9). Needs level 34: if you are not 34 yet, take it on your next visit here, before the last loop
+
+# ---------- Loop 4: Kormek's Hut, Kolkar, the kodo graveyard, Magram, Gelkis ----------
+A 5501 | Follow the road south to Kormek's Hut (62.3,39.0). Bibbly F'utzbuckle. Needs level 33
+A 5821 | Cork Gizelton, with the kodo caravan (60.4,38.1). Only when the caravan is standing at Kormek's Hut; otherwise skip the three 5821 steps
+C 5821 @ Desolace, 66.0, 45.0 | Walk with the caravan past the Kolkar village and kill the centaurs that attack it: the Voidwalker holds one, you DoT them all, Fear a third. It ends south of the village
+C 1387,93224 @ Desolace, 71.5, 45.5 | Kolkar Village, east of Kormek's Hut (68-75,39-52): Kolkar are 30-33: Voidwalker first, DoTs, and Fear a second one away from the tents. Every centaur drops Centaur Ears (15 needed); the Carved Centaur Totems (5) come from centaurs of any clan too. You get more of both from the Magram later
+A 5561 | Road south to Scrabblescrew's Camp (60.9,61.9). Smeed Scrabblescrew
+T 5821 | Smeed Scrabblescrew (only if you escorted the caravan)
+A 5943 | Rigger Gizelton, with the caravan, when it stands at Scrabblescrew's Camp. Demons of 37-39 attack it at Mannoroc Coven: take it only if the caravan is here and you are at least 35; otherwise skip the three 5943 steps
+C 5943 @ Desolace, 56.0, 72.0 | Walk with the caravan past Mannoroc Coven and kill what attacks it. The attackers are demons: the Voidwalker holds one, Banish a second, DoT the rest
+T 5943 | Smeed Scrabblescrew
+C 5561,5501 @ Desolace, 51.5, 60.0 | The Kodo Graveyard, west of the camp (46-54,57-64). Pick up 10 Kodo Bones from the bone piles. Use the Kodo Kombobulator on an Aged, Dying or Ancient Kodo (34-37) to tame it, walk it back to Smeed and talk to it there; five times, one kodo at a time
+T 5561 | Smeed Scrabblescrew
+C 1382 @ Desolace, 69.5, 74.5 | Magram Village in the south-east (65-76,66-83). Kill Magram centaurs (32-36) until you are Friendly with the Gelkis Clan; each kill shows the gain in the chat log. How many it takes is not in the data: plan for a long grind. Scouts, Wranglers and Windchasers at the north edge are 32-34; Windchasers and Stormers cast, so put Curse of Tongues on them and kill them first. Send the Voidwalker at each centaur, DoT it and wand; Fear a second one only toward the open ground outside the village. Life Tap and Drain Life keep the grind going without much drinking. Stay away from Khan Jehn (37) in the middle. Finish your ears and totems here
+T 1382 | West along the south road to Gelkis Village. Uthek the Wise stands at the north edge (36.2,79.2). The Gelkis no longer attack you
+A 1384 | Uthek the Wise: 10 Crude Charms from the Kolkar
+A 6132 | North up the coast to the Valley of Spears. Melizza Brimbuzzle is held in the Maraudine camp (33.9,53.5). Needs level 34. Maraudine centaurs are 35-39: clear a path to her and out again before you accept
+C 6132 @ Desolace, 40.0, 57.0 | Escort Melizza east out of the valley. Stay beside her and let the Voidwalker hold the attackers while you DoT them; you cannot heal her
+T 6132 | Hornizz Brimbuzzle, at the camp on the west side of the Kodo Graveyard (47.8,61.8)
+A 6134 | Hornizz Brimbuzzle. For the last loop
+T 5501 | Back north along the road to Kormek's Hut. Bibbly F'utzbuckle
+C 1384 @ Desolace, 71.5, 45.5 | Kolkar Village again: Crude Charms drop from every Kolkar, best from Windchasers and Scouts
+H Nijel's Point | Hearthstone. This loop takes well over an hour, so it is ready; if not, walk the road north from Kormek's Hut
+T 1387 | Corporal Melkins. Take Down the Scarlet Path (261) from Brother Anton now if you could not before
+T 93224 @ Desolace, 66.6, 11.0 | Captain Pentigast. His hand-in text hints at a follow-up delivery to a clan (not in the data): if he offers one for the Gelkis, take it along to Uthek on the next loop
+
+# ---------- Loop 5: Gelkis, Magram meat, Valley of Bones, Mannoroc Coven ----------
+T 1384 | The long run south-west to Uthek the Wise at Gelkis Village (36.2,79.2): road south past Kormek's Hut and the Kodo Graveyard, then south-west. Check that you are still Friendly
+A 1370 | Uthek the Wise
+C 1370 @ Desolace, 70.5, 76.5 | East to Magram Village: 6 bags of Crudely Dried Meat from the Sacks of Meat beside the tents (65.8,80.5 / 69.2,77.3 / 70.9,75.4 / 73.5,73.8 and more)
+C 261,6134 @ Desolace, 63.0, 89.0 | The Valley of Bones, south of Magram Village (58-65,82-92). Undead Ravagers are 37-38 and you need 30: one at a time, at full health, Voidwalker first, all three DoTs, then Drain Life; Fear a second one (the valley is open, but watch where it runs), and eat, drink or bandage after every fight. If they are still orange and each fight nearly kills you, abandon 261. For Hornizz: place a Ghost Magnet between the two giant skeletons (63.5,91.6), step back and kill the Magrami Spectres (38-39) that walk to it one by one; 8 Ghost-o-plasms
+C 1466 @ Desolace, 53.0, 78.0 | Mannoroc Coven, west of the valley (51-58,69-85): 10 Felhound Brains from Mage Hunters (38-39, at 53-58,73-79), 10 Nether Wings from Nether Sorceresses (39-40) and 10 Doomwarder Blood from Doomwarder Captains (38), both at the south end around 51.7,83.4. Felhounds drain mana: kill them fast and get mana back with Life Tap. Everything here is a demon: Banish the second one of every pull, never Fear between the packs, and put Curse of Tongues on the Sorceresses. Soulstone on yourself, a Healthstone in your bags, Voidwalker always first. This is the hardest step of the segment: if you cannot kill a Sorceress at 35, abandon 1466; segment 15 then has only the satchel (1457) for Ironforge
+T 1370 | Uthek the Wise, Gelkis Village. Do not take Ongeku (1373): the Draenethyst Shard is in the Swamp of Sorrows on the other continent, and the route does not come back here afterwards
+T 6134 | Hornizz Brimbuzzle, Kodo Graveyard
+H Nijel's Point | Hearthstone. If it is still on cooldown, walk the road north past Kormek's Hut (about 8 minutes)
+T 261 | Brother Anton. Do not take his next quest: it sends you to the Scarlet Monastery line
+T 1466 | Kreldig Ungor
+A 1467 | Kreldig Ungor. Leftwitch's Package goes to Roetten Stonehammer in Ironforge (segment 15)
+N Segment done. In the log: 525, 563, 1179, 1264, 1457, 1467 | Next: fly from Nijel's Point to Astranaar. Your hearthstone stays at Nijel's Point

@@ -1,0 +1,122 @@
+@segment 6-10 Dolanaar, Starbreeze & Ban'ethil
+@start-level 5
+@carry 928,96630,2159
+@done 921,917,456
+# Night Elf, any class. New file (not derived from another route).
+# Dolanaar and the east and south of Teldrassil, in three loops on foot from Dolanaar:
+#  loop 1 east: Zenn's animals, Starbreeze Village (moonwell, dresser), Lake Al'Ameth (Denalan's timberlings);
+#  loop 2 north and east: Fel Rock (Lord Melenas), Fel Cones for Zenn, the Gnarlpine Mystics above Starbreeze;
+#  loop 3 west and south: the ambushers on the road, Sentinel Shayla's bounty, the Ban'ethil Barrow Den (relics,
+#  Oben Rageclaw, the captured sentinel), the Pools of Arlithrien moonwell, the glowing fruit; walk back.
+# Every pass through Dolanaar hands in, trains and takes what is new.
+# Order reference: TUGs' Teldrassil file, which skips the Barrow Den and travels by dying; this file does
+# neither (all text is written new).
+# Class-neutral: generic TRAIN steps with the five class trainers the data has in Dolanaar.
+# Positions from the baked Questie data: Lyreena Duskblade 57.6, 56.6; Aldia 55.5, 57.2; Moon Priestess Amara
+# 52.9, 57.2 (on the road west of the village); Sentinel Shayla Nightbreeze 40.5, 50.7; Lord Melenas 51.2-52.8,
+# 50.2-50.8; Gnarlpine Mystics 68.3-69.7, 51.7-55.3; the four relic chests, Rageclaw 45.5, 58.6 and Sentinel
+# Lynessa Duskblossom 44.7, 58.9 inside the den; the moonwells.
+# Unverified in Forever: the den's floor plan (the arrows show a map position, not the floor); how the
+# Escaping Ban'ethil escort runs (new quest, no published walkthrough); where the Fel Cones lie (Classic: at the
+# foot of trees between Dolanaar, Fel Rock and Zenn); the number of Gnarlpine Fangs (15 in the baked data, 20
+# on the ForeverChanges page: the quest log decides); the XP of 4161 Recipe of the Kaldorei.
+# Hearthstone: bound in Dolanaar at the start. Not used in this segment (it is kept for the trip back from
+# the Oracle Glade in segment 3).
+# Skipped on purpose: 98403 Twisted Hatred, the follow-up from Tallonkai (elite: Xethorr the Wicked);
+# 486 Ursal the Mauler (level 12 boss in the middle of Gnarlpine Hold, and it only opens after the relics are
+# handed in: a third trip to the far south-west); the Camping 101 quests for professions other than Cooking
+# (take them only for a profession you have); the class quests.
+# Carry-out: 922 Rellian Greenspyre and 98391 The Sisterhood of Elune (both Darnassus), 99046 The Lost Runner
+# (Oracle Glade road), 490 Bounty: Gnarlpine Furbolg (Sentinel Shayla), 7383 Crown of the Earth (Oracle Glade
+# moonwell), 930 The Glowing Fruit (Denalan). All segment 3.
+
+# --- The road to Dolanaar ---
+A 488 | Zenn Foulhoof, a satyr standing beside the road shortly before Dolanaar (needs level 4)
+T 96630 @ Teldrassil, 57.6, 56.6 | Lyreena Duskblade, at her campfire beside the road just north-east of Dolanaar
+A 96606 @ Teldrassil, 57.6, 56.6 | Lyreena
+C 96606 @ Teldrassil, 57.6, 56.6 | Stand next to Lyreena's campfire and type /sit until you get the Boosted Rest buff
+T 96606 @ Teldrassil, 57.6, 56.6
+A 96634 @ Teldrassil, 57.6, 56.6 | Lyreena also offers Camping 101 quests for other professions. Take those only for a profession you already have
+
+# --- Dolanaar ---
+A 997 | Syral Bladeleaf, in the middle of the village
+A 475 | Athridas Bearmantle, a few steps from Syral
+A 2438,932 | Tallonkai Swiftroot, in the building on the north-west side of the village. He gives both
+A 87288 @ Teldrassil, 55.5, 57.2 | Aldia, the trader in the same building
+A 98391 @ Teldrassil, 55.6, 56.8 | Laurna Morninglight, in the same building. Keep it: Sister Aquinne is in Darnassus, next segment
+A 99046 @ Teldrassil, 56.0, 59.5 | Sentinel Kyra Starsong, in front of the inn. Keep it: the Oracle Glade road is for the next segment
+T 2159 | Innkeeper Keldamyr, in the inn
+S Dolanaar @ Teldrassil, 55.6, 59.8 | Make the inn your home: talk to Innkeeper Keldamyr
+T 928 | Corithras Moonrage, at the moonwell on the south side of the village
+A 929 | Corithras
+T 96634 @ Teldrassil, 57.1, 61.3 | Zarrin, the cooking trainer at the south-east edge of the village: learn Cooking from him first, then hand the quest in
+A 4161 | Zarrin: 7 Small Spider Legs. Every spider on Teldrassil can drop them, so just keep them as you go
+TRAIN | Dolanaar: your class trainer for your level 6 skills. Druids: Kal (56.0, 61.6, at the moonwell), hunters: Dazalar (56.7, 59.5), warriors: Kyra Windblade (56.2, 59.2), rogues: Jannok Breezesong (56.4, 60.1), priests: Laurna Morninglight (55.6, 56.8). Sell, repair, buy food and water
+
+# --- Loop 1: east to Starbreeze Village and Lake Al'Ameth ---
+C 488,87288 @ Teldrassil, 59.5, 58.5 | Between Dolanaar and Starbreeze Village, on both sides of the road: Nightsabers (3 Nightsaber Fangs and the Soft Nightsaber Pelts), Strigid Owls (3 Strigid Owl Feathers) and Webwood Lurkers (3 Webwood Spider Silk, and spider legs). All level 5-6. You do not need all 6 pelts yet: the cats are everywhere on this loop
+T 488 | Zenn Foulhoof, beside the road north-east of Dolanaar
+C 929 @ Teldrassil, 63.4, 58.1 | The Starbreeze Village moonwell, on the west edge of the village: use the Jade Phial at the water
+T 475 | Gaerolas Talvethren, in a house in Starbreeze Village (the arrow shows which; look on the upper floor too). The village is full of Gnarlpine Warriors, Ursas and Gardeners (5-7): pull them one at a time out of the houses
+A 476 | Gaerolas
+C 2438 @ Teldrassil, 68.0, 59.6 | Tallonkai's Dresser stands in the house at the east end of the village. Clear the furbolgs in the room, open the dresser and take the Emerald Dreamcatcher
+T 997 | Go south-west to Lake Al'Ameth: Denalan stands at his small camp by the lake
+A 918,919 | Denalan gives both
+C 918,919 @ Teldrassil, 58.5, 68.0 | Around the lake: kill Timberlings (5-6) for 8 Timberling Seeds and pick 12 Timberling Sprouts, the small green shoots growing on the shore
+T 918,919 | Denalan
+A 922 | Denalan. Keep it: Rellian Greenspyre is in Darnassus, next segment
+C 87288,4161 @ Teldrassil, 58.8, 60.5 | On the walk north to Dolanaar finish the 6 Soft Nightsaber Pelts (Nightsabers, level 5-6, stand south and east of the village) and kill the spiders you pass for the 7 Small Spider Legs
+
+# --- Dolanaar, second visit ---
+T 929 | Corithras Moonrage, at the moonwell
+A 933 | Corithras
+T 4161 | Zarrin. Short of legs? Leave this step open and hand it in on a later visit: the spiders west of here drop them too
+T 476 | Athridas Bearmantle
+A 483 | Athridas: four relics from the Ban'ethil Barrow Den (loop 3)
+A 489 | Syral Bladeleaf, now that Zenn has had his fangs
+T 2438 | Tallonkai Swiftroot
+A 2459 | Tallonkai
+T 87288 @ Teldrassil, 55.5, 57.2 | Aldia
+TRAIN | Dolanaar: your class trainer if you reached level 8 (trainers as listed above). Sell and repair
+A 487 | Moon Priestess Amara, on the road just west of Dolanaar (needs level 5). You do it on loop 3
+
+# --- Loop 2: Fel Rock, Zenn, the mystics ---
+C 932 @ Teldrassil, 52.0, 50.5 | Fel Rock is the cave in the hill north-west of Dolanaar; its mouth is on the east side of the hill, where the sprites stand (about 54.6, 52.6, not checked in Forever). Inside are sprites (5-7) and Vicious Grells (7). Lord Melenas (level 8) wanders the chambers at the back: work your way in until you meet him. He hits hard: clear the room first and fight him at full health. Loot Melenas' Head
+C 489 @ Teldrassil, 57.5, 53.5 | 3 Fel Cones: glowing green cones lying at the foot of trees. Look around the trees between Fel Rock, Dolanaar and Zenn as you walk east. Position not checked in Forever
+T 489 | Zenn Foulhoof, by the road north-east of Dolanaar
+C 2459 @ Teldrassil, 69.0, 53.0 | Follow the road east and climb the hill just north-east of Starbreeze Village: a furbolg camp with Gnarlpine Mystics (6-7) and Ferocitas the Dream Eater (8). Kill 7 Mystics first; they heal, so finish each one fast (interrupt or stun the heal if your class can). Then Ferocitas, alone and at full health. He drops the Gnarlpine Necklace: right-click it in your bags to get Tallonkai's Jewel
+T 932 | Back to Dolanaar: Tallonkai Swiftroot. He offers a second Twisted Hatred: do NOT take it, it is an elite
+T 2459 | Tallonkai
+TRAIN | Dolanaar: your class trainer if you gained a level. Sell, repair and stock up on food: loop 3 is the long one
+
+# --- Loop 3: the road west, Shayla, the Barrow Den ---
+A 490 @ Teldrassil, 40.5, 50.7 | Run west along the road, past the furbolgs on it for now, to Sentinel Shayla Nightbreeze: she stands on the road where it climbs toward Darnassus (older data puts her a little further on, at 38.7, 53.7). From now on every Gnarlpine drops Gnarlpine Fangs
+C 487 @ Teldrassil, 46.5, 53.3 | Back east along the road: kill 6 Gnarlpine Ambushers (6-7). They stand in the bushes beside the road north of Ban'ethil Hollow
+N The Ban'ethil Barrow Den @ Teldrassil, 44.4, 58.4 | The den's door is in the mound in Ban'ethil Hollow, just south of the road (the arrow is approximate). Inside it is a maze on two floors, full of Gnarlpine Shamans, Defenders and Augurs (7-9). Every one of them drops fangs for Shayla. Shamans heal: kill them first. Pull one at a time, eat between fights. The arrows below show where each thing is on the map, not on which floor: if you stand on the spot and see nothing, it is on the other floor
+C 483:1 @ Teldrassil, 45.6, 57.4 | The Chest of the Raven Claw (Raven Claw Talisman), in the north-east of the den
+A 2541 | Oben Rageclaw, a ghostly druid in a side room in the south of the den
+C 2541 @ Teldrassil, 44.6, 60.5 | A Shaman Voodoo Charm: it drops from the Gnarlpine Shamans in the den. Keep killing them as you look for the chests
+C 483:4 @ Teldrassil, 44.4, 60.7 | The Chest of Nesting (Rune of Nesting), in the middle of the den
+C 483:2 @ Teldrassil, 43.7, 61.2 | The Chest of the Black Feather (Black Feather Quill), at the west end
+C 483:3 @ Teldrassil, 44.7, 62.4 | The Chest of the Sky (Sapphire of Sky), at the south end
+T 2541 | Oben Rageclaw
+A 2561 | Oben
+C 2561 @ Teldrassil, 45.5, 58.6 | Rageclaw, a level 10 druid in bear shape, stands in a chamber in the north-east of the den. He is above your level: clear the furbolgs around him, fight him at full health and use everything you have. When he is dead use the Voodoo Charm from your bags on his body
+T 2561 | Oben Rageclaw
+N Sentinel Lynessa Duskblossom is held down in the den: Escaping Ban'ethil @ Teldrassil, 44.7, 58.9 | An escort out of the den, new in Forever. On the map she is close to the door, so look on the lower floor beneath it. If you cannot find her or she offers nothing, skip the next three steps. Take it last, when the way to the door is cleared and you are at full health
+A 99053 @ Teldrassil, 44.7, 58.9 | Sentinel Lynessa Duskblossom
+C 99053 @ Teldrassil, 44.4, 58.4 | Walk with her up to the door and out. Stay close and keep the furbolgs that attack on you: you may not be able to heal her
+
+# --- Pools of Arlithrien and the glowing fruit ---
+C 933 @ Teldrassil, 42.4, 67.1 | From the den go south to the Pools of Arlithrien: use the Tourmaline Phial at the moonwell. Gnarlpine Augurs (8-9) stand around the pools; finish your fangs on them
+A 930 @ Teldrassil, 42.6, 76.2 | Further south, at the edge of Gnarlpine Hold: the Strange Fruited Plant. Click it and take the fruit. Do not go deeper into the camp (level 9-11 furbolgs and a level 12 boss)
+C 490 @ Teldrassil, 42.5, 70.0 | Still short of Gnarlpine Fangs? Kill Augurs around the pools on the way back north
+
+# --- Dolanaar, hand in ---
+N Walk back to Dolanaar: north to the road, then east @ Teldrassil, 52.9, 57.2 | About five minutes. Keep your Hearthstone: you need it in the next segment
+T 487 | Moon Priestess Amara, on the road just before the village
+T 99053 @ Teldrassil, 56.0, 59.5 | Sentinel Kyra Starsong, in front of the inn
+T 483 | Athridas Bearmantle. He offers Ursal the Mauler: leave it (a level 12 boss deep in Gnarlpine Hold)
+T 933 | Corithras Moonrage, at the moonwell
+A 7383 | Corithras. The last phial is for the Oracle Glade, next segment
+TRAIN | Dolanaar: your class trainer for your level 8 or 10 skills. Sell, repair, buy food and water. Still holding Zarrin's spider legs quest? Hand it in now

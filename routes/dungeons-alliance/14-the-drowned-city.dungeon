@@ -1,0 +1,10 @@
+# ALLIANCE. New Forever dungeon. Source: foreverchanges.pro/dungeons/the-drowned-city and quest pages (level range is
+# Blizzard's; the page says nobody had run it when it was written). Only Krazek's position is published.
+@dungeon The Drowned City
+@levels 35-40
+@window 35-42
+@best 37
+@hub Stranglethorn Vale, 27.6, 77.5, 5
+@entrance none
+A 95789 @ Stranglethorn Vale, 27.0, 77.2 | Krazek in Booty Bay. 10 Voodoo-Infused Artifacts from the Saltseer pirates inside. He should also have The Saltseer Captain.
+RUN | New Forever dungeon, not checked in game yet. It is on Gillijim's Isle, in the sea south-west of Stranglethorn Vale; the portal is in a cave called Sunken Hollow, and no boat or flight path was known to go there. Archmage Timear in Dalaran (Alterac Mountains 15.4, 74.0) gives Ancient Gurubashi Secrets. Take whatever else is offered for it: the addon logs it so these steps can be filled in.

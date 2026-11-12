@@ -1,0 +1,25 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quests = ForeverChanges quest list (research/digest) and Questie; entrance (Blackrock Mountain) = Questie.
+@dungeon Blackrock Depths
+@levels 52-60
+@window 51-59
+@best 55
+@hub Burning Steppes, 65.0, 24.0, 6
+@hub Badlands, 4.0, 47.0, 6
+@hub Searing Gorge, 38.0, 27.0, 8
+@entrance Searing Gorge, 34.8, 85.3
+A 4133 @ Undercity, 50.1, 68.0 | Apothecary Zinge in the Apothecarium. It sends you to Vivian Lagrave in Kargath. Needs level 50.
+>T 4133 @ Badlands, 2.9, 47.8
+>A 4134 @ Badlands, 2.9, 47.8 | The Lost Thunderbrew Recipe drops from Hurley Blackbreath in the Grim Guzzler bar.
+A 4324 @ Tanaris, 67.0, 24.0 | Yorba Screwspigot in Steamwheedle Port. It sends you to Yuka in the Burning Steppes.
+>T 4324 @ Burning Steppes, 66.1, 21.9
+>A 4136 @ Burning Steppes, 66.1, 21.9 | Ribbly Screwspigot is in the Grim Guzzler bar.
+A 4123 @ Burning Steppes, 65.2, 23.9 | Maxwort Uberglint at Flame Crest. The Heart of the Mountain is in the vault. Needs level 50.
+A 4081 @ Badlands, 3.7, 47.4 | The WANTED poster in Kargath. Kill 15 Anvilrage Guardsmen, 10 Wardens and 5 Footmen in the first part of the dungeon.
+A 7201 @ Badlands, 2.9, 47.8 | Shadowmage Vivian Lagrave in Kargath. 10 Essence of the Elements from the golems and elementals inside.
+RUN | Blackrock Depths is inside Blackrock Mountain, between the Searing Gorge and the Burning Steppes: go in, take the chain down to the lowest ring and follow the tunnel to the portal. It is long; most groups do it in parts.
+T 4081 @ Badlands, 5.8, 47.5
+T 7201 @ Badlands, 2.9, 47.8
+T 4134 @ Badlands, 2.9, 47.8
+T 4123 @ Burning Steppes, 65.2, 23.9
+T 4136 @ Burning Steppes, 66.1, 21.9

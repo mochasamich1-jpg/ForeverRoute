@@ -1,0 +1,9 @@
+# New Forever dungeon. Source: foreverchanges.pro/dungeons/kroldok-stronghold (level range is Blizzard's; position read
+# from the game files by that site; the exact way in was not known). Only Alliance quest givers are listed there.
+@dungeon Krol'dok Stronghold
+@levels 40-45
+@window 39-47
+@best 42
+@hub Badlands, 4.0, 47.0, 6
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is in the Riverglades, the new zone east of the Badlands: a fortress on a hill at about 48.6, 26.3 on the Riverglades map. Horde players fly to Rog'mar. No Horde quest givers are published yet: take any dungeon quests you are offered in Rog'mar and the addon logs them so these steps can be filled in.

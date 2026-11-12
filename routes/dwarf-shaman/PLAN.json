@@ -1,0 +1,703 @@
+{
+ "overview": "DWARF SHAMAN (Alliance) 1-60, 24 segments, solo, quest-only: no dungeons, no dungeon quests, no raids, no quest the dwarf-shaman digest flags ELITE, only quests from the dwarf-shaman zone digests (737 quests). Every quest id below was run through a simulator that reuses tools/build_route.py (quest_xp with the ForeverXP values and the low-level penalty, XP_TO_LEVEL, KILL_FACTOR 1.7) and checks side/race/class masks, dungeon lists, required levels and prerequisites; the script and the id list live in the planner's scratch folder, not in the repo. DESIGN. (1) 1-24 never leaves the Eastern Kingdoms: Coldridge (01), western Dun Morogh (02), Gol'Bolar + Loch Modan south + Fire Totem (03), Westfall (04), Redridge I + Loch Modan north + Call of Water start (05), Redridge II + Duskwood I (06), Wetlands I (07). TUGs' Darkshore 11-14 / 18-20 detours and its dungeon blocks (Hall of Thanes, Deadmines, Stockade, Blackfathom, Excavation Site, Gnomeregan, Uldaman...) are replaced by the NEW Dun Morogh / Westfall / Redridge / Wetlands quests and by Loch Modan and Duskwood chains TUGs skips. (2) Eight continent crossings in four Kalimdor trips: 24-26 Darkshore road + Ashenvale I + Stonetalon (08, also the Astranaar waterskin); 32-36 Ashenvale II + Desolace (12), Shimmering Flats + Dustwallow (13); 40-46 Tanaris + Flats II (16), Feralas + Tanaris II (17); 50-57 Un'Goro (20), Azshara + Felwood (21), Winterspring (22), Silithus (23). Eastern Kingdoms blocks between them: 26-32 Wetlands II, Duskwood II, Redridge III, Arathi I, Southshore (09-11); 36-40 Swamp, Stranglethorn, Badlands, Alterac, Arathi II, ram (14-15); 46-50 Hinterlands, Searing Gorge, Blasted Lands, Stranglethorn III (18-19); 57-60 Plaguelands + Burning Steppes (24). TUGs' own Alliance path crosses about twice as often. (3) SHAMAN. Archaic Rune 98581 and Call of Earth 94373-94375 in 01 (Earth Totem at 4-5). Call of Fire 94449 from Ingrid Dunwald at 10 -> Bruegs Kindleborn -> Braldir Ashmantle -> 94466-94468, Fire Totem at about 13 (03). Call of Water: 94494 from Eldrun at 20 -> Norric -> Hervdana, brown skin (05); red skin at Stonewatch Falls (06); back to Hervdana (07); blue skin at Astranaar (08); Hervdana -> Norric (09); Stendel's Pond in Westfall (10); Norric = Water Totem at 30 (11). The chain is spread over trips the route makes anyway, which costs about ten levels; the only shortcut is noted in segment 11's risks. Call of Air 94789 from Eldrun at 30 -> Veyric Thunderhame in Arathi = Air Totem at 31 (11); the rest of that chain is dungeon-gated and left out. Trainers (the only three known: Teo Hammerstorm in Anvilmar, Ingrid Dunwald in Kharanos, Eldrun Stormbreaker in Ironforge 47.6,13.5): 2/4/6 Anvilmar, 6/8/10 Kharanos, 12 and 14 Ironforge (03/04), 18 and 20 (05, Ghost Wolf), 24 optional flight from Menethil (07), 28 (10), 30 and 32 (11, Astral Recall), 36 (14), 38 and 40 (15), 46 (18), 56/58 (24). No crossing is made to train, so the Kalimdor blocks 32-36, 40-46 and 50-57 have no trainer unless Forever has more Alliance shaman trainers than the data shows. (4) MOUNT. Level 40 is reached at the end of segment 15, which finishes in Ironforge/Amberstill Ranch (Ultham Ironhorn, Veron Amberstill; 97017 Your First Riding Ram) before the boat to Theramore. Start saving gold in segment 12. (5) XP HONESTY (simulated, quest XP x1.7 = the project's KILL_FACTOR). 1-40 needs no grinding beyond a 900 XP top-up before level 20: segment ends are 6.0, 10.8, 14.4, 17.3, 20.3, 22.7, 24.0, 26.6, 28.2, 30.8, 32.4, 35.6, 36.8, 39.1, 40.7. From 41 on the digests do not contain enough non-elite, non-dungeon, reachable Alliance quest XP: the plan carries ten explicit L steps worth about 1.26 million XP (L 42 49k in Tanaris, L 45 218k and L 46 19k in Feralas/Tanaris, L 47 100k in the Searing Gorge, L 50 220k in Stranglethorn, L 52 98k in Un'Goro, L 54 144k in Felwood, L 56 211k in Winterspring, L 57 83k in Silithus, L 60 218k in the Plaguelands/Burning Steppes), i.e. roughly a third of 1-60, about the same share the Orc Shaman plan reports. They are placed at reputation or drop farming spots where possible (Timbermaw, Twilight texts, scourgestones, Blasted Lands parts). Optional XP that would shrink the grind, not simulated: NEW quests with no giver data (Shen'dralas / Valley of Bones 35-43 about 40k, Stranglethorn 97328-97420/97047/97048 about 17k, Desolace crafted hand-ins, Swamp 93429/93430); cloth donations in Ironforge (dwarf and gnome quartermasters) and Stormwind, up to 12k each per faction with bought cloth; ELITE-flagged quests that were soloable in Classic (Dragonkin Menace + True Masters about 20k, Thandol Span 631-634, Crushridge, Stromgarde tower); Green Hills of Stranglethorn pages; Sweet Amber (48-53) in Westfall; and the optional dungeon files, which the builder slots in by itself. (6) LOG. Quest log peaks at 19 (segment 14); typical carry between segments is 4-12. carryOut of segment N equals carryIn of segment N+1 and was generated by the simulator. (7) NOT VERIFIED: boat routes (Menethil-Auberdine, Menethil-Theramore, Booty Bay-Ratchet), the Deeprun Tram, flight-path links between known nodes, roads and passes are Classic knowledge; NEW-quest prerequisites exist in the data for only a few chains (see each segment's risks); positions of NEW NPCs come from ForeverChanges pins, not from Questie.",
+ "continentCrossings": "1) ~24, seg 07 -> 08: Eastern Kingdoms -> Kalimdor, boat Menethil Harbor -> Auberdine. 2) ~26.5, seg 08 -> 09: Kalimdor -> EK, fly Stonetalon Peak -> Astranaar -> Auberdine, boat Auberdine -> Menethil Harbor. 3) ~32, seg 11 -> 12: EK -> Kalimdor, boat Menethil Harbor -> Auberdine (fly Astranaar). 4) ~36.5, seg 13 -> 14: Kalimdor -> EK, boat Theramore -> Menethil Harbor (fly Ironforge). 5) ~40.5, seg 15 -> 16: EK -> Kalimdor, boat Menethil Harbor -> Theramore (on the new ram; fly Ratchet, Gadgetzan). 6) ~46, seg 17 -> 18: Kalimdor -> EK, fly Gadgetzan -> Theramore, boat Theramore -> Menethil Harbor. 7) ~50, seg 19 -> 20: EK -> Kalimdor, boat Booty Bay -> Ratchet (fly Gadgetzan). 8) ~57, seg 23 -> 24: Kalimdor -> EK, fly Cenarion Hold -> Gadgetzan -> Theramore, boat Theramore -> Menethil Harbor (fly Ironforge). Total 8 (four Kalimdor trips). No teleports; the Deeprun Tram (Ironforge <-> Stormwind) and gryphons are not crossings. All boat routes are Classic knowledge and were not re-checked in 1.60.1; the ForeverChanges text of 94500 says the Menethil -> Auberdine boat stops in Southshore in Forever.",
+ "segments": [
+  {
+   "n": 1,
+   "file": "01-coldridge-valley-1-6.route",
+   "title": "1-6 Coldridge Valley",
+   "startLevel": 1,
+   "endLevel": 6,
+   "basis": "new",
+   "startsAt": "Coldridge Valley, Sten Stoutarm outside Anvilmar (Dun Morogh 29.9,71.2). Hearth: Anvilmar (default).",
+   "endsAt": "Mountaineer Thalos at the Coldridge Pass tunnel (Dun Morogh 33.5,71.8), heading for Kharanos. Hearth: Anvilmar.",
+   "summary": "TUGs 1-6 Coldridge Valley order without its other-class lines, plus the shaman quests. Sten Stoutarm: A179 Dwarven Outfitters (8 Tough Wolf Meat around Anvilmar) -> T179, A233 (mail) + A98581 Archaic Rune (class, Sten); Balir Frosthammer (29.7,71.2) A170 A New Threat. T98581 at Teo Hammerstorm inside Anvilmar (28.8,66.2) and TRAIN 2. Kill Rockjaw/Burly Rockjaw Troggs for 170 on the way west. Talin Keeneye (22.6,71.4): T233 A234 + A183 The Boar Hunter (12 Small Crag Boars around his camp) -> T183. Grelin Whitebeard (25.1,75.7): T234 A182 The Troll Cave (14 Frostmane Troll Whelps, camps south-west) -> T182 A218 The Stolen Journal. When level 4: Nori Pridedrift (25.0,76.0) A3364 Scalding Mornbrew Delivery (5 minute timer) -> run to Anvilmar: T3364 at Durnan Furcutter (28.8,66.4) A3365, T170 (Balir), TRAIN 4 at Teo and A94373 Call of Earth (2 Frostmane Bear Pendants from the Frostmane trolls south: FC dots 21-22,75-78), Felix Whindlebolt (28.6,67.6) A3361 A Refugee's Quandary, Grund Drokda (28.6,67.5) A97277 Grund and Gozwin (NEW). North-west camp (27.4,63.0): Gozwin's Mechanic's Log + Snow Leopard Prowler = C97277. Back south-west: Felix's box/chest/bucket in the troll camps (3361), pendants (94373), then the troll cave: Grik'nir the Cold (218). T218 A282 (Grelin), T3365 (Nori). Anvilmar: T3361, T97277, T94373 A94374 (Teo; Earth Sapta) -> Spirit Stone up the hidden path north of Anvilmar (25.0,61.9): drink the sapta, T94374 at the Minor Manifestation of Earth, A94375 -> T94375 at Teo = Earth Totem; TRAIN 6 if already 6. East to Mountaineer Thalos (33.5,71.8): T282 A420 (to Senir, Kharanos) + A96628 The Adventurer (NEW, Supply Bundle for Eric Brighthammer), Hands Springsprocket (33.8,72.2) A2160 Supplies to Tannok. Through the tunnel to Dun Morogh proper. 5841 Welcome! (gift voucher) has no XP: optional. Combat: Lightning Bolt pull, Earth Shock on Grik'nir's casts, Healing Wave between pulls.",
+   "classQuests": [
+    "98581 Archaic Rune",
+    "94373 Call of Earth",
+    "94374 Call of Earth",
+    "94375 Call of Earth (Earth Totem)"
+   ],
+   "carryIn": [],
+   "carryOut": [
+    420,
+    2160,
+    96628
+   ],
+   "risks": "Simulated end 6.0 (x1.7). 3364 needs level 4: the model reaches 4 right after The Stolen Journal, so if you are still 3 at Nori kill a few more whelps first (the segment writer may move 3364/94373 behind 218 if the validator complains, but the pendants only drop with 94373 in the log, so a second pass through the troll area is then needed). 94373/94374/94375 and 97277 are NEW: Teo, Grund and the Spirit Stone are not in Questie, coordinates come from the ForeverChanges pages (@ overrides needed). A lost Earth Sapta is replaced by 94472 at Teo."
+  },
+  {
+   "n": 2,
+   "file": "02-kharanos-brewnall-6-10.route",
+   "title": "6-10 Kharanos, Brewnall & Frostmane Hold",
+   "startLevel": 6,
+   "endLevel": 10,
+   "basis": "new",
+   "startsAt": "Dun Morogh side of the Coldridge Pass tunnel, road to Kharanos. Hearth: Anvilmar until Kharanos is bound.",
+   "endsAt": "Misty Pine Refuge (Father Gavin, Dun Morogh 57.7,44.8), just east of the Gates of Ironforge, at level 10; walk back to Kharanos for segment 03. Hearth: Kharanos.",
+   "summary": "Follows TUGs 6-9 Dun Morogh, widened with the Brewnall, Frostmane Hold and Gnomeregan-gate quests TUGs leaves to its dungeon. KHARANOS: Eric Brighthammer's camp (46.7,53.8) T96628 A96608 The Great Outdoors (/sit by his fire until Boosted Rest) T96608, A96629 Camping 101: Cooking (learn Cooking from Gremlock Pilsnor 47.7,52.3, T there); Senir Whitebeard (46.7,53.8) T420 A98322 Secure the Mountain (NEW); Tannok Frosthammer (47.2,52.2) T2160; S Kharanos (Innkeeper Belm); Maxan Anvol (47.3,52.2) A99158 Dawn in the Mountains (NEW, keep for Misty Pine); Ragnar Thunderbrew (46.8,52.4) A384; Tharek Blackstone (46.0,51.7) A400; Tognus Flintfire (45.2,52.0) A98321 Flintfire's Shipment (NEW); TRAIN 6 at Ingrid Dunwald (47.4,52.0). Steelgrill's Depot: Pilot Bellowfiz (49.4,48.4) A317, Pilot Stonegear (49.6,48.6) A313, Loslor Rudge (50.1,49.4) A5541, Beldin Steelgrill (50.4,49.1) T400. LOOP 1: Mountaineer Gretchen (44.1,57.0) T98322 A98319 -> the Grizzled Den (cave ~42,54): 8 Wendigo Manes (313), 8 Flintfire Shipments (98321), Mountaineer Cornelius inside T98319 A98323; boars and bears outside for 317 (4 Chunks of Boar Meat, 2 Thick Bear Furs) and 384 (6 Crag Boar Ribs; buy a Rhapsody Malt at the inn); Hegnar Rumbleshot (40.7,65.1) T5541 -> Kharanos: T98323, T384, T98321, T317 A318, T313. LOOP 2 west: Tundra MacGrann (34.6,51.6) A312 (meat locker in Old Icebeard's cave just above him; grab it while the yeti is away) T312; Brewnall Village: Rejold Barleybrew (30.2,45.7) T318 A319 + A315 The Perfect Stout, Marleth Barleybrew (30.2,45.5) A310 Bitter Rivals, Gretta Ganter (31.5,44.7) A98326 Frosthowl (NEW). Kill 6 Ice Claw Bears / 8 Elder Crag Boars / 8 Snow Leopards (319) and Frosthowl around Iceflow Lake, 6 Shimmerweed on Shimmer Ridge (Frostmane Seers, ~40,35) -> Brewnall T319 A320, T98326, T315 A413 Shimmer Stout (keep: Mountaineer Barleybrew is in the far east, seg 03). H Kharanos: swap the barrel in the Thunderbrew Distillery basement (buy a Thunder Ale for Jarven first: 308/403, no XP) T310 A311; T320 (Bellowfiz); Senir A287 Frostmane Hold (needs 7); Razzle Sprysprocket (45.9,49.4) A412 Operation Recombobulation. Quick IRONFORGE run (gate ~53,35): F Ironforge (Gryth Thurden 55.5,47.7), 97263 Your Package Has Arrived (Misplaced Packages 72.4,48.1 -> Eldrun Stormbreaker 47.6,13.5, the shaman trainer; trivial XP), Jemma Quikswitch in Tinker Town (digest 68.2,44.6) A95041 Data Hoarders (NEW, needs 7), TRAIN 8. LOOP 3: Frostmane Hold (~23,51): explore + 5 Headhunters (287); Gnomeregan gate (~25,40): 8 Restabilization Cogs + 8 Gyromechanic Gears from leper gnomes (412) and 7 Gnomeregan Archival Data cards (95041); Brewnall T311 (Marleth). H Kharanos: T287 A291 The Reports, T412. Ironforge: T291 (Senator Barin Redstone, High Seat, digest 57.4,30.3), T95041, TRAIN. MISTY PINE REFUGE (57.7,44.8): T99158, then Father Gavin's NEW chain 99159 Finding Warmth (14 firewood) -> 99160 Rime's Wrath (10 minor ice elementals) + 99162 Treacherous Cold (three rifles) -> 99161 Rime's Wrath (Avala's Core).",
+   "classQuests": [],
+   "carryIn": [
+    420,
+    2160,
+    96628
+   ],
+   "carryOut": [
+    413
+   ],
+   "risks": "Simulated end 10.8. NEW quests whose order is only known from TUGs (99158-99162, 98319-98323, 98321, 98326, 95041): givers/turn-ins are on the ForeverChanges pages, not in Questie. 95041's giver coordinates (68.2,44.6) are Ironforge Tinker Town coordinates filed under Dun Morogh in the digest: verify. 312 is level 12 (Old Icebeard is a level 11 yeti): loot the locker while he patrols. 314 Protecting the Herd (Vagash) is flagged ELITE: left out. 310 needs Jarven distracted with a Thunder Ale. The profession Camping 101 quests (96031-96059) are skipped except Cooking."
+  },
+  {
+   "n": 3,
+   "file": "03-gol-bolar-loch-modan-fire-totem-10-14.route",
+   "title": "10-14 Gol'Bolar, Loch Modan I & Fire Totem",
+   "startLevel": 10,
+   "endLevel": 14,
+   "basis": "new",
+   "startsAt": "Kharanos, Ingrid Dunwald (Dun Morogh 47.4,52.0) at level 10. Hearth: Kharanos (rebind in Thelsamar).",
+   "endsAt": "Bruegs Kindleborn's cave above South Gate Outpost (Dun Morogh 87.6,43.7) with the Fire Totem; hearth to Thelsamar and fly to Ironforge for segment 04. Hearth: Thelsamar.",
+   "summary": "KHARANOS: Ingrid A94449 Call of Fire (needs 10) + TRAIN 10; Beldin Steelgrill (50.4,49.1) A96408 A Visitor to Dun Morogh (NEW). EAST DUN MOROGH: Amberstill Ranch, Rudra Amberstill (63.1,49.7) A95212 Never Saddle on Quality (NEW, 6 Pristine Leopard Pelts from the snow leopards between the ranch and the quarry) -> T95212; campsite above the quarry: Earthseer Farsen (64.8,58.4) T96408 A96392 Farsen's Watch (talk, far sight) T96392 A96390 Nip 'Em in the Bud (10 Dark Iron Spies at Ironband's Compound, FC dots 77-78,59-62). Gol'Bolar Quarry: Foreman Stonebrow (69.1,56.3) A432, Senator Mehr Stonehallow (68.7,56.0) A433, Quarrymaster Thesten (69.1,54.9) A95214 Stolen Blasting Powder (NEW, 16 powder from the troggs east of the quarry; 95213 is its 85 XP item starter, optional). Kill Skullthumpers/Bonesnappers -> T432 T433 T95214. Ironband's Compound: spies (96390); the Dark Iron Map they drop starts 96391 Underground Map -> Farsen T96390 T96391 (do NOT take 96393 Old Ironforge Incursion: Hall of Thanes dungeon). North Gate Outpost: Pilot Hammerfoot (83.9,39.2) A419 -> Dwarven Corpse (79.7,36.2) T419 A417 A Pilot's Revenge (Mangeclaw) -> T417. South Gate Outpost: Mountaineer Barleybrew (86.3,48.8) T413 A414 Stout to Kadrell; climb to Bruegs Kindleborn (87.6,43.7) T94449 A94465. Through the tunnels into LOCH MODAN. Southern guard tower (Valley of Kings): Mountaineer Cobbleflint (22.1,73.1) A224, Captain Rugelfuss (23.2,73.7) A267. Hidden path to Braldir Ashmantle (32.1,66.1): T94465 A94466 (1 Fire Tar from Tunnel Rat Geomancers in the kobold caves up north, 1 Reagent Pouch from Stonesplinter Seers in the southern hills; FC dots 27-28,81-87). Stonesplinter Valley: 10 Stonesplinter Troggs + 10 Scouts (224), 8 Trogg Stone Teeth (267), the Seer's pouch -> T224 A237 (Mountaineer Gravelgaw 23.5,76.4), T267. THELSAMAR: Mountaineer Kadrell (34.2,47.8) T414, A416 Rat Catching, A1339; Vidra Hearthstove (34.8,49.3) A418 Thelsamar Blood Sausages; Brock Stoneseeker (37.0,47.8) A6387 Honor Students; Grenhild Darktalon (36.5,48.3) A86667 Snowbound (NEW, Jar of Snow to Norric Lochthane); S Thelsamar; Thorgrum Borrelson (33.9,51.0) T6387 A6391, F Thelsamar and FLY Ironforge: Golnir Bouldertoe (Ironforge 51.5,26.3) T6391 A6388 -> Gryth Thurden T6388 A6392; TRAIN 12 (Eldrun); Gnoarn in Tinker Town (62.2,29.2) A2039 Find Bingles (needs 12; keep for seg 05); FLY Thelsamar: T6392 (Brock, 1050 XP). North Loch: bears/boars/spiders on the way for 418; Mountaineer Stormpike at the northern tower (24.8,18.4) T1339 A307 Filthy Paws + A1338 Stormpike's Order (to Stormwind, keep); Silver Stream Mine (~35,20): 4 Miners' Gear (307), 12 Tunnel Rat Ears (416), Fire Tar from a Geomancer (94466); Norric Lochthane's house on the north-west shore (41.9,19.0) T86667 -> T307 (Stormpike) -> Thelsamar T416 T418. Back to Braldir: T94466 A94467 -> use the Fire Sapta at the Shrine, kill the Minor Manifestation of Fire on the peak, Glowing Ember into the Brazier of the Dormant Flame (31.9,64.5) T94467 A94468. Kill 10 Skullthumpers + 10 Seers for 237 on the way out -> T237 A263 (Mountaineer Wallbang 23.5,74.5; keep for seg 05). Back through the pass to Bruegs: T94468 = Fire Totem. H Thelsamar.",
+   "classQuests": [
+    "94449 Call of Fire (Ingrid Dunwald -> Bruegs Kindleborn)",
+    "94465 Call of Fire (-> Braldir Ashmantle)",
+    "94466 Call of Fire (Fire Tar + Reagent Pouch)",
+    "94467 Call of Fire (Minor Manifestation of Fire)",
+    "94468 Call of Fire (Fire Totem)"
+   ],
+   "carryIn": [
+    413
+   ],
+   "carryOut": [
+    263,
+    1338,
+    2039
+   ],
+   "risks": "Simulated end 14.4 (start 10.8). 96391 is level 15 and the Fire quests 94466-94468 level 14: at 12-13 pull single Seers/Geomancers, Earth Shock their casts, Stoneskin Totem. NEW givers not in Questie: Farsen, Thesten, Rudra (95212), Bruegs, Braldir, Brazier, Grenhild; coordinates from the FC pages / AUTHORING. Whether 96390's spies drop the map for 96391 without a prior quest is from TUGs' order only. 912 Stonesplinter Trogg Disguise has no giver data: skipped. 95217 (12 Copper Bars) skipped. The Ironforge round trip for 6391/6388/6392 doubles as the level 12 training stop."
+  },
+  {
+   "n": 4,
+   "file": "04-stormwind-westfall-14-17.route",
+   "title": "14-17 Stormwind & Westfall",
+   "startLevel": 14,
+   "endLevel": 17,
+   "basis": "new",
+   "startsAt": "Thelsamar (hearthed from Bruegs); fly to Ironforge and take the Deeprun Tram. Hearth: Thelsamar (rebind at Sentinel Hill).",
+   "endsAt": "Stormwind, Dwarven District (Grimand Elmore 59.7,33.8) after the flight back from Sentinel Hill. Hearth: Sentinel Hill.",
+   "summary": "IRONFORGE: TRAIN 14. DEEPRUN TRAM (Tinker Town): Monty on the Ironforge platform A6661 Deeprun Rat Roundup (flute 5 rats to him) T6661 A6662 -> ride -> Nipsy on the Stormwind platform T6662. STORMWIND: Furen Longbeard (Dwarven District 64.6,37.2) T1338; Manifest Clerk Philmor (30.4,29.1) A97220 Philmor's Favor (NEW) -> Elaine Trias (cheese shop 66.6,73.5) T97220 A97222 Gatehouse Goods T97222; Gilbert Gray at the harbor (26.3,47.1) 95065 Fishin' Time (NEW: buy 1 Shiny Bauble + 3 Nightcrawlers from a fishing supplier); Roy Lewells (38.7,62.2) A97234 Reading Room -> Donyal Tovald in the keep library (75.2,30.3) T97234 A97237 Shelf Picked (find the books in the library) -> T97237 at Roy; Highlord Bolvar (keep 80.0,38.5) A98021 Journey to Sentinel Hill (NEW); Baros Alexston (57.7,47.9) A399 Humble Beginnings. Leave by the main gate; GOLDSHIRE: Smith Argus (Elwynn 41.7,65.5) A1097 Elmore's Task. Road west into WESTFALL: Furlbrows at the border (60.0,19.4): A64 The Forgotten Heirloom, A36 Westfall Stew, A151 Poor Old Blanchy, A109 Report to Gryan Stoutmantle. Saldean's Farm: Salma (56.4,30.5) T36 A38 + A22 Goretusk Liver Pie, Farmer Saldean (56.0,31.2) A9 The Killing Fields, Ozwin Ironsprocket (51.6,32.2) A92909 Harvesting the Harvesters (NEW). SENTINEL HILL: Gryan Stoutmantle (56.3,47.5) T109 T98021 A12 The People's Militia; Captain Danuvin (56.4,47.6) A102 Patrolling Westfall; Scout Galiaan (54.0,53.0) A153 Red Leather Bandanas; Alba Fairmoon (52.5,53.1) A92742 Testing the Wells + A92744 Murloc Gills (NEW); S Sentinel Hill; F (Thor 56.6,52.6). LOOP north: pocket watch in the Furlbrow farmhouse (64), 8 Handfuls of Oats (151), 20 Harvest Watchers (9) + 14 Golem Isosprings / 5 parts (92909), 8 Goretusk Livers (22), stew parts (38: 3 vulture meat, 3 snouts, 3 murloc eyes, 3 okra), well samples at the Jansen Stead and the second well (92742), 7 Longshore Murloc Gills on the coast (92744), Defias Trappers/Smugglers at the Jangolode Mine (12), gnoll paws (102) -> T64 T151 (Furlbrows), T9 T22 T38 (Saldeans), T92909 -> 92910 (assembly, same NPC), Sentinel Hill T92742 T92744 A92745 The State of the Mines, T12 A13. LOOP west/south: 4 Kobold Diggers in the Jangolode Mine + 6 Riverpaw Miners at the Gold Coast Quarry (92745), Defias Pillagers/Looters around the Gold Coast Quarry and Moonbrook (13), bandanas (153), Baros' compass at the Alexston Farmstead (399) -> T102 T92745 A92747 Moonbrook Espionage (8 Suspicious Industrial Supplies in Moonbrook), T13 A14 + A65 The Defias Brotherhood (to Wiley in Lakeshire, seg 05), T153. Moonbrook: 92747; Dagger Hills: 15 Highwaymen, 5 Pathstalkers, 5 Knuckledusters (14, level 17: do it last). Lighthouse: Captain Grayson (30.0,86.0) A103 Keeper of the Flame (5 Flasks of Oil from Harvest Watchers: collect them during 9) + A152 The Coast Isn't Clear (7 each of the four murloc types) -> T103 T152. H Sentinel Hill: T92747 A92748 Explosive Consultation (to Stormwind), T14. FLY Stormwind: T399 (Baros), Dwarven District: Grimand Elmore T1097 A353 Stormpike's Delivery (keep for Loch Modan), Sprite Jumpsprocket (62.0,30.8) T92748 (stop there: 92749 needs 10 Rough Dynamite and the chain ends in the Deadmines).",
+   "classQuests": [],
+   "carryIn": [
+    263,
+    1338,
+    2039
+   ],
+   "carryOut": [
+    65,
+    263,
+    353,
+    2039
+   ],
+   "risks": "Simulated end 17.3 (start 14.4). 97220 may need 97246 Meal Appeal first (FC chain; 97246 is not in the dwarf-shaman digest): if Philmor offers nothing skip 97220/97222 (1350 XP). 92911 (engineering parts), 92749-92753 (dynamite, Deadmines), 104 Old Murk-Eye, 155 escort (ELITE) and the Captain Sanders treasure chain (map is a random drop) are left out. 65 is carried to Lakeshire; 132/135/141/142 are dropped on purpose (they need three more Westfall/Stormwind bounces). 2040/167/168 are Deadmines quests: do not accept. Shaman trainer: none in Stormwind (unverified), so train in Ironforge before the tram."
+  },
+  {
+   "n": 5,
+   "file": "05-redridge-loch-modan-call-of-water-17-20.route",
+   "title": "17-20 Redridge I, Loch Modan II & Call of Water",
+   "startLevel": 17,
+   "endLevel": 20,
+   "basis": "new",
+   "startsAt": "Stormwind Dwarven District; leave by the main gate and walk Goldshire -> Eastvale -> Three Corners into Redridge. Hearth: Sentinel Hill (rebind in Thelsamar).",
+   "endsAt": "Thelsamar inn (hearthed from Hervdana Saegrund's cave in the Wetlands) at level 20 with the Empty Red Waterskin. Hearth: Thelsamar.",
+   "summary": "REDRIDGE I (quests of level 14-21 only). Guard Parker on the road (10.2,71.5) A244 Encroaching Gnolls. LAKESHIRE: F (Ariena Stormfeather 25.5,59.4); Deputy Feldon (25.6,60.0) T244 A246 Assessing the Threat + A98407 Show of Force (NEW, 5 Spiked Collars from Redridge Thrashers); Magistrate Solomon (24.9,44.5) A120 Messenger to Stormwind; Darcy in the inn (21.5,44.3) A129 A Free Lunch; Wiley the Black upstairs (21.4,45.4) T65 (do not take 132); Shawn (24.2,53.6) A3741 Hilary's Necklace; Foreman Oslow (27.1,48.6) A125 The Lost Tools; Chef Breanna (17.6,43.8) A92 Redridge Goulash; Verner Osgood (25.9,47.3) A118 The Price of Shoes; Dockmaster Baren (22.6,47.4) A127 Selling Fish (10 Spotted Sunfish from the lake murlocs; level 21 quest, do it with care). Loop: necklace in the lake mud (3741), toolbox on the lake bottom (125), T129 at Parker A130 -> Martie Jainrose (16.8,46.3) T130 A131 -> Darcy T131; gnoll camps south and west: 10 Mongrels + 6 Poachers (246), thrasher collars (98407), iron pikes/rivets after T125 A89 The Everstill Bridge; condors, great goretusks and tarantulas for 92; murlocs on the north shore for 127. Turn in 3741 (Hilary), 246, 98407, 92, 127, 89. FLY Stormwind: General Marcus Jonathan (69.2,82.7) T120 A121; Goldshire is 2 minutes outside the gate: Smith Argus T118 A119 Return to Verner (keep 119 and 121 for seg 06). Tram to IRONFORGE: TRAIN 18. FLY Thelsamar, S Thelsamar. LOCH MODAN II: Jern Hornhelm (37.2,47.4) A436 Ironband's Excavation; Kadrell A468 Report to Mountaineer Rockgar (needs 19: take it on the last Thelsamar pass). South: 10 Stonesplinter Shamans (263) -> T263 A217 (Rugelfuss: Grawmug, Gnasher, Brawler in the back cave) T217; Mountaineer Ylva's body (31.7,86.4) A86585 Banner of the Fallen (NEW: plant the banner, kill Headsplitter) T at Rugelfuss. North: Mountaineer Stormpike (24.8,18.4) T353; Stonewrought Dam: Chief Engineer Hinderweir VII (46.0,13.6) A250 A Dark Threat Looms -> Suspicious Barrel on the eastern ramp (56.1,13.2) T250 A199 -> Hinderweir T199 A161 -> Ashlan Stonesmirk (50.0,18.2 at the dam; see risks) T161 A274 -> Hinderweir T274 (stop: 278 is ELITE). East shore: Bingles Blastenheimer (63.6,47.9) T2039 A2038 (four tools on the islands and shore north-east); Farstrider Lodge: Marek Ironheart (81.8,61.7) A385 Crocolisk Hunting + A86758 Twisting the Knife (NEW, Daggerfang), Daryl the Youngling (83.5,65.5) A257 A Hunter's Boast (6 Mountain Buzzards, timed) T257 A258 (5 Elder Mountain Boars, timed) T258; T2038, T385, T86758. Ironband's Excavation Site: Magmar Fellhew (64.9,66.7) T436 A297 Gathering Idols (8 Carved Stone Idols from the troggs in the dig), 86613 Excavation Tools (NEW: pick up 6 tool sets in the dig, hand in to Prospector Ironband 65.9,65.6 per the digest), Prospector Ironband A298 -> T297. Discarded Fishing Toolbox on the west shore (48.8,54.0) A86614 Silver of the Waves -> Khara Deepwater (40.4,39.4) T86614. Thelsamar: T298 A301 Report to Ironforge. L 20 if not 20 yet (simulated gap: about 900 XP). FLY IRONFORGE: Prospector Stormpike in the Hall of Explorers (74.6,11.7) T301 A302; Eldrun Stormbreaker (47.6,13.5) A94494 Call of Water (needs 20) + TRAIN 20 (Ghost Wolf); Gnoarn (62.2,29.2) A2041 Speak with Shoni (270 XP, hand in at the next Stormwind visit). FLY Thelsamar: Jern T302 A273 -> Huldar (52.2,69.3) T273 A454 -> Miran T454 A309 Protecting the Shipment (escort to the excavation) -> Ironband T309. Kadrell A468. North: Norric Lochthane (41.9,19.0) T94494 A94495 -> Dun Algaz: Mountaineer Rockgar at the tunnel (digest 25.4,10.4) T468 A455 The Algaz Gauntlet (8 Dragonmaw Scouts, 6 Grunts while you pass through; turn in at Menethil in seg 07) -> WETLANDS: Hervdana Saegrund in her cave beneath the southern falls (65.7,76.4) T94495 A94497 (fill the Empty Brown Waterskin at the foot of the falls) T94497 A94499 (Empty Red Waterskin: Stonewatch Falls in Redridge, seg 06). H Thelsamar.",
+   "classQuests": [
+    "94494 Call of Water (Eldrun Stormbreaker -> Norric Lochthane)",
+    "94495 Call of Water (-> Hervdana Saegrund, Wetlands)",
+    "94497 Call of Water (Brown Waterskin, falls below her cave)",
+    "94499 Call of Water (accept: Red Waterskin, Stonewatch Falls)"
+   ],
+   "carryIn": [
+    65,
+    263,
+    353,
+    2039
+   ],
+   "carryOut": [
+    119,
+    121,
+    455,
+    2041,
+    94499
+   ],
+   "risks": "Simulated 17.3 -> 20.3; the model reaches 20 only about 900 XP before the Ironforge trip, hence the explicit L 20 (94494 needs 20; do every Loch quest before flying). Ashlan Stonesmirk: the digest gives 50.0,18.2 once as Loch Modan and once as Wetlands (Forever also has him at Dun Modr for 88756): if he is not at the dam drop 161/274 (1690 XP). 255/256/271/531/278 are ELITE: skipped. 86613's giver is unknown (only its turn-in is listed): the FC page says the tools are picked up in the dig. Hervdana's cave: only the FC pin (65.7,76.4) and 'cave beneath the southern falls' are known; reaching it from the Dun Algaz exit is an assumption. Rockgar's coordinates are filed under Wetlands in the digest but are Loch Modan/Dun Algaz coordinates."
+  },
+  {
+   "n": 6,
+   "file": "06-redridge-duskwood-20-22.route",
+   "title": "20-22 Redridge II & Duskwood I",
+   "startLevel": 20,
+   "endLevel": 22,
+   "basis": "new",
+   "startsAt": "Thelsamar; fly to Ironforge, tram to Stormwind, fly to Lakeshire. Hearth: Thelsamar (keep it: it is the way back north).",
+   "endsAt": "Darkshire (Duskwood); hearthstone to Thelsamar for segment 07. Hearth: Thelsamar.",
+   "summary": "STORMWIND on the way: Shoni the Shilent (Dwarven District 62.6,34.1) T2041 (do not take 2040, Deadmines). FLY Lakeshire. REDRIDGE II: Solomon T121; Verner Osgood T119 A122 Underbelly Scales + A124 A Baying of Gnolls; Marshal Marris (28.4,49.0) A20 Blackrock Menace + A98387 Blackrock Blockade (NEW); Dockmaster Baren A150 Murloc Poachers (needs 20); Bailiff Conacher in the town hall (24.6,44.3) A91 Solomon's Law; Martie Jainrose (16.8,46.3) A34 An Unwelcome Guest (Bellygrub); Foreman Oslow A98386 Alther's Mill (NEW: 12 Greater Tarantulas, 6 egg sacs). Loop: black dragon whelps north-west of town for 6 Underbelly Scales (122); Alther's Mill (east, ~52,45) 98386; Bellygrub in the fields south of the lake (34); gnoll camps north-east of the lake: 10 Brutes + 8 Mystics (124); Render's Camp / Render's Valley orcs: 10 Battleworn Axes (20), 8 Stolen Weapons + 10 Blackrock Supplies (98387); murlocs along the lake for 8 fins (150); Galardell Valley: Shadowhide gnolls for 10 pendants (91) and, at the foot of Stonewatch Falls among the Nightcrawler murlocs, fill the Red Waterskin (C94499). Turn in 122, 124 (do not chase 126 Yowler yet: level 25), 20, 98387, 150, 91, 34, 98386. Walk south over Three Corners into DUSKWOOD. DARKSHIRE: F (Felicia Maline 77.5,44.3); Elaine Carevin (75.3,48.7) A163 Raven Hill, A164 Deliveries to Sven, A165 The Hermit; Commander Althea Ebonlocke (73.5,46.8) A56 The Night Watch; Sirra Von'Indi (72.6,47.5) A96139 The Valor Family (NEW); Madame Eva (75.8,45.3) A101 The Totem of Infliction (10 Ghoul Fangs, 10 Skeleton Fingers, 5 Vials of Spider Venom: collected over this segment and seg 10) and, at 22, A66 The Legend of Stalvan -> Clerk Daltry (72.5,46.9) T66 A67 (keep: Moonbrook, seg 10); Viktori Prism'Antras (79.8,48.0) A174 Look to the Stars (buy a Bronze Tube from an engineering supplier, e.g. in Stormwind on the way) T174 A175 -> Blind Mary (82.0,59.1) T175 A177 (Insane Ghoul in the chapel at Tranquil Gardens Cemetery). Watcher Dodds on the south road (45.1,67.0) A245 Eight-Legged Menaces (15 Pygmy Venom Web Spiders) T245. RAVEN HILL: Jitters (18.4,56.4) T163 A5; search Raven Hill for 96139; Sven's camp (7.8,34.1): Sven T164 A95 Sven's Revenge, Lars (7.7,33.2) A226 Wolves at Our Heels (12 Starving + 8 Rabid Dire Wolves) T226; Abercrombie's shack north of the cemetery (28.1,31.5) T165 A148; Sven's farm, mound behind the stump (49.9,77.7) T95 A230 -> back to Sven T230 A262 The Shadowy Figure. Skeletal Warriors/Mages at Tranquil Gardens for 56. DARKSHIRE: T96139, T56 A57, T148 (Madame Eva) A149 -> Blind Mary T149 A154; Chef Grual (73.8,43.5) T5 A93 Dusky Crab Cakes (6 Gooey Spider Legs) T93 A240 Return to Jitters; T177 (Viktori) A181; Madame Eva T154 A157 Deliver the Thread, T262 A265 -> Daltry T265 A266 -> Tavernkeep Smitts (73.8,44.5) T266 A453 Finding the Shadowy Figure; T101 if the parts are complete. Kept for seg 10: 57, 67, 157, 181, 240, 453. H Thelsamar.",
+   "classQuests": [
+    "94499 Call of Water (fill the Red Waterskin at Stonewatch Falls)"
+   ],
+   "carryIn": [
+    119,
+    121,
+    455,
+    2041,
+    94499
+   ],
+   "carryOut": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    453,
+    455,
+    94499
+   ],
+   "risks": "Simulated 20.3 -> 22.7. Level 24-25 quests at 21-22 (34 Bellygrub, 174-177, 165, 95/230, 101): single pulls, Earth Shock casters, Stoneclaw for adds; move 101's turn-in to seg 10 if the fangs/fingers/venom are not done. 66/67 need 22: take them at the end. ELITE and skipped: 19 Tharil'zun, 115 Shadow Magic, 169, 95999, 248/249. Left for seg 10 on purpose: 126, 128, 219, 180 (level 25-26). 94 A Watchful Eye starts at the Tower of Azora and leads to the elite 248: skipped. 143-146 Messenger chain is dropped (needs a Westfall bounce). The Bronze Tube for 174 is an engineering vendor item (Classic knowledge): if you have none skip 174/175/177/181. Stonewatch Falls: the FC text only says 'at Stonewatch Falls near the Nightcrawler Murlocs', no coordinates."
+  },
+  {
+   "n": 7,
+   "file": "07-wetlands-22-24.route",
+   "title": "22-24 Wetlands I & Hervdana",
+   "startLevel": 22,
+   "endLevel": 24,
+   "basis": "new",
+   "startsAt": "Thelsamar (hearthed from Darkshire); run north past the dam and through Dun Algaz. Hearth: Thelsamar (rebind in Menethil Harbor).",
+   "endsAt": "Menethil Harbor dock, boarding the boat to Auberdine (after an optional Ironforge training flight). Hearth: Menethil Harbor.",
+   "summary": "Kill the Dragonmaw Scouts/Grunts in Dun Algaz if 455 is not finished. HERVDANA SAEGRUND (Wetlands 65.7,76.4): T94499 A94500 (Unfilled Blue Waterskin: the waters of Astranaar, seg 08). THE GREEN BELT: Rethiel the Greenwarden (56.4,40.4) A276 Tramping Paws (15 Mosshide Gnolls, 10 Mongrels around him) T276 A277 Fire Taboo (9 Crude Flints from Mosshide gnolls) T277 A275 Blisters on the Land (8 Fen Creepers, level 26: keep for seg 09 if they are too hard now). Einar Stonegrip (49.9,39.4) A469 Daily Delivery; Tom 'Half-fish' Wilson (51.2,66.5) A98459 A Lack of Virtue (NEW, to Bart Tidewater in Menethil) if you pass him. Whelgar's Excavation Site: Ormer Ironbraid (38.2,50.9) A294 Ormer's Revenge (10 Mottled Screechers + 10 Mottled Raptors; needs 22) T294 A295 (keep). MENETHIL HARBOR: F (Shellei Brondir 9.5,59.7), S Deepwater Tavern; Valstag Ironjaw (10.1,56.9) T455 A98197 Spoils of War (NEW: 6 Khaz Modan Timber + 30 Khaz Modan Iron inside the harbor) T98197; James Halloran (8.6,55.7) T469 A484 Young Crocolisk Skins; Bart Tidewater T98459; Karl Boran (8.3,58.6) A279 Claws from the Deep (12 Bluegill Murlocs + Gobbler's head, north of town); Caitlin Grassman (11.9,58.8) A98282 Alchemical Hazards (NEW: Unruptured Stalker Gland at Thelgen Rock); Sida (11.8,58.0) A470 Digging Through the Ooze (her bag from an ooze at Ironbeard's Tomb); Tarrel Rockweaver (11.5,52.2) A305 In Search of the Excavation Team. Loop: young crocolisks on the rivers (484), Bluegill camp + Gobbler (279), Ironbeard's Tomb oozes (470), Thelgen Rock cave (98282), Whelgar's: Merrin Rockweaver (38.9,52.3) T305 A306 -> Menethil T279 A281 Reclaiming Goods, T484 A471 Apprentice's Duties (giant crocs, level 26: keep for seg 09), T98282, T470, T306. Murloc camps on the north coast: Damaged Crate (13.5,41.4) T281 A284 -> Sealed Barrel (13.6,38.2) T284 A285 -> Half-buried Barrel (13.9,34.8) T285 A286 Return the Statuette -> Karl Boran T286 A98189 -> Captain Stoutfist in the keep (9.9,57.4) T98189 (98190 A Friend of the Family is taken in seg 09). Optional: FLY Ironforge, TRAIN 24 at Eldrun, fly back (about 10 minutes; the next trainer visit is at 28). Buy food/water. Take the boat from Menethil Harbor to Auberdine (CROSSING 1).",
+   "classQuests": [
+    "94500 Call of Water (accept: Blue Waterskin, Astranaar)"
+   ],
+   "carryIn": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    453,
+    455,
+    94499
+   ],
+   "carryOut": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    275,
+    295,
+    453,
+    471,
+    94500
+   ],
+   "risks": "Simulated 22.7 -> 24.0. Carried into Kalimdor: 57, 67, 157, 181, 240, 453 (Duskwood), 275, 295, 471 (Wetlands, level 26-27) and 94500: ten slots. 294 needs 22, 305 needs 21. Fen Creepers (275) and Giant Crocolisks (471) are level 25-28. 98461 Unrequited Love starts in Auberdine (digest coordinates are Darkshore's): not used. 463 The Greenwarden breadcrumb is skipped because Rethiel is visited before Menethil. 1132 Fiora Longears (to Theramore) is not taken. The boat Menethil -> Auberdine is Classic knowledge; the FC text of 94500 says it 'stops in Southshore on the way over' in Forever: unverified."
+  },
+  {
+   "n": 8,
+   "file": "08-darkshore-ashenvale-stonetalon-24-26.route",
+   "title": "24-26 Darkshore, Ashenvale I & Stonetalon",
+   "startLevel": 24,
+   "endLevel": 26,
+   "basis": "new",
+   "startsAt": "Auberdine dock (Darkshore). Hearth: Menethil Harbor until Astranaar is bound.",
+   "endsAt": "Auberdine dock, boarding the boat back to Menethil Harbor (flown in from Stonetalon Peak via Astranaar). Hearth: Astranaar.",
+   "summary": "Only Darkshore quests of level 18+ without long low-level chains are used. AUBERDINE: F (Caylais Moonfeather 36.3,45.6); Sentinel Elissa Starbreeze (39.0,43.6) A965 The Tower of Althalaxx; Archaeologist Hollee (37.4,41.8) A729 The Absent Minded Prospector. North: Balthule Shadowstrike (55.0,24.9) T965 A966 (4 Worn Parchments from the Dark Strand cultists) T966 A967 (to Delgren in Ashenvale). South along the road: Grove of the Ancients: Kerlonian Evershade (44.4,76.4) A5321 The Sleeper Has Awakened (escort to Maestra's Post; take the Horn of Awakening from the chest and wake him when he falls asleep); Prospector Remtravel (35.7,83.7) T729 (731 is ELITE: skip); Master's Glaive: Therylune (38.6,87.3) A945 Therylune's Escape (escort). ASHENVALE: Maestra's Post: Delgren the Purifier (26.2,38.7) T967 A970, Liladris Moonriver (27.3,35.6) T5321, Orendil Broadleaf (26.4,38.6) A1010 Bathran's Hair. Bathran's Haunt: 5 Bathran's Hair + Glowing Soul Gem (970) -> T1010 A1020 Orendil's Cure, T970 A973 (Ilkrud Magthrull's Tome at Fire Scar Shrine). Shrine of Aessina: Therysil (22.6,51.9) T945. ASTRANAAR: F (Daelyshia 34.4,48.0), S; Shindrell Swiftfire (34.7,48.8) A1008 The Zoram Strand; Raene Wolfrunner (36.6,49.6) A991 Raene's Cleansing; Pelturas Whitemoon (37.4,51.8) T1020 A1033 Elune's Tear; fill the Blue Waterskin in the lake around Astranaar (C94500). West: Teronis' Corpse (20.3,42.3) T991 A1023 (Glowing Gem from the Saltspittle murlocs at Lake Falathim). Zoram Strand: Talen (14.8,31.3) A1007 The Ancient Statuette (on the strand) T1007 A1009 Ruuzel (Ring of Zoram; she has an escort, pull carefully) T1009; 20 Wrathtail Heads (1008). Astranaar: T1008 A1134 Pridewings of Stonetalon, T1023 A1024 + A1025 An Aggressive Defense + A1054 Culling the Threat; Sentinel Thenysil (34.9,49.8) A1070 On Guard in Stonetalon; Faldreas Goeth'Shael (35.8,49.1) A1056 Journey to Stonetalon Peak. Fire Scar Shrine (south-west): tome for 973 -> Delgren T973; Feero Ironhand (26.2,38.9) A976 Supplies to Auberdine (escort, three ambushes) T976 at Delgren. East of Astranaar: Elune's Tear at Iris Lake (1033) -> T1033 A1034 The Ruins of Stardust (5 Handfuls of Stardust on the island south of Astranaar) T1034; Shael'dryn at the moonwell (53.5,46.2) T1024 A1026 (keep for seg 12: Wooden Key and the first piece of Dartol's Rod are level 27); Thistlefur Village: Den Watcher, 2 Ursa, 10 Totemics, 12 Warriors (1025); Dal Bloodclaw (1054) -> Raene T1054 T1025. Silverwind Refuge: Sentinel Velene Starstrike (49.8,67.2) A1016 Elemental Bracers (5 Intact Elemental Bracers from the water elementals of Mystral Lake, divine them) T1016 A1017 Mage Summoner (Sarilus Foulborne, level 26) T1017; Gleaming Crescent Pendant on the ground (63.0,71.5) A98027 (NEW, level 29: only if you can reach it) -> Maliynn in Astranaar (36.6,49.9) T98027. STONETALON by the Talondeep Path (entrance 42.3,71.0): Kaela Shadowspear (59.9,66.8) T1070 A1085 -> Gaxim Rustfizzle (59.5,67.2) T1085 A1071 A Gnome's Respite (10 Venture Co. Loggers + 10 Deforesters); Ziz Fizziks (59.0,62.6) A1093 Super Reaper 6000 (blueprints from Venture Co. Operators); Piznik in the mine (71.9,60.0) A1090 Gerenzo's Orders (defend him) T1090 A1092 -> Ziz T1092, T1093, Gaxim T1071 (do not take 1072/1075: they send you to Ironforge/Stormwind; 1094 goes to Ratchet). Mirkfallon Lake: Night Elf Courier (48.6,39.8) A86574 Stonetalon Supply Run (NEW: 6 supplies from Pridewing wyverns) and 12 Pridewing Venom Sacs (1134). STONETALON PEAK: Innkeeper Faralia (35.7,5.8) T86574, Keeper Albagorm (37.1,8.1) T1056 (leave 1057), F (Teloren 36.4,7.2). FLY Astranaar: T1134. FLY Auberdine. Boat to Menethil Harbor (CROSSING 2).",
+   "classQuests": [
+    "94500 Call of Water (fill the Blue Waterskin at Astranaar)"
+   ],
+   "carryIn": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    275,
+    295,
+    453,
+    471,
+    94500
+   ],
+   "carryOut": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    275,
+    295,
+    453,
+    471,
+    1026,
+    94500
+   ],
+   "risks": "Simulated 24.0 -> 26.6. Travel is the cost here: Auberdine -> Astranaar and Astranaar -> Stonetalon Peak are on foot the first time (Classic geography). 965-967 and 945 are level 18 (reduced XP at 24). Escorts 5321, 945, 976 can fail; 976 has three waves. 98027's giver is an object at 63.0,71.5 (FC), level 29: skip if too dangerous. 1026 is carried to seg 12. Left for seg 12: 1035, 1011/1012, 1021/1031, 1022, 4581, 98417/98418, 86757, 1027-1046. 908 is ELITE; 1199/1198/1275/1200/971 are Blackfathom quests: do not accept. The Darnassus hand-ins (1081, 741, 3765 line) are not used. No shaman trainer is known in Kalimdor for a dwarf (unverified): no training until Ironforge at 28."
+  },
+  {
+   "n": 9,
+   "file": "09-wetlands-water-sapta-26-28.route",
+   "title": "26-28 Wetlands II & the Water Sapta",
+   "startLevel": 26,
+   "endLevel": 28,
+   "basis": "new",
+   "startsAt": "Menethil Harbor dock (boat from Auberdine). Hearth: Astranaar; rebind in Menethil Harbor at once.",
+   "endsAt": "Thelsamar gryphon master (from Norric Lochthane's house), flying to Ironforge. Hearth: Menethil Harbor.",
+   "summary": "MENETHIL: S; Valstag Ironjaw A473 Report to Captain Stoutfist -> Captain Stoutfist (9.9,57.5) T473 A464 War Banners + A98221 From the Ashes (NEW: destroy 4 Attack Plans in the Angerfang Encampment) + A98230 This Land Was Their Land (NEW, to Howin Kindfeather) + A98190 A Friend of the Family (Menethil Statuette to Bolvar, seg 10); First Mate Fitzsimmons (10.9,59.6) A288 The Third Fleet (buy him a Flagon of Mead in the tavern) T288 A289 The Cursed Crew; Harlo Barnaby (10.8,55.9) A472 Fall of Dun Modr (needs 25; hand in in seg 11); Sylessa Duskwhisper (8.0,55.9) A98208 Bloom of the Heavens (NEW: recover Nord'el; read the FC page for where). LOOP A: Giant Crocolisks on the rivers (471) -> Halloran T471 A98072 Crocs of the Sky (NEW: 10 Pristine Crimson Scales from Crimson Whelps east of the road); shipwrecks on the north coast: 13 Cursed Sailors, 5 Marines, First Mate Snellig (289) -> Fitzsimmons T289 A290 Lifting the Curse (key from Captain Halyndor on the far wreck; Intrepid's Locked Strongbox 14.4,24.0) T290 A292 The Eye of Paleth. Whelgar's Excavation: Ormer T295 (10 Mottled Scytheclaws + 10 Razormaws, carried) A296 (Sarltooth, on the ridge above the dig) T296; Prospector Whelgar (38.8,52.4) A299 Uncovering the Past (4 fossils in the dig) T299. Angerfang Encampment (~45-50,45): 8 Dragonmaw War Banners (464), 4 Attack Plans (98221); Howin Kindfeather by the road (49.4,42.1) T98230 A98246 Trying Times (12 Perfect Razormaw Eggs); Fen Creepers in the waterways for 275 -> Rethiel (56.4,40.4) T275; whelps for 98072; Tattered Spellbook on the ground (53.5,54.5) A98223 Old Habits (NEW; hand in at Stoutfist at the end of seg 11). H Menethil: Stoutfist T464 A465 Nek'rosh's Gambit, T98221; Halloran T98072 A98240 Crimson Crate Delivery (to Howin); Glorin Steelbrow (10.6,60.6) T292 A293 Cleansing the Eye (to Stormwind); Sylessa T98208 (do not take 98209, Auberdine). LOOP B east: Howin T98240 A98245 Razormaw Needling (10 Razormaw Incisors) -> raptors and nests on the ridge east of him for 98245 + 98246 -> Howin T98245 T98246; Dragonmaw Catapult (47.5,47.0): destroy the catapults, T465 there (474 Defeat Nek'rosh is ELITE: do not take). South-east to HERVDANA (65.7,76.4): T94500 A94501 Vial of Purest Water -> Dun Algaz -> LOCH MODAN: Norric Lochthane (41.9,19.0) T94501 A94502 (Water Sapta; Stendel's Pond in Westfall, seg 10). Run to Thelsamar, FLY Ironforge.",
+   "classQuests": [
+    "94500 Call of Water (hand in the Blue Waterskin)",
+    "94501 Call of Water (Vial of Purest Water -> Norric)",
+    "94502 Call of Water (accept: Stendel's Pond, Westfall)"
+   ],
+   "carryIn": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    275,
+    295,
+    453,
+    471,
+    1026,
+    94500
+   ],
+   "carryOut": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    293,
+    453,
+    472,
+    1026,
+    94502,
+    98190,
+    98223
+   ],
+   "risks": "Simulated 26.6 -> 28.2. Level 29-31 quests at 27 (290/292, 296 Sarltooth, 465, 98245/98246, 98208): do them last in each loop; Frost Shock kiting for Sarltooth. FC chain: 98072 -> 98240 -> 98245, hence the Menethil hearth between the two loops; whether 98246 needs 98230 or 98245 first is not in the data. 98208's item location is not in the digest. ELITE and skipped: 474, 303, 304, 631 (so 632-634 The Thandol Span are not available), 98283, 98291, 98293, 98297, 98216, 98310, 87491, 88756, 87318. 472 and 98223 are carried to seg 11 with 293 and 98190 (Stormwind)."
+  },
+  {
+   "n": 10,
+   "file": "10-westfall-duskwood-redridge-28-30.route",
+   "title": "28-30 Stendel's Pond, Duskwood II & Redridge III",
+   "startLevel": 28,
+   "endLevel": 30,
+   "basis": "new",
+   "startsAt": "Ironforge (flown from Thelsamar): train, then the Deeprun Tram to Stormwind. Hearth: Menethil Harbor (rebind in Darkshire).",
+   "endsAt": "Darkshire after the last hand-ins; fly to Stormwind and take the tram to Ironforge for segment 11. Hearth: Darkshire.",
+   "summary": "IRONFORGE: TRAIN 28. STORMWIND: Archbishop Benedictus (Cathedral 50.3,45.5) T293; Highlord Bolvar (80.0,38.5) T98190 A98191 -> Lord Grayson Shadowbreaker (Cathedral 48.5,50.1) T98191 A98219 The Shamed Lieutenant (to Southshore, seg 11); Thomas in the Cathedral (49.6,44.5) A1274 The Missing Diplomat -> Bishop DeLavey (keep 80.2,44.1) T1274 A1241 -> Jorgen (76.3,85.1) T1241 A1242 -> Elling Trias (66.0,74.1) T1242 A1243 (to Watcher Backus, Duskwood). FLY Sentinel Hill. WESTFALL: Moonbrook schoolhouse, Old Footlocker (41.5,66.7) T67 A68; STENDEL'S POND outside Moonbrook: drink the Water Sapta, kill the Corrupt Manifestation of Water, put its bracers and the remaining drops on the Forgotten Shrine (45.5,59.7) T94502 A94503 -> Minor Manifestation of Water (46.4,59.3) T94503 A94505 Shard of Water (to Norric, seg 11). Ride east into DUSKWOOD (Raven Hill is at the border): Jitters (18.4,56.4) T240, T453 A268 -> Sven (7.8,34.1) T268 A323 Proving Your Worth (15 Skeletal Raiders, 3 Healers, 3 Warders at the Raven Hill cemetery crypts); Abercrombie (28.1,31.5) T157 A158 Zombie Juice; A Weathered Grave (17.7,29.1) A225 (needs 28); 98447 The Valor Family (NEW second part, level 27: find the cause of the ghosts in Raven Hill; giver per FC is Sirra, see risks) -> Sven T323 A269 Seeking Wisdom. DARKSHIRE: S (Scarlet Raven Tavern); Daltry T68 A69; Smitts T158 A156 Gather Rot Blossoms (8, from the skeletons/ghouls of the cemeteries) T156 A159 Juice Delivery; Watcher Backus on the east road (74.8,44.2) T1243 A1244 (Defias Docket in the Defias camp north of the road); Althea T57 (15 Skeletal Fiends/Horrors, done at Raven Hill) A58; Calor (75.8,47.6) A173 Worgen in the Woods (6 Shadow Weavers, Brightwood Grove) T173 A221 (12 Dark Runners) T221 A222; Sirra T225 A227 -> Althea T227 (228 Mor'Ladim is ELITE: stop); Sirra T98447 A96137 Ira's Dagger / A96138 Merrick's Bow as offered. Abercrombie again: T159 A133 Ghoulish Effigy (7 Ghoul Ribs) T133 A134 Ogre Thieves (crate at the ogre mound in the south, Vul'Gol); Backus T1244 A1245. FLY Stormwind: Bishop Farthing (Cathedral 49.9,46.0) T269 A270 The Doomed Fleet (to Menethil, seg 11); Elling Trias T1245 A1246 -> Dashel Stonefist (74.3,59.2) T1246 A1447 (beat him and his two thugs) T1447 A1247 -> Trias T1247 A1248 (to Mikhail, Menethil); Archmage Malin in the Mage Quarter (50.5,87.5) A690 Malin's Request (needs 30; to Skuerto in Arathi). Goldshire: Innkeeper Farley (43.8,65.8) T69 A70 (letter from the chest upstairs) -> Stormwind, Caretaker Folsom by the canal cemetery (42.5,72.4) T70 A72 -> Sealed Crate T72 A74 -> ride east to Eastvale: Marshal Haggard (Elwynn 84.6,69.4) T74 A75 (chest upstairs) T75 A78. On into REDRIDGE III (level 25-26 leftovers): Verner A126 Howling in the Hills (Yowler, north-east gnoll camp); Guard Howe at the bridge (26.4,57.9) A128 Blackrock Bounty (15 Blackrock Champions, Stonewatch Keep approach); Wanted poster (21.7,46.4) A180 WANTED: Lieutenant Fangore (Shadowhide camp, Galardell Valley); Corporal Keeshan in the Blackrock cave north (23.3,12.6) A219 Missing In Action (escort back to Lakeshire) -> T126, T128, T180 (Solomon), T219 (Marris). FLY Darkshire: Smitts T78 A79 -> Althea T79 A80 -> Daltry T80 A97 -> Althea T97 A98 (Stalvan Mistmantle at his cottage north of Darkshire, level 32+: last, with full mana and both totems); ogre mound in the south: crate (134), 96138 (8 Splinter Fist Warriors, 4 Taskmasters), Zzarc'Vul for 181; Black Ravagers in the west for 96137; Vile Fangs/Tainted Ones for 222. Abercrombie T134 A160 Note to the Mayor -> Lord Ello Ebonlocke (71.9,46.4) T160 A251 -> Sirra T251 A401 (wait) T401 A252 -> Ello T252 (253 Bride of the Embalmer is ELITE: stop); Althea T58 (20 Plague Spreaders); Calor T222 A223 -> Jonathan Carevin (75.3,49.0) T223; Sirra T96137 T96138; Viktori T181; Madame Eva T98 (and T101 if still open).",
+   "classQuests": [
+    "94502 Call of Water (Stendel's Pond: Corrupt Manifestation of Water)",
+    "94503 Call of Water (Minor Manifestation of Water)",
+    "94505 Call of Water (accept: Shard of Water -> Norric)"
+   ],
+   "carryIn": [
+    57,
+    67,
+    157,
+    181,
+    240,
+    293,
+    453,
+    472,
+    1026,
+    94502,
+    98190,
+    98223
+   ],
+   "carryOut": [
+    270,
+    472,
+    690,
+    1026,
+    1248,
+    94505,
+    98219,
+    98223
+   ],
+   "risks": "Simulated 28.2 -> 30.8. Order of the NEW Sirra Von'Indi quests (96139 -> 96137 Ira's Dagger 24 -> 98447 The Valor Family 27 -> 96138 Merrick's Bow 28) is a guess from their levels: accept whatever she offers and keep the kill lists (Black Ravagers; Raven Hill; Splinter Fist ogres). 94502's hand-in at the Forgotten Shrine and the pond location come from the FC text/pins only. 98 Stalvan (level 35) and 181 Zzarc'Vul are hard at 30: skip either if it costs deaths. ELITE and skipped: 55 Morbent Fel (so 325 is pointless), 228, 253. 337 An Old History Book is a random drop: optional (T at Milton Sheaf, Stormwind library). 690 needs 30: if you are 29 at the Stormwind stop, take it on the way out through Stormwind. 377, 386-391 are Stockade quests: do not accept. 1076/1078 (Collin Mauren) are skipped."
+  },
+  {
+   "n": 11,
+   "file": "11-totems-thandol-arathi-southshore-30-32.route",
+   "title": "30-32 Air & Water Totems, Arathi I & Southshore",
+   "startLevel": 30,
+   "endLevel": 32,
+   "basis": "new",
+   "startsAt": "Ironforge (tram from Stormwind) at level 30. Hearth: Darkshire (rebind in Southshore).",
+   "endsAt": "Menethil Harbor dock, boarding the boat to Auberdine. Hearth: Southshore.",
+   "summary": "IRONFORGE: Eldrun Stormbreaker (47.6,13.5) A94789 Call of Air (needs 30) + TRAIN 30 (Astral Recall: a second hearthstone, 15 minute cooldown). FLY Thelsamar -> Norric Lochthane (41.9,19.0): T94505 = WATER TOTEM. Dun Algaz -> WETLANDS north: Dun Modr: Longbraid the Grim (49.8,18.3) T472; Foggy MacKreel (digest 43.2,92.6 in Arathi coordinates: the camp at the south end of the Thandol Span) A647 MacKreel's Moonshine (needs 28; to Southshore); under the broken span, Waterlogged Envelope on a corpse (digest 44.3,92.9 Arathi) A637 Sully Balloo's Letter. Cross the Thandol Span into ARATHI: Refuge Pointe: F (Cedrik Prose 45.7,46.1); Skuerto (46.6,47.0) T690; Captain Nials (45.8,47.6) A681 Northfold Manor (10 Syndicate Highwaymen, 6 Mercenaries) T681. Veyric Thunderhame in the northern hills (59.8,27.6): T94789 = AIR TOTEM (do not continue the chain: 96264 needs Razorfen Kraul). West through Thoradin's Wall to SOUTHSHORE (Hillsbrad): F (Darla Harris 49.3,52.3), S; Brewmeister Bilger (52.1,58.7) T647 A98071 Brewer's Trade (NEW: deliver Fallrook Varietal to Dun Garok, bring back Homebrew Hops); Lieutenant Farren Orinelle (51.5,58.4) T98219 A536 Down the Coast; Chef Jessen (51.9,58.7) A555 Soothing Turtle Bisque (10 Turtle Meat + Soothing Spices from the vendor); Darren Malvew (52.4,56.0) A564 Costly Menace (needs 30; 8 Mountain Lions + 10 Hulking... see quest text); Bartolo Ginsetti (49.4,55.5) A565 Bartolo's Yeti Fur Cloak (yeti cave in Hillsbrad; Bolt of Woolen Cloth etc.); Magistrate Henry Maleb (48.1,59.1) A505 Syndicate Assassins; Captain McManus (46.5,50.1) A98059 Hillsbrad's Hoard (NEW: place the Sealed Company Request in the Hillsbrad town hall, a Horde town: go in fast). Coast: 10 Torn Fin Tidehunters/Oracles (536) T536 A559 Farren's Proof (10 Murloc Heads) T559 A560 -> Marshal Redpath (49.5,58.7) T560 A561 -> Farren T561 A562 Stormwind Ho! (10 Daggerspine Shorehunters/Sirens) T562 A563 Reassignment (to Stormwind: carried until seg 14). Turtles on the river for 555. Syndicate camps on the Alterac border: 12 Footpads + 8 Thieves (505); Syndicate Documents on the table in the camp (Alterac 47.9,82.2) A510 Foreboding Plans + A511 Encrypted Letter -> Maleb T510 (512 comes in seg 15), Loremaster Dibbs (50.6,57.1) T511 A514 Letter to Stormpike. Dun Garok (98071), mountain lions (564), yetis (565), town hall (98059) -> T505 T555 T564 T565 T98059 T98071. FLY Ironforge: Prospector Stormpike (74.6,11.7) T514 A525 Further Mysteries (keep for seg 15); Sara Balloo (63.5,67.3) T637 A683 -> King Magni (39.4,55.9 per the NEW digest rows) T683 A686 -> Grand Mason Marblesten (39.0,88.0) T686 (689 needs Alterac Granite: skip); Pilot Longbeard in the Hall of Arms (digest 62.8,36.2) A1179 The Brassbolts Brothers (to the Shimmering Flats); Roetten Stonehammer (62.3,24.5) A1453 Reclaimers' Business in Desolace; TRAIN 32. FLY Menethil: Stoutfist T98223; Glorin Steelbrow T270 A321 Lightforge Iron -> Waterlogged Chest in the wreck south of the dock (12.1,64.2) T321 A324 The Lost Ingots (5 ingots from the Bluegill murlocs) T324 (do not take 322); Mikhail in the tavern (10.6,60.8) T1248 A1249 (subdue Tapoke 'Slim' Jahn before he reaches the door) T1249 A1250 T1250 A1264 (to Commander Samaul, Theramore: seg 13). Take the boat to Auberdine (CROSSING 3).",
+   "classQuests": [
+    "94505 Call of Water (Water Totem, Norric Lochthane)",
+    "94789 Call of Air (Eldrun Stormbreaker -> Veyric Thunderhame, Air Totem)"
+   ],
+   "carryIn": [
+    270,
+    472,
+    690,
+    1026,
+    1248,
+    94505,
+    98219,
+    98223
+   ],
+   "carryOut": [
+    525,
+    563,
+    1026,
+    1179,
+    1264,
+    1453
+   ],
+   "risks": "Simulated 30.8 -> 32.4. The Water Totem arrives at 30 because the chain needs Redridge, Astranaar and Westfall; a player who wants it at about 28 can fly Thelsamar right after Stendel's Pond in seg 10 (one extra Ironforge/Stormwind round trip). 94789's reward 'Air Totem' is from the FC page; Veyric is not in Questie. 631 (ELITE flag) blocks 632-634. MacKreel and the Waterlogged Envelope are listed with Arathi/Ironforge-style coordinates in the digest: describe them in text. King Magni's hand-in coordinates differ between rows (57.4,30.1 Classic vs 39.4,55.9 NEW rows). 98059 means entering Horde-held Hillsbrad Fields. 659 Hints of a New Plague? is taken in seg 15. 1179 and 1453 start in Ironforge so that Kalimdor opens with hand-ins. No trainer until 36 (Ironforge at the start of seg 14)."
+  },
+  {
+   "n": 12,
+   "file": "12-ashenvale-desolace-32-35.route",
+   "title": "32-35 Ashenvale II & Desolace",
+   "startLevel": 32,
+   "endLevel": 35,
+   "basis": "new",
+   "startsAt": "Auberdine dock; fly to Astranaar. Hearth: Southshore (rebind in Astranaar, then Nijel's Point).",
+   "endsAt": "Nijel's Point (Desolace 64.7,10.5), flying to Astranaar. Hearth: Nijel's Point.",
+   "summary": "ASTRANAAR: S; Pelturas A1035 Fallen Sky Lake; Shindrell A4581 Kayneth Stillwind. Shrine of Aessina (west, 22,53): Sentinel Melyria Frostshadow A1022 The Howling Vale, Illiyana (digest 21.7,53.3) A1021 Vile Satyr! Dryads in Danger! East loop: Wooden Key from the Shadethicket / Withered Ancients and the rod piece at the Iris Lake gazebo -> Shael'dryn (53.5,46.2) T1026 A1027 (final piece of Dartol's Rod, read the quest text) T1027 A1028 -> Hidden Shrine (56.4,49.2) T1028 A1055 -> Shael'dryn T1055 A1029; Howling Vale: read the Tome of Mel'Thandris (1022); Xavian: Anilia (78.3,44.8) T1021 A1031 The Branch of Cenarius (Geltharis); Forest Song: Kayneth Stillwind (85.2,44.7) T4581 A1011 Forsaken Diseases (Bottle of Disease from the Forsaken camp) and Maseara Autumnmoon (86.2,45.8) A98417 Vengeful Trail (NEW) T98417 A98418 Shared Fury (5 each of Xavian Rogues, Felsworn, Betrayers, Hellcallers; hand-in 81.0,50.2) T98418; T1011 A1012 Insane Druids (Taneel, Uthil, Mavoris in the Dor'danil barrow den) T1012; Fallen Sky Lake in the south-east: Shadethicket Oracle's moonstone (1035). Talrendis Point (Azshara 11.9,77.6): F, FLY Astranaar: Raene T1029 A1030, Pelturas T1035; Shrine of Aessina T1022 (do not take 1037, Darnassus), T1031 (1032 Satyr Slaying is skipped: the horns only drop after it is accepted). South: Silverwind Refuge, Shandrina (49.4,67.0) 86757 Slowing the Orc Advance (NEW: 6 Jagged Orc Swords, 4 Curved Orc Daggers from the Warsong orcs); Krolg near Lake Mystral (50.8,75.1, use Dartol's Rod) T1030 A1045 (Ran Bloodtooth + 4 guards) T1045 A1046 -> Raene T1046. Talondeep Path -> Stonetalon -> Charred Vale -> DESOLACE. NIJEL'S POINT: F (Baritanas Skyriver 64.7,10.5), S; Kreldig Ungor (66.2,9.6) T1453 A1458 Reagents for Reclaimers Inc. + A1454 The Karnitol Shipwreck; Corporal Melkins (66.7,10.9) A1387 Centaur Bounty; Vahlarriel Demonslayer (66.4,11.8) A1437; Captain Pentigast (66.7,10.9) A1382 Strange Alliance (Gelkis side) + A93224 Carved Centaur Totems (NEW); Brother Anton (66.5,7.9) A261 Down the Scarlet Path (needs 34). North: Malem Chest in the wagon (56.5,17.8) T1437 A1465 -> Vahlarriel T1465 A1438 -> Thunder Axe Fortress: Dalinda Malem (54.9,26.1) T1438 A1439 (Tyranis) T1439 A1440 (escort her out) -> Vahlarriel T1440 A97284 Vahlarriel's Vengeance (NEW: 4 Augurs, 4 Reavers, 4 Adepts at Thunder Axe) T97284; Sargeron satyrs: 10 Hatefury Claws + 10 Horns (1458) T1458 A1459 (7 Scorpashi Venom, 3 Aged Kodo Hides). West coast: Azore Aldamort at Ethel Rethor (38.9,27.2) A5741 Sceptre of Light (top of Thunder Axe's tower) T5741 A6027 Book of the Ancients (Ranazjar Isle, Lord Kragaru); Rackmore's Log (36.1,30.4) A6161 (silver key from Drysnap makrura, golden key from Slitherblade naga, chest on Ranazjar Isle 30.0,8.7); Karnitol's Chest (36.1,30.5) T1454 A1455 -> Kreldig T1455 A1456 (satchel from the Slitherblade naga) T1456 A1457 (to Ironforge, keep), T6161, T6027, T1459 A1466 (10 Felhound Brains, 10 Nether Wings, Doomwarder Blood: Mannoroc Coven, level 38-40, last). Centaur ears (1387) and 5 Carved Centaur Totems (93224) from any clan; kill Magram at Magram Village until Friendly with the Gelkis. Kormek's Hut: Bibbly F'utzbuckle (62.3,39.0) 5501 Bone Collector (Kodo Graveyard), Smeed Scrabblescrew (60.9,61.9) 5561 Kodo Roundup, Cork Gizelton (60.4,38.1) 5821 Bodyguard for Hire (caravan escort when it is there). Gelkis Village: Uthek the Wise (36.2,79.2) T1382 A1384 Raid on the Kolkar (12 Kolkar + Kolkar Village tablet) T1384 A1370 Stealing Supplies (6 Crudely Dried Meat, Magram Village) T1370 A1373 Ongeku (in the cave east of the Valley of Spears) T1373 A1374 Khan Jehn (Magram Village) T1374. Valley of Spears: Melizza Brimbuzzle (33.9,53.5) A6132 Get Me Out of Here! (escort) -> Hornizz (47.8,61.8) T6132 A6134 Ghost-o-plasm Round Up (magnet in the Valley of Bones area) T6134; Rigger Gizelton (60.3,38.2) 5943 Gizelton Caravan (Mannoroc leg); Valley of Bones: 30 Undead Ravagers (261); Mannoroc Coven reagents (1466). Nijel's Point: T1387, T93224, T261 (do not take 1052), T1466 A1467 (to Ironforge, keep).",
+   "classQuests": [],
+   "carryIn": [
+    525,
+    563,
+    1026,
+    1179,
+    1264,
+    1453
+   ],
+   "carryOut": [
+    525,
+    563,
+    1179,
+    1264,
+    1457,
+    1467
+   ],
+   "risks": "Simulated 32.4 -> 35.6. Illiyana: the digest puts her at 21.7,53.3 (Shrine of Aessina) while the quest text says Forest Song: check her FC pin. The Gelkis reputation grind (kill Magram until Friendly) is real kill time that the XP model only partly counts. Level 38-40 parts (1466, 261, 6134, 5943, 6132, 5501) come last; drop any that do not work at 35 (each 2250-3150 XP). No giver data for the NEW Desolace/Shen'dralas quests (92743, 92754/55, 92814/17/18, 93034-93129, 93044/45, 93128, 93196, 93465): not used; if a Gelkis-side NPC near the Valley of Bones offers them, they are 35-40k XP of level 38-43 quests (take them, the logger records the givers). ELITE: 1380/1381/96222 skipped. Caravan escorts depend on the caravan's position. Astranaar -> Desolace is on foot (Talondeep Path, Windshear, Charred Vale): Classic geography. 1057 Reclaiming the Charred Vale was not taken (its hand-in is at Stonetalon Peak)."
+  },
+  {
+   "n": 13,
+   "file": "13-shimmering-flats-dustwallow-35-36.route",
+   "title": "35-36 Shimmering Flats & Dustwallow Marsh",
+   "startLevel": 35,
+   "endLevel": 36,
+   "basis": "new",
+   "startsAt": "Nijel's Point; fly to Astranaar, then on foot through the Barrens to Ratchet. Hearth: Nijel's Point (rebind in Theramore).",
+   "endsAt": "Theramore dock (Dustwallow Marsh), boarding the boat to Menethil Harbor. Hearth: Theramore.",
+   "summary": "FLY Astranaar, ride south through the Barrens (Horde zone: stay on the road, avoid the Crossroads) to RATCHET: F (Bragok 63.1,37.2). South along the Gold Road to the Great Lift and down into Thousand Needles, east to the SHIMMERING FLATS, Mirage Raceway: Wizzle Brassbolts (78.1,77.1) T1179 A1105 Hardened Shells (9, tortoises); Fizzle Brassbolts A1104 Salt Flat Venom (6, scorpids) + A1106 Martek the Exiled (to the Badlands, seg 15); Kravel Koalbeard (77.8,77.3) A1110 Rocket Car Parts (30, scattered on the flats) + A5762 Hemet Nesingwary (to Stranglethorn, seg 14) + A1111 Wharfmaster Dizzywig (to Ratchet, seg 16); Pozzik (80.2,75.9) A1176 Load Lightening (10 Hollow Vulture Bones) ; Trackmaster Zherin (81.6,78.0) A1175 A Bump in the Road (10 each Saltstone Basilisks, Crystalhides, Gazers). Do all five, T1104 T1105 T1110 T1175 T1176 A1178 Goblin Sponsorship (to Gazlowe, Ratchet: seg 16). Ride south into Tanaris: GADGETZAN F (Bera Stonehammer 51.0,29.3), nothing else yet. Back north: Great Lift, Barrens, the road east into DUSTWALLOW MARSH. Shady Rest Inn ruins: Suspicious Hoofprint (29.7,47.6) A1284, Black Shield over the fireplace (29.6,48.6) A1253, Theramore Guard Badge (29.8,48.2) A1252. North: 'Swamp Eye' Jarl (55.4,26.3) 1218 Soothing Spices (bring 3 from the Southshore/Theramore vendor: buy them in Southshore in seg 11) T1218 A1206 Jarl Needs Eyes (20 Unpopped Darkmist Eyes, Darkmist Cavern) T1206 (1203 needs a Moonsteel Broadsword: skip); Loose Dirt behind his hut (55.4,25.9) A1219 The Orc Report; Mudcrush Durtfeet (35.1,38.3) 1177 Hungry! (8 Mirefin Heads, murlocs on the north coast); 'Stinky' Ignatz (46.9,17.5) A1222 Stinky's Escape (escort) -> THERAMORE: F (Baldruc 67.5,51.3), S; Morgan Stern (66.3,45.5) T1222; Theramore Lieutenant (65.1,47.2) T1219 A1220 -> Captain Garran Vimes (68.2,48.6) T1220, T1253 A1319 -> Caz Twosprocket (64.8,50.4) T1319 A1320 -> Vimes T1320, T1284, T1252 A1259 -> Adjutant Tesoran (68.0,48.1) T1259 A1285 -> Vimes T1285 A1286 The Deserters (Balos Jacken at the Lost Point tower 36.1,54.3: beat him) T1286 A1287 -> Vimes T1287. Commander Samaul (68.0,48.7) T1264 A1265 (search Sentry Point) -> Archmage Tervosh (66.4,49.3) T1265 A1266 -> Private Hendel at Sentry Point (45.2,24.7) T1266 A1324 (defeat Hendel) -> Tervosh T1324 A1267 -> Lady Jaina Proudmoore T1267. Do the Jacken and Hendel trips as one loop out of Theramore. Take the boat to Menethil Harbor (CROSSING 4).",
+   "classQuests": [],
+   "carryIn": [
+    525,
+    563,
+    1179,
+    1264,
+    1457,
+    1467
+   ],
+   "carryOut": [
+    525,
+    563,
+    1106,
+    1111,
+    1178,
+    1457,
+    1467,
+    5762
+   ],
+   "risks": "Simulated 35.6 -> 36.8. This is the weakest travel stretch: Astranaar -> Ratchet -> Great Lift -> Flats -> Gadgetzan -> back to the Dustwallow road is about 40 minutes on foot/Ghost Wolf, all Classic geography, through Horde territory. It is done here so that the Flats quests are still worth full XP, Ratchet/Gadgetzan/Theramore flight points exist for segments 16-23, and the route can leave Kalimdor from Theramore. Mudcrush Durtfeet (1177) stands at 35.1,38.3, beside Brackenwall Village (Horde ogres): if he is hostile or unreachable skip 1177. 1135 Highperch Venom and the Thalanaar quests (98155/98156) are left out. Dustwallow mobs are 35-40 at level 36: fight single targets, Stoneform the spider poison. 1288 Vimes's Report (NEW, 290 XP) and 1282 are optional. The Theramore <-> Menethil boat is Classic knowledge."
+  },
+  {
+   "n": 14,
+   "file": "14-swamp-stranglethorn-36-39.route",
+   "title": "36-39 Swamp of Sorrows & Stranglethorn",
+   "startLevel": 36,
+   "endLevel": 39,
+   "basis": "new",
+   "startsAt": "Menethil Harbor dock; fly to Ironforge. Hearth: Theramore (rebind in Booty Bay).",
+   "endsAt": "Darkshire gryphon master (ridden north out of Stranglethorn past the Rebel Camp), flying to Ironforge. Hearth: Booty Bay.",
+   "summary": "IRONFORGE: Roetten Stonehammer (digest 70.0,21.3 / 62.3,24.5) T1467 T1457; Prospector Stormpike (74.6,11.7) A707 Ironband Wants You! (seg 15); TRAIN 36. Tram to STORMWIND: Major Samuelson in the keep (75.8,36.7) T563; Angus Stern at the Blue Recluse (51.8,93.6) A212 A Meal Served Cold (Chilled Basilisk Haunch from Cold Eye Basilisks, east coast of Stranglethorn; handed in in seg 18). FLY Darkshire, ride east through Deadwind Pass into the SWAMP OF SORROWS: Watcher Biggs (26.7,59.8) A1396 Encroaching Wildlife (8 Young Sawtooth Crocolisks, 10 Sorrow Spinners, 10 Swamp Jaguars... see text) T1396 A1421 The Lost Caravan (Caravan Chest in the Lost One camp, Fallow Sanctuary) T1421 (1398 Driftwood waits for seg 18); Father Tuttle (22.0,50.6) 93585 This Light of Mine (NEW escort to the Harborage); Amaryllis Webb (25.0,54.2) 93176 My Little Friends (NEW: catch three bug specimens with the kit); the Harborage: Magtoor (26.0,31.4) A1389 Draenethyst Crystals (6, in the Fallow Sanctuary) T1389; Noboru the Cudgel (roaming Lost One, drops Noboru's Cudgel -> 1392, T Magtoor); Galen Goodward in the Stagalbog cage (65.5,18.2) A1393 Galen's Escape (escort; T at Galen's Strongbox 47.8,39.8). Back through Duskwood south into STRANGLETHORN. Rebel Camp (38,3): Sergeant Yohwa A203 The Second Rebellion + A204 Bad Medicine; Corporal Kaleb (37.7,3.3) A210 Krazek's Cookery; Private Thorsen (walks out of camp; 38.0,3.4) 215 Jungle Secrets (save him from the ambush, T Lieutenant Doren 38.0,3.0) A200 Bookie Herod -> Bookie Herod's Records in the Kurzen compound (43.7,9.4) T200 A328 -> Strongbox (49.6,7.6) T328 A329 -> Doren T329 A330 -> Corporal Sethman T330 A331 -> Doren T331. Nesingwary's Expedition (35.7,10.6): Hemet T5762; Barnil Stonepot 583 Welcome to the Jungle; A185 Tiger Mastery (Ajeck), A190 Panther Mastery (Erlgadin), A194 Raptor Mastery (Hemet) and their second and third steps as you finish them: 185 -> 186 -> 187 (Elder Tigers), 190 -> 191 -> 192 (Shadowmaw Panthers), 194 -> 195 -> 196 (Jungle Stalkers). Kurzen Compound: 15 Jungle Fighters (203), 7 Jungle Remedies + Venom Fern Extracts (204) -> T203 T204, Brother Nimetz A207 Kurzen's Mystery (four stone tablets: Bal'lal, Balia'mah, Zul'Mamwe, Aboraz) and Yohwa A574 Special Forces (10 Kurzen Commandos, 6 Headshrinkers in the cave). South along the road to BOOTY BAY: F (Gyll 27.5,77.8), S; Krazek (26.9,77.2) T210 A627 Favor for Krazek (4 Lesser Bloodstone Ore, Venture Co. mine at Lake Nazferiti) + A201 Investigate the Camp + A616 The Haunted Isle -> Baron Revilgaz (27.2,76.9) T616 A578 The Stone of the Tides (island off the east coast); Drizzlik (28.3,77.6) A575 Supply and Demand (2 Large River Crocolisk Skins); Kebok (27.0,77.1) A189 Bloodscalp Ears (15) + A213 Hostile Takeover (8 Tumbled Crystals, Venture Co. Geologists); Crank Fizzlebub (27.1,77.2) A605 Singing Blue Shards (10, basilisks); 'Sea Wolf' MacKinley (27.8,77.1) A606 Scaring Shaky (5 Mistvale Giblets, level 41: late); First Mate Crazz (28.1,76.2) A595 The Bloodsail Buccaneers -> Bloodsail Correspondence on the south beach camp (27.3,69.5) T595 A597 -> Crazz T597 A599 -> Fleet Master Seahorn T599 (604 waits for seg 19). Loops out of Booty Bay with the hearthstone and Astral Recall: north-west (Bloodscalp ears at Zul'Kunda/Tkashi, crocolisks, tablets for 207), Lake Nazferiti (ore, crystals), east coast (basilisks for 605 and 212, Stone of the Tides isle), panthers/tigers/raptors on the way. Hand in: T201, T575 A577 Some Assembly Required (5 Snapjaw Crocolisk Skins), T189 A209 Skullsplitter Tusks (keep for seg 19), T213, T605 A600 Venture Company Mining (Foreman Cozzle's key, blueprints: level 41), T627 A622, T578 A601 Water Elementals (6 bracers, north-west coast) T601 (602 goes to Dalaran: skip), T577, T606 A607 -> Shaky Phillipe (26.9,73.6) T607, T600. Leave north by road: Nesingwary T187 A188 (Sin'Dall, the hill north of the camp) T188, T192, T196 (193/197 are ELITE: stop); Rebel Camp T207 A205 Troll Witchery (4 Skullsplitter Fetishes: only if they dropped on the way; otherwise drop 205), T574, T205, T622 (Kaleb). Ride through Duskwood to Darkshire, FLY Ironforge.",
+   "classQuests": [],
+   "carryIn": [
+    525,
+    563,
+    1106,
+    1111,
+    1178,
+    1457,
+    1467,
+    5762
+   ],
+   "carryOut": [
+    209,
+    212,
+    525,
+    707,
+    1106,
+    1111,
+    1178
+   ],
+   "risks": "Simulated 36.8 -> 39.1. The NEW Swamp quests 93585/93176 have FC givers only; 93429/93430/93464 have none (skipped). 205 (Skullsplitter trolls, level 40-42), 196, 600 and 606 are above the level: they are in for XP, but drop them rather than die for them. No giver data for the NEW Stranglethorn quests 97328/97329/97331 (Zul'Kunda), 97420 (Lake Nazferiti), 97047/97048 (Kurzen), 95384: take them if their NPCs are found in Booty Bay / the Rebel Camp, they are 2750-3150 XP each on ground this segment already covers. Green Hills of Stranglethorn (338-342) needs traded pages: optional. ELITE: 628, 202, 206, 193, 197, 208, 611, 613 skipped. Deadwind Pass and the Swamp road are Classic geography; Stonard is a Horde town."
+  },
+  {
+   "n": 15,
+   "file": "15-badlands-alterac-arathi-mount-39-40.route",
+   "title": "39-40 Badlands, Alterac, Arathi II & the Ram",
+   "startLevel": 39,
+   "endLevel": 40,
+   "basis": "new",
+   "startsAt": "Ironforge (flown from Darkshire); fly on to Thelsamar. Hearth: Booty Bay (rebind in Southshore).",
+   "endsAt": "Menethil Harbor dock on the ram, boarding the boat to Theramore. Hearth: Southshore.",
+   "summary": "IRONFORGE: TRAIN 38. FLY Thelsamar: Ghak Healtouch (37.1,49.4) A2500 Badlands Reagent Run (5 Buzzard Gizzards, 10 Crag Coyote Fangs, 5 Rock Elemental Shards); Prospector Ironband at the excavation (65.9,65.6) T707 A738 Find Agmond. South-east pass into the BADLANDS. Valley of Fangs: Sigrun Ironhew (53.8,43.3) A718 Mirages, Prospector Ryedol (53.4,43.4) A719 A Dwarf and His Tools; Martek the Exiled (42.2,52.7) T1106 A1108 Indurium; Rigglefuzz (42.4,52.9) A703 Barbecued Buzzard Wings (4); Lotwil Veriatus (25.9,44.9) A710 Study of the Elements: Rock (10 Small Stone Shards, Lesser Rock Elementals) T710 A711 (3 Large Stone Slabs, Rock Elementals) T711 A712 (5 Bracers of Rock Binding, Greater Rock Elementals in the south-west, level 42-44) T712. Agmond's End (50.9,62.4): Battered Dwarven Skeleton T738 A739 Murdaloc (kill him there) + 10 Indurium Flakes from the Stonevault troggs (1108); Camp Kosh ogres: Ryedol's Lucky Pick (719); Angor Fortress: Supply Crate (718) -> Sigrun T718 A733 Scrounging (7 Scrap Metal from the Shadowforge dwarves at Angor) T733, Ryedol T719; buzzards and coyotes everywhere (703, 2500); Martek T1108 A1137 News for Fizzle (seg 16), Rigglefuzz T703. Back north: Ironband T739 (704 is Uldaman: do not take), Thelsamar: Ghak T2500. FLY Ironforge -> FLY Southshore. SOUTHSHORE: S; Magistrate Maleb T525 A537 Dark Council + A512 Noble Deaths; Marshal Redpath A500 Crushridge Bounty; Phin Odelic (50.3,59.0) A659 Hints of a New Plague? ALTERAC: Syndicate at Sofera's Naze / Corrahn's Dagger for 7 Alterac Signet Rings (512); Ruins of Alterac: 9 Dirty Knucklebones from Crushridge ogres (500); Dandred's Fold: 4 Argus Shadow Mages + Nagaz's head (537, level 40: careful) -> T500 T512 T537. Ride east through Thoradin's Wall into ARATHI. Quae and Kinelory at the Go'Shek Farm hill (60.2,53.9): T659 A658 (Forsaken Courier on the road: she has four guards, pull her alone) T658 A657 T657 A660 (escort Kinelory through the farm) T660 A661. Refuge Pointe: Apprentice Kryten (46.2,47.8) A691 Worth Its Weight in Gold (10 Witherbark Tusks, 4 Medicine Pouches, Shadow Hunter Knife: Witherbark Village) T691 -> Skuerto A693 Wand over Fist (Kor'gresh Coldrage in Boulderfist Hall) T693 (694+ is ELITE). Shards of Myzrael (62.5,33.7) A642 The Princess Trapped (12 Motes of Myzrael from the Drywhisker kobolds) -> Iridescent Shards in the cave (84.3,31.0) T642 A651 Stones of Binding (Burning, Cresting and Thundering Keys from the three stone circles' elementals) -> Stone of Inner Binding (36.2,57.4) T651 (652 is ELITE). FALDIR'S COVE (south coast): Lolo the Lookout (31.8,82.7) A663 Land Ho! -> Shakes O'Breen (32.3,81.4) T663; First Mate Nilzlix A662 Deep Sea Salvage, Captain Steelgut A664 Drowned Sorrows, Professor Phizzlethorpe A665 Sunken Treasure (escort to the cave) -> Doctor Draxlegauge T665 A666 (goggles: 10 Elven Gems on the sea bed) ; do 662 (logbook, charts on the wrecks), 664 (10 Daggerspine Raiders, 3 Sorceresses) -> T662 T664 T666 A668 -> O'Breen T668 A669 (to Booty Bay: seg 19). FLY Southshore: Phin T661. FLY Ironforge: when 40 (the model reaches it during the Arathi loop): TRAIN 40; ride out to Amberstill Ranch (Dun Morogh 63.5,50.6): Ultham Ironhorn for Apprentice Riding, 97017 Your First Riding Ram (NEW, inspect the rams, 1550 XP), buy the ram from Veron Amberstill. FLY Menethil; boat to Theramore (CROSSING 5).",
+   "classQuests": [],
+   "carryIn": [
+    209,
+    212,
+    525,
+    707,
+    1106,
+    1111,
+    1178
+   ],
+   "carryOut": [
+    209,
+    212,
+    669,
+    1111,
+    1137,
+    1178
+   ],
+   "risks": "Simulated 39.1 -> 40.7: level 40 is reached late in this segment, so the ram is bought at its very end (gold reminder: save from seg 12 on; riding + ram cost is not in the data). If you are still 39 at Ironforge, kill ogres/elementals until 40 before flying on: there is no other Dun Morogh visit before 46. 97017/97018 have no giver data in the digest (FC: riding trainer Ultham Ironhorn, rams from Veron Amberstill per AUTHORING). 712 and 537 are level 42/40. Skipped: 713/714 (Frost Oil, Gyrochronatom), 705/706/717/735/762 (ELITE), 732 (needs 40), 720-726 and 704 (Uldaman), 523 Baron's Demise, 551/554 (far north Alterac), 670/667 (need a Booty Bay round trip). The Badlands pass from Loch Modan is Classic geography."
+  },
+  {
+   "n": 16,
+   "file": "16-tanaris-shimmering-flats-40-42.route",
+   "title": "40-42 Tanaris I & Shimmering Flats II",
+   "startLevel": 40,
+   "endLevel": 42,
+   "basis": "new",
+   "startsAt": "Theramore dock (boat from Menethil Harbor); fly to Ratchet. Hearth: Southshore (rebind in Gadgetzan).",
+   "endsAt": "Mirage Raceway (Shimmering Flats) after the L 42 grind, riding west through Thousand Needles to Feralas. Hearth: Gadgetzan.",
+   "summary": "FLY Ratchet: Wharfmaster Dizzywig (63.4,38.5) T1111 A1112 Parts for Kravel; Gazlowe (62.7,36.2) T1178 (do not take 1180: its Booty Bay steps are grey by the time the route gets there). FLY Gadgetzan: S; Chief Engineer Bilgewhizzle (52.5,28.5) A1690 Wastewander Justice; Spigot Operator Luglunket (52.5,28.4) A1707 Water Pouch Bounty; Wanted Poster (51.8,27.0) A2781 WANTED: Caliph Scorpidsting + A2875 WANTED: Andre Firebeard; Senior Surveyor Fizzledowser (50.2,27.5) A992 Gadgetzan Water Survey. Steamwheedle Port: Haughty Modiste (66.6,22.3) A8365 Pirate Hats Ahoy! (20 Southsea Pirate Hats); Security Chief Bilgewhizzle (67.1,23.9) A8366 Southsea Shakedown; Yeh'kinya (67.0,22.4) A3520 Screecher Spirits (Feralas, seg 17). Wastewander camps east of Gadgetzan: 10 Bandits + 10 Thieves (1690), 5 Water Pouches (1707) -> T1690 A1691 (8 Rogues, 6 Assassins, 6 Shadow Mages) and Caliph Scorpidsting who patrols with two guards (2781). Lost Rigger Cove: hats (8365), the pirate kill list (8366), Andre Firebeard (2875); a Ship Schedule that drops there starts 2876 (T Security Chief). Sandsorrow Watch pool in the west: tap the water for 992. T1707, T2875, T8365, T8366, T2876, T1691, T2781, T992 A82 Noxious Lair Investigation (keep for seg 17). Ride north to the SHIMMERING FLATS: Fizzle T1137; Kravel T1112 A1114 Delivery to the Gnomes -> Fizzle T1114 (do not take 1115, Booty Bay); Pozzik A1190 Keeping Pace (ask Zamek for the diversion, then read Rizzle's Unguarded Plans 77.2,77.4) T1190 A1194 -> Pozzik T1194. L 42 on the Wastewanders / Lost Rigger pirates or the Flats basilisks before leaving (simulated gap: about 49,000 XP).",
+   "classQuests": [],
+   "carryIn": [
+    209,
+    212,
+    669,
+    1111,
+    1137,
+    1178
+   ],
+   "carryOut": [
+    82,
+    209,
+    212,
+    669,
+    3520
+   ],
+   "risks": "Simulated 40.7 -> 42.0 including an explicit grind of about 49k XP. Theramore -> Ratchet -> Gadgetzan flights assume those nodes are linked for the Alliance (Classic knowledge) and were learned in seg 13. 2876 depends on a random drop. 2872-2874 (Stoley) cannot be started (MacKinley's 2872 needs 40 in Booty Bay). 1187-1189 and 1183/1186 need the Booty Bay sponsorship steps: dropped. Caliph Scorpidsting comes with two adds: Earthbind + kite, or wait for other players."
+  },
+  {
+   "n": 17,
+   "file": "17-feralas-tanaris-42-46.route",
+   "title": "42-46 Feralas & Tanaris II",
+   "startLevel": 42,
+   "endLevel": 46,
+   "basis": "new",
+   "startsAt": "Mirage Raceway, riding west through Thousand Needles to Thalanaar. Hearth: Gadgetzan (rebind at Feathermoon Stronghold, then Gadgetzan again).",
+   "endsAt": "Theramore dock (flown from Gadgetzan), boarding the boat to Menethil Harbor. Hearth: Gadgetzan.",
+   "summary": "THALANAAR (Feralas 89.5,45.9): F (Thyssiana). Ride west on the Feralas road. Kindal and Jer'kai Moonweaver on the hill above the Grimtotem camp (65.9,45.6): A2969 Freedom for All Creatures (free the sprite darters with the Bamboo Cage Key, defend) T2969 A2970 Doling Justice (12 Grimtotem Naturalists, 10 Raiders, 6 Shamans) T2970 (2972 goes to Darnassus: skip). On to the Forgotten Coast and the boat to Sardor Isle: FEATHERMOON STRONGHOLD: F (Fyldren Moonfeather 30.2,43.3), S; Shandris Feathermoon (30.3,46.2) A2866 The Ruins of Solarsal; Latronicus Moonspear (30.4,46.2) A4124 The Missing Courier -> Ginro Hearthkindle (31.9,45.1) T4124 A4125; Angelas Moonbreeze (31.8,45.6) A2982 The High Wilderness (Gordunni ogres: 8 Ogre Mages, 8 Brutes, 4 Shamans... see text); Pratt McGrubben (30.6,42.7) A2821 The Mark of Quality (10 Thick Yeti Hides, Feral Scar Vale). Isle: Solarsal Gazebo (26.3,52.3) T2866 A2867 -> Shandris T2867 A3130 -> Latronicus T3130 A2869 Against the Hatecrest (10 Hatecrest Scales on the isle) T2869 A2870 Against Lord Shalzaru (cave on the Isle of Dread to the south) . Mainland loop: Wrecked Row Boat (45.4,65.0) T4125 A4127; Feral Scar Vale yetis (2821); Gordunni Outpost (2982). Feathermoon: T4127 A4129 -> Quintis Jonespyre (32.4,43.8) T4129 A4130 -> Ginro T4130 A4131 The Woodpaw Gnolls; T2870 A2871 -> Vestia Moonspear (30.1,45.1) T2871; T2821 A7733 Improved Quality (10 Rage Scar Yeti Hides, Rage Scar Hold in the north); T2982. Screecher Spirits (3520): kill 3 Rogue Vale Screechers (the vale west of the Twin Colossals road) and use Yeh'kinya's Bramble on the corpses. East: Woodpaw Hills, Large Leather Backpacks (73.3,56.3) T4131 A4135 The Writhing Deep -> Zukk'ash hive, pod at the bottom (72.1,63.7) T4135 A4265 Freed from the Hive (escort Raschal... see text); an Undelivered Parcel from the Woodpaw gnolls starts 4281 (T Falfindel Waywarder, Thalanaar); an OOX-22/FE Distress Beacon from any Feralas mob starts 2766 -> robot at 53.4,55.7 T2766 A2767 (escort to the coast; hand in at Booty Bay in seg 19). Feathermoon (Astral Recall): Ginro T4265 A4266 -> Shandris T4266 (do not take 4267); Pratt T7733. L 45 on the Rage Scar yetis / Gordunni ogres (the big grind of the route: about 218,000 XP by the model), then the level 44-45 quests: Rockbiter on the Twin Colossals plateau (42.4,22.0) A2844 The Giant Guardian -> Shay Leafrunner (38.2,10.3) T2844 A2845 Wandering Shay (ring the bell to call her back; T Rockbiter); Zorbin Fandazzle at the mainland dock (44.8,43.4) A7003 Zapped Giants (zap 15 giants on the coast) + A7721 Fuel for the Zapping (10 Water Elemental Cores) T7003 T7721. Leave by Thalanaar: T4281. FLY Gadgetzan (S): Yeh'kinya (Steamwheedle) T3520 (do not take 3527, Zul'Farrak); Marvon Rivetseeker (52.7,45.9) A3161 Gahz'ridian (30 ornaments with the detector, Eastmoon/Southmoon ruins); Andi Lynn (52.8,27.4) A5863 The Dunemaul Compound (10 Brutes, 10 Enforcers, Gor'marok the Ravager); Marin Noggenfogger (51.8,28.7) A2605 The Thirsty Goblin (Laden Dew Gland, Thistleshrub Valley); Tran'rek (51.6,26.8) A3362 Thistleshrub Valley (8 Gnarled Thistleshrubs, 8 Thistleshrub Rootshapers); Noxious Lair (insect parts for 82) -> Alchemist Pestlezugg (50.9,27.0) T82, Fizzledowser A10 The Scrimshank Redemption (surveying gear deep in the Gaping Chasm hive) ; Tooga at the Gaping Chasm (31.8,74.1) 1560 Tooga's Quest (lead the turtle to Torta 66.6,25.7); an OOX-17/TN beacon from any Tanaris mob starts 351 -> robot (60.2,64.7) T351 A648 (escort; hand in at Booty Bay, seg 19). T3161, T5863, T2605 A2606 -> Sprinkle (51.1,26.9) T2606 (2641 needs Hinterlands herbs: skip), T3362, T10 A110 -> Pestlezugg T110 A113 -> Fizzledowser T113 (162 goes to Darnassus: skip). L 46 if short (about 19,000 XP by the model). FLY Theramore; boat to Menethil Harbor (CROSSING 6).",
+   "classQuests": [],
+   "carryIn": [
+    82,
+    209,
+    212,
+    669,
+    3520
+   ],
+   "carryOut": [
+    209,
+    212,
+    648,
+    669,
+    2767
+   ],
+   "risks": "Simulated 42.0 -> 46.0 with two explicit grinds: L 45 in Feralas (about 218k XP) and L 46 in Tanaris (about 19k). From here on the dwarf-shaman digests simply do not hold enough non-elite, non-dungeon quest XP for the x1.7 model; the grind is stated rather than hidden. Quest levels 46-50 (4135/4265/4266, 7733, 2845, 7003/7721, 1560, 3362, 10, 5863) are done after the L 45 step. 2766/351 need random beacon drops; 4281 a random parcel. 3445/3444 (need 46, Stone Circle chest in Ratchet), 2939-2944 and 2972/3841-3843 (Darnassus, Rut'theran, Hinterlands), 3791 (Morrowgrain) are left out. Thalanaar's NEW pelt quests are grey. The boat to Feathermoon and the Feralas road are Classic geography; Camp Mojache on the road is a Horde town. Gadgetzan -> Theramore flight link is assumed."
+  },
+  {
+   "n": 18,
+   "file": "18-hinterlands-searing-gorge-blasted-lands-46-47.route",
+   "title": "46-47 Hinterlands, Searing Gorge & Blasted Lands",
+   "startLevel": 46,
+   "endLevel": 47,
+   "basis": "new",
+   "startsAt": "Menethil Harbor dock; fly to Ironforge. Hearth: Gadgetzan (rebind at Aerie Peak, then keep).",
+   "endsAt": "Nethergarde Keep gryphon master (Blasted Lands 65.5,24.3), flying to Booty Bay. Hearth: Aerie Peak (rebind in Booty Bay in seg 19).",
+   "summary": "IRONFORGE: TRAIN 46. FLY Southshore, ride north-east past Durnholde Keep into THE HINTERLANDS. AERIE PEAK: F (Guthrum Thunderfist 11.1,46.2), S; Fraggar Thundermantle (14.8,44.6) A2880 Troll Necklace Bounty (5 necklaces from Witherbark/Vilebranch trolls) + A2877 Skulk Rock Clean-up (10 Green Sludges, 10 Jade Oozes); Gryphon Master Talonaxe (9.8,44.5) A2988 Witherbark Cages (check the three cages in the Witherbark villages) -> T2988 A2989 The Altar of Zul (walk to the top of the Altar of Zul, Jintha'Alor foothills: touch only the outer altar, the terraces are elite) -> T2989 A2990 Thadius Grimshade (to Nethergarde Keep, end of this segment); T2880, T2877. An OOX-09/HL beacon from any Hinterlands mob starts 485 -> robot (49.4,37.7) T485 A836 (escort to the coast; hand in at Booty Bay, seg 19). H Aerie Peak, FLY Ironforge, FLY Thelsamar, ride through the Badlands and out of its west end into the SEARING GORGE. Thorium Point: F (Lanie Reed 37.9,30.9); board (38.5,26.2 area): A7728 STOLEN: Smithing Tuyere and Lookout's Spyglass, A7729 JOB OPPORTUNITY: Culling the Competition; Hansel Heavyhands (38.6,27.8) A7723 Curse These Fat Fingers, A7724 Fiery Menace!, A7727 Incendosaurs? Whateverosaur is More Like It; Master Smith Burninate A7722 What the Flux?; Kalaran Windblade (39.0,38.9) A3441 Divine Retribution (listen) T3441 A3442 The Flawless Flame (4 Hearts of Flame, 4 Golem Oil) T3442 A3443 Forging the Shaft (8 Thorium Plated Daggers from Dark Iron dwarves) T3443 (3452 is ELITE: stop); Zamael Lunthistle in the cage (29.5,26.4) 3377 Prayer to Elune (listen; 3378 goes to Darnassus: skip); Wooden Outhouse in the south-east (65.5,62.2) A4449 Caught! (8 Silk Cloth from Dark Iron Geologists) T4449 A4450 Ledger from Tanaris (to Gadgetzan, seg 20) and, with the Grimesilt Outhouse Key that drops in the Slag Pit, 4451 The Key to Freedom; Dorius Stonetender on the east ridge (63.9,60.7) A3367 Suntara Stones (escort) -> Singed Letter (74.4,19.3) T3367 A3368 (to Ironforge). The Cauldron and the Slag Pit: heavy war golems, greater lava spiders, incendosaurs, Dark Iron Taskmasters/Slavers/Steamsmiths for the kill lists, the Schematic for 7722, the tuyere and spyglass from the Dark Iron Steamsmiths/Lookouts (7728); Chambermaid Pillaclencher in the Slag Pit drops the pillow that starts 7704 Look at the Size of It! (T Evonice Sootsmoker). Hand everything in at Thorium Point. FLY Ironforge: Curator Thorius (digest 71.5,15.7) T3368 (do not take 3371). L 47 before leaving the Gorge if short (about 100,000 XP by the model, on the Cauldron golems/elementals). Tram to STORMWIND: Angus Stern T212; High Sorcerer Andromath (Mage Quarter 48.7,87.6) A1477 Vital Supplies; Mazen Mac'Nadir (51.8,74.2) A1363 Mazen's Behest -> Acolyte Dellis T1363 A1364 (Khadgar's Essays from the keep library, to Nethergarde). FLY Darkshire: Watchmaster Sorigal (75.8,46.2) T1477 A1395 Supplies for Nethergarde. Ride through Deadwind Pass: SWAMP OF SORROWS: Watcher Biggs A1398 Driftwood (8 Sundried Driftwood on the east coast, Misty Reed Strand) T1398 A1425 Deliver the Shipment. BLASTED LANDS: NETHERGARDE KEEP: F (Alexandra Constantine 65.5,24.3); Quartermaster Lungertz (66.5,21.4) T1395 T1425; Watcher Mahar Ba (67.7,19.2) T1364; Thadius Grimshade (66.9,19.5) T2990 (2992 needs a Zul'Farrak quest: stop). Bloodmage Drazial (50.6,14.3) A2581 Snickerfang Jowls, A2583 A Boar's Vitality, A2585 The Decisive Striker; Bloodmage Lynnore (51.0,14.5) A2601 The Basilisk's Bite, A2603 Vulture's Vigor: farm the five part types together (Snickerfang hyenas, Ashmane/Helboars, Scorpok stingers, Redstone basilisks, Black Slayer vultures) and hand in all five.",
+   "classQuests": [],
+   "carryIn": [
+    209,
+    212,
+    648,
+    669,
+    2767
+   ],
+   "carryOut": [
+    209,
+    648,
+    669,
+    836,
+    2767,
+    4450
+   ],
+   "risks": "Simulated 46.0 -> 47.7 including an explicit L 47 (about 100k XP). The five Blasted Lands hand-ins need many drops from level 45-52 animals with low drop rates (Classic knowledge): they are 23,500 XP together but slow; treat the hunting as part of the grind. Aerie Peak is reached on foot from Southshore (the Hillsbrad -> Hinterlands pass is Classic geography), the Searing Gorge through the west end of the Badlands (no key needed there; the locked gate is the Loch Modan one). 1449-1452 (Rhapsody Shindigger) hang on the ELITE 1448 and are not available; 2993/2994 are ELITE. Searing Gorge ELITE: 3452+, 7701, 3181/3182. 4451's key and 7704's pillow are drops. 2521/2522/3501 (Kum'isha) need rare draenethyst drops: optional. Thadius Grimshade and Drazial/Lynnore coordinates are from Questie via the digest."
+  },
+  {
+   "n": 19,
+   "file": "19-stranglethorn-booty-bay-47-50.route",
+   "title": "47-50 Stranglethorn III & Booty Bay",
+   "startLevel": 47,
+   "endLevel": 50,
+   "basis": "new",
+   "startsAt": "Nethergarde Keep; fly to Booty Bay (via Darkshire). Hearth: Aerie Peak (rebind in Booty Bay).",
+   "endsAt": "Booty Bay dock after the L 50 grind, boarding the boat to Ratchet. Hearth: Booty Bay.",
+   "summary": "BOOTY BAY: S; Oglethorpe Obnoticus (28.4,76.3) T2767, T648, T836 and, with all three done, 3721 An OOX of Your Own (7100 XP); Fleet Master Seahorn (27.2,77.0) T669 (do not take 670) + A604 The Bloodsail Buccaneers (10 Swashbucklers, 3 charts and orders on the south beach camps) -> T604 A608 (ships off the south-east coast: Captain Stillwater, Captain Keelhaul, Fleet Master Firallon) T608; 'Sea Wolf' MacKinley A609 Voodoo Dues (Maury's Clubbed Foot, Jon-Jon's Golden Spyglass, Chucky's Huge Ring: Ruins of Jubuwal / Aboraz); Crank Fizzlebub A621 Zanzil's Secret (12 Zanzil's Mixture); Privateer Bloads (26.8,76.4) A617 Akiris by the Bundle (10 Bundles of Akiris Reed, naga on the west coast; do not take 623); Deeg (26.9,77.3) A587 Up to Snuff (15 Snuff from Bloodsail pirates); Dizzy One-Eye (28.6,75.9) A576 Keep An Eye Out (his eye from a Bloodsail Swashbuckler/Warlock); Fin Fizracket (27.6,76.7) A348 Stranglethorn Fever (Witch Doctor Unbagwa in the cave north of Booty Bay 35.3,60.4: bring a Gorilla Fang, he summons three gorillas, the last one drops the Heart of Mokk) ; Carefully Folded Note in a bottle on the south coast (32.8,78.7) A594 Message in a Bottle -> Princess Poobah on Jaguero Isle (38.5,80.6) T594 (630 King Mukla is ELITE). Kebok T209 Skullsplitter Tusks (18 tusks from the Skullsplitter trolls in the east, carried since seg 14; drop it if you would rather not ride there). Loops: south beaches + ships (604, 608, 587, 576, 594), west coast naga (617), Ruins of Jubuwal/Aboraz and Zanzil's camps (609, 621), Mistvale gorillas for the fang (348). Hand in everything. L 50 before the boat (about 220,000 XP by the model): the Bloodsail ships, Zanzil's undead at the Ruins of Aboraz and the Cold Eye basilisks/Mistvale gorillas are the usual spots; alternatively carry the grind into Tanaris' Dunemaul ogres at the start of seg 20. Take the boat from Booty Bay to Ratchet (CROSSING 7).",
+   "classQuests": [],
+   "carryIn": [
+    209,
+    648,
+    669,
+    836,
+    2767,
+    4450
+   ],
+   "carryOut": [
+    4450
+   ],
+   "risks": "Simulated 47.7 -> 50.0, of which about 220k XP is the explicit L 50 grind: this segment has only about 55k quest XP and its quests are level 41-45 (several pay reduced XP at 48-49). 3721 needs all three robot escorts (2767 Feralas, 648 Tanaris, 836 Hinterlands), each of which started from a random beacon drop: without them this segment loses up to 22,850 XP. 609's three items come from named level 44-46 undead; 613 is ELITE. 580 Whiskey Slim's Lost Grog needs Hinterlands bottles: optional if you looted Pupellyverbos Port in seg 18. No giver data for the NEW 620 Monogrammed Sash / 97xxx quests. The Booty Bay <-> Ratchet boat is Classic knowledge."
+  },
+  {
+   "n": 20,
+   "file": "20-ungoro-crater-50-52.route",
+   "title": "50-52 Tanaris III & Un'Goro Crater",
+   "startLevel": 50,
+   "endLevel": 52,
+   "basis": "new",
+   "startsAt": "Ratchet dock (boat from Booty Bay); fly to Gadgetzan. Hearth: Booty Bay (rebind in Gadgetzan).",
+   "endsAt": "Marshal's Refuge (Un'Goro Crater 45.2,5.8) after the L 52 grind, flying to Gadgetzan and on to Astranaar. Hearth: Gadgetzan.",
+   "summary": "GADGETZAN: S; Krinkle Goodsteel (51.5,28.8) T4450; Alchemist Pestlezugg (50.9,27.0) A4496 Bungle in the Jungle (Gorishi Scent Gland from the silithids of the Slithering Scar; needs 50); Tran'rek (51.6,26.8) A4504 Super Sticky (12 Super Sticky Tar from the tar beasts of the Lakkari Tar Pits). Ride south-west through Tanaris and down the ramp into UN'GORO. On the way in: A Wrecked Raft (63.1,68.6) A3844 It's a Secret to Everybody -> A Small Pack under water T3844 A3845; Torwa Pathfinder at the eastern entrance (71.6,76.0) A4290 The Fare of Lar'korwi, A4289 The Apes of Un'Goro. MARSHAL'S REFUGE (north): F (Gryfe 45.2,5.8); Williden Marshal (43.9,7.1) A3881 Expedition Salvation (crate of foodstuffs and research equipment at the two wrecked camps); Hol'anyee Marshal A3883 Alien Ecology (scrape the Gorishi hive); Spark Nilminer A3882 Roll the Bones (8 Dinosaur Bones); Shizzle (44.2,11.6) A4503 Shizzle's Flyer (8 Webbed Diemetradon Scales, 8 Webbed Pterrordax Scales); Muigin (43.0,9.6) A4141 Muigin and Larion (15 Bloodpetal Lashers, Thrashers, Flayers... see text; do not take 4142); J.D. Collie in the cave (41.9,2.7) A4284 Crystals of Power (7 of each colour) -> T4284 A4285 The Northern Pylon, A4287 The Eastern Pylon, A4288 The Western Pylon (visit each) -> T all three, 4321 Making Sense of It; Karna Remtravel (46.4,13.4) A4243 Chasing A-Me 01 -> A-Me 01 in the gorilla cave of Fungal Rock (67.7,16.8) T4243 A4244 (give her a Mithril Casing: bring one) T4244 A4245 (escort her back) T4245; Spraggle Frock (44.2,8.1) A4492 Lost! -> Ringo in Fire Plume Ridge (51.9,49.8) T4492 A4491 A Little Help From My Friends (escort, revive him with the canteen) T4491; Beware of Pterrordax poster (43.5,8.5) 4501 (10 Pterrordax, 15 Frenzied Pterrordax); Linken (44.7,8.1) T3845 A3908 (to Donova Snowden in Winterspring: seg 22); Krakle near the hot springs (30.9,50.4) A974 Finding the Source (hottest spot on Fire Plume Ridge) T974 A980 The New Springs (to Donova, seg 22). A Mangled Journal that drops from any crater mob starts 3884 (T Williden). Torwa: 4290 (Piece of Threshadon Carcass near the south-east lake) T4290 A4291 The Scent of Lar'korwi (stand on the raptor nests, kill the Lar'korwi Mates) T4291 A4292 The Bait for Lar'korwi (level 56 named raptor: last) T4292; T4289 (2 Un'Goro Gorilla, Stomper, Thunderer pelts: Fungal Rock) A4301 The Mighty U'cha T4301. Tar pits for 4504, Slithering Scar for 4496 and 3883. L 52 in the crater (about 98,000 XP by the model). 4496 and 4504 are handed in at Gadgetzan at the start of seg 21.",
+   "classQuests": [],
+   "carryIn": [
+    4450
+   ],
+   "carryOut": [
+    980,
+    3908,
+    4496,
+    4504
+   ],
+   "risks": "Simulated 50.0 -> 52.0 with an explicit L 52 of about 98k XP. Start: most Refuge quests need 47-50, 974 needs 51, 4301/4491/4492 need 50. Level 55-56 targets (4292 Lar'korwi, 4301 U'cha, 4491 escort, 4501) come after the grind. 4244 needs a Mithril Casing (blacksmith item, Classic knowledge): buy one before the boat or skip 4244/4245 (10,500 XP). 4141's follow-ups, 3909+ (Videre Elixir), 3941/3942 and 4502 are skipped: they send you to Feralas, Ratchet or a broken chain. 4507 Pawn Captures Queen needs a second crater trip: not used. The Tanaris -> Un'Goro ramp and all crater object positions not in the digest are Classic knowledge. Ratchet -> Gadgetzan flight link is assumed."
+  },
+  {
+   "n": 21,
+   "file": "21-azshara-felwood-52-54.route",
+   "title": "52-54 Azshara & Felwood",
+   "startLevel": 52,
+   "endLevel": 54,
+   "basis": "new",
+   "startsAt": "Marshal's Refuge; fly to Gadgetzan (hand-ins), then to Astranaar and Talrendis Point. Hearth: Gadgetzan (rebind in Astranaar).",
+   "endsAt": "Timbermaw Hold tunnel, Felwood side (Nafien 64.8,8.1), walking through to Winterspring. Hearth: Astranaar.",
+   "summary": "GADGETZAN: Pestlezugg T4496, Tran'rek T4504. FLY Talrendis Point (Azshara 11.9,77.6): Loh'atu (11.4,78.2) A5535 Spiritual Unrest (6 Highborne Apparitions, 6 Lichlings: Shadowsong Shrine) + A5536 A Land Filled with Hatred (6 Haldarr Satyrs, 2 Tricksters, 2 Felsworn) T5535 T5536. Ride east along the road to Kim'jael on the hill north of the Ruins of Eldarath (53.5,21.8): A3601 Kim'jael Indeed! (his scope, compass, stuffed chicken and wizzlegoober in the Thalassian Base Camp crates, level 48-53 blood elves) T3601 A5534 Kim'jael's 'Missing' Equipment (Some Rune: random drop from the blood elves) T5534. Back to Talrendis, FLY Astranaar (S), ride north past Raynewood into FELWOOD. Emerald Sanctuary (51,82): Greta Mosshoof (51.2,82.1) A5155 Forces of Jaedenar (4 each Jaedenar Hounds, Guardians, Adepts, Cultists outside Shadow Hold) T5155 A5157 Collection of the Corrupt Water (fill the canteen at the Jaedenar moonwell) T5157 (5158 goes to the Barrens: stop); Eridan Bluewind (51.4,82.0) A4421 The Corruption of the Jadefire (11 Jadefire satyrs... see text; Xavathras at the Ruins of Constellas) T4421 A4906 Further Corruption (Jadefire Run, Overlord Ror) T4906; Arathandris Silversky (54.2,86.8) 4101 Cleansing Felwood (15 Blood Amber from the Warpwood elementals of Irontree Woods). Deadwood Village south: Grazle (50.9,85.0) 8460 Timbermaw Ally (6 Den Watchers, 6 Avengers, 6 Shamans) T8460 A8462 Speak to Nafien. Jaedenar: a Blood Red Key from the cultists starts 5202 A Strange Red Key -> Captured Arko'narin in the cage inside Shadow Hold (36.0,55.5: first spiral only) T5202 A5203 Rescue From Jaedenar (escort) -> Jessir Moonbow (51.3,81.5) T5203 A5204 -> Remains of Trey Lightforge (38.5,50.4, inside Shadow Hold: skip if the elites there block you) T5204 A5385 -> Jessir T5385; Flute of Xavaric from Xavaric in Jadefire Run (939) -> Eridan T939 A4441 Felbound Ancients (use the flute on the Jadefire satyrs' corpses... see text) T4441 A4442 Purified! (escort the purified ancient; do not take 4261, it ends in Ashenvale). North: Talonbranch Glade F (Mishellena 62.5,24.2); Felpaw Village/Deadwood camp at the Timbermaw gate: Nafien (64.8,8.1) T8462 A8461 Deadwood of the North (6 Deadwood Gardeners, Pathfinders, Warriors) T8461 A8465 Speak to Salfa (Winterspring side). L 54 on the Deadwood furbolgs (Timbermaw reputation) or the Irontree elementals (about 144,000 XP by the model); at 53 Ivy Leafrunner in the Emerald Sanctuary (51,82) A5249 To Winterspring! (take it before riding north).",
+   "classQuests": [],
+   "carryIn": [
+    980,
+    3908,
+    4496,
+    4504
+   ],
+   "carryOut": [
+    980,
+    3908,
+    5249,
+    8465
+   ],
+   "risks": "Simulated 52.0 -> 54.0 with an explicit L 54 of about 144k XP. Azshara is a 30-40 minute excursion for 21,500 quest XP (5535/5536 are level 47: 80% XP at 52); drop it if the ride is not wanted, the grind then grows by about 36k. 5534's rune is a random drop. Shadow Hold is partly elite: 5204/5385 and the cage of 5202/5203 are taken only as far as they are soloable (Classic knowledge; the digest does not flag them ELITE). 4441/4442 mechanics are from the quest text only. Skipped: the Corrupted Songflower/Windblossom/Whipper Root/Night Dragon cleansings (550 XP each, need salves), 4103-4107 salve turn-ins, 6031/6032 (runecloth), 5158/5159/5165/5242 (Barrens leg), 4261, 8466/8467/8470 feather and totem turn-ins. Astranaar -> Felwood is on foot the first time (Classic geography). Timbermaw furbolgs in the tunnel are hostile until Unfriendly: run through, do not fight them."
+  },
+  {
+   "n": 22,
+   "file": "22-winterspring-54-56.route",
+   "title": "54-56 Winterspring",
+   "startLevel": 54,
+   "endLevel": 56,
+   "basis": "new",
+   "startsAt": "Timbermaw Hold, Winterspring exit (Salfa 27.7,34.5). Hearth: Astranaar (rebind in Everlook).",
+   "endsAt": "Everlook (Winterspring 61,38) after the L 56 grind, flying to Gadgetzan. Hearth: Everlook.",
+   "summary": "Salfa at the tunnel exit (27.7,34.5): T8465 A8464 Winterfall Activity (8 Winterfall Totemics, 8 Den Watchers, 8 Shamans... see text; done across the segment). Donova Snowden at the hot springs (31.3,45.2): T3908 (do not take 3909), T980 A4842 Strange Sources (2 Fire Elementals... see text: read it), and if a Winterfall furbolg dropped an Empty Firewater Flask: 5083 Winterfall Firewater T -> A5084 Falling to Corruption (Deadwood Cauldron back in Felwood at Felpaw Village, 60.2,5.9: a short trip back through the tunnel) T5084 A5085 Mystery Goo -> Donova T5085 A5086 Toxic Horrors (3 Toxic Horror Droplets, Irontree Woods in Felwood: do it on the same trip back) T5086 A5087 Winterfall Runners (kill the three runners on the road between the villages) T5087; the note they drop starts 5123 The Final Piece (T Donova; do not take 5128, Felwood). EVERLOOK: F (Maethrya 62.3,36.6), S; Meggi Peppinrocker (61.1,38.4) A6603 Trouble in Winterspring! -> Donova T6603 A5082 Threat of the Winterfall (8 Totemics, 8 Den Watchers, 8 Ursa... Winterfall Village) T5082; Umi Rumplesnicker (60.9,37.7) A3783 Are We There, Yeti? (3 Thick Yeti Fur, Ice Thistle Hills) T3783 A977 (2 Pristine Yeti Horns from the Matriarchs/Patriarchs) T977 A5163 (scare Legacki, Sprinkle in Gadgetzan and Quixxil in Un'Goro with the mechanical yeti: Sprinkle in seg 23, Quixxil is on the Un'Goro ride to Silithus; hand in is back here, so only finish it if you return to Everlook, otherwise drop 5163); Gregor Greystone (61.3,38.9) A6028 The Everlook Report + A6030 Duke Nicholas Zverenhoff (both for the Plaguelands, seg 24); Harlo Wigglesworth (61.1,38.4) A6604 Enraged Wildkin -> Jaron Stoneshaper at the Ruins of Kel'Theril (52.1,30.4) T6604 A4861 -> Damaged Crate (59,60 area per the digest) T4861 A4863 -> Jaron's Wagon (61,61) T4863 A4864 (Blue-feathered Necklace from the Raging/Berserk Owlbeasts) -> Jaron T4864. Wynd Nightchaser at Starfall Village (52.1,30.4 per the digest) T5249 A5244 The Ruins of Kel'Theril -> Jaron T5244 A5245 Troubled Spirits of Kel'Theril (4 Highborne relic fragments on the frozen lake; hand-in is Aurora Skycaller in the Eastern Plaguelands: seg 24). L 56 (about 211,000 XP by the model): Winterfall furbolgs (Timbermaw reputation, firewater), Ice Thistle yetis, or the owlbeasts in the south.",
+   "classQuests": [],
+   "carryIn": [
+    980,
+    3908,
+    5249,
+    8465
+   ],
+   "carryOut": [
+    5245,
+    6028,
+    6030
+   ],
+   "risks": "Simulated 54.0 -> 56.0 with an explicit L 56 of about 211k XP: Winterspring's non-elite, non-Darnassus quest XP is small (about 45k here). 5083 depends on a flask drop; the 5084-5087 chain needs one trip back through Timbermaw Hold. 5163's hand-in needs a later Everlook visit: counted by the model only if done (4,650 + 7,750 XP for 977/5163; the simulation includes both, so without the return the L 56 grind is about 13k larger). 4809/4810 (Felnok) need a Burning Steppes quest first; 4901/4902/978/979 and 5252/5253 hang on Darnassus/Rut'theran; 5057 on an elite: all skipped. Moonglade (5527/5526, 6845) is not used: its chains start in Darnassus or need Shadow Hold. Coordinates for Wynd/Jaron (both 52,30 in the digest) should be checked on the FC pages."
+  },
+  {
+   "n": 23,
+   "file": "23-silithus-56-57.route",
+   "title": "56-57 Silithus",
+   "startLevel": 56,
+   "endLevel": 57,
+   "basis": "new",
+   "startsAt": "Everlook; fly to Gadgetzan and ride through Un'Goro Crater to Silithus. Hearth: Everlook (rebind at Cenarion Hold).",
+   "endsAt": "Theramore dock (flown Cenarion Hold -> Gadgetzan -> Theramore), boarding the boat to Menethil Harbor. Hearth: Cenarion Hold.",
+   "summary": "FLY Gadgetzan (Sprinkle for 5163 if you carry it), ride the Un'Goro ramp, cross the crater west (Quixxil at Marshal's Refuge for 5163) and take the north-west pass into SILITHUS. CENARION HOLD: F (Cloud Skydancer 50.6,34.5), S; Windcaller Proudhorn (51.1,38.3) A8280 Securing the Supply Lines (15 Dredge Strikers) T8280 A8281 Stepping Up Security (20 Dredge Crushers); Beetix Ficklespragg (51.7,38.6) A8277 Deadly Desert Venom (8 Stonelash Scorpid Stingers, 8 Sand Skitterer Fangs) T8277 A8278 Noggle's Last Hope (3 each Stonelash Pincer Stingers, Stonelash Flayer Venom, Rock Stalker Fangs) T8278 -> Noggle Ficklespragg A8282 Noggle's Lost Satchel (on the ridge south of the Hold, guarded by Twilight) T8282; Geologist Larksbane (50.2,38.3) A8284 The Twilight Mystery (4 Twilight Tablet Fragments at the Twilight Base Camp) T8284 A8285 The Deserter -> Hermit Ortell in the cave of the southern ridge (67.2,69.7) T8285 A8279 The Twilight Lexicon (three chapters from Twilight Keeper Mayna, Exeter and Havunth: named non-elites in the three Twilight camps) + A8323 True Believers (10 Encrypted Twilight Texts) -> T8279 A8287 A Terrible Purpose (to Commander Mar'alith 49.2,34.3) T8287, T8323. L 57 on the Twilight's Hammer camps (texts for reputation) or the sand worms (about 83,000 XP by the model); at 57 Bor Wildmane (48.6,37.9) 8318 Secret Communication (10 Encrypted Twilight Texts) . FLY Gadgetzan, FLY Theramore; boat to Menethil Harbor (CROSSING 8).",
+   "classQuests": [],
+   "carryIn": [
+    5245,
+    6028,
+    6030
+   ],
+   "carryOut": [
+    5245,
+    6028,
+    6030
+   ],
+   "risks": "Simulated 56.0 -> 57.1 with an explicit L 57 of about 83k XP. Only the Cenarion Hold quests that need level 54-57 and are not flagged ELITE are used (about 67k quest XP); the rest of the Silithus digest is level-60 field duty, Ahn'Qiraj or elite. 8279's three keepers are named level 58-60 mobs with adds: pull with Lightning Bolt, Earthbind and kite; skip 8279/8287 (14,900 XP) if they cost too many deaths. 1125/1126 (Layo Starstrike) need a Darnassus/Moonglade chain: not available on this route. 8275 Taking Back Silithus (Ironforge breadcrumb) is not needed. The Un'Goro -> Silithus pass and the Cenarion Hold -> Gadgetzan -> Theramore flights are Classic knowledge."
+  },
+  {
+   "n": 24,
+   "file": "24-plaguelands-burning-steppes-57-60.route",
+   "title": "57-60 Plaguelands & Burning Steppes",
+   "startLevel": 57,
+   "endLevel": 60,
+   "basis": "new",
+   "startsAt": "Menethil Harbor dock; fly to Ironforge. Hearth: Cenarion Hold (rebind at Chillwind Camp, then Light's Hope Chapel).",
+   "endsAt": "Level 60. Ironforge, Royal Historian Archesonus (38.4,55.3), after the Burning Steppes; or wherever the L 60 grind ends. Hearth: Light's Hope Chapel.",
+   "summary": "IRONFORGE: TRAIN 56/58; Courier Hammerfall (roaming, 60.1,34.2) A5090 A Call to Arms: The Plaguelands!; Royal Historian Archesonus (38.4,55.3) A3702 The Smoldering Ruins of Thaurissan (listen) T3702 A3701 (Information on the Ruins: 4 Thaurissan Relics, Burning Steppes, end of this segment). FLY Southshore, ride north through Alterac to CHILLWIND CAMP (Western Plaguelands 42.9,85.1): F (Bibilfaz Featherwhistle), S; Commander Ashlam Valorfist (42.7,84.0) T5090 A5092 Clear the Way (10 Skeletal Flayers, 10 Slavering Ghouls: Sorrow Hill) T5092 A5097 All Along the Watchtowers (mark the four Andorhal towers with the Beacon Torch: lure the patrols away) + A5215 The Scourge Cauldrons -> High Priestess MacDonnell T5215 A5216 Target: Felstone Field (Cauldron Lord Bilemaw's key, cauldron 37.2,56.9) T5216 A5217 -> MacDonnell T5217 A5219 Target: Dalson's Tears (46.2,52.0) T5219 A5220 -> T5220 A5222 Target: Writhing Haunt (53.0,65.7) T5222 A5223 -> T5223 A5225 Target: Gahrron's Withering (62.5,58.5, level 58) T5225 A5226 -> T5226; Argent Officer Pureheart T6028; Nathaniel Dumah (42.9,85.1 area) A5903 A Plague Upon Thee (Northridge Lumber Mill: barrel) T5903 A5904 -> Termite Barrel (48.3,32.0) T5904 A6389 -> Dumah T6389; Chromie in the Andorhal inn (39.5,66.8) A4971 A Matter of Time (use the Temporal Displacer by the silos, kill 10 Temporal Parasites) T4971 A4972 Counting Out Time (5 Andorhal Watches from the lockboxes in the ruined houses) T4972, 4973 if offered; Felstone Field: Janice Felstone upstairs (38.4,54.1) A5021 Better Late Than Never -> Janice's Parcel in the barn T5021 (5022 goes to Stormwind: stop); Dalson's Tears: the Locked Cabinet (47.4,49.7) 5060 Locked Away (outhouse key from the Wandering Skeleton/Farmer Dalson's ghoul, then the cabinet key: read the diary on site); The Writhing Haunt: Mulgris Deepriver (53.7,64.7) A4984 The Wildlife Suffers Too (8 Diseased Wolves) T4984 A4985 (8 Diseased Grizzlies) T4985 (4986 goes to Darnassus: stop); Kirsta Deepshadow at the Northridge Lumber Mill (51.9,28.1) A6004 Unfinished Business (2 each Scarlet Medics, Hunters, Mages, Knights) T6004 A6023 (Huntsman Radley and Cavalier Durgen at Hearthglen's outer tower: Durgen stands on top of the tower, pull him down) T6023. Ride east over the Thondroril River: Tirion Fordring (Eastern Plaguelands 7.6,43.7 per Classic; the digest row lists 5,36) A5542 Demon Dogs, A5543 Blood Tinged Skies, A5544 Carrion Grubbage (20 Plaguehound Runts, 5 Plaguehounds, 5 Frenzied Plaguehounds; 20 Plaguebats; 15 Slabs of Carrion Worm Meat) T all three, 5742 Redemption (listen) -> A5781 Of Forgotten Memories (Taelan's Hammer from the loose dirt mound at the Undercroft, Mercutio Filthgorger and his adds come: fight them one at a time) T5781 A5845 Of Lost Honor (Symbol of Lost Honor, under water at the Northdale lake) T5845 A5846 Of Love and Family -> Artist Renfray on Caer Darrow isle (Western Plaguelands 65.8,75.4) T5846 (5848 is Stratholme: stop). L 58 if short. EASTERN PLAGUELANDS: Marlene Redpath at Sorrow Hill is in WPL (49.2,78.6): A5142 Little Pamela -> Pamela Redpath in Darrowshire (36.5,90.8 per Classic; digest row 31,78) T5142 A5149 Pamela's Doll (three doll parts in the ruined houses) T5149 A5241 Uncle Carlin; a Torn Scroll in a ruined house at Zul'Mashar road (digest 23,73) starts 6024 Hameya's Plea (Infiltrator Hameya's key at Zul'Mashar, level 60 troll camp: late). LIGHT'S HOPE CHAPEL (81,59 Classic; digest rows 71-72,48-50): F (Khaelyn Steelwing), S; Carlin Redpath T5241 A5211 Defenders of Darrowshire (free 15 Darrowshire Spirits from the ghouls you kill) T5211; Duke Nicholas Zverenhoff T6030; Caretaker Alen (digest 70,54) 6021 Zaeldarr the Outcast (his head, crypt south of the Undercroft); Smokey LaRue 6026 That's Asking A Lot (4 items: Frostwhisper... read the text; partly elite sources, drop if not soloable); Augustus the Touched in his cave at Terrordale (digest 11,26) 6164 Augustus' Receipt Book (in the ruined inn of Terrordale). Aurora Skycaller at the Northpass tower (digest 46,16; Classic 53.2,22.0): T5245 A5246 Fragments of the Past (collect the four relics... see text) T5246. FLY Ironforge -> FLY Lakeshire, ride north through the pass to the BURNING STEPPES, Morgan's Vigil: F (Borgus Stoutarm 84.3,68.3); Oralius (84.6,68.7) A3823 Extinguish the Firegut (ogres at Dreadmaul Rock) T3823 A3824 Gor'tesh the Brute Lord T3824 A3825 Ogre Head On A Stick = Party (plant the head on the Dreadmaul hill) T3825, A4283 FIFTY! YEP! (50 Blackrock Medallions from the Blackrock orcs); Jalinda Sprig (85,70) 4262 Overmaster Pyron (the fire elemental at the quarry-side entrance of Blackrock Mountain; outside the instance); Flame Crest: Maxwort Uberglint (65.2,23.9) 4296 Tablet of the Seven (transcribe the tablet in the Ruins of Thaurissan), Tinkee Steamboil 4726 Broodling Essence (use the Draco-Incarcinatrix on 8 Broodlings); Ruins of Thaurissan: 4 relics for 3701. FLY Ironforge: Archesonus T3701. L 60: the model leaves about 218,000 XP for the last two levels after all hand-ins (Plaguelands undead for Argent Dawn scourgestones, Dreadmaul ogres, or Blackrock orcs).",
+   "classQuests": [],
+   "carryIn": [
+    5245,
+    6028,
+    6030
+   ],
+   "carryOut": [],
+   "risks": "Simulated 57.1 -> 60.0 with an explicit closing grind of about 218k XP. Coordinates: the Plaguelands rows in the digest give some NPCs in the wrong zone's frame (Tirion at 'EP 5,36', Light's Hope NPCs at 71-72,48-50, Pamela at 31,78); the positions written here mix those rows with Classic knowledge and must be overridden from the FC pins in the segment file. Quests left out: every Stratholme/Scholomance step (5848+, 5533+, the Annals of Darrowshire line 5152/5153/5154/5210/5181 is not used because 5153 is missing from the dwarf-shaman digest), 5022/5048/5050/5051 (Stormwind bounce), 4986 and 5253 (Darnassus), ELITE-flagged WPL/EPL quests, 4182 Dragonkin Menace + the True Masters chain 4183-4224 (4182 is flagged ELITE in the digest although its targets were non-elite in Classic: about 20k XP if it turns out soloable), 4022/4023, 4808-4810, Marshal Windsor. 5846's hand-in is at Caer Darrow (next to Scholomance, the artist is outside). 6024/6026 are level 58-60 with possibly elite sources: optional. Alterac -> Chillwind Camp and Lakeshire -> Morgan's Vigil are ridden once (Classic geography)."
+  }
+ ]
+}

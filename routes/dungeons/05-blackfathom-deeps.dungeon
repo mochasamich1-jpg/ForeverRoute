@@ -1,0 +1,17 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quest givers = foreverchanges.pro/dungeon-quests; entrance and prerequisites = Questie.
+@dungeon Blackfathom Deeps
+@levels 24-32
+@window 23-30
+@best 25
+@hub Ashenvale, 11.6, 34.3, 8
+@entrance Ashenvale, 14.5, 14.2
+A 6562 @ Stonetalon Mountains, 47.4, 64.2 | Tsunaman at Sun Rock Retreat. It sends you to Je'neu Sancrea at Zoram'gar Outpost.
+>T 6562 @ Ashenvale, 11.6, 34.3
+>A 6563 @ Ashenvale, 11.6, 34.3 | 20 Sapphires of Aku'Mai: they grow on the walls of the tunnels before the dungeon portal.
+A 6921 @ Ashenvale, 11.6, 34.3 | Je'neu Sancrea. The Fathom Core is under water in the first big pool inside the dungeon.
+RUN | The entrance is on the coast north of Zoram'gar Outpost: go down through the ruins and the tunnels to the portal. On the way, the naga and satyrs can drop a Damp Note; hand it to Je'neu to get Allegiance to the Old Gods (kill Lorgus Jett inside). Inside: Argent Guard Thaelrid gives Blackfathom Villainy (the head of Twilight Lord Kelris).
+T 6563 @ Ashenvale, 11.6, 34.3
+T 6921 @ Ashenvale, 11.6, 34.3
+T 6565 @ Ashenvale, 11.6, 34.3 | Allegiance to the Old Gods, if you got it from the Damp Note.
+T 6561 @ Thunder Bluff, 71.1, 34.2 | Blackfathom Villainy: Bashana Runetotem on Elder Rise.

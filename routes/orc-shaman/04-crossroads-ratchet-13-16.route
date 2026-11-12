@@ -1,0 +1,138 @@
+@segment 13-16 Crossroads, Ratchet & Fire Totem
+@start-level 13
+@carry 842,924,1525
+@done 840,809,1524
+
+# Starts coming down from the Altar of Fire on Dreadmist Peak (924 already completed there).
+# The hearth is bound at the Crossroads at the start and stays there for this whole segment.
+# Call of Fire: the Reagent Pouch came from Dustwind Cave in segment 3; the Fire Tar drops here
+# from the Razormane casters, then Telf Joolam (from Ratchet), the manifestation and Kranal Fiss.
+# Every Crossroads and Ratchet quest finished here is also handed in here (848, 880, 821, 863,
+# 896, 902). Quests only worked in segment 5 (881, 867, 3281, 865, 1069, 3921, 853) are not taken
+# yet. Carry-out to segment 5: 1061, 851, 855, 3301.
+
+# ---------------------------------------------------------------- Arrive at the Crossroads
+G The Barrens, 52.0, 29.9 | Come down Dreadmist Peak and walk south-east to the Crossroads
+S Crossroads @ The Barrens, 52.0, 29.9 | Innkeeper Boorand Plainswind at the Crossroads inn
+A 6365 | Zargh, at his cooking fire next to the inn
+F Crossroads @ The Barrens, 51.5, 30.3 | Devrak, the wind rider master on the tower
+T 6365 | Devrak
+A 6384 | Keep Zargh's Meats: you fly to Orgrimmar at the end of this segment and deliver them then
+A 1492 | Apothecary Helbrim. A crate for Ratchet; you deliver it later
+A 848 | Also Helbrim. You pick the spores up at the Forgotten Pools
+A 869 | Gazrog
+A 871 | Thork
+T 842 | Sergra Darkthorn
+A 844
+A 870 | Tonga Runetotem
+
+# ---------------------------------------------------------------- Quilboars, Fire Tar and plainstriders next to the Crossroads
+C 871,1525:1 | Razormane camp just north-east of the Crossroads: kill Water Seekers, Thornweavers and Hunters. The Water Seekers and Thornweavers also drop the Fire Tar for Call of Fire (you already have the Reagent Pouch). Pull one or two at a time and Earth Shock their casts. If no Fire Tar has dropped by the end, kill Razormane Geomancers on Thorn Hill just east until it does (keep clear of the rare elite Elder Mystic Razorsnout if he is up there)
+C 844 | Kill plainstriders all around the Crossroads for 7 Plainstrider Beaks. Any Sunscale raptor you meet also drops Raptor Heads
+T 871 | Thork
+A 872
+A 5041
+T 844 | Sergra Darkthorn
+A 845
+
+# ---------------------------------------------------------------- West: Regthar, Forgotten Pools, Kolkar
+A 855 | Regthar Deathgate, at the small camp west of the Crossroads
+A 850
+C 870 | Walk into the water at the Forgotten Pools, north of Regthar
+C 848 @ The Barrens, 45.0, 23.0 | Loot 4 Fungal Spores from the Laden Mushrooms around the pools
+C 850 | Barak Kodobane (16) is at the Kolkar camp west of the pools. Clear the centaurs around him first and fight him alone; drop Stoneclaw Totem if an add joins. Every Kolkar can drop Centaur Bracers: collect what you get, you finish them later
+T 850
+A 851 | Verog only shows up after many centaurs die around here (shared counter). Leave him for your next visit
+T 870 | Tonga Runetotem, back at the Crossroads
+A 877
+T 848 | Apothecary Helbrim. Decline his next quest, Apothecary Zamah: it is timed, and you take it from him right before the Thunder Bluff trip in the next segment
+
+# ---------------------------------------------------------------- South-east to Ratchet
+C 845 | Kill Zhevra Runners south of the Crossroads for 4 Zhevra Hooves
+A 819 @ The Barrens, 54.7, 37.2 | Chen's Empty Keg is a small keg on the ground. It spawns at a few spots: one is here by the road to Ratchet, another on the south-east shore of the Stagnant Oasis (56.5, 43.7), your next stop. Click it when you see it
+C 877 @ The Barrens, 55.6, 42.8 | Stagnant Oasis: use the Dried Seeds at the bubbling fissure in the water. The Kolkar around the oasis also drop bracers; Earth Shock the Stormers' lightning. Rocklance, a level 17 rare elite centaur, walks a loop around this oasis: if you see him coming, move away and let him pass
+G The Barrens, 62.8, 37.1 | Follow the road east to Ratchet on the coast
+F Ratchet @ The Barrens, 63.1, 37.2 | Bragok, the flight master in the middle of Ratchet
+A 894 | Sputtervalve, right next to the flight master
+T 1492 | Wharfmaster Dizzywig, by the dock
+A 896 | Also Dizzywig. Leave Mebok Mizzyrix's raptor and spider quests: you take them on your first Ratchet visit in the next segment
+T 819 | Brewmaster Drohn
+A 821 | You collect the parts around the Crossroads and hand it in here at the end of this segment
+A 887 | Gazlowe
+A 895 | WANTED poster outside Gazlowe's house
+A 97253 @ The Barrens, 63.1, 36.4 | Wrenix the Wretched
+C 887,895,97253 @ The Barrens, 63.3, 46.0 | Pirate camp on the coast south of Ratchet: kill Southsea Brigands and Cannoneers, kill Baron Longshore (16) for his head, and pick up 5 Handfuls of Complicated Parts on the higher ground at the west side of the camp. Clear the pirates around the Baron before you pull him; Stoneclaw Totem soaks an extra pirate
+T 887
+A 890
+T 890 | Dizzywig on the dock
+A 892
+T 892 | Back to Gazlowe
+A 888
+T 895
+T 97253 @ The Barrens, 63.1, 36.4
+C 888 | Back to the pirate camp: loot the Shipment of Boots and the Telescopic Lens from the crates at the south end of the camp
+T 888
+
+# ---------------------------------------------------------------- Call of Fire: the Shrine of the Dormant Flame
+T 1525 | Telf Joolam is about 700 yards north of Ratchet, across the river in Durotar. Head north from Ratchet along the coast and cross the mouth of the Southfury River to the Durotar bank. A short way upriver, the same hidden trail as in segment 3 climbs the cliffs on your right up to Telf. He gives you the Fire Sapta
+A 1526
+C 1526 @ Durotar, 38.7, 58.3 | Drink the Fire Sapta, then climb to the top of the shrine: the Minor Manifestation of Fire waits there and grows stronger the longer the fight lasts. Put down Stoneskin Totem and burst it with Earth Shock, Lightning Bolt and Rockbiter melee rather than fire spells. It drops the Glowing Ember. If you lose the sapta, Telf gives you another
+T 1526 | Click the Brazier of the Dormant Flame next to it to place the ember and light the torch
+A 1527 | The brazier gives you the Torch of the Eternal Flame for Kranal Fiss; you pass him on the north loop
+G The Barrens, 62.8, 37.1 | Back down the trail, across the river mouth and south to Ratchet
+FLY Crossroads
+
+# ---------------------------------------------------------------- Crossroads turn-ins
+T 845 | Sergra Darkthorn
+A 903
+T 877 | Tonga Runetotem
+A 880 | Snapjaws live in the oases; you do this after the north loop
+
+# ---------------------------------------------------------------- North: Thorn Hill, Far Watch, Kranal Fiss, Sludge Fen, Boulder Lode Mine
+C 821:1,821:2 @ The Barrens, 52.4, 26.7 | Around the Crossroads: Savannah Huntresses (lions) drop Savannah Lion Tusks and plainstriders drop Plainstrider Kidneys. Prowlers further north also drop tusks
+C 872,5041 | Thorn Hill, north-east along the road: kill Razormane Geomancers and Defenders and Kreenig Snarlsnout on the hill. Pick up Crossroads' Supply Crates lying around the hill. Earth Shock the Geomancers' spells and fight them one at a time. Elder Mystic Razorsnout, a rare elite quilboar, can spawn on the hill: leave him alone
+T 924 | Ak'Zeloth at Far Watch Post, north-east of Thorn Hill
+T 1527 | Kranal Fiss, west along the road from Far Watch. You get your Fire Totem and learn Searing Totem: drop it at the start of every hard pull from now on
+C 869,903 @ The Barrens, 55.5, 14.5 | North towards the Sludge Fen: Sunscale Screechers drop Raptor Heads, Savannah Prowlers drop Prowler Claws
+T 894 | The Venture Co. research site in the Sludge Fen: use the Control Console
+A 900
+C 900 | Shut off the three valves on the pipes around the console
+T 900
+A 901
+C 901 | Kill Tinkerer Sniggles in the hut near the console for the Console Key
+T 901
+A 902 | Keep the Samophlange; you hand it in at Ratchet at the end of this segment
+C 896 | Boulder Lode Mine, north-east of the Sludge Fen: kill Venture Co. Enforcers and Overseers until the Cats Eye Emerald drops. Takk the Leaper, a level 19 rare elite raptor, roams the ground between the fen and the mine: steer around him
+A 858 | Wizzlecrank's Shredder, on the east side of the Sludge Fen
+C 858 | Supervisor Lugwizzle (18) patrols the top of the nearby watch tower; he drops the Ignition Key. Searing Totem and Lightning Shield up, Healing Wave early
+T 858
+A 863 | Escort quest: stay close to the shredder and kill the Venture Co. ambushers. Stoneclaw Totem pulls attackers off it. If it fails, take it again from the shredder
+C 863 @ The Barrens, 56.5, 7.5 | The quest completes once the shredder is safe; you hand it in at Ratchet at the end of this segment
+H Crossroads
+T 872,5041 | Thork
+T 869 | Gazrog. Do not take Stolen Silver yet: you take it at the start of the next segment
+T 903 | Sergra Darkthorn. Do not take Echeyakee yet: you take it at the start of the next segment
+A 4921 | Mankrik
+
+# ---------------------------------------------------------------- South: Lushwater Oasis and Mankrik's wife
+C 880 @ The Barrens, 46.8, 39.6 | Lushwater Oasis, south-west of the Crossroads: kill Oasis Snapjaws for 8 Altered Snapjaw Shells. Kolkar Stormers here drop bracers too. Stay out of the big cave mouth in the hill just north of the oasis (Wailing Caverns): the Deviate mobs inside are elite. Gesharahan, a level 20 rare elite, can spawn in the oasis itself: leave him alone
+C 4921 | Follow the Gold Road south: Mankrik's wife lies at a burned-out camp near the road, among the quilboars
+C 821:3 @ The Barrens, 47.0, 51.0 | Kill Stormsnouts (thunder lizards, level 18-19) around the body until a Thunder Lizard Horn drops. Pull one at a time with Searing and Stoneskin Totem down and heal before you drop low. If you cannot kill one, abandon Chen's Empty Keg now: no later step hands it in
+T 4921 | Back to Mankrik. He may then offer Her Name Is Olgra (new in Forever, Razormane Raiders around his wife's body): leave it for now; you take it from him in the next segment, after its first loop
+T 880 | Tonga Runetotem, next to Mankrik
+A 3301 | Tonga. A delivery to Mura Runetotem at the Sepulcher in Silverpine Forest; keep it in your log until your first Eastern Kingdoms trip (segment 6)
+
+# ---------------------------------------------------------------- Ratchet turn-ins, Orgrimmar, back to the Crossroads
+FLY Ratchet
+T 863,902 | Sputtervalve. Do not take his new quests yet (Wenikee Boltbucket, Ziz Fizziks): you take them on your next Ratchet visit
+T 896 | Wharfmaster Dizzywig, on the dock
+T 821 | Brewmaster Drohn. Skip his next keg quest (level 24)
+FLY Orgrimmar
+T 6384 @ Orgrimmar, 54.1, 68.4 | Innkeeper Gryshka, at the inn in the Valley of Strength
+A 6385 @ Orgrimmar, 54.1, 68.4 | Gryshka gives you a letter for Zargh
+A 1061 @ Orgrimmar, 38.9, 38.4 | Zor Lonetree, outside Grommash Hold in the Valley of Wisdom. This is for Stonetalon in the next segment, just keep it
+TRAIN @ Orgrimmar, 38.8, 36.4 | Orgrimmar, Valley of Wisdom (Kardris Dreamseeker, Sian'tsu or Sagorne Creststrider): learn your level 14 and 16 spells (new ranks of Lightning Bolt, Earth Shock and Stoneskin Totem at 14; Lightning Shield, Rockbiter and Cure Poison at 16)
+T 6385 @ Orgrimmar, 45.1, 63.9 | Doras, the wind rider master on the tower in the Valley of Strength
+A 6386 @ Orgrimmar, 45.1, 63.9 | Doras
+FLY Crossroads
+T 6386 | Zargh, next to the inn

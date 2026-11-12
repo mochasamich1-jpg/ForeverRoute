@@ -1,0 +1,61 @@
+@segment 28-29 Silverpine Brazier & Tarren Mill II
+@start-level 28
+@carry 63,1130,5062,529,546,567,98094
+@done 220,527,528
+
+# Eastern Kingdoms trip 2: the Brazier of Everfount (Call of Water), then the rest of Tarren Mill.
+# Left out on purpose: 541 Battle of Hillsbrad and 517 Elixir of Agony (both elite), 1103 (Tiev Mordune's
+# fallback if the Water Sapta runs out before you reach the spirit: it needs a new sapta from Islen in the Barrens).
+
+# ---------- Orgrimmar and the zeppelin ----------
+FLY Orgrimmar | You start at the Crossroads. Keep Melor Sends Word (1130) and Sacred Fire (5062) for Thunder Bluff next segment
+TRAIN @ Orgrimmar, 38.8, 36.4 | Orgrimmar, Valley of Wisdom: learn your level 28 spells. Not 28 yet? Skip it; you train in Thunder Bluff next segment
+N Leave Orgrimmar by the main gate and take the zeppelin to the Undercity @ Durotar, 50.8, 13.5 | Frezza's platform, on the tower just outside the gate. The zeppelin lands at the tower in Tirisfal Glades
+FLY The Sepulcher @ Undercity, 63.3, 48.6 | Walk south from the tower into the Undercity. Bat handler Michael Garrett stands by the west elevator in the Trade Quarter
+
+# ---------- Silverpine: the Brazier of Everfount ----------
+C 63 @ Silverpine Forest, 38.8, 44.3 | Ride west from the Sepulcher (Ghost Wolf) to the shrine on the coast. Kill the Corrupt Minor Manifestation of Water (level 22) at the pool for its bracers. The Corrupt Water Spirits (19) around it are easy. Check that you still have the Water Sapta Islen gave you for the vial: you need it at the brazier
+T 63 @ Silverpine Forest, 38.3, 44.6 | Click the Brazier of Everfount to place the bracers and the Remaining Drops of Purest Water
+A 100 @ Silverpine Forest, 38.3, 44.6 | The brazier gives the next part right away
+T 100 @ Silverpine Forest, 38.3, 44.6 | Drink the Water Sapta: it lets you see the Minor Manifestation of Water beside the brazier. Talk to it before the effect wears off. If it runs out, Tiev Mordune (37.3, 44.1) has a backup quest, but it needs a new sapta from Islen
+A 96 @ Silverpine Forest, 38.3, 44.6 | Keep the Shard of Water for Islen Waterseer (next segment): that hand-in gives your Water Totem
+FLY Tarren Mill | Back to Karos Razok at the Sepulcher
+
+# ---------- Tarren Mill: south and east ----------
+A 509 | Apothecary Lydon
+T 98094 @ Hillsbrad Foothills, 64.0, 53.8 | Deathstalker Masoj, on the high ground straight south of Tarren Mill, above Nethander Stead
+A 98095 @ Hillsbrad Foothills, 64.0, 53.8 | Three vials to place (south, north and west). At each spot look for a crushed empty vial on the ground
+C 509 | Mudsnout Blossoms grow in the fields of Nethander Stead, just south of Masoj. Mudsnout Gnolls and Shamans (26-28) walk among them: Earth Shock the Shamans when they cast
+C 98095:3 | Southern vial: on the hills bordering Dun Garok, the dwarf fort southeast of Nethander Stead. Search the hilltops and slopes around the fort from outside its walls for the crushed empty vial and place yours. Do not go inside or up its gate road: the Dun Garok Mountaineers, Riflemen and Priests (28-30) are ELITE and stand in groups. Feral Mountain Lions (27-28) roam the slopes: pull them one at a time and heal between fights
+C 98095:2 | Northern vial: on the plateau overlooking Durnholde Keep, the Syndicate castle east of Masoj, on your way back north. The Syndicate around the keep are only level 20-24
+T 509 | Back in Tarren Mill
+A 513 | Keep the Mudsnout Composite for Faranell in the Undercity at the end of this segment
+
+# ---------- Hillsbrad Fields ----------
+C 529 | Ride west along the road to Hillsbrad Fields (Ghost Wolf), keeping clear of Southshore and its guards to the south. Blacksmith Verringtan (26) and his 4 apprentices work at the smithy; the Shipment of Iron crate is by the forge. Already done on your first visit? Go on. Every human here can drop a skull for Souvenirs of Death
+C 567:2 @ Hillsbrad Foothills, 32.6, 39.8 | Citizen Wilkes walks the north side of the town
+C 567:4 @ Hillsbrad Foothills, 35.9, 46.6 | Farmer Kalaba works the fields east of the town (already done if you killed her on the last visit)
+T 529 | Back to High Executor Darthalia, Tarren Mill
+A 532
+C 532 | Town hall: kill Magistrate Burnside (level 30) and 4 Hillsbrad Councilmen, destroy the Proclamation and take the Town Registry, both inside. Pull one at a time; if two come, drop a Stoneclaw Totem and Earth Shock the extra. Heal up between pulls
+C 567:1 @ Hillsbrad Foothills, 29.5, 42.4 | Clerk Horrace Whitesteed is in the town hall
+T 532 | Darthalia, Tarren Mill
+A 539 | Skip the next part (541) later: it is elite
+
+# ---------- The Headland and Azurelode Mine ----------
+C 98095:1 | Western vial: on the ridge of the Headland above Hillsbrad Fields, on the way to the mine. Run past the bears and moss creepers on the slopes; no need to fight them
+C 539 | Azurelode Mine, south of Hillsbrad Fields: Foreman Bonds (30) and 10 Hillsbrad Miners. Miners and Foremen stand close together: pull one and put down an Earthbind Totem if it runs
+C 567:3 @ Hillsbrad Foothills, 31.1, 58.6 | Miner Hackett (29), deep in the mine
+C 546 @ Hillsbrad Foothills, 29.9, 55.5 | Finish the 30 skulls on the miners if you still need them
+T 546 | Deathguard Samsa, Tarren Mill
+T 539 | Darthalia
+T 567
+T 98095 @ Hillsbrad Foothills, 64.0, 53.8 | Ride south to Deathstalker Masoj once more
+L 29 @ Hillsbrad Foothills, 63.8, 62.0 | Not 29 yet? Kill Mudsnout Gnolls and Shamans (26-28) at Nethander Stead, just south of Masoj
+
+# ---------- Undercity ----------
+FLY Undercity | Ride back north to Tarren Mill and fly from Zarise
+T 513 | Master Apothecary Faranell, in the Apothecarium
+A 515 @ Undercity, 48.8, 69.3 | Keep it for your next Hillsbrad visit. Its follow-up (517) is elite: skip it later
+N Open Elixir of Agony (515) in your quest log and buy the troll's blood potion it lists at the Auction House in the Trade Quarter | Forever's quest page lists a Lesser Troll's Blood Elixir, the old quest text a Strong Troll's Blood Potion: buy whichever your log shows. If none is for sale, you drop 515 later
+H Crossroads | Hearth back to the Crossroads

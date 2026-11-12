@@ -1,0 +1,10 @@
+# New Forever dungeon. Source: foreverchanges.pro/dungeons/the-drowned-city (level range is Blizzard's; the page
+# says nobody had run it when it was written: the entrance and the quest list come from the game files and explorers).
+# No quest ids or giver coordinates are published yet, so this is a note only.
+@dungeon The Drowned City
+@levels 35-40
+@window 35-42
+@best 37
+@hub Stranglethorn Vale, 27.6, 77.5, 5
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is on Gillijim's Isle, in the sea south-west of Stranglethorn Vale; the portal is in a cave called Sunken Hollow, and no boat or flight path was known to go there. Horde quests for it are listed from Krazek in Booty Bay (Shady Saltseers, The Saltseer Captain), Commander Aggro'gosh and Kin'weelay in Grom'gol, and Mazu'kon in Mulgore. Take what they offer: the addon logs it so these steps can be filled in.

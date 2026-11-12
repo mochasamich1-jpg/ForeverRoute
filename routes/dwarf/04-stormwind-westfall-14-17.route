@@ -1,0 +1,133 @@
+@segment 14-17 Stormwind & Westfall
+@start-level 14
+# Removed 2026-11-11: 98021 Journey to Sentinel Hill (Bolvar). The current Questie data makes it a Skyborne-only quest
+# that follows their arrival quest 94947, so Bolvar does not offer it to this character.
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 97894 Business in Auberdine (Borgus Steelhand; handed in when the route reaches Auberdine).
+@carry 263,1338,2039
+@done 1339,237
+# Dwarf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 04: same quests, order, binds and flights. This
+# segment had no class quest steps; changed: 94468 dropped from @done, the Ironforge TRAIN step is generic
+# (no trainer name or arrow), combat hints are class-neutral.
+# 14-17. Thelsamar -> gryphon to Ironforge (train) -> Deeprun Tram (rat quests) ->
+# Stormwind (one circuit: Dwarven District, Cathedral Square, canals, park, harbor, keep, Trade
+# District) -> Goldshire -> Westfall: Furlbrows, Saldean's Farm, Sentinel Hill (bind) -> loop 1 north
+# -> loop 2 mines and Gold Coast -> Moonbrook, Dagger Hills, lighthouse -> hearth -> fly to Stormwind.
+# New Forever NPCs placed from the ForeverChanges pages: Philmor, Gilbert Gray, Roy Lewells, Ozwin
+# Ironsprocket, Alba Fairmoon, Sprite's hand-in; Bolvar's and Smith Argus' quests are filed under the
+# wrong zone in the digest, so they carry overrides (Stormwind City / Elwynn Forest).
+# Deviations from the plan:
+#  - 152 The Coast Isn't Clear is LEFT OUT. It is only given at the lighthouse in the far south-west,
+#    the last stop before the hearth, but needs 7 Murloc Coastrunners, which live only on the north
+#    coast (42-56, 8-12), plus Warriors half-way up the west coast: a second trip round the whole zone.
+#  - 97237 Shelf Picked is handed in to Roy Lewells on the Stormwind visit at the END of the segment,
+#    not on the first one: it saves crossing the city twice (Roy is on the far side from the keep).
+#  - Added F Stormwind (needed for the flight back from Sentinel Hill).
+# Skipped as planned: 92911, 92749-92753 (dynamite, Deadmines), 104, 155 (elite escort), Captain
+# Sanders' treasure, 132/135/141/142, the Deadmines quests 2040/167/168.
+# Carry-out: 65 The Defias Brotherhood (Wiley, Lakeshire), 263 (Loch Modan), 353 Stormpike's Delivery
+# (Loch Modan), 2039 Find Bingles (Loch Modan). All segment 5.
+
+# --- Ironforge and the Deeprun Tram ---
+FLY Ironforge | From Thorgrum Borrelson in Thelsamar
+TRAIN | Ironforge: visit your class trainer and learn your level 14 skills. Warriors and hunters train in the Military Ward (south-east), rogues and warlocks in the Forlorn Cavern (north), mages and priests in the Mystic Ward (north-west). Sell, repair, buy food and water
+N Could not take Find Bingles last time (it needs level 12)? Take it now from Gnoarn in Tinker Town (Ironforge 69.2, 50.6) and keep it for a later Loch Modan visit
+A 6661 | Enter the Deeprun Tram through the big doorway in Tinker Town. Monty stands on the Ironforge platform between the tracks
+C 6661 | Use the Rat Catcher's Flute on 5 Deeprun Rats on and around the platform; they follow you. Walk them back to Monty
+T 6661 | Monty
+A 6662
+T 6662 | Ride the tram to the Stormwind end. Nipsy stands on that platform
+
+# --- Stormwind: one circuit ---
+T 1338 | Furen Longbeard, in the Dwarven District, where the tram lets you out
+A 97894 @ Stormwind City, 59.4, 34.3 | Borgus Steelhand, in the Dwarven District (needs level 13). Just a message for his brother in Auberdine: you carry it until the route gets there by boat
+A 399 | Baros Alexston, in Cathedral Square
+N Buy 1 Shiny Bauble and 3 Nightcrawlers from Catherine Leland, the fishing supplier on the canal just west of the Trade District (Stormwind City 55.1, 69.8). They are for the old fisherman at the harbor
+A 97234 @ Stormwind City, 38.7, 62.2 | Roy Lewells, in the Park on the west side of the city (needs level 13)
+A 95065 @ Stormwind City, 26.3, 47.1 | Gilbert Gray, fishing at the harbor on the far west side
+T 95065 @ Stormwind City, 26.3, 47.1 | Hand him the bauble and the nightcrawlers right away
+A 97220 @ Stormwind City, 30.4, 29.1 | Manifest Clerk Philmor, at the docks north of Gilbert (follow the arrow). If he offers nothing, skip this quest and Gatehouse Goods
+T 97234 @ Stormwind City, 75.2, 30.3 | Cross the city to Stormwind Keep: Donyal Tovald, the librarian, in the keep's library
+A 97237 @ Stormwind City, 75.2, 30.3
+C 97237 @ Stormwind City, 75.2, 30.3 | Find the four books on the shelves and tables of the library: Field Accounts of Horde Razings, Trollbane Conquests, The Forsaken Ally and Cycles of Morality. Keep the quest: Roy gets them when you come back from Westfall
+T 97220 @ Stormwind City, 66.6, 73.5 | Elaine Trias, in Trias' Cheese in the Trade District
+A 97222 @ Stormwind City, 66.6, 73.5 | Elaine Trias
+C 97222 @ Stormwind City, 66.6, 73.5 | Carry the Gatehouse Shipment up the stairs inside the cheese shop and put it down outside the stockroom door on the upper floor
+T 97222 @ Stormwind City, 66.6, 73.5 | Elaine Trias
+F Stormwind | Dungar Longdrink, the gryphon master in the Trade District. You fly back here from Westfall
+
+# --- Goldshire and the road to Westfall ---
+A 1097 @ Elwynn Forest, 41.7, 65.5 | Leave by the main gate and follow the road south to Goldshire: Smith Argus, in the smithy. Keep it for Grimand Elmore in Stormwind at the end of the segment
+A 64 | Take the road west from Goldshire, past Westbrook Garrison and over the bridge into Westfall. Farmer Furlbrow stands at a cart just past the bridge
+A 109 @ Westfall, 60.0, 19.4 | Farmer Furlbrow
+A 36,151 | Verna Furlbrow, next to him
+T 36 | Follow the road south to Saldean's Farm: Salma Saldean, in the farmhouse
+A 38,22 | Salma gives both
+A 9 | Farmer Saldean, outside by the field
+A 92909 @ Westfall, 51.6, 32.2 | Ozwin Ironsprocket, a gnome hiding in the stable west of the Saldean farmhouse
+
+# --- Sentinel Hill ---
+T 109 | Gryan Stoutmantle, in the stone tower on Sentinel Hill
+A 12 | Gryan Stoutmantle
+A 102 | Captain Danuvin, next to Gryan
+F Sentinel Hill | Thor, the gryphon master just south of the tower
+A 153 | Scout Galiaan, south-west of the tower, near the inn
+A 92742,92744 @ Westfall, 52.5, 53.1 | Alba Fairmoon, by the inn. She gives both and a Well Water Sample Kit
+S Sentinel Hill | Make the inn your home: talk to Innkeeper Heather
+
+# --- Loop 1: west fields, then north, back down the east side ---
+C 92909 @ Westfall, 39.0, 50.0 | Head west into the fields around the Alexston Farmstead. Harvest Golems and Harvest Watchers drop the Golem Isosprings (14) and Harvester Gyrostabilizers (5), and also Okra for the stew and Flasks of Oil: keep 5 oil for the lighthouse. Watchers count for the Saldeans (20). Kill Goretusks for livers and snouts and Fleshrippers for Stringy Vulture Meat wherever you see them, and open every Sack of Oats (8 needed) on the farms. Harvesters hit hard: fight one at a time and eat or bandage between pulls
+A 92910 @ Westfall, 39.0, 50.0 | A harvester drops a Precessive Autocognition Assembly: right-click it in your bags to start this quest. If none has dropped by the time the parts are done, never mind
+C 92742:2 @ Westfall, 44.0, 35.0 | North to the Molsen Farm (the position is approximate: it is the farm with harvesters north of the Alexston fields). Stand at the well in the yard and use the Well Water Sample Kit. Keep killing Harvest Watchers in its fields
+C 12 @ Westfall, 45.0, 26.0 | Kill 15 Defias Trappers and 15 Defias Smugglers (11-13). They stand around the Molsen Farm, the Jangolode Mine to the north and Furlbrow's Pumpkin Farm. They drop Red Leather Bandanas (15 needed in all, from any Defias). Riverpaw gnolls up here drop Gnoll Paws (8). Defias run at low health: finish them fast or slow them if you can, they bring friends
+C 64 @ Westfall, 49.3, 19.3 | Furlbrow's Pumpkin Farm, east of the mine: the pocket watch is in the wardrobe inside the farmhouse. Defias inside: pull them out one at a time
+C 92744 @ Westfall, 48.3, 9.5 | The coast north of the pumpkin farm (Longshore): kill murlocs (11-14) for 7 Longshore Murloc Gills and 3 Murloc Eyes. They come in twos and flee at low health: pull them back to the grass, away from the other murlocs, and finish a runner fast or slow it if you can. If these murlocs drop no gills, the map marks the west coast instead (24-28, 32-72): get them at the Gold Coast Quarry in loop 2 and hand in then
+C 92742:1 @ Westfall, 59.0, 18.0 | East to the Jansen Stead, the farm beside the Furlbrows' cart (position approximate): use the Sample Kit at its well
+C 151 @ Westfall, 56.0, 20.0 | 8 Handfuls of Oats from the Sacks of Oats on the farms. Missing some? The Jansen Stead and the pumpkin farm have several
+T 64 | Farmer Furlbrow, at the cart by the bridge
+T 151 | Verna Furlbrow
+C 9,22,38 @ Westfall, 52.0, 30.0 | On the way south to Saldean's Farm finish 20 Harvest Watchers (the fields west of the farm), 8 Goretusk Livers and the stew: 3 Stringy Vulture Meat, 3 Goretusk Snouts, 3 Murloc Eyes, 3 Okra
+T 9 | Farmer Saldean
+T 22,38 | Salma Saldean
+T 92909 @ Westfall, 51.6, 32.2 | Ozwin Ironsprocket, in the stable. Parts missing? More harvesters stand in the fields right here
+T 92910 @ Westfall, 51.6, 32.2 | Ozwin Ironsprocket (only if you found the Assembly). Do not start his engineering quest
+
+# --- Sentinel Hill, second visit ---
+T 92742,92744 @ Westfall, 52.5, 53.1 | Alba Fairmoon
+A 92745 @ Westfall, 52.5, 53.1
+T 12 | Gryan Stoutmantle
+A 13
+
+# --- Loop 2: Jangolode Mine, Gold Coast Quarry, Alexston Farmstead ---
+C 92745:1 @ Westfall, 45.3, 20.0 | North-west to the Jangolode Mine: kill 4 Kobold Diggers (12-13) inside
+C 92745:2 @ Westfall, 29.8, 48.1 | South-west to the Gold Coast Quarry on the west coast: kill 6 Riverpaw Miners (14-15) in the quarry. The gnolls here drop Gnoll Paws
+C 13 @ Westfall, 31.3, 49.3 | Kill 15 Defias Pillagers and 15 Defias Looters (13-15) around the Gold Coast Quarry and the Alexston Farmstead just east of it. Pillagers cast Fireball: kill them first, and interrupt or stun the cast if your class can. Finish the bandanas and gnoll paws here too
+C 399 @ Westfall, 36.2, 54.5 | Alexston Farmstead: A Simple Compass is in Alexston's Chest at the farmstead (follow the arrow)
+C 102,153 @ Westfall, 34.0, 50.0 | Still short of 8 Gnoll Paws (Riverpaw gnolls at the quarry) or 15 Red Leather Bandanas (any Defias)? Finish them before heading back east
+
+# --- Sentinel Hill, third visit ---
+T 102 | Captain Danuvin, in the tower
+T 13 | Gryan Stoutmantle
+A 14,65 | Gryan gives both. Keep The Defias Brotherhood: Wiley is in Lakeshire, next segment. Do not take the Deadmines quests
+T 153 | Scout Galiaan
+T 92745 @ Westfall, 52.5, 53.1 | Alba Fairmoon
+A 92747 @ Westfall, 52.5, 53.1
+
+# --- Moonbrook, the Dagger Hills, the lighthouse ---
+C 92747 @ Westfall, 42.5, 70.0 | Moonbrook, the ruined town in the south-west: collect 8 Suspicious Industrial Supplies (crates and barrels in and between the buildings; their spots are not in our data). The town is full of Defias: clear a building before you loot in it
+C 14 @ Westfall, 45.7, 76.3 | The Dagger Hills, south of Moonbrook: kill 15 Defias Highwaymen (17-18), 5 Pathstalkers and 5 Knuckledusters (15-17). They are above your level and stand in pairs: pull from as far away as you can so they come to you, away from the next pair, fight at full health and eat or bandage after every pull. Walk away if a third joins. Level 17 makes this much easier, so take your time
+A 103 | Captain Grayson, the ghost at the Westfall Lighthouse on the island off the south-west tip (swim across). Skip his murloc quest: it needs murlocs from the north coast
+T 103 | Hand in the 5 Flasks of Oil at once. Short of oil? Harvest Golems in the fields north of Moonbrook drop it
+H Sentinel Hill
+
+# --- Sentinel Hill, last visit ---
+T 92747 @ Westfall, 52.5, 53.1 | Alba Fairmoon
+A 92748 @ Westfall, 52.5, 53.1
+T 14 | Gryan Stoutmantle
+FLY Stormwind | Thor, south of the tower
+
+# --- Stormwind ---
+T 97237 @ Stormwind City, 38.7, 62.2 | Roy Lewells, in the Park on the west side
+T 399 | Baros Alexston, in Cathedral Square
+T 1097 | Grimand Elmore, in the Dwarven District
+A 353 | Keep it: the package goes to Mountaineer Stormpike in Loch Modan
+T 92748 @ Stormwind City, 62.0, 30.8 | Sprite Jumpsprocket, an engineer in the Dwarven District. Stop here: her next quest needs 10 Rough Dynamite and the chain ends in the Deadmines

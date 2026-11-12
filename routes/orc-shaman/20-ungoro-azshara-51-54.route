@@ -1,0 +1,191 @@
+@segment 51-54 Un'Goro Crater & Azshara
+@start-level 51
+# Carried in (segment 19's carry-out): 81 Ripple Delivery and 32 Rise of the Silithid (Orgrimmar), 2641 Sprinkle's Secret
+# Ingredient (Gadgetzan), 3568 Seeping Corruption (vials filled in Azshara here), 4294 ... and a Batch of Ooze (Un'Goro slimes
+# here) and 4293 A Sample of Slime... (Felwood, segment 21). 3568/4294/4293 are tested and handed in at the Undercity in segment 23.
+@carry 81,32,2641,3568,4294,4293
+# The carried quests' own starters, done in segments 17 (113, 2606) and 19 (77). Every other prerequisite is handed in here.
+@done 113,77,2606
+# Adapted from undead-mage 18 (Orgrimmar/Thunder Bluff/Gadgetzan stops, Un'Goro, Azshara) and 17 (Sprinkle and Marin).
+# Order: Ratchet dock -> fly Orgrimmar -> Thunder Bluff -> Gadgetzan (bind) -> Un'Goro (two loops out of Marshal's Refuge)
+# -> hearth Gadgetzan -> Thunder Bluff -> Orgrimmar (bind) -> Splintertree -> Azshara -> hearth Orgrimmar -> Thunder Bluff -> Valormok.
+# Dropped from undead 18: the mage chain 8250-8252, the Undercity stops (Delivery to Andron Gant 3542 and the Cuely/Fuely hand-ins
+# wait for segment 23; Andron's Payment to Jediga 3564 is skipped), 2741 (Egg-O-Matic, only taken in segment 17 if an egg dropped).
+# Added: Volcanic Activity (4502) from Liv Rizzlefix at the Ratchet dock, handed back to her on segment 21's Ratchet stop.
+# Carry-out (8): 3908, 980 (Winterspring), 4147, 4502 (Ratchet), 3568, 4294, 4293, 3542 (Undercity, segment 23).
+
+# ---------- Ratchet -> Orgrimmar ----------
+N You step off the boat at the Ratchet dock | Your hearthstone is still set to Stonard: do not use it or Astral Recall until you have bound in Gadgetzan.
+A 4502 @ The Barrens, 62.5, 38.7 | Liv Rizzlefix, a few steps south-west of the flight master. The fire elementals on Fire Plume Ridge in Un'Goro drop the ash; you hand it to her on the next segment's Ratchet stop
+FLY Orgrimmar @ The Barrens, 63.1, 37.2 | Bragok, the Ratchet flight master, at the north end of town
+A 936 | Innkeeper Gryshka, Valley of Strength, just east of the wind rider tower. Do not bind here yet
+N Buy a Mithril Casing at the Auction House | It is an engineering part for the A-Me 01 robot in Un'Goro. If none is for sale, skip Chasing A-Me 01 parts 2 and 3 when you get there.
+T 32 | Zilzibin Drumlore, at the south end of the Drag
+A 4494 | Zilzibin Drumlore. Needs level 50
+T 81 @ Orgrimmar, 59.5, 36.6 | Dran Droffers, at the east end of the Drag
+A 4300 | Jes'rimon, at the north end of the Drag
+TRAIN @ Orgrimmar, 38.8, 36.4 | Valley of Wisdom: learn your level 50 spells if you did not get them from Haromm in Stonard. Already trained? Skip it
+N Optional class quest: Elemental Mastery | The shaman trainers offer it from level 50. It wants one Elemental Air, Fire, Earth and Water and ends at Bath'rah the Windwatcher in Alterac, at the very end of the route (segment 23); this route does not track it. Your quest log reaches the full 20 in Un'Goro, so do not take it now: if you want it, take it on a later Orgrimmar trainer visit.
+
+# ---------- Thunder Bluff, Gadgetzan ----------
+FLY Thunder Bluff @ Orgrimmar, 45.1, 63.9 | Doras, the wind rider master on the tower in the Valley of Strength
+T 936 | Arch Druid Hamuul Runetotem on Elder Rise
+A 3761 | Collect about 50 Un'Goro Soil in total: 20 for this quest, 5 for Gadgetzan, and 2 for each Morrowgrain attempt later
+FLY Gadgetzan @ Thunder Bluff, 47.0, 49.8 | Tal, the wind rider master on the central mesa
+S Gadgetzan | Innkeeper Fizzgrimble at the inn. You hearth back here when you leave Un'Goro
+T 2641 | Sprinkle
+A 2661 | Sprinkle
+T 2661 | Marin Noggenfogger. He offers Noggenfogger Elixir next: optional, no XP
+T 4494 | Alchemist Pestlezugg
+A 4496 | Alchemist Pestlezugg
+A 4504 | Tran'rek
+N Optional Muisek detour (about 21,000 XP): only if Testing the Vessel is finished in your log | FLY Camp Mojache and hand it to Witch Doctor Uzer'i. He offers each Muisek only after you hand in the one before, and each one comes with its own vessel, so go back to him between them. Take Hippogryph Muisek and Natural Materials. Frayfeather hippogryphs in the highlands south-west of camp (around 55, 67): use the vessel on 10 corpses, and keep killing and looting them until you also have 20 Resilient Sinew and 40 Metallic Fragments. Back at Uzer'i, hand in Hippogryph Muisek and take Faerie Dragon Muisek: 8 Sprite Darters just west of camp (64-70, 44-49), which also drop the 6 Encrusted Minerals. Hand it in and take Treant Muisek: 3 Wandering Forest Walkers, lone treants near 74, 39, 73, 55 and 54, 47, which also drop the 2 Splintered Logs. Hand in Treant Muisek and Natural Materials (skip Mountain Giant Muisek, elite), then FLY Gadgetzan. No Testing the Vessel? Skip this.
+
+# ---------- Un'Goro Crater: the south-east corner ----------
+A 4290 | Ride south-west out of Gadgetzan and down the trail into Un'Goro Crater. Torwa Pathfinder waits at the bottom
+A 4289 | Torwa Pathfinder
+A 3844 | A Wrecked Raft on the shore of the pond north-west of Torwa
+T 3844 | A Small Pack, a few steps away in the water
+A 3845 | Right-click A Small Pack in your bags to take out the compass, map and key. Keep them for Linken at Marshal's Refuge
+C 4290 | The Fresh Threshadon Carcass north of Torwa. A Tyrant Devilsaur (elite) patrols this jungle: watch for it and keep out of its way. From now on, loot every Power Crystal (red, green, blue, yellow) and every Un'Goro Dirt Pile you pass
+T 4290
+A 4291
+C 4291,4300 @ Un'Goro Crater, 64.0, 72.0 | Walk up to the ravasaur eggs west of Torwa and Lar'korwi Mates come out to guard them; they drop the glands. Any ravasaur here can drop White Ravasaur Claws. They hit fast: Stoneskin Totem down, Healing Wave between pulls
+T 4291 | He offers The Bait for Lar'korwi next: leave it until you pass him again in loop 2, to save log space
+N From now on kill every ooze you pass until you have 15-20 Un'Goro Slime Samples (for ... and a Batch of Ooze) | Primal Oozes sit in the middle of the crater (on your ride north and around the hive), Muculent Oozes in the east jungle (loop 1) and Glutinous Oozes on the west side (loop 2). They stack. You test them in the Undercity at the end of the route; not every sample tests pure and you need 5 that do
+G Un'Goro Crater, 45.2, 5.8 | Ride north through the middle of the crater to Marshal's Refuge. Keep looting crystals and soil. Leave the Devilsaurs and Stegodons (elites) alone
+
+# ---------- Marshal's Refuge (first visit) ----------
+F Marshal's Refuge @ Un'Goro Crater, 45.2, 5.8 | Gryfe
+T 3845 | Linken. He offers It's a Secret to Everybody next: leave it until you are back from loop 2, to save log space
+A 3881 | Williden Marshal
+A 3882 | Spark Nilminer
+A 4503 | Shizzle
+A 4145 | Larion
+A 4284 | J.D. Collie, in the cave at the north end of the camp. Keep it until you are back from loop 1: you need 7 Power Crystals of each colour, and loop 1 passes plenty of them
+A 4243 | Karna Remtravel, just south-east of the camp
+A 4501 | The Beware of Pterrordax sign in the camp
+
+# ---------- Loop 1: tar pits, the east, Fungal Rock ----------
+C 4504 | Ride south to the Lakkari Tar Pits: Tar Beasts, Tar Creepers, Tar Lurkers and Tar Lords drop the tar. Keep looting every Power Crystal you pass
+C 4145:1,4145:4 @ Un'Goro Crater, 67.0, 35.0 | Bloodpetal Lashers and Threshers in the jungle east of the tar pits. Young Diemetradons and Fledgling Pterrordax here drop Webbed Scales for Shizzle; loot them as you go
+C 3881:1 @ Un'Goro Crater, 68.5, 36.5 | The Crate of Foodstuffs at the abandoned Ironstone Camp
+C 4289 @ Un'Goro Crater, 66.0, 16.5 | Ride north along the east side to Fungal Rock, the gorilla lair. Gorillas, Stompers and Thunderers drop the pelts; they often come in pairs, so drop Stoneclaw Totem for the second one. Leave U'cha (in the cave) for later
+T 4243 | A-Me 01 sits at the foot of Fungal Rock
+A 4244
+T 4244 | Needs the Mithril Casing. No casing? Skip this and the escort
+A 4245
+C 4245 @ Un'Goro Crater, 46.4, 13.4 | Escort A-Me 01 back to Karna Remtravel. Gorillas attack her on the way: kill them fast, Stoneclaw Totem to hold the extras off
+T 4245 | Karna Remtravel
+T 4284 | J.D. Collie. Still short of a colour? All four grow on the rise between the camp and the Northern Pylon (47-61, 8-20): loot them there and come back before you take the pylons
+A 4285,4287,4288 | J.D. Collie
+A 3883 | Hol'anyee Marshal. She gives you the Scraping Vial
+A 4492 | Spraggle Frock
+
+# ---------- Loop 2: northern pylon, the west, the hive, eastern pylon and Fire Plume Ridge ----------
+C 4285 @ Un'Goro Crater, 56.5, 12.5 | The Northern Crystal Pylon, on the rise just east of the camp. Walking up to it completes the quest. Plain Pterrordax circle this rise: kill the ones you see for Beware of Pterrordax (you finish the 10 at the Gorishi hive later) and loot their Webbed Scales
+T 4285 | Ride back west to J.D. Collie in the cave at the north end of Marshal's Refuge (about a minute) and hand in the Northern Pylon now: it frees the log slot Volcanic Activity needs. Then ride south-west across the crater
+C 4501:2,4145:2 @ Un'Goro Crater, 32.0, 40.0 | West side of the crater: Frenzied Pterrordax and Bloodpetal Trappers. The Frenzied Pterrordax also drop Webbed Pterrordax Scales for Shizzle. King Mosh (level 60 elite devilsaur) and a Devilsaur (elite) patrol this side: keep an eye out and move away when they come. Lightning Shield up, Healing Wave between pulls
+A 974 | Krakle, at the Golakka Hot Springs. Needs level 51
+C 4288 @ Un'Goro Crater, 23.9, 59.2 | The Western Crystal Pylon
+C 3882,4503 @ Un'Goro Crater, 33.0, 72.0 | Dinosaur Bone piles lie on the ground south of the pylon. Elder Diemetradons roam these bone fields: they drop bones and the Webbed Diemetradon Scales, and Frenzied Pterrordax here finish the Pterrordax scales. Stegodons (elite) roam here too, so give them room
+C 3881:2 @ Un'Goro Crater, 38.4, 66.1 | The Research Equipment at the abandoned south-west camp. Stegodons (elite) graze all around it: watch where they walk and slip in between them; do not fight them
+C 3883,4496,4501:1 @ Un'Goro Crater, 49.0, 81.0 | The Gorishi hive in the south. Go in to a hatchery chamber with hanging larvae (48.7, 85.3) and use the Scraping Vial on the wall. Any Gorishi can drop the Scent Gland, and they drop soil too. The wasps and stingers come two or three at a time: Stoneclaw Totem plus Magma Totem, and Healing Wave early. Pterrordax circle the hive: finish the 10 for Beware of Pterrordax here
+C 3761 | You should have 20 Un'Goro Soil by now. Keep collecting until you have about 50
+T 4289 | Ride east to Torwa Pathfinder at the crater entrance
+A 4292 | Torwa Pathfinder. Keep Torwa's Pouch: you fight Lar'korwi (level 56) on your way out of the crater, when you are higher level
+A 4301 | U'cha (level 55) lives in the Fungal Rock cave. You kill him on the way out
+C 4287 @ Un'Goro Crater, 77.2, 50.0 | Ride north from Torwa along the eastern side to the Eastern Crystal Pylon on the ridge. Walking up to it completes the quest
+C 974,4145:3,4502 | Ride west to Fire Plume Ridge, the volcano in the middle of the crater. Right-click Krakle's Thermometer at each hot spot until you find the hottest. Blazerunner (level 56 elite) stands by the lava at the top: stay clear of him. Bloodpetal Flayers grow around its south and east base. Scorching Elementals and Living Blazes (53-55) all round the volcano drop the 9 Un'Goro Ash. Pull them one at a time; Flame Shock and Searing Totem do little to them, so use Earth or Frost Shock and Lightning Bolt
+T 974 | Back west to Krakle
+A 980 | Goes to Donova Snowden in Winterspring next segment
+T 4492 | Ringo, sitting on Fire Plume Ridge
+A 4491
+C 4491 @ Un'Goro Crater, 43.6, 8.5 | Lead Ringo north to Marshal's Refuge. When he faints, use Spraggle's Canteen on him
+T 4491 | Spraggle Frock
+T 4501 | Spraggle Frock
+T 3882 | Spark Nilminer
+T 4503 | Shizzle
+T 3881 | Williden Marshal
+A 3884 @ Un'Goro Crater, 43.9, 7.1 | Did A Mangled Journal drop from an Un'Goro creature? Right-click it now. No journal? Skip this and the next step
+T 3884 | Williden Marshal
+T 3883 | Hol'anyee Marshal
+A 3908 | Linken. Linken's Sword goes to Donova Snowden in Winterspring next segment
+T 4145 | Larion
+A 4147 | Keep it for Ratchet next segment
+T 4287,4288 | J.D. Collie
+A 4321
+T 4321 | Wait a moment while he works
+
+# ---------- Leaving Un'Goro: U'cha, Lar'korwi, Gadgetzan ----------
+L 53 @ Un'Goro Crater, 49.0, 21.0 | Quest XP runs about a level short in this segment. Grind to 53 here, before U'cha (55) and Lar'korwi (56). Closest to the camp: Tar Lords and Tar Lurkers (52-54) in the tar pits just south (42-54, 15-28). On the way to U'cha: the Stompers and Thunderers (51-53) around Fungal Rock. Densest: the west side (Elder Diemetradons, Frenzied Pterrordax, Bloodpetal Trappers, 52-55). Kill oozes you pass for slime samples
+C 4301 | U'cha in the Fungal Rock cave (level 55). Clear the gorillas at the cave mouth first, then pull him out to the cleared entrance. Searing Totem and Strength of Earth Totem down first (only one Earth totem works at a time, so swap to Stoneclaw if a gorilla joins in); keep Flame Shock on him and Healing Wave when you drop below half
+C 4292 @ Un'Goro Crater, 79.9, 49.9 | Ride south along the eastern ridge past the Eastern Pylon to the ledge covered in big bones. Open Torwa's Pouch, put the meat on the flat rock and use the pheromone mixture on it. Lar'korwi (level 56) charges in: have Searing and Stoneclaw Totems down before you use the mixture, and Frost Shock him if you need room to heal
+T 4292 | Torwa Pathfinder at the crater entrance
+T 4301 | Torwa Pathfinder
+H Gadgetzan | Hearthstone, or cast Astral Recall. If both are on cooldown, ride up the trail into Tanaris and north to Gadgetzan
+T 4496 | Alchemist Pestlezugg. Skip Pawn Captures Queen (group fight with the hive queen)
+T 4504 | Tran'rek
+
+# ---------- Thunder Bluff and Orgrimmar ----------
+FLY Thunder Bluff @ Tanaris, 51.6, 25.4 | Bulkrek Ragefist, the Gadgetzan wind rider master
+T 3761 | Ghede, among the dirt piles on Elder Rise
+A 3782 | Arch Druid Hamuul Runetotem
+T 3782 | Bashana Runetotem, also on Elder Rise
+A 3786 | She gives you the Evergreen Pouch. Handing in the Seed Voucher already gave you 20 Packets of Tharlendris Seeds, more than your soil covers, so do not buy any. Use the pouch (1 seed and 2 soil) every 10 minutes from now on; you hand in 10 Morrowgrain on your next Thunder Bluff stop
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Shaman trainers in the Pools of Vision under Spirit Rise, beside Apothecary Zamah: learn your level 52 spells
+FLY Orgrimmar @ Thunder Bluff, 47.0, 49.8 | Tal
+T 4300 | Jes'rimon in the Drag
+A 3504 | Belgrom Rockmaul, Valley of Honor
+S Orgrimmar | Innkeeper Gryshka, Valley of Strength. You hearth back here from Azshara
+FLY Splintertree Post @ Orgrimmar, 45.1, 63.9 | Doras
+
+# ---------- Azshara: Loh'atu and Valormok ----------
+A 5535,5536 | Ride east out of Splintertree on the road into Azshara. The road passes near Forest Song, an Alliance outpost, so give its guards room. Loh'atu camps just inside the Azshara border
+C 5535 | Highborne Apparitions and Lichlings haunt the Shadowsong Shrine, north-east of Loh'atu. The Lichlings cast frost bolts: Earth Shock them
+C 5536 | Haldarr satyrs, tricksters and felsworn in the satyr camp further north-east. Earth Shock the felsworn's casts
+T 5535,5536 | Loh'atu
+F Valormok @ Azshara, 22.0, 49.6 | Follow the road north to Valormok and talk to Kroum
+T 3504 | Ag'tor Bloodfist
+A 3505 @ Azshara, 22.3, 51.5 | Ag'tor Bloodfist
+A 3517 | Jediga
+A 3381 @ Azshara, 28.1, 50.1 | Sanath Lim-yo, at the foot of the cliffs just east of Valormok. New in Forever: he wants 2 Undamaged Hippogryph Feathers before he sends you up to his master, Archmage Xylem. Not offered? Skip the feather steps; when you come back with Jediga's tablet, ask him for Meeting with the Master instead
+
+# ---------- Azshara: blood elves and Magus Rimtori ----------
+A 3601 | Kim'jael, far to the north-east. Follow the road east, then north
+C 3505,3601 @ Azshara, 57.0, 28.5 | The blood elf camp on the bluffs south of Kim'jael. Kill Reclaimers and Surveyors and pick up Kim'jael's Equipment boxes on the ground in the camp. The elves cast: Earth Shock their spells and pull them one at a time
+C 3381 @ Azshara, 54.7, 22.3 | Thunderhead Skystormers on the bluffs around the blood elf camp, and the Stagwings along the road you rode in on (35-48, 31-44), drop Undamaged Hippogryph Feathers; you need 2. Still short later? The Thunderhead Hippogryphs around Valormok (15-21, 49-66) drop them too. Skip if you do not have the quest
+T 3505 @ Azshara, 59.5, 31.3 | Magus Rimtori's camp, a ring of crystals at the east end: read the Kaldorei Tome of Summoning
+A 3506 @ Azshara, 59.5, 31.3 | The Kaldorei Tome of Summoning
+C 3506 @ Azshara, 59.5, 31.4 | Clear the camp, then destroy the Arcane Focusing Crystal next to the tome. Magus Rimtori (level 55) appears; she is a caster. Grounding Totem soaks one of her spells and Earth Shock interrupts the rest. Kill her and loot her head
+T 3601 | Kim'jael
+A 5534
+
+# ---------- Azshara: Ruins of Eldarath ----------
+C 3517,3568,5534 | Ruins of Eldarath, east of Valormok. The four tablets lie among the ruins (35-43, 44-65). Kill Spitelash Sirens and Myrmidons on the east side near the shore (about 45, 50): both drop Some Rune. Use each numbered vial at its matching pool: #1 48.0, 61.0, #2 47.8, 51.4, #3 48.6, 48.5, #4 47.4, 46.2. Naga come in groups: Stoneclaw Totem for the second, Earth Shock the Sirens' casts
+T 5534 | Ride back north-east to Kim'jael
+T 3506 @ Azshara, 22.3, 51.5 | Ag'tor Bloodfist, Valormok
+A 3507 @ Azshara, 22.3, 51.5 | Ag'tor Bloodfist. It is handed in to Belgrom in Orgrimmar
+T 3517 | Jediga
+A 3518,3541,3542 | Jediga. One tablet goes to Thunder Bluff, one to Orgrimmar and one to Andron Gant in the Undercity, where the last segment starts. Skip Andron's follow-up there: its payment goes back to Jediga
+A 3561 | Jediga: the last tablet goes to Archmage Xylem, at the top of the tower behind Sanath's camp. Skip it, and the Xylem steps below, only if Sanath will not send you up
+T 3381 @ Azshara, 28.1, 50.1 | Sanath Lim-yo: give him the feathers, then ask him to send you up (Meeting with the Master). He puts you at the top of Archmage Xylem's tower. No feather quest? Just ask for Meeting with the Master
+T 3561 | Archmage Xylem
+A 3565 | Archmage Xylem
+N Talk to Nyrill at the tower (Return Trip) to be sent back down to Sanath's camp | Skip if you were not up the tower
+T 3565 | Jediga
+
+# ---------- Tablet deliveries: Orgrimmar, Thunder Bluff ----------
+H Orgrimmar | Hearthstone, or cast Astral Recall. If both are on cooldown, fly from Valormok
+T 3541 | Jes'rimon in the Drag
+A 3563 @ Orgrimmar, 55.5, 34.1 | Jes'rimon
+T 3507 | Belgrom Rockmaul, Valley of Honor
+FLY Thunder Bluff @ Orgrimmar, 45.1, 63.9 | Doras
+T 3518 | Magatha Grimtotem on Elder Rise
+A 3562 @ Thunder Bluff, 69.9, 30.9 | Magatha Grimtotem
+T 3786 | Bashana Runetotem. Fewer than 10 Morrowgrain? Keep using the pouch and hand it in on the next segment's Thunder Bluff stop
+TRAIN @ Thunder Bluff, 22.8, 21.1 | Pools of Vision under Spirit Rise: learn your level 54 spells if you are 54. Not 54 yet? Skip it; they wait for the next segment's Thunder Bluff stop
+FLY Valormok @ Thunder Bluff, 47.0, 49.8 | Tal
+T 3562,3563 | Jediga
+L 54 @ Azshara, 42.0, 52.0 | Quest XP runs short. Grind the Spitelash Sirens and Myrmidons in the Ruins of Eldarath before you leave Azshara; this is TUGs' Azshara grind spot. Pull singles at the edges, Earth Shock the Sirens, Healing Wave between pulls
+N Segment done. Next segment flies from Valormok to Splintertree for Felwood | Keep in your log: It's a Secret to Everybody and The New Springs (Winterspring), Marvon's Workshop and Volcanic Activity (Ratchet), Seeping Corruption, ... and a Batch of Ooze, A Sample of Slime... and Delivery to Andron Gant (Undercity), plus Morrowgrain Research if you still need Morrowgrain. Your hearthstone is set to Orgrimmar

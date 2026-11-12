@@ -1,0 +1,117 @@
+@segment 10-14 Gol'Bolar & Loch Modan I
+@start-level 10
+@carry 413
+@done 315,287,291      # Shimmer Stout's and the Kharanos chains' earlier steps
+# Gnome, any class. From the Dwarf route's segment 03: same quests, order, binds and flights, minus
+# the class quests.
+# Removed: Call of Fire 94449 / 94465 / 94466 / 94467 / 94468, and with it the climb to the cave above
+# South Gate Outpost, both climbs to the shrine east of the Valley of Kings, the Reagent Pouch and Fire Tar
+# collecting, and the walk back through the pass at the end.
+# Changed: the segment now ends at the southern guard tower and goes straight to Thelsamar with the
+# Hearthstone (bound there, not used since the bind; the walk up the road is the fallback). The TRAIN
+# stops in Kharanos and Ironforge are generic; the Kharanos one is the first at level 10+, so the note
+# about class quests follows it. Combat hints are class-neutral.
+# Kharanos -> east Dun Morogh (Amberstill Ranch, Earthseer Farsen, Gol'Bolar Quarry, Ironband's Compound,
+# North Gate Outpost, South Gate Outpost) -> South Gate Pass into Loch Modan -> southern tower,
+# Stonesplinter Valley -> Thelsamar (bind) -> gryphon round trip to Ironforge (Honor Students chain,
+# level 12 training) -> north Loch (Stormpike, Silver Stream Mine) -> Thelsamar -> Stonesplinter Valley
+# again (237) -> southern tower -> hearth to Thelsamar.
+# New Forever NPCs placed from the ForeverChanges pins: Earthseer Farsen, Rudra's and Thesten's new quests.
+# Deviations from the plan:
+#  - 86667 Snowbound is LEFT OUT. It is not a plain delivery: its page says the Jar of Snow must be
+#    filled at the South Gate Pass tunnel entrance and then carried to Norric on the north shore, and the
+#    quest is only given in Thelsamar. That is south-then-north after Thelsamar, the opposite of this
+#    segment's order (north Loch first, then the troggs in the south), so it would cost an extra
+#    Thelsamar <-> pass round trip for 420 XP.
+#  - 95212 (leopard pelts) is handed in after the quarry, not before: the map dots put the pelt
+#    leopards east of the quarry (70-78, 50-63), in the trogg area, not between ranch and quarry.
+# Skipped: 96393 Old Ironforge Incursion (Hall of Thanes dungeon), 95217 (12 Copper Bars),
+# 912 (no giver data), 314 Protecting the Herd (elite).
+# Carry-out: 263 (In Defense of the King's Lands, segment 5), 1338 Stormpike's Order
+# (Stormwind, segment 4), 2039 Find Bingles (segment 5).
+
+# --- Kharanos ---
+TRAIN | Kharanos: visit your class trainer (in or right next to the Thunderbrew Distillery) for your level 10 skills. Sell and repair in Kharanos: the next vendors are at the quarry
+N Your class has its own quests at about this level (your trainer offers them). This guide is not class-specific and does not list them: take them and fit them in where they suit you; the logger records what you take.
+A 96408 @ Dun Morogh, 50.4, 49.1 | Beldin Steelgrill, at Steelgrill's Depot just north-east of Kharanos
+
+# --- Amberstill Ranch and Earthseer Farsen ---
+A 95212 @ Dun Morogh, 63.1, 49.7 | Follow the road east to Amberstill Ranch: Rudra Amberstill. The pelts come from the leopards east of the quarry, together with the trogg quests
+T 96408 @ Dun Morogh, 64.8, 58.4 | Earthseer Farsen's campsite is on the hillside south of the ranch, overlooking the Gol'Bolar Quarry from the west
+A 96392 @ Dun Morogh, 64.9, 58.4
+C 96392 @ Dun Morogh, 64.8, 58.4 | Talk to Farsen again and ask for his far sight; watch the vision until the objective ticks
+T 96392 @ Dun Morogh, 64.9, 58.4
+A 96390 @ Dun Morogh, 64.9, 58.4 | Farsen: 10 Dark Iron Spies at Ironband's Compound, east of the quarry
+
+# --- Gol'Bolar Quarry ---
+A 432 | Foreman Stonebrow, at the quarry camp
+A 433 | Senator Mehr Stonehallow, next to him
+A 95214 @ Dun Morogh, 69.1, 54.9 | Quarrymaster Thesten, on the north side of the camp. If he offers nothing, kill troggs until one drops an Empty Powder Keg, right-click it and bring it to him first (a small extra quest)
+C 432 @ Dun Morogh, 70.3, 55.9 | Rockjaw Skullthumpers (8-9) fill the quarry pit right beside the camp: kill 6. Every trogg here can drop Stolen Blasting Powder
+C 433,95214,95212 @ Dun Morogh, 73.6, 55.4 | Work east out of the quarry: kill 10 Rockjaw Bonesnappers (9-10) and keep killing troggs until you have 16 Stolen Blasting Powder. The big snow leopards on the slopes east and south-east of the quarry (70-78, 50-63) drop the 6 Pristine Leopard Pelts. Troggs stand close together: pull one at a time from the edge of a group and back off if a third joins
+C 96390 @ Dun Morogh, 77.5, 60.8 | Ironband's Compound, the walled yard south-east of the quarry: kill 10 Dark Iron Spies (9-10). They are stealthed around the buildings, so walk slowly and let them come to you. They open from stealth: keep your health high and eat or bandage between fights
+A 96391 @ Dun Morogh, 77.5, 60.8 | One of the spies drops a Dark Iron Map: right-click it in your bags to start this quest. No map after 10 spies? Kill a few more
+T 432 | Foreman Stonebrow, back at the quarry camp
+T 433 | Senator Mehr Stonehallow
+T 95214 @ Dun Morogh, 69.1, 54.9 | Quarrymaster Thesten. Sell and repair at the camp
+T 96390 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen, on the hillside west of the quarry
+T 96391 @ Dun Morogh, 64.9, 58.4 | Farsen. Do NOT take his next quest (Old Ironforge Incursion): it is a dungeon
+T 95212 @ Dun Morogh, 63.0, 49.8 | Rudra Amberstill, at Amberstill Ranch north of Farsen's camp
+
+# --- North Gate Outpost ---
+A 419 | Follow the road east and take the left (northern) branch to North Gate Outpost: Pilot Hammerfoot
+T 419 | A Dwarven Corpse lies in the snow west of the outpost, on the slope north of the road
+A 417 | From the corpse
+C 417 @ Dun Morogh, 78.3, 37.8 | Mangeclaw (level 11 bear) prowls right next to the corpse. He is a level above you and hits hard: fight him alone at full health. Loot the Mangy Claw
+T 417 | Pilot Hammerfoot, back at North Gate Outpost
+
+# --- South Gate Outpost ---
+T 413 | Back to the fork and east to South Gate Outpost: Mountaineer Barleybrew
+A 414 | Keep it: Mountaineer Kadrell is in Thelsamar
+
+# --- Loch Modan: Valley of Kings ---
+A 224 | Go through the South Gate Pass tunnels into Loch Modan. Mountaineer Cobbleflint is at the guard tower in the Valley of Kings, just past the last tunnel
+A 267 | Captain Rugelfuss, inside the tower
+C 224 @ Loch Modan, 30.8, 68.2 | Stonesplinter Valley, the trogg hills east and south-east of the tower: kill 10 Stonesplinter Troggs and 10 Stonesplinter Scouts (11-12). Every trogg can drop a Trogg Stone Tooth
+C 267 @ Loch Modan, 30.8, 70.0 | Finish 8 Trogg Stone Teeth on any troggs on the way back north-west to the tower
+T 224 | Mountaineer Cobbleflint, at the southern guard tower
+T 267 | Captain Rugelfuss
+A 237 | Mountaineer Gravelgaw, a little south of the tower. You do this one at the end of the segment
+
+# --- Thelsamar ---
+T 414 | Follow the road north-east to Thelsamar: Mountaineer Kadrell patrols the main street
+A 416,1339 | Kadrell gives both
+A 418 | Vidra Hearthstove, in the inn (Stoutlager Inn)
+S Thelsamar | Make the inn your home: talk to Innkeeper Hearthstove
+A 6387 | Brock Stoneseeker, in the house at the east end of town (dwarves and gnomes only)
+N Grenhild Darktalon in Thelsamar offers Snowbound (a jar of snow from the South Gate Pass to the north shore). Skip it: it does not fit this loop
+T 6387 | Thorgrum Borrelson, the gryphon master on the south side of town
+A 6391
+F Thelsamar | Thorgrum Borrelson
+FLY Ironforge
+
+# --- Ironforge ---
+T 6391 @ Ironforge, 51.5, 26.3 | Golnir Bouldertoe, at the Great Forge, north of where you land
+A 6388 @ Ironforge, 51.5, 26.3
+TRAIN | Ironforge: visit your class trainer for your level 12 skills. Warriors and hunters: Military Ward (south-east, about 66-71, 83-90). Rogues and warlocks: Forlorn Cavern (north, about 50-53, 6-15). Mages and priests: Mystic Ward (north-west, about 24-27, 6-10). Sell, repair and buy food and water in the city
+A 2039 @ Ironforge, 69.2, 50.6 | Gnoarn, in Tinker Town on the east side (needs level 12). Keep it: Bingles is on the east shore of the Loch, a later segment. Not 12 yet? Skip it for now: you are back in Ironforge at the start of the next segment
+T 6388 @ Ironforge, 55.5, 47.7 | Gryth Thurden, the gryphon master
+A 6392 @ Ironforge, 55.5, 47.7
+FLY Thelsamar
+T 6392 | Brock Stoneseeker, at the east end of Thelsamar
+
+# --- North Loch Modan ---
+C 418 @ Loch Modan, 31.5, 39.0 | On the way north kill Elder Black Bears (Bear Meat), Mountain Boars (Boar Intestines) and Forest Lurkers (Spider Ichor) beside the road: 3 of each item
+T 1339 | Mountaineer Stormpike, at the top of the northern guard tower (Algaz Station), in the north-west corner of the zone
+A 307,1338 | Stormpike gives both. Keep Stormpike's Order: it goes to Stormwind next segment
+C 307,416 @ Loch Modan, 35.5, 24.3 | Silver Stream Mine, the kobold cave east of the tower. Open 4 Miners' League Crates inside for the Miners' Gear and cut 12 Tunnel Rat Ears from any kobold (they also stand outside the mine). Tunnel Rat Geomancers (12-13, deeper in) cast fire: kill them first and interrupt or stun their casts if your class can. Kobolds run at low health: finish them fast or slow them if you can, they bring friends
+T 307 | Back west to Mountaineer Stormpike
+C 418 @ Loch Modan, 33.0, 31.5 | Finish the sausage meats on the walk back south to Thelsamar
+T 416 | Mountaineer Kadrell, in Thelsamar
+T 418 | Vidra Hearthstove, in the inn. Sell and repair before you leave
+
+# --- Stonesplinter Valley again ---
+C 237 @ Loch Modan, 33.0, 76.0 | Follow the road south-west from Thelsamar back to the Valley of Kings. Kill 10 Stonesplinter Skullthumpers and 10 Stonesplinter Seers (13-14) in the trogg hills east and south-east of the southern tower (most Seers stand toward the south end). They may be a level or two above you: pull one at a time, kill Seers first and interrupt or stun their casts if your class can, eat or bandage between pulls, and back off if a second one joins
+T 237 | Mountaineer Gravelgaw, a little south of the southern guard tower
+A 263 | Mountaineer Wallbang, at the tower. Keep it: the Stonesplinter Shamans and Bonesnappers it asks for are level 15-16, for your next Loch Modan visit
+H Thelsamar | Hearthstone to Thelsamar (on cooldown? Walk the road north-east, it is not far). The next segment starts with the gryphon from Thelsamar to Ironforge

@@ -1,0 +1,18 @@
+# ALLIANCE. Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for
+# Forever); givers = foreverchanges.pro/dungeon-quests and quest pages; entrance and prerequisites = Questie.
+@dungeon Blackfathom Deeps
+@levels 24-32
+@window 23-31
+@best 26
+@hub Ashenvale, 34.4, 48.0, 8
+@hub Darkshore, 37.0, 44.0, 8
+@entrance Ashenvale, 14.5, 14.2
+A 971 @ Ironforge, 50.8, 5.6 | Gerrig Bonegrip in the Forlorn Cavern. The Lorgalis Manuscript is under water in the first big pool inside.
+A 1199 @ Darnassus, 55.2, 24.0 | Argent Guard Manados. 10 Twilight Pendants from the Twilight's Hammer inside.
+A 1198 @ Darnassus, 55.4, 25.0 | Dawnwatcher Shaedlass. Find Argent Guard Thaelrid inside the dungeon.
+A 1275 @ Darkshore, 38.3, 43.0 | Gershala Nightwhisper in Auberdine. 8 Corrupted Brain Stems from the naga and satyrs in and before the dungeon.
+RUN | The entrance is on the north-west coast of Ashenvale, north of the Zoram Strand: go down through the ruins and the tunnels to the portal. Inside: Argent Guard Thaelrid ends In Search of Thaelrid and gives Blackfathom Villainy (the head of Twilight Lord Kelris, for Dawnwatcher Selgorm in Darnassus).
+T 1275 @ Darkshore, 38.3, 43.0
+T 1199 @ Darnassus, 55.2, 24.0
+T 1200 @ Darnassus, 56.2, 24.4 | Blackfathom Villainy: Dawnwatcher Selgorm.
+T 971 @ Ironforge, 50.8, 5.6

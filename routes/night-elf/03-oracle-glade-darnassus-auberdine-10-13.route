@@ -1,0 +1,148 @@
+@segment 10-13 Oracle Glade, Darnassus & Auberdine
+@start-level 10
+@carry 922,98391,99046,490,7383,930
+@done 918,933,483,932,2459,476,488
+# Night Elf, any class. New file (not derived from another route).
+# The rest of Teldrassil, Darnassus, and a first short visit to Darkshore:
+#  Dolanaar -> west along the road (Shayla's bounty) -> Oracle Glade (wounded sentinel, moonwell, harpies and
+#  their three leaders, Mist, the frond) -> Hearthstone to Dolanaar (Byancie, Corithras, Denalan at the lake)
+#  -> on foot to Darnassus (Arch Druid, Rellian, Temple of the Moon, the owls) -> out of the gate to the
+#  Wellspring (tumors, Lady Sathrah, the salve for the sentinel) -> Darnassus again (hand in, train) -> the
+#  portal to Rut'theran Village (flight path) -> hippogryph to Auberdine (flight path) -> one short loop on
+#  the beach south of Auberdine -> a hippogryph round trip to Rut'theran for Return to Nessa -> Auberdine,
+#  ready for the boat.
+# Order reference: TUGs' Teldrassil and Darkshore files (all text is written new, no deliberate deaths).
+# Class-neutral: the class quests at level 10 are not listed, one note says so. TRAIN steps list the class
+# trainers the data has in Dolanaar and Darnassus.
+# Darkshore: only quests that no later segment uses (segment 9 comes back at level 24 for 97894, 729, 945,
+# 965-967, 5321 and the Ashenvale chains 970 / 973), and only as many as it takes to leave at level 13: the
+# Nessa chain 6342 / 6343 (Night Elves only) and the beach loop 983, 3524, 4681, 984. Loch Modan and east
+# Dun Morogh in segment 4 are worth about a level and a half, so more is not needed.
+# Positions from the baked Questie data: Sentinel Eralya Leafshadow 37.5, 36.8; Hatescreech 35.0, 39.3;
+# Windmistress Gaedress 33.2, 36.1; Witchmother Arysa 34.2, 27.9; Lady Sathrah 39.4-48.6, 24.4-26.6; the owl
+# spots from the ForeverChanges map dots of 98067 (33.8, 16.0 / 41.0, 43.5 / 66.6, 15.5); Nessa Shadowsong and
+# Vesprystus in Rut'theran Village; the Darkshore givers and objects.
+# Unverified in Forever (Classic knowledge): the pink portal from Darnassus to Rut'theran Village and where it
+# stands (about Darnassus 30, 41); that a Night Elf can fly Rut'theran -> Auberdine at once (the quest Flight
+# to Auberdine says so; the boat from the Rut'theran dock is the fallback); where the "City Gate" owl goes
+# (no map dot: the arrow is a guess); where the Dewy Lasher Fronds drop (the quest text says Lake Al'Ameth
+# or the Wellspring, the ForeverChanges dots lie in the harpy hills west of the Oracle Glade); the vendors
+# for the Empty Vial and the Refreshing Spring Water.
+# Hearthstone: still bound in Dolanaar; used once, from the Oracle Glade. It stays bound in Dolanaar: do not
+# use it after you leave Teldrassil.
+# Skipped on purpose: 952 Grove of the Ancients (a level 17 delivery to the far south of Darkshore), 2498 ->
+# 2499 Oakenscowl (elite), 927 / 941 The Moss-twined Heart (random drop from a rare), 486 Ursal the Mauler,
+# 98403 (elite), the class quests; in Darkshore everything not listed above. Free for a player who wants
+# more (no later segment uses them): 1001 Buzzbox 411, 954-957 Bashal'Aran, 2118 Plagued Lands, 4811 The Red
+# Crystal, 4722 / 4723 and the other beached creatures, 953 / 958 / 963 / 98025 at Ameth'Aran (level 12-16
+# ghosts). Not free: 965 and 729 (segment 9 takes them).
+# Carry-out: nothing. Everything taken in segments 1-3 is handed in or left out.
+
+# --- Dolanaar: before you leave ---
+N At level 10 your class trainer has a quest for you | Most classes get a class quest at level 10 and it is worth doing. This guide is not class-specific and does not list it: take it from your trainer (Dolanaar or Darnassus) and fit it in where it suits you; the logger records what you take
+
+# --- West along the road to the Oracle Glade ---
+T 490 @ Teldrassil, 40.5, 50.7 | Sentinel Shayla Nightbreeze, on the road where it climbs toward Darnassus. Short of fangs? The furbolgs on the road east of her drop them
+T 99046 @ Teldrassil, 37.5, 36.8 | At Shayla's junction take the road north, along the Wellspring River. Sentinel Eralya Leafshadow lies beside the road just before the Oracle Glade
+A 99047 @ Teldrassil, 37.5, 36.8 | Eralya. Keep it: Byancie is in Dolanaar
+A 937 | Sentinel Arynia Cloudsbreak, at the moonwell in the Oracle Glade
+C 7383 @ Teldrassil, 38.4, 34.1 | Use the Amethyst Phial at the Oracle Glade moonwell, right beside Arynia
+C 937 @ Teldrassil, 36.0, 38.5 | Bloodfeather Harpies, Rogues and Sorceresses (8-9) fill the hills south-west of the glade: 6 Bloodfeather Belts. They come in pairs: pull with a ranged attack if you have one and fight on the edge of the camp
+T 937 | Sentinel Arynia Cloudsbreak
+A 98392 @ Teldrassil, 38.3, 34.4 | Arynia: the amulets of the three harpy leaders
+C 98392:1 @ Teldrassil, 35.0, 39.3 | Hatescreech (level 10), in the southern harpy camp where you just were
+C 98392:2 @ Teldrassil, 33.2, 36.1 | Windmistress Gaedress (level 10), on the west side of the hills
+A 931 @ Teldrassil, 34.6, 28.8 | Go north into the upper harpy camp (Furies, Wind Witches and Matriarchs, 9-11): the Strange Fronded Plant grows there. Click it and take the frond
+C 98392:3 @ Teldrassil, 34.2, 27.9 | Witchmother Arysa (level 12) stands a few steps from the plant. Clear the harpies around her, then fight her alone at full health. Too strong today? Leave her: you are back within a minute's walk of here on the Wellspring trip, at a higher level
+A 938 | Mist, a white nightsaber at the far west edge of the harpy camp (needs level 7)
+C 938 @ Teldrassil, 38.3, 34.4 | Mist follows you: walk her back east to Sentinel Arynia at the moonwell. Go around the harpies; she fights with you
+T 938 | Sentinel Arynia Cloudsbreak
+T 98392 @ Teldrassil, 38.3, 34.4 | Arynia
+A 98398 @ Teldrassil, 38.3, 34.4 | Arynia
+T 98398 @ Teldrassil, 37.0, 34.0 | The Oracle Tree Bark, on the trunk of the big tree a few steps west of the moonwell
+A 940 @ Teldrassil, 37.0, 34.0 | From the bark
+H Dolanaar | Hearthstone back to the inn (not used since you bound it). On cooldown? Walk: south to the junction, then east along the road, about eight minutes
+
+# --- Dolanaar and Lake Al'Ameth ---
+T 99047 @ Teldrassil, 55.3, 56.8 | Byancie, the first aid trainer in the building on the north-west side of the village
+A 99050 @ Teldrassil, 55.3, 56.8 | Byancie. Buy the two shop items now: an Empty Vial from Narret Shadowgrove (trade supplies, same building, 55.3, 57.2) and a Refreshing Spring Water from Innkeeper Keldamyr. Vendors not checked in Forever: any trade and drink vendor will do
+T 7383 | Corithras Moonrage, at the moonwell
+A 935 | Corithras. The filled vessel goes to the Arch Druid in Darnassus
+TRAIN | Dolanaar: your class trainer for your level 10 skills. Druids: Kal (56.0, 61.6), hunters: Dazalar (56.7, 59.5), warriors: Kyra Windblade (56.2, 59.2), rogues: Jannok Breezesong (56.4, 60.1), priests: Laurna Morninglight (55.6, 56.8). Sell and repair
+C 99050 @ Teldrassil, 58.5, 67.5 | 6 Dewy Lasher Fronds from the lashers (Lasher Sproutlings, level 6-7) around Lake Al'Ameth, straight south of Dolanaar. If there are none at the lake, they also grow at the Wellspring north of the Darnassus road: take the quest along and finish it there
+T 930 | Denalan, at his small camp by the lake: the glowing fruit
+T 931 | Denalan: the frond. He plants it beside him
+A 2399 | The Sprouted Frond, in the planter next to Denalan
+T 2399 | Click the frond again
+T 99050 @ Teldrassil, 55.3, 56.8 | Back north to Byancie in Dolanaar
+A 99073 @ Teldrassil, 55.3, 56.8 | Byancie: the salve for Eralya. You pass her on the Wellspring trip
+
+# --- Darnassus, first visit ---
+N Walk the road west to Darnassus @ Teldrassil, 38.5, 53.5 | About six minutes: past Ban'ethil Hollow and Shayla's junction, up the hill and through the gate. You do not come back to Dolanaar
+A 6344 | Mydrannul, a vendor standing just inside the city on the Warrior's Terrace (Night Elves only, needs level 10)
+T 935 | Arch Druid Fandral Staghelm, at the top of the great tree in the Cenarion Enclave, in the north-west corner of the city: cross the city and climb the ramp inside the tree
+A 98046 @ Darnassus, 34.8, 9.3 | Fandral: the drained vessel
+T 940 | Fandral: the Oracle Tree's report. He offers Grove of the Ancients: do NOT take it, it is a long delivery to the south of Darkshore for a much later level
+T 922 | Rellian Greenspyre, beside a tree just south of the Cenarion Enclave
+A 923 | Rellian: tumors from the timberlings at the Wellspring
+T 98391 @ Darnassus, 28.9, 45.8 | Sister Aquinne, on the west side of the city, west of the bank
+A 2519 | Sister Aquinne
+T 98046 @ Darnassus, 40.4, 88.7 | Go south into the Temple of the Moon: Lariia, on the ground floor at the back
+A 98065 @ Darnassus, 40.4, 88.7 | Lariia
+T 98065 @ Darnassus, 39.1, 81.6 | Tyrande Whisperwind, on the balcony of the temple: take the ramp up
+A 98067 @ Darnassus, 39.7, 89.5 | Sentinel Dalia Sunblade, on the ground floor of the temple: four owls to place around the city
+T 2519 | Priestess A'moora, on the west side of the temple's ground floor
+A 2518 | A'moora
+C 98067:2 @ Darnassus, 41.0, 43.5 | The Darnassus Bank, the tree in the middle of the city: place an owl at the marked spot in front of it (use the item from your bags if nothing happens when you stand there)
+C 98067:4 @ Darnassus, 84.0, 37.0 | The City Gate, where you came in from Teldrassil: place the owl there on your way out. The arrow is a guess: look for the marked spot at the gate
+
+# --- The Wellspring ---
+C 923 @ Teldrassil, 43.0, 33.5 | Go down the hill to Shayla's junction and north again, then leave the road east to the Wellspring River. Timberling Mire Beasts (9-10) along the river and Elder Timberlings (10-11) at the lake to the north drop the 5 Mossy Tumors. Lashers here drop Dewy Lasher Fronds, if you still need them
+C 2518 @ Teldrassil, 43.3, 25.4 | Lady Sathrah (level 12), a big grey spider, walks the north shore of Wellspring Lake among Giant Webwood Spiders (10-11). Kill the spiders near her first and fight her alone, at full health. Loot the Silvery Spinnerets
+T 99073 @ Teldrassil, 37.5, 36.8 | West to the Oracle Glade road: Sentinel Eralya Leafshadow. If you left Witchmother Arysa earlier, she is two minutes north-west of here: finish Arynia's quests now (the report then goes to Fandral on this Darnassus visit)
+
+# --- Darnassus, second visit ---
+N Walk the road back south and up into Darnassus @ Darnassus, 84.0, 37.0
+C 98067:3 @ Darnassus, 66.6, 15.5 | The inn on the Craftsmen's Terrace, in the north-east of the city: place the owl in front of it
+C 98067:1 @ Darnassus, 33.8, 16.0 | The tunnels under the Cenarion Enclave, in the north-west: place the owl at their entrance
+T 923 | Rellian Greenspyre, just south of the enclave. Do NOT take Return to Denalan: it leads to an elite at the other end of the island
+T 98067 @ Darnassus, 39.7, 89.5 | Sentinel Dalia Sunblade, in the Temple of the Moon
+T 2518 | Priestess A'moora, in the temple
+A 2520 | A'moora
+C 2520 @ Darnassus, 38.5, 85.5 | Place the Silvery Spinnerets at the fountain in the middle of the temple: stand at the edge of the water and use them from your bags
+T 2520 | Priestess A'moora
+TRAIN | Darnassus: your class trainer for your level 12 skills; it is the last trainer before Ironforge. Priests: in the Temple of the Moon (Jandria 37.9, 82.7; Astarii Starseeker 38.3, 81.0). Warriors: Warrior's Terrace (Arias'ta Bladesinger 58.7, 34.9; Sildanair 61.8, 42.2). Druids: Cenarion Enclave (Mathrengyl Bearwalker 35.4, 8.4; Denatharion 34.8, 7.4). Hunters: Cenarion Enclave (Jocaste 40.4, 8.6; Dorion 42.2, 7.3). Rogues: Cenarion Enclave (Syurna 37.0, 21.9; Anishar 37.9, 20.9). Sell, repair, buy food and water
+
+# --- Rut'theran Village ---
+N Walk through the pink portal to Rut'theran Village @ Darnassus, 30.0, 41.5 | The portal stands on the west side of the city, west of the bank. Classic knowledge, not checked in Forever
+T 6344 | Nessa Shadowsong, at the fish stall in Rut'theran Village
+A 6341 @ Teldrassil, 56.3, 92.4 | Nessa
+T 6341 @ Teldrassil, 58.4, 94.0 | Vesprystus, the hippogryph master by the dock
+A 6342 @ Teldrassil, 58.4, 94.0 | Vesprystus
+F Rut'theran Village @ Teldrassil, 58.4, 94.0 | Vesprystus: talk to him. A Night Elf may know this flight path from the start: then just tick the step
+FLY Auberdine | From Vesprystus. Night Elves should know Auberdine from the start (Classic knowledge, not checked in Forever). If he offers no flight, take the boat from the dock next to him: it goes to Auberdine
+
+# --- Auberdine ---
+F Auberdine @ Darkshore, 36.3, 45.6 | Caylais Moonfeather, where you land (if you came by boat: at the foot of the dock)
+T 6342 | Laird, the fish vendor a few steps from the hippogryph master
+A 6343 | Laird. Keep it for the end of this segment
+A 3524 | Gwennyth Bly'Leggonde, standing near the hippogryph master (needs level 11)
+A 983 | Wizbang Cranktoggle, upstairs in the inn
+A 984 | Terenthis, in the building on the east side of the village
+N Take nothing else in Auberdine | The route comes back to Darkshore at level 24 for some of these quests, and the rest are level 12-16 work that you do not need: Loch Modan gives you level 14
+
+# --- The beach south of Auberdine ---
+C 983 @ Darkshore, 36.5, 48.5 | The beach south of the dock: Young Reef Crawlers (10-11) drop the 6 Crawler Legs. Leave the Tide Crawlers (13-14) alone
+C 3524 @ Darkshore, 36.4, 50.9 | The Beached Sea Creature, a huge skeleton on the beach a little further south: click it for the Sea Creature Bones
+C 984 @ Darkshore, 39.2, 52.4 | Go on south-east, inland, until you see the furbolg camp (Blackwood Pathfinders and Windtalkers, 12-14). You only have to find it: walk up to its northern edge until the objective ticks, then turn back. Do not fight in the camp
+T 983 | Back north along the beach: Buzzbox 827, the machine on the shore just south of the dock. Put the legs in. It offers the next box (Thresher Eyes): leave it
+T 3524 | Gwennyth Bly'Leggonde
+A 4681 | Gwennyth
+C 4681 @ Darkshore, 31.8, 46.3 | The Skeletal Sea Turtle lies on the sea floor straight west of the dock: swim out, dive and click it. Darkshore Threshers (12-14) swim there: go around them, or fight one near the surface if it comes for you
+T 4681 | Gwennyth Bly'Leggonde. Her next bones are scattered along the whole coast: leave them
+T 984 | Terenthis. Do NOT take his follow-ups
+
+# --- Return to Nessa ---
+FLY Rut'theran Village | Caylais Moonfeather. A short round trip for a quest worth a good piece of a level
+T 6343 | Nessa Shadowsong, at the fish stall
+FLY Auberdine | Vesprystus. Sell, repair and buy food in Auberdine: the next segment starts on the dock

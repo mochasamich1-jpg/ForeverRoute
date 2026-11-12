@@ -1,0 +1,86 @@
+@segment 1-6 Northshire Valley
+@start-level 1
+# Human, any class. From the Human Warlock route's segment 01: same quests, same order, same hearth, minus the class
+# quests. Changed:
+#  - Out: 3105 Tainted Letter and 1598 The Stolen Tome (warlock; the Human Mage file has 3104 Glyphic Letter in
+#    their place). One N step at Marshal McBride says that the class letter and what follows are the player's own.
+#    The vineyard trips stay: Brotherhood of Thieves and Milly's Harvest go there anyway.
+#  - TRAIN steps are generic and list the seven class trainers at the abbey with their positions (Elwynn Forest
+#    coordinates from research/json/baked_npcs.json; the hunter trainer Tordrin Sternblade is new in Forever).
+#  - Combat hints work for every class; no pet, no spell names.
+# Northshire Abbey is the hub in the middle: wolves and kobold vermin north and west of it,
+# the vineyard (Defias) south-east across the river, Echo Ridge Mine in the north.
+# Order follows TUGs' Northshire file in our own words, with one change: Skirmish at Echo Ridge and The Big
+# Picture are done in ONE trip into the mine (TUGs goes in twice).
+# New Forever quests (the stolen-books chain 91741 -> 91743 -> 91745 -> 91752 -> 91758 -> 91772, Book
+# Inventory 92124, the camping lead-in 96627) are placed from the ForeverChanges pages.
+# The Big Picture 91752 is flagged ELITE on its page ("find a friend"). TUGs does it solo without comment and the
+# rest of the books chain hangs on it, so it is in the route with a warning and a way out.
+# Left out: 5805 Welcome! (Collector's Edition voucher only).
+# Hearthstone: bound in Northshire, used once (back from the vineyard).
+# Carry-out: 54 Report to Goldshire, 91772 Shhh! We're Hunting Kobolds, 96627 The Adventurer, 2158 Rest and
+# Relaxation (all handed in at Goldshire, next segment).
+
+# --- First steps at the abbey ---
+A 783 | Deputy Willem stands in front of you, outside Northshire Abbey
+T 783 | Marshal McBride, just inside the abbey door
+A 7 | Marshal McBride
+A 5261 | Deputy Willem, back outside
+T 5261 | Eagan Peltskinner, round the left (west) side of the abbey
+A 33 | Eagan Peltskinner
+C 33 | Young Wolves (level 1) run on the grass west and south-west of the abbey, Timber Wolves (2) north of it: collect 8 Tough Wolf Meat. One wolf at a time; start each fight from as far away as your class can
+C 7 | Kobold Vermin (1-2) camp just north of the abbey: kill 10
+A 91741 @ Elwynn Forest, 49.2, 36.3 | One of the vermin drops a Nibbled-On Book. Right-click it in your bags to start the quest. No book after the ten kills? Kill a few more until it drops
+T 33 | Eagan Peltskinner
+T 7 | Marshal McBride, inside the abbey
+A 15 | Marshal McBride
+N Marshal McBride also has a letter for your class: a level 1 quest that sends you to your class trainer at the abbey | Your class has its own quests, and this letter is the first. This guide is not class-specific and does not list them: take them from Marshal McBride and your trainer and fit them in where they suit you (the first ones stay in this valley); the logger records what you take
+T 91741 | Brother Paxton, in the abbey's library
+A 92124 | Brother Paxton
+T 92124 | Daniel, his assistant, a few steps away. He talks about professions: none are needed for this route
+A 91743 | Brother Paxton. The Stolen Books drop from every kobold in the valley: you fill this over the next kobold quests
+TRAIN | Northshire Abbey: visit your class trainer and learn everything offered. Khelden Bremen (mage, 49.7, 39.4), Priestess Anetta (priest, 49.8, 39.5) and Jorik Kerridan (rogue, 50.3, 39.9) inside the abbey; Llane Beshere (warrior, 50.2, 42.3) and Brother Sammuel (paladin, 50.4, 42.1) in its front part; Drusilla La Salle (warlock, 49.9, 42.7) outside beside the graveyard; Tordrin Sternblade (hunter, 51.2, 40.8) by the stable behind the abbey. Come back at levels 4 and 6
+
+# --- The vineyard, first trip ---
+A 18 | Deputy Willem, outside the abbey (needs level 2)
+C 18 | Northshire Vineyards, south-east across the stone bridge: Defias Thugs (3-4) stand between the vine rows. Collect 12 Red Burlap Bandanas. They are close together: pull the one at the edge, and eat and drink between fights
+T 18 | Deputy Willem
+A 6 | Deputy Willem. Garrick comes on your second trip to the vineyard
+A 3903 | Deputy Willem
+T 3903 | Milly Osworth, beside the barn on the east side of the abbey
+A 3904 | Milly Osworth
+TRAIN | Northshire Abbey: your class trainer again for the level 4 skills (same places as before). Buy food and water from a vendor at the abbey. Not 4 yet? Come back after the next kobolds
+
+# --- Echo Ridge, outside the mine ---
+C 15,91743 | Kobold Workers (3) stand around the entrance of Echo Ridge Mine, north of the abbey: kill 10 and loot every kobold for Stolen Books. Stay outside the mine for now
+T 15 | Marshal McBride
+A 21 | Marshal McBride. You do it together with the next books quest
+TRAIN | Northshire Abbey: level 4 skills from your class trainer if you did not have them yet
+
+# --- The vineyard, second trip ---
+C 3904 | Back over the bridge to the vineyard: pick up 8 crates of Milly's Harvest (the grape buckets between the vine rows)
+C 6 | Garrick Padfoot (level 5) stands at the shack on the east edge of the vineyard with two Thugs beside him. Kill the Thugs one at a time first if you can pull them alone; then Garrick from full health, with everything your class has. Step back out of the vineyard and eat if another Thug joins in. Loot his head
+H Northshire Valley | Your hearthstone is bound at the abbey. On cooldown? It is a one-minute walk
+T 3904 | Milly Osworth
+A 3905 | Milly Osworth
+T 6 | Deputy Willem
+T 3905 | Brother Neals, in the abbey's side room with the wine casks (follow the arrow)
+
+# --- Echo Ridge Mine ---
+C 91743 @ Elwynn Forest, 48.9, 34.6 | Still short of 8 Stolen Books? Kill kobolds on the way north until you have them
+T 91743 | Brother Paxton, in the library. Take any of the three books: no profession is needed for this route (Skinning gives a little money if you want one)
+A 91745 | Brother Paxton
+T 91745 | Kelsey Fargo, outside the entrance of Echo Ridge Mine
+A 91752 | Kelsey Fargo. Marked as a group quest, but one kobold at a time it is done alone
+C 21 | Inside the mine: kill 12 Kobold Laborers (3-4). They stand in twos: pull one from range if your class can and back up into the tunnel you already cleared, then kill them one at a time. Eat between pulls
+C 91752 @ Elwynn Forest, 49.1, 28.3 | Shinyfinder Narf is at the very back of the mine. Clear every kobold near him first, eat and drink to full, then fight him alone with everything your class has. Loot the Sack of "Picture" Books. If he is too strong after two tries, press Skip on this step and the next four books steps; the rest of the route does not need them
+T 21 | Marshal McBride, in the abbey
+A 54 | Marshal McBride: your papers for Goldshire
+T 91752 | Marshal McBride
+A 91758 | Marshal McBride
+A 96627 | Marshal McBride (needs level 4): the camping quest line. Sam Sarsaparilla is just before Goldshire
+T 91758 | Tordrin Sternblade, by the stable behind the abbey
+A 91772 | Tordrin Sternblade. He gives you a Kobold Tracking Kit
+TRAIN | Northshire Abbey: level 6 skills from your class trainer if you are 6 already. Otherwise you train in Goldshire. Sell and repair at the wagons in front of the abbey, and buy food and drink
+A 2158 | Leave the valley by the road south through the gate. Falkhaan Isenstrider stands beside the road just outside the wall
+C 91772 @ Elwynn Forest, 47.8, 45.6 | Follow the kobold tracks south toward Goldshire: there are six sets, beside the road between the Northshire gate and Goldshire (the arrow leads to the first). Use the Kobold Tracking Kit from your bags at each one until 6/6. The next segment starts where the last track ends, just north of Goldshire

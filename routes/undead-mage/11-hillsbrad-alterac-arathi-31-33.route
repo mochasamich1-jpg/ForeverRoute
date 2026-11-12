@@ -1,0 +1,104 @@
+@segment 31-33 Hillsbrad III, Alterac & Arathi (replaces City of Dalaran)
+@start-level 31
+# Not carried in: 1184 (segment 10 hands it in at Orgrimmar), 187/192/195 and 570 (segment 13 takes them in
+# Stranglethorn), 638 Trollbane (needs 32; not part of this route).
+# Carry-out: 1361 (segment 12). 701/678 stay with Tor'gan and Drum Fel, 507 with Krusk; 1164 is handed in here.
+@carry 1182,1112,1106,513,577,582,213
+@done 498,509
+
+# ---------- Booty Bay -> Undercity ----------
+N Teleport: Undercity (or fly from Booty Bay to Grom'gol and take the zeppelin to Undercity if you don't have it) | You start in Booty Bay. Keep a few Runes of Teleportation in your bags. Nothing new to train at 31.
+T 513 | Master Apothecary Faranell in the Apothecarium
+A 515 @ Undercity, 48.8, 69.3 | Master Apothecary Faranell. Skip the follow-up 517 later: it is elite.
+N Open Elixir of Agony (515) in your quest log and buy the exact troll's blood potion it lists at the Auction House | Forever's quest page lists a Lesser Troll's Blood Elixir, while the old quest text says Strong Troll's Blood Potion: buy whichever your log shows. If none is for sale, skip the two Hillsbrad coast steps later and abandon 515.
+A 1164 | Genavie Callow, near the west elevator by the bat handler. The Dabyrie heads come from Arathi; you hand them in on a quick Undercity stop near the end of this segment.
+FLY Tarren Mill | Bat handler Michael Garrett, next to the west elevator
+
+# ---------- Tarren Mill ----------
+S Tarren Mill | Bind at the Tarren Mill inn. You hearth back here after the coast run.
+A 556 | Keeper Bel'varil
+A 544 | Magus Wordeen Voidglare
+A 93680 @ Hillsbrad Foothills, 61.6, 20.9 | Magus Wordeen Voidglare (new in Forever). Ignore his later Blood in the Streets: it leads into the City of Dalaran instance.
+A 552 | Novice Thaivand
+A 533 | Krusk. Leave his Regthar Deathgate for your last visit here. Tallow's Hammer May Fall also waits until you come back from the coast.
+
+# ---------- Alterac, first loop ----------
+C 533 @ Alterac Mountains, 58.3, 68.0 | The Syndicate camp just north of Tarren Mill. Kill Syndicate Footpads and Thieves until a Syndicate Missive drops. Skip Henchman Valik: his quest needs Southshore Stout from the Alliance town. If a Singed Note drops, keep it in your bags: it starts Strahnbrad Mystery, which you do at the end of this segment.
+C 552 @ Hillsbrad Foothills, 44.5, 30.0 | Head south-west to the yeti cave in the hills west of Tarren Mill. Kill Cave and Ferocious Yetis until Helcular's Rod drops.
+C 544,556,93680 @ Alterac Mountains, 19.5, 84.5 | Go west to the Lordamere Internment Camp, south of the Dalaran dome. Kill Ricter, Alina, Dermot and Kegan Darkmar for the four Bloodstone pieces. Every Dalaran mob here drops Worn Stone Tokens. Search the camp for the Grimy Key (new quest, no map data yet). Polymorph the extra casters.
+T 533 | Krusk. He offers Gol'dir (503) next: leave it until you come back from Arathi, when you do Strahnbrad.
+T 544 | Magus Wordeen Voidglare
+A 545 | Magus Wordeen Voidglare
+T 93680 @ Hillsbrad Foothills, 61.6, 20.9 | Magus Wordeen Voidglare. If the key is still missing, keep looking on the next loop.
+T 556 | Keeper Bel'varil
+A 557 | Keeper Bel'varil
+T 552 | Novice Thaivand
+A 553 | Novice Thaivand
+
+# ---------- Alterac, second loop and the Hillsbrad coast ----------
+C 553:1,553:2 @ Hillsbrad Foothills, 44.0, 27.4 | Back in the same yeti cave: with the rod in your bags, click the Flame of Azel and the Flame of Veraz deeper inside
+C 553:3 @ Alterac Mountains, 37.5, 66.2 | Go north to the yeti cave in Alterac and click the Flame of Uzel. Giant Yetis guard it.
+C 557,545:2 @ Alterac Mountains, 21.0, 58.5 | West at the edge of the Dalaran crater: kill Elemental Slaves for Bracers of Earth Binding and the Dalaran Patrols count
+C 545:1 @ Alterac Mountains, 16.0, 76.0 | Kill 6 Dalaran Summoners south of the dome. Polymorph one when two pull together.
+C 515:3 @ Hillsbrad Foothills, 41.2, 69.0 | Head south-east across Hillsbrad to the coast. Torn Fin Oracles and Tidehunters drop Torn Fin Eyes.
+T 553 | Helcular's Grave is in the Southshore graveyard on the north-east side of town. Alliance guards patrol: come in from the hills, click the grave, leave.
+C 515:2 @ Hillsbrad Foothills, 57.4, 69.5 | Daggerspine Shorehunters and Sirens along the Eastern Strand drop Daggerspine Scales
+H Tarren Mill
+T 545 | Magus Wordeen Voidglare
+T 557 | Keeper Bel'varil
+T 515 | Apothecary Lydon. Do not take 517 (elite).
+A 676 | Tallow, standing next to Lydon
+
+# ---------- Into Arathi ----------
+C 676 | Take the road east out of Tarren Mill into Arathi Highlands. Kill Boulderfist Ogres and Enforcers at Boulder'gor, south of the road on the west side of Arathi. Frost Nova, back off, Blizzard.
+C 1164 | Follow the road east to Dabyrie's Farmstead, staying clear of Refuge Pointe (Alliance) in the middle of the zone. Kill Fardel, Marcel and Kenata Dabyrie for their heads. Pull the farm guards one at a time.
+F Hammerfall @ Arathi Highlands, 73.0, 32.6 | Talk to the wind rider master in Hammerfall
+S Hammerfall | Bind at the Hammerfall inn
+T 676 | Drum Fel
+A 677 | Drum Fel
+A 655 | Gor'mul
+T 655 | Tor'gan
+A 672,671 | Tor'gan
+A 97539 | Doctor Gregory Victor (new in Forever), at the infirmary
+
+# ---------- South-east Arathi ----------
+C 672 | Highland Striders roam the hills all around Hammerfall; they drop Highland Raptor Eyes
+C 97539 @ Arathi Highlands, 66.0, 50.0 | Plains Creepers (spiders) all over Arathi drop Surgical Spidersilk. Kill the ones south of Hammerfall and keep killing them on every run.
+C 677 | Witherbark Village in the south-east: Axe Throwers, Witch Doctors and Headhunters
+A 92707 @ Arathi Highlands, 69.0, 81.0 | New in Forever. Kill the goliath in its den south of Witherbark Village; its Goliath's Wristguards start the quest.
+T 672 | Tor'gan
+A 674 | Tor'gan
+T 674 | Gor'mul
+A 675 | Gor'mul
+T 675 | Tor'gan. He now offers Guile of the Raptor (701): leave it. Highland Fleshstalkers are level 36-37, and you come back to Hammerfall at 37.
+T 677 | Drum Fel. Leave the second Call to Arms (678) for your next Hammerfall visit too: its Brutes and Magi are level 35-37.
+T 92707 @ Arathi Highlands, 74.2, 33.9 | Drum Fel
+T 97539 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor
+A 92519 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor should offer Ward Restocking now (new in Forever). Skip the Go'shek step if he does not.
+
+# ---------- West Arathi and a grind ----------
+C 92519 @ Arathi Highlands, 60.1, 59.3 | Go'shek Farm, south-west of Hammerfall. Pick up the case of Packaged Tonics in Apothecary Jorell's shack.
+C 671 @ Arathi Highlands, 32.0, 28.5 | Go north-west to Northfold Manor. The Syndicate Highwaymen, Mercenaries and Pathstalkers drop Bloodstone Amulets. You hand them in when you hearth back to Hammerfall at the end.
+L 33 @ Arathi Highlands, 33.5, 46.5 | Quest XP runs short here, and Strahnbrad (coming up) is level 34-37. Grind the Boulderfist Ogres and Enforcers (32-34) at Boulder'gor, just south of Northfold Manor, until you are 33: pull two or three, Frost Nova, back off, Blizzard. The Syndicate at Northfold Manor (30-33) are an easier but slower fallback.
+
+# ---------- Tarren Mill and a quick Undercity stop ----------
+A 1361,503 @ Hillsbrad Foothills, 63.2, 20.7 | Walk back west along the road into Hillsbrad to Tarren Mill. Krusk: keep Regthar Deathgate for the Barrens (next segment); Gol'dir is done in Strahnbrad after the Undercity stop.
+N Teleport: Undercity (or fly from Tarren Mill if you don't have it) | A short stop to train and hand in the Dabyrie heads before Strahnbrad
+T 1164 | Genavie Callow, next to the bat handler
+TRAIN | Undercity Magic Quarter: learn your level 32 spells (Frostbolt rank 6 among them) and restock Runes of Teleportation
+FLY Tarren Mill | Bat handler Michael Garrett
+
+# ---------- Strahnbrad (Alterac) ----------
+C 503 @ Alterac Mountains, 63.1, 43.4 | Take the road north out of Tarren Mill to Strahnbrad. Kill Jailor Borhuin (level 37) for the Rusted Iron Key. Syndicate Spies, Wizards and Argus Shadow Mages (34-36) fill the town: pull one at a time, Polymorph adds, fight at full mana. Not 33 yet, or still losing fights? Grind the Syndicate on the edge of town a little longer. If he is still too strong, abandon 503 and skip ahead to the hearth step (Perenolde, 507, then drops out later too).
+T 503 | Free Gol'dir from his cell
+A 506 @ Alterac Mountains, 60.0, 43.7 | Gol'dir
+A 95534 @ Alterac Mountains, 61.0, 44.5 | New in Forever. A Singed Note drops from the Syndicate in and around Strahnbrad (also at the camp north of Tarren Mill). Right-click it to start the quest. No note by the time the town is cleared? Skip the 95534 steps.
+C 95534 @ Alterac Mountains, 61.3, 44.4 | Go to the old bellows by the smithy (about 61.3,44.4) and clear the Syndicate around them. Stand next to them out of combat and click them; something fiery may come to life, so kill it. If nothing happens within 2-3 minutes, abandon 95534 and skip its steps. The logger records what you saw.
+T 506 | Krusk in Tarren Mill. He then offers Lord Aliden Perenolde (507): leave it. Perenolde is level 41; take it from Krusk when you come back for him at 39-40.
+T 95534 @ Hillsbrad Foothills, 62.3, 20.4 | Report your findings in Tarren Mill. The turn-in NPC is not known yet; try High Executor Darthalia first, then the other quest givers.
+
+# ---------- Back to Hammerfall ----------
+H Hammerfall | Or fly from Tarren Mill if the hearthstone is on cooldown
+T 671 | Tor'gan
+T 92519 @ Arathi Highlands, 73.4, 36.8 | Doctor Gregory Victor
+N Segment done. Keep Regthar Deathgate (1361) in the log for the Barrens. Next segment starts with Teleport: Orgrimmar from here. | Your hearthstone stays at Hammerfall. Guile of the Raptor and Call to Arms (Hammerfall) and Lord Aliden Perenolde (Krusk) stay with their givers until you come back at 37+.

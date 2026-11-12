@@ -1,0 +1,91 @@
+@segment 22-24 Wetlands I
+@start-level 22
+# Human Mage (from the Skyborne Mage route). Same quests, order, hearth binds and flight paths as the Skyborne Druid segment 08 (Dwarf segment 07).
+# Carry-in: 57, 67, 157, 181, 240, 453 (Duskwood and Westfall, segment 11), 455 (Algaz Gauntlet, handed in here).
+# Carry-out: 57, 67, 157, 181, 240, 453 (segment 11), 275, 295, 471 (Wetlands, level 26-27, segment 10).
+# Hearth: Thelsamar at the start, Menethil Harbor from the harbor on.
+# Changes from the druid source:
+# - Every combat hint rewritten for a mage of level 22-24 (Frostbolt, Frost Nova, Polymorph; no interrupt yet:
+#   Counterspell is a level 24 spell). A mage cannot cure the spider poison at Thelgen Rock: kill at range, bandage.
+# - Training: the druid trained level 24 in Darnassus at the start of segment 09. That visit is gone (no mage
+#   trainer in Darnassus), so the training is the last thing here, in Menethil Harbor before the boat:
+#   Teleport: Stormwind -> Jennea Cannon -> Hearthstone back to Menethil Harbor. The Hearthstone is bound in
+#   Menethil Harbor in this segment and is not used anywhere else in it, so it is ready; the next use is at
+#   Stonetalon Peak at the end of segment 09, hours later. Teleport: Stormwind is taken as known (from level 20,
+#   Portal Trainer visit in an earlier segment); the step gives the fallback: no teleport, no trip, train at the
+#   next city visit. The estimate ends this segment at 23-24, so the step says to train whatever the level allows.
+# - The mage walks: no mount yet.
+# Left out on purpose: 98459 A Lack of Virtue (ForeverChanges puts its giver, Tom "Half-fish" Wilson, in the
+# Hillsbrad Foothills at 51.2, 66.5, not in the Wetlands), 463 The Greenwarden (you meet Rethiel before its giver),
+# 1132 Fiora Longears (Theramore), 98190 A Friend of the Family (taken in segment 10), 161/274 (Dun Modr).
+@carry 57,67,157,161,181,240,453,455,97894
+@done 468
+
+# ---------- Thelsamar -> Dun Algaz ----------
+C 455 | From Thelsamar walk the road north, past the northern guard tower and Mountaineer Rockgar, into the Dun Algaz tunnels. Finish what is still missing of 8 Dragonmaw Scouts (19-20) and 6 Dragonmaw Grunts (20-21) along the road and in the camps beside it, and walk the road all the way through to the Wetlands side.
+
+# ---------- The Green Belt: Rethiel ----------
+A 276 | Where the road leaves the hills, keep following it north to the Green Belt. Rethiel the Greenwarden stands in the trees east of the road (56.4, 40.4).
+C 276 @ Wetlands, 61.0, 68.0 | His gnolls are the ones you just passed: Mosshide Gnolls (20-21) and Mosshide Mongrels (21-22) fill the marsh in the south-east, between the Dun Algaz road and the waterfalls in the southern cliffs (54-67, 56-76). Go back south and kill 15 Gnolls and 10 Mongrels. They stand in small groups: pull with Frostbolt from far away, Polymorph the second gnoll, and Frost Nova and step back when a third joins or one runs.
+T 276 | Rethiel the Greenwarden
+A 277 | Rethiel the Greenwarden
+A 469 | Einar Stonegrip, the crocolisk hunter camped a little west of Rethiel, by the road (49.9, 39.4)
+C 277 @ Wetlands, 51.0, 40.0 | 9 Crude Flints. Mosshide Fenrunners (22-23) carry them: they roam all around the Green Belt, on both sides of the road here. Mistweavers (22-23) drop them too: they are casters, so kill them first. Black Oozes crawl around in the same marsh; they matter later, not now.
+T 277 | Rethiel the Greenwarden
+A 275 | Rethiel the Greenwarden. Fen Creepers are level 24-25 and hide in the waterways further north and west: kill the ones you happen to meet, and keep the quest for segment 10.
+
+# ---------- Whelgar's Excavation Site and the raptors ----------
+A 294 | Follow the road west, then leave it to the south for Whelgar's Excavation Site. Ormer Ironbraid stands at its entrance (38.2, 50.9). Needs level 22. Do not go down into the dig: the raptors there are 25-27.
+C 294 @ Wetlands, 25.5, 49.5 | The raptors he wants live west of the dig, on both sides of the road to Menethil Harbor: kill 10 Mottled Raptors (22-23) and 10 Mottled Screechers (24-25). Screechers call for help, so fight them away from other raptors and Polymorph a second one. You hand this in when the big loop brings you back to Ormer.
+
+# ---------- Menethil Harbor ----------
+F Menethil Harbor @ Wetlands, 9.5, 59.7 | Keep west on the road to its end and cross the bridge into Menethil Harbor. Shellei Brondir, the gryphon master, stands by the docks.
+S Menethil Harbor @ Wetlands, 10.7, 61.0 | Innkeeper Helbrek in the Deepwater Tavern
+T 455 | Valstag Ironjaw, outside the keep in the middle of town
+A 98197 | Valstag Ironjaw: Spoils of War (new in Forever)
+C 98197 @ Wetlands, 10.1, 56.9 | Recover 6 Khaz Modan Timber and 30 Khaz Modan Iron from Menethil Harbor. The quest says they lie under water in the harbor; the data has no exact spots. Dive around the docks and piers and look for timber and iron you can click. Come up for air in time.
+T 98197 | Valstag Ironjaw
+T 469 | James Halloran, the tanner on the north-west side of town
+A 484 | James Halloran
+A 279 | Karl Boran, by the docks
+A 98282 @ Wetlands, 11.9, 58.8 | Caitlin Grassman: Alchemical Hazards (new in Forever)
+A 470 | Sida, next to her
+A 305 | Tarrel Rockweaver, on the north side of town (needs level 21)
+
+# ---------- The big loop ----------
+C 279 | Leave by the bridge and go north along the coast. The Bluegill camp is at the river mouth (15.5, 40.1): kill 12 Bluegill Murlocs (20-21). Gobbler (22) walks at the east end of the camp (18.1, 39.8): loot his head. Other Bluegill types do not count for the 12 but come along if you pull carelessly: fight at the edge of the camp and Frost Nova a murloc that runs.
+C 484 @ Wetlands, 30.0, 40.0 | Follow the river east. Young Wetlands Crocolisks (21-22) lie on its banks and in every waterway of the marsh: 4 skins. Leave the Wetlands Crocolisks (23-24) and Giant ones alone unless they come for you.
+C 470 @ Wetlands, 44.4, 24.8 | Sida's Bag is inside an ooze. Kill every Black Ooze (23-24) you pass while you cross the marsh: they can carry it. If you still have no bag, go to Ironbeard's Tomb in the north (44.4, 24.8), where the Crimson Oozes (24-25) sit close together, and kill oozes there until it drops. Oozes hit slowly: Frost Nova, step back and keep casting, and drink between them.
+C 98282 | Cross to the south-east. Thelgen Rock is the spider cave in the cliffs south of the Green Belt (around 50, 62). Kill Leech Stalkers and Cave Stalkers (21-22) inside and in front of the cave until one drops an Unruptured Stalker Gland. They poison and a mage cannot cure it: kill them at range (Frost Nova and step back) and bandage or eat afterwards. Leave the Leech Widow (24 elite) deeper inside alone.
+T 305 | Back north-west to Whelgar's Excavation Site. Merrin Rockweaver stands near Ormer at the entrance (38.9, 52.3).
+A 306 | Merrin Rockweaver
+T 294 | Ormer Ironbraid
+A 295 | Ormer Ironbraid. Scytheclaws and Razormaws are 25-27: kept for segment 10.
+
+# ---------- Menethil Harbor hand-ins ----------
+T 306 | Take the road back to Menethil Harbor. Tarrel Rockweaver, on the north side of town.
+T 484 | James Halloran
+A 471 | James Halloran. Giant Crocolisks are 25-26: kept for segment 10.
+T 279 | Karl Boran
+A 281 | Karl Boran
+T 98282 @ Wetlands, 11.9, 58.8 | Caitlin Grassman
+T 470 | Sida
+
+# ---------- The murloc camps and the statuette ----------
+T 281 | Back to the Bluegill camps on the coast north of town. Click the Damaged Crate (13.5, 41.4).
+A 284 | From the Damaged Crate
+T 284 | The Sealed Barrel, a little further north (13.6, 38.2)
+A 285 | From the Sealed Barrel
+T 285 | The Half-buried Barrel in the northern camp (13.9, 34.8). Murlocs stand right next to each container: clear them first, a click is interrupted when you are hit.
+A 286 | From the Half-buried Barrel
+T 286 | Karl Boran, by the Menethil docks
+A 98189 | Karl Boran: Return the Statuette (new in Forever)
+T 98189 | Captain Stoutfist, inside Menethil Keep. Do not take his other quests yet: they belong to segment 10.
+
+# ---------- Training in Stormwind ----------
+N Cast Teleport: Stormwind | Training trip before the boat (needs one Rune of Teleportation). Your Hearthstone is bound here in Menethil Harbor and has not been used in this segment, so it brings you straight back. No teleport yet? Press Skip here and on the next two steps: you train at the next city visit.
+TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum in the Mage Quarter (the teleport puts you there or close by): learn everything up to your level (Counterspell at 24; if you are still 23 it waits for the next visit). Buy Runes of Teleportation from a reagent vendor until you carry 5 or more, and conjure food and water for the trip.
+H Menethil Harbor | Hearthstone back to Menethil Harbor
+
+# ---------- The boat ----------
+N Take the boat from Menethil Harbor to Auberdine | Not verified for Forever: a quest text says the Auberdine boat stops in Southshore on the way over. If it does, stay on board until Auberdine in Darkshore.

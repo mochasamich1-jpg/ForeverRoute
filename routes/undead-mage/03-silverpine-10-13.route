@@ -1,0 +1,97 @@
+@segment 10-13 Silverpine Forest (first pass)
+@start-level 10
+@carry 445,357,1882
+@done 405,1881
+
+# --- Brill to northern Silverpine: Erland escort ---
+N Leave Brill on the road south toward the Undercity, then branch west into Silverpine Forest | The road enters Silverpine in its north-east corner. Follow it to Malden's Orchard, where Deathstalker Erland waits in a farmhouse.
+A 435 | Deathstalker Erland, Malden's Orchard
+C 435 @ Silverpine Forest, 56.2, 9.2 | Escort Erland west to Rane Yorick. Worgs attack along the way: Frost Nova them and keep Erland alive.
+T 435 | Rane Yorick at the Ivar Patch farm
+A 449 | Rane Yorick: the report goes to High Executor Hadrec at the Sepulcher.
+A 429 | Rane Yorick: Wild Hearts. He offers it as soon as the escort is handed in.
+N Follow the road south to the Sepulcher | It is the crypt hill west of the road, about halfway down the zone. If you have Wild Hearts, kill the Mottled Worgs near the road on the way for Discolored Worg Hearts; you finish them on the next trip north.
+
+# --- The Sepulcher, first visit ---
+T 449 | High Executor Hadrec, inside the Sepulcher
+A 3221,437 | Hadrec
+# Lost Deathstalkers (428) is not listed: it is only a pointer to Rane Yorick, and Hadrec stops offering it
+# once Rane has given you Wild Hearts (confirmed in play, 2026-11-08).
+T 445,3221 | Apothecary Renferrel, beside Hadrec
+A 447,1359 @ Silverpine Forest, 42.8, 40.9 | Renferrel. Zinge's Delivery is only a hand-in in the Undercity at the end of this segment.
+A 6321 | Deathguard Podrig, just outside the crypts
+A 477 | Shadow Priest Allister
+F The Sepulcher | Karos Razok, the bat handler just east of the crypts
+T 6321 | Karos Razok
+A 6323 | Do not buy the bat ride. You hand this in on foot in the Undercity at the end of the segment.
+
+# --- Dalaran crate south of the Sepulcher ---
+T 477 | Follow the road south toward Pyrewood. The crate is at the Dalaran apprentices' camp; the apprentices are level 13-14, so pull them one at a time. Kill grizzled bears on the way: their hearts count for A Recipe For Death.
+A 478 | From the same crate
+T 478 | Back at the Sepulcher: Shadow Priest Allister
+A 481 | Allister
+T 481 | Dalar Dawnweaver, next to Allister
+A 482 | Dalar
+T 482 | Allister
+A 95981 @ Silverpine Forest, 44.0, 40.9 | Allister. Level 20 (Dalaran wizards and watchers near Ambermill): keep it in your log for a later segment. If he does not offer it yet, pick it up on your next Sepulcher visit.
+
+# --- North loop 1: hearts, Dead Fields, spiders ---
+N Head north on the road back toward the Ivar Patch | Kill the Ferocious Grizzled Bears along the road for Grizzled Bear Hearts as you go.
+C 429 @ Silverpine Forest, 57.5, 11.0 | Kill Mottled Worgs around the Ivar Patch and Malden's Orchard for Discolored Worg Hearts. More worgs roam south toward the Dead Fields.
+C 437 @ Silverpine Forest, 45.0, 21.5 | The Dead Fields, west of the road: kill Rot Hide gnolls until Nightlash appears. Frost Nova and kite her, then loot the Essence of Nightlash.
+C 447 @ Silverpine Forest, 35.5, 14.5 | Moss Stalker spiders on the north-west coast drop Skittering Blood. Giant Grizzled Bears between here and the Dead Fields drop the rest of the hearts.
+T 429 | Back at the Sepulcher: Renferrel
+A 430 | Renferrel
+T 437 | Hadrec
+A 438 | Hadrec
+
+# --- North loop 2: Quinn, Ivar, murlocs, ferry ---
+T 430 | Quinn Yorick at the Ivar Patch
+A 91920 | Quinn
+A 425 | Rane Yorick
+C 425 | Ivar the Foul wanders the Ivar Patch farm. He is level 13: open with Frost Nova and kite him.
+T 425 | Rane Yorick
+C 91920 | Kill Vile Fin murlocs on the lake shore east and south-east of the farm for Murloc Eyes.
+T 438 | The Decrepit Ferry is guarded by level 14-16 Ravenclaw undead: Hands of Ravenclaw beside the dock, Champions on the shore just north-west of it, Fenwick Thatros a little north-east. Do not walk down the shore path or onto the dock. Swim south through the lake from the murloc shore and click the Corpse Laden Boat from the water. If one aggros, Frost Nova it and swim back north.
+A 439 | From the boat
+T 91920 | Back at the Sepulcher: Renferrel
+A 91921 | Renferrel
+T 439 | Hadrec
+A 440 | Hadrec
+L 12 @ Silverpine Forest, 49.5, 37.5 | Dalar's next quest needs level 12. If you are not 12 yet, kill Ferocious Grizzled Bears on the slope just east of the Sepulcher, down the hill along the road. Moonrage Whitescalps share the slope, but kills made before you take Dalar's quest do not count for it. Dalar is a short walk back up the hill.
+A 421 | Dalar Dawnweaver (needs level 12)
+C 421 @ Silverpine Forest, 49.0, 36.5 | Moonrage Whitescalps roam just east of the Sepulcher, down the hill along the road.
+T 421 | Dalar
+A 422 | Dalar
+
+# --- North loop 3: spellbooks and Quinn ---
+C 422 | The wheat farm by the lake, just north of the bridge: loot the Remedy of Arugal from the Dusty Spellbooks.
+T 91921 | Quinn Yorick at the Ivar Patch
+T 422 | Back at the Sepulcher: Dalar
+A 423 | Dalar. Keep it for a later segment (Moonrage Gluttons and Darksouls).
+G Silverpine Forest, 43.4, 41.3 | Optional: loot the book from the shelf here (a Forever collectible; you hand the books in later).
+
+# --- Brill and the Undercity ---
+H Brill | Your hearthstone has not been used since Tirisfal, so it should be ready. If it is not, buy a bat ride to the Undercity from Karos Razok, walk out of the Ruins and north up the road to Brill, then carry on with the steps below in order (Sevren first, then back down into the Undercity).
+G Tirisfal Glades, 59.4, 52.3 | Optional: another collectible book on the shelf next to Apothecary Johaan.
+T 440 | Magistrate Sevren in the Brill town hall
+A 441 @ Tirisfal Glades, 61.3, 50.8 | Sevren
+N Walk south to the Ruins of Lordaeron and take an elevator down into the Undercity
+T 6323 | Gordon Wendham, the weapon vendor in the Trade Quarter
+A 6322 @ Undercity, 61.5, 41.8 | Gordon Wendham
+T 441 | Raleigh Andrean, next to Gordon
+A 530 | Raleigh. Level 20: keep it for a later segment.
+T 6322 @ Undercity, 63.3, 48.6 | Michael Garrett, the Undercity bat handler
+A 6324 @ Undercity, 63.3, 48.6 | Michael Garrett. Keep it: you fly back to the Sepulcher with it in a later segment.
+A 97891 | Alessandro Luca. It is timed: run straight across the canal to the Apothecarium.
+T 97891 | Doctor Martin Felben in the Apothecarium
+T 447 | Master Apothecary Faranell
+A 450 | Faranell's follow-up: fetch a journal from the inn at Pyrewood Village. It is marked elite because of the village guards; the route picks it up as an optional stop on your next Silverpine trip (segment 5)
+T 1359 | Apothecary Zinge, next to Faranell
+A 1358 | Zinge. You hand it in at the Crossroads in the Barrens.
+T 357 | Bethor Iceshard in the Magic Quarter. Leave his follow-up for now.
+T 1882 | Anastasia Hartwell, at the top of the Magic Quarter. Pick the reward you prefer.
+TRAIN | Undercity Magic Quarter, learn your level 12 spells
+N Only if you abandoned Hadric Harlson's two Argent Dawn quests in Tirisfal: take them again at his waystation camp, just east of the zeppelin tower @ Tirisfal Glades, 65.9, 61.0 | The Cult of the Damned and Remnants of War (level 13). Kill 8 Dark Neophytes and 8 Dark Enforcers and pick up 12 Necrotic Crystal Fragments in the cultist area just south-east of the camp (66-70, 62-67), then hand both in to Hadric. Skip Bandarion Keep (it sends you far west). If you already handed them in, skip this step.
+G Tirisfal Glades, 60.7, 58.9 | Walk west to the zeppelin tower and climb it.
+N Take the zeppelin to Orgrimmar | Wait on Zapetta's side of the tower. The zeppelin at the other platform (Hin Denburg) goes to Grom'gol in Stranglethorn, so do not board that one. The Orgrimmar zeppelin lands at the tower in Durotar, just outside Orgrimmar.

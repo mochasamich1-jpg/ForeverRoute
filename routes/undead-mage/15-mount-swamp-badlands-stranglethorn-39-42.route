@@ -1,0 +1,144 @@
+@segment 39-42 Mount, Swamp II, Badlands II & Booty Bay
+@start-level 39
+@carry 669,1137,1953,1116,698,712,1183,1261,584,598,1418
+@done 189,195,506,570,582,596,605
+
+# Carried in: 669 Sunken Treasure (Booty Bay), 1116 Dream Dust in the Swamp (Swamp, then Booty Bay),
+# 698 Lack of Surplus (flanks done, Tok'Kar), 712 Study of the Elements: Rock (Badlands), 1418 Neeka Bloodscar (Kargath),
+# 584 Bloodscalp Clan Heads and 598 Split Bone Necklace (Grom'gol, accepted in segment 13).
+# 507 Lord Aliden Perenolde is taken from Krusk in Tarren Mill here (segment 11 leaves it with him).
+# Kept for later segments: 1137 and 1183 (Shimmering Flats), 1953 (Tabetha), 1261 (Brackenwall).
+# Order: Stonard -> Kargath (grind to 40, 712, 782) -> Undercity/Brill mount -> Alterac -> hearth Stonard (coast quests mounted)
+# -> Grom'gol -> Booty Bay -> central Stranglethorn -> Grom'gol/Nesingwary -> hearth Booty Bay.
+# Overrides below fix auto data that puts Badlands NPCs in "Outland" and Swamp NPCs in "Zephras Isle".
+# Skipped on purpose: 571/573 (rare gorilla drop, then more Grom'gol trips), the elite 793, 197 and 613, and 670/667 (Arathi).
+
+# --- Badlands: grind to 40, Lotwil's bracers and Broken Alliances ---
+FLY Kargath | Breyk, Stonard's wind rider master. Leave the Stonard coast quests for now: their mobs are level 41-45 and you come back at 40 with a mount. Your hearthstone stays set to Stonard
+T 1418 @ Badlands, 6.5, 47.2 | Neeka Bloodscar in Kargath
+A 1420 @ Badlands, 6.5, 47.2 | Neeka. Keep her report until you hearth back to Stonard
+L 40 @ Badlands, 14.5, 35.0 | Rock Elementals (39-40) on the slopes north-east of Kargath, then the Lesser Rock Elementals (37-39) along the way east toward Lotwil's camp. They hit hard but have no ranged attacks: Frostbolt, Frost Nova, step back. If they are thin or taken, TUGs' bigger Rock Elemental spot is in the south around 41,79: ride back to Kargath once you are 40
+A 782 @ Badlands, 2.9, 45.6 | Gorn in Kargath, now that you are 40
+C 712 @ Badlands, 4.1, 79.6 | Greater Rock Elementals (42-44) in the far south-west corner of the Badlands drop Bracers of Rock Binding on most kills. Pull one at a time and kite it. The Dustbelcher ogre camp (Camp Boff) sits right between this group and a second one to the south-east, so pull from the edges and do not drift into the ogres. Kill Boss Tho'grun (next step) if he walks past
+C 782 @ Badlands, 12.6, 75.5 | Boss Tho'grun (41-42, not elite) starts at Camp Boff and walks a long loop east along the southern road and back. Catch him on the road, away from the Maulers and Shamans (41-43) in the camp, and loot the Sign of the Earth
+T 712 @ Badlands, 25.9, 44.9 | Lotwil Veriatus at his camp in western Badlands
+N Optional, Auction House only: with Frost Oil and a Gyrochronatom, Lotwil gives 713 and 714, and only after 714 does 734 -> 777 -> 778 (Fam'retor Guardian) open. Lucien Tosselwrench beside him gives 715 (a Healing Potion and a Lesser Invisibility Potion) and 716 (Patterned Bronze Bracers). Without those items, skip all of them
+T 782 @ Badlands, 2.9, 45.6 | Gorn, back in Kargath. Skip the next part (793, elite)
+
+# --- Undercity, Brill and the mount ---
+N Teleport: Undercity | No Teleport yet? Fly from Kargath to Undercity instead (your hearthstone is set to Stonard)
+TRAIN | Undercity Magic Quarter: learn your level 40 spells
+G Tirisfal Glades, 60.0, 52.6 | Leave Undercity and walk north up the road to Brill. Velma Warnam (riding) and Zachariah Post (horses) stand together just west of the inn
+N Learn riding from Velma Warnam and buy a skeletal horse from Zachariah Post (Classic: roughly 90-100g for both). Not enough gold? Skip it, keep going on foot and buy it on a later Undercity visit
+FLY Tarren Mill | Ride back into Undercity and take a bat from the flight master
+
+# --- Tarren Mill and northern Alterac ---
+A 566 | The WANTED poster in Tarren Mill
+A 507 @ Hillsbrad Foothills, 63.2, 20.7 | Krusk. He only offers it if you freed Gol'dir and handed in Blackmoore's Legacy (506) in segment 11. If he has nothing for you, skip the 507 and 508 steps below
+C 566 | Ride north from Tarren Mill into Alterac Mountains, up to the Uplands at the north edge of the zone. Baron Vardus (40) stands there with Syndicate guards near him: Polymorph one, kill him and take his head. Keep away from the elite Crushridge ogres in the middle of the zone
+C 507 | Perenolde's manor lies west of the Uplands, by the shore of Lordamere Lake. Lord Aliden Perenolde (41) is inside, with Syndicate Assassins and Enforcers (38-40) around the manor. Clear them one pull at a time, then kill him
+T 507 | Talk to Elysa, who stands right next to him
+A 508 @ Alterac Mountains, 39.3, 14.3 | Elysa gives you Taretha's pendant
+T 508 | Back in Tarren Mill: Krusk
+T 566 | High Executor Darthalia, beside the poster
+
+# --- Stonard and the Misty Reed coast ---
+H Stonard | Hearth back to Stonard (still bound there). Hearthstone on cooldown? Fly Tarren Mill to Stonard
+T 1420 @ Swamp of Sorrows, 47.7, 55.2 | Helgrum the Swift, next to the wind rider master
+A 1430 @ Swamp of Sorrows, 44.7, 57.2 | Dar in Stonard
+N Take any new quests offered in Stonard: Forever added several Swamp quests that have no giver data yet. The logger records them
+C 1116 @ Swamp of Sorrows, 62.5, 41.0 | Specks of Dream Dust drop from about 1 in 5 of the green dragonkin east of Stonard: Green Scalebanes and Scalebane Captains here, more of them further east toward the coast. Avoid the Elder Dragonkin (45)
+T 698 @ Swamp of Sorrows, 81.3, 81.0 | Ride east to the coast, then south along the beach to Tok'Kar at Misty Reed Post. Kill every Monstrous Crawler (43-44) you pass: their legs for Fresh Meat (1430) drop only rarely
+A 699 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+C 699 @ Swamp of Sorrows, 78.0, 97.5 | Sawtooth Snappers in the shallows along the south coast, south of the camp: claws drop on most kills. Two more crawlers walk this shore. Short of snappers? More of them live along the east coast
+T 699 @ Swamp of Sorrows, 81.3, 81.0 | Tok'Kar
+A 1422
+T 1422 | Katar, a few steps away
+A 1426 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1426 | The few Marsh Murlocs are on the beach just south of the camp, and Inkspewers line the whole south and east coast. Most Flesheaters are on the beach west of the camp around 63,86, the same beach you use for Continued Threat: finish 1426 there and wait for respawns if needed. Pull them away from the groups; Frost Nova and Cone of Cold
+T 1426 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+A 1427
+T 1427 | Tok'Kar
+A 1428 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1428 | Inkspewers, Flesheaters and Oracles further west along the southern beach. Kill Oracles first: they heal
+T 1428 @ Swamp of Sorrows, 83.8, 80.4 | Katar
+C 1430 @ Swamp of Sorrows, 93.5, 45.0 | Still short of crawler legs? Ride north along the east beach once more: most Monstrous Crawlers walk there, and they have respawned by now. If the legs still will not drop, give up on 1430 rather than camp the beach
+T 1430 @ Swamp of Sorrows, 44.7, 57.2 | Ride back to Stonard: Dar
+
+# --- Grom'gol ---
+FLY Grom'gol | Breyk, Stonard's wind rider master
+A 572 | Far Seer Mok'thardin. The Jungle Stalkers for it are in central Stranglethorn, later in this segment
+C 584 | 584 is already in your log from your last visit. Ruins of Zul'Kunda in the far north-west: Gan'zulah (41) and Nezzliok the Dire (40) stand inside the ruins among Bloodscalp trolls. Clear around each one first, then kill them for their heads
+A 196 @ Stranglethorn Vale, 35.7, 10.8 | Hemet Nesingwary, a short ride east of Zul'Kunda at the hunters' camp
+T 584 | The Bubbling Cauldron in the middle of Grom'gol
+A 585,586 | Both come from the cauldron. They are done in central Stranglethorn after Booty Bay
+FLY Booty Bay | Thysta, Grom'gol's wind rider master
+
+# --- Booty Bay ---
+T 669 | Fleet Master Seahorn. He then offers 670, which only sends you back to Faldir's Cove in Arathi: skip it (and 667 after it)
+T 1116 | Krazek. Leave his next quest (1117) until you come back to Booty Bay at the end of this segment
+A 595 | First Mate Crazz
+A 606 | "Sea Wolf" MacKinley
+A 617 | Privateer Bloads
+A 600,621 | Crank Fizzlebub
+A 209 | Kebok
+A 348 | Fin Fizracket
+S Booty Bay | Innkeeper Skindle
+N Take any new quests offered in Booty Bay; the logger records them. Leave the half-buried bottles on the beaches alone: Message in a Bottle (594) needs level 45
+
+# --- North of Booty Bay: the cove, the naga and the gorillas ---
+T 595 | Take the road north out of Booty Bay to the pirate cove. The Bloodsail Correspondence lies in the camp, guarded by Bloodsail Raiders and Mages (39-41)
+A 597 | From the same papers
+C 617 | Naga Explorers (43-44) walk the beach north of the cove; about 1 in 3 drops Akiris Reed
+A 349 | Witch Doctor Unbagwa, inland to the east among the gorillas of Mistvale Valley
+C 606,349 | Elder Mistvale Gorillas around Unbagwa: Mistvale Giblets drop from about 1 in 3, Gorilla Fangs from about half
+T 349 | Hand Unbagwa the fangs. He calls waves of gorillas and then Mokk the Savage (44): stay next to him and kill each wave. Frost Nova and Cone of Cold keep them off you
+C 348 @ Stranglethorn Vale, 35.3, 60.4 | Loot the Heart of Mokk
+T 606 | Back to Booty Bay: "Shaky" Phillipe on the dock
+A 607
+T 597 | First Mate Crazz
+A 599
+T 599 | Fleet Master Seahorn
+A 604
+T 607 | "Sea Wolf" MacKinley
+A 609 | Keep it for central Stranglethorn
+T 617 | Privateer Bloads
+T 348 | Fin Fizracket
+A 587 | Deeg
+A 576 | Dizzy One-Eye
+
+# --- Bloodsail camp south of Booty Bay ---
+C 604,587 @ Stranglethorn Vale, 29.0, 82.4 | The Bloodsail camp on the shore just south of Booty Bay: kill 10 Swashbucklers and pick up the Bloodsail Charts and Orders lying in the camp. Snuff drops from any Bloodsail pirate. Dizzy's Eye (576) drops only rarely from any Bloodsail, including the ship crews you fight for 608 later, so loot everything. Pull one group at a time, Frost Nova, then Blizzard
+T 604 | Fleet Master Seahorn
+A 608 | Keep it for the end of this segment: the captains are level 45-48
+T 587 | Deeg
+
+# --- Central Stranglethorn: Zanzil, Venture Co., the Skullsplitters and the Jungle Stalkers ---
+C 621,609:3 | Ride north-east from Booty Bay to Zanzil's camp. His trolls, zombies and naga (43-44) drop Zanzil's Mixture on about 1 in 3 kills. Chucky "Ten Thumbs" (43) is in the camp: kill him for the ring
+C 609:1,609:2 | Maury "Club Foot" Wilkins and Jon-Jon the Crow (43-44) stand together at the ruins north-west of Zanzil's camp: kill both
+C 572,196 @ Stranglethorn Vale, 28.5, 46.0 | Jungle Stalkers (40-41), the raptors in the jungle just west of Maury's ruins toward the coast. Kill 10 for Hemet; about 1 in 4 drops a feather for Mok'thardin, so keep going until you have 10. These kills replace part of the grind to 42
+C 600 | Venture Co. camp just north of the Crystalvein Mine: the miners, tinkerers and surveyors (40-42) drop Singing Blue Crystals on most kills. Good Blizzard packs
+C 585 | Skullsplitter ruins to the north: click the trophy skull piles at Ziata'jai, Balia'mah and Zul'Mamwe (the arrow shows the first two; Zul'Mamwe is the south-east ruin)
+C 586,209,598 | Skullsplitter Hunters, Headhunters and Berserkers stand in the Zul'Mamwe ruins; Ana'thek the Cruel (45) walks there and drops the armour. Tusks and necklaces drop from every Skullsplitter, but slowly
+L 42 @ Stranglethorn Vale, 45.4, 37.0 | TUGs' troll grind spot: not 42 yet, or still missing tusks or necklaces? Keep killing the Skullsplitter Warriors, Axe Throwers and Mystics (39-40) in these ruins
+T 585,586 | Ride west to Grom'gol: the Bubbling Cauldron
+A 588 | The cauldron again
+T 598,588 | Kin'weelay
+A 589
+T 572 | Far Seer Mok'thardin. Skip his next quest (571): its Aged Gorilla Sinew is a rare drop from the gorillas near Booty Bay
+C 589 | Ironjaw Basilisks (43-44) in and around the Crystalvein Mine, just south of the Venture Co. camp: the shards drop on most kills
+T 589 | Back to Grom'gol: Kin'weelay
+T 196 @ Stranglethorn Vale, 35.7, 10.8 | Ride north to Hemet Nesingwary. Skip the next part (Tethis, elite)
+H Booty Bay | Hearth from Nesingwary's camp (you bound at Booty Bay). Hearthstone on cooldown? Ride back to Grom'gol and fly with Thysta
+
+# --- Booty Bay, then the pirate ships ---
+T 609 | "Sea Wolf" MacKinley. He then offers 613, an elite quest: skip it
+A 2872 @ Stranglethorn Vale, 27.8, 77.1 | "Sea Wolf" MacKinley. Keep it for Stoley in Steamwheedle Port, Tanaris (next segment)
+T 600,621 | Crank Fizzlebub
+A 1117 @ Stranglethorn Vale, 26.9, 77.2 | Krazek, beside Crank. Keep it for Kravel Koalbeard on the Shimmering Flats (next segment)
+T 209 | Kebok
+C 608,576 | The three Bloodsail ships are anchored off the coast south of Booty Bay. Swim out, clear the deckhands and sea dogs (43-45) near each captain one at a time, then kill Captain Stillwater (45-46, east ship) and Captain Keelhaul (46-47, west ship). Fleet Master Firallon (48, south ship) is six levels above you: if your spells keep missing, leave him, keep 608 and finish it at the Booty Bay stop of the 45-48 segment (about level 47). Still no Dizzy's Eye? Any of the ship crews can drop it. Polymorph adds and keep Frost Nova ready
+N Cortello's Riddle, a scroll lying on the ship decks, starts 624. Its turn-in is under a bridge in western Swamp of Sorrows and the chain goes on to Dustwallow Marsh and the Hinterlands. This route does not carry it: leave it, or take it only if you will hand it in yourself on a later Stonard visit
+T 608 | Fleet Master Seahorn
+T 576 | Dizzy One-Eye, a few steps from Seahorn
+N Keep these for later segments: 1117 Rumors for Kravel, 1137 News for Fizzle and 1183 Goblin Sponsorship (Shimmering Flats), 2872 Stoley's Debt (Tanaris), 1953 Return to the Marsh (Tabetha), 1261 Marg Speaks (Brackenwall), plus 608 if you left Firallon for later. The next segment starts here with Teleport: Undercity, where you train 42

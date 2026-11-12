@@ -1,0 +1,101 @@
+@segment 39-40 Stranglethorn II & Swamp of Sorrows I
+@start-level 39
+# Carried in (segment 14's carry-out): 1240 The Troll Witchdoctor (Kin'weelay), 1115 The Rumormonger (Krazek),
+# 5763 Hunting in Stranglethorn (Nesingwary), 1182 Goblin Sponsorship, 577 Some Assembly Required and 582 Headhunting
+# (all handed in here), 669 Sunken Treasure (Seahorn, Booty Bay), 1420 Report to Helgrum (Neeka's report, handed in
+# to Helgrum in Stonard; segment 14 takes it at Kargath), plus 1137 (Fizzle, seg 16), 712 (Lotwil, seg 18)
+# and 243 (Gadgetzan, seg 16), which only ride along.
+@carry 1240,1115,5763,1182,577,582,669,1420,1137,712,243,213
+# Segment 11 handed in 186/191/194 (unlock the next Nesingwary tiers 187/192/195) and 596 (unlocks Kin'weelay's 598).
+@done 186,191,194,596
+# Adapted from undead-mage 13 (Grom'gol, Nesingwary, Booty Bay) and 14 (Swamp of Sorrows I). No teleports: zeppelin in,
+# flights inside Stranglethorn, on foot through Duskwood and Deadwind Pass to Stonard, hearth back to Booty Bay.
+# Hearth: Shadowprey Village on arrival, Booty Bay from the first Booty Bay stop (Astral Recall follows the hearth).
+# Trainer: Haromm in Stonard (level 38 spells; 40 is trained in Orgrimmar at the start of segment 16).
+# Carry-out (10): 1137, 1183, 1117 (Shimmering Flats), 243 (Gadgetzan), 2872 (Steamwheedle Port), 1261 (Brackenwall),
+# 712 (Lotwil), 584 and 598 (Grom'gol), 698 (Tok'Kar): the last four wait for the Eastern Kingdoms trip in segment 18.
+# Skipped on purpose: 193 (Bhag'thera, elite), 196 and 571/572 (level 41, segment 18), 628 (elite), 670/667 (back to
+# Faldir's Cove), 1418 Neeka Bloodscar (would be handed in at 47+ for almost nothing), 93464 (sends you to Desolace).
+
+# ---------- Grom'gol ----------
+N You arrive at Grom'gol Base Camp on the zeppelin from the Undercity | Your hearthstone still points at Shadowprey Village: do not use it or Astral Recall until you bind in Booty Bay later in this segment. Keep saving for Wolf Riding and a wolf at 40 (roughly 90-100 gold).
+T 1240 | Kin'weelay
+A 1261 @ Stranglethorn Vale, 32.2, 27.6 | Click the Bubbling Cauldron beside Kin'weelay. Keep it: the Jeweled Pendant drops from the Muckshell crab-men in Dustwallow Marsh (segment 16).
+A 598 | Kin'weelay. Keep it: the Skullsplitter trolls that drop the necklaces are level 40+ (segment 18).
+A 568 | Commander Aggro'gosh
+A 570 | Far Seer Mok'thardin
+N Take any new quests offered in Grom'gol; the logger records them | Forever adds a Horde naga quest here: Enemies in the Water (level 37), 10 Brinescale Tridents from the Brinescale Skirmishers around the sunken troll ruins in the sea west of the camp. Take it if you have log room: you do it on the way back from Zul'Kunda and hand it in here.
+
+# ---------- Nesingwary's camp and the jungle south-east of it ----------
+T 5763 | Hemet Nesingwary. Ghost Wolf north up the road from Grom'gol to the hunters' camp.
+A 187 | Ajeck Rouack
+A 192 | Sir S. J. Erlgadin
+A 195 | Hemet Nesingwary
+C 187 @ Stranglethorn Vale, 34.0, 18.5 | Elder Stranglethorn Tigers (34-35) on the slopes just south of the camp. Cats often come in pairs: drop Stoneclaw Totem to hold the second one while you kill the first.
+T 187 | Ajeck Rouack
+A 188 | Ajeck Rouack
+C 188 @ Stranglethorn Vale, 32.2, 17.4 | Sin'Dall, a named tigress (37) on the hill south-west of the camp. Clear the tigers around her first and fight her at full health and mana.
+C 568,195 @ Stranglethorn Vale, 35.0, 23.0 | Lashtail Raptors (35-36) in the jungle south of Sin'Dall's hill, between the camp and Grom'gol. 15 for Aggro'gosh, 10 for Hemet: the same kills count for both. Earthbind Totem keeps a second raptor off you.
+C 577 @ Stranglethorn Vale, 40.0, 22.0 | Snapjaw Crocolisks (35-36) in and around Lake Nazferiti, east of the raptors. About 1 in 3 drops a skin.
+C 1182 @ Stranglethorn Vale, 42.6, 18.4 | Kill Foreman Cozzle (38) at the Venture Co. camp on the lake's north-east shore for his key, then open Cozzle's Footlocker in his house (43.3, 20.3). Pull the Venture Co. Geologists around him one at a time first.
+C 213 @ Stranglethorn Vale, 42.6, 18.4 | Hostile Takeover: the Venture Co. Geologists (34-36) in the same camp and along the north shore of the lake carry Tumbled Crystals, about one in two. You need 8
+C 192,570 @ Stranglethorn Vale, 39.0, 37.0 | Shadowmaw Panthers and Stranglethorn Tigresses (37-38) fill the jungle south of the lake, between the small ogre camp east of Grom'gol and the Crystalvein Mine. Head straight south-west from Cozzle's camp and do not drift east: the big Mosh'Ogg Mound (around 49,28) is full of elite ogres. Panthers drop the claws; only about 1 tigress in 7 drops the Pristine Tigress Fang. Panthers stalk unseen, so keep Lightning Shield up, and Stoneclaw Totem holds a second cat.
+T 188 | Ghost Wolf north past Grom'gol (its hand-ins come after Zul'Kunda) to Ajeck Rouack at Nesingwary's camp
+T 192 | Sir S. J. Erlgadin. Skip the next part (Bhag'thera, elite).
+T 195 | Hemet Nesingwary. Leave the next part (Jungle Stalkers, level 41) for a later visit.
+
+# ---------- Zul'Kunda, then back to Grom'gol ----------
+N Ruins of Zul'Kunda: if you skipped the NEW quests there in segment 11, take them now | Zeppelin crash debris east of the ruins and a caged goblin, Zimmix Sputterspark, inside. Do them together with the headhunters; they end in Booty Bay, your next stop. The logger records them.
+C 582 @ Stranglethorn Vale, 23.0, 10.0 | Bloodscalp Headhunters (36-37) around the Ruins of Zul'Kunda, west of Nesingwary's camp near the coast. Most of them drop a head. Fight at the edge of the ruins so only one comes at a time, and Earth Shock the Mystics' and Witch Doctors' casts.
+N Enemies in the Water, if you took it @ Stranglethorn Vale, 22.5, 21.5 | On the way back south, swim out to the Vile Reef, the sunken troll ruins off the coast north-west of Grom'gol (about 20-26, 19-32). The Brinescale Skirmishers are underwater: cast Water Breathing (one Shiny Fish Scale per cast) or come up for air between fights. Lesser Water Elementals (36-37) drift around the reef and elite Saltscale murlocs (35-37) may hold its middle (around 23-25, 23-26), so pull the naga one at a time from the north and south edges. Skip the elite Elder Saltwater Crocolisk by the north shore.
+T 568 | Commander Aggro'gosh, back south in Grom'gol. Took Enemies in the Water? Hand it in now to whoever gave it to you here.
+A 569
+T 582 | Nimboya
+A 584 | Keep it for segment 18 (Gan'zulah and Nezzliok, level 40-41)
+C 569 @ Stranglethorn Vale, 37.0, 31.0 | Mosh'Ogg Brutes and Witch Doctors (36-37) at the small ogre camp just east of Grom'gol. Earth Shock the Witch Doctors' casts and drop Stoneclaw Totem if two ogres come. Still missing the Pristine Tigress Fang? The tigresses you hunted earlier prowl the jungle just south of this camp.
+T 569 | Commander Aggro'gosh
+T 570 | Far Seer Mok'thardin. Leave his next quest for a later visit (level 41).
+
+# ---------- Booty Bay ----------
+FLY Booty Bay | Thysta, Grom'gol's wind rider master
+T 1182 | Baron Revilgaz, top floor of the inn
+A 1183 @ Stranglethorn Vale, 27.2, 76.9 | Keep the blueprints for Pozzik on the Shimmering Flats (segment 16)
+T 577 | Drizzlik. Skip Excelsior (628): the crocolisk is elite.
+T 1115 | Krazek
+A 1116 | Keep it for the Swamp of Sorrows
+T 669 | Fleet Master Seahorn. Skip his next quest (670): it only sends you back to Faldir's Cove.
+N Hand in any Zul'Kunda NEW quests you did (the goblin escort ends at Wharfmaster Lozgil on the dock)
+S Booty Bay | Innkeeper Skindle. You hearth back here from the Swamp of Sorrows at the end of this segment.
+
+# ---------- Grom'gol to the Swamp of Sorrows ----------
+FLY Grom'gol | Gringer, the Booty Bay wind rider master
+N Run from Grom'gol to the Swamp of Sorrows | Ghost Wolf north up the road past Nesingwary's camp into Duskwood, then east along the main road. Go round Darkshire (Alliance guards), take the road east through Deadwind Pass and follow it down into the swamp. Stay on the road in Deadwind Pass: the ogres and ghosts there are level 50+.
+C 1116 @ Swamp of Sorrows, 14.0, 61.0 | Dreaming and Adolescent Whelps (34-36) in the misty valley at the west end of the swamp, right by the road. About 1 whelp in 5 drops a speck and there are only about a dozen of them: kill them all once and move on. The rest of the dust comes from the green dragonkin east of Stonard at the end of the swamp loop, where you also grind to 40.
+N Optional: Amaryllis Webb @ Swamp of Sorrows, 25.0, 54.2 | On the way east she may offer My Little Friends (new in Forever): catch three kinds of bugs with her kit. Where the bugs live is not known yet, so take it only if you have log room, and abandon it if they are not in this swamp. The logger records it.
+A 1389 @ Swamp of Sorrows, 26.0, 31.4 | Magtoor at the Harborage, the draenei village due north of Amaryllis in the north-west of the swamp. Taking it now saves running back here before Fallow Sanctuary.
+N Take any new quests offered at the Harborage; the logger records them @ Swamp of Sorrows, 26.0, 31.4 | New Forever quests here are done at Fallow Sanctuary: Blood of My Blood (kill 10 Lost Ones) and Taking the Bait Back (a Lost One Fisherman on the banks east of the village has Pelluk's lure). Hand them in when you come back at the end of the swamp loop. Skip the draenethyst errand that sends you to Desolace to find a human named Azore (93464): it is 700 XP for a trip this route does not make.
+
+# ---------- Stonard, then Fallow Sanctuary ----------
+F Stonard @ Swamp of Sorrows, 46.1, 54.8 | Breyk, the wind rider master in the orc town south-east of the Harborage
+T 1420 @ Swamp of Sorrows, 47.7, 55.2 | Helgrum the Swift, next to Breyk: give him Neeka's report from Kargath (skip this step if she did not offer it). Do not take his Neeka Bloodscar (1418).
+TRAIN @ Swamp of Sorrows, 48.2, 57.9 | Haromm in Stonard, the only shaman trainer in the Eastern Kingdoms: learn your level 38 spells. Level 40 waits for Orgrimmar at the start of the next segment.
+A 698 @ Swamp of Sorrows, 44.7, 57.2 | Dar. Keep it: Tok'Kar on the south-east coast takes the flanks in segment 18.
+N Take any new quests offered in Stonard; the logger records them @ Swamp of Sorrows, 44.7, 57.2 | Dar may offer a new Forever quest about a lost shipment for the Harborage (Lost in Transit): if so, look for the courier's crate by the water along the road and bring it to the Harborage when you go back there at the end of the loop.
+C 1389 @ Swamp of Sorrows, 62.4, 22.7 | Fallow Sanctuary, north-east of Stonard: the crystals sit among the Lost Ones' huts and campfires. Pull the Lost Ones from the edges and Earth Shock the Seers' and Riftseekers' casts. Kill every Sawtooth Crocolisk (38-39) you pass for Dar's flanks: about 1 in 4 drops one.
+A 1393 @ Swamp of Sorrows, 65.5, 18.2 | Galen Goodward, just north-east of the crystals. Accepting starts the escort.
+C 1393 @ Swamp of Sorrows, 65.5, 18.2 | Keep Galen alive until he says he is safe. If something attacks him, drop Stoneclaw Totem to pull it off him and throw him a Healing Wave if he gets low. If he dies, abandon 1393 and take it again when he respawns.
+T 1393 @ Swamp of Sorrows, 47.8, 39.8 | Open Galen's strongbox at his camp, north of Stonard
+A 1392 @ Swamp of Sorrows, 55.7, 34.4 | Kill Noboru the Cudgel (39). He wanders the area roughly between here and 42,36. His cudgel starts the quest. Fight him at full health and mana with Stoneskin Totem down.
+C 698 @ Swamp of Sorrows, 56.0, 45.0 | Finish the 8 sawtooth flanks on the Sawtooth Crocolisks (38-39) along the water between Galen's camp and Stonard. The small Young Sawtooth Crocolisks further west do not drop them. Keep the flanks for Tok'Kar (segment 18).
+C 1116 @ Swamp of Sorrows, 62.5, 40.5 | Finish the dream dust on the green dragonkin just east of the crocolisks: Green Scalebanes (42-43) around 60-65,37-43, plus a few Green Wyrmkin and Wyrmkin Dreamwalkers (41-43) south of them around 60-62,52-60. Each drops a speck about 1 time in 5. Pull them one at a time from the edge with Stoneskin Totem down and Healing Wave between fights; take on the Scalebane Captains (43-44) only at full health. Do not go east of about 66: Lord Captain Wyrmak, a level 45 rare elite, may stand at 69,39, and the Elder Dragonkin (45) further east are far too strong.
+L 40 @ Swamp of Sorrows, 62.5, 40.5 | Not 40 yet? Keep killing the dragonkin here or south of here (stay west of 66), or the Sawtooth Crocolisks by the water. The Harborage hand-ins next add about 5k XP (more with the new quests), so you can stop a little short. MacKinley's quest in Booty Bay needs 40.
+T 1389,1392 @ Swamp of Sorrows, 26.0, 31.4 | Back to Magtoor at the Harborage. Hand in the new Harborage quests too.
+
+# ---------- Booty Bay, then the zeppelin to Orgrimmar ----------
+H Booty Bay | Hearthstone, or cast Astral Recall: both are bound to Booty Bay now
+T 213 | Kebok, in the inn: the 8 Tumbled Crystals
+T 1116 | Krazek
+A 1117 @ Stranglethorn Vale, 26.9, 77.2 | Krazek. Keep the rumors for Kravel Koalbeard on the Shimmering Flats (segment 16).
+A 2872 @ Stranglethorn Vale, 27.8, 77.1 | "Sea Wolf" MacKinley, near the inn. It needs level 40. Keep it for Stoley in Steamwheedle Port, Tanaris (segment 16).
+FLY Grom'gol | Gringer
+N Take the zeppelin to Orgrimmar @ Stranglethorn Vale, 31.5, 29.4 | The zeppelin tower is at Grom'gol's west edge. Squibby Overspeck's zeppelin goes to Orgrimmar; Nez'raz's goes to the Undercity. Segment 16 starts at the Orgrimmar tower, where you learn Wolf Riding.

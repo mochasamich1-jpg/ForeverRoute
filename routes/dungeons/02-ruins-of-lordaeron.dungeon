@@ -1,0 +1,28 @@
+# New Forever dungeon. Sources: level range (Blizzard's, via foreverchanges.pro/dungeons), quest givers and
+# hand-ins = foreverchanges.pro/dungeon-quests and its quest pages; entrance = Questie dungeons.lua
+# (Undercity map 72.4, 11.4: the ruins above the city). These quests are not in the Questie quest data.
+@dungeon Ruins of Lordaeron
+@levels 15-20
+@window 15-22
+@best 19
+@hub Undercity, 66.0, 44.0
+@entrance Undercity, 72.4, 11.4
+A 92421 @ Undercity, 57.8, 89.8 | Morbin Lightbane in the Royal Quarter. Collect 25 Intact Limbs in the Ruins of Lordaeron.
+A 95216 @ Undercity, 46.6, 71.4 | Theodore Griffs in the Apothecarium. The Highly Toxic Strain drops from Witherfang.
+A 92422 @ Tirisfal Glades, 65.2, 60.2 | Deathguard Kristof in Brill. Only offered if you did Deathguard Linnea's Rear Guard Patrol quests; if he has nothing, press Skip.
+A 92401 @ Silverpine Forest, 44.4, 43.0 | Tabitha Heartweaver at the Sepulcher. Look for her husband Edward in the dungeon.
+RUN | The entrance is in the ruined city above the Undercity. Inside: The Baron drops an Abominable Head that starts Unending Torment, and a Crest of Lordaeron lies in a tower near Bjork or on the wall of the small temple at the far end (it moves) and starts a quest too.
+T 92421 @ Undercity, 57.8, 89.8
+T 95216 @ Undercity, 46.6, 71.4
+T 97288 @ Undercity, 48.6, 68.8 | Bring the Abominable Head to Master Apothecary Faranell.
+>A 97289 @ Undercity, 48.6, 68.8
+>T 97289 @ Undercity, 45.9, 61.8 | Put the head next to the Unfinished Abomination in the next room.
+>A 97290 @ Undercity, 45.9, 61.8
+>T 97290 @ Undercity, 48.6, 68.8
+>A 97291 @ Undercity, 48.6, 68.8
+>T 97291 @ Undercity, 48.6, 68.8 | Get a Toxic Skullcap from Tawny Grisette in the Trade Quarter, Blisterweed by the herbalism trainer and Essence of Agony from the poison vendor in the Rogues' Quarter, then return to Faranell.
+>A 97292 @ Undercity, 48.6, 68.8
+>T 97292 @ Undercity, 48.6, 68.8 | Use the Hissing Serum on the pipes above the abomination, then return to Faranell.
+T 95204 @ Undercity, 73.2, 32.8 | Crest of Lordaeron: Oran Snakewrithe.
+T 92422 @ Tirisfal Glades, 65.2, 60.2
+T 92401 @ Silverpine Forest, 44.4, 43.0

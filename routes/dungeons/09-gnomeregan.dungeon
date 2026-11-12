@@ -1,0 +1,17 @@
+# Sources: level range = foreverchanges.pro/dungeons (Classic group-finder range, not confirmed for Forever);
+# quest givers = foreverchanges.pro/dungeon-quests; prerequisites = Questie. The Horde way in is Scooty's
+# transponder in Booty Bay (quest 2843); Questie lists the dungeon itself in Dun Morogh 24.3, 39.8.
+@dungeon Gnomeregan
+@levels 29-38
+@window 29-36
+@best 31
+@hub Stranglethorn Vale, 27.6, 77.5, 5
+@entrance Stranglethorn Vale, 27.6, 77.5
+A 2841 @ Orgrimmar, 76.0, 25.4 | Nogg in the Valley of Honor. The Rig Blueprints are on an elite robot, the safe combination on Mekgineer Thermaplugg, the last boss.
+A 2842 @ Orgrimmar, 75.5, 25.4 | Sovik, next to Nogg. It sends you to Scooty in Booty Bay.
+>T 2842 @ Stranglethorn Vale, 27.6, 77.5
+>A 2843 @ Stranglethorn Vale, 27.6, 77.5 | Scooty gives you the Goblin Transponder: it lets you use the teleporter pad next to him.
+>T 2843 @ Stranglethorn Vale, 27.6, 77.5
+RUN | For the Horde the way in is the teleporter pad next to Scooty in Booty Bay (you need his Goblin Transponder). It drops you inside Gnomeregan, close to the dungeon portal. Inside: Kernobee gives an escort quest, A Fine Mess, that ends at Scooty.
+T 2904 @ Stranglethorn Vale, 27.6, 77.5 | A Fine Mess, if you escorted Kernobee.
+T 2841 @ Orgrimmar, 76.0, 25.4

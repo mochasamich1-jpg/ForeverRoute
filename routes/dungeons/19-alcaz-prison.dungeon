@@ -1,0 +1,11 @@
+# New Forever dungeon. Source: foreverchanges.pro/dungeons/alcaz-prison (level range is Blizzard's). The page lists
+# 5 Horde quests, takeable from level 46-48, without their givers.
+@dungeon Alcaz Prison
+@levels 48-53
+@window 46-54
+@best 49
+@hub Dustwallow Marsh, 36.0, 31.0, 10
+@hub Tanaris, 51.6, 27.0, 5
+@hub Orgrimmar, 50.0, 50.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is on Alcaz Island, off the north-east coast of Dustwallow Marsh. It has 5 Horde quests (from level 46 to 48), but who gives them is not published yet: ask around Brackenwall Village and take what is offered; the addon logs it so these steps can be filled in.

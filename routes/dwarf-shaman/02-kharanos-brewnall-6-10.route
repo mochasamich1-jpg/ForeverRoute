@@ -1,0 +1,119 @@
+@segment 6-10 Kharanos, Brewnall & Frostmane Hold
+@start-level 6
+@carry 420,2160,96628
+@done 282
+# Dwarf Shaman 6-10. Follows TUGs' 6-9 Dun Morogh file, widened with Brewnall Village, Frostmane Hold,
+# the Gnomeregan gate and a first Ironforge visit: Kharanos + Steelgrill's Depot -> loop 1 (Grizzled Den,
+# Rumbleshot) -> loop 2 (Tundra MacGrann, Brewnall, lake beasts, Frosthowl, Shimmer Ridge) -> hearth ->
+# Ironforge -> loop 3 (Frostmane Hold, Gnomeregan gate, Brewnall) -> hearth -> Ironforge -> Misty Pine Refuge.
+# New Forever NPCs (Eric Brighthammer, Gretchen, Tognus, Gretta, Father Gavin, Eldrun, the Misplaced
+# Packages) are placed from the ForeverChanges pins.
+# Fixes to the plan: 98319 is handed in to Mountaineer Gretchen (its page lists her as start and end), not
+# to Cornelius inside the den. Frosthowl (98326) is deep in the Grizzled Den (quest text + map dots
+# 39.6,48.6), not at Iceflow Lake, so loop 2 goes into the den a second time.
+# Skipped: 314 Protecting the Herd (elite), the profession Camping 101 quests other than Cooking,
+# 403/308 are the two no-XP clicks that get Jarven away from the barrel (described in the step text).
+# Carry-out: 413 Shimmer Stout (Mountaineer Barleybrew at South Gate Outpost, segment 3).
+
+# --- Kharanos ---
+T 96628 @ Dun Morogh, 46.7, 53.8 | Eric Brighthammer, at his campfire on the south-west edge of Kharanos (you pass it coming up the road)
+A 96608 @ Dun Morogh, 46.7, 53.8 | Eric Brighthammer
+C 96608 @ Dun Morogh, 46.7, 53.8 | Stand next to Eric's campfire and type /sit until you get the Boosted Rest buff
+T 96608 @ Dun Morogh, 46.7, 53.8
+A 96629 @ Dun Morogh, 46.7, 53.8 | Eric also offers Camping 101 quests for other professions. Take those only for a profession you already have
+T 420 | Senir Whitebeard, standing next to Eric's camp
+A 98322 @ Dun Morogh, 46.7, 53.8 | Senir Whitebeard. Frostmane Hold, his other quest, needs level 7: you take it later
+T 2160 | Tannok Frosthammer, inside the Thunderbrew Distillery (the inn)
+S Kharanos | Make the inn your home: talk to Innkeeper Belm. Buy 1 Rhapsody Malt from him now and keep it for Ragnar's ribs
+T 96629 @ Dun Morogh, 47.7, 52.3 | Gremlock Pilsnor, the cooking trainer in the inn: learn Cooking from him first, then hand the quest in
+A 99158 @ Dun Morogh, 47.3, 52.2 | Maxan Anvol, in the inn. Keep the candles: Father Gavin is the last stop of this segment
+A 384 | Ragnar Thunderbrew, at the inn
+TRAIN @ Dun Morogh, 47.4, 52.0 | Ingrid Dunwald, the shaman trainer in Kharanos: learn your level 6 spells (Earthbind Totem, Healing Wave rank 2) if you did not at Teo
+A 400 | Tharek Blackstone, on the west side of the village
+A 98321 @ Dun Morogh, 45.2, 52.0 | Tognus Flintfire, at the forge on the west edge of Kharanos
+
+# --- Steelgrill's Depot ---
+A 317 | Pilot Bellowfiz, at Steelgrill's Depot just north-east of Kharanos
+A 313 | Pilot Stonegear, next to him
+A 5541 | Loslor Rudge, at the depot
+T 400 | Beldin Steelgrill, at the depot
+
+# --- Loop 1: the Grizzled Den ---
+T 98322 @ Dun Morogh, 44.1, 57.0 | Mountaineer Gretchen, on the hillside south-west of Kharanos. On the way kill every boar and bear you see: you need 4 Chunks of Boar Meat, 2 Thick Bear Furs and 6 Crag Boar Ribs
+A 98319 @ Dun Morogh, 44.1, 57.0
+C 313,98321,98319 @ Dun Morogh, 41.8, 51.5 | The Grizzled Den is the wendigo cave north-west of Gretchen. Kill Young Wendigos and Wendigos (6-7) for 8 Wendigo Manes, pick up 8 Flintfire Shipments (crates) inside the cave, and go deeper until you find Mountaineer Cornelius. Wendigos hit hard: pull one at a time with Lightning Bolt, Stoneskin Totem up, Healing Wave between pulls
+T 98319 @ Dun Morogh, 44.1, 57.0 | Back out to Mountaineer Gretchen
+A 98323 @ Dun Morogh, 44.1, 57.0
+T 5541 | Hegnar Rumbleshot, at his gun shop in the hills south of the den. Keep killing boars and bears on the way
+C 317,384 @ Dun Morogh, 43.5, 58.5 | Crag Boars and Large Crag Boars (meat and ribs) and Young Black Bears (furs) roam the snow between Rumbleshot, the den and Kharanos. Finish 4 Chunks of Boar Meat, 2 Thick Bear Furs and 6 Crag Boar Ribs on the walk back north-east
+
+# --- Kharanos, second visit ---
+T 98323 | Senir Whitebeard
+T 384 | Ragnar Thunderbrew (he also wants the Rhapsody Malt: Innkeeper Belm sells it)
+T 98321 @ Dun Morogh, 45.3, 52.0 | Tognus Flintfire
+T 317 | Pilot Bellowfiz, at the depot
+A 318
+T 313 | Pilot Stonegear
+L 7 @ Dun Morogh, 43.5, 58.5 | Not level 7 yet? Kill boars west of Kharanos until you are: Tundra MacGrann's quest needs level 7
+
+# --- Loop 2: Tundra MacGrann and Brewnall Village ---
+A 312 | Follow the road west. Tundra MacGrann stands on a small rise south of the road (needs level 7)
+C 312 @ Dun Morogh, 38.5, 53.9 | The meat locker is in Old Icebeard's cave, in the hillside east of MacGrann. Old Icebeard is a level 11 yeti: do NOT fight him. Wait outside until he walks out on his patrol (it can take a few minutes), run in, loot the locker and leave at once
+T 312 | Tundra MacGrann
+T 318 | Rejold Barleybrew, in Brewnall Village at the west end of the road, on the shore of Iceflow Lake
+A 319,315 | Rejold gives both
+A 310 | Marleth Barleybrew, next to Rejold
+A 98326 @ Dun Morogh, 31.5, 44.7 | Gretta Ganter, on the east side of the village
+C 319 @ Dun Morogh, 35.5, 47.5 | Kill 6 Ice Claw Bears, 8 Elder Crag Boars and 8 Snow Leopards (7-8). They roam around Iceflow Lake and the snow fields east of Brewnall: hunt your way south-east toward the Grizzled Den and keep counting on the rest of this loop
+C 98326 @ Dun Morogh, 39.6, 48.6 | Frosthowl is a big wendigo deep inside the Grizzled Den, the cave you cleared before (he is in the far north-west end). Fight your way in, pull him alone at full health and mana, Stoneskin Totem down, and loot the Sack of Fish
+C 315 @ Dun Morogh, 41.5, 38.5 | Shimmer Ridge is the hilltop north of the den, across the road. Shimmerweed sits in baskets in the Frostmane camp and also drops from the Frostmane Seers (8-9) there. Seers cast: Earth Shock them. Get 6
+T 319 | Back west to Rejold Barleybrew in Brewnall. Any beasts missing? They are all around the lake
+A 320
+T 315 | Rejold Barleybrew
+A 413 | Needs level 8. Keep it: Mountaineer Barleybrew is in the far east of Dun Morogh, next segment
+T 98326 @ Dun Morogh, 31.4, 44.6 | Gretta Ganter
+H Kharanos
+
+# --- Kharanos, third visit ---
+T 310 | Buy a Thunder Ale from Innkeeper Belm and go down to the distillery basement. Click the guarded barrel, then talk to Jarven Thunderbrew and give him the ale (two tiny quests, no XP). When he walks off, click the barrel again and swap it
+A 311 | From the same barrel
+T 320 | Pilot Bellowfiz, at Steelgrill's Depot
+A 287 | Senir Whitebeard, at the camp on the south-west edge of Kharanos (needs level 7)
+A 412 | Razzle Sprysprocket, on the north-west edge of Kharanos (needs level 7)
+
+# --- Ironforge, first visit ---
+G Dun Morogh, 53.4, 35.0 | Follow the road north-east from Kharanos and up the ramp to the Gates of Ironforge
+F Ironforge | Gryth Thurden, the gryphon master: walk straight in through the gate to the ring around the Great Forge in the middle of the city
+A 97263 @ Ironforge, 72.4, 48.1 | The Misplaced Packages lie by the mailbox in Tinker Town, the gnome quarter on the east side
+A 95041 @ Ironforge, 67.7, 44.2 | Jemma Quikswitch, in Tinker Town (needs level 7)
+T 97263 @ Ironforge, 47.6, 13.5 | Eldrun Stormbreaker, the Ironforge shaman trainer, at the north end of the city
+TRAIN @ Ironforge, 47.6, 13.5 | Eldrun Stormbreaker: learn your level 8 spells (Stoneclaw Totem, Lightning Shield and new ranks of Lightning Bolt, Earth Shock and Rockbiter Weapon). Not 8 yet? Ingrid in Kharanos teaches them later
+
+# --- Loop 3: Frostmane Hold and the Gnomeregan gate ---
+C 287 @ Dun Morogh, 25.4, 50.4 | Leave Ironforge and take the road west past Kharanos and Brewnall. Frostmane Hold is the troll cave in the far west of Dun Morogh, south-west of Iceflow Lake. Kill 5 Frostmane Headhunters (8-9) around and inside it and walk into the cave until the explore objective ticks. Headhunters throw from range: run up to them. Earthbind Totem if one flees
+C 412,95041 @ Dun Morogh, 26.0, 40.4 | North of the hold, in front of the Gnomeregan entrance: Leper Gnomes (8-10) drop the Restabilization Cogs and Gyromechanic Gears (8 of each). The 7 Gnomeregan Archival Data cards lie in the snow around the same camp: look for small objects on the ground between the gnomes. Stoneform clears the gnomes' disease
+T 311 | Marleth Barleybrew, in Brewnall Village on the way back east
+H Kharanos | Hearthstone still on cooldown? Walk the road east instead
+
+# --- Kharanos, last visit ---
+T 287 | Senir Whitebeard
+A 291
+T 412 | Razzle Sprysprocket
+TRAIN @ Dun Morogh, 47.4, 52.0 | Ingrid Dunwald: learn your level 8 spells if you have not yet. Already level 10? Leave Call of Fire for the next segment and learn the level 10 spells with it
+
+# --- Ironforge, second visit ---
+T 291 @ Ironforge, 39.6, 57.5 | Senator Barin Redstone, in the High Seat (the king's hall) on the west side of Ironforge
+T 95041 @ Ironforge, 67.7, 44.2 | Jemma Quikswitch, in Tinker Town
+
+# --- Misty Pine Refuge ---
+T 99158 @ Dun Morogh, 57.7, 44.8 | Leave Ironforge by the gate, go down the ramp and turn east off the road: Father Gavin's cabin, Misty Pine Refuge, stands on the mountainside south-east of the Gates of Ironforge
+A 99159 @ Dun Morogh, 57.7, 44.8 | Father Gavin
+C 99159 @ Dun Morogh, 57.0, 45.5 | Collect 14 Mostly Dry Firewood: pick it up from the ground around the refuge and under the pines nearby (exact spots are not in our data, so look around the cabin first)
+T 99159 @ Dun Morogh, 57.7, 44.8
+A 99160,99162 @ Dun Morogh, 57.7, 44.8 | Father Gavin gives both
+C 99160,99162 @ Dun Morogh, 55.1, 45.3 | Minor Ice Elementals drift over the snow slide around the refuge and west toward the Ironforge road (49-58, 42-50): kill 10. While you hunt, look for the bodies of three fallen mountaineers in the same snow field and take Stoneanvil's, Sunhammer's and Coalbeard's Rifle (their spots are not in our data)
+T 99160,99162 @ Dun Morogh, 57.7, 44.8 | Father Gavin
+A 99161 @ Dun Morogh, 57.7, 44.8
+C 99161 @ Dun Morogh, 57.6, 42.6 | Avala is the large ice elemental just north of the refuge, up the slope. Fight it at full health and mana with Stoneskin Totem down; Healing Wave when you drop below half. Loot Avala's Core
+T 99161 @ Dun Morogh, 57.7, 44.8 | Father Gavin
+L 10 @ Dun Morogh, 55.1, 45.3 | Not level 10 yet? Kill ice elementals, boars and leopards around the refuge until you are: the next segment starts with Call of Fire in Kharanos, which needs level 10. Then walk back south-west to Kharanos

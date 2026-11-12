@@ -1,0 +1,15 @@
+# New Forever dungeon. Sources: level range (Blizzard's, via foreverchanges.pro/dungeons), quest givers and
+# hand-ins = foreverchanges.pro/dungeon-quests and its quest pages; entrance = Questie dungeons.lua.
+# These quests are not in the Questie quest data.
+@dungeon Excavation Site: Wetlands
+@levels 26-31
+@window 26-34
+@best 30
+@hub Arathi Highlands, 74.4, 35.6, 8
+@entrance Wetlands, 47.8, 56.2
+A 95697 @ Orgrimmar, 57.4, 53.4 | Borstan at his firepit in the Drag. 4 Thicket Raptor Meat from the raptors inside the dungeon.
+A 95663 @ Arathi Highlands, 74.5, 35.6 | Zaruk in Hammerfall. It sends you to the Deathstalker Agent in the Wetlands.
+RUN | It is in the Wetlands, in the hills above Whelgar's Excavation. From Hammerfall ride west across Arathi and south over the Thandol Span. Before going in, hand Dragonmaw Rumors in to the Deathstalker Agent near the entrance (Wetlands 51.4, 59.2) and take Open the Maw from her; hand it back to her after the run. Inside: the last boss, the Relic Guardian, drops a Titan Relic that starts Elder Knowledge.
+T 95697 @ Orgrimmar, 57.4, 53.4
+T 95664 @ Thunder Bluff, 70.9, 33.8 | Elder Knowledge: Bashana Runetotem on Elder Rise.
+>A 98823 @ Thunder Bluff, 70.9, 33.8 | Earthen Echo: take the relic to Muln Earthfury at the Skywatcher Plateau in north-west Mulgore.

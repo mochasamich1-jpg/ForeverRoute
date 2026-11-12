@@ -1,0 +1,10 @@
+# ALLIANCE. New Forever dungeon. Source: foreverchanges.pro/dungeons/alcaz-prison and quest pages (level range is Blizzard's).
+@dungeon Alcaz Prison
+@levels 48-53
+@window 46-54
+@best 49
+@hub Dustwallow Marsh, 66.0, 49.0, 8
+@hub Tanaris, 51.6, 27.0, 5
+@hub Stormwind City, 50.0, 50.0
+@entrance none
+RUN | New Forever dungeon, not checked in game yet. It is on Alcaz Island, off the north-east coast of Dustwallow Marsh, a short swim from Theramore. Its Alliance quests include The Secret Prison and Somber News (Sully McCleary, Dustwallow Marsh) and The Dragon's Journal (Archmage Lan'dalock in Dalaran, Alterac Mountains 15.3, 73.8); the other givers are not published yet. Ask around Theramore and take what is offered: the addon logs it so these steps can be filled in.

@@ -1,0 +1,144 @@
+@segment 13-16 Orgrimmar & Northern Barrens
+@start-level 13
+@carry 1358,6324,423,530,95981,450
+@done 1359
+
+# Carry-out to segment 5: 1959, 1061, 6324, 423, 530, 95981, 450, 851, 855, 3301.
+# Every Crossroads and Ratchet quest that is finished here is also handed in here (848, 880, 821,
+# 863, 896, 902). Quests that are only worked in segment 6 (881, 867, 3281, 865, 1069) are not taken
+# yet, so the log stays small through segment 5.
+
+# ---------------------------------------------------------------- Orgrimmar
+N You arrive on the zeppelin tower outside Orgrimmar. Walk west through the main gate into the Valley of Strength.
+A 97246 | Thatog, in the Valley of Strength near the inn
+F Orgrimmar | Flight master on top of the tower in the Valley of Strength
+T 97246 | Borstan at his firepit in the Drag
+A 97249 | He gives you Migi's lunch; you deliver it behind Grommash Hold a bit later
+A 97242 @ Orgrimmar, 56.1, 34.4 | Kor'geld in Yelmak's Alchemy and Potions, north end of the Drag
+C 97242 @ Orgrimmar, 69.0, 30.5 | Go east into the Valley of Honor and pick 2 Cattails and 4 Speargrass growing along the water
+T 97242 @ Orgrimmar, 56.1, 34.4 | Back to Kor'geld
+A 97275 | Yelmak, in the same shop
+T 97275 | Whuut stands a few steps away in the shop
+T 97249 | Migi plays with his friends behind Grommash Hold in the Valley of Wisdom
+A 97326 | Thra, one of Migi's friends
+C 97326 @ Orgrimmar, 42.5, 32.5 | Pick up 8 Smooth Boulders lying on the ground around the Valley of Wisdom
+T 97326
+A 5726 | Thrall, inside Grommash Hold
+A 1061 @ Orgrimmar, 38.9, 38.4 | Zor Lonetree, outside Grommash Hold. This is for later (Stonetalon), just keep it
+N Leave Orgrimmar by the main gate. Skull Rock is the rocky hill just east of the gate, north of the zeppelin tower.
+C 5726 | Kill Burning Blade Fanatics and Apprentices in and around Skull Rock until a Lieutenant's Insignia drops
+A 832 @ Durotar, 51.9, 9.6 | At the back of the Skull Rock cave, kill Gazz'uz (level 14 warlock with a voidwalker). Frost Nova the voidwalker and burst him down. His Eye of Burning Shadow starts this quest
+T 5726 | Back into the city to Thrall
+A 5727
+C 5727 @ Orgrimmar, 49.5, 50.6 | Show the insignia to Neeru Fireblade in the Cleft of Shadow and go through his dialogue
+T 832 @ Orgrimmar, 49.5, 50.6 | Neeru Fireblade, on the same visit
+T 5727 | Back to Thrall. Do not take the next Hidden Enemies or Slaying the Beast: both are Ragefire Chasm quests
+
+# ---------------------------------------------------------------- To the Crossroads
+G The Barrens, 62.3, 19.4 | Leave by the main gate, follow the road south and take the western fork over the Southfury River bridge to Far Watch Post
+N From Far Watch Post follow the road west, turn left (south) at the T-junction and stay on the road until the Crossroads.
+S Crossroads | Innkeeper at the Crossroads inn
+F Crossroads | Wind rider master on the tower in the Crossroads
+T 1358 | Apothecary Helbrim
+A 1492 | A crate for Ratchet; you deliver it later
+A 848 | Also Helbrim. You pick the spores up at the Forgotten Pools
+A 869 | Gazrog
+A 844 | Sergra Darkthorn
+A 870 | Tonga Runetotem
+# Questie says 5041 needs 871 handed in first; in Forever Thork offered both at once (play log 2026-11-08).
+A 871,5041 | Thork gives both; the supply crates are on Thorn Hill, later in this segment
+
+# ---------------------------------------------------------------- Quilboars and plainstriders next to the Crossroads
+C 871 | Razormane camp just north-east of the Crossroads: kill Water Seekers, Thornweavers and Hunters. Pull them one or two at a time and use Frost Nova to get distance
+C 844 | Kill plainstriders all around the Crossroads for 7 Plainstrider Beaks. Any Sunscale raptor you meet also drops Raptor Heads
+T 871
+A 872
+T 844
+A 845
+
+# ---------------------------------------------------------------- West: Regthar, Forgotten Pools, Kolkar
+A 855 | Regthar Deathgate, at the small camp west of the Crossroads
+A 850
+C 870 | Walk into the water at the Forgotten Pools, north of Regthar
+C 848 @ The Barrens, 45.0, 23.0 | Loot 4 Fungal Spores from the Laden Mushrooms around the pools
+C 850 | Barak Kodobane is at the Kolkar camp west of the pools. Every Kolkar can drop Centaur Bracers: collect what you get, you finish them later
+T 850
+A 851 | Verog only shows up after many centaurs die around here (shared counter). Leave him for your next visit
+C 845 | On the walk back east to the Crossroads: kill Zhevra Runners on the plains for 4 Zhevra Hooves. More run south of the Crossroads
+T 845 | Sergra Darkthorn
+A 903 | Prowlers are north, toward the Sludge Fen; you hunt them later in this segment
+T 870
+A 877
+T 848 | Apothecary Helbrim. Decline his next quest, Apothecary Zamah: it is timed, and you take it from him right before the Thunder Bluff trip (segment 6)
+
+# ---------------------------------------------------------------- South-east to Ratchet
+A 819 @ The Barrens, 54.7, 37.2 | Chen's Empty Keg is a small keg on the ground. It spawns at a few spots (one is by the road to Ratchet); click it when you see it
+C 877 @ The Barrens, 55.6, 42.8 | Stagnant Oasis: use the Dried Seeds at the bubbling fissure in the water. The Kolkar around the oasis also drop bracers
+G The Barrens, 62.8, 37.1 | Follow the road east to Ratchet on the coast
+F Ratchet | Flight master in the middle of Ratchet
+T 1492 | Wharfmaster Dizzywig, by the dock
+T 819 | Brewmaster Drohn
+A 821 | You collect the parts around the Crossroads and hand it in here at the end of this segment
+A 887 | Gazlowe
+A 895 | WANTED poster outside Gazlowe's house
+A 97253 @ The Barrens, 63.1, 36.4 | Wrenix the Wretched
+C 887,895,97253 @ The Barrens, 63.3, 46.0 | Pirate camp on the coast south of Ratchet: kill Southsea Brigands and Cannoneers, kill Baron Longshore for his head, and pick up 5 Handfuls of Complicated Parts on the higher ground at the west side of the camp
+T 887
+A 890
+T 890 | Dizzywig on the dock
+A 892
+T 892 | Back to Gazlowe
+A 888
+T 895
+T 97253 @ The Barrens, 63.1, 36.4
+C 888 | Back to the pirate camp: loot the Shipment of Boots and the Telescopic Lens from the crates at the south end of the camp
+T 888
+A 894 | Sputtervalve
+A 896 | Wharfmaster Dizzywig. Leave Mebok Mizzyrix's raptor and spider quests: you take them on your first Ratchet visit in segment 6
+FLY Crossroads
+
+# ---------------------------------------------------------------- Crossroads turn-ins
+T 877
+A 880 | Snapjaws live in the oases; you do this at the end of this section
+
+# ---------------------------------------------------------------- North: Thorn Hill, Sludge Fen, Boulder Lode Mine
+C 821:1,821:2 @ The Barrens, 52.4, 26.7 | Around the Crossroads: Savannah Huntresses (lions) drop Savannah Lion Tusks and plainstriders drop Plainstrider Kidneys. Prowlers further north also drop tusks
+C 872,5041 | Thorn Hill, north-east along the road: kill Razormane Geomancers and Defenders and Kreenig Snarlsnout on the hill. Pick up Crossroads' Supply Crates lying around the hill
+C 869,903 @ The Barrens, 55.5, 14.5 | North along the road towards the Sludge Fen: Sunscale Screechers drop Raptor Heads, Savannah Prowlers drop Prowler Claws
+T 894 | The Venture Co. research site in the Sludge Fen: use the Control Console
+A 900
+C 900 | Shut off the three valves on the pipes around the console
+T 900
+A 901
+C 901 | Kill Tinkerer Sniggles in the hut near the console for the Console Key
+T 901
+A 902 | Keep the Samophlange; you hand it in at Ratchet at the end of this segment
+C 896 | Boulder Lode Mine, north-east of the Sludge Fen: kill Venture Co. Enforcers and Overseers until the Cats Eye Emerald drops
+A 858 | Wizzlecrank's Shredder, on the east side of the Sludge Fen
+C 858 | Supervisor Lugwizzle patrols the top of the nearby watch tower; he drops the Ignition Key
+T 858
+A 863 | Escort quest: stay close to the shredder and kill the Venture Co. ambushers. If it fails, take it again from the shredder
+C 863 @ The Barrens, 56.5, 7.5 | The quest completes once the shredder is safe; you hand it in at Ratchet at the end of this segment
+H Crossroads
+T 872,5041
+T 869 | Gazrog. Do not take Stolen Silver yet: you take it at the start of segment 6, when you hearth back to the Crossroads
+T 903 | Sergra Darkthorn. Do not take Echeyakee yet: you take it at the start of segment 6, when you hearth back to the Crossroads
+A 4921 | Mankrik
+
+# ---------------------------------------------------------------- South: Lushwater Oasis and Mankrik's wife
+C 880 @ The Barrens, 46.8, 39.6 | Lushwater Oasis, south-west of the Crossroads: kill Oasis Snapjaws for 8 Altered Snapjaw Shells. Kolkar Stormers here drop bracers too
+C 4921 | Follow the Gold Road south: Mankrik's wife lies at a burned-out camp near the road, among the quilboars
+C 821:3 @ The Barrens, 47.0, 51.0 | Kill Stormsnouts (thunder lizards, level 18-19) around the body until a Thunder Lizard Horn drops. Pull one at a time, Frost Nova and kite it. If you cannot kill one, abandon Chen's Empty Keg now: no later step hands it in
+T 4921 | Back to Mankrik. He may then offer Her Name Is Olgra (new in Forever, Razormane Raiders around his wife's body): leave it for now; you take it from him in segment 6, after its first loop
+T 880 | Tonga Runetotem, next to Mankrik
+A 3301 | Tonga. A delivery to Mura Runetotem at the Sepulcher; keep it in your log, the route hands it in at the start of segment 7
+
+# ---------------------------------------------------------------- Ratchet turn-ins, then Orgrimmar
+FLY Ratchet
+T 863,902 | Sputtervalve. Do not take his new quests yet (Wenikee Boltbucket, Ziz Fizziks): you take them on your next Ratchet visit
+T 896 | Wharfmaster Dizzywig, on the dock
+T 821 | Brewmaster Drohn. Skip his next keg quest (level 24)
+FLY Orgrimmar
+A 1959 @ Orgrimmar, 39.2, 86.3 | Uthel'nay, the mage trainer in Darkbriar Lodge in the Valley of Spirits (south-west Orgrimmar)
+TRAIN | Uthel'nay: learn your level 14 and 16 spells (Arcane Explosion at 14, Flamestrike at 16)
+N Go out the main gate to the zeppelin tower and take the zeppelin to Tirisfal Glades.

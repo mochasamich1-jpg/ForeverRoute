@@ -1,0 +1,158 @@
+@segment 18-21 Central Barrens & eastern Stonetalon (replaces Wailing Caverns)
+@start-level 18
+@carry 530,95981,1061,851,855,3301
+@done 850,877,903,869,858,901,4921,848,880,863,902,896,821
+# Starts at the Crossroads (hearthed there at the end of segment 5). The hearth stays bound
+# at the Crossroads for the whole segment. Segment 4 already handed in its Crossroads and
+# Ratchet quests (848, 880, 821, 863, 896, 902); the Barrens quests worked here (881, 867,
+# 3281, 865, 1069) are taken in this segment. 3301 Mura Runetotem is carried on to segment 7.
+# Ends at Sun Rock Retreat: train 20 in Thunder Bluff, then fly to Sun Rock to hand in
+# Boulderslide Ravine. Segment 7 starts with Teleport: Undercity, which works from there.
+
+# ---------------------------------------------------------------------------
+# Crossroads: pick up the quests for this segment
+# ---------------------------------------------------------------------------
+A 881 | Sergra Darkthorn. She gives you the Horn of Echeyakee
+A 867 | Darsok Swiftdagger
+A 3281 | Gazrog. The silver lies in a raptor nest at the Raptor Grounds; you get it on loop 2
+
+# ---------------------------------------------------------------------------
+# Loop 1 (north): Echeyakee, Witchwing harpies, Regthar
+# ---------------------------------------------------------------------------
+C 881 @ The Barrens, 55.6, 17.2 | Run north-east from the Crossroads to the giant kodo bones. Blow the Horn of Echeyakee there; the white lion comes to you. Kill it and loot its hide
+C 867 @ The Barrens, 40.5, 16.5 | Witchwing harpies in the north-west Barrens drop the talons. Stay on the east side of the roost; the Slayers further west hit harder
+C 851,855 @ The Barrens, 44.0, 25.0 | Only if not finished yet: Kolkar centaurs around Barak's old camp drop the bracers, and Verog appears after enough centaurs in the area die
+T 851,855 | Regthar Deathgate, on the road west of the Crossroads
+A 852 | Hezrul leads the Kolkar at Lushwater Oasis; he comes on the next loop
+T 881 | Sergra Darkthorn, Crossroads
+A 905 | The feathers drop from any Sunscale raptor; you will pass both raptor areas on the next loop
+T 867 | Darsok Swiftdagger
+A 875
+A 95774 @ The Barrens, 52.0, 31.6 | Mankrik (NEW). You collect the adornments next to his wife's body on the next loop
+
+# ---------------------------------------------------------------------------
+# Loop 2 (south-east): Ratchet, Raptor Grounds, Northwatch, the oases, harpies again
+# ---------------------------------------------------------------------------
+FLY Ratchet
+A 3921,1483 | Sputtervalve: Wenikee is in the north Barrens, Ziz Fizziks is at Windshear Crag in Stonetalon
+A 865,1069 | Mebok Mizzyrix. The raptor horns come next; the spider eggs are in Stonetalon later in this segment
+A 891 | Captain Thalo'thas Brightsun
+C 865,3281 @ The Barrens, 57.0, 53.0 | Raptor Grounds, south along the coast road: Sunscale Scytheclaws drop the horns and every Sunscale raptor can drop a feather for The Angry Scytheclaws (get 3). The Stolen Silver lies in a nest at 58.0, 53.9
+C 891 @ The Barrens, 61.8, 54.7 | Northwatch Hold: Theramore Marines and Preservers drop the medals. Kill Captain Fairmount (61.9, 54.7), Cannoneer Whessan (60.4, 54.8) and Cannoneer Smythe (63.2, 56.6). Pull one at a time and Frost Nova the rest
+A 898 @ The Barrens, 62.0, 55.0 | Gilthares Firebough is a prisoner inside the hold
+C 898 @ The Barrens, 62.0, 55.0 | Tell him you are ready and escort him north up the coast to Ratchet. Marines ambush on the way; keep them off him. If he dies, take the quest from him again
+T 891,898 | Captain Brightsun, Ratchet
+T 865 | Mebok Mizzyrix
+C 905 @ The Barrens, 52.3, 46.4 | Head west to the three Scytheclaw nests south-west of the Stagnant Oasis and use a feather on each
+C 95774 @ The Barrens, 49.6, 51.4 | South-west to Mankrik's wife's body (49.3, 50.3): kill the quilboars around it (Mankrik calls them Razormane Raiders) until 4 Olgra's Adornments drop
+C 852 @ The Barrens, 46.0, 41.1 | North to Lushwater Oasis: Hezrul Bloodmark is at the Kolkar camp on the south bank
+T 852 | Regthar Deathgate. He then offers Counterattack! (elite group quest): skip it
+C 875 @ The Barrens, 38.9, 14.5 | Back to the Witchwing roost: Witchwing Slayers drop the Harpy Lieutenant Rings
+T 875 | Darsok Swiftdagger, Crossroads
+A 876
+T 905 | Sergra Darkthorn
+A 3261
+T 3281 | Gazrog. Do NOT take Apothecary Zamah from Helbrim yet: it is timed, you take it at the very end
+T 95774 @ The Barrens, 52.0, 31.6 | Mankrik
+
+# ---------------------------------------------------------------------------
+# Loop 3 (north): Wenikee, Vrang Wildgore's camp (NEW), Serena
+# ---------------------------------------------------------------------------
+T 3921 | Wenikee Boltbucket, north of the Crossroads
+A 3922
+C 3922 @ The Barrens, 56.3, 8.3 | Sludge Fen, to the east: loot the Tool Buckets around the Venture Co. camp
+T 3922 | Wenikee Boltbucket
+A 3923 | For segment 8 (Rilli Greasygob, Orgrimmar)
+A 95494,95507 @ The Barrens, 43.8, 12.2 | Vrang Wildgore (NEW), the injured hunter west of Wenikee
+C 95494,95507 @ The Barrens, 44.5, 15.0 | Savannah Patriarch lions in the valley below Vrang drop the hides (more Savannah Matriarchs roam north-west of Ratchet if these run out). Loot the Sprung Traps scattered through the same valley for the Trapped Game
+T 95494,95507 @ The Barrens, 43.8, 12.2 | Vrang Wildgore
+A 95495 @ The Barrens, 43.8, 12.2 | He gives you a Bundle of Hides for the hermit on the ridge behind him
+T 95495 @ The Barrens, 42.0, 11.4 | Walton, on top of the ridge
+A 95621 @ The Barrens, 42.0, 11.4
+C 95621 @ The Barrens, 41.8, 15.5 | Kill the Kul Tiras soldiers camped at the wrecked caravan south of the ridge until Benedict's Orders drop
+T 95621 @ The Barrens, 42.0, 11.4 | Walton
+A 95508 @ The Barrens, 42.0, 11.4
+C 95508 @ The Barrens, 41.8, 11.4 | Stay next to Walton: Terry Longdrink and his marines come up the ridge. Help him kill them all
+T 95508 @ The Barrens, 42.0, 11.4 | Walton
+C 876 @ The Barrens, 39.2, 12.2 | Serena Bloodfeather stands at the back of the Witchwing roost. Clear the harpies around her first, then pull her alone
+H Crossroads | If the hearth is still on cooldown, run back south-east to the Crossroads
+T 876 | Darsok Swiftdagger
+A 1060 | Deliver it to Jin'Zil at Malaka'jin in Stonetalon, next
+
+# ---------------------------------------------------------------------------
+# Stonetalon Mountains (south-east corner, Windshear Crag, Sun Rock)
+# ---------------------------------------------------------------------------
+T 1061 | Run west along the road past Regthar to the Stonetalon border: Seereth Stonebreak
+A 1062
+A 6548 | Makaba Flathoof, next to Seereth
+C 6548 | Grimtotem Post, just inside Stonetalon: kill Grimtotem Ruffians and Mercenaries
+T 6548 | Makaba Flathoof
+A 6629
+C 6629 | Back at the Grimtotem Post: kill the Grimtotem Brutes and Grundig Darkcloud by the cage
+A 6523 @ Stonetalon Mountains, 73.5, 85.6 | Kaya Flathoof, the captive next to Grundig
+C 6523 @ Stonetalon Mountains, 73.5, 85.6 | Escort Kaya to Camp Aparaje. Grimtotems ambush her when she arrives; kill them fast. If she dies, take the quest from her again
+T 6629,6523 | Makaba Flathoof
+A 6401 @ The Barrens, 35.2, 27.8 | Tell Tammra at Sun Rock Retreat, later on this trip
+A 6461 | Xen'Zilla at Malaka'jin, the troll camp south-west of the Grimtotem Post
+T 1060 | Witch Doctor Jin'Zil, in the cave at the back of Malaka'jin
+C 6461:1 @ Stonetalon Mountains, 64.5, 85.0 | Kill Deepmoss Creepers in the spider valley north-west of Malaka'jin on your way north
+T 1483 | Ziz Fizziks, the gnome on the south-west edge of Windshear Crag
+A 1093
+C 1062,1093,1069,6461:2 @ Stonetalon Mountains, 63.5, 55.0 | Windshear Crag: kill Venture Co. Loggers, loot the blueprints from a Venture Co. Operator, pick up Deepmoss Eggs under the remaining trees and kill Deepmoss Venomspitters
+T 1093 | Ziz Fizziks
+A 1094 | For Sputtervalve in Ratchet
+F Sun Rock Retreat | Flight master on the west side of Sun Rock Retreat
+T 6401 | Tammra Windfield
+A 6421 | Mor'rogal. Skip Arachnophobia (wanted poster, elite)
+C 6421 @ Stonetalon Mountains, 58.5, 89.5 | South-east to the Boulderslide Ravine cave: kobolds drop Resonite Crystals and more crystals lie on the cave floor. Go all the way to the back of the cave for the investigation credit. Kill any Deepmoss Creepers you still need on the way
+C 6461 @ Stonetalon Mountains, 64.5, 85.0 | Finish any Creepers or Venomspitters you still need
+T 6461 | Xen'Zilla, Malaka'jin
+T 1062 | Seereth Stonebreak
+A 1063,1068 @ The Barrens, 35.3, 27.9 | Magatha is in Thunder Bluff (end of this segment); Shredding Machines is for segment 8
+
+# ---------------------------------------------------------------------------
+# Camp Taurajo, Ratchet and the Jorn Skyseer hunts
+# ---------------------------------------------------------------------------
+F Camp Taurajo | Run south across the Barrens to Camp Taurajo and take the flight path
+T 3261 | Jorn Skyseer
+A 882
+A 878 | Mangletooth, the caged quilboar in camp
+FLY Ratchet
+T 1069 | Mebok Mizzyrix
+T 1094 | Sputtervalve
+A 1095 @ The Barrens, 63.0, 37.2 | For segment 8 (Ziz Fizziks)
+C 882 @ The Barrens, 60.4, 32.4 | Kill a zhevra north-west of Ratchet and loot a Fresh Zhevra Carcass. Place it at the dead tree; Ishamuhale comes to eat it. Kill him for his fang
+FLY Camp Taurajo
+T 882 | Jorn Skyseer
+A 907
+C 907,878 @ The Barrens, 48.0, 53.5 | North-east of Camp Taurajo: Stormsnout thunder lizards drop the blood, and the Bristleback Water Seekers, Thornweavers and Geomancers count for Tribes at War. Keep every Blood Shard you loot
+T 907 | Jorn Skyseer
+A 913
+T 878 | Mangletooth
+A 5052
+T 5052 | Hand in one Blood Shard. Spare shards can buy his buffs; optional
+C 913 @ The Barrens, 47.0, 52.0 | Kill a Thunderhawk Hatchling in the same field north-east of camp for its wings
+T 913 | Jorn Skyseer
+A 874,1130 | Mahren Skyseer is for segment 9; Melor Sends Word (needs level 20) is for segment 10
+H Crossroads | If the hearth is still on cooldown, fly from Camp Taurajo to the Crossroads instead
+A 868 | Korran. Egg Hunt is done in segment 9
+A 853 | Apothecary Helbrim. This one is TIMED: go straight to Thunder Bluff now
+FLY Camp Taurajo | If you already have the Thunder Bluff flight path, fly straight to Thunder Bluff instead
+N Run west from Camp Taurajo through the gate into Mulgore and follow the road north past Bloodhoof Village to Thunder Bluff. Ride a lift up
+
+# ---------------------------------------------------------------------------
+# Thunder Bluff
+# ---------------------------------------------------------------------------
+A 742 | Bluff Runner Windstrider, near the lifts
+F Thunder Bluff | Flight master in the middle of the main rise
+A 1195 | Zangen Stonehoof
+T 1063 | Magatha Grimtotem, Elder Rise (watch the 853 timer; go to Zamah first if it is low)
+A 1064
+T 853 | Apothecary Zamah, in the Pools of Vision cave under Spirit Rise
+T 1064 | Apothecary Zamah
+A 1065 | For segment 7 (Tarren Mill)
+A 264 | Clarice Foster, Spirit Rise. For segment 7 (Yuriv's tomb, the Sepulcher)
+TRAIN | Spirit Rise mage trainers: learn your level 18 and 20 spells (Blink, Blizzard, Evocation, Mana Shield and the new ranks)
+N Learn Teleport: Undercity and Teleport: Orgrimmar @ Thunder Bluff, 22.5, 16.9 | The mage trainers do not teach teleports: Birgitte Cranston, the Portal Trainer, stands beside them on Spirit Rise. Then buy 5-10 Runes of Teleportation from Chepi, the reagent vendor on the main rise (36.4, 54.9). If she does not offer them yet, the next segment starts with a fly-and-zeppelin fallback
+FLY Sun Rock Retreat | Flight master in the middle of the main rise
+T 6421 | Mor'rogal. He then offers Earthen Arise (elite): skip it. The next segment starts with Teleport: Undercity, which you can cast from here
