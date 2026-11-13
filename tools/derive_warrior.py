@@ -163,6 +163,71 @@ EDITS[1][1] = ('before', 'TRAIN %s | Llane Beshere, the warrior trainer: learn e
                ['T 3100 %s | Llane Beshere, the warrior trainer, in the front part of the abbey' % LLANE])
 
 
+# Damage consumables: (required level, name), levels from the installed Questie data (baked_items.json field 10).
+STONES = [(1, 'Rough'), (5, 'Coarse'), (15, 'Heavy'), (25, 'Solid'), (35, 'Dense')]
+STRENGTH = [(1, "Elixir of Lion's Strength"), (20, "Elixir of Ogre's Strength"), (48, 'Elixir of Giants'),
+            (55, 'Elixir of the Grizzly')]
+AGILITY = [(2, 'Elixir of Minor Agility'), (18, 'Elixir of Lesser Agility'), (27, 'Elixir of Agility'),
+           (38, 'Elixir of Greater Agility'), (46, 'Elixir of the Mongoose')]
+SCROLLS = [(10, 'Scroll of Strength'), (25, 'Scroll of Strength II'), (40, 'Scroll of Strength III'),
+           (55, 'Scroll of Strength IV')]
+RAGE = [(4, 'Rage Potion'), (25, 'Great Rage Potion'), (46, 'Mighty Rage Potion')]
+# segments that pass an auction house (Stormwind or Ironforge) near their start
+CITY = (4, 5, 6, 7, 11, 12, 15, 16, 19, 25)
+
+
+def best(table, lo, hi):
+    """(what you can use at level lo, [(level, name) that unlock before level hi])."""
+    now = [x for x in table if x[0] <= lo]
+    later = [x for x in table if lo < x[0] < hi]
+    return (now[-1][1] if now else None), later
+
+
+def consumables(n, lo, hi, starts):
+    """One N step: the damage consumables for this segment (levels lo to hi)."""
+    parts = []
+    stone, later = best(STONES, lo, hi)
+    t = '%s Sharpening Stone (blades) or %s Weightstone (maces), 30 minutes each: keep one on your weapon all the time' % (stone, stone)
+    t += ''.join('; from level %d the %s ones' % x for x in later)
+    parts.append('Weapon: ' + t)
+    el = []
+    for table in (STRENGTH, AGILITY):
+        now, later = best(table, lo, hi)
+        if now:
+            el.append(now + ''.join(' (from %d: %s)' % x for x in later))
+        else:
+            el += ['%s from level %d' % (x[1], x[0]) for x in later]
+    parts.append('Elixirs, one Strength and one Agility at a time, an hour each: ' + ' and '.join(el))
+    extra = []
+    for table in (SCROLLS, RAGE):
+        now, later = best(table, lo, hi)
+        names = ([now] if now else []) + ['%s from %d' % (x[1], x[0]) for x in later]
+        if names:
+            extra.append(', then '.join(names))
+    if extra:
+        parts.append('Also: ' + ' (stacks with the elixirs); '.join(extra) + ' (use it at the start of a hard fight)'
+                     if len(extra) == 2 else 'Also: ' + extra[0])
+    if lo <= 45 < hi or lo >= 45:
+        parts.append('From 45: Winterfall Firewater (attack power; it drops from the Winterfall furbolgs in Winterspring, or buy it)'
+                     + (' and Elemental Sharpening Stones from 50 (critical strike in place of flat damage; expensive)' if hi > 50 else ''))
+    if n in CITY:
+        later_city = [m for m in CITY if m > n]
+        until = starts[later_city[0]] if later_city else 60
+        ahead = [(x[0], x[1] + ' stones' if table is STONES else x[1])
+                 for table in (STONES, STRENGTH, AGILITY, SCROLLS, RAGE) for x in table if hi <= x[0] < until]
+        where = 'Stormwind' if n == 4 else 'Ironforge or Stormwind'
+        t = 'This segment passes the %s auction house: buy enough to last until level %d' % (where, until)
+        if ahead:
+            t += ', and already what unlocks on the way (%s)' % ', '.join('%s at %d' % (x[1], x[0]) for x in sorted(ahead))
+        parts.append(t + '. Blacksmiths make the stones and alchemists the elixirs and potions; scrolls drop or are sold on the auction house')
+    else:
+        parts.append('No auction house on this segment: use what you bought earlier and keep every scroll and elixir that drops')
+    if lo < 11:
+        parts = ['Nothing worth a detour yet: the first auction house is Stormwind, at level 11. Use any sharpening stone, elixir or scroll that a quest or a kill gives you'
+                 + ('; from level 4 a Rage Potion helps at the start of a hard fight' if lo < 6 else '')]
+    return 'N Damage consumables for levels %d-%d | %s' % (lo, hi, '. '.join(parts))
+
+
 def interrupt_tool(level):
     if level < 11:
         return None
@@ -224,6 +289,11 @@ def main():
     for old in glob.glob(os.path.join(out_dir, '*.route')):
         os.remove(old)
     left = []
+    files = sorted(glob.glob(os.path.join(ROOT, 'routes', SRC, '*.route')))
+    global STARTS, ENDS
+    STARTS = {int(os.path.basename(f)[:2]): int(re.search(r'@start-level (\d+)', open(f, encoding='utf-8').read()).group(1))
+              for f in files}
+    ENDS = {n: STARTS.get(n + 1, 60) for n in STARTS}
     for f in sorted(glob.glob(os.path.join(ROOT, 'routes', SRC, '*.route'))):
         base = os.path.basename(f)
         n = int(base[:2])
@@ -264,6 +334,13 @@ def main():
                     lines[k:k] = op[2]
                 else:
                     lines[k + 1:k + 1] = op[2]
+
+        # one consumables step per segment: after the first city training stop, or as the first step
+        note = consumables(n, level, ENDS[n], STARTS)
+        steps = [k for k, l in enumerate(lines) if l and l[0] not in '#@']
+        tr = [k for k in steps if lines[k].startswith('TRAIN')]
+        k = tr[0] + 1 if n in CITY and tr and steps.index(tr[0]) < 25 else steps[0] + (1 if n in CITY else 0)
+        lines.insert(k, note)
 
         # class-neutral wording -> warrior wording (step lines only)
         rs = rules(level)

@@ -2,7 +2,7 @@
 ## Title: Forever Route
 ## Notes: 1-60 leveling routes (Undead Mage, Orc Shaman, Dwarf Shaman, Skyborne Druid, Skyborne Mage, Human Mage, Human Warlock, Human Warrior, and any-class routes for Gnome, Dwarf, Human, Night Elf and Skyborne), quest-only or with optional dungeon runs, with a waypoint arrow that follows roads and cave entrances, and a quest logger.
 ## Author: Mocha
-## Version: 0.14.0
+## Version: 0.14.1
 ## SavedVariables: ForeverRouteLog
 ## SavedVariablesPerCharacter: ForeverRouteChar
 

@@ -456,6 +456,11 @@ file gains class-neutral wording that none of its rules covers, or if a step it 
   - Level 30: 1718 The Islander (Kelv Sternhammer, segment 12) carried to Ratchet in segment 14 -> 1719 The
     Affray on Fray Island. 1791 The Windwatcher and the Whirlwind weapon (Cyclonian, level 40 elite) are an `N`.
   - Level 50: 8417 A Troubled Spirit ends in the Sunken Temple: `N` at the first training stop after 50.
+- **Damage consumables**: one `N Damage consumables for levels A-B` step per segment, written by `consumables()`
+  in the script from the tables `STONES`, `STRENGTH`, `AGILITY`, `SCROLLS`, `RAGE` (required levels from
+  `baked_items.json` field 10, the Forever values: Elixir of Giants is 48 here, not 38). Segments in `CITY` pass an
+  auction house near their start: there the step sits after the first training stop and says how far ahead to buy;
+  elsewhere it is the first step. Asked for by the user on 2026-11-13 (damage only, no defensive items).
 - **Trainers**: Llane Beshere (Northshire), Lyria Du Lac (Goldshire smithy 41.1, 65.8), Wu Shen (Stormwind Old
   Town 80.5, 59.9), Kelv Sternhammer (Ironforge 70.3, 90.7).
 - **Ability levels** named in `TRAIN` steps come from the Forever beta spell list (build 1.60.1.70755, read

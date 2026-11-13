@@ -30,6 +30,7 @@
 # Carry-out: 61 Shipment to Stormwind (segment 04), 76 The Jasperlode Mine, 35 Further Concerns (segment 03).
 
 # --- Sam's camp, on the way in ---
+N Damage consumables for levels 6-9 | Nothing worth a detour yet: the first auction house is Stormwind, at level 11. Use any sharpening stone, elixir or scroll that a quest or a kill gives you
 T 96627 | Sam Sarsaparilla sits at a campfire beside the road, just north-east of Goldshire
 A 95998 | Sam Sarsaparilla
 C 95998 @ Elwynn Forest, 45.0, 63.3 | Type /sit next to Sam's Basic Campfire and stay seated until you get the Boosted Rest buff

@@ -32,6 +32,7 @@
 # --- Ironforge and the Deeprun Tram ---
 FLY Ironforge | From Thorgrum Borrelson in Thelsamar
 TRAIN @ Ironforge, 70.3, 90.7 | Kelv Sternhammer, the warrior trainer in the Hall of Arms (Military Ward, south-east Ironforge): Demoralizing Shout and Revenge (level 14; Revenge works in Defensive Stance), and Overpower and Shield Bash (12) if you have not trained since Goldshire. Sell, repair, buy food
+N Damage consumables for levels 14-17 | Weapon: Coarse Sharpening Stone (blades) or Coarse Weightstone (maces), 30 minutes each: keep one on your weapon all the time; from level 15 the Heavy ones. Elixirs, one Strength and one Agility at a time, an hour each: Elixir of Lion's Strength and Elixir of Minor Agility. Also: Scroll of Strength (stacks with the elixirs); Rage Potion (use it at the start of a hard fight). This segment passes the Ironforge or Stormwind auction house: buy enough to last until level 17. Blacksmiths make the stones and alchemists the elixirs and potions; scrolls drop or are sold on the auction house
 A 2039 @ Ironforge, 69.2, 50.6 | Gnoarn, in Tinker Town, right by the tram entrance. Keep it: Bingles is on the east shore of the Loch, next segment
 A 6661 | Enter the Deeprun Tram through the big doorway in Tinker Town. Monty stands on the Ironforge platform between the tracks
 C 6661 | Use the Rat Catcher's Flute on 5 Deeprun Rats on and around the platform; they follow you. Walk them back to Monty
