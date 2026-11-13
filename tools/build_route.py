@@ -71,6 +71,11 @@ PROFILES = {
     'human-warlock': {'title': 'Human Warlock', 'race': 'Human', 'class': 'Warlock', 'race_bit': 1, 'class_bit': 256,
                       'races': ['Human'], 'classes': ['WARLOCK'], 'lua': 'HumanWarlock', 'side': 'Alliance',
                       'dungeons': 'dungeons-alliance'},
+    # Human Warrior: the Human any-class route with the warrior's class quests (Defensive Stance chain, the level 20
+    # and 30 quests), warrior trainers and warrior fight hints. All 25 files are made by tools/derive_warrior.py.
+    'human-warrior': {'title': 'Human Warrior', 'race': 'Human', 'class': 'Warrior', 'race_bit': 1, 'class_bit': 1,
+                      'races': ['Human'], 'classes': ['WARRIOR'], 'lua': 'HumanWarrior', 'side': 'Alliance',
+                      'dungeons': 'dungeons-alliance'},
     # Any-class routes for the other Alliance races: their own start zone (segments 01-04; the Dwarf shares the
     # Gnome's 01-03), then the Gnome path from level 14 with the race's mount (tools/derive_anyclass.py).
     'dwarf': {'title': 'Dwarf (any class)', 'race': 'Dwarf', 'class': 'any class', 'race_bit': 4, 'class_bit': 0,

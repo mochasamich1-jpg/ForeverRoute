@@ -1,0 +1,113 @@
+@segment 6-9 Goldshire, Fargodeep Mine & Crystal Lake
+@start-level 6
+@carry 54,2158,91772,96627
+@done 21,91752,91758
+# Human Warrior. Made from routes/human/02-goldshire-fargodeep-crystal-lake-6-9.route by tools/derive_warrior.py (never edit by hand): the
+# warrior class quests, the warrior trainers and warrior fight hints are added. The source file says:
+# Human, any class. From the Human Warlock route's segment 02: same quests, same order, same bind and hearth.
+# This segment had no class quest steps. Changed: the three TRAIN steps are generic and list the class trainers in
+# Goldshire (inn and smithy; Elwynn Forest coordinates from research/json/baked_npcs.json, the hunter trainer
+# Josephine Carson is new in Forever); the First Aid note and all combat hints work for every class.
+# Sam's camp -> Goldshire (bind, train) -> the farms south of Goldshire (Maclure Vineyards,
+# Stonefield Farm, Fargodeep Mine between them) -> Goldshire -> Crystal Lake (the fishermen and their murlocs)
+# -> the fields south of Goldshire and Maybell -> Goldshire.
+# Quest order of the farm loop follows TUGs' Elwynn file (in our own words). Differences from TUGs:
+#  - No deliberate deaths: TUGs dies on purpose to get back to Goldshire. You walk or hearth.
+#  - The fishermen's whole chain is in (TUGs only does the first two): 99127 A Net Disaster, 99143 Bottles and
+#    Baubles, then 99128 Slimy Menace -> 99129 A Man About a Murloc -> 99130 An Enticing Offer -> 99131 Baited
+#    for Success. The order inside that chain is NOT published: the steps assume each quest opens when the one
+#    before is handed in. If Jason offers something else, take what he offers and tick or skip to match.
+#  - The Escape (114, Maybell) is in: its walk south is shared with the duskweed fields of 99130.
+# Book Return 91775 is flagged ELITE on its page (the back of the Fargodeep Mine). TUGs does it solo; the step
+# says how, and how to leave it.
+# Left out: 88 Princess Must Die! (a level 9 boar with two guards: not safely soloable at 8), 91777 Rare
+# Books (elite, back of the Jasperlode Mine, hand-in far away in Northshire), 91751 Rough Wolf Pelts and 97924
+# (need Skinning), 91753 An Enchanting Lesson (needs Enchanting), 16 Give Gerard a Drink (no XP), 95771 A Taste
+# of Darkness (no giver published).
+# Unverified: that Homer Stonefield sells Shiny Red Apples in Forever (he does in the Questie data); they are
+# for the Applejack Still in segment 04.
+# Hearthstone: bound in Goldshire at the start, used once (back from the Fargodeep Mine).
+# Carry-out: 61 Shipment to Stormwind (segment 04), 76 The Jasperlode Mine, 35 Further Concerns (segment 03).
+
+# --- Sam's camp, on the way in ---
+T 96627 | Sam Sarsaparilla sits at a campfire beside the road, just north-east of Goldshire
+A 95998 | Sam Sarsaparilla
+C 95998 @ Elwynn Forest, 45.0, 63.3 | Type /sit next to Sam's Basic Campfire and stay seated until you get the Boosted Rest buff
+T 95998 | Sam Sarsaparilla
+A 96626 | Sam Sarsaparilla: he sends you to the cook in Goldshire
+
+# --- Goldshire ---
+T 91772 | Marshal Dughan, in front of the smithy in Goldshire
+A 91775 @ Elwynn Forest, 42.1, 65.9 | Marshal Dughan: Book Return. He gives you a book bag
+T 54 | Marshal Dughan
+A 62 | Marshal Dughan
+A 47 | Remy "Two Times", a few steps south of Dughan
+T 2158 | Innkeeper Farley, in the Lion's Pride Inn
+S Goldshire | Make the Lion's Pride Inn your home
+A 60 | William Pestle, in the inn
+C 96626 @ Elwynn Forest, 44.4, 66.0 | Tomas, the cook in the inn's kitchen: learn Cooking from him (a few copper)
+T 96626 | Tomas. You can now set up a basic camp fire of your own
+N Learn First Aid from Michelle Belle in the inn @ Elwynn Forest, 43.4, 65.5 | A warrior has no heal: bandages are how you recover between fights. Keep every Linen Cloth and turn it into Linen Bandages from now on
+TRAIN @ Elwynn Forest, 41.1, 65.8 | Lyria Du Lac, the warrior trainer at the smithy on the west side of Goldshire: Thunder Clap (level 6), for fights against two or more. Buy food from the innkeeper
+
+# --- The farms and the Fargodeep Mine ---
+A 106 | Take the road south out of Goldshire to the Maclure Vineyards. Maybell Maclure is in the barn at the south end
+N Kill Stonetusk Boars on the walk west to the Stonefield Farm until you have 4 Chunks of Boar Meat @ Elwynn Forest, 37.7, 82.5 | They are for the pie quest you get in a minute. The boars (5-6) graze on the slopes between the two farms, in front of the mine
+A 85 | "Auntie" Bernice Stonefield, in front of the farmhouse at the Stonefield Farm
+N Buy 4 Shiny Red Apples from Homer Stonefield @ Elwynn Forest, 33.7, 82.9 | He sells fruit at the farm. Do NOT eat them: the Applejack Still north of Westbrook Garrison turns them into a quest item in segment 04. If he does not sell them, tick this: kobolds and Defias drop them too
+T 106 | Tommy Joe Stonefield stands by the river, west of the farm
+A 111 | Tommy Joe Stonefield
+T 111 | Gramma Stonefield, in the farmhouse
+A 107 | Gramma Stonefield. The note goes to William Pestle in Goldshire
+T 85 | Back east to the Maclure Vineyards: Billy Maclure, in front of the house
+A 86 | Billy Maclure
+C 86 @ Elwynn Forest, 37.7, 82.5 | Short of 4 Chunks of Boar Meat? Kill boars on the way back west
+T 86 | "Auntie" Bernice Stonefield
+A 84 | "Auntie" Bernice Stonefield
+T 84 | Billy Maclure, at the vineyards
+A 87 | Billy Maclure: Goldtooth has the necklace
+C 62 | The Fargodeep Mine has two entrances in the hillside between the farms. Go in by the lower one (the eastern one, nearer the Maclures) and walk a little way in until "Scout through the Fargodeep Mine" ticks
+C 87 | Goldtooth (level 8) stands in a side chamber of the lower tunnel (41.7, 78.0). Clear the Kobold Tunnelers near him, eat to full, then fight him alone: Charge, Rend, Heroic Strike. Loot Bernice's Necklace
+C 47,60 | Kobold Tunnelers (5-6) and Miners (6-7) in the mine: collect 10 Gold Dust and 8 Large Candles. Miners stand deeper in and hit harder: one at a time
+C 91775 @ Elwynn Forest, 39.0, 81.4 | 6 Lost Books lie on the ground and on crates through the mine; "Fun with Elementals" is in the deepest part, guarded (its spot is not published; the page warns the depths are dangerous). Clear slowly, one pull at a time, and eat to full before the last room. If the guard there is too much, leave the mine and press Skip on this step and its hand-in
+T 87 | "Auntie" Bernice Stonefield, at the Stonefield Farm (the upper mine entrance comes out just above it)
+H Goldshire | Hearthstone to the inn. On cooldown? Walk the road north, five minutes
+
+# --- Goldshire ---
+T 62 | Marshal Dughan
+A 76 | Marshal Dughan. The Jasperlode Mine is in the east: next segment
+T 91775 @ Elwynn Forest, 42.1, 65.9 | Marshal Dughan. Do NOT take Rare Books: it is an elite quest at the back of the Jasperlode Mine
+T 47 | Remy "Two Times"
+T 60 | William Pestle, in the inn
+A 61 | William Pestle. The shipment goes to Stormwind in segment 04: keep it
+T 107 | William Pestle
+A 112 | William Pestle
+TRAIN @ Elwynn Forest, 41.1, 65.8 | Lyria Du Lac again if you are 8: Hamstring (it stops enemies that run for help at low health) and the new ranks
+N Make Linen Bandages from your Linen Cloth | Sell and repair at the smithy before you go to the lake
+
+# --- Crystal Lake: the fishermen ---
+A 99127 | Jason Mathers, one of the two fishermen on the west shore of Crystal Lake, just east of Goldshire
+A 99143 | Lee Brown, next to him
+C 99127 @ Elwynn Forest, 50.5, 65.5 | Check the fishing traps in the shallow water of Crystal Lake (their spots are not published: look for traps along the shore and in the shallows, starting at the fishermen) until you have 7 Half-Eaten Fish
+C 99143,112 @ Elwynn Forest, 54.2, 66.7 | The murloc camp is on the east shore, across the lake. Pick up 6 Shiny Junk from the camp and kill Murlocs and Murloc Streamrunners (6-7) for 4 Crystal Kelp Fronds. Kill 7 Murlocs and 4 Streamrunners while you are here: Jason asks for exactly that next. Murlocs run for help at low health: pull each one away from the huts and finish it fast when it turns (Hamstring it once you have it, at level 8), and never follow a runner into the camp
+T 99127 | Jason Mathers
+T 99143 | Lee Brown
+A 99128 @ Elwynn Forest, 47.5, 62.3 | Jason Mathers: Slimy Menace. If he offers a different quest, take that one and follow its text
+C 99128 @ Elwynn Forest, 54.2, 66.7 | Back across the lake: 7 Murlocs and 4 Murloc Streamrunners. Kills from before you had the quest do not count
+T 99128 @ Elwynn Forest, 47.4, 62.2 | Jason Mathers
+A 99129 | Jason Mathers
+T 99129 | Remy "Two Times", in Goldshire
+A 99130 @ Elwynn Forest, 42.1, 67.1 | Remy "Two Times"
+A 40 | Remy "Two Times" (needs level 7)
+T 40 | Marshal Dughan
+A 35 | Marshal Dughan. Guard Thomas is at the bridge in the east: next segment
+T 112 | William Pestle, in the inn
+A 114 | William Pestle
+
+# --- Duskweed and Maybell ---
+C 99130 @ Elwynn Forest, 41.5, 74.6 | Duskweed grows in the fields on both sides of the road south of Goldshire and on the farms (18 petals); the 6 Vials of Animal Blood drop from the wolves, boars and bears you meet on the way
+T 114 | Maybell Maclure, in the barn at the Maclure Vineyards
+C 99130 @ Elwynn Forest, 40.0, 69.6 | Finish the petals and the blood on the walk back north
+T 99130 @ Elwynn Forest, 42.1, 67.1 | Remy "Two Times", in Goldshire
+A 99131 | Remy "Two Times". Jason is on your way east: you hand it in at the start of the next segment
+N Sell, repair and make bandages in Goldshire | Next: the east of Elwynn. Everything there is level 8-10

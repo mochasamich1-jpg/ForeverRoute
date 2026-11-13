@@ -13,6 +13,7 @@ There is one route per race/class, each in its own folder:
 | `human-mage` | `routes/human-mage/` | Alliance Human Mage |
 | `gnome` | `routes/gnome/` | Alliance Gnome, any class |
 | `human-warlock` | `routes/human-warlock/` | Alliance Human Warlock |
+| `human-warrior` | `routes/human-warrior/` | Alliance Human Warrior (generated, see below) |
 | `dwarf` `human` `night-elf` `skyborne` | `routes/<key>/` | Alliance, any class, one per race |
 
 The route is loaded by a custom addon that auto-ticks steps from quest state and points an arrow at
@@ -433,6 +434,40 @@ flights as every Alliance route from level 14 on). Do not re-plan the quest orde
   2026-11-11" comment lines and their quests.
 - Rule from the user: when the route walks back through a town between loops, hand in what is finished, train,
   and take new quests there.
+
+## Human Warrior specifics (`human-warrior`, ALLIANCE, GENERATED)
+All 25 files are made from `routes/human/` by `tools/derive_warrior.py`. Never edit them by hand: change the
+Human file (for 05-25 that means the Gnome file and `derive_anyclass.py`) or the script, then run
+`python -I tools/derive_warrior.py` and rebuild `--route human-warrior`. The script stops with a list if a Human
+file gains class-neutral wording that none of its rules covers, or if a step it anchors on has moved.
+- **What the script changes**: every `TRAIN` step (table `TRAIN`, one entry per stop, in file order), the class
+  quests (table `EDITS`), `@carry` lines for the class quests that ride along, and the class-neutral fight
+  phrases ("interrupt or stun ... if your class can", "cure it if your class can", "eat and drink", pets, mana).
+- **Class quests in the route** (ids, givers and positions from the baked Questie data):
+  - Level 1: 3100 Simple Letter (Marshal McBride -> Llane Beshere, Northshire 50.2, 42.3).
+  - Level 10, Defensive Stance: 1638 A Warrior's Training (Lyria Du Lac, Goldshire, end of segment 03) -> Harry
+    Burlguard in the Pig and Whistle, Stormwind Old Town (77.1, 53.3) -> 1639 Bartleby the Drunk -> 1640 Beat
+    Bartleby -> 1665 Bartleby's Mug (the stance), all at the start of segment 04. 1666 Marshal Haggard is carried
+    to segment 06, which walks past Eastvale on the way to Redridge: 1667 Dead-tooth Jack (camp at Elwynn 89.4,
+    79.0) is done there.
+  - Level 20: 1698 Yorus Barleybrew (Kelv Sternhammer, Ironforge, segment 06) -> 1699 The Rethban Gauntlet
+    (Lakeshire, timed, segment 07) -> 1702 The Shieldsmith, carried to Furen Longbeard in the Dwarven District in
+    segment 11. The armor quests after it (1701 Fire Hardened Mail and on) need a Razorfen Kraul drop: `N` only.
+  - Level 30: 1718 The Islander (Kelv Sternhammer, segment 12) carried to Ratchet in segment 14 -> 1719 The
+    Affray on Fray Island. 1791 The Windwatcher and the Whirlwind weapon (Cyclonian, level 40 elite) are an `N`.
+  - Level 50: 8417 A Troubled Spirit ends in the Sunken Temple: `N` at the first training stop after 50.
+- **Trainers**: Llane Beshere (Northshire), Lyria Du Lac (Goldshire smithy 41.1, 65.8), Wu Shen (Stormwind Old
+  Town 80.5, 59.9), Kelv Sternhammer (Ironforge 70.3, 90.7).
+- **Ability levels** named in `TRAIN` steps come from the Forever beta spell list (build 1.60.1.70755, read
+  2026-11-13 on forevercalc.com and conquestcapped.com): Charge and Rend 4, Thunder Clap 6, Hamstring 8, Bloodrage /
+  Sunder Armor / Taunt 10, Overpower and Shield Bash 12, Demoralizing Shout and Revenge 14, Mocking Blow and Shield
+  Block 16, Disarm 18, Victory Rush / Cleave / Slam / Retaliation 20, Intimidating Shout 22, Execute 24,
+  Challenging Shout 26, Shield Wall 28, Berserker Stance / Intercept / Berserker Rage 30, Whirlwind 36, Pummel 38,
+  Recklessness 50. Not checked in game. Unverified too: that the trainer (not The Affray) teaches Berserker Stance
+  in Forever, the timer of The Rethban Gauntlet, and Plate Mail at 40 (Classic).
+- Leftover in the Human, Dwarf and Night Elf files that the script removes for the warrior: three hints still
+  name the gnome racial Escape Artist (segments 12, 13 and 16 of the Human route). Fix them in the Gnome file /
+  `derive_anyclass.py` when those routes are next rebuilt.
 
 ## Any-class race routes (`dwarf`, `human`, `night-elf`, `skyborne`, ALLIANCE, ANY CLASS)
 One route per Alliance race for every class that has no route of its own (the user chose this on 2026-11-12

@@ -17,7 +17,7 @@ The addon picks a guide from your race and class when you log in.
 | Guide | For |
 |---|---|
 | Human, Dwarf, Gnome, Night Elf, Skyborne (any class) | every Alliance character |
-| Human Mage, Human Warlock, Dwarf Shaman, Skyborne Druid, Skyborne Mage | these combos get their class quests, named trainers and class fight tips |
+| Human Mage, Human Warlock, Human Warrior, Dwarf Shaman, Skyborne Druid, Skyborne Mage | these combos get their class quests, named trainers and class fight tips |
 | Undead Mage, Orc Shaman | Horde (Trolls get the Orc Shaman guide) |
 
 Already leveled? On first login the addon offers to start at the segment for your level; quests you already did are skipped. `/fr seg auto` does the same at any time.

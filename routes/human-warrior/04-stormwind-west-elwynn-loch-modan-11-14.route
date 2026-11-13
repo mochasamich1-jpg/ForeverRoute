@@ -1,0 +1,127 @@
+@segment 11-14 Stormwind, West Elwynn & Loch Modan I
+@start-level 11
+@carry 61,239,1638
+@done 76,39,91724
+# Human Warrior. Made from routes/human/04-stormwind-west-elwynn-loch-modan-11-14.route by tools/derive_warrior.py (never edit by hand): the
+# warrior class quests, the warrior trainers and warrior fight hints are added. The source file says:
+# Human, any class. From the Human Warlock route's segment 04: the bridge from Elwynn onto the shared Alliance
+# path. Changed:
+#  - Out: the Voidwalker chain 1685 Gakin's Summons -> 1688 Surena Caledon -> 1689 The Binding (the Human Mage
+#    file has 1860 / 1861 Mirror Lake there) and the whole loop that existed only for it: Stormwind -> Goldshire
+#    -> Brackwell Pumpkin Patch -> Hearthstone -> Slaughtered Lamb.
+#  - The Hearthstone that loop used is now spent on the way back from Westbrook Garrison to Stormwind (it was
+#    bound in the Trade District at the start of the segment and is otherwise unused), in place of the walk.
+#  - The Stormwind TRAIN step is generic and lists the class trainers a human can use (Stormwind City
+#    coordinates from research/json/baked_npcs.json).
+#  - Combat hints work for every class. The east Dun Morogh and Loch Modan steps are the warlock file's, step
+#    for step, with class-neutral wording.
+# Goldshire -> Stormwind (shipment, bind, flight path, train) -> out of the gate to the Applejack Still ->
+# south to Westbrook Garrison (applejack, gnoll bounty) -> the gnoll camps at Forest's Edge -> garrison ->
+# Hearthstone to Stormwind -> Deeprun Tram -> Ironforge (flight path)
+# -> on foot through east Dun Morogh (Amberstill Ranch, Earthseer Farsen, Gol'Bolar Quarry, Ironband's
+# Compound, North Gate Outpost: the Dwarf Shaman route's east Dun Morogh quests, which any Alliance race can
+# take) and the South Gate Pass -> Loch Modan: Valley of Kings, Stonesplinter Valley, Thelsamar (flight path), north Loch (Stormpike, Silver
+# Stream Mine). It ends in Thelsamar: the next segment starts with the gryphon to Ironforge.
+# The Loch Modan part is the Skyborne Mage route's segment 04, unchanged (same quests, same order).
+# New Forever quests from the ForeverChanges pages: 91736 Applejack Still (24.5, 58.2), 91738 An Apple Treat
+# (Sergeant De Vries, Westbrook Garrison 24.0, 73.0).
+# Left out: 176 WANTED: "Hogger" (elite), 123 / 147 The Collector (see the gnoll step), 1097 Elmore's Task
+# and 109 Report to Gryan Stoutmantle (segment 05 picks both up), 2039 Find Bingles (needs level 12: segment
+# 05 takes it in Ironforge), 314 Protecting the Herd (elite), 95217 (12 Copper Bars).
+# Unverified: that Earthseer Farsen gives 96392 without the Kharanos lead-in 96408 (the step says what to do).
+# Hearthstone: bound in Stormwind in this segment and used once, for the return from Westbrook Garrison. It
+# stays bound in Stormwind.
+# Carry-out: 263 (Stonesplinter Shamans and Bonesnappers, next Loch visit), 1338 Stormpike's Order
+# (Stormwind, next segment).
+
+# --- Stormwind, first visit ---
+N Walk the road north-west from Goldshire into Stormwind @ Stormwind City, 63.2, 74.4 | Three minutes. Go through the Valley of Heroes and over the bridge into the Trade District
+T 61 | Morgan Pestle, in the shop on the south side of the Trade District
+S Stormwind @ Stormwind City, 60.5, 75.2 | Make the inn in the Trade District your home (the Gilded Rose). You hearth back here from Westbrook Garrison in a little while
+F Stormwind @ Stormwind City, 71.0, 72.5 | Dungar Longdrink, the gryphon master, a few steps east of the inn
+T 1638 @ Stormwind City, 77.1, 53.3 | Walk east from the Trade District into Old Town: Harry Burlguard stands in the Pig and Whistle Tavern
+A 1639 | Harry Burlguard
+T 1639 | Bartleby, the drunk in the same tavern
+A 1640 | Bartleby
+C 1640 @ Stormwind City, 76.8, 52.6 | Bartleby (level 10) attacks as soon as you accept. Fight him until he gives up: he does not die. Be at full health first; lost? Wait for him to reset and take the quest again
+T 1640 | Bartleby
+A 1665 | Bartleby: he hands over his mug
+T 1665 | Harry Burlguard. Bartleby's Mug is the quest that gives Defensive Stance: put the stance on your bar. Battle Stance stays your leveling stance; Defensive Stance is for tanking and for fights that are going badly
+A 1666 | Harry Burlguard: Marshal Haggard. Keep it: Haggard lives at the Eastvale Logging Camp, which you pass on the road to Redridge at 17 (segment 06)
+TRAIN @ Stormwind City, 80.5, 59.9 | Wu Shen, the warrior trainer in the Command Center in Old Town, a few steps south-east of the tavern: anything you did not learn in Goldshire (Bloodrage, Sunder Armor, Taunt). Buy food in the city before you leave
+
+# --- The Applejack Still ---
+A 91736 @ Elwynn Forest, 24.5, 58.2 | Leave Stormwind by the main gate, turn right (west) off the road and follow the city wall past Mirror Lake: the Applejack Still stands a little west of the lake. It wants the 4 Shiny Red Apples you bought at the Stonefield Farm. No apples? The gnolls further south drop them: come back, or skip this step and the next three
+T 91736 @ Elwynn Forest, 24.5, 58.2 | Put the apples in: you get a bottle of Thunder Applejack
+N Defias Rogue Wizards stand in the orchard beside Mirror Lake | They are level 9-10 and you no longer need them: walk around them
+
+# --- Westbrook Garrison and the gnolls ---
+A 91738 @ Elwynn Forest, 24.0, 73.0 | Go south to Westbrook Garrison, the guard post on the road to Westfall: Sergeant De Vries
+T 91738 @ Elwynn Forest, 24.0, 73.0 | Hand him the Thunder Applejack
+T 239 | Deputy Rainer, in front of the garrison
+A 11 | Deputy Rainer
+C 11 @ Elwynn Forest, 26.0, 85.0 | Forest's Edge, the woods south of the garrison: Riverpaw Runts and Outrunners (8-10) camp there. Collect 8 Painted Gnoll Armbands. Pull one gnoll at a time from the edge of a camp and eat or bandage between fights. Stay in the northern camps: Hogger (11, elite) walks the hill at the far south end (26, 91); if you see him, move away. A gnoll may drop a Gold Pickup Schedule: it starts a quest for Goldshire that this route does not return for, so sell it or leave it
+T 11 | Deputy Rainer, at the garrison
+
+# --- Stormwind, only for the tram ---
+H Stormwind | Hearthstone back to the inn in the Trade District (you bound it there on this visit). On cooldown? Walk the road east and north into the city, about six minutes
+N Buy food and anything else you need in Stormwind | The next real town is Thelsamar. Level 12 already? Then Wu Shen in Old Town (80.5, 59.9) is an optional stop for Overpower and Shield Bash; otherwise you train in Ironforge next segment
+
+# --- Tram to Ironforge and the walk to Loch Modan ---
+N Take the Deeprun Tram to Ironforge @ Stormwind City, 66.0, 34.0 | The tram entrance is in the Dwarven District, in the north-east of Stormwind. Leave the rat quest on the far platform for the next segment: it runs the other way
+F Ironforge @ Ironforge, 55.5, 47.7 | Gryth Thurden, the gryphon master in the centre of the city
+# --- East Dun Morogh: Amberstill Ranch, Farsen, Gol'Bolar Quarry ---
+A 95212 @ Dun Morogh, 63.1, 49.7 | Leave Ironforge by the main gate, go down the ramp and follow the road east to Amberstill Ranch (about four minutes): Rudra Amberstill. The pelts come from the leopards east of the quarry, together with the trogg quests
+A 96392 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen's campsite is on the hillside south of the ranch, overlooking the Gol'Bolar Quarry from the west. Dwarves are sent to him from Kharanos; whether he gives his quests without that errand is not known. If he offers nothing, press Skip on this step and on his other five steps below
+C 96392 @ Dun Morogh, 64.8, 58.4 | Talk to Farsen again and ask for his far sight; watch the vision until the objective ticks
+T 96392 @ Dun Morogh, 64.9, 58.4
+A 96390 @ Dun Morogh, 64.9, 58.4 | Farsen: 10 Dark Iron Spies at Ironband's Compound, east of the quarry
+A 432 | Foreman Stonebrow, at the Gol'Bolar Quarry camp, just east of Farsen's hill
+A 433 | Senator Mehr Stonehallow, next to him
+A 95214 @ Dun Morogh, 69.1, 54.9 | Quarrymaster Thesten, on the north side of the camp. If he offers nothing, kill troggs until one drops an Empty Powder Keg, right-click it and bring it to him first (a small extra quest)
+C 432 @ Dun Morogh, 70.3, 55.9 | Rockjaw Skullthumpers (8-9) fill the quarry pit right beside the camp: kill 6. Every trogg here can drop Stolen Blasting Powder
+C 433,95214,95212 @ Dun Morogh, 73.6, 55.4 | Work east out of the quarry: kill 10 Rockjaw Bonesnappers (9-10) and keep killing troggs until you have 16 Stolen Blasting Powder. The big snow leopards on the slopes east and south-east of the quarry (70-78, 50-63) drop the 6 Pristine Leopard Pelts. Troggs stand close together: pull one at a time from the edge, and back off if two come and you are not at full health
+C 96390 @ Dun Morogh, 77.5, 60.8 | Ironband's Compound, the walled yard south-east of the quarry: kill 10 Dark Iron Spies (9-10). They are stealthed around the buildings and open on you in melee: walk slowly, keep your health high, and fight each one where it appears rather than running on into the next. Eat to full between fights
+A 96391 @ Dun Morogh, 77.5, 60.8 | One of the spies drops a Dark Iron Map: right-click it in your bags to start this quest. No map after 10 spies? Kill a few more
+T 432 | Foreman Stonebrow, back at the quarry camp
+T 433 | Senator Mehr Stonehallow
+T 95214 @ Dun Morogh, 69.1, 54.9 | Quarrymaster Thesten. Sell and repair at the camp
+T 96390 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen, on the hillside west of the quarry
+T 96391 @ Dun Morogh, 64.9, 58.4 | Farsen. Do NOT take his next quest (Old Ironforge Incursion): it is a dungeon
+T 95212 @ Dun Morogh, 63.0, 49.8 | Rudra Amberstill, at Amberstill Ranch north of Farsen's camp
+
+# --- North Gate Outpost ---
+A 419 | Follow the road east past the quarry and take the left (northern) branch to North Gate Outpost: Pilot Hammerfoot
+T 419 | A Dwarven Corpse lies in the snow west of the outpost, on the slope north of the road
+A 417 | From the corpse
+C 417 @ Dun Morogh, 78.3, 37.8 | Mangeclaw (level 11 bear) prowls right next to the corpse. Eat to full first, then fight him alone: Charge, Rend, Heroic Strike. Loot the Mangy Claw
+T 417 | Pilot Hammerfoot, back at North Gate Outpost
+N Walk to Loch Modan @ Dun Morogh, 86.0, 51.0 | Back to the fork and take the southern branch east to South Gate Outpost, then go through the South Gate Pass tunnels
+
+# --- Loch Modan: Valley of Kings ---
+A 224 | Mountaineer Cobbleflint is at the guard tower in the Valley of Kings, just past the last tunnel
+A 267 | Captain Rugelfuss, inside the tower
+C 224 @ Loch Modan, 30.8, 68.2 | Stonesplinter Valley, the trogg hills east of the tower: kill 10 Stonesplinter Troggs and 10 Stonesplinter Scouts (11-12). Every trogg can drop a Trogg Stone Tooth
+C 267 @ Loch Modan, 30.8, 70.0 | Finish 8 Trogg Stone Teeth on any troggs on the way back to the tower
+T 224 | Mountaineer Cobbleflint, at the southern guard tower
+T 267 | Captain Rugelfuss
+A 237 | Mountaineer Gravelgaw, a little south of the tower
+C 237 @ Loch Modan, 33.0, 76.0 | Kill 10 Stonesplinter Skullthumpers and 10 Stonesplinter Seers (13-14) in the hills further south. They are above your level: one at a time, at full health. The Seers heal: kill a Seer first and fast, and interrupt its casts with Shield Bash (level 12, with a shield on). Eat and bandage between pulls. Too hard at 12? Do the north of the zone first and come back for this before you leave
+T 237 | Mountaineer Gravelgaw
+A 263 | Mountaineer Wallbang, at the tower. Keep it: the Shamans and Bonesnappers are level 15-16, for your next Loch Modan visit
+
+# --- Thelsamar ---
+A 416,1339 | Follow the road north-east to Thelsamar: Mountaineer Kadrell patrols the main street
+A 418 | Vidra Hearthstove, in the inn (Stoutlager Inn). Do NOT bind here: your hearthstone stays in Stormwind
+F Thelsamar | Thorgrum Borrelson, the gryphon master on the south side of town
+N Grenhild Darktalon in Thelsamar offers Snowbound (a jar of snow from the South Gate Pass to the north shore). Skip it: it does not fit this loop
+
+# --- North Loch Modan ---
+C 418 @ Loch Modan, 31.5, 39.0 | On the way north kill Elder Black Bears (Bear Meat), Mountain Boars (Boar Intestines) and Forest Lurkers (Spider Ichor) beside the road: 3 of each item
+T 1339 | Mountaineer Stormpike, at the top of the northern guard tower (Algaz Station), in the north-west corner of the zone
+A 307,1338 | Stormpike gives both. Keep Stormpike's Order: it goes to Stormwind next segment
+C 307,416 @ Loch Modan, 35.5, 24.3 | Silver Stream Mine, the kobold cave east of the tower. Open 4 Miners' League Crates inside for the Miners' Gear and cut 12 Tunnel Rat Ears from any kobold. The Geomancers cast fire: kill them first (interrupt their casts with Shield Bash (level 12, with a shield on)), and pull back into the tunnel you already cleared when two come
+T 307 | Back west to Mountaineer Stormpike
+C 418 @ Loch Modan, 33.0, 31.5 | Finish the sausage meats on the walk back south to Thelsamar
+T 416 | Mountaineer Kadrell, in Thelsamar
+T 418 | Vidra Hearthstove, in the inn. Sell and repair: the next segment starts with the gryphon from Thelsamar to Ironforge

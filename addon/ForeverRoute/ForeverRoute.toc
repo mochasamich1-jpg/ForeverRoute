@@ -1,8 +1,8 @@
 ## Interface: 16001
 ## Title: Forever Route
-## Notes: 1-60 leveling routes (Undead Mage, Orc Shaman, Dwarf Shaman, Skyborne Druid, Skyborne Mage, Human Mage, Human Warlock, and any-class routes for Gnome, Dwarf, Human, Night Elf and Skyborne), quest-only or with optional dungeon runs, with a waypoint arrow that follows roads and cave entrances, and a quest logger.
+## Notes: 1-60 leveling routes (Undead Mage, Orc Shaman, Dwarf Shaman, Skyborne Druid, Skyborne Mage, Human Mage, Human Warlock, Human Warrior, and any-class routes for Gnome, Dwarf, Human, Night Elf and Skyborne), quest-only or with optional dungeon runs, with a waypoint arrow that follows roads and cave entrances, and a quest logger.
 ## Author: Mocha
-## Version: 0.13.1
+## Version: 0.14.0
 ## SavedVariables: ForeverRouteLog
 ## SavedVariablesPerCharacter: ForeverRouteChar
 
@@ -14,6 +14,7 @@ Routes\SkyborneMage.lua
 Routes\HumanMage.lua
 Routes\Gnome.lua
 Routes\HumanWarlock.lua
+Routes\HumanWarrior.lua
 Routes\Dwarf.lua
 Routes\Human.lua
 Routes\NightElf.lua

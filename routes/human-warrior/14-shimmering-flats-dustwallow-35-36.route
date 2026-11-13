@@ -1,0 +1,112 @@
+@segment 35-36 Shimmering Flats & Dustwallow Marsh
+@start-level 35
+# Human Warrior. Made from routes/human/14-shimmering-flats-dustwallow-35-36.route by tools/derive_warrior.py (never edit by hand): the
+# warrior class quests, the warrior trainers and warrior fight hints are added. The source file says:
+# Human, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 13: same quests, order, binds and flights. It had no class quests
+# and no second-hearthstone step; only the fight and travel hints were rewritten so that any class can follow them.
+# Added 2026-11-11 from the Questie audit (tools/questie_near.py): 1204 Mudrock Soup and Bugs (2850 XP; about 30 turtle kills on the north-east coast, on the loop).
+# Carried in (segment 13's carry-out): 1179 The Brassbolts Brothers (Wizzle, Mirage Raceway), 1264 The Missing Diplomat (Commander Samaul,
+# Theramore). 525 (Southshore), 563 (Stormwind), 1457 and 1467 (Ironforge) ride along until the Eastern Kingdoms.
+@carry 525,563,1179,1264,1302,1457,1467,98463,1718
+# Prerequisites of the carried quests, handed in by earlier segments: 514 -> 525, 562 -> 563, 1250 -> 1264, 1456 -> 1457, 1466 -> 1467.
+@done 514,562,1250,1456,1466
+# The long walk of the route: Astranaar -> Ratchet -> Great Lift -> Shimmering Flats -> Gadgetzan -> back to the Dustwallow road.
+# It collects the Ratchet, Gadgetzan and Theramore flight points for the later Kalimdor trips. No class trainer on the way: the next training stop is Ironforge, at the start of the next segment.
+# Hearth: Nijel's Point at the start (useless here), Theramore from the first Theramore stop on.
+# Carry-out (8): 1106 Martek the Exiled (Badlands), 1111 Wharfmaster Dizzywig and 1178 Goblin Sponsorship (Ratchet, next Kalimdor trip),
+# 5762 Hemet Nesingwary (Stranglethorn), plus 525, 563, 1457, 1467.
+# Left out on purpose: 1135 Highperch Venom, 1203 Jarl Needs a Blade (needs a crafted sword), 1282 (280 XP), the Thalanaar quests.
+
+# ---------- Nijel's Point -> Astranaar -> Ratchet ----------
+N Have 3 Soothing Spices in your bags | You bought them in Southshore earlier. None left? No problem: Helenia Olden sells them in Theramore (66.4, 51.5), you then do Jarl's two quests on the loop out of Theramore later in this segment.
+FLY Astranaar @ Desolace, 64.7, 10.5 | Baritanas Skyriver, the hippogryph master at Nijel's Point
+N Walk from Astranaar to Ratchet @ The Barrens, 63.1, 37.2 | A long walk. Take the road east from Astranaar, then the road south into the Barrens. The border gate (Mor'shan Rampart) is a Horde guard post: do not stop, run straight through or around the side. In the Barrens stay on the road south, leave it before the Crossroads (a Horde town, pass it well to the east) and follow the road east to Ratchet on the coast. Ratchet is neutral. This is Classic geography, not re-checked.
+F Ratchet @ The Barrens, 63.1, 37.2 | Bragok, the flight master near the dock
+T 1718 @ The Barrens, 68.6, 49.2 | Fray Island is the small island with the fighting ring, south-east of Ratchet: swim out from the shore south of the dock. Klannoc Macleod stands beside the ring
+A 1719 | Klannoc Macleod: The Affray
+C 1719 @ The Barrens, 68.6, 48.7 | Step on the grate in the middle of the ring. Affray Challengers (26-27) come at you one after the other, then Big Will (33). At 35 this is safe: use Victory Rush after each kill, and bandage if there is a pause before Big Will
+T 1719 | Klannoc Macleod. In Classic this hand-in teaches Berserker Stance; in Forever the trainer is reported to teach it at 30
+N Klannoc offers The Windwatcher next: optional, not in this route | It sends you to Bath'rah the Windwatcher in the Alterac Mountains (80.5, 66.9) for the Whirlwind weapon: he wants 8 Liferoot, 30 Bloodscalp Tusks and an Essence of the Exile, and then you must kill Cyclonian, a level 40 elite. Worth doing with a healer or a group at about 38-40; alone it is too hard
+
+# ---------- Down to the Shimmering Flats ----------
+N Walk south to the Great Lift and on to the Mirage Raceway @ Thousand Needles, 78.0, 77.0 | From Ratchet go back west to the main road and follow it south through the whole Barrens (pass Camp Taurajo, a Horde camp, at a distance) to the Great Lift at the south end. Ride the lift down into Thousand Needles and follow the canyon road east, past Freewind Post (Horde, up on a mesa: just keep walking), until the canyon opens into the white salt flats. The Mirage Raceway is in the middle of the flats.
+T 1179 | Wizzle Brassbolts, on the gnome side of the raceway
+A 1105 | Wizzle Brassbolts
+A 1104 | Fizzle Brassbolts, next to him
+A 1106 | Fizzle Brassbolts. A letter for Martek in the Badlands: keep it, a later segment hands it in.
+A 1110 | Kravel Koalbeard, a few steps away
+A 5762 | Kravel Koalbeard. A crate for Hemet Nesingwary in Stranglethorn: keep it for the next segment.
+A 1111 | Kravel Koalbeard. An order for Wharfmaster Dizzywig in Ratchet: keep it for the next Kalimdor trip.
+A 1176 | Pozzik, on the goblin side of the track
+A 1175 | Trackmaster Zherin, at the east end of the goblin side
+C 1105,1104,1175:1 @ Thousand Needles, 76.0, 60.0 | North half of the flats. Sparkleshell Tortoises (30-31) and Snappers (34-35) drop the shells, Scorpid Reavers (31-32) the venom, and the Saltstone Basilisks (30-31) only live up here: kill 10. Salt Flats Scavengers (the vultures here) drop Hollow Vulture Bones, Saltstone Crystalhides count for Zherin, and every Rocket Car Rubble pile on the ground holds car parts: pick up all you pass. Everything here is below your level: no special care needed, just do not pull a whole pack at once.
+C 1175,1176,1110 @ Thousand Needles, 78.0, 85.0 | South half, below the raceway. Saltstone Gazers (34-35) are only down here: kill 6. Finish the 10 Crystalhides, get the rest of the 10 vulture bones from the Salt Flats Vultures and keep picking up rubble until you have 30 Rocket Car Parts. Scorpid Terrors and Sparkleshell Borers here also drop venom and shells if you are short.
+T 1105 | Wizzle Brassbolts
+T 1104 | Fizzle Brassbolts
+T 1110 | Kravel Koalbeard
+T 1176 | Pozzik
+A 1178 | Pozzik. A message for Gazlowe in Ratchet: keep it for the next Kalimdor trip.
+T 1175 | Trackmaster Zherin
+
+# ---------- Gadgetzan flight point ----------
+N Walk south into Tanaris to Gadgetzan @ Tanaris, 51.0, 29.3 | Leave the flats by the pass in the south wall and follow the road south to the goblin town. The desert animals near the road are level 40 and up: stay on the road and keep moving.
+F Gadgetzan @ Tanaris, 51.0, 29.3 | Bera Stonehammer, the Alliance gryphon master on the north side of town. Nothing else to do here yet.
+
+# ---------- Back north and into Dustwallow Marsh ----------
+N Walk back north to the Dustwallow road @ Dustwallow Marsh, 29.7, 47.6 | Back through the flats and the canyon, up the Great Lift and north on the Barrens road. A side road branches off east into Dustwallow Marsh a little north of the lift. The first thing on it is the burnt-out Shady Rest Inn. The marsh animals are 35-38: pull one at a time. The spiders poison: a warrior cannot cure it, so bandage and eat after the fight.
+A 1284 | The Suspicious Hoofprint, a mark on the ground in front of the inn ruins
+A 1253 | The Black Shield, hanging over the fireplace of the ruins
+A 1252 | The Theramore Guard Badge, lying on the floor boards of the ruins
+A 1177 | Mudcrush Durtfeet, an ogre standing by the road north-east of the inn, just south of Brackenwall Village. Brackenwall is a Horde ogre town: do not go further north than him. If he is hostile to you or you cannot reach him, skip his quest (this step, the murloc step and the hand-in).
+A 1218 | "Swamp Eye" Jarl at the Swamplight Manor, the lonely house in the north of the marsh. Follow the road east and turn north.
+T 1218 | "Swamp Eye" Jarl. Hand him the 3 Soothing Spices. (No spices: skip this and the next step and come back on the loop out of Theramore.)
+A 1206 | "Swamp Eye" Jarl
+A 1219 | The Loose Dirt mound behind Jarl's house. It gives you the Spy's Report.
+C 1177 @ Dustwallow Marsh, 56.8, 15.6 | Mirefin murlocs (35-38) on the north coast, straight north of Jarl's house, and on the small islands further north-east. About one in three drops a head; you need 8. They come in twos and threes and run when low: pull from the edge of a group, finish a runner fast or slow it if you can (it brings friends), and back off along the beach if a third joins.
+A 1222 | "Stinky" Ignatz, standing in the swamp west of the murloc beach
+C 1222 @ Dustwallow Marsh, 46.9, 17.5 | Escort: walk beside Stinky while he looks for his bogbean plant and kill whatever attacks him (swamp animals, 35-38). Stay close and keep the attackers on you; you cannot heal him. When he thanks you the quest is complete; the hand-in is in Theramore. If he dies, abandon the quest and take it again from him.
+C 1206 @ Dustwallow Marsh, 32.8, 22.2 | Darkmist Cavern, in the north-west corner of the marsh. Darkmist Spiders (35-36), Recluses (36-37) and Silkspinners (38-39) all drop the eyes; you need 20. Work inwards from the entrance, one spider at a time. Their poison stacks: a warrior cannot cure it, so bandage and eat between pulls. Leave the rare Darkmist Widow (40) alone.
+T 1177 | Mudcrush Durtfeet, south of the cavern
+T 1206 | "Swamp Eye" Jarl. Do not take Jarl Needs a Blade: it wants a crafted sword.
+
+# ---------- Theramore ----------
+F Theramore @ Dustwallow Marsh, 67.5, 51.3 | Follow the road south-east and across the long bridge to Theramore Isle. Baldruc, the gryphon master, is in the south-east of town.
+S Theramore @ Dustwallow Marsh, 66.6, 45.2 | Innkeeper Janene, in the inn at the north end of town
+T 1222 | Morgan Stern, in the same inn
+A 1204 | Morgan Stern: Mudrock Soup and Bugs (needs level 33). The turtles are on the coast north of Theramore: you pass it on the loop below
+T 1219 | A Theramore Lieutenant: the officers standing at the town gates
+A 1220 | The same Theramore Lieutenant
+T 1220 | Captain Garran Vimes, top floor of Foothold Citadel, the big barracks in the east of town
+T 1253 | Captain Garran Vimes
+A 1319 | Captain Garran Vimes
+T 1284 | Captain Garran Vimes
+T 1302 @ Dustwallow Marsh, 67.9, 48.2 | Clerk Lendry, on the same floor of Foothold Citadel: James Hyal
+T 1252 | Captain Garran Vimes
+A 1259 | Captain Garran Vimes
+T 1259 | Adjutant Tesoran, in the same room
+A 1285 | Adjutant Tesoran
+T 1285 | Captain Garran Vimes
+A 1286 | Captain Garran Vimes
+T 1264 | Commander Samaul, in the same room
+A 1265 @ Dustwallow Marsh, 68.0, 48.7 | Commander Samaul
+T 1319 | Caz Twosprocket, the gnome at the smithy in the west of town
+A 1320 | Caz Twosprocket
+T 1320 | Captain Garran Vimes, back up in the citadel
+C 1265 @ Dustwallow Marsh, 59.9, 40.9 | Sentry Point, the first guard tower on the road outside Theramore, just past the bridge. Walk up to it until the quest says it is explored.
+T 1265 @ Dustwallow Marsh, 66.4, 49.3 | Archmage Tervosh, in Lady Jaina Proudmoore's tower in the middle of Theramore
+A 1266 @ Dustwallow Marsh, 66.4, 49.3 | Archmage Tervosh
+
+# ---------- One loop: Private Hendel and the deserters ----------
+C 1204 @ Dustwallow Marsh, 61.1, 18.4 | 8 Forked Mudrock Tongues. On the way north leave the road to the east: Mudrock Spikeshells and Tortoises (36-38) walk the beach and the shallows of the north-east coast. Only about one in four has a forked tongue, so this is 30 or more kills: it is the grind of this segment, with a quest reward on top. They hit slowly and hard: one at a time, and eat or bandage between kills. Had enough? Press Skip here and on the hand-in
+T 1266 @ Dustwallow Marsh, 45.2, 24.7 | Private Hendel, at the tents beside the road in the north of the marsh, west of Jarl's house. (Still owe Jarl his spices and eyes? Do his two quests now, the cavern is west of here.)
+A 1324 @ Dustwallow Marsh, 45.2, 24.7 | Private Hendel
+C 1324 @ Dustwallow Marsh, 45.2, 24.7 | Hendel (35) and the two guards beside him turn hostile. Start at full health and fight Hendel himself, not the guards (send your pet at Hendel too, if you have one). He gives up when he is nearly dead. If Archmage Tervosh appears next to him afterwards, hand the quest in to him right there.
+T 1286 | Balos Jacken at the Lost Point tower, south-east of the Shady Rest Inn. Take the road back west and turn south. Attack him (38): the deserters around him join in, so keep hitting Jacken only. He surrenders when he is nearly dead and then talks to you. Be at full health before you start.
+A 1287 | Balos Jacken
+H Theramore | Hearthstone
+T 1287 | Captain Garran Vimes. If he offers Vimes's Report (a short new quest to Lady Jaina, 290 XP), take it and hand it in at the tower in a moment.
+T 1204 | Morgan Stern, in the inn. Do not take the spider follow-up: it is not on this route
+T 1324 @ Dustwallow Marsh, 66.4, 49.3 | Archmage Tervosh in Jaina's tower (unless you already handed it in at the tents)
+A 1267 @ Dustwallow Marsh, 66.4, 49.3 | Archmage Tervosh
+T 1267 @ Dustwallow Marsh, 66.3, 49.0 | Lady Jaina Proudmoore, standing beside him
+N Take the boat from Theramore to Menethil Harbor | The dock is at the south-east edge of town. You keep for later: 1106 (Martek, Badlands), 5762 (Hemet Nesingwary, Stranglethorn), 1111 and 1178 (Ratchet), 525 (Southshore), 563 (Stormwind), 1457 and 1467 (Ironforge). Your hearthstone stays in Theramore.

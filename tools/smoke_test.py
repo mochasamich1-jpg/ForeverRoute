@@ -289,6 +289,27 @@ def main():
                 FAILED = True
 
 
+    if 'HumanWarrior' in built:
+        print()
+        print('== Human Warrior (Alliance), fresh character')
+        lua, fire, run = boot(('Human', 'Human'), ('Warrior', 'WARRIOR'))
+        for line in chat(lua):
+            print('   ' + line)
+        key = lua.eval('__ns.Core.routeKey')
+        if key != 'human-warrior':
+            print('   FAIL: picked', key)
+            FAILED = True
+        exercise(lua, fire, run)
+        for race, token, cls, want in (('Human', 'Human', 'PALADIN', 'human'), ('Dwarf', 'Dwarf', 'WARRIOR', 'dwarf'),
+                                       ('Human', 'Human', 'WARLOCK', 'human-warlock')):
+            lua, fire, run = boot((race, token), (cls.title(), cls))
+            key = lua.eval('__ns.Core.AutoRoute()')
+            ok = key == want or want.title().replace('-', '') not in built
+            print('   ' + ('ok  ' if ok else 'FAIL'), race, cls, '->', key)
+            if not ok:
+                FAILED = True
+
+
     # any-class routes, one per Alliance race
     for lua_name, key, race, cls in (('Dwarf', 'dwarf', ('Dwarf', 'Dwarf'), ('Warrior', 'WARRIOR')),
                                      ('Human', 'human', ('Human', 'Human'), ('Priest', 'PRIEST')),
@@ -310,7 +331,7 @@ def main():
         print()
         print('== who gets which route')
         for race, token, cls, want in (('Dwarf', 'Dwarf', 'WARRIOR', 'dwarf'), ('Dwarf', 'Dwarf', 'PALADIN', 'dwarf'),
-                                       ('Dwarf', 'Dwarf', 'SHAMAN', 'dwarf-shaman'), ('Human', 'Human', 'WARRIOR', 'human'),
+                                       ('Dwarf', 'Dwarf', 'SHAMAN', 'dwarf-shaman'), ('Human', 'Human', 'WARRIOR', 'human-warrior' if 'HumanWarrior' in built else 'human'),
                                        ('Human', 'Human', 'SHAMAN', 'human'), ('Human', 'Human', 'DRUID', 'human'),
                                        ('Human', 'Human', 'MAGE', 'human-mage'), ('Human', 'Human', 'WARLOCK', 'human-warlock'),
                                        ('Night Elf', 'NightElf', 'DRUID', 'night-elf'), ('Night Elf', 'NightElf', 'MAGE', 'night-elf'),
@@ -738,6 +759,7 @@ def first_quest(lua):
     key = lua.eval('__key')
     name = {'undead-mage': 'UndeadMage', 'orc-shaman': 'OrcShaman', 'dwarf-shaman': 'DwarfShaman',
             'skyborne-druid': 'SkyborneDruid', 'skyborne-mage': 'SkyborneMage', 'human-mage': 'HumanMage', 'gnome': 'Gnome', 'human-warlock': 'HumanWarlock',
+            'human-warrior': 'HumanWarrior',
             'dwarf': 'Dwarf', 'human': 'Human', 'night-elf': 'NightElf', 'skyborne': 'Skyborne'}[key]
     text = (ADDON_DIR / 'Routes' / f'{name}.lua').read_text(encoding='utf-8')
     m = re.search(r'\{t="A", seg=\d+, q=\{(\d+)', text)

@@ -1,0 +1,79 @@
+@segment 56-57 Silithus
+@start-level 56
+# Human Warrior. Made from routes/human/24-silithus-56-57.route by tools/derive_warrior.py (never edit by hand): the
+# warrior class quests, the warrior trainers and warrior fight hints are added. The source file says:
+# Human, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 23: same quests, order, binds and flights. This segment had no class
+# quests and no second-hearthstone step, so no travel changed. Only the combat hints and the bind text were rewritten
+# class-neutral.
+# Carried in from segment 23, all for the Plaguelands in segment 25: Troubled Spirits of Kel'Theril (5245, with the four
+# relic fragments), The Everlook Report (6028) and Duke Nicholas Zverenhoff (6030). They stay in the log all segment.
+@carry 5245,6028,6030
+# The Ruins of Kel'Theril (5244) was handed in in segment 23; it is the prerequisite of the carried 5245.
+@done 5244
+# Order: Everlook -> fly Marshal's Refuge -> ride the north-west pass into Silithus -> Cenarion Hold (bind) -> east side
+# and the old Twilight camp in the north-west -> grind to 57 -> Ortell, the western loop with the three Twilight Keepers
+# -> the satchel in the south and Ortell again -> Cenarion Hold -> fly Theramore -> boat to Menethil Harbor.
+# Hearth: Everlook at the start, Cenarion Hold from the first stop on.
+# Changes against the plan, all inside this segment:
+# - Flies straight to Marshal's Refuge (flight path from segment 21) instead of Gadgetzan plus the ride through the
+#   crater: the mechanical yeti quest (5163) that needed Gadgetzan is not carried.
+# - The L 57 grind comes before the Twilight Keepers (level 60, with adds) instead of last, and Secret Communication
+#   (8318, needs 57) is taken right after it, so one round of the Twilight camps yields the texts for both 8318 and 8323.
+# Left out: elites (8283 Deathclasp, Mar'alith's follow-ups), 1125/1126 (need a Moonglade chain), the level-60 field
+# duty quests, 8275 (Ironforge breadcrumb, not needed).
+# Silithus is full of elite silithids: Hive'Ashi north-west of Cenarion Hold (about 38-51, 12-32) plus a pack on the
+# open sand just south-east of it (about 48-56, 40-54), Hive'Zora in the west (about 20-37, 45-72) and Hive'Regal in the
+# south (about 48-67, 70-99). The steps ride around them. (Areas as in the Horde orc route's Silithus segment.)
+# Carry-out (3): 5245, 6028, 6030.
+
+# ---------- Everlook -> Silithus ----------
+FLY Marshal's Refuge @ Winterspring, 62.3, 36.6 | You start in Everlook at level 56, hearthstone set to Everlook. Maethrya, outside the north gate. A very long flight: stay on until it lands in Un'Goro Crater
+N Ride to the north-west corner of Un'Goro Crater and take the ridge path west into Silithus | It comes out at Valor's Rest, the graveyard in the north-east of Silithus
+G Silithus, 50.6, 34.5 | Follow the road south-west from Valor's Rest to Cenarion Hold. Stay on the road: Hive'Ashi, north of it as you get close to the Hold, is all elite
+F Cenarion Hold @ Silithus, 50.6, 34.5 | Cloud Skydancer, the hippogryph master on the north side of the Hold
+S Cenarion Hold @ Silithus, 51.9, 39.2 | Calandrath, the innkeeper. From now on your hearthstone brings you back here
+
+# ---------- Cenarion Hold: first round ----------
+A 8280 | Windcaller Proudhorn
+A 8277 | Beetix Ficklespragg
+A 8284 | Geologist Larksbane
+C 8277,8280 @ Silithus, 61.0, 28.0 | East and north-east of the Hold: Stonelash Scorpids (stingers), Sand Skitterers (fangs) and 15 Dredge Strikers share the open sand, all level 54-56. Stay east of Hive'Ashi, the big hive north-west of the Hold: its silithids are elite. The scorpids poison: a warrior cannot cure it, so bandage and eat
+C 8284 @ Silithus, 23.2, 13.0 | Ride back past the Hold, go round the south and west sides of Hive'Ashi and north to the abandoned Twilight camp in the north-west: 8 Twilight Tablet Fragments lie on the ground among the air elementals. The Windreaver, a level 60 elite elemental, patrols the east and south sides of the camp (he starts around 28.7, 26.9): spot him and let him pass, and skip the lone fragment at the south end
+T 8280 | Windcaller Proudhorn, Cenarion Hold
+A 8281 | Windcaller Proudhorn
+T 8284 | Geologist Larksbane
+A 8285 | Geologist Larksbane
+T 8277 | Beetix Ficklespragg
+A 8278 | Beetix Ficklespragg
+
+# ---------- Grind to 57 ----------
+L 57 @ Silithus, 61.0, 28.0 | The rest of Silithus is level 57-60, and Bor's quest needs 57. Grind the sand east and north-east of the Hold to 57: Dredge Strikers, Stonelash Scorpids and Sand Skitterers (54-56) die fast. Dredge Crushers (57-58) south of the Hold are slower but count for Proudhorn's new quest (20). One at a time, and eat or bandage between pulls
+A 8318 | Bor Wildmane, Cenarion Hold. From now on keep every Encrypted Twilight Text: you need 20 in all, 10 for Bor and 10 for Hermit Ortell
+
+# ---------- Ortell and the western loop ----------
+T 8285 | Hermit Ortell, in his hut in the far south-east. Ride east first and then south, so the elite silithids on the sand south-east of the Hold stay on your right. Kill the Stonelash Pincers and Dredge Crushers you pass: Beetix wants 3 Pincer stingers and Proudhorn 20 Crushers
+A 8279 | Hermit Ortell
+C 8278:2 @ Silithus, 60.0, 62.0 | Leave the hut to the north-west: Hive'Regal starts just south-west of it. Finish the 3 Stonelash Pincer Stingers on the sand here, and keep killing every Dredge Crusher you meet
+C 8278:1,8278:3 @ Silithus, 38.0, 78.0 | Ride west along the north edge of Hive'Regal, then south-west into the foothills below Hive'Zora: Stonelash Flayers (stingers) and Rock Stalkers (fangs), 57-59
+C 8279:2 @ Silithus, 16.1, 86.4 | Keep west along the foothills to Twilight Keeper Exeter's camp in the far south-west. He is level 60 and not elite, but the camp is full of 57-60 cultists: pull them out one or two at a time from as far away as you can, kill the casters (Geolords and Stonecallers) first and interrupt their casts with Pummel, back out of the camp if more come, and kill Exeter last at full health. Every cultist can drop Encrypted Twilight Texts. Too many deaths? Abandon The Twilight Lexicon and skip the Keeper steps and Ortell's follow-ups
+G Silithus, 42.0, 55.0 | Ride back east along the foothills, then north between Hive'Zora and the Hold. Dredge Crushers and Stonelash Pincers roam this strip
+C 8279:1 @ Silithus, 26.4, 36.6 | Twilight Keeper Mayna's camp, north of Hive'Zora. Same method. An elite Twilight Prophet can walk the west side of the zone: let him pass
+C 8279:3,8281 @ Silithus, 40.9, 42.2 | Twilight Keeper Havunth at the Twilight Post, just south-west of the Hold. Finish the 20 Dredge Crushers on the sand around both camps
+C 8318 @ Silithus, 39.6, 44.0 | Stay at the Twilight Post until you hold 20 Encrypted Twilight Texts: Twilight Avengers, Geolords and Stonecallers. The quest shows 10 of 10 long before that; count the stack in your bags
+T 8278 | Beetix Ficklespragg, Cenarion Hold
+T 8281 | Windcaller Proudhorn
+T 8318 | Bor Wildmane takes 10 of the texts. Keep the other 10 for Ortell
+A 8282 | Noggle Ficklespragg, lying next to Beetix
+
+# ---------- The south and Ortell again ----------
+C 8282 @ Silithus, 44.6, 91.4 | Ride south, passing the elite silithids below the Hold on their west side, and keep west of Hive'Regal until you reach the mountains at the south edge. Noggle's Satchel lies on the ground among the Stonelash Flayers. Deathclasp, a level 59 elite scorpid, rests a few steps south-east of it (45.1, 92.3): come in from the north-west, grab the satchel and leave. If she comes for you, run north and do not fight her
+T 8279 | Hermit Ortell. Ride back north the same way, then east, keeping north of Hive'Regal
+A 8323 | Hermit Ortell
+T 8323 | Give him the 10 Encrypted Twilight Texts
+A 8287 | Hermit Ortell
+T 8282 | Noggle Ficklespragg, Cenarion Hold
+T 8287 | Commander Mar'alith, on the north side of the Hold. Skip his follow-ups: they are elite
+
+# ---------- Leaving Kalimdor ----------
+FLY Theramore @ Silithus, 50.6, 34.5 | Cloud Skydancer. A long flight by way of Gadgetzan; if it stops there, take the next one on to Theramore Isle
+N Take the boat from Theramore to Menethil Harbor | The dock is at the east end of Theramore. Keep Troubled Spirits of Kel'Theril (5245), The Everlook Report (6028) and Duke Nicholas Zverenhoff (6030) in the log. Your hearthstone is set to Cenarion Hold: do not use it from here on
