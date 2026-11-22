@@ -18,7 +18,7 @@
 
 # ---------- Ironforge and Stormwind on the way ----------
 FLY Ironforge | Thorgrum Borrelson in Thelsamar
-N Look for a Bronze Tube in Ironforge | Viktori in Darkshire needs one Bronze Tube for Look to the Stars. Engineers make it: check the auction house, and ask Gearcutter Cogspinner, the engineering supplier in Tinker Town (67.8, 42.5), on your way to the tram. Not verified: the quest data only lists drops from machines and a vendor in Thousand Needles, so a city supplier stocking one is Classic knowledge. Without a tube you skip the Look to the Stars steps later.
+N Look for a Bronze Tube in Ironforge | Viktori in Darkshire needs one Bronze Tube for Look to the Stars. Engineers make it and engineering suppliers sell it: ask Gearcutter Cogspinner in Tinker Town (67.8, 42.5) on your way to the tram, and check the auction house. He may be sold out. Without a tube you skip the Look to the Stars steps later.
 N Take the Deeprun Tram to Stormwind | The tram station is in Tinker Town.
 T 2041 | Shoni the Shilent, in the Dwarven District a few steps from the tram exit. Do not take her follow-up (Deadmines). Billibub Cogspinner, the engineering supplier, stands close by (62.4, 29.9): ask him for a Bronze Tube too, and try the Stormwind auction house.
 FLY Lakeshire | Dungar Longdrink, the gryphon master in the Trade District
@@ -69,7 +69,7 @@ C 56 | Tranquil Gardens Cemetery is just south of Mary's house. Kill 8 Skeletal 
 A 245 | Take the road west along the south side of Duskwood. Watcher Dodds stands on it, about halfway (45.1, 67.0). From here on kill the spiders you pass: Pygmy Venom Web Spiders (18-19) count for him, and every spider can drop Vials of Spider Venom for Madame Eva (5) and Gooey Spider Legs. Keep 6 Gooey Spider Legs for a later quest. Let the Voidwalker take the bites: a warlock cannot cure their poison, so Drain Life, bandage and eat. You hand this in when you pass Dodds again.
 T 163 | Jitters hides in Raven Hill, the dead village in the west (18.4, 56.4)
 A 5 | Jitters
-C 96139 @ Duskwood, 18.4, 56.4 | Search Raven Hill for the Raven Hill Tome. New quest: the data has no exact spot, only "search Raven Hill". Look inside the ruined houses and around the village for a book you can click.
+C 96139 @ Duskwood, 21.1, 55.6 | Search Raven Hill for the Raven Hill Tome. It is the object called Memory of Valor, at the east edge of the village (21.1, 55.6): click it.
 T 164 | Sven Yorgen camps on the western edge of Duskwood, north-west of Raven Hill (7.8, 34.1)
 A 95 | Sven Yorgen
 A 226 | Lars, at the same camp

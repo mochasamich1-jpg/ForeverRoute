@@ -5,8 +5,8 @@
 # Carry-in: 65 (to Wiley in Lakeshire), 263 (Stonesplinter troggs), 353 (package for Mountaineer Stormpike),
 # 2039 (Find Bingles).
 # Carry-out: 119 + 121 (Lakeshire, segment 07), 455 (Menethil Harbor, segment 08), 2041 (Stormwind, segment 07).
-# Hearth: Sentinel Hill at the start (not used), Thelsamar from the Loch Modan part on. It is used once, at the
-# very end, to come back from Moonglade.
+# Hearth: Sentinel Hill at the start (not used), Thelsamar from the Loch Modan part on. It is used twice: to
+# come back from Darnassus after the Cat Form chain (right after the bind) and at the very end, from Moonglade.
 # Deviations from the Dwarf original:
 #  - The whole level-20 water class-quest chain of the Dwarf is gone (94494 from Ironforge, Norric Lochthane, 94495, 94497 and 94499 at
 #    Hervdana Saegrund's cave in the Wetlands). Travel removed with it: the walk through the Dun Algaz tunnels
@@ -21,10 +21,17 @@
 #    up to that point, and the Dwarf route hearthed to Thelsamar at this same moment, so the way back is the
 #    same Hearthstone use.
 #  - The L 20 grind step is gone: it only made sure that class quest could be taken in Ironforge.
-#  - Cat Form is NOT learned here: its chain starts in Darnassus and is done in the Darkshore segment. An N
-#    step at the Moonglade stop says so.
-#  - Combat hints rewritten for a druid without Cat Form (caster form, Bear Form, Bash, Entangling Roots,
-#    Hibernate from 18).
+#  - Cat Form chain (98393, 98341, 98404, 98738, 98397) moved here from the Darkshore segment on 2026-11-20
+#    (user request: played druid was 20 at the Stormwind stop). Right after the Thelsamar bind: Teleport:
+#    Moonglade, druid flight Nighthaven -> Rut'theran (flown by the user's Skyborne druid on 2026-11-20),
+#    Darnassus (accept, Tyrande for 93963), Teleport: Moonglade, the chain, flight again, hand-in, Hearthstone.
+#    An L 20 step guards it: the builder estimate here may be under 20.
+#  - The same trip picks up the two Classic druid chains (2026-11-20, givers and spots from the user's log): Lessons Anew
+#    6121 and A Lesson to Learn 26 from Mathrengyl, The Principal Source 6122 and Trial of the Lake 29 from Dendrite,
+#    Trial of the Sea Lion 272 from Tajarri. Carry-out adds 272 and 6122. The Questie data marks 26, 29, 272, 5061 and
+#    6122-6125 night-elf only; a Skyborne gets them (profile key race_seen in build_route.py).
+#  - Combat hints were written for a druid without Cat Form (caster form, Bear Form, Bash, Entangling Roots,
+#    Hibernate from 18) and still work; they do not mention Cat Form after the chain.
 # Left out on purpose: 132 (Wiley's follow-up, a Westfall bounce), 161/274 (A Dark Threat Looms part 3 and 4: the
 # data puts Ashlan Stonesmirk at Dun Modr in the far north of the Wetlands, not at the dam), 278 and
 # 255/256/271/531 (elite), 116 Dry Times (four bought drinks from four towns).
@@ -54,7 +61,7 @@ T 125 | Foreman Oslow
 A 89 | Foreman Oslow
 
 # ---------- Gnolls north of town ----------
-C 89 @ Redridge Mountains, 24.0, 34.8 | The data lists the gnolls north of Lakeshire as the source of Iron Pikes and Iron Rivets: Redridge Brutes (17-18) in the camps around 24, 35 and Redridge Mystics (18-19) a little further north. Take the path north out of town. Pull one camp member at a time with Wrath, stun a Mystic's cast with Bash in Bear Form, and hold a second gnoll in Entangling Roots if two come. Do not go deeper than you need: Bashers (19-20) are behind them. Great Goretusks on the way drop snouts for the goulash.
+C 89 @ Redridge Mountains, 21.8, 36.5 | Iron Pikes and Iron Rivets drop from the gnolls north of Lakeshire: Redridge Brutes (17-18) and Redridge Mystics (18-19) in the camps around 22-24, 36-38, more Brutes further west around 17, 36 and more Mystics a little further north. Take the path north out of town. Pull one camp member at a time with Wrath, stun a Mystic's cast with Bash in Bear Form, and hold a second gnoll in Entangling Roots if two come. Do not go deeper than you need: Bashers (19-20) are behind them. Great Goretusks on the way drop snouts for the goulash.
 
 # ---------- Gnolls and beasts south of the lake ----------
 C 246,98407 @ Redridge Mountains, 20.0, 70.0 | Cross the bridge again and work the gnoll camps south and south-west of Lakeshire, toward Three Corners. Kill 10 Redridge Mongrels (15-16) and 6 Redridge Poachers (16-17, mostly in the southern camps around 29, 80), and every Redridge Thrasher (14-15) you see until you have 5 Spiked Collars. Poachers shoot: run up to them. Moonfire a gnoll that runs at low health. Tarantulas (15-16) and Great Goretusks (16-17) live between the camps: kill them as you go for 5 Crisp Spider Meat and 5 Great Goretusk Snouts (Redridge Goulash).
@@ -82,6 +89,34 @@ A 119 | Smith Argus. Keep the Crate of Horseshoes for the next segment.
 TRAIN @ Stormwind City, 35.8, 67.4 | Walk back into Stormwind. Sheldras Moontree, the druid trainer in the Park on the west side: learn your level 18 spells (Hibernate puts a beast to sleep, Faerie Fire). If he offers a druid quest you have not seen yet, take it.
 FLY Thelsamar | Dungar Longdrink, the gryphon master in the Trade District. If he does not offer Thelsamar, take the Deeprun Tram from the Dwarven District to Ironforge and fly from Gryth Thurden there.
 S Thelsamar | Innkeeper Hearthstove in the Stoutlager Inn. Buy food and water here.
+
+# ---------- Cat Form: Moonglade and Darnassus ----------
+L 20 @ Loch Modan, 35.5, 48.4 | The Cat Form chain needs level 20. Not 20 yet? Kill the Stonesplinter troggs south of Thelsamar until you are.
+N Cast Teleport: Moonglade | You land in Nighthaven. Your Hearthstone (Thelsamar) brings you back at the end of this trip.
+N Fly from Nighthaven to Rut'theran Village | Silva Fil'naveth, the druids' flight master, stands on the west side of Nighthaven (Moonglade 44.2, 45.2). She flies druids, Skyborne included, to Rut'theran Village.
+F Rut'theran Village @ Teldrassil, 58.4, 94.0 | Vesprystus, the hippogryph master, close to the dock
+N Walk through the glowing portal in Rut'theran Village up to Darnassus | The Cenarion Enclave is in the north-west of the city.
+A 98393 @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker, the druid trainer in the Cenarion Enclave: The Great Cat Spirit (new in Forever, from level 20)
+A 6121,26 @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker: Lessons Anew (the Cure Poison chain) and A Lesson to Learn (the Aquatic Form chain). Both go to Dendrite Starblaze in Moonglade
+C 93963:4 @ Darnassus, 39.1, 81.6 | Exploring the Alliance: Tyrande Whisperwind stands on the upper floor of the Temple of the Moon, in the south of the city. Talk to her, then cast the teleport
+N Cast Teleport: Moonglade | Back to Nighthaven.
+T 98393 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze, in Nighthaven
+T 6121,26 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze
+A 6122,29 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: The Principal Source (a water sample from Darkshore, done in the Darkshore segment) and Trial of the Lake
+A 98341 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: The Great Windborne Cat Spirit
+C 29 @ Moonglade, 53.5, 50.5 | Trial of the Lake: dive into Lake Elune'ara, right beside Nighthaven. Bauble Containers, small jars, stand on the lake bed (around 48-60, 46-58): open one and take the Shrine Bauble. Then go to the Shrine of Remulos in the north-west of Moonglade (36.3, 41.4), stand at the shrine and right-click the bauble in your bags. The quest has a timer, so do not wander off with the bauble
+T 29 @ Moonglade, 36.5, 40.3 | Tajarri, at the Shrine of Remulos
+A 272 @ Moonglade, 36.5, 40.3 | Tajarri: Trial of the Sea Lion. It wants two pendant halves from underwater lockboxes, one off Westfall (next segment) and one off Darkshore (the Darkshore segment)
+T 98341 @ Moonglade, 44.0, 73.5 | Go south across the lake by the twin bridges. The Avatar of Saeyleenan stands south of them.
+A 98404 @ Moonglade, 44.0, 73.5 | Avatar of Saeyleenan
+C 98404 @ Moonglade, 71.2, 61.5 | The Stormrage Barrow Dens are east of the lake; this is the door. Click the statue in front of the door first: it hides you for five minutes while you stay out of combat. Inside pick up the Relic of the Fang, the Relic of the Claw and the Relic of the Silent Shadow. They lie a few steps apart, the last one at the foot of a white cat statue. If a spirit sees you, go Bear Form and fight it.
+T 98404 @ Moonglade, 44.0, 73.5 | Back to the Avatar of Saeyleenan
+A 98738 @ Moonglade, 44.0, 73.5 | Avatar of Saeyleenan
+T 98738 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze in Nighthaven
+A 98397 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: To Darnassus. This is the last quest of the chain.
+N Fly from Nighthaven to Rut'theran Village again | Silva Fil'naveth, west side of Nighthaven (Moonglade 44.2, 45.2)
+T 98397 @ Darnassus, 35.2, 8.0 | Through the portal up to Darnassus: Mathrengyl Bearwalker. He teaches Cat Form, Prowl, Claw and Rip. Take any follow-up he offers.
+H Thelsamar | Hearthstone back to the inn. From here on you have Cat Form: Claw and Rip for single mobs, Prowl to sneak past camps.
 
 # ---------- Loch Modan: the southern troggs ----------
 A 436 | Jern Hornhelm in Thelsamar (37.2, 47.4)
@@ -138,7 +173,7 @@ A 301 | Jern Hornhelm
 FLY Ironforge | Thorgrum Borrelson in Thelsamar
 T 301 | Prospector Stormpike in the Hall of Explorers
 A 302 @ Ironforge, 74.6, 11.7 | Prospector Stormpike
-A 2041 | Gnoarn the gnome (ForeverChanges shows him at 62.2, 29.2; Questie has him in Tinker Town at 69.2, 50.6). A letter for Stormwind, handed in in the next segment.
+A 2041 @ Ironforge, 69.3, 50.7 | Gnoarn the gnome, in Tinker Town (69.3, 50.7). A letter for Stormwind, handed in in the next segment.
 
 # ---------- Loch Modan: the shipment ----------
 FLY Thelsamar | Gryth Thurden
@@ -158,7 +193,6 @@ A 455 | Mountaineer Rockgar
 C 455 | Follow the road into the Dun Algaz tunnels. Dragonmaw Scouts (19-20) and Grunts (20-21) stand along the road and in the side camps: kill 8 Scouts and 6 Grunts, as far as you get without going out into the Wetlands. They hit hard for your level: one at a time, Bear Form when they reach you, Moonfire the ones that run, heal between pulls. Whatever is missing you can finish in segment 08.
 
 # ---------- Moonglade: level 20 training ----------
-N Cast Teleport: Moonglade | Right where you stand, when you have had enough of the Dragonmaw. Your Hearthstone has not been used in this segment, so it is ready to bring you back to Thelsamar.
+N Cast Teleport: Moonglade | Right where you stand, when you have had enough of the Dragonmaw. Your Hearthstone was last used on the Cat Form trip, well over an hour ago, so it is ready to bring you back to Thelsamar. Already trained everything for your level? Skip this step and the next two and walk back to Thelsamar.
 TRAIN @ Moonglade, 52.5, 40.6 | Loganaar, the druid trainer in Nighthaven: learn everything up to your level (level 20 brings Starfire). Still 19? Take what he has; the rest comes at the next trainer.
-N Cat Form comes later @ Moonglade, 52.5, 40.6 | Cat Form is a quest chain that starts with the druid trainer in Darnassus at level 20. This route does it in the Darkshore segment (about level 24-25), so there is nothing to do for it here. If Sheldras Moontree in Stormwind offers "The Great Cat Spirit" when you next stand in front of him, take it.
 H Thelsamar | Hearthstone back to the inn

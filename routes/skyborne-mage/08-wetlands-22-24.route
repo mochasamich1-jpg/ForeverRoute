@@ -88,4 +88,4 @@ TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, in the Wizard's Sanctum in t
 H Menethil Harbor | Hearthstone back to Menethil Harbor
 
 # ---------- The boat ----------
-N Take the boat from Menethil Harbor to Auberdine | Not verified for Forever: a quest text says the Auberdine boat stops in Southshore on the way over. If it does, stay on board until Auberdine in Darkshore.
+N Take the boat from Menethil Harbor to Auberdine | The boat sails a one-way loop: Menethil Harbor, then Southshore, then Auberdine. Stay on board at Southshore and get off at Auberdine in Darkshore.

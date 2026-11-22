@@ -1,0 +1,197 @@
+@segment 57-60 Plaguelands & Burning Steppes
+@start-level 57
+# Night Elf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 24: same quests, order, binds and flights. This segment had no class
+# quests and no second-hearthstone step, so no travel changed: the one hearth (Undercroft -> Light's Hope Chapel) is the
+# ordinary Hearthstone, first used long after it was bound. The three Ironforge training stops are generic (no trainer
+# name, no arrow) and the combat hints are class-neutral.
+# Carried in from segment 24 (taken in Winterspring in segment 23): Troubled Spirits of Kel'Theril (5245, the four relic
+# fragments, for Aurora Skycaller), The Everlook Report (6028, Chillwind Camp) and Duke Nicholas Zverenhoff (6030,
+# Light's Hope Chapel).
+@carry 5245,6028,6030
+# The Ruins of Kel'Theril (5244, segment 23) is the prerequisite of the carried 5245.
+@done 5244
+# Order: Menethil Harbor -> fly Ironforge (train, two pick-ups) -> fly Southshore -> ride to Chillwind Camp -> Western
+# Plaguelands farms and Andorhal, one cauldron per trip -> Eastern Plaguelands: Tirion, the south, Light's Hope (bind),
+# the north, Plaguewood, Tirion -> Undercroft -> hearth Light's Hope -> Northdale -> Tirion -> Caer Darrow -> Chillwind
+# Camp and the Northridge loop -> fly Ironforge -> fly Lakeshire -> Burning Steppes -> Ironforge.
+# Hearth: Cenarion Hold until Light's Hope Chapel. Chillwind Camp has no innkeeper in the data, so the plan's bind there
+# is dropped; nothing on the way needs it.
+# Coordinates: Eastern Plaguelands positions are the ones in the Questie/ForeverChanges data (Forever's map frame: Tirion
+# 5.2, 35.6, Light's Hope 71-72, 48-50), not the Classic numbers quoted in the plan. Marlene Redpath (5142) is listed
+# under the Eastern Plaguelands on ForeverChanges but stands in the Western Plaguelands (Questie spawn): overridden.
+# Changes against the plan:
+# - Fragments of the Past (5246) is left out: it sends you to the Temple of Zin-Malor in Azshara. 5245 is still handed in.
+# - A Plague Upon Thee (5903) needs termites from Plaguewood in the Eastern Plaguelands, so it is carried through the
+#   eastern loop and the barrel steps (5904, 6389) come on the last Western Plaguelands loop, with Kirsta's quests.
+# - Mrs. Dalson's Diary (5058) and the outhouse (5059) are added: the cabinet of Locked Away (5060) cannot be opened
+#   without them.
+# - That's Asking A Lot (6026, crafted parts) and the repeatable Counting Out Time (4973) are notes only.
+# - Overmaster Pyron (4262) is kept as the plan asks, but has no coordinates: Pyron has no spawn in the data. He is a
+#   level 52 elite outside the Blackrock Depths door (Classic knowledge), easy at 59; the text says to skip him if not.
+# - The Tirion chain is woven into the Eastern Plaguelands loop instead of being finished before it (its targets are
+#   spread over the whole zone); L 58 sits before the level 58-60 north of the zone.
+# Left out as planned: everything in Stratholme and Scholomance (5848 on), 5022 (Stormwind), 4986 (Darnassus), 6025,
+# 6041 and the other elite follow-ups, 4808 (Winterspring), 4263 (Blackrock Depths).
+# Roads Southshore -> Chillwind Camp and Lakeshire -> Morgan's Vigil are Classic geography, not re-checked.
+
+# ---------- Ironforge ----------
+FLY Ironforge @ Wetlands, 9.5, 59.7 | You arrive on the boat from Theramore at level 57, hearthstone still set to Cenarion Hold (do not use it). Shellei Brondir is the Menethil gryphon master
+TRAIN | Ironforge: visit your class trainer and learn your level 54 and 56 spells (the route made no training stop in Kalimdor). Warriors and hunters train in the Military Ward (south-east), rogues and warlocks in the Forlorn Cavern (north), mages and priests in the Mystic Ward (north-west)
+A 5090 | Courier Hammerfall walks a circuit through Ironforge and has no fixed spot: ride the outer ring until you meet him. You need this one: Commander Ashlam Valorfist's quests at Chillwind Camp only open after it
+A 3702 | Royal Historian Archesonus, in the throne room wing (38.4, 55.3)
+T 3702 | Listen to her story to the end
+A 3701 | Royal Historian Archesonus. The ruins are in the Burning Steppes, the last stop of the route
+FLY Southshore @ Ironforge, 55.5, 47.7 | Gryth Thurden, the Ironforge gryphon master
+
+# ---------- Chillwind Camp ----------
+G Western Plaguelands, 42.9, 85.1 | Ride north out of Southshore into the Alterac Mountains and follow the road up the east side of the zone to the Western Plaguelands border. Chillwind Camp is right behind it. Crushridge ogres and Syndicate sit beside the road: keep riding
+F Chillwind Camp @ Western Plaguelands, 42.9, 85.1 | Bibilfaz Featherwhistle, the gryphon master
+T 5090 | Commander Ashlam Valorfist
+A 5092 | Commander Ashlam Valorfist
+T 6028 | Argent Officer Pureheart
+A 5903 | Nathaniel Dumah. The termite mounds are in the Eastern Plaguelands: keep the jar until you get there
+C 5092 @ Western Plaguelands, 50.8, 79.4 | Sorrow Hill, the graveyard east of the camp: 10 Skeletal Flayers and 10 Slavering Ghouls (50-52). Easy at your level
+A 5142 @ Western Plaguelands, 49.2, 78.6 | Marlene Redpath, the ghost in the house at Sorrow Hill. Pamela is in the Eastern Plaguelands
+T 5092 | Commander Ashlam Valorfist, Chillwind Camp
+A 5097,5215 | Commander Ashlam Valorfist. He gives you a Beacon Torch
+T 5215 | High Priestess MacDonnell, next to him
+A 5216 | High Priestess MacDonnell. Keep the empty bottle
+
+# ---------- Andorhal and Felstone Field ----------
+A 4971 | Chromie, in the ruined inn at the north-west corner of Andorhal. Andorhal has elites: Araj the Summoner (61) in the middle of town (45.3, 69.2) and Skeletal Warlords (56-57) on the streets. Look down each street before you ride in and stay away from the centre
+C 5097 @ Western Plaguelands, 42.2, 67.0 | Mark the four towers: stand in each doorway and use the Beacon Torch. Tower Two (42.3, 66.2) and Tower Three (44.3, 63.2) are on the north side, Tower Four (46.6, 71.0) in the south-east, Tower One (40.0, 71.6) in the south-west. Pull the Skeletal Executioners and Acolytes at each door out to you one at a time; the Acolytes are casters, interrupt or stun them if your class can
+C 4971 @ Western Plaguelands, 48.1, 65.2 | Use the Temporal Displacer next to one of the silos on the east edge of town (45-50, 62-69) and kill the Temporal Parasites that appear. Repeat at other silos until you have 10
+T 4971 | Chromie
+A 4972 | Chromie
+C 4972 @ Western Plaguelands, 40.0, 68.0 | Small Lockboxes lie in the rubble all over Andorhal; open them for the 5 watches. Start on the west side near Chromie (38-42, 66-72)
+T 4972 | Chromie. She offers the same quest again for 5 more watches (repeatable, very little XP): skip it
+C 5216 @ Western Plaguelands, 37.2, 56.8 | Felstone Field, the farm north-west of Andorhal: kill Cauldron Lord Bilemaw (53) beside the cauldron for its key
+T 5216 @ Western Plaguelands, 37.2, 56.8 | Use the key on the Scourge Cauldron
+A 5217 @ Western Plaguelands, 37.2, 56.8 | The Scourge Cauldron
+A 5021 | Janice Felstone's ghost, upstairs in the Felstone farmhouse
+T 5021 | Janice's Parcel, in the barn behind the house. Do not take the follow-up: it goes to Stormwind
+T 5217 | High Priestess MacDonnell, Chillwind Camp
+A 5219 | High Priestess MacDonnell
+T 5097 | Commander Ashlam Valorfist
+
+# ---------- The Writhing Haunt and Dalson's Tears ----------
+A 4984 | Mulgris Deepriver, the tauren at the Writhing Haunt, the farm north-east of Andorhal. Go around Andorhal on its east side. The cauldron here comes later
+C 5219 @ Western Plaguelands, 46.2, 51.9 | Dalson's Tears, the next farm north-west: kill Cauldron Lord Malvinious (55) beside the cauldron
+T 5219 @ Western Plaguelands, 46.2, 51.9 | The Scourge Cauldron
+A 5220 @ Western Plaguelands, 46.2, 51.9 | The Scourge Cauldron
+A 5058 @ Western Plaguelands, 47.8, 50.7 | Mrs. Dalson's Diary, an open book in the farm buildings at Dalson's Tears (the arrow points at it)
+T 5058 @ Western Plaguelands, 47.8, 50.7 | Read it to the end
+N Kill the Wandering Skeleton that walks around the Dalson farm and take the Dalson Outhouse Key @ Western Plaguelands, 47.7, 49.9 | Not there? It respawns after a few minutes: do the wolves below first
+A 5059 @ Western Plaguelands, 48.1, 49.6 | The outhouse behind the farmhouse
+T 5059 @ Western Plaguelands, 48.1, 49.6 | Open it and Farmer Dalson (56) jumps out. Kill him for the cabinet key
+A 5060 @ Western Plaguelands, 47.4, 49.6 | The Locked Cabinet upstairs in the farmhouse
+T 5060 @ Western Plaguelands, 47.4, 49.6 | Open it
+C 4984 @ Western Plaguelands, 46.4, 43.0 | 8 Diseased Wolves (53-54) in the fields around and north of Dalson's Tears
+T 4984 | Mulgris Deepriver, the Writhing Haunt
+A 4985 | Mulgris Deepriver. The grizzlies are further east
+T 5220 | High Priestess MacDonnell, Chillwind Camp
+A 5222 | High Priestess MacDonnell
+C 5222 @ Western Plaguelands, 53.0, 65.6 | Back to the Writhing Haunt: kill Cauldron Lord Razarch (56) beside the cauldron
+T 5222 @ Western Plaguelands, 53.0, 65.6 | The Scourge Cauldron
+A 5223 @ Western Plaguelands, 53.0, 65.6 | The Scourge Cauldron
+T 5223 | High Priestess MacDonnell, Chillwind Camp
+A 5225 | High Priestess MacDonnell. Sell and repair: you are away from the camp for a long time now
+C 4985 @ Western Plaguelands, 60.0, 50.0 | 8 Diseased Grizzlies (55-56) in the fields on the way east, between Dalson's Tears and Gahrron's Withering
+C 5225 @ Western Plaguelands, 62.5, 58.5 | Gahrron's Withering, the easternmost farm: kill Cauldron Lord Soulwrath (58) beside the cauldron. Clear the ghosts around him first. He casts shadow bolts: interrupt or stun them if your class can, and fight him at full health
+T 5225 @ Western Plaguelands, 62.5, 58.5 | The Scourge Cauldron
+A 5226 @ Western Plaguelands, 62.5, 58.5 | The Scourge Cauldron. You hand it in when you come back from the Eastern Plaguelands
+
+# ---------- Eastern Plaguelands: Tirion, the south, Light's Hope ----------
+G Eastern Plaguelands, 5.2, 35.6 | Ride east on the road and cross the bridge over the Thondroril River into the Eastern Plaguelands. Tirion Fordring's hut stands on the east bank, a little north of the road
+A 5542,5543,5544 | Tirion Fordring. Three kill quests for the whole zone: from here on kill every Plaguehound, Plaguebat and Carrion Grub you pass
+C 5543 @ Eastern Plaguelands, 14.3, 64.1 | Ride south along the river side: 30 Plaguebats (53-55) fly all over the south-west of the zone. Only the plain Plaguebats count here. The 20 Plaguehound Runts (53-54) run in the same fields, and every Carrion Grub can drop a Slab of Carrion Worm Meat (15)
+A 6024 @ Eastern Plaguelands, 22.9, 73.0 | A Torn Scroll on the ground beside the Undercroft crypt in the south. Infiltrator Hameya is in the far north-east; the crypt itself comes later
+T 5142 | Pamela Redpath, the ghost girl in the ruined house at Darrowshire, east of the Undercroft
+A 5149 | Pamela Redpath
+C 5149 @ Eastern Plaguelands, 33.4, 78.6 | The doll's head, left side and right side lie in the ruined houses of Darrowshire, just east of Pamela. Ghosts appear when you pick one up. Put the three parts together
+T 5149 | Pamela Redpath
+A 5241 | Pamela Redpath
+C 5542:2 @ Eastern Plaguelands, 47.2, 48.9 | Ride north-east to the main road and follow it east: 5 Plaguehounds (55-56) roam the middle of the zone beside the road, with more Carrion Grubs
+F Light's Hope Chapel @ Eastern Plaguelands, 71.8, 49.6 | Keep east on the road to Light's Hope Chapel. Khaelyn Steelwing is the gryphon master
+S Light's Hope Chapel @ Eastern Plaguelands, 71.8, 48.5 | Jessica Chambers, the innkeeper. Your hearthstone now brings you back here
+T 5241 | Carlin Redpath
+A 5211 | Carlin Redpath
+T 6030 | Duke Nicholas Zverenhoff
+A 6021 | Caretaker Alen, at the graves south-west of the chapel. Zaeldarr is in the Undercroft crypt
+N Optional: Smokey LaRue's That's Asking A Lot (6026) | He wants 2 Thorium Bars, 1 Golden Rod, 8 Hi-Explosive Bombs and 8 Unstable Triggers: crafted goods. Only worth it if you can make or already own them. Skip his follow-up either way: it is elite
+
+# ---------- Eastern Plaguelands: the north and Plaguewood ----------
+L 58 @ Eastern Plaguelands, 58.0, 51.0 | The north of the zone is level 57-60. Not 58 yet? Grind the Noxious Plaguebats, Plaguehounds and Carrion Grubs along the road just west of Light's Hope first (the hounds and grubs count for Tirion). The bats silence: get to full health before you pull, and eat or bandage between pulls
+C 5544 @ Eastern Plaguelands, 56.5, 25.0 | Ride north. Carrion Devourers (56-57) in the north-east finish the 15 Slabs of Carrion Worm Meat. Diseased Flayers (57-59) stand among them: each one releases a Darrowshire Spirit when it dies. Talk to the spirit to free it (15 for Carlin)
+C 6024 @ Eastern Plaguelands, 62.0, 11.1 | Infiltrator Hameya (60, not elite), a troll in the far north on the way to Zul'Mashar. Pull him alone and fight him at full health; walk away and start again if a second troll comes. Take his key
+C 5542:3 @ Eastern Plaguelands, 43.9, 28.9 | Ride west across the north of the zone: 5 Frenzied Plaguehounds (57-58) roam here
+T 5245 | Aurora Skycaller, beside the Northpass Tower in the north. Do not take her follow-up: it sends you to Azshara
+C 5903,5211 @ Eastern Plaguelands, 19.0, 23.0 | Plaguewood, in the north-west: use the Empty Termite Jar on the Large Termite Mounds until you have 100 termites. The Cannibal Ghouls (54-55) all over Plaguewood release Darrowshire Spirits: free the rest of your 15 here. Ziggurat Protectors (58, elite) guard the ziggurats (about 19, 16; 23, 29; 25, 18; 28, 18): work the mounds on the west side (16-22, 19-27) and give them room
+A 6164 | Augustus the Touched, in a cave at Terrordale, just west of the termite mounds
+C 6164 @ Eastern Plaguelands, 14.0, 24.2 | Augustus' Receipt Book lies in the ruined inn at Terrordale, a short walk north-east of his cave, upstairs. Crypt Fiends and Crypt Walkers (53-56) live in and around it: pull them one at a time
+T 6164 | Augustus the Touched
+C 5542,5543,5544 @ Eastern Plaguelands, 12.0, 45.0 | Ride south toward Tirion and finish whatever is left: Plaguehound Runts and Plaguebats in the fields south of his hut, Carrion Grubs everywhere
+T 5542,5543,5544 | Tirion Fordring
+A 5742 | Tirion Fordring
+T 5742 | Listen to Tirion
+A 5781 | Tirion Fordring
+
+# ---------- Undercroft, Northdale, Caer Darrow ----------
+C 5781,6021 @ Eastern Plaguelands, 23.5, 74.0 | The Undercroft, in the far south. Kill Zaeldarr the Outcast (54-55) inside the crypt for his head. Then click the Loose Dirt Mound on the grave in front of the crypt (23.8, 74.5): Mercutio Filthgorger (57) arrives with Crypt Robbers. Be at full health before you click, kill Mercutio first for Taelan's Hammer, then the Robbers one by one
+T 6024 @ Eastern Plaguelands, 23.6, 73.8 | Use Hameya's Key on the Mound of Dirt beside the wagon behind the crypt
+T 5781 | Ride back north-west to Tirion Fordring
+A 5845 | Tirion Fordring
+H Light's Hope Chapel | Use your Hearthstone
+T 6021 | Caretaker Alen
+T 5211 | Carlin Redpath. Skip his follow-up: it is elite
+C 5845 @ Eastern Plaguelands, 62.5, 26.8 | Ride north to Northdale: the Symbol of Lost Honor lies under the water of the pond in the hamlet. Scourge patrol the ruins: clear the bank first
+T 5845 | Ride west across the zone to Tirion Fordring
+A 5846 | Tirion Fordring
+T 5846 @ Western Plaguelands, 65.8, 75.4 | Artist Renfray, a ghost on the island of Caer Darrow in the lake south of Tirion's hut: swim across. Scholomance is on the island too; do not go in. Do not take her follow-up: it is inside Stratholme
+
+# ---------- Western Plaguelands: last loop ----------
+T 4985 | Mulgris Deepriver, the Writhing Haunt, on the way west. Skip Glyphed Oaken Branch: it goes to Darnassus
+T 5226 | High Priestess MacDonnell, Chillwind Camp
+T 5903 | Nathaniel Dumah
+A 5904 | Nathaniel Dumah
+A 6004 | Kirsta Deepshadow: ride north past Dalson's Tears to her hiding spot just north-east of the Northridge Lumber Mill. On the way, note the Scarlet patrols around Dalson's Tears: Medics and Hunters
+C 6004 @ Western Plaguelands, 51.7, 41.2 | 2 Scarlet Mages and 2 Knights (54-56) on the road south of Kirsta, 2 Medics and 2 Hunters (52-54) a little further south toward Dalson's Tears. Interrupt or stun the Mages' casts if your class can; kill the Medics (healers) first when they come in a group
+T 6004 | Kirsta Deepshadow
+A 6023 | Kirsta Deepshadow
+C 6023 @ Western Plaguelands, 57.8, 36.1 | Huntsman Radley (56) stands south-east of Kirsta at 57.8, 36.1; Cavalier Durgen (57) north-east of her at 55.2, 23.6, at the tower on the edge of Hearthglen. Do not go further into Hearthglen: it is elite. Pull each one away from his guards
+T 6023 | Kirsta Deepshadow. Skip her follow-up: it is elite
+T 5904 @ Western Plaguelands, 48.3, 32.0 | The Northridge Lumber Mill, just south-west of Kirsta: set the barrel down in the middle of the mill
+A 6389 @ Western Plaguelands, 48.3, 32.0 | The Termite Barrel
+T 6389 | Ride back south to Nathaniel Dumah, Chillwind Camp
+
+# ---------- Burning Steppes ----------
+FLY Ironforge @ Western Plaguelands, 42.9, 85.1 | Bibilfaz Featherwhistle, Chillwind Camp
+TRAIN | Ironforge: visit your class trainer and learn your level 58 spells. Warriors and hunters train in the Military Ward (south-east), rogues and warlocks in the Forlorn Cavern (north), mages and priests in the Mystic Ward (north-west)
+FLY Lakeshire @ Ironforge, 55.5, 47.7 | Gryth Thurden
+G Burning Steppes, 84.3, 68.3 | Follow the road north out of Lakeshire and up the pass into the Burning Steppes. Morgan's Vigil, the Alliance camp, is to the right as you come out
+F Morgan's Vigil @ Burning Steppes, 84.3, 68.3 | Borgus Stoutarm, the gryphon master
+A 3823,4283 | Oralius. Blackrock Medallions drop from every Blackrock orc and worg in the zone: keep them all
+A 4262 | Jalinda Sprig, a few steps away
+C 3823 @ Burning Steppes, 79.8, 44.1 | Dreadmaul Rock, north of the camp: 15 Firegut Ogre Mages, 7 Ogres and 7 Brutes (50-53). The Mages are casters: interrupt or stun them if your class can. Elite black dragonkin (Dragonspawn, Wyrmkin, 52-54) walk the ground east and north-east of the rock: stay on its west and south sides
+T 3823 | Oralius, Morgan's Vigil
+A 3824 | Oralius. Gor'tesh is far to the west; you get him with the orcs
+A 4296 | Maxwort Uberglint, at Flame Crest, the goblin camp in the north. Ride north-west along the foot of Dreadmaul Rock; Flame Crest has only a Horde flight master
+A 4726 | Tinkee Steamboil, beside him. She gives you the Draco-Incarcinatrix 900
+C 4726 @ Burning Steppes, 59.3, 31.7 | Scalding Broodlings (53-54) just south-west of Flame Crest: zap one with the Draco-Incarcinatrix, kill it and loot the essence it leaves on the ground. 8 in all. Stay west of about 80 and north of 55: elite dragonkin guard the other broodlings
+C 3701 @ Burning Steppes, 62.6, 39.5 | The Ruins of Thaurissan, south of Flame Crest: click the Thaurissan Relics lying among the ruins until the quest is complete (it counts 12 pieces of information). Thaurissan Spies stealth around them and jump you: keep your health up while you click
+C 4296 @ Burning Steppes, 54.1, 40.8 | The Tablet of the Seven, at the west end of the same ruins. Right-click it to copy it
+T 4296 | Maxwort Uberglint, Flame Crest
+T 4726 | Tinkee Steamboil. Do not take her letter: it goes to Winterspring
+C 3824 @ Burning Steppes, 39.3, 55.3 | Ride south-west to the Blackrock orc camps in the middle of the zone. Gor'tesh (54) stands on the west side of them: take his head
+C 4262 | Overmaster Pyron, a level 52 elite fire elemental inside Blackrock Mountain, the volcano at the west end of the zone. Ride in through the Burning Steppes gate and go down to the Blackrock Quarry on the bottom level: he walks in front of the door to Blackrock Depths. Do not go through the door (that is the dungeon). Fire does nothing to him: use anything but fire spells, start at full health and keep a potion or your heals ready. Can't find or reach him? Abandon the quest
+C 4283 @ Burning Steppes, 48.0, 55.0 | Back out to the orc camps. 50 Blackrock Medallions: Blackrock Soldiers, Slayers, Sorcerers, Warlocks and Worgs (54-57) in the camps around here; about every second kill drops one. Kill the Sorcerers and Warlocks first and interrupt or stun their casts if your class can; step back out of the camp when a worg adds
+L 60 @ Burning Steppes, 48.0, 55.0 | The last grind. Stay on the Blackrock orcs: singles at the edges of the camps, and eat, drink or bandage between pulls. The hand-ins still open (Oralius three times, Jalinda, Archesonus in Ironforge) give about 26,800 XP, roughly an eighth of level 59: you can stop that far short of 60 and let them finish it
+T 3824 | Ride back east to Oralius, Morgan's Vigil
+A 3825 | Oralius
+T 4283 | Oralius
+T 4262 | Jalinda Sprig. Skip her follow-up: it is in Blackrock Depths
+C 3825 @ Burning Steppes, 81.0, 46.8 | Climb to the top of Dreadmaul Rock and plant Gor'tesh's head in the soft dirt mound
+T 3825 | Oralius
+FLY Ironforge @ Burning Steppes, 84.3, 68.3 | Borgus Stoutarm
+T 3701 | Royal Historian Archesonus
+TRAIN | Ironforge: visit your class trainer and learn your level 60 spells. Route complete

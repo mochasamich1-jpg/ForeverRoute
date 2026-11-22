@@ -22,7 +22,7 @@ S Gadgetzan | Innkeeper Fizzgrimble
 T 4450 | Krinkle Goodsteel, the blacksmith (51.5, 28.8). He wants the ledger, 20 Solid Crystal Leg Shafts, the Overdue Package and Goodsteel's Balanced Flameberge. Missing one? Abandon the quest and skip this step.
 A 4496 | Alchemist Pestlezugg. Needs level 50: if you left Stranglethorn at 49, take it on your next Gadgetzan stop instead (it is handed in there in segment 22 anyway).
 A 4504 | Tran'rek
-N Ride south-west across Tanaris and down the ramp into Un'Goro Crater @ Un'Goro Crater, 71.6, 76.0 | In Classic the ramp is in the west wall of Tanaris, past Thistleshrub Valley; it comes out in the south-east of the crater. Torwa Pathfinder, a tauren, stands at the bottom. Devilsaurs (54-56 elite) walk the whole crater: look around before every pull and keep well away from them.
+N Ride south-west across Tanaris and down the ramp into Un'Goro Crater @ Un'Goro Crater, 71.6, 76.0 | The ramp is in the west wall of Tanaris, past Thistleshrub Valley; it comes out in the south-east of the crater. Torwa Pathfinder, a tauren, stands at the bottom. Devilsaurs (54-56 elite) walk the whole crater: look around before every pull and keep well away from them.
 
 # ---------- The east entrance: Torwa and the raft ----------
 A 4290,4289 | Torwa Pathfinder
@@ -88,13 +88,13 @@ C 4285 @ Un'Goro Crater, 56.5, 12.5 | The Northern Crystal Pylon, east of the Re
 L 52 @ Un'Goro Crater, 66.1, 16.1 | Short of 52? Stay on the gorillas in and around Fungal Rock (50-53) until level 52; the Tar Lurkers and Tar Lords of the western tar pits (52-54) on the way here also pay well. The targets that follow are level 55-56.
 C 4301 @ Un'Goro Crater, 68.1, 12.6 | U'cha (55), deep in Fungal Rock. Clear the gorillas near him first and start at full health (and full mana, if you use it). He hits hard: slow or stun him if your class can to get room to heal or bandage, and use a potion if you have one. If he is too strong, abandon The Mighty U'cha.
 C 4287 @ Un'Goro Crater, 77.2, 50.0 | Ride south along the east wall to the Eastern Crystal Pylon (77.2, 50.0). Click it.
-C 4292 @ Un'Goro Crater, 77.2, 50.0 | Lar'korwi (56). Torwa describes the spot as a small trail into the mountains north of his camp, strewn with huge bones; in Classic that is the ledge right by the Eastern Pylon. Use Torwa's Pouch there: place the meat, then rub the mixture on it. Start at full health, slow him and keep him at range if your class can, and heal or drink a potion early; if you have a pet, send it first. If he is too strong, abandon the quest.
+C 4292 @ Un'Goro Crater, 79.9, 49.9 | Lar'korwi (56). Torwa describes the spot as a small trail into the mountains north of his camp, strewn with huge bones; it is the ledge with the flat rock just east of the Eastern Pylon (79.9, 49.9). Use Torwa's Pouch there: place the meat, then rub the mixture on it. Start at full health, slow him and keep him at range if your class can, and heal or drink a potion early; if you have a pet, send it first. If he is too strong, abandon the quest.
 T 4301 | Ride south to Torwa Pathfinder
 T 4292 | Torwa Pathfinder
 C 4288 @ Un'Goro Crater, 23.9, 59.2 | Ride west along the south wall, then up the west side to the Western Crystal Pylon (23.9, 59.2). Click it.
 A 974 | Krakle, the goblin at the hot springs north-east of the pylon (30.9, 50.4). Needs level 51.
 C 4501 @ Un'Goro Crater, 31.6, 48.6 | 15 Frenzied Pterrordax (51-54) fly around the hot springs and the west side of the crater. Finish the 10 Pterrordax south of Fire Plume Ridge (52, 61) if you still need them.
-C 974 @ Un'Goro Crater, 49.7, 45.6 | Ride east up onto Fire Plume Ridge. Right-click Krakle's Thermometer at each hot spot until one reads as the hottest; the data lists spots at 49.7, 45.6 / 54.0, 47.6 / 53.9, 55.2 / 48.1, 53.3 / 45.5, 48.5. Fire elementals guard the ridge: fire spells do nothing to them, so use something else.
+C 974 @ Un'Goro Crater, 49.7, 45.6 | Ride east up onto Fire Plume Ridge. Right-click Krakle's Thermometer at the hot spots until one reads as the hottest: that is the one on the north side at 49.7, 45.6. The others (54.0, 47.6 / 53.9, 55.2 / 48.1, 53.3 / 45.5, 48.5) read cooler. Fire elementals guard the ridge: fire spells do nothing to them, so use something else.
 T 974 | Back down west to Krakle
 A 980 | Krakle. It goes to Donova Snowden in Winterspring (segment 23).
 T 4492 | Ride back up Fire Plume Ridge to Ringo (51.9, 49.8)

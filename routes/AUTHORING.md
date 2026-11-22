@@ -127,6 +127,13 @@ Gadgetzan, Ratchet, Everlook, Cenarion Hold, Marshal's Refuge, Light's Hope...) 
   `6-9 Dun Morogh` -> `9-11 Dun Morogh&Loch Modan` -> the shared Alliance files). TUGs runs dungeons;
   replace every dungeon block with open-world questing (dungeons are added separately, see below).
 - Starts in Coldridge Valley (Dun Morogh). Hearthstone starts bound in Anvilmar.
+- **Via Elwynn (rewritten 2026-11-16, user's choice):** after Coldridge (01) the route walks through Kharanos
+  (Coldridge hand-ins, level 6 training) to Ironforge and takes the tram to Elwynn. 02 = `human` 02 without the
+  Northshire lead-ins and Sam's camp; 03 = `human` 03 with shaman hints and no training stop; 04 = `human` 04 up
+  to the tram + Ironforge (Eldrun: level 8/10 training, Call of Fire 94449, which Eldrun also gives) + the old
+  Dwarf Shaman 03 from Amberstill Ranch on (413/414 out); 05-25 = the old 04-24 (segment references bumped).
+  The old Dun Morogh files are in `backup/dwarf-shaman-pre-elwynn/`. Cost: no shaman trainer in Elwynn or
+  Stormwind, so levels 8 and 10 are trained late (at about 11 in Ironforge).
 - **No teleports or portals.** Travel by foot, gryphon/hippogryph flight paths, hearthstone and:
   Deeprun Tram Ironforge (Tinker Town) <-> Stormwind (Dwarven District); boats Menethil Harbor <-> Auberdine
   (Darkshore), Menethil Harbor <-> Theramore (Dustwallow Marsh), Auberdine <-> Rut'theran (Darnassus),
@@ -172,6 +179,11 @@ Skyborne is the new Forever race; the Alliance side ("High Order Skyborne") can 
 -> Loch Modan I). Segments 05-25 are the Dwarf Shaman route's segments 04-24 (same quests, same order, same
 hearth binds) with everything shaman- or dwarf-specific replaced. Keep it that way: do not re-plan the quest
 order, only adapt it.
+One exception, asked for by the user on 2026-11-18: the druid leaves Zephras Isle at 14-15, a level above
+the Dwarf path, so segment 05 (now titled 15-17) leaves out the two low farming quests 22 Goretusk Liver Pie
+and 38 Westfall Stew. Before cutting anything else, check the level estimate at the end of every later
+segment (Wetlands I has the least room: 24.1) and the all-of prerequisites in baked_quests.json (92744
+Murloc Gills looks low but gates the 92745 chain).
 - **Only quests an Alliance Skyborne Druid can take.** The validator knows the profile; shaman quests
   (Call of Water 94494-94505, Call of Air 94789...) are errors. Remove their steps AND any travel that was
   only made for them; keep travel that also serves other quests.
@@ -194,23 +206,28 @@ order, only adapt it.
   or drop that stop and train two or three levels' worth at the next one. Never cross a continent to train.
   A trip to Ironforge that existed ONLY to train must be removed or redirected, not kept.
 - **Class quests**: Bear Form is learned on Zephras Isle (segment 03). At 14 and 16 the Classic night-elf
-  quests (Cure Poison 6121-6125, Aquatic Form 27/29/272/5061) are race-masked to Night Elves in the data and
-  NOT confirmed for Skyborne: at the first training stop at 14+ and at 16+ add an `N` step telling the player
-  to take whatever class quest the trainer or Dendrite offers (the logger records it). Cat Form (from 20): per the
+  quests (Cure Poison 6121-6125, Aquatic Form 26/29/272/5061) are race-masked to Night Elves in the data, but a
+  Skyborne gets them (user's druid log, 2026-11-20; `race_seen` in the druid profile of build_route.py lets the
+  validator accept them). Givers: Mathrengyl Bearwalker in Darnassus (6121, 26, and the last hand-ins 5061, 6125),
+  Dendrite Starblaze (6122, 29, 5061, 6125), Tajarri at the Shrine of Remulos (272), Alanndarian Nightsong in
+  Auberdine (6123, 6124). Routed: pick-up on the Cat Form trip in segment 06, Westfall half pendant in segment 07,
+  everything else in the Darkshore segment 09. Cat Form (from 20): per the
   ForeverChanges Cat Form guide the Alliance Skyborne chain starts and ends with Mathrengyl Bearwalker in
   Darnassus (35.2, 8.0): 98393 The Great Cat Spirit -> Teleport: Moonglade -> Dendrite Starblaze (Moonglade
   56.2, 30.6) -> 98341 The Great Windborne Cat Spirit -> Avatar of Saeyleenan (Moonglade 44.0, 73.5) ->
   98404 (three relics in the Stormrage Barrow Dens, door at Moonglade 71.2, 61.5; the statue at the door
   hides you for five minutes) -> 98738 back to Dendrite -> 98397 To Darnassus (Cat Form is taught at this
-  hand-in). All need `@ Zone, x, y` overrides. It is placed once, in segment 09 (Darkshore, one boat from
-  Darnassus), about level 24-25; before that the druid has no Cat Form. Nature's Grasp is a trained spell
+  hand-in). All need `@ Zone, x, y` overrides. It is placed once, in segment 06 right after the Thelsamar bind
+  (moved from segment 09 on 2026-11-20; the played druid was 20 there): Teleport: Moonglade, the druid flight
+  Nighthaven -> Rut'theran (Silva Fil'naveth is "Darnassus Flight Master" in the Forever NPC data; not yet
+  confirmed in game for a Skyborne), and the Hearthstone back to Thelsamar. Before that the druid has no Cat Form. Nature's Grasp is a trained spell
   from level 10 in Forever (not a talent).
 - **Mount at 40**: the Skyborne riding trainer and mount vendor are NOT in our data (unverified). Replace
   the Dwarf route's ram purchase (Amberstill Ranch) with an `N` step saying so: "ask a city guard or other
   Skyborne where your riding trainer is; have 100 gold ready". Remove travel that only went to the ram vendor.
 - **Combat hints** must suit a druid: caster form (Wrath, Moonfire, Starfire from 20, Entangling Roots
   outdoors, Rejuvenation / Regrowth / Healing Touch), Bear Form from 10 (Maul, Swipe, Demoralizing Roar,
-  Bash from 14 = stun / interrupt), Cat Form from segment 09 on (Claw, Rake, Rip, Prowl to sneak past things, Dash from
+  Bash from 14 = stun / interrupt), Cat Form from the chain in segment 06 on (Claw, Rake, Rip, Prowl to sneak past things, Dash from
   26), Hibernate from 18 (beasts and dragonkin), Faerie Fire from 18, Cure Poison 14 / Abolish Poison 26,
   Remove Curse 24, Nature's Grasp from 10, Barkskin from 44, Innervate from 40. Never mention
   totems, shocks, Lightning Bolt, Healing Wave, Purge, Stoneform (dwarf racial), Ghost Wolf, Astral Recall,
@@ -461,6 +478,16 @@ file gains class-neutral wording that none of its rules covers, or if a step it 
   `baked_items.json` field 10, the Forever values: Elixir of Giants is 48 here, not 38). Segments in `CITY` pass an
   auction house near their start: there the step sits after the first training stop and says how far ahead to buy;
   elsewhere it is the first step. Asked for by the user on 2026-11-13 (damage only, no defensive items).
+- **Saving for riding**: the `TRAIN` steps from level 14 to 38 end with "Saving for the riding skill at 40, if
+  you level as Protection: ..." (table `SAVE` in the script): what to leave at the trainer. Basis: the tip in
+  Subtle's Protection leveling guide and Classic's rank structure; Forever's trainer prices were not checked. Asked
+  for by the user on 2026-11-13.
+- **Auto train** (Core.lua, option `train`, `/fr train [on|off]`, default on, hold Shift to bypass): only on a
+  route whose profile in `build_route.py` has a `train` entry (so far only this one). At a class trainer it buys
+  every available skill the player can pay for; up to level `until` (40) it leaves the `skip` names and every rank
+  above 1 of the `rank1` names. Keep those lists in step with `SAVE` in `derive_warrior.py`. It uses the Classic
+  trainer API (GetTrainerServiceInfo, BuyTrainerService); not yet confirmed in the Forever client. Tests: AUTOTRAIN
+  in `tools/smoke_test.py`.
 - **Trainers**: Llane Beshere (Northshire), Lyria Du Lac (Goldshire smithy 41.1, 65.8), Wu Shen (Stormwind Old
   Town 80.5, 59.9), Kelv Sternhammer (Ironforge 70.3, 90.7).
 - **Ability levels** named in `TRAIN` steps come from the Forever beta spell list (build 1.60.1.70755, read
@@ -503,6 +530,15 @@ bandage"); generic `TRAIN` steps that say where the class trainers are, never on
   and take new quests there. Mob, item, quest and place names stay exactly as they are.
 - Auto pick in game (Core.AutoRoute): your race's route wins; within a race a route written for your class beats
   the any-class one.
+
+## Night Elf via Elwynn (`night-elf-elwynn`, ALLIANCE, ANY CLASS)
+Added 2026-11-15 for a Night Elf who left Teldrassil at level 10 for Stormwind. 01-02 are copies of
+`night-elf` 01-02; 03 is new (Stormwind flight path -> Goldshire -> farms, Fargodeep Mine, Crystal Lake, made
+from `human` 02 without the Northshire lead-ins and Sam's camp); 04-05 are copies of `human` 03-04 (labels
+moved up a level, the level 10 grind/class-quest steps and the duplicate Stormwind flight path removed); 06 is
+`human` 05 (it keeps FLY Ironforge, since this route ends 05 in Thelsamar like the Human one); 07-26 are
+`night-elf` 05-25 (nightsaber at 40). Plain copies: when `human` or `night-elf` files change, copy them again.
+Same races as `night-elf`, so the auto pick keeps `night-elf`; pick it with `/fr route night-elf-elwynn`.
 
 ## Optional dungeon runs (`routes/dungeons/*.dungeon`)
 The `.route` files stay quest-only. Dungeons are described once, in `routes/dungeons/NN-name.dungeon`, and the

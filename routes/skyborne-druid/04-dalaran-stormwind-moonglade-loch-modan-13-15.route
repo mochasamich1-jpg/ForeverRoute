@@ -1,7 +1,7 @@
 @segment 13-15 Dalaran, Stormwind, Moonglade & Loch Modan I
 @start-level 13
 # Added 2026-11-11 from the Questie audit (tools/questie_near.py): 93963 Exploring the Alliance (Bolvar, Skyborne only): Randal Emerson here, King Magni and
-# Mekkatorque in Ironforge in this segment, Tyrande in Darnassus on the Cat Form trip (segment 09), hand-in at Bolvar in
+# Mekkatorque in Ironforge in this segment, Tyrande in Darnassus on the Cat Form trip (segment 06), hand-in at Bolvar in
 # segment 11. The objective numbers (1 Emerson, 2 Mekkatorque, 3 Magni, 4 Tyrande) are the order on its ForeverChanges page.
 @carry 94946
 @done 93089,94638

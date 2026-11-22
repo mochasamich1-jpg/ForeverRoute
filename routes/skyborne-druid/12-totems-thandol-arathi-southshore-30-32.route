@@ -64,7 +64,7 @@ A 559 | Lieutenant Farren Orinelle
 
 # ---------- Loop 2: murloc heads, Hillsbrad Fields, the yeti cave ----------
 C 559 @ Hillsbrad Foothills, 30.0, 70.0 | Back to the Western Strand. Every Torn Fin murloc drops Murloc Heads (10 needed); the Muckdwellers and Coastrunners further west (20-35,64-76) are only 28-30
-C 98059 @ Hillsbrad Foothills, 29.7, 41.6 | North to Hillsbrad Fields. The town hall is the big building where the Hillsbrad Councilmen and Magistrate Burnside stand (about 29.7,41.6). Put the Sealed Company Request on the bookkeeping table inside. In Classic these farmers are friendly to the Alliance; if Forever made them hostile, go in and out fast. Horde players quest here
+C 98059 @ Hillsbrad Foothills, 29.7, 41.6 | North to Hillsbrad Fields. The town hall is the big building where the Hillsbrad Councilmen and Magistrate Burnside stand (about 29.7,41.6). Put the Sealed Company Request on the bookkeeping table inside. The people of Hillsbrad Fields are friendly to the Alliance. Horde players quest here
 C 565 @ Hillsbrad Foothills, 44.5, 30.0 | Only if you took 565. The yeti cave in the hills north-east of Hillsbrad Fields (42-47,25-34): Cave Yetis (30-31) and Ferocious Yetis (31-32) drop Yeti Fur, about one in three. 10 needed. Pull singles at the cave mouth with Wrath; if a second one comes, fight in Bear Form
 T 559 | Back to Southshore. Lieutenant Farren Orinelle
 A 560 | Lieutenant Farren Orinelle
@@ -77,7 +77,7 @@ T 565 | Bartolo Ginsetti (with the cloak, the wool bolt, Fine Thread and 10 Yeti
 
 # ---------- Loop 3: Eastern Strand and Dun Garok ----------
 C 562 @ Hillsbrad Foothills, 56.9, 69.2 | The coast south-east of Southshore (52-62,61-82): 10 Daggerspine Shorehunters (30-31) and 10 Daggerspine Sirens (31-32). Sirens cast: kill them first, Bash in Bear Form stops a cast. Shorehunters throw nets: fight them on land
-C 98071 @ Hillsbrad Foothills, 71.3, 78.5 | Further south-east along the coast to Dun Garok, the dwarven fort (about 71,79). The dwarves are Alliance. Leave the Fallrook Varietal at the fireplace at the bottom of the fort and take a Sack of Homebrew Hops. The exact spot is not in the data
+C 98071 @ Hillsbrad Foothills, 71.3, 78.5 | Further south-east along the coast to Dun Garok, the dwarven fort (about 71,79). The dwarves are Alliance. Leave the Fallrook Varietal at the fireplace at the bottom of the fort and take a Sack of Homebrew Hops. The fireplace's exact spot is not known: go down to the lowest floor and look for it
 T 562 | Lieutenant Farren Orinelle, Southshore
 A 563 | Lieutenant Farren Orinelle. The report goes to Stormwind Keep: you carry it until segment 15
 T 98071 | Brewmeister Bilger
@@ -104,7 +104,7 @@ A 683 @ Ironforge, 63.5, 67.3 | Sara Balloo
 T 683 @ Ironforge, 39.1, 56.2 | King Magni Bronzebeard, in the High Seat
 A 686 @ Ironforge, 39.1, 56.2 | King Magni Bronzebeard
 T 686 @ Ironforge, 39.0, 88.0 | Grand Mason Marblesten (39.0,88.0). Do not take the next step: it needs Alterac Granite
-A 1179 @ Ironforge, 72.7, 94.0 | Pilot Longbeard (Questie puts him at 72.7,94.0; the ForeverChanges page says the Hall of Arms). The crate goes to the Shimmering Flats in segment 14
+A 1179 @ Ironforge, 72.7, 94.0 | Pilot Longbeard, in the Hall of Arms in the Military Ward (72.7,94.0). The crate goes to the Shimmering Flats in segment 14
 N Before you leave: repair, buy food and water, bank what you do not need | There is no druid trainer in Ironforge: you learn your level 32 spells in segment 13, on a Teleport: Moonglade trip from Ashenvale. Start saving gold now: riding training and a mount at 40 are expensive
 FLY Menethil Harbor @ Ironforge, 55.5, 47.7 | Gryth Thurden
 

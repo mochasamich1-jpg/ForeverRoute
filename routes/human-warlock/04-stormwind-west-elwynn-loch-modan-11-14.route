@@ -76,7 +76,7 @@ N Take the Deeprun Tram to Ironforge @ Stormwind City, 66.0, 34.0 | The tram ent
 F Ironforge @ Ironforge, 55.5, 47.7 | Gryth Thurden, the gryphon master in the centre of the city
 # --- East Dun Morogh: Amberstill Ranch, Farsen, Gol'Bolar Quarry ---
 A 95212 @ Dun Morogh, 63.1, 49.7 | Leave Ironforge by the main gate, go down the ramp and follow the road east to Amberstill Ranch (about four minutes): Rudra Amberstill. The pelts come from the leopards east of the quarry, together with the trogg quests
-A 96392 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen's campsite is on the hillside south of the ranch, overlooking the Gol'Bolar Quarry from the west. Dwarves are sent to him from Kharanos; whether he gives his quests without that errand is not known. If he offers nothing, press Skip on this step and on his other five steps below
+A 96392 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen's campsite is on the hillside south of the ranch, overlooking the Gol'Bolar Quarry from the west. Dwarves are sent to him from Kharanos, but you do not need that errand: he offers Farsen's Watch to any Alliance character from level 9
 C 96392 @ Dun Morogh, 64.8, 58.4 | Talk to Farsen again and ask for his far sight; watch the vision until the objective ticks
 T 96392 @ Dun Morogh, 64.9, 58.4
 A 96390 @ Dun Morogh, 64.9, 58.4 | Farsen: 10 Dark Iron Spies at Ironband's Compound, east of the quarry

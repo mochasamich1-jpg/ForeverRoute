@@ -33,6 +33,7 @@ The guides are quest-only. Optional dungeon runs can be switched on with `/fr du
 | `/fr seg [n]` | list the segments, or jump to one (`/fr seg auto` picks the one for your level) |
 | `/fr route [name]` | list the guides, or switch to one (`/fr route auto` picks from race and class) |
 | `/fr auto` | auto accept and hand in on or off (on by default; hold Shift at an NPC to do it by hand) |
+| `/fr train` | auto train on or off (Human Warrior route only, on by default): at your class trainer it buys every skill you can pay for and leaves the ones the guide saves until after the level 40 mount; hold Shift to buy by hand |
 | `/fr dungeons on\|off\|list` | optional dungeon runs |
 | `/fr arrow`, `/fr paths`, `/fr waypoint` | arrow, road-following paths, map waypoint on or off |
 | `/fr note <text>` | save a note in the play log |

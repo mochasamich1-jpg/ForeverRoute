@@ -1,32 +1,30 @@
-@segment 24-26 Darkshore, Cat Form, Ashenvale I & Stonetalon
+@segment 24-26 Darkshore, Ashenvale I & Stonetalon
 @start-level 24
-# Skyborne Druid. Same quests, order and flight paths as the Dwarf original (Dwarf segment 08), plus the Cat Form chain.
+# Skyborne Druid. Same quests, order and flight paths as the Dwarf original (Dwarf segment 08).
 # First Kalimdor trip. Carried through untouched: 57, 67, 157, 181, 240, 453 (segment 11) and 275, 295, 471 (segment 10).
 # Carry-out adds 1026 (Raene's Cleansing, the rod: segment 13).
-# Hearth: Menethil Harbor on arrival, Auberdine for the Cat Form trip, Astranaar from Astranaar on.
+# Hearth: Menethil Harbor on arrival (not used), Astranaar from Astranaar on.
 # Changes from the Dwarf original:
 # - The Dwarf's class quests removed (94500, filling the Blue Waterskin). The only travel that disappeared is the few steps from
 #   Astranaar down to the lake shore; Astranaar itself is the quest hub of this segment and stays.
-# - Cat Form chain added right after arriving in Auberdine (source: ForeverChanges Cat Form guide and quest pages; the
-#   guide's author had not finished the chain): boat Auberdine -> Rut'theran Village (flight path), portal to
-#   Darnassus, Mathrengyl Bearwalker (98393, and level 24 training), Teleport: Moonglade, Dendrite Starblaze (98393,
-#   98341), Avatar of Saeyleenan (98341, 98404, 98738), Stormrage Barrow Dens, Dendrite (98738, 98397), back to
-#   Mathrengyl (98397: he teaches Cat Form, Prowl, Claw and Rip), boat back to Auberdine.
-#   Way back from Moonglade: the druid flight master Silva Fil'naveth (Moonglade 44.2, 45.2) to Rut'theran Village.
-#   That is Classic knowledge, not re-checked in Forever. Fallback: the Hearthstone. On arrival it is still bound in
-#   Menethil Harbor, on the other continent, so this segment adds a bind in Auberdine before the trip (extra bind,
-#   not in the Dwarf original; Menethil is not hearthed to in this segment and Astranaar replaces the bind later
-#   anyway). Segment 8 does not use the Hearthstone after Thelsamar, so it is ready here.
-# - Training: Mathrengyl in Darnassus at the start (level 24). At Stonetalon Peak the druid casts Teleport: Moonglade
-#   (Loganaar, level 26 spells) and takes the Hearthstone back to Astranaar. That replaces the Stonetalon Peak ->
-#   Astranaar flight (whose fallback was the Hearthstone anyway); the Stonetalon Peak flight path is still picked up.
-#   The Hearthstone was last used, at most, during the Cat Form trip at the start of the segment, hours earlier.
+# - The Cat Form chain is NOT here any more: it moved to segment 06 on 2026-11-20 (done at level 20 from Thelsamar,
+#   by Teleport: Moonglade and the druid flight to Rut'theran). The Auberdine -> Rut'theran -> Darnassus detour went
+#   with it. If that flight turns out not to exist, the old block is in git history / backup and belongs back here.
+# - Druid chains finished here (added 2026-11-20): The Principal Source 6122 (Cliffspring Falls cave mouth), the
+#   Darkshore half pendant for 272, Gathering the Cure 6123, Curing the Sick 6124, then ONE trip: Teleport: Moonglade
+#   (join the pendant at the Shrine of Remulos, Dendrite: T 272, A 5061, T 6124, A 6125; Loganaar, level 24), druid
+#   flight to Rut'theran, Mathrengyl (T 5061 Aquatic Form, T 6125 Cure Poison), hippogryph back to Auberdine. No bind
+#   in Auberdine any more: the Hearthstone stays on Menethil Harbor until Astranaar. The Westfall half pendant is
+#   fetched in segment 07. Tower of Althalaxx moved into the same northern loop. At Stonetalon Peak the druid casts
+#   Teleport: Moonglade again (level 26 spells) and takes the Hearthstone back to Astranaar. That replaces the
+#   Stonetalon Peak -> Astranaar flight; the Stonetalon Peak flight path is still picked up. The Hearthstone was
+#   not used before that in this segment.
 # - No travel form below level 30: the long road stretches are walked; the pendant east of Mystral Lake is fetched
 #   in Cat Form with Prowl.
 # Left out on purpose: 731 and 908 (elite), 1199 / 1198 / 1275 / 1200 / 971 (Blackfathom Deeps), 1072 / 1075 / 1094 (they send
 # you to Ironforge, Stormwind or Ratchet), 1057, and the quests kept for segment 13 (1035, 1011/1012, 1021/1031, 1022,
 # 4581, 98417/98418, 86757, 1027-1046), the Darnassus hand-ins (1081, 741, 3765).
-@carry 57,67,157,161,181,240,275,295,453,471,93963,97894
+@carry 57,67,157,161,181,240,272,275,295,453,471,6122,93963,97894
 
 # ---------- Auberdine ----------
 F Auberdine @ Darkshore, 36.3, 45.6 | Walk off the dock into Auberdine. Caylais Moonfeather, the hippogryph master, stands at the foot of the dock.
@@ -34,34 +32,35 @@ T 97894 @ Darkshore, 38.1, 41.2 | Gorbold Steelhand, at a merchant stall in Aube
 A 729 | Archaeologist Hollee, the dwarf in the north part of the village
 A 965 | Sentinel Elissa Starbreeze, in the building on the east side of the village
 
-# ---------- Cat Form: Darnassus and Moonglade ----------
-S Auberdine @ Darkshore, 37.0, 44.1 | Innkeeper Shaussiy, in the inn at the head of the docks. This bind is your way back if the Moonglade flight below does not exist.
-N Take the boat from Auberdine to Rut'theran Village | Check on the dock which boat it is: one pier goes to Rut'theran Village (Darnassus), the other to Menethil Harbor.
-F Rut'theran Village @ Teldrassil, 58.4, 94.0 | Vesprystus, the hippogryph master, close to the dock
-N Walk through the glowing portal in Rut'theran Village up to Darnassus | The Cenarion Enclave is in the north-west of the city.
-A 98393 @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker, the druid trainer in the Cenarion Enclave: The Great Cat Spirit (new in Forever, from level 20)
-TRAIN @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker: learn everything up to your level (Remove Curse at 24). Take any other class quest he offers.
-C 93963:4 @ Darnassus, 39.1, 81.6 | Exploring the Alliance: Tyrande Whisperwind stands on the upper floor of the Temple of the Moon, in the south of the city. Talk to her, then come back north for the teleport
-N Cast Teleport: Moonglade | You land in Nighthaven.
-T 98393 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze, in Nighthaven
-A 98341 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: The Great Windborne Cat Spirit
-T 98341 @ Moonglade, 44.0, 73.5 | Go south across the lake by the twin bridges. The Avatar of Saeyleenan stands south of them.
-A 98404 @ Moonglade, 44.0, 73.5 | Avatar of Saeyleenan
-C 98404 @ Moonglade, 71.2, 61.5 | The Stormrage Barrow Dens are east of the lake; this is the door. Click the statue in front of the door first: it hides you for five minutes while you stay out of combat. Inside pick up the Relic of the Fang, the Relic of the Claw and the Relic of the Silent Shadow. They lie a few steps apart, the last one at the foot of a white cat statue. If a spirit sees you, go Bear Form and fight it.
-T 98404 @ Moonglade, 44.0, 73.5 | Back to the Avatar of Saeyleenan
-A 98738 @ Moonglade, 44.0, 73.5 | Avatar of Saeyleenan
-T 98738 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze in Nighthaven
-A 98397 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: To Darnassus. As far as is known this is the last quest of the chain. Loganaar, the trainer, stands close by (52.5, 40.6) if you missed a spell.
-N Fly from Nighthaven to Rut'theran Village | Silva Fil'naveth, the druids' flight master, stands on the west side of Nighthaven (Moonglade 44.2, 45.2). Classic knowledge, not checked for Forever. If she offers no flight: use your Hearthstone (Auberdine) and take the boat to Rut'theran Village again.
-T 98397 @ Darnassus, 35.2, 8.0 | Through the portal up to Darnassus: Mathrengyl Bearwalker. He teaches Cat Form, Prowl, Claw and Rip. Take any follow-up he offers.
-N Take the boat from Rut'theran Village back to Auberdine | Down through the portal to the dock. From here on you have Cat Form.
-
-# ---------- Tower of Althalaxx ----------
+# ---------- North Darkshore: Cliffspring Falls, the lockbox, Tower of Althalaxx ----------
+C 6122 @ Darkshore, 54.9, 33.3 | The Principal Source. Follow the road north out of Auberdine, cross the Cliffspring River and go up the river to Cliffspring Falls. Stand at the mouth of the cave beside the falls and use the Empty Cliffspring Falls Sampler from your bags. The naga and Stormscale in the cave are level 16-20: you do not need to go in. Already have Aquatic Form and Cure Poison? Press Skip.
+N Half Pendant of Aquatic Agility @ Darkshore, 48.9, 11.3 | Trial of the Sea Lion. Go north to the coast past the mouth of the Cliffspring River and swim out: a Strange Lockbox lies on the sea bed here. Open it and take the half pendant. You now have both halves (the other one came from Westfall). Already have Aquatic Form? Press Skip.
 T 965 | Follow the road north out of Auberdine and turn east where the land rises toward the Tower of Althalaxx. Balthule Shadowstrike hides below the tower (55.0, 24.9).
 A 966 | Balthule Shadowstrike
 C 966 | Dark Strand Fanatics (16-17) camp around the tower: kill them for 4 Worn Parchments. They are far below you. Do not climb the tower: Athrikus Narassin (31) is at the top.
 T 966 | Balthule Shadowstrike
 A 967 | Balthule Shadowstrike. A letter for Maestra's Post in Ashenvale.
+
+# ---------- Auberdine: the cure ----------
+T 6122 @ Darkshore, 37.7, 40.7 | Back to Auberdine: Alanndarian Nightsong, in the north part of the village
+A 6123 @ Darkshore, 37.7, 40.7 | Alanndarian Nightsong: Gathering the Cure. She wants 12 Lunar Funguses and 5 Earthroot
+C 6123 @ Darkshore, 45.5, 50.0 | Lunar Fungal Blooms grow in the woods east of Auberdine, in three patches (43.4, 45.9; 46.5, 45.8; 45.5, 51.5): pick 12 Lunar Funguses. Earthroot is a herb: with Herbalism pick 5 on the hillsides here; without it buy 5 at an auction house before this trip, or ask in chat in Auberdine
+T 6123 @ Darkshore, 37.7, 40.7 | Alanndarian Nightsong
+A 6124 @ Darkshore, 37.7, 40.7 | Alanndarian Nightsong: Curing the Sick
+C 6124 @ Darkshore, 46.0, 43.0 | Use the Curative Animal Salve on 10 Sickly Deer. They stand among the healthy deer all along Darkshore; the nearest are in the woods east and north-east of Auberdine (45-47, 41-52) and further north along the road (43-49, 24-36). Target a Sickly Deer, stand close and right-click the salve
+
+# ---------- Moonglade and Darnassus: Aquatic Form, Cure Poison, level 24 training ----------
+N Cast Teleport: Moonglade | You land in Nighthaven. You come back by hippogryph, not by Hearthstone.
+N Join the two half pendants @ Moonglade, 36.3, 41.4 | Go to the Shrine of Remulos in the north-west of Moonglade. Standing at the shrine, right-click one half pendant: the two join into the Pendant of the Sea Lion. It only works at the shrine. No halves (you skipped the lockboxes)? Skip this.
+T 272 @ Moonglade, 56.2, 30.6 | Back to Nighthaven: Dendrite Starblaze
+A 5061 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: Aquatic Form
+T 6124 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: Curing the Sick
+A 6125 @ Moonglade, 56.2, 30.6 | Dendrite Starblaze: Power over Poison
+TRAIN @ Moonglade, 52.5, 40.6 | Loganaar, the druid trainer in Nighthaven: learn everything up to your level (Remove Curse at 24, new Cat Form ranks).
+N Fly from Nighthaven to Rut'theran Village | Silva Fil'naveth, the druids' flight master, on the west side of Nighthaven (Moonglade 44.2, 45.2). Then walk through the portal up to Darnassus
+T 5061 @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker, in the Cenarion Enclave in the north-west of the city: he teaches Aquatic Form
+T 6125 @ Darnassus, 35.2, 8.0 | Mathrengyl Bearwalker: he teaches Cure Poison
+FLY Auberdine @ Teldrassil, 58.4, 94.0 | Back down through the portal: Vesprystus, the hippogryph master in Rut'theran Village
 
 # ---------- South along the road ----------
 T 729 | Run back past Auberdine and take the road south, a long way. Near the south end of Darkshore leave the road to the west: Prospector Remtravel stands in his dig (35.7, 83.7). Do not take his escort (elite).
@@ -98,7 +97,7 @@ A 1033 | Pelturas Whitemoon
 T 991 | Take the road west out of Astranaar and leave it to the north-west for Lake Falathim. Teronis' Corpse lies at the lake (20.3, 42.3).
 A 1023 | From Teronis' Corpse
 C 1023 | Saltspittle murlocs (19-21) around the lake: kill them until one drops the Glowing Gem.
-A 1007 | Keep north-west to the coast. Talen camps above the Zoram Strand (14.8, 31.3). The Horde has a camp on the shore south-west of him (Classic knowledge, not checked for Forever): stay away from its guards.
+A 1007 | Keep north-west to the coast. Talen camps above the Zoram Strand (14.8, 31.3). The Horde has a camp on the shore south-west of him, around 12, 34: stay away from its guards.
 C 1007 | The Ancient Statuette lies on the strand north of Talen (14.2, 20.6). Fight your way there through the Wrathtail naga and count their heads.
 T 1007 | Talen
 A 1009 | Talen
@@ -132,11 +131,8 @@ A 1034 | Pelturas Whitemoon
 C 1034 | Leave Astranaar and go south. The Ruins of Stardust are on the island in the lake south of town (33.3, 67.8): pick 5 Handfuls of Stardust from the Stardust Covered Bushes.
 A 1016 | Go east along the south side of the zone, past the mouth of the Talondeep Path, to Silverwind Refuge on the shore of Mystral Lake. Sentinel Velene Starstrike is there (49.8, 67.2).
 C 1016 @ Ashenvale, 49.0, 70.4 | Befouled Water Elementals (23-25) walk in and around Mystral Lake. Kill them for 5 Intact Elemental Bracers, then right-click the Divining Scroll she gave you to make the Divined Scroll.
-T 1016 | Sentinel Velene Starstrike
-A 1017 | Sentinel Velene Starstrike
+T 1016 | Sentinel Velene Starstrike. Do not take her follow-up, Mage Summoner: Sarilus Foulborne is on Dreadmist Peak in the Barrens, deep in Horde land, and this route does not go there
 C 1025 @ Ashenvale, 53.3, 62.0 | The Foulweald furbolgs live in Greenpaw Village, north-east of Silverwind Refuge (49-58, 60-65). Kill 1 Den Watcher, 2 Ursas (both 24-25, in the middle of the village), 10 Totemics and 12 Warriors (23-24). Bash the Totemics before they heal, kill whatever they plant on the ground, and pull from the edge so you fight two at most (Entangling Roots on the second).
-C 1017 @ Ashenvale, 49.0, 70.4 | Sarilus Foulborne (25) stands on the island in the middle of Mystral Lake. Clear the elementals near the island, then fight him with full mana: Bash his casts, and put Entangling Roots on a summoned servant if he has one with him. Loot his head. (Questie files him under a Barrens map position; the lake is where the quest sends you.)
-T 1017 | Sentinel Velene Starstrike
 A 98027 | Only if you are level 25, otherwise press Skip here and on its hand-in. A Gleaming Crescent Pendant lies on the ground east of Mystral Lake (63.0, 71.5): clicking it starts a level 29 quest (new in Forever). The woods out there are above your level: go in Cat Form with Prowl, take the pendant and leave.
 
 # ---------- Talondeep Path -> Windshear Crag ----------
@@ -154,7 +150,7 @@ T 1092,1093 | Ziz Fizziks. Do not take Further Instructions (it sends you to Rat
 T 1071 | Gaxim Rustfizzle. Do not take An Old Colleague (it sends you to Ironforge and Stormwind).
 
 # ---------- Mirkfallon Lake and Stonetalon Peak ----------
-A 86574 | Follow the road west and then north through the mountains to Mirkfallon Lake. On the way it passes below Sun Rock Retreat, a Horde town (Classic knowledge): stay on the road and do not go up the side path. The body of the Night Elf Courier lies at the lake (48.6, 39.8): Stonetalon Supply Run (new in Forever).
+A 86574 | Follow the road west and then north through the mountains to Mirkfallon Lake. On the way it passes below Sun Rock Retreat, a Horde town: stay on the road and do not go up the side path. The body of the Night Elf Courier lies at the lake (48.6, 39.8): Stonetalon Supply Run (new in Forever).
 C 86574,1134 @ Stonetalon Mountains, 50.6, 43.0 | Pridewing wyverns fly all around Mirkfallon Lake: Wyverns (21-22), Consorts (22-23) and Skyhunters (23-24). Kill them for 12 Pridewing Venom Sacs and 6 Stonetalon Supply Bundles (the new quest's bundles come from the same wyverns). Cure Poison removes their poison (Abolish Poison from level 26). Leave the Pridewing Patriarch (25, rare elite) alone.
 T 86574 | Take the road north from the lake up to Stonetalon Peak. Innkeeper Faralia is in the inn (35.7, 5.8).
 T 1056 | Keeper Albagorm, the big Keeper of the Grove on the hill (37.1, 8.1). Do not take his follow-up.

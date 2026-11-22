@@ -9,4 +9,4 @@
 @hub Eastern Plaguelands, 81.0, 59.0, 8
 @hub Western Plaguelands, 43.0, 84.0, 8
 @entrance none
-RUN | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater. Two Alliance quests are named for it (Panic at the Digsite, Mapping the Way Forward) but who gives them is not published yet: ask around Marshal's Refuge and take what is offered; the addon logs it so these steps can be filled in.
+RUN @ Un'Goro Crater, 56, 12 | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater; the entrance is reported by the northern pylon at about 56, 12. Curator Thorius in the Hall of Explorers in Ironforge (71.5, 15.7) gives both Alliance quests, Panic at the Digsite and Mapping the Way Forward (from level 55). Take what is offered; the addon logs it so these steps can be filled in.

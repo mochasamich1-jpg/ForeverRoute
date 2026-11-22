@@ -47,7 +47,7 @@ T 125 | Foreman Oslow
 A 89 | Foreman Oslow
 
 # ---------- Gnolls north of town ----------
-C 89 @ Redridge Mountains, 24.0, 34.8 | The data lists the gnolls north of Lakeshire as the source of Iron Pikes and Iron Rivets: Redridge Brutes (17-18) in the camps around 24, 35 and Redridge Mystics (18-19) a little further north. Take the path north out of town. Pull one camp member at a time and kill the Mystics first: they cast, so interrupt them with Shield Bash if you carry a shield. If two come, kill the weaker one first or back off down the path. Do not go deeper than you need: Bashers (19-20) are behind them. Great Goretusks on the way drop snouts for the goulash.
+C 89 @ Redridge Mountains, 21.8, 36.5 | Iron Pikes and Iron Rivets drop from the gnolls north of Lakeshire: Redridge Brutes (17-18) and Redridge Mystics (18-19) in the camps north-west of town (16-24, 33-38). Take the path north out of town. Pull one camp member at a time and kill the Mystics first: they cast, so interrupt them with Shield Bash if you carry a shield. If two come, kill the weaker one first or back off down the path. Do not go deeper than you need: Bashers (19-20) are behind them. Great Goretusks on the way drop snouts for the goulash.
 
 # ---------- Gnolls and beasts south of the lake ----------
 C 246,98407 @ Redridge Mountains, 20.0, 70.0 | Cross the bridge again and work the gnoll camps south and south-west of Lakeshire, toward Three Corners. Kill 10 Redridge Mongrels (15-16) and 6 Redridge Poachers (16-17, mostly in the southern camps around 29, 80), and every Redridge Thrasher (14-15) you see until you have 5 Spiked Collars. Poachers shoot: run up to them. Gnolls run at low health: finish them fast or slow them if you can, they bring friends. Tarantulas (15-16) and Great Goretusks (16-17) live between the camps: kill them as you go for 5 Crisp Spider Meat and 5 Great Goretusk Snouts (Redridge Goulash).
@@ -73,7 +73,7 @@ A 121 | General Marcus Jonathan. Keep it: you are back in Lakeshire in the next 
 T 118 | Walk out of the gate and down the road to Goldshire (two minutes). Smith Argus works in the smithy.
 A 119 | Smith Argus. Keep the Crate of Horseshoes for the next segment.
 N Walk back into Stormwind and take the Deeprun Tram to Ironforge | The tram station is in the Dwarven District.
-TRAIN @ Ironforge, 70.3, 90.7 | Kelv Sternhammer, the warrior trainer in the Hall of Arms (Military Ward, south-east Ironforge): Disarm (18), Mocking Blow and Shield Block (16), and every new rank. You come back here at 20.
+TRAIN @ Ironforge, 70.3, 90.7 | Kelv Sternhammer, the warrior trainer in the Hall of Arms (Military Ward, south-east Ironforge): Disarm (18), Mocking Blow and Shield Block (16), and every new rank. You come back here at 20. Saving for the riding skill at 40, if you level as Protection: buy Shield Block; leave Mocking Blow and Disarm, and the new ranks of Rend, Hamstring and Sunder Armor (Sunder only matters if you tank dungeons). Always buy the new ranks of Revenge, Thunder Clap, Battle Shout, Charge and Heroic Strike. The addon buys for you when you open the trainer and leaves these out until 40 (/fr train off to buy by hand)
 FLY Thelsamar | Gryth Thurden, the gryphon master in the middle of Ironforge
 S Thelsamar | Innkeeper Hearthstove in the Stoutlager Inn. Buy food here.
 
@@ -133,9 +133,9 @@ A 301 | Jern Hornhelm
 FLY Ironforge | Thorgrum Borrelson in Thelsamar. You should be level 20 now.
 T 301 | Prospector Stormpike in the Hall of Explorers
 A 302 @ Ironforge, 74.6, 11.7 | Prospector Stormpike
-TRAIN @ Ironforge, 70.3, 90.7 | Kelv Sternhammer, the warrior trainer in the Hall of Arms (Military Ward, south-east Ironforge): Victory Rush (new in Forever: usable after a kill that gives experience, it heals you, so press it after every kill), Cleave, Slam and Retaliation (all level 20).
+TRAIN @ Ironforge, 70.3, 90.7 | Kelv Sternhammer, the warrior trainer in the Hall of Arms (Military Ward, south-east Ironforge): Victory Rush (new in Forever: usable after a kill that gives experience, it heals you, so press it after every kill), Cleave, Slam and Retaliation (all level 20). Saving for the riding skill at 40, if you level as Protection: buy Victory Rush and Cleave; leave Slam and Retaliation. Always buy the new ranks of Revenge, Thunder Clap, Battle Shout, Charge and Heroic Strike. The addon buys for you when you open the trainer and leaves these out until 40 (/fr train off to buy by hand)
 A 1698 @ Ironforge, 70.3, 90.7 | Kelv Sternhammer: Yorus Barleybrew, the warrior's level 20 quest. Yorus is in Lakeshire, where the next segment goes
-A 2041 | Gnoarn the gnome (ForeverChanges shows him at 62.2, 29.2; Questie has him in Tinker Town at 69.2, 50.6). A letter for Stormwind, handed in in the next segment.
+A 2041 @ Ironforge, 69.3, 50.7 | Gnoarn the gnome, in Tinker Town (69.3, 50.7). A letter for Stormwind, handed in in the next segment.
 
 # ---------- Loch Modan: the shipment ----------
 FLY Thelsamar | Gryth Thurden

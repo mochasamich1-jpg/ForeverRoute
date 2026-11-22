@@ -63,7 +63,7 @@ A 1033 | Pelturas Whitemoon
 T 991 | Take the road west out of Astranaar and leave it to the north-west for Lake Falathim. Teronis' Corpse lies at the lake (20.3, 42.3).
 A 1023 | From Teronis' Corpse
 C 1023 | Saltspittle murlocs (19-21) around the lake: kill them until one drops the Glowing Gem.
-A 1007 | Keep north-west to the coast. Talen camps above the Zoram Strand (14.8, 31.3). The Horde has a camp on the shore south-west of him (Classic knowledge, not checked for Forever): stay away from its guards.
+A 1007 | Keep north-west to the coast. Talen camps above the Zoram Strand (14.8, 31.3). The Horde has a camp on the shore south-west of him, around 12, 34: stay away from its guards.
 C 1007 | The Ancient Statuette lies on the strand north of Talen (14.2, 20.6). Fight your way there through the Wrathtail naga and count their heads.
 T 1007 | Talen
 A 1009 | Talen
@@ -97,11 +97,8 @@ A 1034 | Pelturas Whitemoon
 C 1034 | Leave Astranaar and go south. The Ruins of Stardust are on the island in the lake south of town (33.3, 67.8): pick 5 Handfuls of Stardust from the Stardust Covered Bushes.
 A 1016 | Go east along the south side of the zone, past the mouth of the Talondeep Path, to Silverwind Refuge on the shore of Mystral Lake. Sentinel Velene Starstrike is there (49.8, 67.2).
 C 1016 @ Ashenvale, 49.0, 70.4 | Befouled Water Elementals (23-25) walk in and around Mystral Lake. Kill them for 5 Intact Elemental Bracers, then right-click the Divining Scroll she gave you to make the Divined Scroll.
-T 1016 | Sentinel Velene Starstrike
-A 1017 | Sentinel Velene Starstrike
+T 1016 | Sentinel Velene Starstrike. Do not take her follow-up, Mage Summoner: Sarilus Foulborne is on Dreadmist Peak in the Barrens, deep in Horde land, and this route does not go there
 C 1025 @ Ashenvale, 53.3, 62.0 | The Foulweald furbolgs live in Greenpaw Village, north-east of Silverwind Refuge (49-58, 60-65). Kill 1 Den Watcher, 2 Ursas (both 24-25, in the middle of the village), 10 Totemics and 12 Warriors (23-24). The Totemics heal and set down wards: kill them first, interrupt their heals with Shield Bash if you carry a shield, and destroy the wards. Pull from the edge so you fight two at most.
-C 1017 @ Ashenvale, 49.0, 70.4 | Sarilus Foulborne (25) stands on the island in the middle of Mystral Lake. Clear the elementals near the island, then fight him at full health. He is a caster: interrupt his casts with Shield Bash if you carry a shield. If he has a summoned servant with him, kill Sarilus first. Loot his head. (Questie files him under a Barrens map position; the lake is where the quest sends you.)
-T 1017 | Sentinel Velene Starstrike
 A 98027 | Only if you are level 25, otherwise press Skip here and on its hand-in. A Gleaming Crescent Pendant lies on the ground east of Mystral Lake (63.0, 71.5): clicking it starts a level 29 quest (new in Forever). The woods out there are above your level: run in, take the pendant and leave.
 
 # ---------- Talondeep Path -> Windshear Crag ----------
@@ -119,7 +116,7 @@ T 1092,1093 | Ziz Fizziks. Do not take Further Instructions (it sends you to Rat
 T 1071 | Gaxim Rustfizzle. Do not take An Old Colleague (it sends you to Ironforge and Stormwind).
 
 # ---------- Mirkfallon Lake and Stonetalon Peak ----------
-A 86574 | Follow the road west and then north through the mountains to Mirkfallon Lake. On the way it passes below Sun Rock Retreat, a Horde town (Classic knowledge): stay on the road and do not go up the side path. The body of the Night Elf Courier lies at the lake (48.6, 39.8): Stonetalon Supply Run (new in Forever).
+A 86574 | Follow the road west and then north through the mountains to Mirkfallon Lake. On the way it passes below Sun Rock Retreat, a Horde town: stay on the road and do not go up the side path. The body of the Night Elf Courier lies at the lake (48.6, 39.8): Stonetalon Supply Run (new in Forever).
 C 86574,1134 @ Stonetalon Mountains, 50.6, 43.0 | Pridewing wyverns fly all around Mirkfallon Lake: Wyverns (21-22), Consorts (22-23) and Skyhunters (23-24). Kill them for 12 Pridewing Venom Sacs and 6 Stonetalon Supply Bundles (the new quest's bundles come from the same wyverns). They poison you: a warrior cannot cure it, so bandage and eat between fights. Leave the Pridewing Patriarch (25, rare elite) alone.
 T 86574 | Take the road north from the lake up to Stonetalon Peak. Innkeeper Faralia is in the inn (35.7, 5.8).
 T 1056 | Keeper Albagorm, the big Keeper of the Grove on the hill (37.1, 8.1). Do not take his follow-up.

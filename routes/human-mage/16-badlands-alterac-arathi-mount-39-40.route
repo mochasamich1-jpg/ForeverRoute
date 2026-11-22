@@ -35,7 +35,7 @@ T 707 | Prospector Ironband, at Ironband's Excavation Site in the south-east of 
 A 738 @ Loch Modan, 65.9, 65.6 | Prospector Ironband
 
 # ---------- Badlands ----------
-N Walk south into the Badlands @ Badlands, 53.8, 43.3 | On foot. The pass leaves Loch Modan at its south end (Classic geography, not re-checked) and comes out in the north of the Badlands. Head south to the two dwarves camped in the open south of Hammertoe's Dig Site. On the way, start on Ghak's list: Crag Coyotes (35-36) for fangs and Starving Buzzards (35-37) for gizzards.
+N Walk south into the Badlands @ Badlands, 53.8, 43.3 | On foot. The pass leaves Loch Modan at its south end and comes out in the north of the Badlands. Head south to the two dwarves camped in the open south of Hammertoe's Dig Site. On the way, start on Ghak's list: Crag Coyotes (35-36) for fangs and Starving Buzzards (35-37) for gizzards.
 A 718 | Sigrun Ironhew
 A 719 | Prospector Ryedol, next to him
 C 719 @ Badlands, 53.4, 32.5 | Ryedol's Lucky Pick drops from the Shadowforge dwarves (Tunnelers and Darkweavers, 35-37) at Hammertoe's Dig Site, a short way north. Counterspell the Darkweavers' casts.
@@ -131,7 +131,7 @@ A 669 | Shakes O'Breen. A sample gem for Fleet Master Seahorn in Booty Bay: keep
 L 40 @ Arathi Highlands, 22.0, 87.0 | Not 40 yet? Stay with the Daggerspine naga at the wrecks until you are: the Stormwind training trip comes next, and the level 40 spells and the mount need level 40.
 N Cast Teleport: Stormwind | One Rune of Teleportation. Your Hearthstone is ready again (last used after the Alterac round). Train first; the Hearthstone then takes you to Southshore.
 TRAIN @ Stormwind City, 49.6, 85.8 | Jennea Cannon, the mage trainer in the Wizard's Sanctum: learn your level 40 spells. Larimaine Purdue, the Portal Trainer beside her (50.4, 86.0), teaches the portals from level 40 (group travel, not needed for the route). Buy Runes of Teleportation if you are low.
-N Mount at level 40: walk to the Eastvale Logging Camp @ Elwynn Forest, 84.3, 64.9 | Leave Stormwind by the main gate and follow the road through Goldshire east to the logging camp (about eight minutes on foot, your last long walk). Randal Hunter teaches riding and Katie Hunter beside him has the horses. In Forever both have a new quest (Learning to Ride, Your First Horse) and Katie gives the first horse free once you have trained; the price of the training is not published: bring all your gold (about 100 in Classic). Take both quests, learn Apprentice Riding, choose a horse and put it on your bars. Hearthstone from here
+N Mount at level 40: walk to the Eastvale Logging Camp @ Elwynn Forest, 84.3, 64.9 | Leave Stormwind by the main gate and follow the road through Goldshire east to the logging camp (about eight minutes on foot, your last long walk). Randal Hunter teaches riding and Katie Hunter beside him has the horses. In Forever both have a new quest (Learning to Ride, Your First Horse) and Katie gives the first horse free once you have trained; the training costs 100 gold (90 if you are Honored with Stormwind): bring it. Take both quests, learn Apprentice Riding, choose a horse and put it on your bars. Hearthstone from here
 H Southshore | Hearthstone
 T 661 | Phin Odelic, in the Southshore inn building
 

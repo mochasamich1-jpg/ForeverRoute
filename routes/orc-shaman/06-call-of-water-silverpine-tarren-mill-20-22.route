@@ -81,7 +81,7 @@ A 546 | Deathguard Samsa. Every Hillsbrad human drops skulls; you finish this on
 A 567 | Dangerous! poster near the inn. You get two of the four names now and the rest on the next Tarren Mill trip.
 
 # ---------- Hillsbrad Fields, second trip ----------
-T 502 | Feed the elixir to Stanley, the dog at Farmer Ray's farm at the north end of the fields. In Classic he then turns into a hostile Enraged Stanley (24); players report that Forever removed this, so he will probably stay friendly. If he does attack, kill him.
+T 502 | Feed the elixir to Stanley, the dog at Farmer Ray's farm at the north end of the fields. In Classic he then turns into a hostile Enraged Stanley (24). Whether he still does is not known: be at full health, and if he attacks, kill him.
 C 528,567:2,567:4 | Kill 15 Hillsbrad Peasants in the fields. Citizen Wilkes (25) walks the north edge of the farms around 32.6, 39.8 with a Footman close by: pull them apart. Farmer Kalaba (25) works the field at 35.9, 46.6. Leave Clerk Horrace (town hall) and Miner Hackett for the next trip.
 L 22 @ Hillsbrad Foothills, 34.5, 44.0 | Only if you are not 22 yet (the step ticks by itself otherwise): keep killing Peasants, Farmers and Farmhands (22-25) in the fields, but do not grind all the way. Stop when your XP bar at level 21 reads about 20,400 / 25,200 (18,850 if you have Watching the Roads) and press Skip: Battle of Hillsbrad, Beren's Peril and Stop the Spread (and Watching the Roads), handed in next, cover the rest. Their skulls count toward Souvenirs of Death.
 T 528 | Walk back to Tarren Mill: High Executor Darthalia

@@ -65,7 +65,7 @@ H Dolanaar | Hearthstone back to the inn (not used since you bound it). On coold
 
 # --- Dolanaar and Lake Al'Ameth ---
 T 99047 @ Teldrassil, 55.3, 56.8 | Byancie, the first aid trainer in the building on the north-west side of the village
-A 99050 @ Teldrassil, 55.3, 56.8 | Byancie. Buy the two shop items now: an Empty Vial from Narret Shadowgrove (trade supplies, same building, 55.3, 57.2) and a Refreshing Spring Water from Innkeeper Keldamyr. Vendors not checked in Forever: any trade and drink vendor will do
+A 99050 @ Teldrassil, 55.3, 56.8 | Byancie. Buy the two shop items now: an Empty Vial from Narret Shadowgrove (trade supplies, same building, 55.3, 57.2) and a Refreshing Spring Water from Innkeeper Keldamyr. Any other trade supplies or drink vendor will do too
 T 7383 | Corithras Moonrage, at the moonwell
 A 935 | Corithras. The filled vessel goes to the Arch Druid in Darnassus
 TRAIN | Dolanaar: your class trainer for your level 10 skills. Druids: Kal (56.0, 61.6), hunters: Dazalar (56.7, 59.5), warriors: Kyra Windblade (56.2, 59.2), rogues: Jannok Breezesong (56.4, 60.1), priests: Laurna Morninglight (55.6, 56.8). Sell and repair
@@ -114,13 +114,13 @@ T 2520 | Priestess A'moora
 TRAIN | Darnassus: your class trainer for your level 12 skills; it is the last trainer before Ironforge. Priests: in the Temple of the Moon (Jandria 37.9, 82.7; Astarii Starseeker 38.3, 81.0). Warriors: Warrior's Terrace (Arias'ta Bladesinger 58.7, 34.9; Sildanair 61.8, 42.2). Druids: Cenarion Enclave (Mathrengyl Bearwalker 35.4, 8.4; Denatharion 34.8, 7.4). Hunters: Cenarion Enclave (Jocaste 40.4, 8.6; Dorion 42.2, 7.3). Rogues: Cenarion Enclave (Syurna 37.0, 21.9; Anishar 37.9, 20.9). Sell, repair, buy food and water
 
 # --- Rut'theran Village ---
-N Walk through the pink portal to Rut'theran Village @ Darnassus, 30.0, 41.5 | The portal stands on the west side of the city, west of the bank. Classic knowledge, not checked in Forever
+N Walk through the pink portal to Rut'theran Village @ Darnassus, 28.5, 39.9 | The portal stands on the west side of the city, west of the bank
 T 6344 | Nessa Shadowsong, at the fish stall in Rut'theran Village
 A 6341 @ Teldrassil, 56.3, 92.4 | Nessa
 T 6341 @ Teldrassil, 58.4, 94.0 | Vesprystus, the hippogryph master by the dock
 A 6342 @ Teldrassil, 58.4, 94.0 | Vesprystus
 F Rut'theran Village @ Teldrassil, 58.4, 94.0 | Vesprystus: talk to him. A Night Elf may know this flight path from the start: then just tick the step
-FLY Auberdine | From Vesprystus. Night Elves should know Auberdine from the start (Classic knowledge, not checked in Forever). If he offers no flight, take the boat from the dock next to him: it goes to Auberdine
+FLY Auberdine | From Vesprystus. A Night Elf can fly to Auberdine without having been there. If he offers no flight, take the boat from the dock next to him: it goes to Auberdine
 
 # --- Auberdine ---
 F Auberdine @ Darkshore, 36.3, 45.6 | Caylais Moonfeather, where you land (if you came by boat: at the foot of the dock)

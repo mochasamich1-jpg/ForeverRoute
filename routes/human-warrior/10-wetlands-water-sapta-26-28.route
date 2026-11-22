@@ -51,10 +51,10 @@ A 296 | Ormer Ironbraid
 C 296 @ Wetlands, 33.3, 51.5 | Sarltooth (29) is at the south-west side of the dig (33.3,51.5). Clear the raptors near him first and fight him at full health. He hits hard for your level: keep Demoralizing Shout and Thunder Clap on him, and use a healing potion or bandage early rather than late
 T 296 | Ormer Ironbraid
 T 299 | Prospector Whelgar
-C 98221:1 @ Wetlands, 38.6, 46.1 | Go north-east. The first set of Attack Plans lies at the small Dragonmaw post west of the Angerfang Encampment (38.6,46.1). Click it to destroy it. Which of the four plans lies where is not in the data: if this spot is empty, go on and tick it later
+C 98221:1 @ Wetlands, 38.6, 46.1 | Go north-east. A set of Attack Plans lies at the small Dragonmaw post west of the Angerfang Encampment (38.6,46.1). Click it to destroy it. It is not known which of the four plans this one is: watch which objective ticks. If the spot is empty, go on and come back later
 C 464,98221 @ Wetlands, 45.5, 44.5 | Angerfang Encampment (39-52,40-49). Any Dragonmaw drops War Banners (8 needed): Raiders (26-27) and Bonewarders (27, casters: kill them first, interrupt their casts with Shield Bash if you carry a shield). The other Attack Plans are at about 45.5,42.6, 45.3,45.5 and 49.4,46.6. Fight at the edges, one tent at a time; the Dragonmaw Battlemaster (rare, 30) walks the middle: avoid him. Leave the catapults for the next loop
 T 98230 @ Wetlands, 49.4, 42.1 | Howin Kindfeather, just north of the encampment beside the road (49.4,42.1)
-A 98246 @ Wetlands, 49.4, 42.1 | Howin Kindfeather (new in Forever). The eggs come from Raptor Ridge in the next loop. If he does not offer it yet, he will after Razormaw Needling in loop B
+A 98246 @ Wetlands, 49.4, 42.1 | Howin Kindfeather (new in Forever). The eggs come from Raptor Ridge in the next loop. If he does not offer it yet, ask him again when you are back here in loop B
 C 275 @ Wetlands, 54.5, 41.0 | Finish the 8 Fen Creepers in the water around Rethiel's island (53-55,36-46); they are stealthed until you are close
 T 275 | Rethiel the Greenwarden (56.4,40.4)
 C 98072 @ Wetlands, 61.0, 40.0 | Crimson Whelps (25-26) fly over the Green Belt east of Rethiel (57-70,31-51). Collect 10 Pristine Crimson Scales. Their fire bolt is a cast: interrupt it with Shield Bash if you carry a shield. Stay north of the orcs in the hills
@@ -69,7 +69,7 @@ T 98072 @ Wetlands, 8.5, 55.8 | James Halloran
 A 98240 @ Wetlands, 8.5, 55.8 | James Halloran (new in Forever): a crate for Howin Kindfeather
 T 292 | Glorin Steelbrow, at the Deepwater Tavern (10.6,60.6)
 A 293 | Glorin Steelbrow. The eye goes to the Cathedral in Stormwind in the next segment
-C 98208 @ Wetlands, 12.1, 64.2 | The wreck just south of town, across the water from the docks (about 12,64). Bluegill Raiders (28-29) live in and around it; kill them and search the wreck for Nord'el. Whether the flower drops or is picked up is not in the data: loot every murloc and click anything that sparkles. Pull one murloc at a time. They run at low health: finish them fast or slow them if you can, they bring friends
+C 98208 @ Wetlands, 12.1, 64.2 | The wreck just south of town, across the water from the docks (about 12,64). Bluegill Raiders (28-29) live in and around it; kill them and search the wreck for Nord'el. Nord'el is picked up, not dropped: click anything that sparkles in and around the wreck. Its exact spot is not known. Pull one murloc at a time. They run at low health: finish them fast or slow them if you can, they bring friends
 T 98208 @ Wetlands, 8.0, 55.9 | Sylessa Duskwhisper.
 A 98209 @ Wetlands, 8.0, 55.9 | Sylessa Duskwhisper: Bloom of the Heavens. Nord'el goes to Auberdine: you carry it until the next boat there
 

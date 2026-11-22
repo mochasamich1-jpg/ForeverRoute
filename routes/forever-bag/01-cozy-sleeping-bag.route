@@ -1,0 +1,51 @@
+@segment Forever Bag: the Cozy Sleeping Bag
+@start-level 14
+# Forever Bag: the Cozy Sleeping Bag chain for an Alliance character of any class (written 2026-11-20 for the
+# user's Skyborne druid, level 21, bound in Thelsamar, with 79008 already in the log).
+# Not a leveling route: one segment, chosen by hand with /fr route forever-bag (never the automatic pick).
+# Chain, all from level 14, about 12,700 XP: 79008 ... and that note you found (Westfall -> the Barrens),
+# 79192 Stepping Stones (-> Stonetalon), 79980 Scramble, 79974 Wet Job (-> Loch Modan), 79975 Eagle's Fist
+# (-> Thoradin's Wall), 79976 This Must Be The Place (Cozy Sleeping Bag).
+# Sources: object positions from the Forever Questie data (baked_objects: 415107, 415106, 417072, 424005, 424012,
+# 424007, 406918, 424006) and the ForeverChanges quest pages; the Westfall start from the user's log; the hill
+# path, the dam ledge and the cart climb from the warcrafttavern.com and method.gg Forever guides (read 2026-11-20).
+# Not played yet: the travel advice is a plan, the object spots are data.
+# Travel plan: Menethil -> Theramore boat and the Dustwallow road (shortest way to the south Barrens), on foot
+# north through the Barrens to Stonetalon, Hearthstone home, Loch Modan dam, then the Menethil boat, which
+# stops in Southshore, and a short run east to the wall.
+
+# ---------- Westfall: the first note ----------
+A 79008 @ Westfall, 37.5, 50.6 | Burned-Out Remains, in a broken cart at the Alexston Farmstead, west of Sentinel Hill. Click the remains and take ... and that note you found. Already in your log? This ticks by itself
+
+# ---------- To the south Barrens ----------
+N Get to Menethil Harbor @ Wetlands, 9.5, 59.7 | You need the boat from Menethil Harbor to Theramore. Druid: cast Teleport: Moonglade, fly with Silva Fil'naveth to Rut'theran Village, fly on to Auberdine and take the boat from Auberdine to Menethil Harbor. Anyone else: fly to Menethil if you have it, or walk from Loch Modan through the Dun Algaz tunnels and west along the Wetlands road (level 20-25, stay on the road)
+F Menethil Harbor @ Wetlands, 9.5, 59.7 | Shellei Brondir, the gryphon master. Take the flight path: you fly back here later
+N Take the boat from Menethil Harbor to Theramore | It leaves from the other pier, not the Auberdine one: read the sign or ask on the dock before you board. Buy food and water first
+F Theramore @ Dustwallow Marsh, 67.5, 51.3 | Baldruc, the gryphon master in Theramore
+N Run west across Dustwallow Marsh into the Barrens @ The Barrens, 49.0, 71.5 | Leave Theramore by the bridge and follow the road west, all the way across the marsh. Everything here is level 35-40 and sees you from far away: stay in the middle of the road, do not stop, and keep running if something chases you (Cat Form with Prowl gets a druid past the bad spots). Do not take the side road north to Brackenwall Village, a Horde town. The road ends at the Gold Road in the southern Barrens. If you die, run back as a ghost and carry on
+T 79008 @ The Barrens, 46.4, 73.9 | Burned-Out Remains, at the ruined tower just west of the Gold Road, south of Camp Taurajo. Camp Taurajo is a Horde town with guards: stay south of it. The beasts around the tower are about level 20-25
+A 79192 @ The Barrens, 46.4, 73.8 | The Nailed Plank, right beside the remains: Stepping Stones
+
+# ---------- North to the Stonetalon Mountains ----------
+N Run north through the Barrens to Stonetalon @ The Barrens, 35.5, 27.5 | A long run through Horde land. Go north along the Gold Road but leave it before Camp Taurajo and pass the town well to the west. Keep north across the plains, pass the Crossroads well to the west too, and pick up the road that runs west from the Crossroads into the mountains. It enters Stonetalon at the pass here. Barrens beasts on the way are level 15-25
+N Follow the Stonetalon road north to the hill path @ Stonetalon Mountains, 50.9, 52.3 | The road climbs north through Greatwood Vale. Sun Rock Retreat, a Horde town with level 38 guards, sits up a side path on the west: do not go up to it. The hill path you want starts north-east of the town, here. Follow it west up into the hills
+T 79192 @ Stonetalon Mountains, 40.8, 52.6 | The path ends at an abandoned camp on the mountain. Pocket Litter lies in the camp: click it. Pick the Mining Pick or the Farmer's Shovel as you like
+A 79980 @ Stonetalon Mountains, 40.8, 52.6 | Pocket Litter: Scramble
+N Optional: Rekindle @ Stonetalon Mountains, 40.8, 52.6 | A side quest, not part of the chain: use the Flint and Tinder and the Simple Wood you just got, then click the dead campfire in the camp. Its reward is not known. Skip it if you like
+T 79980 @ Stonetalon Mountains, 39.6, 49.9 | "A hundred paces due north": walk north from the camp up the hill and look over the edge. The Mound of Dirt is on the hillside below: jump down to it and click it. Rewards include a choice of Silver Star, Moonsight Rifle or Precision Bow
+A 79974 @ Stonetalon Mountains, 39.6, 49.9 | Mound of Dirt: Wet Job
+
+# ---------- Loch Modan: the dam ----------
+N Hearthstone home, then get to Loch Modan @ Loch Modan, 33.9, 50.9 | Bound in Thelsamar: use the Hearthstone and you are there. Bound elsewhere: get to Ironforge and fly or walk to Thelsamar
+T 79974 @ Loch Modan, 49.4, 12.9 | Follow the road north out of Thelsamar and along the west shore to the Stonewrought Dam. Walk out along the top of the dam to about the middle and look down the north face: the Carved Figurine stands on a ledge below. Jump down onto the ledge and click it
+A 79975 @ Loch Modan, 49.4, 12.9 | Carved Figurine: Eagle's Fist
+
+# ---------- Thoradin's Wall ----------
+FLY Menethil Harbor @ Loch Modan, 33.9, 50.9 | Back to Thelsamar: Thorgrum Borrelson. No Menethil flight? Walk north through the Dun Algaz tunnels and west along the Wetlands road
+N Take the boat from Menethil Harbor to Southshore | The Auberdine pier this time: that boat sails Menethil Harbor, then Southshore, then Auberdine. Get off at Southshore in Hillsbrad
+F Southshore @ Hillsbrad Foothills, 49.3, 52.3 | Darla Harris, the gryphon master
+N Run east to Thoradin's Wall and climb it @ Hillsbrad Foothills, 87.4, 49.6 | Follow the road east out of Southshore to the wall that closes off the Arathi Highlands. Do not go through the gate: turn left and follow the Hillsbrad side of the wall north to a broken cart leaning against a gap in the wall. Jump onto the cart's large cylinder, then onto the second beam on the right, then up onto the top of the wall. On top, hop across the rocks (small rocks on the left, the large middle rocks, then the rocks on the right) to a small platform with a camp. Mobs near the wall are about level 30: go around them
+T 79975 @ Arathi Highlands, 22.5, 24.2 | The Messenger Bag, on the platform on top of the wall
+A 79976 @ Arathi Highlands, 22.5, 24.2 | Messenger Bag: This Must Be The Place
+T 79976 @ Arathi Highlands, 22.5, 24.2 | The Hastily Rolled-Up Satchel, lying under the Messenger Bag: you get the Cozy Sleeping Bag and Student Fodder
+N Done: use the Cozy Sleeping Bag | Put the bag on your bars. Lie in it outside a town: each minute gives one stack of Well-Rested, +1% experience, up to 3 stacks. It has a one hour cooldown and party members can use your bag too. Now go back to your leveling route: type /fr route skyborne-druid (or your own route's name). Your place in it is kept

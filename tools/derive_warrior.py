@@ -46,11 +46,29 @@ TRAIN = {
          'TRAIN %s | %s: the level 32 ranks if you are 32. This is your last trainer stop until 36: the next two segments are in Kalimdor' % (KELV, KELV_WHO)],
     15: ['TRAIN %s | %s: Whirlwind (36) and every new rank since 32.' % (KELV, KELV_WHO)],
     16: ['TRAIN %s | %s: Pummel (38), your interrupt when you carry no shield. Count your gold: at level 40, at the end of this segment, you pay for Apprentice Riding.' % (KELV, KELV_WHO),
-         'TRAIN %s | %s: the level 40 ranks. Warriors can wear plate from 40: in Classic the trainer sells the Plate Mail skill, so look for it in his list. Sell, repair and empty your bags at the bank: the next city stop is a long way off.' % (WU, WU_WHO)],
+         'TRAIN %s | %s: the level 40 ranks, and once the riding skill is paid for, whatever you left out on the way up. Warriors can wear plate from 40: in Classic the trainer sells the Plate Mail skill, so look for it in his list. Sell, repair and empty your bags at the bank: the next city stop is a long way off.' % (WU, WU_WHO)],
     19: ['TRAIN %s | %s: every new rank from level 42 to 46 (the route made no training stop in Kalimdor).' % (KELV, KELV_WHO)],
     25: ['TRAIN %s | %s: everything from level 48 to 56, with Recklessness (50) (the route made no training stop in Kalimdor)' % (KELV, KELV_WHO),
          'TRAIN %s | %s: the level 58 ranks.' % (KELV, KELV_WHO),
          'TRAIN %s | %s: the level 60 ranks. Route complete' % (KELV, KELV_WHO)],
+}
+
+# What to leave at the trainer while saving for the riding skill at 40, per TRAIN step (file, index in TRAIN[file]).
+# Written for a Protection leveling build (sword and shield, Defensive Stance): buy what that build presses, rank 1
+# only of what is used for its effect. Basis: the tip in Subtle's Protection leveling guide (mobalytics.gg, read
+# 2026-11-13) and Classic's rank structure; Forever's trainer prices were not checked.
+ALWAYS = ('Always buy the new ranks of Revenge, Thunder Clap, Battle Shout, Charge and Heroic Strike. The addon buys '
+          'for you when you open the trainer and leaves these out until 40 (/fr train off to buy by hand)')
+SAVE = {
+    (5, 0): 'Revenge, Demoralizing Shout, Shield Bash and Overpower are worth rank 1; leave the new ranks of Rend and Hamstring',
+    (6, 0): 'buy Shield Block; leave Mocking Blow and Disarm, and the new ranks of Rend, Hamstring and Sunder Armor (Sunder only matters if you tank dungeons)',
+    (6, 1): 'buy Victory Rush and Cleave; leave Slam and Retaliation',
+    (8, 0): 'Protection can leave both Execute and Intimidating Shout, so skip this trip',
+    (11, 0): 'leave Execute and Intimidating Shout',
+    (12, 0): 'leave Intercept and Berserker Rage, and Berserker Stance too if the trainer charges for it (Protection stays in Defensive Stance)',
+    (12, 1): 'nothing else is needed at 32',
+    (15, 0): 'leave Whirlwind (it is for Berserker Stance) and keep leaving the new ranks of Rend, Hamstring, Shield Bash and Cleave',
+    (16, 0): 'leave Pummel: Shield Bash is your interrupt',
 }
 
 # Per-file edits, applied in order after the TRAIN steps are replaced.
@@ -147,7 +165,7 @@ EDITS = {
             'T 1718 @ The Barrens, 68.6, 49.2 | Fray Island is the small island with the fighting ring, south-east of Ratchet: swim out from the shore south of the dock. Klannoc Macleod stands beside the ring',
             'A 1719 | Klannoc Macleod: The Affray',
             'C 1719 @ The Barrens, 68.6, 48.7 | Step on the grate in the middle of the ring. Affray Challengers (26-27) come at you one after the other, then Big Will (33). At 35 this is safe: use Victory Rush after each kill, and bandage if there is a pause before Big Will',
-            'T 1719 | Klannoc Macleod. In Classic this hand-in teaches Berserker Stance; in Forever the trainer is reported to teach it at 30',
+            'T 1719 | Klannoc Macleod. Check your stance bar after the hand-in: if Berserker Stance is not there, look for it in your warrior trainer\'s list (level 30). It is not known which of the two teaches it in Forever',
             'N Klannoc offers The Windwatcher next: optional, not in this route | It sends you to Bath\'rah the Windwatcher in the Alterac Mountains (80.5, 66.9) for the Whirlwind weapon: he wants 8 Liferoot, 30 Bloodscalp Tusks and an Essence of the Exile, and then you must kill Cyclonian, a level 40 elite. Worth doing with a healer or a group at about 38-40; alone it is too hard',
         ]),
     ],
@@ -313,7 +331,10 @@ def main():
         idx = [k for k, l in enumerate(lines) if l.startswith('TRAIN')]
         if n != 4:
             assert len(idx) == len(new), (base, len(idx), len(new))
-            for k, t in zip(idx, new):
+            for j, (k, t) in enumerate(zip(idx, new)):
+                if (n, j) in SAVE:
+                    t = '%s. Saving for the riding skill at 40, if you level as Protection: %s. %s' % (
+                        t.rstrip('.'), SAVE[(n, j)], ALWAYS)
                 lines[k] = t
 
         # per-file edits

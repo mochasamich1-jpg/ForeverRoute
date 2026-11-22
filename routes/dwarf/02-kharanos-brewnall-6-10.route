@@ -113,10 +113,10 @@ T 95041 @ Ironforge, 67.7, 44.2 | Jemma Quikswitch, in Tinker Town
 # --- Misty Pine Refuge ---
 T 99158 @ Dun Morogh, 57.7, 44.8 | Leave Ironforge by the gate, go down the ramp and turn east off the road: Father Gavin's cabin, Misty Pine Refuge, stands on the mountainside south-east of the Gates of Ironforge
 A 99159 @ Dun Morogh, 57.7, 44.8 | Father Gavin
-C 99159 @ Dun Morogh, 57.0, 45.5 | Collect 14 Mostly Dry Firewood: pick it up from the ground around the refuge and under the pines nearby (exact spots are not in our data, so look around the cabin first)
+C 99159 @ Dun Morogh, 57.4, 46.4 | Collect 14 Mostly Dry Firewood from the Fallen Logs lying on the snow. A few are close to the refuge (57.4,46.4 and 55.4,45.8 to 54.0,46.8). Most are on the slope south of it (56-58.6,51-58.6) and to the south-west (50-52.5,50-52)
 T 99159 @ Dun Morogh, 57.7, 44.8
 A 99160,99162 @ Dun Morogh, 57.7, 44.8 | Father Gavin gives both
-C 99160,99162 @ Dun Morogh, 55.1, 45.3 | Minor Ice Elementals drift over the snow slide around the refuge and west toward the Ironforge road (49-58, 42-50): kill 10. While you hunt, look for the bodies of three fallen mountaineers in the same snow field and take Stoneanvil's, Sunhammer's and Coalbeard's Rifle (their spots are not in our data)
+C 99160,99162 @ Dun Morogh, 55.1, 45.3 | Minor Ice Elementals (7-8) drift over the snow slide around the refuge and west toward the Ironforge road (49-58, 42-50): kill 10. The three rifles lie on the ground: Coalbeard's Rifle west of the refuge (52.1,44.0), Sunhammer's Rifle south-east of it (59.9,50.1) and Stoneanvil's Rifle further south (53.2,58.8)
 T 99160,99162 @ Dun Morogh, 57.7, 44.8 | Father Gavin
 A 99161 @ Dun Morogh, 57.7, 44.8
 C 99161 @ Dun Morogh, 57.6, 42.6 | Avala is the large ice elemental just north of the refuge, up the slope. It is tougher than the small ones: fight it alone at full health and mana, and walk away down the slope if it goes badly. Loot Avala's Core

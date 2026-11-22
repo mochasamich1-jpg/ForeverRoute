@@ -30,12 +30,12 @@
 # Menethil Harbor, Thelsamar, Ironforge.
 
 # --- Auberdine -> Menethil Harbor ---
-N Take the boat from Auberdine to Menethil Harbor @ Darkshore, 32.4, 43.8 | Check on the dock which boat it is before you board: one pier goes to Menethil Harbor, another to Rut'theran Village, and Forever may have a third boat to Stormwind. You want Menethil Harbor. Classic knowledge, not checked in Forever; the arrow points at the dock, not at the right pier. Sell, repair and fill your bags with food before you board: there is no fighting for XP until Loch Modan
+N Take the boat from Auberdine to Menethil Harbor @ Darkshore, 32.4, 43.8 | Three boats leave Auberdine in Forever. The Menethil Harbor boat uses the pier the arrow points at (32.4, 43.7). The Rut'theran Village boat uses the northern pier (33.2, 40.2) and the Stormwind boat a third pier (about 30.8, 41.0). You want Menethil Harbor: check on the dock which boat it is before you board. Sell, repair and fill your bags with food before you board: there is no fighting for XP until Loch Modan
 F Menethil Harbor @ Wetlands, 9.5, 59.7 | Shellei Brondir, the gryphon master, stands by the docks. Take no quests in Menethil: the route comes back for them at level 22
 
 # --- The Wetlands road ---
 N Read this before you leave Menethil | Everything in the Wetlands is level 20-25 and sees you from far away. You do not fight here: you run. Stay in the middle of the road, do not stop, do not turn to fight, and keep running when something chases you: most things give up. You will probably die once. That is fine: run back to your body as a ghost, look for a moment when nothing stands close, rise and run on (you rise with half health; eat first if you can)
-N Run the road east out of Menethil Harbor to the crossroads @ Wetlands, 50.0, 40.5 | Over the bridge and east, about six minutes. Crocolisks and murlocs sit by the water near the town, raptors (22-25) on both sides of the road half-way, gnolls (20-23) near the crossroads. At the crossroads (a hunter's camp stands by the road there) turn right, to the south. Not checked in Forever
+N Run the road east out of Menethil Harbor to the crossroads @ Wetlands, 50.0, 40.5 | Over the bridge and east, about six minutes. Crocolisks and murlocs sit by the water near the town, raptors (22-27) on both sides of the road half-way, gnolls (22-24) near the crossroads. At the crossroads (a hunter's camp stands by the road there) turn right, to the south
 N Run the road south to the Dun Algaz tunnels @ Wetlands, 53.5, 70.0 | The road runs south between an orc camp on the west and the gnoll marsh on the east, then climbs into the hills. Stay on it
 N Run through Dun Algaz into Loch Modan @ Loch Modan, 25.4, 10.4 | The worst part: the road winds through several short tunnels, and Dragonmaw Scouts and Grunts (19-21) stand right beside it. Run past them without stopping; if they kill you, come back as a ghost and rise a little further along the road, behind them. The orcs end at the last tunnel: Mountaineer Rockgar, a dwarven guard, stands on the Loch Modan side
 
@@ -82,7 +82,7 @@ T 417 | Pilot Hammerfoot, back at North Gate Outpost
 A 432 | Back to the fork and west along the road to the Gol'Bolar Quarry camp: Foreman Stonebrow
 A 433 | Senator Mehr Stonehallow, next to him
 A 95214 @ Dun Morogh, 69.1, 54.9 | Quarrymaster Thesten, on the north side of the camp. If he offers nothing, kill troggs until one drops an Empty Powder Keg, right-click it and bring it to him first (a small extra quest)
-A 96392 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen's campsite is on the hillside just west of the quarry, overlooking it. Dwarves are sent to him from Kharanos; whether he gives his quests without that errand is not known. If he offers nothing, press Skip on this step and on his other five steps below
+A 96392 @ Dun Morogh, 64.9, 58.4 | Earthseer Farsen's campsite is on the hillside just west of the quarry, overlooking it. He gives his quests to any Alliance character from level 9: the errand that sends dwarves to him from Kharanos is not needed
 C 96392 @ Dun Morogh, 64.8, 58.4 | Talk to Farsen again and ask for his far sight; watch the vision until the objective ticks
 T 96392 @ Dun Morogh, 64.9, 58.4
 A 96390 @ Dun Morogh, 64.9, 58.4 | Farsen: 10 Dark Iron Spies at Ironband's Compound, east of the quarry

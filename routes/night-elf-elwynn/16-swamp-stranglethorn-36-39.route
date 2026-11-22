@@ -1,0 +1,170 @@
+@segment 36-39 Swamp of Sorrows & Stranglethorn
+@start-level 36
+# Night Elf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 14: same quests, order, binds and flights. It had no class quests.
+# Changed: the Ironforge training stop is generic (no trainer name, no arrow); fight and travel hints are class-neutral;
+# the second-hearthstone step at the end of loop 2 is now the Hearthstone itself (last used at the end of loop 1, well over
+# an hour earlier), with the walk down the road as the fallback.
+# Carried in (segment 14's carry-out): 1467 and 1457 (Roetten Stonehammer, Ironforge), 563 (Major Samuelson, Stormwind),
+# 5762 (Hemet Nesingwary, Stranglethorn). 525 (Southshore), 1106 (Badlands), 1111 and 1178 (Ratchet) ride along.
+@carry 525,563,1106,1111,1178,1457,1467,5762,98463
+# Prerequisites of carried quests, handed in by earlier segments: 514 -> 525, 1176 -> 1178.
+@done 514,1176
+# Hearth: Theramore at the start (useless here), Booty Bay from the first Booty Bay stop on. Trainer: Ironforge at 36 (first stop).
+# Carry-out (7): 209 Skullsplitter Tusks (Booty Bay, a later Stranglethorn trip), 212 A Meal Served Cold (Stormwind, later),
+# 707 Ironband Wants You! (Loch Modan, next segment), plus 525, 1106, 1111, 1178.
+# Changed against the plan (see the notes at the steps): 627 Favor for Krazek and 622 Return to Corporal Kaleb are left out
+# (the ore is in Arathi, not in Stranglethorn); the segment ends with a flight from Booty Bay instead of Darkshire.
+# Skipped on purpose: the elite 193, 197, 202, 206, 208, 628; 602 (goes to Dalaran); 604 and the Green Hills pages.
+
+# ---------- Ironforge and Stormwind ----------
+FLY Ironforge @ Wetlands, 9.5, 59.7 | You arrive on the Menethil Harbor dock. Shellei Brondir, the gryphon master, is just inside the town.
+T 1467 | Roetten Stonehammer, at Reclaimers Inc. in the Hall of Explorers
+T 1457 | Roetten Stonehammer
+A 707 @ Ironforge, 74.6, 11.7 | Prospector Stormpike, in the library at the back of the Hall of Explorers. Keep it: Prospector Ironband in Loch Modan is the first stop of the next segment.
+TRAIN | Ironforge: visit your class trainer and learn your level 36 skills. Warriors and hunters train in the Military Ward (south-east), rogues and warlocks in the Forlorn Cavern (north), mages and priests in the Mystic Ward (north-west)
+N Take the Deeprun Tram from Tinker Town to Stormwind | The tram station is at the back of Tinker Town. You come out in Stormwind's Dwarven District.
+T 563 | Major Samuelson, in Stormwind Keep
+A 212 | Angus Stern, the cook in the Blue Recluse tavern in the Mage Quarter. The haunch comes from a Cold Eye Basilisk in Stranglethorn, later in this segment; the hand-in waits for a later Stormwind visit.
+FLY Darkshire @ Stormwind City, 71.0, 72.5 | Dungar Longdrink, the gryphon master in the Trade District
+
+# ---------- Swamp of Sorrows ----------
+N Walk east through Deadwind Pass into the Swamp of Sorrows @ Swamp of Sorrows, 26.7, 59.8 | Leave Darkshire on the road east. It winds through Deadwind Pass (stay on the road, the mobs beside it are far above you) and comes out in the swamp. Watcher Biggs camps just south of the road, right after the zone border. Stonard, further east, is a Horde town: stay away from it.
+A 1396 | Watcher Biggs
+A 93176 @ Swamp of Sorrows, 25.0, 54.2 | Amaryllis Webb, a short way north-west of Biggs. New Forever quest: she gives you an Entomology Starter Kit. Read the notes in the kit, they say how to catch the three bugs (Arbor Tarantula, Hay Weevil, Flesh Picker). Where the bugs are is not in my data.
+A 93585 @ Swamp of Sorrows, 22.0, 50.6 | Father Tuttle, at the bridge on the road west of Biggs. New Forever escort quest.
+C 93585 @ Swamp of Sorrows, 26.0, 31.4 | Escort Father Tuttle north to the Harborage, the draenei village on the island in the north-west of the swamp. Lost Ones (34-37) attack on the way: stay beside him and keep the attackers on you (you may not be able to heal him); kill the casters first and interrupt or stun their casts if your class can. If he dies, abandon the quest and take it again at the bridge.
+T 93585 @ Swamp of Sorrows, 26.0, 31.4 | At the Harborage. The data does not say who takes the hand-in: it may complete by itself on arrival, otherwise look for the NPC with the yellow question mark (most likely Magtoor or Father Tuttle himself).
+A 1389 | Magtoor, the draenei leader at the Harborage
+C 1396 @ Swamp of Sorrows, 32.0, 44.0 | The animals between the Harborage and Biggs' camp: 8 Young Sawtooth Crocolisks (35-36, in and beside the water), 10 Sorrow Spinners (spiders, 36-37) and 10 Swamp Jaguars (36-37). Use the kit from Amaryllis on any quest bug you see on the way. The spiders poison: cure it if your class can, otherwise bandage and eat.
+T 1396 | Watcher Biggs
+A 1421 | Watcher Biggs
+A 1392 @ Swamp of Sorrows, 55.7, 34.4 | Noboru the Cudgel (39), a Lost One who walks the swamp north of the road, about half way to the east end, with two followers. Start at full health, kill the followers first, then him (walk away early if it goes badly), and right-click the Noboru's Cudgel he drops to start the quest. Not there? Do the Fallow Sanctuary first and look again on the way back.
+C 1389,1421 @ Swamp of Sorrows, 62.0, 22.0 | The Fallow Sanctuary, the Lost One village in the north-east. The Draenethyst Crystals are blue crystals standing among the huts and campfires: collect 6. The Caravan Chest with the Wizards' Reagents is at the back of the village (64.5, 18.3). Lost Ones here are 36-38 and stand close together: pull from range, one at a time, and avoid the Lost One Chieftain (39, rare).
+A 1393 | Galen Goodward, in the cage right beside the Caravan Chest. Clear the Lost Ones around the cage before you talk to him.
+C 1393 @ Swamp of Sorrows, 65.5, 18.2 | Escort Galen out of the village. Walk ahead of him and kill what he meets. When he says goodbye the escort part is done.
+T 1393 | Galen's Strongbox, in his little camp in the middle of the swamp north of Stonard (stay north of the Horde town)
+T 1389 | Magtoor at the Harborage
+T 1392 | Magtoor (only if Noboru dropped the cudgel)
+T 1421 | Watcher Biggs. Do not take the follow-up, Driftwood: the route does it on a later visit.
+T 93176 @ Swamp of Sorrows, 25.0, 54.2 | Amaryllis Webb, if you caught all three bugs. If the kit's notes send you to places outside the swamp, press Skip here and abandon the quest when you leave.
+
+# ---------- Stranglethorn: Rebel Camp and Nesingwary's Expedition ----------
+N Walk back to Duskwood and south into Stranglethorn Vale @ Stranglethorn Vale, 38.0, 3.3 | Back west through Deadwind Pass to Darkshire, then the road south-west out of Duskwood into the jungle. The Rebel Camp is on the left of the road right after the border.
+A 203 | Sergeant Yohwa at the Rebel Camp
+A 204 | Sergeant Yohwa
+A 210 | Corporal Kaleb. A broken pot for Krazek in Booty Bay.
+A 215 @ Stranglethorn Vale, 38.0, 3.4 | Private Thorsen. He walks out of the camp on a patrol and gets ambushed by two Kurzen soldiers on the path: follow him, kill the two attackers, then he offers the quest. If he is not in camp, wait a few minutes for him to come back.
+T 215 | Lieutenant Doren at the Rebel Camp
+A 200 | Lieutenant Doren
+T 5762 | Hemet Nesingwary at Nesingwary's Expedition, the hunters' camp a short walk south-west of the Rebel Camp
+A 583 | Barnil Stonepot, at the same camp
+T 583 | Hemet Nesingwary
+A 194 | Hemet Nesingwary
+A 185 | Ajeck Rouack
+A 190 | Sir S. J. Erlgadin
+C 185,190 @ Stranglethorn Vale, 38.0, 12.0 | 10 Young Stranglethorn Tigers and 10 Young Panthers (30-31), all around the camp and east of it towards the river
+C 203,204 @ Stranglethorn Vale, 44.9, 10.3 | Kurzen's Compound, the walled camp east across the river. Kill 15 Kurzen Jungle Fighters; they and the Medicine Men drop the 7 Jungle Remedies. The Venom Fern Extract is in a Kurzen Supplies crate inside the compound (44.1, 9.5). The Medicine Men heal: kill them first, and interrupt or stun the heal if your class can.
+T 200 | Bookie Herod's Records, a book on the upper floor of the big building in the compound
+A 328 | Bookie Herod's Records. You get a Small Brass Key.
+T 203 | Sergeant Yohwa, back at the Rebel Camp
+T 204 | Sergeant Yohwa
+A 574 | Sergeant Yohwa
+A 207 | Brother Nimetz
+C 574 @ Stranglethorn Vale, 46.4, 7.7 | The cave at the back (north-east) of Kurzen's Compound: 10 Kurzen Commandos (33-35, they stealth) and 6 Kurzen Headshrinkers (34-35, casters: kill them first, interrupt or stun their casts if your class can). Do not go down to Colonel Kurzen himself.
+T 328 | Bookie Herod's Strongbox, deep in the same cave
+A 329 | Bookie Herod's Strongbox
+T 329 | Lieutenant Doren at the Rebel Camp
+A 330 | Lieutenant Doren
+T 330 | Corporal Sethman, a few steps away
+A 331 | Corporal Sethman
+T 331 | Lieutenant Doren
+T 574 | Lieutenant Doren. Do not take Colonel Kurzen (elite).
+T 185 | Ajeck Rouack at Nesingwary's Expedition
+A 186 | Ajeck Rouack
+T 190 | Sir S. J. Erlgadin
+A 191 | Sir S. J. Erlgadin
+C 186,191 @ Stranglethorn Vale, 36.0, 13.5 | 10 Stranglethorn Tigers and 10 Panthers (32-33): south and east of the camp, on both sides of the river
+C 194 @ Stranglethorn Vale, 25.8, 16.1 | 10 Stranglethorn Raptors (33-34): on the hills west of the camp, above the coast
+T 186 | Ajeck Rouack
+A 187 | Ajeck Rouack
+T 191 | Sir S. J. Erlgadin
+A 192 | Sir S. J. Erlgadin
+T 194 | Hemet Nesingwary
+A 195 | Hemet Nesingwary
+C 187 @ Stranglethorn Vale, 33.4, 18.5 | 10 Elder Stranglethorn Tigers (34-35), south-west of the camp near the Tkashi Ruins
+C 195 @ Stranglethorn Vale, 35.1, 23.3 | 10 Lashtail Raptors (35-36), further south on both sides of the road
+T 187 | Ajeck Rouack
+A 188 | Ajeck Rouack
+C 188 @ Stranglethorn Vale, 32.2, 17.4 | Sin'Dall (37), a white tigress on top of the small hill where the elder tigers are. Take her paw.
+T 188 | Ajeck Rouack
+T 195 | Hemet Nesingwary
+A 196 | Hemet Nesingwary. Jungle Stalkers are level 40-41: they come on the last loop.
+
+# ---------- Booty Bay ----------
+N Walk the road south to Booty Bay @ Stranglethorn Vale, 27.5, 77.8 | A long walk: stay on the road all the way to the south tip and through the shark-jaw tunnel. Grom'gol, on the west coast half way down, is a Horde base: do not leave the road there.
+F Booty Bay @ Stranglethorn Vale, 27.5, 77.8 | Gyll, the gryphon master on the upper level at the east end of town
+S Booty Bay @ Stranglethorn Vale, 27.0, 77.3 | Innkeeper Skindle, in the Salty Sailor Tavern
+T 98463 @ Stranglethorn Vale, 27.0, 77.2 | Nixxrax Fillamug, the barkeep in the same tavern: Talk of the Town
+T 210 | Krazek, upstairs in the building next to the inn. Do NOT take Favor for Krazek: its Lesser Bloodstone Ore only comes from Drywhisker Gorge in the Arathi Highlands.
+A 201 | Krazek
+A 616 | Krazek
+T 616 | Baron Revilgaz, on the top balcony of the same building
+A 578 | Baron Revilgaz
+A 189 | Kebok, next to the Baron
+A 213 | Kebok
+A 605 | Crank Fizzlebub, in the tavern
+A 606 | "Sea Wolf" MacKinley, in a house on the middle level
+A 575 | Drizzlik, in the leather shop at the east end
+A 595 | First Mate Crazz, on the dock by the tailor's
+T 595 | The Bloodsail Correspondence: a scroll on a barrel in the small pirate camp on the beach north of Booty Bay. Go back out through the tunnel and down to the shore on the west side. The Bloodsail Raiders and Mages there are 39-41: pull the ones at the camp singly, kill the Mages first (interrupt or stun their casts if your class can), and leave along the beach if more come than you can take.
+A 597 | The Bloodsail Correspondence
+T 597 | First Mate Crazz
+A 599 | First Mate Crazz
+T 599 | Fleet Master Seahorn, on the balcony beside the Baron. Do not take the next part (604) yet.
+
+# ---------- Loop 1: north Stranglethorn ----------
+C 212 @ Stranglethorn Vale, 32.6, 40.5 | Walk the road north. Cold Eye Basilisks (39-40) live on the west side of the road, on the shore south of Grom'gol. Kill them until a Chilled Basilisk Haunch drops; they also drop Singing Crystal Shards for Crank. They are 2-3 levels above you: one at a time, at full health before each pull. Keep the haunch (Stormwind, a later segment).
+C 578 @ Stranglethorn Vale, 20.8, 23.2 | The haunted island lies off the WEST coast, north-west of Grom'gol (keep well away from the base). Swim out to it and walk onto the island until the quest completes. The Lesser Water Elementals here matter later, not now.
+C 207:2 @ Stranglethorn Vale, 24.8, 23.0 | Second tablet (Gri'lek the Wanderer): under water in the Vile Reef, between the island and the shore. The Saltscale murlocs around it are elite-flagged (35-37): dive straight down to the tablet, click it and swim off.
+C 189 @ Stranglethorn Vale, 24.0, 11.0 | Ruins of Zul'Kunda, north along the coast: every Bloodscalp troll (34-37) can drop an ear, you need 15. Pull from the outer edge; kill the Mystics and Witch Doctors first (they heal: interrupt or stun it if your class can), and finish runners fast or slow them if you can, they bring friends.
+C 207:3,207:4 @ Stranglethorn Vale, 23.0, 12.0 | Third and fourth tablet, both in Zul'Kunda: Fall of Gurubashi (22.9, 12.0) and The Emperor's Tomb (24.7, 8.9), stone tablets standing among the ruins
+C 207:1 @ Stranglethorn Vale, 29.5, 19.1 | First tablet (Moon Over the Vale): in the Bal'lal Ruins on the coast south-east of Zul'Kunda
+C 605 @ Stranglethorn Vale, 35.0, 13.4 | Still short of 10 Singing Crystal Shards? Crystal Spine Basilisks (34-35) between the Tkashi Ruins and Nesingwary's camp drop them too. The Bloodscalp trolls at the Tkashi Ruins (32, 17) fill up the ears.
+C 201 @ Stranglethorn Vale, 35.7, 11.0 | Walk into Nesingwary's Expedition: that is the hunters' camp Krazek wants found
+C 575 @ Stranglethorn Vale, 37.3, 10.9 | 2 Large River Crocolisk Skins: River Crocolisks (30-31) in the river just east of the camp
+T 207 | Brother Nimetz at the Rebel Camp
+A 205 | Brother Nimetz. Skullsplitter trolls are 39-42: the fetishes come on the last loop, and only if it goes well.
+C 213 @ Stranglethorn Vale, 42.9, 19.1 | 8 Tumbled Crystals from Venture Co. Geologists (34-36) at the Venture Co. camp on the east shore of Lake Nazferiti, south of Kurzen's Compound
+H Booty Bay | Hearthstone
+T 201 | Krazek
+T 578 | Baron Revilgaz
+A 601 | Baron Revilgaz
+T 189 | Kebok
+A 209 | Kebok. Skullsplitter Tusks: keep it, it is done on a later Stranglethorn trip.
+T 213 | Kebok
+T 605 | Crank Fizzlebub
+A 600 | Crank Fizzlebub
+T 575 | Drizzlik
+A 577 | Drizzlik
+
+# ---------- Mistvale gorillas ----------
+C 606 @ Stranglethorn Vale, 32.9, 64.6 | 5 Mistvale Giblets from Elder Mistvale Gorillas (40-41) in Mistvale Valley, east of the road a short way north of Booty Bay. They are above you and hit hard: one at a time, at full health, and walk away when a fight goes badly. If they are too much, abandon Scaring Shaky and skip the next three steps.
+T 606 | "Shaky" Phillipe, on the dock at the north end of Booty Bay
+A 607 | "Shaky" Phillipe
+T 607 | "Sea Wolf" MacKinley
+
+# ---------- Loop 2: the way out north ----------
+C 600 @ Stranglethorn Vale, 41.6, 43.6 | Walk north again. The Crystalvein Mine is east of the road, about level with Grom'gol. Venture Co. Strip Miners and Tinkerers (40-41) drop the Singing Blue Crystals; you need 10. Stay near the mine entrance and pull singly; the Foreman and Surveyors inside are 42. Too hard at your level? Abandon the quest and skip its hand-in.
+C 196 @ Stranglethorn Vale, 28.9, 44.9 | 10 Jungle Stalkers (40-41): the raptors west of the road, around the Gurubashi Arena. Same rule: one at a time, and drop the quest rather than die for it.
+C 205 @ Stranglethorn Vale, 45.6, 36.6 | 4 Skullsplitter Fetishes from Skullsplitter Mystics (39-40) in the troll ruins east of the road (Ruins of Zul'Mamwe and around). The ruins are crowded: pick Mystics that stand at the edge, and interrupt or stun their casts if your class can. No luck after a fair try? Abandon Troll Witchery and skip its hand-in.
+C 192 @ Stranglethorn Vale, 42.5, 32.4 | 10 Shadowmaw Panthers (37-38): they prowl in stealth all over the jungle east of the road, from here north
+C 577 @ Stranglethorn Vale, 40.3, 23.5 | 5 Snapjaw Crocolisk Skins: Snapjaw Crocolisks (35-36) in the river that runs south from Lake Nazferiti
+C 601 @ Stranglethorn Vale, 20.9, 23.3 | 6 Water Elemental Bracers from the Lesser Water Elementals (36-37) on the haunted island off the west coast. They are immune to frost: use other spells or your weapon.
+T 192 | Sir S. J. Erlgadin at Nesingwary's Expedition. Stop here: the next step is elite.
+T 196 | Hemet Nesingwary. Stop here too (Tethis is elite).
+T 205 | Brother Nimetz at the Rebel Camp
+H Booty Bay | Hearthstone: you last used it at the end of loop 1, so it is ready. If it is not, walk the road south to Booty Bay again
+T 601 | Baron Revilgaz. Do not take the follow-up: it goes to Dalaran.
+T 577 | Drizzlik. Do not take the next one (elite).
+T 600 | Crank Fizzlebub
+FLY Ironforge @ Stranglethorn Vale, 27.5, 77.8 | Gyll, the Booty Bay gryphon master. You keep 209 (Kebok), 212 (the haunch for Angus Stern), 707 (Prospector Ironband), 525 (Southshore), 1106 (Martek), 1111 and 1178 (Ratchet). Your hearthstone stays in Booty Bay until Southshore.

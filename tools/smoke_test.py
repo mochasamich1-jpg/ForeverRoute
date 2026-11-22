@@ -300,6 +300,7 @@ def main():
             print('   FAIL: picked', key)
             FAILED = True
         exercise(lua, fire, run)
+        auto_train(lua)
         for race, token, cls, want in (('Human', 'Human', 'PALADIN', 'human'), ('Dwarf', 'Dwarf', 'WARRIOR', 'dwarf'),
                                        ('Human', 'Human', 'WARLOCK', 'human-warlock')):
             lua, fire, run = boot((race, token), (cls.title(), cls))
@@ -507,6 +508,84 @@ return table.concat(out, "\n")
 def auto(lua):
     global FAILED
     res = lua.execute(AUTOQ)
+    for line in str(res).split('\n'):
+        print('  ', line)
+        if line.startswith('FAIL'):
+            FAILED = True
+    chat(lua)
+
+
+AUTOTRAIN = r"""
+-- auto train: buys what you can pay for, leaves the route's skip list until the level in the route
+local C = __ns.Core
+local out = {}
+local function check(name, ok) out[#out + 1] = (ok and "ok   " or "FAIL ") .. name end
+local list, money, level, shift, got
+local function open()
+  got = {}
+  fire("TRAINER_SHOW")
+  for _ = 1, 20 do fire("TRAINER_UPDATE") end
+  fire("TRAINER_CLOSED")
+end
+local function has(n) for _, g in ipairs(got) do if g == n then return true end end return false end
+local oldLevel = UnitLevel
+function UnitLevel() return level end
+function IsShiftKeyDown() return shift end
+function IsTradeskillTrainer() return false end
+function GetMoney() return money end
+function GetNumTrainerServices() return #list end
+function GetTrainerServiceInfo(i) local s = list[i]; return s[1], s[2], s[4] end
+function GetTrainerServiceCost(i) return list[i][3] end
+function BuyTrainerService(i) local s = list[i]; got[#got + 1] = s[1] .. " " .. s[2]; money = money - s[3]; s[4] = "used" end
+local function fresh()
+  list = { { "Revenge", "Rank 2", 500, "available" }, { "Slam", "Rank 1", 400, "available" },
+           { "Rend", "Rank 3", 300, "available" }, { "Shield Bash", "Rank 1", 200, "available" },
+           { "Thunder Clap", "Rank 3", 5000, "available" }, { "Cleave", "Rank 2", 100, "unavailable" } }
+end
+-- the skill list arrives only after the window is open
+fresh(); money, level, shift = 1000, 20, false
+local late = list; list = {}; got = {}
+fire("TRAINER_SHOW"); list = late
+for _ = 1, 5 do fire("TRAINER_UPDATE") end
+fire("TRAINER_CLOSED")
+check("a list that loads after the window opens is still bought", has("Revenge Rank 2") and has("Shield Bash Rank 1"))
+-- newer clients return name, category (no rank text in second place)
+fresh(); money = 1000; got = {}
+local oldInfo = GetTrainerServiceInfo
+function GetTrainerServiceInfo(i) local s = list[i]; return s[1], s[4], "icon", 6 end
+fire("TRAINER_SHOW"); for _ = 1, 5 do fire("TRAINER_UPDATE") end; fire("TRAINER_CLOSED")
+check("the newer return order is read too", #got >= 2 and not has("Slam Rank 1"))
+GetTrainerServiceInfo = oldInfo
+-- a purchase the server refuses is tried once, not forever
+fresh(); money = 1000; got = {}
+local oldBuy = BuyTrainerService
+function BuyTrainerService(i) got[#got + 1] = "try" end
+fire("TRAINER_SHOW"); for _ = 1, 30 do fire("TRAINER_UPDATE") end; fire("TRAINER_CLOSED")
+check("a refused purchase is not repeated", #got == 2)
+BuyTrainerService = oldBuy
+fresh(); money, level, shift = 1000, 20, false; open()
+check("buys what the build uses", has("Revenge Rank 2") and has("Shield Bash Rank 1"))
+check("leaves the skip list and higher ranks of rank-1 skills", not has("Slam Rank 1") and not has("Rend Rank 3"))
+check("does not buy what it cannot pay for or cannot learn", not has("Thunder Clap Rank 3") and not has("Cleave Rank 2") and money == 300)
+fresh(); money, level = 100000, 41; open()
+check("after the mount level it buys everything available", has("Slam Rank 1") and has("Rend Rank 3") and has("Thunder Clap Rank 3") and not has("Cleave Rank 2"))
+fresh(); money, level, shift = 100000, 20, true; open()
+check("Shift: nothing is bought", #got == 0)
+fresh(); shift = false; C.opts.train = false; open()
+check("/fr train off: nothing is bought", #got == 0)
+C.opts.train = true
+local keep = C.route.train; C.route.train = nil; fresh(); open()
+check("a route with no training list buys nothing", #got == 0)
+C.route.train = keep
+UnitLevel = oldLevel
+GetMoney, GetNumTrainerServices, GetTrainerServiceInfo, GetTrainerServiceCost, BuyTrainerService = nil, nil, nil, nil, nil
+return table.concat(out, "\n")
+"""
+
+
+def auto_train(lua):
+    global FAILED
+    res = lua.execute(AUTOTRAIN)
     for line in str(res).split('\n'):
         print('  ', line)
         if line.startswith('FAIL'):

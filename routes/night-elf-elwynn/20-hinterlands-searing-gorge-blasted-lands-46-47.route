@@ -1,0 +1,124 @@
+@segment 46-47 Hinterlands, Searing Gorge & Blasted Lands
+@start-level 46
+# Night Elf, any class (made from the Gnome route by tools/derive_anyclass.py). From the Dwarf route's segment 18: same quests, order, binds and flights. It had no class
+# quests; changed: the Ironforge training stop is generic (no trainer name, no arrow), combat hints are class-neutral,
+# the mount is the nightsaber, and the hearth back to Aerie Peak after the robot escort is the Hearthstone only (it was
+# "Hearthstone or the class's second recall spell"; the stone is bound at Aerie Peak earlier in this segment and not used before).
+# Carried in (segment 18's carry-out): 212 A Meal Served Cold (Stormwind, handed in here), 209 Skullsplitter Tusks,
+# 669 Sunken Treasure, 648 Rescue OOX-17/TN! and 2767 Rescue OOX-22/FE! (all Booty Bay, segment 20).
+@carry 209,212,648,669,2767
+# 1421 (segment 15) unlocks Driftwood. The rest are the prerequisites of the carried quests: 189 -> 209, 668 -> 669,
+# 351 -> 648, 2766 -> 2767.
+@done 1421,189,668,351,2766
+# Order: Menethil -> Ironforge (train) -> Southshore -> Aerie Peak (hearth) -> Hinterlands loop -> Ironforge -> Thelsamar ->
+# Badlands -> Searing Gorge (south-east first, then Thorium Point and the Cauldron) -> Ironforge -> Stormwind -> Darkshire ->
+# Swamp of Sorrows -> Nethergarde Keep -> the Bloodmages.
+# Carried out (6): 209, 648, 669, 836, 2767 (Booty Bay, segment 20), 4450 Ledger from Tanaris (Gadgetzan, segment 21:
+# its Overdue Package is picked up in Dustwallow Marsh on the way there).
+
+# ---------- Ironforge ----------
+FLY Ironforge | You arrive at Menethil Harbor by boat. Shellei Brondir, the gryphon master (Wetlands 9.5, 59.7).
+TRAIN | Ironforge: visit your class trainer and learn everything from level 42 to 46 (the route made no training stop in Kalimdor). Warriors and hunters: Military Ward, south-east. Rogues and warlocks: Forlorn Cavern, north. Mages and priests: Mystic Ward, north-west.
+N Buy 15 Silk Cloth and one Mithril Casing at the Ironforge auction house | The silk is for Caught! in the Searing Gorge (it is not a drop there). The Mithril Casing is an engineering part you need in Un'Goro Crater in segment 21; an engineer can also make it. If there is none, try again on your next two stops here.
+FLY Southshore | Gryth Thurden, the Ironforge gryphon master
+
+# ---------- The Hinterlands ----------
+N Ride north-east from Southshore past Durnholde Keep and up the mountain path into the Hinterlands, to Aerie Peak @ The Hinterlands, 11.1, 46.2 | The path starts in the hills north-east of Durnholde and comes out at the west end of the Hinterlands, right below Aerie Peak.
+F Aerie Peak @ The Hinterlands, 11.1, 46.2 | Guthrum Thunderfist
+S Aerie Peak | Innkeeper Thulfram (14.2, 41.6). The hearthstone stays here for the rest of this segment.
+A 2880,2877 | Fraggar Thundermantle
+A 2988 | Gryphon Master Talonaxe, at the gryphon roost (9.8, 44.5)
+N Keep any OOX-09/HL Distress Beacon that drops in the Hinterlands | Trolls, oozes and most beasts can drop it (about 1 in 100). It starts the third robot escort, later in this loop.
+C 2988 @ The Hinterlands, 23.2, 58.8 | Ride south-east to the two Witherbark villages. The first and second cage stand in Zun'watha (23.3, 58.8), the third in Hiri'watha (32.0, 57.3): click each. Witherbark trolls (40-43) drop Troll Tribal Necklaces: kill what stands in your way and loot.
+T 2988 | Back at Aerie Peak: Gryphon Master Talonaxe
+A 2989 | Gryphon Master Talonaxe
+C 2989 @ The Hinterlands, 49.0, 68.7 | Ride east along the road, then south to the Altar of Zul. Climb the stairs to the top: the quest ticks when you reach it. Vilebranch trolls (45-47) stand around the foot; two level 50 Keepers stand on top. Pull them down one at a time, or run up, take the credit and run back down. Stay out of Jintha'Alor, the terraced city further east: it is elite.
+C 2880 @ The Hinterlands, 47.0, 66.0 | Finish the 5 Troll Tribal Necklaces on the Vilebranch Scalpers, Soothsayers and Axe Throwers around the altar. Kill the Soothsayers first: they heal, so interrupt or stun their casts if your class can.
+C 2877 @ The Hinterlands, 53.2, 43.9 | Ride north to Skulk Rock. 10 Green Sludges (46-47) lie around the rock and along the stream west of it, 10 Jade Oozes (47-48) in and around the cave. They are slow: step back from one when you need to bandage or heal.
+A 485 @ The Hinterlands, 49.4, 37.7 | Right-click the OOX-09/HL Distress Beacon if one has dropped: the robot stands at the head of the river just north-west of Skulk Rock. No beacon? Kill oozes a while longer; if you give up, skip these four robot steps (An OOX of Your Own in segment 20 then drops out too).
+T 485 | Homing Robot OOX-09/HL
+A 836 | Homing Robot OOX-09/HL
+C 836 @ The Hinterlands, 79.0, 61.0 | Escort the robot east across the zone to the shore below the Overlook Cliffs. A long walk: stay off your nightsaber; when ambushers jump it, keep them on you, not on the robot. You hand it in at Booty Bay in segment 20.
+H Aerie Peak | Use your hearthstone.
+T 2989 | Gryphon Master Talonaxe
+A 2990 | Gryphon Master Talonaxe. The feather goes to Nethergarde Keep, at the end of this segment.
+T 2880,2877 | Fraggar Thundermantle
+
+# ---------- Searing Gorge: the south-east ----------
+FLY Ironforge | Guthrum Thunderfist. In Ironforge, buy the 15 Silk Cloth now if you had none before.
+FLY Thelsamar | Gryth Thurden
+N Ride south through Loch Modan into the Badlands, west across the Badlands, and out of its west end into the Searing Gorge @ Searing Gorge, 65.6, 62.2 | Stay away from Kargath, the Horde outpost in the north-west Badlands. The pass at the west end climbs into the south-east corner of the Searing Gorge; the Wooden Outhouse stands a short ride north-west of it, at the Grimesilt Dig Site.
+A 4449 | The Wooden Outhouse (65.6, 62.2): someone is locked inside
+C 4449 @ Searing Gorge, 63.3, 60.5 | Kill 8 Dark Iron Geologists (43-44) at the dig site right next to the outhouse. The 15 Silk Cloth come from your bags.
+T 4449 | The Wooden Outhouse
+A 4450 | The Wooden Outhouse
+C 4450:1 @ Searing Gorge, 65.5, 62.2 | Take the Goodsteel Ledger that is pushed out under the outhouse door.
+C 4450:2 @ Searing Gorge, 66.5, 50.0 | 20 Solid Crystal Leg Shafts: Glassweb Spiders (43-45) on the ridge north of the outhouse (66-69, 45-53) and in the gullies south-west of it (60-64, 68-71). Most kills drop one. The other two items on the ledger come later: Jarquia in the Swamp of Sorrows (this segment) and a crate in Dustwallow Marsh (segment 21).
+A 3367 | Dorius Stonetender lies wounded at the dig site (63.9, 61.0)
+T 3367 @ Searing Gorge, 74.4, 19.3 | Walk with Dorius: he heads north along the east ridge. Dark Iron dwarves ambush him near the end: keep the attackers on you and kill them one by one; you may not be able to heal him. When he falls, a Singed Letter stays behind (74.4, 19.3): click it.
+A 3368 | From the Singed Letter. It goes to Ironforge.
+
+# ---------- Searing Gorge: Thorium Point and the Cauldron ----------
+N Ride west along the north ridge to Thorium Point @ Searing Gorge, 37.9, 30.9
+F Thorium Point @ Searing Gorge, 37.9, 30.9 | Lanie Reed
+A 7728,7729 | The Wanted/Missing/Lost & Found board (37.6, 26.5)
+A 7723,7724,7727 | Hansel Heavyhands
+A 7722 | Master Smith Burninate
+A 3377 | Zamael Lunthistle, in a cage west of Thorium Point (29.6, 26.3). Listen to his tale.
+T 3377 | Zamael Lunthistle. His next quest goes to Darnassus: leave it.
+A 3441 | Kalaran Windblade, south of Thorium Point at the edge of the Cauldron (39.1, 39.0). Listen to his story.
+T 3441 | Kalaran Windblade
+A 3442 | Kalaran Windblade
+C 7723,3442 @ Searing Gorge, 40.8, 49.2 | Circle the outside of the Cauldron. 20 Heavy War Golems (47-49) walk around its rim and drop Golem Oil; Magma Elementals (46-48, south-east of the Cauldron) and Inferno Elementals (47-49, south-west) drop the Hearts of Flame. You need 4 oil and 4 hearts. Fire does nothing to the fire elementals: use your other attacks on them.
+C 7724 @ Searing Gorge, 27.0, 60.0 | 20 Greater Lava Spiders (47-49) on the plateaus and lava pools in the south-west of the gorge.
+T 3442 | Kalaran Windblade
+A 3443 | Kalaran Windblade
+C 7729,3443 @ Searing Gorge, 42.6, 40.0 | Go down into the Cauldron. 15 Dark Iron Taskmasters and 15 Dark Iron Slavers (45-48) stand over the slaves on the ramps and in the Slag Pit; they and the other Dark Iron dwarves drop the 8 Thorium Plated Daggers. If a Grimesilt Outhouse Key drops, keep it.
+C 7728 @ Searing Gorge, 41.0, 54.0 | The Smithing Tuyere drops from Dark Iron Steamsmiths (38-43, 48-52), the Lookout's Spyglass from Dark Iron Lookouts on the south side of the Cauldron (42, 58): about 1 in 10 each.
+C 7727 @ Searing Gorge, 48.4, 28.0 | 20 Incendosaurs (47-49) in the lava pools inside the Slag Pit, the mine whose entrances are in the Cauldron walls. They breathe fire: fight one at a time, at full health.
+C 7722 @ Searing Gorge, 40.5, 35.7 | The Secret Plans: Fiery Flux lie deep in the Slag Pit, beside Overseer Maltorius (level 50 elite). Clear the dwarves around him first. If he is too strong for you, pull him away from the plans, run, and loot them when he resets; or skip this quest.
+N Look for Chambermaid Pillaclencher in the Slag Pit: she drops Chambermaid Pillaclencher's Pillow | Right-click the pillow to start Look at the Size of It!. The data has no position for her: if you do not find her, skip the two pillow steps below.
+A 4451 @ Searing Gorge, 65.6, 62.2 | Only if a Grimesilt Outhouse Key dropped (about 3 in 100 from the Cauldron dwarves): right-click it to start The Key to Freedom, then ride back east to the Wooden Outhouse. No key? Skip this step and the next.
+T 4451 | The Wooden Outhouse
+T 3443 | Kalaran Windblade. His next quest, The Flame's Casing, is elite: leave it.
+T 7728,7729 | Back at Thorium Point: Taskmaster Scrange
+T 7723,7724,7727 | Hansel Heavyhands
+T 7722 | Master Smith Burninate
+A 7704 @ Searing Gorge, 38.4, 27.7 | Right-click Chambermaid Pillaclencher's Pillow, if you found it.
+T 7704 | Evonice Sootsmoker
+L 47 @ Searing Gorge, 38.0, 44.0 | Short of 47? Kill Heavy War Golems and elementals around the Cauldron rim, just south of Thorium Point, until level 47. The Blasted Lands animals later in this segment are level 45-52.
+
+# ---------- Ironforge and Stormwind ----------
+FLY Ironforge | Lanie Reed
+T 3368 | Curator Thorius in the Hall of Explorers (71.5, 15.7). Leave his next quest, Dwarven Justice.
+N Still no Mithril Casing? Check the auction house once more | Then take the Deeprun Tram from Tinker Town to Stormwind.
+T 212 | Angus Stern in the Blue Recluse, Mage Quarter (51.8, 93.6). This quest has a 30-minute timer and you took it in segment 15: if it shows as failed in your log, it cannot be handed in. Abandon it and skip this step.
+A 1477 | High Sorcerer Andromath, at the top of the mage tower (48.7, 87.6)
+A 1363 | Mazen Mac'Nadir, in the Mage Quarter (51.8, 74.2)
+T 1363 | Acolyte Dellis, next to him
+A 1364 | Acolyte Dellis
+FLY Darkshire | Dungar Longdrink, the Stormwind gryphon master (71.0, 72.5)
+T 1477 | Watchmaster Sorigal (75.8, 46.2)
+A 1395 | Watchmaster Sorigal. The crate goes to Nethergarde Keep.
+
+# ---------- Swamp of Sorrows ----------
+N Ride east out of Darkshire, through Deadwind Pass, into the Swamp of Sorrows @ Swamp of Sorrows, 26.7, 59.8 | Stay on the road through Deadwind Pass. Watcher Biggs stands by the road just inside the swamp.
+A 1398 | Watcher Biggs
+C 1364 @ Swamp of Sorrows, 58.4, 47.1 | Khadgar's Essays drop from the swamp plants: Swampwalkers (north-west of Biggs, 28, 37) and Tangled Horrors (all over the middle and east of the swamp). About 1 in 20, and they are grey to you, so kill every one you pass on the way east. Keep north of the road around Stonard (45, 55): it is a Horde town with level 56 guards.
+C 1398 @ Swamp of Sorrows, 89.4, 53.0 | 8 Sundried Driftwood: pieces of wood lying on the beach of Misty Reed Strand, the east coast.
+C 4450:4 @ Swamp of Sorrows, 94.8, 52.0 | Jarquia (46), a named murloc off the same beach (94.8, 52.0), drops Goodsteel's Balanced Flameberge for the ledger.
+T 1398 | Ride back west to Watcher Biggs. Still no essays? Kill Tangled Horrors on the way; if they have not dropped by the time you reach him, abandon Mazen's Behest.
+A 1425 | Watcher Biggs
+
+# ---------- Blasted Lands ----------
+N Ride south from Watcher Biggs into the Blasted Lands and on to Nethergarde Keep @ Blasted Lands, 65.5, 24.3 | The keep is on the hill in the north-east, just past the zone border.
+F Nethergarde Keep @ Blasted Lands, 65.5, 24.3 | Alexandra Constantine
+T 1395,1425 | Quartermaster Lungertz (66.5, 21.4)
+T 1364 | Watcher Mahar Ba, in the mage tower (67.7, 19.2)
+T 2990 | Thadius Grimshade, in the same tower (66.9, 19.5). He offers Nekrum's Medallion, which needs Zul'Farrak: leave it.
+A 2581,2583,2585 | Ride west along the north edge of the Blasted Lands to the two blood elves on the hill (50.6, 14.3): Bloodmage Drazial
+A 2601,2603 | Bloodmage Lynnore, next to him
+C 2581,2583,2585,2601,2603 @ Blasted Lands, 55.0, 28.0 | Farm all five together. You need 5 Snickerfang Jowls, 6 Blasted Boar Lungs, 6 Scorpok Pincers, 11 Basilisk Brains and 14 Vulture Gizzards in all. The lowest sources: Starving Snickerfangs (45-46) and Scorpok Stingers (50-51) just south of the bloodmages (44-57, 14-30); Ashmane Boars (48-49), Redstone Basilisks (46-48) and Black Slayers (46-48) south-west of Nethergarde (55-63, 26-37). Drop rates are 30-40 in 100, so this takes a while: treat it as your grind. Scorpoks poison: cure it if your class can, otherwise bandage and eat. If you run out of patience, hand in what is complete and abandon the rest.
+T 2581,2583,2585 | Bloodmage Drazial
+T 2601,2603 | Bloodmage Lynnore
+N Ride back east to Nethergarde Keep @ Blasted Lands, 65.5, 24.3 | The next segment starts with the flight to Booty Bay. Your hearthstone is still set to Aerie Peak. Keep these for Booty Bay: 209, 669, 648, 836, 2767; and 4450 for Gadgetzan.

@@ -37,7 +37,7 @@ A 68 @ Westfall, 41.5, 66.7 | The same footlocker
 T 240 | Go east over the river into Duskwood; Raven Hill is right behind the bridge. Jitters is in Raven Hill village (18.4,56.4)
 T 453 | Jitters
 A 268 | Jitters
-N Watch for two new ghosts all over Duskwood: Ira Valor (in the woods) and Merrick Valor (on the roads) | New in Forever. Kill them when you see them: one drops Ira's Dagger, the other Merrick's Bow. Each item starts a quest (right-click it). Their exact spots are not in the data. No ghost found? Then skip the steps for 96137 / 96138 / 98447 in this segment
+N Watch for two new ghosts all over Duskwood: the Lost Stalker and the Lost Watcher @ Duskwood, 16, 62.8 | New in Forever. In game the ghosts are called Lost Stalker (Ira) and Lost Watcher (Merrick), both level 24. Kill them when you see them: the Lost Stalker drops Ira's Dagger, the Lost Watcher drops Merrick's Bow. Each item starts a quest (right-click it). Known Lost Stalker spots: 48.1, 64.0, then 56.5, 58.7, then 67.9, 31.1. Known Lost Watcher spots: 16.0, 62.8, then 30.6, 60.6, then 42.6, 66.5, then 62.6, 65.6, then 76.0, 22.8. No ghost found? Then skip the steps for 96137 / 96138 / 98447 in this segment
 C 57 @ Duskwood, 20.0, 45.0 | The graveyard just north of Jitters (14-24,40-48): kill 15 Skeletal Fiends and 15 Skeletal Horrors (23-25). They are below your level: the Voidwalker can hold two at a time while you put Corruption and Curse of Agony on both and wand them down. Drain Soul a few last hits here to fill up on Soul Shards
 T 268 | Sven Yorgen, at his camp on the far west side (7.8,34.1)
 A 323 | Sven Yorgen
@@ -74,8 +74,8 @@ T 156 | Tavernkeep Smitts
 A 159 | Tavernkeep Smitts: Zombie Juice for Abercrombie
 
 # ---------- West loop: Defias camp, Abercrombie, Vul'Gol ----------
-A 96137 @ Duskwood, 60.0, 60.0 | Ira's Dagger (new in Forever, drops from the ghost of Ira Valor; the arrow is only a guess). Tick or skip this when it applies
-A 96138 @ Duskwood, 60.0, 60.0 | Merrick's Bow (new in Forever, drops from the ghost of Merrick Valor; the arrow is only a guess). Tick or skip this when it applies
+A 96137 @ Duskwood, 56.5, 58.7 | Ira's Dagger (new in Forever, drops from the Lost Stalker, a level 24 ghost; the arrow is its known spot nearest Darkshire). Right-click the dagger to start the quest. Tick or skip this when it applies
+A 96138 @ Duskwood, 62.6, 65.6 | Merrick's Bow (new in Forever, drops from the Lost Watcher, a level 24 ghost; the arrow is its known spot nearest Darkshire). Right-click the bow to start the quest. Tick or skip this when it applies
 C 96137 @ Duskwood, 52.0, 68.0 | Only with Ira's Dagger. Take the south road west out of Darkshire. Young Black Ravagers (23-24) run beside it all the way (46-61,59-77); the 7 Black Ravagers (24-25) are fewer: they roam north of Darkshire and Brightwood (49-70,26-63), so kill any you saw on the worgen steps or pick them up when you are back
 C 90 @ Duskwood, 52.0, 66.0 | 10 Lean Wolf Flanks: Young Black Ravagers (23-24) beside the south road and Black Ravagers (24-25) drop them, the same wolves as the dagger quest. No dagger? Kill them anyway on this walk. They are grey to green: quick kills
 C 1244 @ Duskwood, 23.9, 72.1 | Follow the south road to the Defias camp in the south-west (20-33,71-78). The Defias Docket is in the Defias Strongbox at 23.9,72.1. Night Runners, Night Blades and Enchanters (24-27) are easy now
@@ -91,7 +91,7 @@ T 90 | Chef Grual, in the Scarlet Raven Tavern
 A 1245 @ Duskwood, 74.8, 44.2 | Watcher Backus
 T 96137 | Sirra Von'Indi, town hall (only if you did Ira's Dagger)
 T 96138 | Sirra Von'Indi (only if you did Merrick's Bow)
-A 98447 @ Duskwood, 72.6, 47.5 | Sirra Von'Indi (new in Forever). Its text says it follows the two weapon quests; if she does not offer it, skip its steps. If you only finish the weapons on the last loop, take it then and decide whether one more Raven Hill trip is worth 2200 XP
+A 98447 @ Duskwood, 72.6, 47.5 | Sirra Von'Indi (new in Forever). It follows the two weapon quests. If she does not offer it, skip its steps. If you only finish the weapons on the last loop, take it then and decide whether one more Raven Hill trip is worth 2200 XP
 FLY Stormwind @ Duskwood, 77.5, 44.3 | Felicia Maline, Darkshire
 
 # ---------- Stormwind and Goldshire ----------
@@ -144,7 +144,7 @@ T 97 | Commander Althea Ebonlocke
 A 98 | Commander Althea Ebonlocke. Stalvan is level 32: he is the very last fight of this segment
 C 222 @ Duskwood, 69.0, 76.0 | South of Darkshire (61-74,67-84): 8 Nightbane Vile Fangs (29-30) and 8 Nightbane Tainted Ones (30-31). Work in from the north edge, one at a time, Voidwalker first, all three DoTs, then Drain Life. If a second one comes, back off toward the road and Fear it there, away from the other packs. Rest to full between pulls and keep a Healthstone in your bags
 C 181 @ Duskwood, 37.0, 81.5 | South road west to the Vul'Gol Ogre Mound. Zzarc'Vul (33) is at the south end of the mound (36-38,80-84) with Splinter Fist Enslavers (30-31). Clear the way in one ogre at a time, wait until he stands apart from the others, then put a Soulstone on yourself, make a Healthstone and fight him at full health and mana: Voidwalker first, give it a few seconds, then Curse of Agony, Corruption, Immolate and Drain Life; Health Funnel keeps the Voidwalker alive, its Sacrifice shield and a potion are for the moment he turns on you. Fear an Enslaver that joins in. He is 3 levels above you, so some spells will be resisted. Loot the Ogre's Monocle. If he kills you twice, drop the quest. Finish Merrick's Bow here if it is still open
-C 98447 @ Duskwood, 17.4, 54.0 | Only if Sirra gave you the second Valor Family quest. Go to Raven Hill village (17.4,54.0, near Jitters) with the dagger and the bow in your bags until "Raven Hill investigated" ticks. What appears there is not in the data: be ready for a fight (Voidwalker out, full health and mana, a Healthstone in your bags)
+C 98447 @ Duskwood, 17.4, 54.0 | Only if Sirra gave you the second Valor Family quest. Go to Raven Hill village (17.4,54.0, near Jitters) with the dagger and the bow in your bags until "Raven Hill investigated" ticks. If it does not tick in the village, walk to where you found the Raven Hill Tome (21.1, 55.6). What appears there is not known: be ready for a fight (Voidwalker out, full health and mana, a Healthstone in your bags)
 C 58 @ Duskwood, 22.8, 33.2 | North into the cemetery: 20 Plague Spreaders (27-28) around the eastern mausoleum and the graves below Abercrombie's hill (16-26,28-37). They give you a disease and a warlock cannot cure it: keep them on the Voidwalker, and bandage, Drain Life and eat
 T 134 | Abercrombie
 A 160 | Abercrombie

@@ -8,4 +8,4 @@
 @hub Orgrimmar, 50.0, 50.0
 @hub Undercity, 66.0, 44.0
 @entrance none
-RUN | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater. It has 3 Horde quests (from level 55), but who gives them is not published yet: ask around Marshal's Refuge and take what is offered; the addon logs it so these steps can be filled in.
+RUN @ Un'Goro Crater, 56, 12 | New Forever dungeon, not checked in game yet. It is in the hills of Un'Goro Crater; the entrance is reported by the northern pylon at about 56, 12. Its 3 Horde quests (from level 55) start elsewhere: Master Apothecary Faranell in Undercity (48.8, 69.3) gives The Dark Crystal, Chemist Fuely in Undercity (47.5, 73.4) gives Essence of Seeping Slimes, and Mayena Earthseeker in Mulgore (about 34.9, 22.1) gives Crystalline Elements. Take what is offered; the addon logs it so these steps can be filled in.

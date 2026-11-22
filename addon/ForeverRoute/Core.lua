@@ -452,6 +452,8 @@ function Core.AutoRoute()
             for _, c in ipairs(classes) do if c == class then mine = true end end
             score = score + (mine and 2 or -1)
         end
+        -- side routes (manual = true) are only ever chosen by hand
+        if r.manual then score = -100 end
         if not bestScore or score > bestScore or (score == bestScore and key < best) then
             best, bestScore = key, score
         end
@@ -777,6 +779,7 @@ function handlers.ADDON_LOADED(name)
     if opts.shown == nil then opts.shown = true end
     if opts.dungeons == nil then opts.dungeons = false end -- quest-only unless you turn dungeons on
     if opts.auto == nil then opts.auto = true end
+    if opts.train == nil then opts.train = true end
     Core.opts = opts
     local key = saved.route
     if not (key and ns.Routes and ns.Routes[key]) then key = Core.AutoRoute() end
@@ -970,12 +973,119 @@ end
 
 -- "Train": a class trainer window was open and is closed again
 local atClassTrainer = false
+
+---------------------------------------------------------------------------
+-- Auto train (option "train", /fr train). Only on routes that carry a `train` table (which skills to leave).
+-- At a class trainer it buys every skill you can learn and pay for, one after the other. Up to level
+-- train.untilLevel it leaves the skills in train.skip and every rank above 1 of those in train.rank1, so the
+-- gold goes to the mount. Hold Shift while opening the trainer to buy by hand.
+---------------------------------------------------------------------------
+local trainBought, trainLeft, trainPoor, trainTried = {}, {}, {}, {}
+
+local function InList(list, name)
+    for _, n in ipairs(list or {}) do if n == name then return true end end
+    return false
+end
+
+local function TrainOn()
+    return Core.route and Core.route.train and Core.opts and Core.opts.train
+        and not (IsShiftKeyDown and IsShiftKeyDown()) and true or false
+end
+
+-- true when the route says to leave this skill at the trainer for now
+function Core.TrainSkips(name, sub, level)
+    local T = Core.route and Core.route.train
+    if not T or (level or 1) > (T.untilLevel or 0) then return false end
+    if InList(T.skip, name) then return true end
+    if not InList(T.rank1, name) then return false end
+    local rank = tonumber(tostring(sub or ""):match("%d+"))
+    if rank then return rank > 1 end
+    -- no rank text from the trainer: a skill you already know by that name is a higher rank
+    return GetSpellInfo and GetSpellInfo(name) ~= nil or false
+end
+
+-- One trainer row as (name, rank text, category). Classic returns name, rank, category; newer clients return
+-- name, category, ...: take the category from whichever place holds it.
+local TRAIN_CATEGORY = { available = true, unavailable = true, used = true }
+local function TrainRow(i)
+    local name, a, b = GetTrainerServiceInfo(i)
+    if TRAIN_CATEGORY[b] then return name, a, b end
+    if TRAIN_CATEGORY[a] then return name, nil, a end
+    return name, a, b
+end
+
+-- /fr train check: what the addon sees at the open trainer, and what it would do with each row
+function Core.TrainCheck()
+    if not (GetNumTrainerServices and GetTrainerServiceInfo) then
+        Core.Print("this client has no trainer functions the addon knows: auto train cannot work here.")
+        return
+    end
+    local n = GetNumTrainerServices() or 0
+    if n == 0 then Core.Print("no trainer window is open (open your class trainer first).") return end
+    local level, money = UnitLevel("player") or 1, GetMoney and GetMoney() or 0
+    Core.Print("trainer check: level " .. level .. ", " .. n .. " rows, route list " .. ((Core.route and Core.route.train) and "yes" or "NO")
+        .. ", auto train " .. ((Core.opts and Core.opts.train) and "on" or "OFF") .. ", buy function " .. (BuyTrainerService and "yes" or "NO"))
+    for i = 1, n do
+        local name, sub, category = TrainRow(i)
+        local cost = GetTrainerServiceCost and GetTrainerServiceCost(i) or 0
+        local what = category ~= "available" and "cannot learn yet"
+            or Core.TrainSkips(name, sub, level) and "left for after the mount"
+            or cost > money and "not enough money" or "would buy"
+        Core.Print("  " .. tostring(name) .. " | " .. tostring(sub) .. " | " .. tostring(category) .. " | " .. cost .. "c | " .. what)
+    end
+end
+
+local function TrainNext()
+    if not (atClassTrainer and TrainOn() and GetNumTrainerServices and BuyTrainerService) then return end
+    local level, money = UnitLevel("player") or 1, GetMoney and GetMoney() or 0
+    trainLeft, trainPoor = {}, {}
+    for i = 1, GetNumTrainerServices() do
+        local name, sub, category = TrainRow(i)
+        if name and category == "available" then
+            local label = name .. ((sub and sub ~= "") and (" (" .. sub .. ")") or "")
+            if Core.TrainSkips(name, sub, level) then
+                trainLeft[#trainLeft + 1] = label
+            elseif (GetTrainerServiceCost(i) or 0) > money then
+                trainPoor[#trainPoor + 1] = label
+            elseif not trainTried[label] then
+                -- one purchase at a time: the list changes after each one (TRAINER_UPDATE brings us back here).
+                -- Each row is tried once per visit, so a purchase the server refuses can never loop.
+                trainTried[label] = true
+                trainBought[#trainBought + 1] = label
+                BuyTrainerService(i)
+                return
+            end
+        end
+    end
+end
+
+local function TrainReport()
+    if #trainBought > 0 then Core.Print("trained " .. table.concat(trainBought, ", ") .. ".") end
+    if #trainPoor > 0 then Core.Print("not enough money for " .. table.concat(trainPoor, ", ") .. ".") end
+    if #trainLeft > 0 then
+        Core.Print("left for after the mount: " .. table.concat(trainLeft, ", ") .. ". Buy them by hand if you want them, or /fr train off.")
+    end
+    trainBought, trainLeft, trainPoor = {}, {}, {}
+end
+
 function handlers.TRAINER_SHOW()
     atClassTrainer = not (IsTradeskillTrainer and IsTradeskillTrainer())
+    trainBought, trainTried = {}, {}
+    TrainNext()
+    -- the skill list often arrives after the window opens: look again shortly, whether or not an update fires
+    if C_Timer and C_Timer.After then
+        C_Timer.After(0.3, TrainNext)
+        C_Timer.After(1, TrainNext)
+    end
+end
+
+function handlers.TRAINER_UPDATE()
+    TrainNext()
 end
 
 function handlers.TRAINER_CLOSED()
     if atClassTrainer then
+        if Core.route and Core.route.train and Core.opts and Core.opts.train then TrainReport() end
         atClassTrainer = false
         AutoTick("TRAIN")
     end
@@ -1029,6 +1139,17 @@ SlashCmdList.FOREVERROUTE = function(msg)
         Print("auto accept and hand in " .. (Core.opts.auto
             and "on: quests the guide wants are taken and finished ones handed in when you talk to the NPC. Hold Shift to do it by hand. Rewards with a choice are left to you."
             or "off"))
+    elseif cmd == "train" then
+        local want = rest:lower()
+        if want == "check" then Core.TrainCheck() return end
+        if want == "on" or want == "off" then Core.opts.train = want == "on" else Core.opts.train = not Core.opts.train end
+        if not (Core.route and Core.route.train) then
+            Print("auto train " .. (Core.opts.train and "on" or "off") .. ", but this route has no training list: nothing is bought for you.")
+        else
+            Print("auto train " .. (Core.opts.train
+                and ("on: at your class trainer every skill you can pay for is bought, except the ones the guide leaves until after level " .. (Core.route.train.untilLevel or 0) .. ". Hold Shift while opening the trainer to buy by hand.")
+                or "off"))
+        end
     elseif cmd == "waypoint" then
         Core.opts.waypoint = not Core.opts.waypoint
         Print("map waypoint " .. (Core.opts.waypoint and "on" or "off"))
@@ -1097,6 +1218,6 @@ SlashCmdList.FOREVERROUTE = function(msg)
         Core.LogEvent("note", { text = rest, step = char.current })
         Print("note saved: " .. rest)
     else
-        Print("/fr - show or hide | /fr skip | /fr back | /fr seg [n] | /fr route [name] | /fr dungeons [on|off|list] | /fr auto | /fr arrow | /fr paths | /fr waypoint | /fr note <text> | /fr log | /fr reset")
+        Print("/fr - show or hide | /fr skip | /fr back | /fr seg [n] | /fr route [name] | /fr dungeons [on|off|list] | /fr auto | /fr train | /fr arrow | /fr paths | /fr waypoint | /fr note <text> | /fr log | /fr reset")
     end
 end

@@ -9,14 +9,13 @@
 #   the Wetlands end of the Dun Algaz road east along the southern cliffs to her cave under the waterfalls (65.7, 76.4)
 #   and back to the road. The Dun Algaz road itself stays (455), and so does the south-east marsh (276 gnolls).
 # - Training: the optional gryphon round trip Menethil -> Ironforge -> Menethil is gone (no druid trainer in
-#   Ironforge) and nothing replaces it here: segment 9 goes to the druid trainer in Darnassus right after the boat
-#   (Cat Form chain), so level 24 is trained there. No Teleport: Moonglade trip here either: the Hearthstone must be
-#   ready as the fallback of that chain.
-# - No travel form below level 30: the long road stretches are walked. No Cat Form yet in this segment.
+#   Ironforge) and nothing replaces it here: segment 9 starts with a Teleport: Moonglade training trip from
+#   Auberdine, so level 24 is trained there. No Teleport: Moonglade trip here.
+# - No travel form below level 30: the long road stretches are walked. Cat Form is known (segment 06); the hints here were written without it.
 # Left out on purpose: 98459 A Lack of Virtue (ForeverChanges puts its giver, Tom "Half-fish" Wilson, in the
 # Hillsbrad Foothills at 51.2, 66.5, not in the Wetlands), 463 The Greenwarden (you meet Rethiel before its giver),
 # 1132 Fiora Longears (Theramore), 98190 A Friend of the Family (taken in segment 10), 161/274 (Dun Modr).
-@carry 57,67,157,161,181,240,453,455,93963,97894
+@carry 57,67,157,161,181,240,272,453,455,6122,93963,97894
 @done 468
 
 # ---------- Thelsamar -> Dun Algaz ----------
@@ -81,4 +80,4 @@ A 98189 | Karl Boran: Return the Statuette (new in Forever)
 T 98189 | Captain Stoutfist, inside Menethil Keep. Do not take his other quests yet: they belong to segment 10.
 
 # ---------- The boat ----------
-N Take the boat from Menethil Harbor to Auberdine | Buy food and water first. You train next in Darnassus, a short boat ride from Auberdine: do not use your Hearthstone before then. Not verified for Forever: a quest text says the Auberdine boat stops in Southshore on the way over. If it does, stay on board until Auberdine in Darkshore.
+N Take the boat from Menethil Harbor to Auberdine | Buy food and water first. You train next in Darnassus, a short boat ride from Auberdine: do not use your Hearthstone before then. In Forever this boat stops in Southshore on the way over: stay on board until Auberdine in Darkshore.

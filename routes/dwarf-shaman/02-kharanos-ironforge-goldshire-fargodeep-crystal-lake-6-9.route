@@ -1,0 +1,106 @@
+@segment 6-9 Kharanos, Ironforge & Goldshire: Fargodeep Mine & Crystal Lake
+@start-level 6
+@carry 420,2160,96628
+@done 282
+# Dwarf Shaman 6-9, rewritten 2026-11-16: the user wants Coldridge Valley 1-6 and then Elwynn Forest instead
+# of the rest of Dun Morogh. The old Dun Morogh segments (Kharanos/Brewnall 6-10, Gol'Bolar/Loch Modan 10-14)
+# are in backup/dwarf-shaman-pre-elwynn/.
+# Coldridge Pass -> Kharanos (the three Coldridge hand-ins, camping intro, level 6 training) -> road to
+# Ironforge (flight path) -> Deeprun Tram -> Stormwind (flight path) -> Goldshire (bind) -> the farms south of
+# Goldshire and the Fargodeep Mine -> hearth to Goldshire -> Crystal Lake (the fishermen) -> the fields south of
+# Goldshire and Maybell -> Goldshire.
+# The Elwynn part is the Human route's segment 02 (same quests and order). Out, as in the Night Elf via Elwynn
+# file: the Northshire lead-ins (54 Report to Goldshire, 2158 Rest and Relaxation, 91772 and 91775 Book Return,
+# which needs 91772) and Sam's camp (95998 / 96626: the dwarf does the Kharanos camping intro 96608 / 96629).
+# Shaman training: there is no shaman trainer in Elwynn or Stormwind (the baked Questie data lists only Teo
+# in Anvilmar, Ingrid in Kharanos and Eldrun in Ironforge for the Alliance). Train at Ingrid on the way
+# through Kharanos; the level 8 and 10 spells wait for Eldrun in Ironforge at the start of segment 04.
+# Skipped in Kharanos: Senir's other quests (98322 ...), the Dun Morogh hubs. 97263 Your Package Has Arrived
+# (Tinker Town -> Eldrun) is taken in segment 04, when the route does go to Eldrun.
+# Hearthstone: still bound in Anvilmar at the start; bound in Goldshire here, used once (back from the mine).
+# Carry-out: 61 Shipment to Stormwind (segment 04), 76 The Jasperlode Mine, 35 Further Concerns, 99131 Baited
+# for Success (segment 03).
+
+# --- Kharanos ---
+T 96628 @ Dun Morogh, 46.7, 53.8 | Eric Brighthammer, at his campfire on the south-west edge of Kharanos (you pass it coming up the road from Coldridge Pass)
+A 96608 @ Dun Morogh, 46.7, 53.8 | Eric Brighthammer
+C 96608 @ Dun Morogh, 46.7, 53.8 | Stand next to Eric's campfire and type /sit until you get the Boosted Rest buff
+T 96608 @ Dun Morogh, 46.7, 53.8
+A 96629 @ Dun Morogh, 46.7, 53.8 | Eric also offers Camping 101 quests for other professions. Take those only for a profession you already have
+T 420 | Senir Whitebeard, standing next to Eric's camp. Do not take his other quests: this route leaves Dun Morogh now
+T 2160 | Tannok Frosthammer, inside the Thunderbrew Distillery (the inn). Do NOT bind here: you make Goldshire your home soon
+T 96629 @ Dun Morogh, 47.7, 52.3 | Gremlock Pilsnor, the cooking trainer in the inn: learn Cooking from him first, then hand the quest in
+TRAIN @ Dun Morogh, 47.4, 52.0 | Ingrid Dunwald, the shaman trainer in Kharanos: learn your level 6 spells (Earthbind Totem, Healing Wave rank 2) if you did not at Teo. There is no shaman trainer in Elwynn or Stormwind: your next training is in Ironforge at about level 11. Buy food and water
+
+# --- Ironforge and the tram ---
+G Dun Morogh, 53.4, 35.0 | Follow the road north-east from Kharanos and up the ramp to the Gates of Ironforge. Walk past the beasts by the road: there is nothing to do on the way
+F Ironforge @ Ironforge, 55.5, 47.7 | Gryth Thurden, the gryphon master: walk straight in through the gate to the ring around the Great Forge in the middle of the city
+N Take the Deeprun Tram to Stormwind @ Ironforge, 76.5, 51.2 | The tram entrance is in Tinker Town, on the east side of the city. Leave the rat quest on the platform for later: the route rides the tram again in segment 05
+F Stormwind @ Stormwind City, 71.0, 72.5 | You come out in the Dwarven District. Walk south through the city to Dungar Longdrink, the gryphon master at the east end of the Trade District
+N Walk out of Stormwind to Goldshire @ Elwynn Forest, 42.1, 65.9 | Through the Valley of Heroes and out of the main gate, then follow the road south. About five minutes
+
+# --- Goldshire ---
+A 62 | Marshal Dughan, in front of the smithy in Goldshire
+A 47 | Remy "Two Times", a few steps south of Dughan
+S Goldshire | Make the Lion's Pride Inn your home (Innkeeper Farley)
+A 60 | William Pestle, in the inn
+N Learn First Aid from Michelle Belle in the inn @ Elwynn Forest, 43.4, 65.5 | Bandages save mana for Lightning Bolt. Keep every Linen Cloth and turn it into Linen Bandages from now on. Buy food and drink from the innkeeper
+
+# --- The farms and the Fargodeep Mine ---
+A 106 | Take the road south out of Goldshire to the Maclure Vineyards. Maybell Maclure is in the barn at the south end
+N Kill Stonetusk Boars on the walk west to the Stonefield Farm until you have 4 Chunks of Boar Meat @ Elwynn Forest, 37.7, 82.5 | They are for the pie quest you get in a minute. The boars (5-6) graze on the slopes between the two farms, in front of the mine
+A 85 | "Auntie" Bernice Stonefield, in front of the farmhouse at the Stonefield Farm
+N Buy 4 Shiny Red Apples from Homer Stonefield @ Elwynn Forest, 33.7, 82.9 | He sells fruit at the farm. Do NOT eat them: the Applejack Still north of Westbrook Garrison turns them into a quest item in segment 04. If he does not sell them, tick this: kobolds and Defias drop them too
+T 106 | Tommy Joe Stonefield stands by the river, west of the farm
+A 111 | Tommy Joe Stonefield
+T 111 | Gramma Stonefield, in the farmhouse
+A 107 | Gramma Stonefield. The note goes to William Pestle in Goldshire
+T 85 | Back east to the Maclure Vineyards: Billy Maclure, in front of the house
+A 86 | Billy Maclure
+C 86 @ Elwynn Forest, 37.7, 82.5 | Short of 4 Chunks of Boar Meat? Kill boars on the way back west
+T 86 | "Auntie" Bernice Stonefield
+A 84 | "Auntie" Bernice Stonefield
+T 84 | Billy Maclure, at the vineyards
+A 87 | Billy Maclure: Goldtooth has the necklace
+C 62 | The Fargodeep Mine has two entrances in the hillside between the farms. Go in by the lower one (the eastern one, nearer the Maclures) and walk a little way in until "Scout through the Fargodeep Mine" ticks
+C 87 | Goldtooth (level 8) stands in a side chamber of the lower tunnel (41.7, 78.0). Clear the Kobold Tunnelers near him, eat and drink to full, then fight him alone: Stoneskin Totem down, Earth Shock, melee with Rockbiter Weapon, Healing Wave below half. Loot Bernice's Necklace
+C 47,60 | Kobold Tunnelers (5-6) and Miners (6-7) in the mine: collect 10 Gold Dust and 8 Large Candles. Miners stand deeper in and hit harder: one at a time, Earthbind Totem if one runs
+T 87 | "Auntie" Bernice Stonefield, at the Stonefield Farm (the upper mine entrance comes out just above it)
+H Goldshire | Hearthstone to the inn. On cooldown? Walk the road north, five minutes
+
+# --- Goldshire ---
+T 62 | Marshal Dughan
+A 76 | Marshal Dughan. The Jasperlode Mine is in the east: next segment
+T 47 | Remy "Two Times"
+T 60 | William Pestle, in the inn
+A 61 | William Pestle. The shipment goes to Stormwind in segment 04: keep it
+T 107 | William Pestle
+A 112 | William Pestle
+N Make Linen Bandages from your Linen Cloth | Sell and repair at the smithy before you go to the lake
+
+# --- Crystal Lake: the fishermen ---
+A 99127 | Jason Mathers, one of the two fishermen on the west shore of Crystal Lake, just east of Goldshire
+A 99143 | Lee Brown, next to him
+C 99127 @ Elwynn Forest, 50.5, 65.5 | Check the fishing traps in the shallow water of Crystal Lake (their spots are not published: look for traps along the shore and in the shallows, starting at the fishermen) until you have 7 Half-Eaten Fish
+C 99143,112 @ Elwynn Forest, 54.2, 66.7 | The murloc camp is on the east shore, across the lake. Pick up 6 Shiny Junk from the camp and kill Murlocs and Murloc Streamrunners (6-7) for 4 Crystal Kelp Fronds. Kill 7 Murlocs and 4 Streamrunners while you are here: Jason asks for exactly that next. Murlocs run for help at low health: pull each one away from the huts with Lightning Bolt, drop Earthbind Totem so a runner cannot get far, and never follow one into the camp
+T 99127 | Jason Mathers
+T 99143 | Lee Brown
+A 99128 @ Elwynn Forest, 47.5, 62.3 | Jason Mathers: Slimy Menace. If he offers a different quest, take that one and follow its text
+C 99128 @ Elwynn Forest, 54.2, 66.7 | Back across the lake: 7 Murlocs and 4 Murloc Streamrunners. Kills from before you had the quest do not count
+T 99128 @ Elwynn Forest, 47.4, 62.2 | Jason Mathers
+A 99129 | Jason Mathers
+T 99129 | Remy "Two Times", in Goldshire
+A 99130 @ Elwynn Forest, 42.1, 67.1 | Remy "Two Times"
+A 40 | Remy "Two Times" (needs level 7)
+T 40 | Marshal Dughan
+A 35 | Marshal Dughan. Guard Thomas is at the bridge in the east: next segment
+T 112 | William Pestle, in the inn
+A 114 | William Pestle
+
+# --- Duskweed and Maybell ---
+C 99130 @ Elwynn Forest, 41.5, 74.6 | Duskweed grows in the fields on both sides of the road south of Goldshire and on the farms (18 petals); the 6 Vials of Animal Blood drop from the wolves, boars and bears you meet on the way
+T 114 | Maybell Maclure, in the barn at the Maclure Vineyards
+C 99130 @ Elwynn Forest, 40.0, 69.6 | Finish the petals and the blood on the walk back north
+T 99130 @ Elwynn Forest, 42.1, 67.1 | Remy "Two Times", in Goldshire
+A 99131 | Remy "Two Times". Jason is on your way east: you hand it in at the start of the next segment
+N Sell, repair and make bandages in Goldshire | Next: the east of Elwynn. Everything there is level 8-10

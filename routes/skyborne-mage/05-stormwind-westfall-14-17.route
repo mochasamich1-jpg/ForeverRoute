@@ -93,11 +93,11 @@ S Sentinel Hill | Make the inn your home: talk to Innkeeper Heather
 # --- Loop 1: west fields, then north, back down the east side ---
 C 92909 @ Westfall, 39.0, 50.0 | Head west into the fields around the Alexston Farmstead. Harvest Golems and Harvest Watchers drop the Golem Isosprings (14) and Harvester Gyrostabilizers (5), and also Okra for the stew and Flasks of Oil: keep 5 oil for the lighthouse. Watchers count for the Saldeans (20). Kill Goretusks for livers and snouts and Fleshrippers for Stringy Vulture Meat wherever you see them, and open every Sack of Oats (8 needed) on the farms. Harvesters hit hard: start each one with Frostbolt from full range, Frost Nova when it reaches you, step back and finish it. Eat and drink between pulls
 A 92910 @ Westfall, 39.0, 50.0 | A harvester drops a Precessive Autocognition Assembly: right-click it in your bags to start this quest. If none has dropped by the time the parts are done, never mind
-C 92742:2 @ Westfall, 44.0, 35.0 | North to the Molsen Farm (the position is approximate: it is the farm with harvesters north of the Alexston fields). Stand at the well in the yard and use the Well Water Sample Kit. Keep killing Harvest Watchers in its fields
+C 92742:2 @ Westfall, 46.1, 38.1 | North to the Molsen Farm, the farm with harvesters north of the Alexston fields. Stand at the Molsen Farm Water Well in the yard (46.1, 38.1) and use the Well Water Sample Kit. Keep killing Harvest Watchers in its fields
 C 12 @ Westfall, 45.0, 26.0 | Kill 15 Defias Trappers and 15 Defias Smugglers (11-13). They stand around the Molsen Farm, the Jangolode Mine to the north and Furlbrow's Pumpkin Farm. They drop Red Leather Bandanas (15 needed in all, from any Defias). Riverpaw gnolls up here drop Gnoll Paws (8). Defias run at low health: finish them with Fire Blast, or freeze them in place with Frost Nova
 C 64 @ Westfall, 49.3, 19.3 | Furlbrow's Pumpkin Farm, east of the mine: the pocket watch is in the wardrobe inside the farmhouse. Defias inside: pull them out one at a time
 C 92744 @ Westfall, 48.3, 9.5 | The coast north of the pumpkin farm (Longshore): kill murlocs (11-14) for 7 Longshore Murloc Gills and 3 Murloc Eyes. They come in twos and flee: pull one to the grass with Frostbolt, Polymorph the second, Fire Blast the one that runs. If these murlocs drop no gills, the map marks the west coast instead (24-28, 32-72): get them at the Gold Coast Quarry in loop 2 and hand in then
-C 92742:1 @ Westfall, 59.0, 18.0 | East to the Jansen Stead, the farm beside the Furlbrows' cart (position approximate): use the Sample Kit at its well
+C 92742:1 @ Westfall, 56.6, 18.7 | East to the Jansen Stead, the farm beside the Furlbrows' cart: use the Sample Kit at the Jansen Stead Water Well (56.6, 18.7)
 C 151 @ Westfall, 56.0, 20.0 | 8 Handfuls of Oats from the Sacks of Oats on the farms. Missing some? The Jansen Stead and the pumpkin farm have several
 T 64 | Farmer Furlbrow, at the cart by the bridge
 T 151 | Verna Furlbrow
@@ -129,7 +129,7 @@ T 92745 @ Westfall, 52.5, 53.1 | Alba Fairmoon
 A 92747 @ Westfall, 52.5, 53.1
 
 # --- Moonbrook, the Dagger Hills, the lighthouse ---
-C 92747 @ Westfall, 42.5, 70.0 | Moonbrook, the ruined town in the south-west: collect 8 Suspicious Industrial Supplies (crates and barrels in and between the buildings; their spots are not in our data). The town is full of Defias: clear a building before you loot in it
+C 92747 @ Westfall, 43, 68.8 | Moonbrook, the ruined town in the south-west: collect 8 Suspicious Industrial Supplies from the Suspicious Crates in and between the buildings. There are 11 known crate spots, from 41.8, 67.3 at the west end of town to 45.4, 70.2 at the east end. The town is full of Defias: clear a building before you loot in it
 C 14 @ Westfall, 45.7, 76.3 | The Dagger Hills, south of Moonbrook: kill 15 Defias Highwaymen (17-18), 5 Pathstalkers and 5 Knuckledusters (15-17). They are above your level and stand in pairs: pull with Frostbolt from as far away as you can, Polymorph the second one, Frost Nova the first when it reaches you and step back, and eat and drink to full before every pull. Level 17 makes this much easier, so take your time
 A 103 | Captain Grayson, the ghost at the Westfall Lighthouse on the island off the south-west tip (swim across). Skip his murloc quest: it needs murlocs from the north coast
 T 103 | Hand in the 5 Flasks of Oil at once. Short of oil? Harvest Golems in the fields north of Moonbrook drop it

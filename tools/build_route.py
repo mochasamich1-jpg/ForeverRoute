@@ -27,6 +27,7 @@ Any line may end with "| text" to add instructions, and A/T/C lines may add
 "@ <Zone Name>, <x>, <y>" before the "|" to override coordinates.
 """
 import json
+import os
 import math
 import re
 import sys
@@ -53,6 +54,8 @@ PROFILES = {
     # (UnitRace) is not known yet, so the addon picks this route by class (the only Druid route).
     'skyborne-druid': {'title': 'Skyborne Druid', 'race': 'Skyborne', 'class': 'Druid', 'race_bit': 4294967296,
                        'class_bit': 1024, 'races': ['Skyborne', 'HighOrderSkyborne'], 'classes': ['DRUID'],
+                       # marked night-elf only in the data, but taken by the user's Skyborne druid (log 2026-11-20)
+                       'race_seen': [26, 29, 272, 5061, 6121, 6122, 6123, 6124, 6125],
                        'lua': 'SkyborneDruid', 'side': 'Alliance', 'dungeons': 'dungeons-alliance'},
     'skyborne-mage': {'title': 'Skyborne Mage', 'race': 'Skyborne', 'class': 'Mage', 'race_bit': 4294967296,
                       'class_bit': 128, 'races': ['Skyborne', 'HighOrderSkyborne'], 'classes': ['MAGE'],
@@ -75,7 +78,16 @@ PROFILES = {
     # and 30 quests), warrior trainers and warrior fight hints. All 25 files are made by tools/derive_warrior.py.
     'human-warrior': {'title': 'Human Warrior', 'race': 'Human', 'class': 'Warrior', 'race_bit': 1, 'class_bit': 1,
                       'races': ['Human'], 'classes': ['WARRIOR'], 'lua': 'HumanWarrior', 'side': 'Alliance',
-                      'dungeons': 'dungeons-alliance'},
+                      'dungeons': 'dungeons-alliance',
+                      # Auto train (Core.lua): until this level the addon leaves these skills at the trainer so the
+                      # gold goes to the riding skill. 'skip': never bought; 'rank1': only the first rank. Written for
+                      # a Protection leveling build; the same lists are spelled out in the TRAIN steps
+                      # (tools/derive_warrior.py, SAVE).
+                      'train': {'until': 40,
+                                'skip': ['Slam', 'Mocking Blow', 'Disarm', 'Retaliation', 'Intimidating Shout', 'Execute',
+                                         'Intercept', 'Berserker Rage', 'Berserker Stance', 'Whirlwind', 'Pummel'],
+                                'rank1': ['Rend', 'Hamstring', 'Shield Bash', 'Overpower', 'Sunder Armor', 'Cleave',
+                                          'Demoralizing Shout']}},
     # Any-class routes for the other Alliance races: their own start zone (segments 01-04; the Dwarf shares the
     # Gnome's 01-03), then the Gnome path from level 14 with the race's mount (tools/derive_anyclass.py).
     'dwarf': {'title': 'Dwarf (any class)', 'race': 'Dwarf', 'class': 'any class', 'race_bit': 4, 'class_bit': 0,
@@ -85,10 +97,22 @@ PROFILES = {
     'night-elf': {'title': 'Night Elf (any class)', 'race': 'Night Elf', 'class': 'any class', 'race_bit': 8,
                   'class_bit': 0, 'races': ['NightElf'], 'classes': [], 'lua': 'NightElf', 'side': 'Alliance',
                   'dungeons': 'dungeons-alliance'},
+    # A Night Elf who leaves Teldrassil at 10 for Stormwind: night-elf 01-02, the Human route's Elwynn path
+    # (segments 03-06), then night-elf 05-25 as 07-26. Same races as 'night-elf', so the auto pick keeps
+    # 'night-elf' (ties go to the shorter key); choose it in game with /fr route night-elf-elwynn.
+    'night-elf-elwynn': {'title': 'Night Elf via Elwynn (any class)', 'race': 'Night Elf', 'class': 'any class',
+                         'race_bit': 8, 'class_bit': 0, 'races': ['NightElf'], 'classes': [],
+                         'lua': 'NightElfElwynn', 'side': 'Alliance', 'dungeons': 'dungeons-alliance'},
     'skyborne': {'title': 'Skyborne (any class)', 'race': 'Skyborne', 'class': 'any class', 'race_bit': 4294967296,
                  'class_bit': 0, 'races': ['Skyborne', 'HighOrderSkyborne'], 'classes': [], 'lua': 'Skyborne',
                  'side': 'Alliance', 'dungeons': 'dungeons-alliance'},
 }
+# A side route, not a leveling route: the Cozy Sleeping Bag chain for any Alliance character. 'manual' keeps it
+# out of the automatic pick (choose it with /fr route forever-bag); it gets no optional dungeon steps.
+PROFILES['forever-bag'] = {'title': 'Forever Bag (Cozy Sleeping Bag, Alliance)', 'race': 'Alliance',
+                           'class': 'any class', 'race_bit': 1 | 4 | 8 | 64 | 4294967296, 'class_bit': 0,
+                           'races': [], 'classes': [], 'lua': 'ForeverBag', 'side': 'Alliance', 'dungeons': '',
+                           'manual': True}
 for _p in PROFILES.values():
     _p.setdefault('side', 'Horde')
     _p.setdefault('dungeons', 'dungeons')
@@ -227,6 +251,25 @@ class Data:
                         if best is None or d < best[0]:
                             best = (d, int(z))
         return best[1] if best and best[0] <= 25 else None
+
+    def pin_misplaced(self, name, aid, x, y):
+        """True when the NPC/object called `name` has known spawns but none within 5 map-percent of (x, y)
+        on the map of area `aid`. A ForeverChanges pin for a city NPC is often drawn on the surrounding
+        zone's map (Gnoarn: page zone Ironforge, pin 62.2, 29.2 in Dun Morogh coordinates, really at
+        Ironforge 69.2, 50.6), so such a pin must not be read as coordinates of the page's zone."""
+        self.zone_of_named(name, x, y)  # builds _by_name
+        known = self._by_name.get(name.lower())
+        if not known:
+            return False
+        want = self.area_to_uimap.get(aid)
+        for spawns in known:
+            for z, pts in spawns.items():
+                if self.area_to_uimap.get(int(z)) != want:
+                    continue
+                for p in pts:
+                    if isinstance(p, list) and len(p) >= 2 and p[0] >= 0 and (p[0] - x) ** 2 + (p[1] - y) ** 2 <= 25:
+                        return False
+        return True
 
     def quest_name(self, qid):
         q = self.quests.get(qid)
@@ -396,6 +439,13 @@ def resolve_locations(steps, D):
                     real = D.zone_of_named(pin['name'], pin['x'], pin['y']) if pin.get('name') else None
                     if real is not None and D.area_to_uimap.get(real) and D.area_to_uimap.get(real) != D.area_to_uimap.get(loc[0]):
                         loc = (real, D.area_names.get(real, str(real)), pin['x'], pin['y'])
+                    tail = next((p for p in page_pins(fc) if p['role'] == role), None)
+                    if (not os.environ.get('FR_NO_PIN_CHECK') and pin.get('name') and tail
+                            and tail['zone'].lower() != loc[1].lower()
+                            and D.pin_misplaced(pin['name'], loc[0], pin['x'], pin['y'])):
+                        # the page's own Start / End line puts these coordinates on another map than the one
+                        # chosen here, and the NPC is known elsewhere on this map: use the database spawn
+                        loc = None
                 elif pin:
                     # class-page quests (zone "Shaman"/"Mage") have no zone: find the NPC by name
                     aid = D.zone_of_named(pin['name'], pin['x'], pin['y'])
@@ -550,9 +600,9 @@ def validate(steps, D, kill_factor=KILL_FACTOR, standalone=False):
                     if qid in accepted:
                         warn(s, f"{qid} {name}: accepted twice")
                     races = q.get('requiredRaces')
-                    if races and not (races & PROFILE['race_bit']):
+                    if races and not (races & PROFILE['race_bit']) and int(qid) not in PROFILE.get('race_seen', ()):
                         warn(s, f"{qid} {name}: not available to {PROFILE['race']} (race mask {races})", 'ERROR')
-                    if row and row.get('sides') and PROFILE['side'] not in row['sides']:
+                    if row and row.get('sides') and PROFILE['side'] not in row['sides'] and int(qid) not in PROFILE.get('race_seen', ()):
                         warn(s, f"{qid} {name}: not a {PROFILE['side']} quest (sides {row['sides']})", 'ERROR')
                     classes = q.get('requiredClasses')
                     if classes and not (classes & PROFILE['class_bit']):
@@ -667,8 +717,14 @@ def emit_lua(steps, segments, D, dungeon_table=None):
            'title = ' + lua_str(P['title']) + ',',
            'faction = ' + lua_str(P['side']) + ',',
            'races = {' + ','.join(lua_str(r) for r in P['races']) + '},',
-           'classes = {' + ','.join(lua_str(c) for c in P['classes']) + '},',
-           'segments = {']
+           'classes = {' + ','.join(lua_str(c) for c in P['classes']) + '},']
+    if P.get('manual'):
+        out.append('manual = true,')
+    if P.get('train'):
+        T = P['train']
+        out.append('train = { untilLevel = %d, skip = {%s}, rank1 = {%s} },' % (
+            T['until'], ','.join(lua_str(n) for n in T['skip']), ','.join(lua_str(n) for n in T['rank1'])))
+    out += ['segments = {']
     for s in segments:
         out.append(f'  {lua_str(s)},')
     out.append('},')
@@ -758,7 +814,7 @@ def build(key, args, D):
     steps = [s for s in steps if not s.kind.startswith('@')]
     lines = [f"route: {PROFILE['title']} ({key})  steps: {len(steps)}  segments: {len(segments)}"]
     dungeon_table, dungeon_lines, n_dg_err = None, [], 0
-    if not standalone and '--no-dungeons' not in args:
+    if not standalone and '--no-dungeons' not in args and PROFILE.get('dungeons'):
         if str(Path(__file__).resolve().parent) not in sys.path:  # python -I leaves the script folder out
             sys.path.insert(0, str(Path(__file__).resolve().parent))
         import dungeons as DG
